@@ -24,9 +24,12 @@ adaptation:
   chapters_to_produce: []        # e.g. [2,3,...,N]
 
 word_floor:
-  manuscript_min_words: 85000    # HARD FLOOR — adjust per book
-  manuscript_target_words: 90000
-  per_chapter_min_words: 4500
+  manuscript_min_words: 85000    # HARD FLOOR (book total) — the binding gate; adjust per book.
+  manuscript_target_words: 90000 # architect budgets Σ chapter targets ≥ this (see book-architect §0.5).
+  # NOTE: there is deliberately NO uniform per-chapter floor. Chapter lengths VARY WIDELY
+  # (~1,500–7,000w) by design — the book TOTAL is what's enforced, not each chapter. A
+  # per-chapter minimum would recreate the uniform ~5k/20-chapter "AI-neat" shape.
+  shortest_chapter_floor: 1200   # sanity floor for the SHORTEST allowed chapter (punch chapters ok; not a target)
 
 phase:
   current: 1
