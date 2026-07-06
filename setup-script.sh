@@ -52,7 +52,11 @@ s.setdefault("enabledPlugins", {})["apodictic@apodictic"] = True
 json.dump(s, open(p, "w"), indent=2)
 PY
   fi
-  echo "book-pipeline installed: $(ls "$HOME/.claude/agents" | wc -l) agents, $(ls "$HOME/.claude/commands" 2>/dev/null | wc -l) commands."
+  # Expose the repo generator + folder scaffolder on PATH for convenience.
+  mkdir -p "$HOME/.local/bin"
+  [ -f "$CFG/new_book_repo.sh" ] && install -m 0755 "$CFG/new_book_repo.sh" "$HOME/.local/bin/new-book-repo" 2>/dev/null || true
+  case ":$PATH:" in *":$HOME/.local/bin:"*) : ;; *) [ -n "${CLAUDE_ENV_FILE:-}" ] && echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> "$CLAUDE_ENV_FILE" ;; esac
+  echo "book-pipeline installed: $(ls "$HOME/.claude/agents" | wc -l) agents, $(ls "$HOME/.claude/commands" 2>/dev/null | wc -l) commands. New book repo: 'new-book-repo <slug> \"<Title>\"'."
 else
   echo "warn: book-pipeline clone unavailable — ensure the repo is in this environment's scope." >&2
 fi

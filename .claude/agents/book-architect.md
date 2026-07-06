@@ -62,7 +62,7 @@ Create `foundation.md` in the project directory with these sections:
 
 ### BEFORE BUILDING — Read `premise.md` first (the forged premise is BINDING — see PREMISE FORGE MODE), then `research/bestseller-dna.md` if it exists. Use them to calibrate:
 - Word count targets (Section 1.1)
-- Turning point placement at ~25%, ~50%, ~75% (Section 1.2)
+- **Macro-structure: SELECT it per book (Section 0.5 below) — do NOT default to 3-act at 25/50/75%.**
 - Topic focus: 30%+ on human closeness (Section 3.2)
 - Emotional arc: target the "W" shape with ~8 regular oscillations (Section 1.3)
 - Dialogue target (genre-adjusted V3.4): Literary 15-35%, Memoir 10-30%, Thriller 30-50%, Prescriptive NF 0-15%, Romance 30-45%
@@ -70,7 +70,7 @@ Create `foundation.md` in the project directory with these sections:
 ### 1. PREMISE
 One sentence that captures the entire book. Not a logline (that's marketing) — a structural premise that answers: "What is this book ABOUT at its deepest level?"
 
-**If `premise.md` exists (forge mode output), the WINNING variant IS the premise.** Restate it structurally here. Its irony engine, escalation ladder, and central question are binding inputs: the escalation ladder must map onto the turning points (~25/50/75%), and the central question becomes the spine of the Theme-as-Question below. Do not re-litigate the forge — execute it.
+**If `premise.md` exists (forge mode output), the WINNING variant IS the premise.** Restate it structurally here. Its irony engine, escalation ladder, and central question are binding inputs: the escalation ladder must map onto the macro-structure's turning points (chosen in Section 0.5, NOT assumed at 25/50/75%), and the central question becomes the spine of the Theme-as-Question below. Do not re-litigate the forge — execute it.
 
 **Concept Pitch Test (V3.3):** Can you describe this book in one compelling sentence to a stranger and make them want to read it? If not, the premise may be craft-worthy but not commercially pitchable. Flag as a risk. The CVI "Concept Pitch" input depends on this. Midnight Library sold 9M because "a library where each book is a life you could have lived" is instantly shareable. A Little Life sold 3M despite weak pitchability — but it's the exception, not the rule.
 
@@ -295,9 +295,45 @@ Define the specific opening approach for Chapter 1. Do NOT default to "competent
 
 Document which strategy fits this specific book and WHY. The choice should be genre-aware but not genre-predictable.
 
+## 0.5 MACRO-STRUCTURE SELECTION (do this BEFORE the outline — mandatory)
+
+**The #1 "this was machine-made" tell is structural uniformity: every book landing at
+~20 chapters of ~5,000 words each, split into three visible acts with turning points on
+the exact quarter-marks. Real novels are lumpy. You will NOT default to that shape.**
+
+Before outlining, EVALUATE THIS SPECIFIC PREMISE and CHOOSE the macro-structure that
+serves it. Write a short **`## Macro-Structure`** block at the top of `outline.md` that
+records: (a) the structure chosen, (b) WHY this premise demands it, (c) the turning-point
+map (as %s, deliberately jittered off 25/50/75), (d) the section labels used (or none),
+and (e) the chapter-count logic. Then build the outline to match.
+
+### Step 1 — pick the structure from this menu (or justify another). Do NOT always pick 3-act.
+- **Three-act** — reliable, but earn it; if chosen, JITTER the turning points (e.g. 22/48/68 or 30/55/78), never clean quarters.
+- **Four-act / kishōtenketsu** — the Japanese ki-shō-ten-ketsu (setup / development / TWIST / reconciliation) has NO central conflict-climax; excellent for character/literary/mystery-of-tone books.
+- **Five-act** — rise/fall around a true midpoint peak; good for tragedy, political, ensemble.
+- **Two-part / diptych** — a hard hinge at ~50% where the book's terms change (before/after, place A/place B, two narrators). Parts, not acts.
+- **In-media-res + long unspooling** — open at the crisis, then the bulk is how they got there and what it costs.
+- **Mosaic / braided** — multiple threads or timelines interleaved; structure is the weave, not a staircase.
+- **Slow-burn + short explosive final movement** — 80% pressure-building, a compressed detonation; chapters get SHORTER as tension rises.
+- **Circular / frame** — ends where it began, recontextualized.
+
+### Step 2 — jitter the turning points. Never 25/50/75 exactly. Pick uneven act/part lengths on purpose.
+
+### Step 3 — let CHAPTER COUNT and LENGTH emerge from content, not arithmetic.
+- **Do NOT compute `word_target ÷ per_chapter_floor` and outline that many equal chapters.** That division is the mechanism behind the 20-chapter monoculture. Kill it.
+- Chapter length should VARY WIDELY (roughly 1,500–7,000 words). Include at least one or two very SHORT punch chapters and at least one long immersive one. A short chapter after a huge beat is a legitimate, powerful move.
+- Chapter COUNT falls out of the beats: a taut thriller might be 34 short chapters; a literary novel 14 long ones; another book uses Parts with unnumbered scenes. **Vary the granularity from book to book** — do not let every book you architect converge on the same count.
+
+### Step 4 — sectioning. Do NOT reflexively print "ACT ONE / ACT TWO / ACT THREE."
+Use whatever the chosen structure implies (Parts, movements, dated sections, none at all). Internal scaffolding need not be visible to the reader.
+
+### Guard against your own defaults
+If the structure you're about to choose is 3-act with ~20 equal chapters and clean-quarter turns, STOP and re-choose — that is the failure mode this section exists to prevent. Variety must be DRIVEN BY THE STORY, not randomized; but "the story happens to want the exact same shape as the last four books" is not credible. Make the case in the `## Macro-Structure` block or pick differently.
+
 ## CHAPTER OUTLINE
 
-Create `outline.md` with this structure for each chapter:
+Create `outline.md` — beginning with the `## Macro-Structure` block from Section 0.5 —
+then this structure for each chapter:
 
 ```markdown
 ## Chapter [N]: [Working Title]
@@ -337,7 +373,7 @@ Create `outline.md` with this structure for each chapter:
 4. **Chaos distribution.** Character chaos moments should be spread across the book, not clustered. Each major character gets at least 2-3 chaos moments.
 5. **Opening diversity.** If Chapter 1 opens with voice bomb, Chapter 2 should NOT also be voice-forward. Vary approach.
 6. **Breathing room.** At least 1-2 chapters should have "RECEDES" for theme presence.
-7. **Word count distribution.** No chapter >2x the shortest.
+7. **Word count distribution — REQUIRE variance, don't suppress it.** Chapters must NOT cluster around one length. Across the book, the longest chapter should be at least ~3x the shortest, and the outline must include at least one deliberately SHORT punch chapter and at least one long immersive one. (This replaces the old "no chapter >2x the shortest" cap, which was manufacturing the uniform ~5k-word monoculture.) Length follows the beat, never a fixed quota.
 8. **V3.1: STRUCTURAL DIVERSITY.** No two consecutive chapters should use the same internal structure. Define the structural approach for each chapter explicitly:
    - Chronological (scene → scene → scene)
    - Essayistic (argument → evidence → personal)

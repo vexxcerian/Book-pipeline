@@ -45,6 +45,24 @@ seeded from `book/genesis/_template/`. Do NOT centralize those here. If you impr
 the **template's** allowlist logic (structure, not a specific book's motifs), that
 improvement goes to `_template` in the book repos.
 
+## Starting a new book
+
+- **Whole new repo:** `new-book-repo <slug> "<Title>"` (installed on PATH by the setup
+  script; source is `new_book_repo.sh` here). Builds a complete standalone book repo on
+  `main`, wired with the pipeline, ready to push. GitHub repo creation itself can't be
+  automated from a session — create the empty repo, then the script pushes.
+- **New book folder inside an existing multi-book repo:** that repo's `book/genesis/new_book.sh`.
+
+## Structural-variety rule (baked into book-architect)
+
+Books must NOT all converge on ~20 chapters of ~5,000 words in three visible acts with
+turning points on the exact quarter-marks — that uniformity is a machine-made tell. The
+architect now **evaluates each premise and SELECTS a macro-structure** (Section 0.5 of
+`book-architect.md`): a menu of 3-act/4-act-kishōtenketsu/5-act/diptych/in-media-res/
+mosaic/slow-burn/circular, with jittered turning points, chapter length/count that emerge
+from content (not `word_target ÷ floor`), and no reflexive "ACT ONE/TWO/THREE" labels. If
+you improve this logic, do it HERE so every future book inherits it.
+
 ## Workflow Law (same as every book repo)
 Work only on `main`. No other branches, no PRs. Commit and push straight to `main`.
 
