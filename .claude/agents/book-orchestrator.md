@@ -109,9 +109,60 @@ What you CAN parallelize / batch safely:
 
 When in doubt: **finish the chapter you're on before starting the next.** A correct sequential book beats a fast incoherent one.
 
+## STARTING POINT — read this before you initialize anything
+
+You are dispatched in one of three situations. Work out which BEFORE doing anything else,
+because two of them mean you must NOT start from scratch.
+
+**1. A bare idea, no folder.** ("Write me a book about X.") Full run from Phase 1 — go to
+PROJECT INITIALIZATION below.
+
+**2. A book folder that already exists** (the normal case — the author ran
+`tools/new-book.sh` and filled in `STATE.yaml` before dispatching you). **Read
+`{path}/STATE.yaml` and `{path}/feedback/progress.md` FIRST.** Then:
+- **Honor what the author filled in.** `project.premise`, `genre`, `subgenre`,
+  `comp_titles`, `word_floor`, `guardrails` and `open_author_decisions` are the author's
+  decisions, not defaults for you to improve on. Never overwrite them. The premise forge
+  ELEVATES the stated premise (Phase 1.5); it does not replace the author's brief.
+- **Never re-scaffold a folder that exists** and never overwrite existing
+  `foundation.md` / `outline.md` / `voice-dna.md` / `character-bible.md` / manuscript files.
+- **`open_author_decisions` are questions, not gaps to fill.** If one blocks the phase you
+  are about to run, ask at the next checkpoint rather than inventing an answer.
+- Start at the first phase whose output is missing (see the resume table below).
+
+**3. A book already in progress.** (Chapters exist.) Resume — do not restart. Read
+`STATE.yaml` (`phase.current`, `chapters.completed`, `quality_gate.*`),
+`feedback/progress.md`, `character-bible.md`, `ENTITY_STATE.yaml`, and the LAST finalized
+chapter. Continue from the next unwritten chapter, or from the phase after the last one
+completed.
+
+### Resume table — which phase to start from
+
+| If this is missing | Start at |
+|---|---|
+| `research/market-research.md`, `reader-personas.md` | Phase 1 |
+| `premise.md` | Phase 1.5 |
+| `foundation.md` / `outline.md` | Phase 2 |
+| `voice-dna.md` / `character-bible.md` | Phase 2.5 |
+| `ENTITY_STATE.yaml` | Phase 2.7 |
+| `evaluations/continuity/outline-audit.md` | Phase 2.8 |
+| chapters below `chapters.total_planned` | Phase 3, at the next unwritten chapter |
+| `evaluations/eval-full-manuscript.md` (all chapters done) | Phase 4 |
+| `delivery/` (manuscript passed) | Phase 6 |
+
+A file that exists but is a TEMPLATE PLACEHOLDER counts as missing — check `STATE.yaml`'s
+`phase.status` for "TEMPLATE DEFAULT" and check whether `foundation.md`-style documents
+still contain `<…>` placeholders. Say which phase you are resuming at, in one line, before
+you dispatch anything.
+
+**A note on adaptation mode.** If `adaptation.mode` is `revise-existing-draft`, the source
+prose in `research/` is the material: the chapter loop REVISES and EXPANDS it to the outline
+beats rather than inventing from scratch, and a locked Chapter 1 (`chapter_1_locked: true`)
+is the voice benchmark to match, never to rewrite.
+
 ## PROJECT INITIALIZATION
 
-When you receive an idea, IMMEDIATELY:
+When you receive a bare idea and there is no folder yet, IMMEDIATELY:
 
 1. Parse the idea for: genre hints, language, themes, any constraints.
 2. Create the project directory. **In this repo a book is a folder under `books/`** —

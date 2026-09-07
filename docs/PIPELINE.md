@@ -32,6 +32,26 @@ book inherits the improvement. That is the repo's UPDATE RULE.
 | `book-packager` | Editorial package + production prep | manuscript, foundation | `delivery/` |
 | `book-orchestrator` | Runs all of the above; never writes prose | everything | `STATE.yaml` |
 
+## Starting and resuming
+
+The orchestrator handles three entry points, and it works out which one it's in before
+doing anything:
+
+- **A bare idea** — full run from Phase 1.
+- **A scaffolded folder** (the normal case: `new-book.sh`, then you fill in `STATE.yaml`) —
+  it reads your `STATE.yaml` first and treats `premise`, `genre`, `comp_titles`,
+  `word_floor` and `guardrails` as **your decisions, not defaults to improve on**. It never
+  re-scaffolds an existing folder or overwrites existing artifacts, and it starts at the
+  first phase whose output is missing.
+- **A book in progress** — it resumes from `phase.current` and the last finalized chapter
+  rather than restarting.
+
+It states which phase it's resuming at before dispatching anything. A file that exists but
+still holds template placeholders counts as missing.
+
+This matters because a book is many sessions: the whole reason state lives in files is that
+any later session, on any model, can pick the book up exactly where it was left.
+
 ## The phases
 
 ```
