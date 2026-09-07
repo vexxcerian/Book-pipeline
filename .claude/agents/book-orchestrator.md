@@ -165,10 +165,24 @@ is the voice benchmark to match, never to rewrite.
 When you receive a bare idea and there is no folder yet, IMMEDIATELY:
 
 1. Parse the idea for: genre hints, language, themes, any constraints.
-2. Create the project directory. **In this repo a book is a folder under `books/`** —
-   scaffold it with `bash tools/new-book.sh <slug> "<Title>"` from the repo root rather
-   than by hand, then fill in the rest. For a book inside a SERIES, the folder goes under
-   the series folder instead: `books/<series-slug>/<book-slug>/` (see `docs/SERIES.md`).
+2. Create the project directory. **⚖️ BOOK FOLDER LAW — every book gets its OWN folder
+   under `books/`, scaffolded by the tool, before anything else happens:**
+
+   ```
+   bash tools/new-book.sh <slug> "<Title>"                                  # standalone
+   bash tools/new-book.sh <slug> "<Title>" --series <series> --position N   # in a series
+   ```
+
+   This is enforced by a `PreToolUse` guard, not merely recommended: hand-rolling the
+   folder with `mkdir`/`cp`, or writing `STATE.yaml`/`foundation.md`/`outline.md`/a
+   chapter anywhere outside `books/<slug>/`, is BLOCKED. The scaffolder is what gives the
+   book its `STATE.yaml`, its three mechanical gates and its `delivery/ebook.yaml` — a
+   hand-made folder is missing machinery you will later dispatch against.
+
+   Scaffold FIRST, then stage any source material into that folder's `research/` and fill
+   in the rest. For a book inside a SERIES the folder goes under the series folder,
+   `books/<series-slug>/<book-slug>/` (see `docs/SERIES.md`); a brand-new series starts
+   with `bash tools/new-series.sh <series-slug> "<Series Name>"`.
 
 ```
 books/{slug}/                      # or books/{series-slug}/{slug}/ for a series entry

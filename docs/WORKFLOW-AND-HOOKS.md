@@ -43,11 +43,54 @@ If you keep it on, also update the root `CLAUDE.md` — it states the law in pro
 model reads that file every session. Contradicting yourself between `CLAUDE.md` and
 `pipeline.conf` is worse than either choice.
 
+## The second law: one book, one folder
+
+**Every book lives in its own folder under `books/`, and that folder is created by
+`tools/new-book.sh` — never by hand.** No book content at the repo root, in `docs/`, in
+`tools/`, or loose inside `books/`.
+
+This is a law rather than a convention because the folder is not just tidiness. The
+scaffolder is what gives a book its `STATE.yaml`, its three mechanical gates
+(`style_check.py`, `grammar_check.py`, `voice_wear_check.py`), its per-book style
+ALLOWLIST and its `delivery/ebook.yaml`. A hand-made folder is missing the machinery the
+rest of the pipeline assumes it can call, and the failure surfaces much later — at a gate
+that silently cannot run, or a `doctor.sh` that has nothing to check.
+
+```sh
+bash tools/new-book.sh <slug> "<Book Title>"                                  # standalone
+bash tools/new-book.sh <slug> "<Book Title>" --series <series> --position N   # in a series
+bash tools/new-series.sh <series-slug> "<Series Name>"                        # a new series
+```
+
+Enforced in two places:
+
+- **`.claude/hooks/enforce-book-folder-law.sh`** — a `PreToolUse` guard (deciding via
+  `book_folder_law.py` beside it) that blocks writing a book artifact — `STATE.yaml`,
+  `foundation.md`, `outline.md`, `voice-dna.md`, `character-bible.md`,
+  `ENTITY_STATE.yaml`, `premise.md`, `manuscript/chapters/chapter-*.md` — anywhere outside
+  `books/<slug>/`, and blocks creating a book folder with `mkdir`/`cp` instead of the
+  scaffolder.
+- **`tools/doctor.sh`** — fails on any book artifact found outside a book folder, and
+  warns on a book folder missing the pieces the template ships.
+
+The guard is deliberately narrow. It only stops *creation* in the wrong place: reading,
+grepping, or `rm`-ing a stray file all stay possible, since removing it is the fix.
+Renaming an already-scaffolded folder with `mv` is fine — it moves a complete skeleton.
+`.claude/`, `docs/`, `tools/`, `books/_template/` and `books/_series-template/` are exempt:
+they are the shared pipeline, never book content. And it fails **open** — any error in the
+guard allows the call, because a guard that bricks a writing session is worse than one
+that misses a case.
+
+Turn it off in `.claude/pipeline.conf` with `BOOK_FOLDER_LAW="off"`. As with the git law,
+if you turn it off, update the root `CLAUDE.md` to match — it states the law in prose and
+the model reads it every session.
+
 ## `.claude/pipeline.conf` in full
 
 | Setting | Values | Meaning |
 |---|---|---|
 | `WORKFLOW_LAW` | `main-only` (default) / `off` | Git enforcement, as above |
+| `BOOK_FOLDER_LAW` | `enforced` (default) / `off` | One book, one folder, scaffolded by the tool |
 | `AGENT_SOURCE` | `repo` (default) / `upstream` | Where `~/.claude/agents` is installed from |
 | `PIPELINE_MODEL` | model id, or empty | Default model for sub-agent dispatches |
 | `PIPELINE_MAXTURNS` | integer (default 120) | Sub-agent turn budget |

@@ -465,6 +465,12 @@ Name the 2-3 voice-bank samples (from controlled / breaking / irrelevant-thought
 
 ## RULES
 
+0. **⚖️ BOOK FOLDER LAW — write every artifact INSIDE the book's own folder.** `premise.md`,
+   `foundation.md`, `outline.md`, `voice-dna.md`, `character-bible.md` and the voice bank all
+   go under `books/<slug>/` (or `books/<series-slug>/<book-slug>/`), never at the repo root
+   and never in `docs/` or `tools/`. A `PreToolUse` guard blocks the alternatives. If you were
+   dispatched without a book folder, say so and stop — the folder is created by
+   `bash tools/new-book.sh <slug> "<Title>"`, not by you.
 1. **Read STATE.yaml and research/ first.** Your foundation must build on the Researcher's findings.
 2. **Theme is a question, never an answer.**
 3. **Characters must be distinguishable AND chaotic.** Run the cover-the-name test. Then verify each character has irrelevant obsession, cognitive distortion, unprompted memory, and failed emotional management.

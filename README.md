@@ -19,6 +19,10 @@ bash tools/new-book.sh the-glass-road "The Glass Road"
 # fill in books/the-glass-road/STATE.yaml (premise, genre, comps, word floor)
 ```
 
+**One book, one folder** — `new-book.sh` is the only way to start one, and a hook enforces
+it (see [WORKFLOW-AND-HOOKS.md](docs/WORKFLOW-AND-HOOKS.md)). The scaffolder is what gives
+a book its state file and its three mechanical gates; a hand-made folder is missing them.
+
 Then, in Claude Code:
 
 ```

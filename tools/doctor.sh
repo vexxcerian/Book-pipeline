@@ -78,7 +78,7 @@ else
   warn "no .claude/pipeline.conf — hooks will use built-in defaults"
 fi
 
-for h in session-start.sh enforce-main-law.sh; do
+for h in session-start.sh enforce-main-law.sh enforce-book-folder-law.sh; do
   if [ -f "$ROOT/.claude/hooks/$h" ]; then
     bash -n "$ROOT/.claude/hooks/$h" 2>/dev/null && ok "hook $h (syntax ok)" || bad "hook $h has a syntax error"
   else
@@ -92,7 +92,7 @@ done
 
 # Every Python tool must at least compile, or it fails at the worst moment.
 badpy=""
-for f in "$ROOT"/tools/*.py "$ROOT"/books/_template/tools/*.py; do
+for f in "$ROOT"/tools/*.py "$ROOT"/books/_template/tools/*.py "$ROOT"/.claude/hooks/*.py; do
   [ -e "$f" ] || continue
   python3 -c "import ast,sys; ast.parse(open(sys.argv[1]).read())" "$f" 2>/dev/null \
     || badpy="$badpy $(basename "$f")"
@@ -140,6 +140,50 @@ PY
 
 [ -d "$ROOT/books/_template" ] && ok "books/_template/" || bad "books/_template/ missing — new-book.sh cannot scaffold"
 [ -d "$ROOT/books/_series-template" ] && ok "books/_series-template/" || warn "books/_series-template/ missing — new-series.sh cannot scaffold"
+
+# --- Book folder law --------------------------------------------------------
+# One book, one folder. Every book artifact must live inside books/<slug>/ (or
+# books/<series>/<book>/). Anything loose is a book that was started the wrong way.
+echo
+echo "Book folder law"
+
+if [ -f "$ROOT/.claude/hooks/book_folder_law.py" ] && [ -f "$ROOT/.claude/hooks/enforce-book-folder-law.sh" ]; then
+  ok "guard present (enforce-book-folder-law.sh + book_folder_law.py)"
+else
+  bad "book folder law guard missing — new books can be scaffolded anywhere"
+fi
+
+if grep -q 'enforce-book-folder-law\.sh' "$ROOT/.claude/settings.json" 2>/dev/null; then
+  ok "guard registered as a PreToolUse hook in settings.json"
+else
+  bad "guard not registered in .claude/settings.json — it will never run"
+fi
+
+case "${BOOK_FOLDER_LAW:-enforced}" in
+  enforced) ok "BOOK_FOLDER_LAW=enforced" ;;
+  off)      warn "BOOK_FOLDER_LAW=off — the law is documented but not enforced" ;;
+  *)        warn "BOOK_FOLDER_LAW='${BOOK_FOLDER_LAW}' is not a known value (enforced|off)" ;;
+esac
+
+strays=""
+while IFS= read -r f; do
+  rel="${f#"$ROOT"/}"
+  case "$rel" in
+    .git/*|.claude/*|docs/*|tools/*|books/_template/*|books/_series-template/*|books/_assets/*) continue ;;
+    books/*/*) continue ;;   # books/<slug>/… — exactly where a book belongs
+  esac
+  strays="$strays $rel"
+done < <(find "$ROOT" -name .git -prune -o -type f \( \
+    -name STATE.yaml -o -name ENTITY_STATE.yaml -o -name foundation.md -o \
+    -name outline.md -o -name voice-dna.md -o -name character-bible.md -o \
+    -name premise.md -o -name 'chapter-*.md' \) -print 2>/dev/null)
+
+if [ -z "$strays" ]; then
+  ok "no book artifacts outside a book folder"
+else
+  bad "book artifact(s) outside books/<slug>/ —$strays"
+  printf '        move each into its own book folder: bash tools/new-book.sh <slug> "<Title>"\n'
+fi
 
 # --- API keys (optional) ----------------------------------------------------
 echo
@@ -214,8 +258,10 @@ PY
     && ok "character-bible.md present" \
     || warn "no character-bible.md — required architect deliverable (docs/CHARACTER-BIBLE.md)"
 
-  for f in tools/style_check.py tools/grammar_check.py tools/voice_wear_check.py; do
-    [ -f "$d/$f" ] && ok "$f" || warn "$f missing — copy it from books/_template/"
+  # Scaffolded by new-book.sh? These come free from the template; missing them means
+  # the folder was hand-made, and a gate that cannot run is a gate that never fails.
+  for f in tools/style_check.py tools/grammar_check.py tools/voice_wear_check.py delivery/ebook.yaml; do
+    [ -f "$d/$f" ] && ok "$f" || warn "$f missing — folder not scaffolded from books/_template/ (see the BOOK FOLDER LAW)"
   done
 
   local n; n=$(ls "$d"/manuscript/chapters/chapter-*.md 2>/dev/null | wc -l | tr -d ' ')

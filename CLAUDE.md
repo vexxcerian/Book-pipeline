@@ -30,6 +30,40 @@ of the pipeline and every book uses it — no per-book duplication.
 └── requirements.txt
 ```
 
+## ⚖️ BOOK FOLDER LAW — one book, one folder, every time
+
+**Every book gets its own folder under `books/`, and that folder is created by the
+scaffolder — never by hand.** No book content lives at the repo root, in `docs/`, in
+`tools/`, or loose inside `books/`. This is not a convention; it is enforced.
+
+```
+bash tools/new-book.sh <slug> "<Book Title>"                                  # standalone
+bash tools/new-book.sh <slug> "<Book Title>" --series <series> --position N   # inside a series
+bash tools/new-series.sh <series-slug> "<Series Name>"                        # a new series first
+```
+
+**The moment a new book starts — a new idea, a pasted draft, an uploaded manuscript, a
+sequel — the FIRST action is to scaffold its folder.** Source material is staged into
+that folder's `research/`; it is never worked on where it landed.
+
+**Enforced, not just documented** (while `BOOK_FOLDER_LAW=enforced` in `.claude/pipeline.conf`):
+- A **PreToolUse** guard (`.claude/hooks/enforce-book-folder-law.sh`, deciding via
+  `book_folder_law.py`) blocks any write of a book artifact — `STATE.yaml`,
+  `foundation.md`, `outline.md`, `voice-dna.md`, `character-bible.md`,
+  `ENTITY_STATE.yaml`, `premise.md`, `manuscript/chapters/chapter-*.md` — to a path
+  outside `books/<slug>/`, and blocks hand-rolling a book folder with `mkdir`/`cp`
+  instead of `new-book.sh`.
+- `bash tools/doctor.sh` fails on a stray book artifact outside a book folder, and on a
+  book folder that was not scaffolded from the template (missing gates, missing STATE).
+
+Why it is a law: a book folder is not just tidiness — `new-book.sh` is what gives a book
+its `STATE.yaml`, its three mechanical gates, its per-book `style_check.py` ALLOWLIST and
+its `delivery/ebook.yaml`. A hand-made folder is missing the machinery the pipeline
+assumes, and the failure shows up much later, at a gate that cannot run.
+
+Exempt (shared pipeline, not book content): `.claude/`, `docs/`, `tools/`,
+`books/_template/`, `books/_series-template/`.
+
 ## Git workflow
 
 Default: **work only on `main`** — no other branches, no PRs. Manuscripts don't merge, so a
@@ -72,6 +106,9 @@ the web environment).
    [docs/CHARACTER-BIBLE.md](docs/CHARACTER-BIBLE.md).
 
 ## Starting a new book
+
+**This is the ONLY way to start one** (see the BOOK FOLDER LAW above — the guard blocks
+the alternatives):
 
 ```
 bash tools/new-book.sh <slug> "<Book Title>"

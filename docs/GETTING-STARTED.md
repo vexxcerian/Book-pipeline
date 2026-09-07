@@ -65,6 +65,13 @@ That creates `books/the-glass-road/` from the template: `STATE.yaml`, `CLAUDE.md
 copies of the three mechanical gates (`style_check.py`, `grammar_check.py`,
 `voice_wear_check.py`).
 
+**This is the only way to start a book.** One book, one folder — the BOOK FOLDER LAW, and
+it is enforced by a hook, not left to discipline: writing a `STATE.yaml`, `foundation.md`,
+`outline.md` or a chapter anywhere outside `books/<slug>/` is blocked, as is hand-rolling
+the folder with `mkdir`. The reason is the list above — a hand-made folder is missing the
+gates and state file the rest of the pipeline expects to call, and you find out at the
+gate that can't run. See [WORKFLOW-AND-HOOKS.md](WORKFLOW-AND-HOOKS.md).
+
 For a series, create the series first — see [SERIES.md](SERIES.md):
 
 ```bash
