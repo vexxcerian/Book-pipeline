@@ -4,7 +4,7 @@ The rescued operator’s name, once it finally made it into an official file, wa
 
 “Corwin’s account has been reviewed,” the review officer said, a woman Vexx had never met before and would, he suspected, never see again — that particular ONI trick of rotating faces through sensitive rooms so no single person accumulated too clear a picture of anything. “Command’s assessment is combat stress and isolation-induced confusion. No corroborating evidence of a UNSC-signature strike team has been located. Operator Corwin is being reassigned to a rehabilitation track pending full psych clearance.”
 
-“He had fragments,” Vexx said. “Physical evidence. I documented it in the field.”
+“He had fragments,” Vexx said. “Physical evidence. It came back in his gear.”
 
 “Which has been reviewed and assessed as inconclusive.” The officer didn’t look up from her data pad. “This matter is closed, Operator Vexxcerian. Your cell’s report reflects well on your unit’s capability. That’s the outcome that matters here.”
 
