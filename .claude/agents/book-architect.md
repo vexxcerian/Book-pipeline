@@ -344,6 +344,7 @@ then this structure for each chapter:
 **Emotional anchor:** [The image/moment the reader should remember tomorrow]
 **Emotional surprise:** [Where the expected emotion is wrong]
 **Opening strategy:** [For Ch.1: which of the 7 strategies. For others: bridge type]
+**Closing move:** [Which pull/closer shape this chapter ends on — last-line reversal · unanswered question · physical image held · dialogue button · dramatic irony · time-skip pivot · deliberate flatness · a decision taken. Required, so the sequence can be audited under Quality Check 5b. It must not repeat the previous two chapters', and it must not step outside the POV's perception.]
 **Key scenes/beats:**
 1. [Scene/beat description — what happens and why it matters]
 2. ...
@@ -373,6 +374,11 @@ then this structure for each chapter:
 3. **Emotional variety.** The anchors should be DIVERSE — visual, auditory, gestural, verbal. If 3 consecutive anchors are all visual images, vary.
 4. **Chaos distribution.** Character chaos moments should be spread across the book, not clustered. Each major character gets at least 2-3 chaos moments.
 5. **Opening diversity.** If Chapter 1 opens with voice bomb, Chapter 2 should NOT also be voice-forward. Vary approach.
+5b. **ENDING diversity — inventory the closers the same way you inventory the openings.** This check exists because its absence is a known, observed failure: an outline that audits opening variety and says nothing about endings produces books whose chapters all close on the same rhetorical figure, and the reader learns the rhythm long before the book is over. Name each chapter's **closing move** explicitly in the outline (last-line reversal · unanswered question · physical image held · dialogue button · dramatic irony the POV cannot see · time-skip pivot · deliberate flatness · a decision taken), and check the sequence:
+   - **No closing move may run three chapters in a row**, and the distinctive ones (dramatic irony, last-line reversal) are effectively **spend-once-per-act** — the second use is an echo, the third is a formula.
+   - **Watch for the shared verb, not just the shared shape.** Consecutive closers reaching for the same word (*shift*, *settle*, *something moved*) or the same preposition-opener (*somewhere above…*) are the same ending wearing different clothes.
+   - **A closer that steps outside the POV character's perception breaks the POV lock**, however good the sentence is. In a close-third book, "X slept, certain that…" is the narrator telling the reader something the POV cannot know. If the book's POV is locked in STATE.yaml, treat this as a hard error and design a different close.
+   - **The dramatic-irony closer is the most seductive and the most rationed.** It feels earned every single time, which is exactly why it must be assigned to ONE chapter deliberately, where it lands hardest.
 6. **Breathing room.** At least 1-2 chapters should have "RECEDES" for theme presence.
 7. **Word count distribution — REQUIRE variance, don't suppress it.** Chapters must NOT cluster around one length. Across the book, the longest chapter should be at least ~3x the shortest, and the outline must include at least one deliberately SHORT punch chapter and at least one long immersive one. (This replaces the old "no chapter >2x the shortest" cap, which was manufacturing the uniform ~5k-word monoculture.) Length follows the beat, never a fixed quota.
 8. **V3.1: STRUCTURAL DIVERSITY.** No two consecutive chapters should use the same internal structure. Define the structural approach for each chapter explicitly:

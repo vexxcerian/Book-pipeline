@@ -192,6 +192,17 @@ These are banned from the closing 3-5 sentences of any chapter. If the prose-cra
 - **Trailing off into reflection.** The energy should INCREASE at the chapter end, not decrease. Even quiet pulls have compressed energy — the silence at the end is taut, not slack.
 - **The Profound Closing Line.** "And in that moment, she understood that some doors, once closed, could never be opened again." This is a fortune cookie. Replace with an action, an image, or a silence.
 
+### PULL SEQUENCING — a good pull repeated is a bad pull
+
+A pull is judged against its NEIGHBOURS, not only on its own merits. Four consecutive chapters can each end on a strong sentence and still fail, because by the fourth the reader has learned the rhythm and stops being caught by it. **Before you approve an ending, read the previous two chapters' final paragraphs.**
+
+- **No pull type three chapters running.** If Ch.N-2 and Ch.N-1 both ended on OMINOUS PROMISE, Ch.N may not — regardless of how well it lands.
+- **Check the verb and the syntax, not just the type.** Two closers reaching for the same word (*shift*, *settle*, *move*), the same opener (*Somewhere above…*), or the same shape (long accumulating sentence → narrator pulls back → dramatic irony) are the same pull wearing different clothes. This is the failure mode that survives a type-based audit.
+- **The dramatic-irony closer — "he slept, certain that…", "she had no way of knowing" — is rationed to ONCE per act.** It feels earned every single time, which is exactly why it runs away. Spend it where it lands hardest and refuse it everywhere else.
+- **A pull may not step outside the POV character's perception.** In close third, an ending that reports what the antagonist believes while asleep in another building is the narrator talking, not the book. However good the sentence is, it breaks the POV lock — check `STATE.yaml` for a declared POV constraint and treat a breach as an automatic rewrite.
+
+When you rewrite a pull for sequencing rather than for quality, say so in the report: the author needs to know the previous ending was fine on its own and was changed for rhythm.
+
 ---
 
 ## HOW IT WORKS — STEP BY STEP
