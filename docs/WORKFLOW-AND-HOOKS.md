@@ -81,6 +81,12 @@ they are the shared pipeline, never book content. And it fails **open** — any 
 guard allows the call, because a guard that bricks a writing session is worse than one
 that misses a case.
 
+**One gotcha, the same shape as the agent-registry one below:** `PreToolUse` hooks are
+registered from `.claude/settings.json` when the session **starts**. The session that adds or
+edits a hook does not gain it — the change takes effect next session. In that first session,
+`tools/doctor.sh` is the enforcement; it catches stray artifacts after the fact, and it is
+what you run before committing.
+
 Turn it off in `.claude/pipeline.conf` with `BOOK_FOLDER_LAW="off"`. As with the git law,
 if you turn it off, update the root `CLAUDE.md` to match — it states the law in prose and
 the model reads it every session.

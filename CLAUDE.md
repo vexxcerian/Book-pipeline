@@ -64,6 +64,11 @@ assumes, and the failure shows up much later, at a gate that cannot run.
 Exempt (shared pipeline, not book content): `.claude/`, `docs/`, `tools/`,
 `books/_template/`, `books/_series-template/`.
 
+**Hook-registration gotcha (same shape as the agent-registry one).** `PreToolUse` hooks are
+registered from `.claude/settings.json` when the session STARTS. A session that edits
+`settings.json` does not gain the new hook — it takes effect NEXT session. So in the session
+where a guard is first added, `doctor.sh` is the enforcement: run it before committing.
+
 ## Git workflow
 
 Default: **work only on `main`** — no other branches, no PRs. Manuscripts don't merge, so a
