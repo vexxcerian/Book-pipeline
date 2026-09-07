@@ -1,0 +1,97 @@
+project:
+  title: "Valkyr: Book One"          # WORKING TITLE — see open_author_decisions
+  genre: "Military science fiction"
+  subgenre: "Black-ops conspiracy thriller (Halo universe)"
+  language: "English"
+  word_count_target: 90000
+  comp_titles:                        # PROVISIONAL — book-researcher has not run on this book
+    - "Halo: The Fall of Reach — Eric Nylund"
+    - "Halo: Glasslands — Karen Traviss (ONI black-ops register)"
+    - "The Bourne Identity — Robert Ludlum (buried-truth investigation shape)"
+  engagement_type: {primary: "empathy (55%)", secondary: "fascination (30%)", tertiary: "intellectual (15%)"}
+  premise: "A retired Spartan is handed back the only piece of his dead twin that survived — his mind, running as an AI — and rebuilds the black program that killed him, under the command of the man who pulled the trigger."
+  created: "2026-09-07"
+  updated: "2026-09-07"
+
+# RUN MODE. Two shapes:
+#   "genesis-from-idea"     — no prior draft; architect builds everything from the premise.
+#   "revise-existing-draft" — source prose staged in research/; the loop revises to the roadmap.
+adaptation:
+  mode: "revise-existing-draft"
+  canon_sources:
+    original_draft:   "research/original-draft.md"        # author's drafted Ch.1–5 (~14,600w)
+    series_roadmap:   "../SERIES-BIBLE.md"                # locked world/canon for both books
+    chapter_roadmap:  "research/author-act-outline.md"    # the author's binding act outline
+    source_pdf:       "research/valkyr-source.pdf"        # the original upload, unmodified
+  chapter_1_locked: true         # Ch.1 is the author's hand-finished voice benchmark — MATCH it, never rewrite it
+  chapters_to_produce: []        # set by the architect once the chapter count is chosen
+
+word_floor:
+  manuscript_min_words: 85000    # HARD FLOOR (book total) — the binding gate; adjust per book.
+  manuscript_target_words: 90000 # architect budgets Σ chapter targets ≥ this (see book-architect §0.5).
+  # NOTE: there is deliberately NO uniform per-chapter floor. Chapter lengths VARY WIDELY
+  # (~1,500–7,000w) by design — the book TOTAL is what's enforced, not each chapter. A
+  # per-chapter minimum would recreate the uniform ~5k/20-chapter "AI-neat" shape.
+  shortest_chapter_floor: 1200   # sanity floor for the SHORTEST allowed chapter (punch chapters ok; not a target)
+  drafted_words: 14629           # Ch.1–5 as staged in research/original-draft.md
+
+phase:
+  current: 1
+  status: "Source staged, canon transcribed, awaiting the architect. research/ holds the author's drafted Ch.1-5 (original-draft.md), the binding act outline (author-act-outline.md) and the original upload (valkyr-source.pdf); the locked series canon is at ../SERIES-BIBLE.md. NEXT: architect pass — foundation.md, outline.md, voice-dna.md, character-bible.md."
+  history:
+    - "2026-09-07 — folder scaffolded via tools/new-book.sh under the series books/valkyr/"
+    - "2026-09-07 — author's PDF staged into research/; series bible transcribed to ../SERIES-BIBLE.md"
+
+chapters:
+  total_planned: 0                     # set by the architect
+  drafted_by_author: [1, 2, 3, 4, 5]   # in research/original-draft.md, NOT yet in manuscript/chapters/
+  completed: []                        # nothing has passed the pipeline's gates yet
+  scores: {}
+
+genesis_score:
+  current_floor: 0.0
+  current_average: 0.0
+
+quality_gate:
+  chapters_passed: []
+  chapters_escalated: []
+
+guardrails:
+  - "Genesis Floor >= 8.5 per chapter (book-evaluator); polish-loop via book-editor (max 5)."
+  - "Style gate: python3 tools/style_check.py must stay clean (simile <=4/1k, em-dash <=~10/1k, no NEW cross-chapter repeated phrase, tics under ceiling). Add this book's deliberate motifs to ALLOWLIST in tools/style_check.py."
+  - "Word floor >= manuscript_min_words; verify with: wc -w manuscript/chapters/chapter-*.md."
+  - "Revise/expand the original draft to the roadmap; do NOT invent from scratch. Ch.1 is LOCKED as the voice benchmark — match it, never rewrite it."
+  - "SERIES CANON: ../SERIES-BIBLE.md outranks this file on anything shared. Everything marked (locked) there is settled — execute it, never re-litigate it."
+  - "POV is Vexx, close third, for the whole book. NO Jameson POV, NO Rx POV. The reader only ever knows Rx through a processed voice and what Vexx infers."
+  - "Book One ENDS ON SUSPICION, not revelation. The full memory unlock (stage 4) and the Jameson confrontation belong to Book Two and may not be reached here."
+  - "Memory-unlock ladder: stages 1 and 2 are ALREADY SPENT in the drafted Ch.3 and Ch.4. Book One's remaining unlock beat is stage 3 (Jameson present in person, proximity-triggered) and nothing beyond it."
+  - "NO rampancy clock, in any form, as a source of tension. Rx's instability is memory suppression, trauma and moral weight only."
+  - "Jameson is institutional, never cartoonish: warm, credible, and genuinely persuasive on the page. Any scene where the reader can see he is the villain is a failed scene."
+  - "Do not pin an exact in-universe calendar date. The era is early-to-mid Human-Covenant War, four years after Rx's death; that is as precise as the page gets."
+
+open_author_decisions:
+  - "Rights posture: is this Halo fan fiction, or an original property whose serial numbers get filed off later? This decides the entire book-packager/delivery path. Does NOT block drafting — but do not start any publishing work until it is answered."
+  - "The real title. 'Valkyr: Book One' is a placeholder."
+  - "How much do the drafted Ch.1-5 get touched? Ch.1 is locked as the voice benchmark. Ch.2-5 are drafted to the same standard but have not passed the pipeline's gates. Options: (a) promote all five as-is and start the loop at Ch.6, (b) run Ch.2-5 through evaluate-only and polish just what a gate flags, (c) full revise pass on Ch.2-5. Recommend (b)."
+  - "Is the shared AI donor-stock twist planted late in Book One, or held entirely for Book Two? The series bible allows either."
+  - "How visible is the Human-Covenant War? Currently: pressure the cell feels and scenery they pass, never a front they fight on. Confirm."
+  - "Corwin's function after Book One — returning witness in Book Two, or complete as he stands?"
+
+# character-bible.md is a REQUIRED architect deliverable (see docs/CHARACTER-BIBLE.md).
+character_bible:
+  created: false
+  entries: 0          # named characters carrying a voice card + DISTINCTNESS GUARANTEE
+  tic_bearers: []     # the <=2-3 characters allowed to LEAD with a verbal tic
+
+# SERIES — this book is part of a series. See docs/SERIES.md.
+series:
+  name: "Valkyr"
+  position: 1
+  bible: "../SERIES-BIBLE.md"        # canon shared by every book in the series
+  previous_book: ""    # set once an earlier book exists
+  carry_forward: [character-bible.md, ENTITY_STATE.yaml, voice-dna.md]
+
+decisions:
+  - "This book is a folder under books/valkyr/valkyr-book-1/ in the Books monorepo, using the shared root pipeline."
+  - "2026-09-07 — scaffolded through tools/new-book.sh per the BOOK FOLDER LAW; source material staged into research/ rather than worked on where it landed."
+revision_cycles: 0

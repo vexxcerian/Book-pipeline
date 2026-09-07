@@ -1,0 +1,30 @@
+# ebook.yaml — configuration for `python3 tools/make_epub.py books/<slug>`.
+# Every path is relative to the book folder. Anything omitted falls back to
+# STATE.yaml (title, premise → description, series name).
+
+# --- required -------------------------------------------------------------
+full_title: "<Book Title>"            # as it should appear on the title page + metadata
+author: "<Author Name>"               # dc:creator, the copyright line, "Also by"
+isbn: "9790000000000"                 # the EBOOK ISBN (not the print one) — hyphens optional
+isbn_hyphen: "979-0-0000-0000-0"      # the same ISBN, formatted for the copyright page
+cover: "delivery/cover/ebook-cover.jpg"   # RGB JPG, >=1600px short side, ratio ~1.414
+
+# --- usually worth setting ------------------------------------------------
+# manuscript: "manuscript/full-manuscript-r1.md"   # default: newest, or the one named by REVISION
+# out: "delivery/ebook/<Book-Title>.epub"          # default: derived from the title
+# publisher: "<Publisher or your imprint>"          # default: the author name
+# language: "en"
+# year: 2026                                        # copyright year; default: this year
+# subtitle: "Book One: <Subtitle>"                  # series entries usually want this
+# series_title: "<Series Name>"                     # default: STATE.yaml series.name
+# desc: "One-sentence description for the metadata."
+
+# --- optional front/back matter ------------------------------------------
+# dedication: "For <name> &#8212;<br/>may this have been worth it."
+# bio: "<Author> writes ... "                       # About the Author page
+# ack: "Thanks to ..."                              # Acknowledgments page
+# photo: "../_assets/author-photo.jpg"              # author photo on the bio page
+# also_by: |                                        # raw HTML, shown after the title page
+#   <p class="first"><strong>THE SERIES</strong><br/>
+#   <em>Book One: Title</em><br/>
+#   <em>Book Two: Title</em></p>
