@@ -134,10 +134,11 @@ that works is a full Linux desktop in **Google Cloud Shell** — XFCE plus real 
 streamed into the browser — with the book files pulled straight from your repo into that
 desktop's `~/Downloads`. The desktop's file picker works, and the device is just a screen.
 
-Worth keeping your own notes on this in the book folder once you've done it. One warning if
-you do: never commit a GitHub access token to the notes. Secret scanning auto-revokes any
-token pushed to a repo, so it would be dead within minutes anyway — mint a fresh one when
-you need it (it takes about 30 seconds).
+Keep your own notes on this in the book folder once you've done it — including the "an error
+has occurred during the upload" path, which is the one that wastes an afternoon. One warning
+if you do: never commit a GitHub access token to those notes. Secret scanning auto-revokes
+any token pushed to a repo, so it would be dead within minutes anyway — mint a fresh one when
+you need it (about 30 seconds).
 
 ## Before you approve for sale
 
