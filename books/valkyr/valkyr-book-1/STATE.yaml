@@ -24,7 +24,7 @@ adaptation:
     chapter_roadmap:  "research/author-act-outline.md"    # the author's binding act outline
     source_pdf:       "research/valkyr-source.pdf"        # the original upload, unmodified
   chapter_1_locked: true         # Ch.1 is the author's hand-finished voice benchmark — MATCH it, never rewrite it
-  chapters_to_produce: []        # set by the architect once the chapter count is chosen
+  chapters_to_produce: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
 
 word_floor:
   manuscript_min_words: 85000    # HARD FLOOR (book total) — the binding gate; adjust per book.
@@ -36,14 +36,15 @@ word_floor:
   drafted_words: 14629           # Ch.1–5 as staged in research/original-draft.md
 
 phase:
-  current: 1
-  status: "Source staged, canon transcribed, awaiting the architect. research/ holds the author's drafted Ch.1-5 (original-draft.md), the binding act outline (author-act-outline.md) and the original upload (valkyr-source.pdf); the locked series canon is at ../SERIES-BIBLE.md. NEXT: architect pass — foundation.md, outline.md, voice-dna.md, character-bible.md."
+  current: 2
+  status: "ARCHITECT PASS COMPLETE. foundation.md (12,110w), outline.md (19,665w, 26 chapters), voice-dna.md (4,228w) and character-bible.md (8,357w, 22 entries) are written, plus voice-bank/ with 13 samples. Macro-structure is four-movement kishotenketsu in four titled Parts, NOT three acts - see the Macro-Structure block at the top of outline.md for the reasoning. NEXT, and blocked on author decisions: (1) settle the AI-speech formatting convention, which the outline calls load-bearing; (2) decide how much Ch.2-5 get touched; (3) promote Ch.1-5 from research/original-draft.md into manuscript/chapters/ and re-measure the word count; then run the chapter loop from Ch.6. NOTHING has passed a quality gate yet and manuscript/chapters/ is still empty."
   history:
     - "2026-09-07 — folder scaffolded via tools/new-book.sh under the series books/valkyr/"
     - "2026-09-07 — author's PDF staged into research/; series bible transcribed to ../SERIES-BIBLE.md"
+    - "2026-09-07 — architect pass: foundation + outline + voice-dna + character-bible + voice bank"
 
 chapters:
-  total_planned: 0                     # set by the architect
+  total_planned: 26                    # kishotenketsu in 4 Parts; see outline.md Macro-Structure
   drafted_by_author: [1, 2, 3, 4, 5]   # in research/original-draft.md, NOT yet in manuscript/chapters/
   completed: []                        # nothing has passed the pipeline's gates yet
   scores: {}
@@ -75,13 +76,18 @@ open_author_decisions:
   - "How much do the drafted Ch.1-5 get touched? Ch.1 is locked as the voice benchmark. Ch.2-5 are drafted to the same standard but have not passed the pipeline's gates. Options: (a) promote all five as-is and start the loop at Ch.6, (b) run Ch.2-5 through evaluate-only and polish just what a gate flags, (c) full revise pass on Ch.2-5. Recommend (b)."
   - "Is the shared AI donor-stock twist planted late in Book One, or held entirely for Book Two? The series bible allows either."
   - "How visible is the Human-Covenant War? Currently: pressure the cell feels and scenery they pass, never a front they fight on. Confirm."
+  - "AI-SPEECH FORMATTING — decide before drafting Ch.6; the architect calls it load-bearing. The source PDF italicised unquoted AI dialogue and the italics did not survive transcription. Quoted speech alone measures 14.2%; true combined dialogue is ~28-30%. Recommended: keep the author's split — quoted for voices in the air, italic-unquoted for the interface — because it makes Rx typographically not-in-the-room."
+  - "EM-DASH GATE: the author's own prose runs 10.35 em-dashes per 1,000 words against a ~10/1k ceiling, and similes 3.38/1k against a 4/1k ceiling. That is the voice, not a defect. Decide whether to raise the threshold or widen the ALLOWLIST — do NOT sand Ch.2-5 to fit the gate. New chapters are budgeted at ~8/1k to leave book-level headroom."
+  - "The architect SPLIT the author's Act Three rather than altering it — the kishotenketsu turn sits inside it, no beat dropped or reordered. Confirm this is acceptable if the three acts were meant as inviolable section labels rather than beat groupings."
+  - "drafted_words: wc gives 14,768 on research/original-draft.md but STATE says 14,629. Kept at 14,629 for budgeting because under-counting adds margin; re-measure when Ch.1-5 are promoted into manuscript/chapters/."
   - "Corwin's function after Book One — returning witness in Book Two, or complete as he stands?"
 
 # character-bible.md is a REQUIRED architect deliverable (see docs/CHARACTER-BIBLE.md).
 character_bible:
-  created: false
-  entries: 0          # named characters carrying a voice card + DISTINCTNESS GUARANTEE
-  tic_bearers: []     # the <=2-3 characters allowed to LEAD with a verbal tic
+  created: true
+  entries: 22         # 20 speaking characters + Phantom and Holst recorded as never-speaking
+  tic_bearers: ["Rx", "Echo", "Spector"]   # 3 of the <=3 ceiling; one device each, none shared.
+  # Jameson deliberately has NO tic — a catchphrase would make him legible, which is a gate failure.
 
 # SERIES — this book is part of a series. See docs/SERIES.md.
 series:
