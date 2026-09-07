@@ -1285,6 +1285,15 @@ planned:
 # ============================================================================================
 conflicts:
   - id: "CF-01"
+    status: "RESOLVED"
+    resolved: >-
+      2026-09-07 — author's decision: the gap is FOUR YEARS. The drafted prose was edited to
+      match the locked series canon — 10 edits across ch-01, ch-02 and ch-03: every "four
+      months" became "four years", "I've been retired for a year" became "for four years",
+      "the first time in a year" became "in years", "muscle memory outlasting a year of
+      retirement" became "four years", and Rx's AI had "already been sitting for years"
+      rather than weeks. Ch.1's lock was lifted for this change only. The ch-03/ch-05 "four
+      years" lines were the correct ones and are untouched.
     severity: "structural"
     field: "timeline.gap_between_rx_death_and_vexx_recruitment"
     canonical_value:
@@ -1309,6 +1318,13 @@ conflicts:
       and roughly a year after Rx's death. Ch.3 and Ch.5 both assert four years, and locked
       series canon requires four years. Not resolved here.
   - id: "CF-02"
+    status: "RESOLVED"
+    resolved: >-
+      2026-09-07 — ch-04's "I documented it in the field" contradicted ch-03's deliberate
+      withholding, which is the beat the private investigation grows out of. Changed to "It
+      came back in his gear": Vexx's objection survives, and the fragments still reach
+      evidence lock with Corwin's kit, which is how he retrieves them from Voss later in
+      the same chapter.
     severity: "plot-load-bearing"
     field: "objects.corwins-fragments.documented_in_field_report"
     canonical_value:

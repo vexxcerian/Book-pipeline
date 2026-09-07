@@ -54,7 +54,7 @@ Goliath moved into the clearing behind her, crouching over a half-melted crate t
 
 Vexx felt something in his chest tighten at that, an old, familiar unease he didn’t yet have a reason to name. He said nothing, only nodded for Gaia to pick the trail back up.
 
-They tracked the trail for six hours through jungle that fought them for every meter — vines that had to be cut, ground that gave way without warning into sinkholes hidden under decades of leaf litter, the constant low static of insect life that made even Echo’s usually cheerful narration go clipped and businesslike. Vexx felt the old rhythms of fieldwork settle back into his body the way they always had, muscle memory outlasting a year of retirement without effort, the particular quiet focus of moving through hostile terrain with people he was starting, despite everything, to trust.
+They tracked the trail for six hours through jungle that fought them for every meter — vines that had to be cut, ground that gave way without warning into sinkholes hidden under decades of leaf litter, the constant low static of insect life that made even Echo’s usually cheerful narration go clipped and businesslike. Vexx felt the old rhythms of fieldwork settle back into his body the way they always had, muscle memory outlasting four years of retirement without effort, the particular quiet focus of moving through hostile terrain with people he was starting, despite everything, to trust.
 
 They found him a little after dusk.
 

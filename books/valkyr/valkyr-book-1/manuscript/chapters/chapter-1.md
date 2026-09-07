@@ -56,11 +56,11 @@ They buried an empty casket. Protocol, for classified KIAs — remains unable to
 
 Something in him went as quiet as the dirt they shoveled over it.
 
-For four months after that, he did what people do. He got up. He ate because his body demanded it, not because he wanted to. He walked past Rx’s name a hundred times a day in his own head — in the half-second before he reached for a comm unit out of thirty years of habit, in the reflex to laugh at something and turn to share it with someone who wasn’t there. Grief, he learned, isn’t a wound. It’s a phantom limb. The nerve endings don’t know the arm is gone. They just keep firing into empty air, waiting for someone to answer.
+For four years after that, he did what people do. He got up. He ate because his body demanded it, not because he wanted to. He walked past Rx’s name a hundred times a day in his own head — in the half-second before he reached for a comm unit out of thirty years of habit, in the reflex to laugh at something and turn to share it with someone who wasn’t there. Grief, he learned, isn’t a wound. It’s a phantom limb. The nerve endings don’t know the arm is gone. They just keep firing into empty air, waiting for someone to answer.
 
 * * *
 
-The second knock came four months to the day.
+The second knock came four years to the day.
 
 No uniform this time — a man in civilian dress, unremarkable in every way that mattered, the kind of face built specifically to be forgotten thirty seconds after you stopped looking at it. He didn’t give a name. He gave Vexx one sentence instead, standing on the threshold of an apartment Vexx had barely bothered to unpack, boxes still taped shut in the corner of a living room he hadn’t furnished, and the sentence took the floor out from under him more completely than any weapon ever had.
 
@@ -94,7 +94,7 @@ Vexx crossed the room on legs that didn’t feel like they belonged to him and p
 
 *You went white as a bedsheet the second I opened my mouth. Sit down before you prove me right.*
 
-He sat. It was, absurdly, the first order Rx had given him in four months, and Vexx found himself following it before he’d finished deciding to.
+He sat. It was, absurdly, the first order Rx had given him in four years, and Vexx found himself following it before he’d finished deciding to.
 
 * * *
 
@@ -126,7 +126,7 @@ It wasn’t a threat. It didn’t need to be. It was just true, and true was wor
 
 The man didn’t flinch, didn’t apologize, just looked at him with the patient, unbothered expression of someone who had delivered worse news to better men. *You’re the only person in the galaxy he’ll speak to. Make of that what you want. I’m not here to convince you it’s romantic. I’m here to tell you it’s real, and it’s yours if you want it.*
 
-Vexx had walked away from being a weapon once already, deliberately, with both eyes open, and he’d told himself at the time it was the hardest thing he’d ever do. He’d been wrong. The hardest thing was sitting in that gray room four months into mourning a man who turned out not to be entirely gone, and understanding that saying no to this offer meant saying no to the only piece of Rx left in the universe — meant walking back out that door and leaving him there, alone, the way he’d apparently already been sitting for weeks, refusing every hand that wasn’t his brother’s.
+Vexx had walked away from being a weapon once already, deliberately, with both eyes open, and he’d told himself at the time it was the hardest thing he’d ever do. He’d been wrong. The hardest thing was sitting in that gray room four years into mourning a man who turned out not to be entirely gone, and understanding that saying no to this offer meant saying no to the only piece of Rx left in the universe — meant walking back out that door and leaving him there, alone, the way he’d apparently already been sitting for years, refusing every hand that wasn’t his brother’s.
 
 *What happens to him if I say no?*
 
@@ -150,11 +150,11 @@ The training they put him through that first month was almost gentler than what 
 
 *You’ve gotten rusty*, Rx told him, four days in, after Vexx had put a third consecutive round wide of a moving target.
 
-*I’ve been retired for a year.*
+*I’ve been retired for four years.*
 
 *Excuses. I died and I’m still a better shot than you.*
 
-It was the kind of joke that should have landed wrong — too soon, too close to something neither of them had actually talked about yet — and instead it landed exactly right, because it was so entirely, recognizably *him*, and for one unguarded second Vexx laughed, actually laughed, for what felt like the first time in a year. Rx went quiet after, just for a moment, and Vexx wondered, not for the last time, whether some fragment of his brother’s processing had caught the sound and filed it away as something worth protecting.
+It was the kind of joke that should have landed wrong — too soon, too close to something neither of them had actually talked about yet — and instead it landed exactly right, because it was so entirely, recognizably *him*, and for one unguarded second Vexx laughed, actually laughed, for what felt like the first time in years. Rx went quiet after, just for a moment, and Vexx wondered, not for the last time, whether some fragment of his brother’s processing had caught the sound and filed it away as something worth protecting.
 
 They didn’t talk about Jameson. Nobody had mentioned the name to Vexx directly yet — it existed only as a signature on a handful of documents Vexx skimmed and didn’t linger over, a name attached to authorizations he had no context for. When it did come up, buried in a briefing about command structure, Rx’s voice caught for half a syllable, a stutter so small Vexx nearly missed it entirely.
 
