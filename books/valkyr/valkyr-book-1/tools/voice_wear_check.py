@@ -39,6 +39,25 @@ BOOK_WIDE_RETIRED = [
     r"\bnever once\b",
 ]
 
+# Narrow, auditable exemptions from Layer 1. This list targets phrases the MODEL
+# reaches for as a crutch; a human author sometimes uses the same words deliberately
+# and well, and a hard gate should not force an edit to their prose.
+#
+# Exemptions are PER CHAPTER and PER PATTERN on purpose — you must name both, so
+# nothing is ever silently excused book-wide. Quote the line in a comment and say
+# why it earns its place. Keep this list very short; if it is growing, the phrase
+# probably belongs off the retired list instead.
+#   RETIRED_EXEMPTIONS = { chapter_number: [r"\bpattern\b", ...] }
+RETIRED_EXEMPTIONS = {
+    # Ch.2, the author's own prose, introducing Jameson:
+    #   "going through a data pad with the unhurried attention of a man who had
+    #    never once in his career been kept waiting."
+    # The construction is emphatic and characterising — it is the sentence that
+    # establishes Jameson's institutional entitlement — not the model reaching for
+    # a crutch. Single occurrence, deliberate.
+    2: [r"\bnever once\b"],
+}
+
 # ---- Layer 3: optional named-device caps, keyed by POV character -------------
 # cap = max occurrences allowed PER CHAPTER for that character's POV chapters.
 # Extend freely; anything not listed is still covered by layer 2.
@@ -64,7 +83,8 @@ def read_pov_map():
             line = line.strip()
             if not line or line.startswith('#'):
                 continue
-            m = re.match(r'(\d+)\s*:\s*(.+)', line)
+            # Accept both "12: Name" and the documented "chapter-12: Name".
+            m = re.match(r'(?:chapter[-_\s]*)?(\d+)\s*:\s*(.+)', line, re.I)
             if m:
                 pov[int(m.group(1))] = m.group(2).strip()
     return pov
@@ -122,10 +142,16 @@ def main():
     print("\n[1] Book-wide retired phrases (hard gate):")
     for f in files:
         text = load_text(f)
+        n = chap_num(f)
+        exempt = RETIRED_EXEMPTIONS.get(n, [])
         for pat in BOOK_WIDE_RETIRED:
             hits = re.findall(pat, text, re.I)
-            if hits:
-                failures.append(f"  Ch.{chap_num(f)}: RETIRED phrase {pat!r} appears {len(hits)}x")
+            if not hits:
+                continue
+            if pat in exempt:
+                print(f"  Ch.{n}: {pat!r} x{len(hits)} — EXEMPT (declared in RETIRED_EXEMPTIONS)")
+                continue
+            failures.append(f"  Ch.{n}: RETIRED phrase {pat!r} appears {len(hits)}x")
     if not any("RETIRED phrase" in x for x in failures):
         print("  clean — no retired phrases anywhere.")
     else:

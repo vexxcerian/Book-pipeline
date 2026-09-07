@@ -1,11 +1,19 @@
 # VALKYR — Book One: existing draft (Chapters 1–5)
 
+> ⚠️ **SUPERSEDED — this is the staging copy, not the live text.**
+> The authoritative text is now `manuscript/chapters/chapter-1.md` … `chapter-5.md`,
+> re-extracted from the PDF with the author's **italics recovered from the font layer**
+> (233 italic runs — Rx and the AIs speak in unquoted italics; this copy lost all of them)
+> and with the paragraph breaks correctly restored. **Edit the manuscript, never this file.**
+> Kept as the record of what was originally staged, and because its plain text is easier to
+> diff. The unmodified source is at `research/valkyr-source.pdf`.
+
 Source: the author's `valkyrbook1andbible.pdf`, staged 2026-09-07.
 Reconstructed from the PDF's text layer, so paragraph breaks are faithful but not
 byte-perfect, and the original italics are not marked up. The WORDS are the author's;
 treat this as the voice benchmark and the beat source, not as final formatting.
 
-Approx. 14,600 words across five chapters (3,890 / 4,000 / 2,948 / 2,012 / 1,914).
+Approx. 14,630 words (wc -w) across five chapters.
 
 ---
 

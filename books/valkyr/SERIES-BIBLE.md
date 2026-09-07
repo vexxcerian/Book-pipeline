@@ -215,6 +215,23 @@ from records — he learns it because Spector lets it slip.** (Delivered in Book
 | Reyes | 1– | Alive, in mandatory psych evaluation | — | Spared in Ch. 4 because Paladin pushed back |
 | Voss | 1– | Alive; mid-level liaison | That Vexx pulled Corwin's fragments from evidence lock, and chose not to stop him | The one institutional ally, unexplained |
 
+**Introduced by the Book One outline, not yet on the page** (planned for Ch.6–26; they become
+series canon the moment their chapter is drafted):
+
+| Name | Introduced | Function | Fate |
+|---|---|---|---|
+| Ives | Ch.12–13 | A Spartan the cell assesses and **clears** | Dead in Ch.14, filed as hostile contact. The cell's own clean report is what kills him. |
+| Dessen | Ch.10 | Internal Compliance — audits the cell's evidence handling | Survives; pressure from the *system*, deliberately **not** from Jameson |
+| Merrick | Ch.8 | A Spartan who genuinely IS coming apart | The baseline case: what a Choosing costs when the system is right |
+| Beck | Ch.17 | The assessment Vexx deliberately corrupts to keep a man alive | Survives; the cost is Vexx's descent |
+| Holst, D. | — | A name in the records, never speaks | Never given a voice — recorded here so no later book hands him one |
+| **Ashgrove** | Ch.20 | Place name | Becomes series canon when Ch.20 is drafted |
+| **RECLAMATION** | Ch.7 (unremarked) → Ch.15 (solved) | The logistics tag the **second cell** files under | The book's *ten*; Part Three's title |
+
+**The second cell is series-level canon from Book One onward.** Vexx's cell *assesses*; a
+separate, invisible cell *disposes*. It is derived from the locked rule that operators work in
+isolated cells with no contact between them — Book Two may not contradict it.
+
 **Voice carry-over rule.** A returning character keeps the voice card from the previous book.
 Copy it forward into the new book's `character-bible.md` and evolve it deliberately (a book of
 grief changes a voice); do NOT re-invent it from scratch, and do NOT let a new book hand them a
@@ -238,6 +255,13 @@ tic they never had.
 | Corwin | "Operator Corwin" | Corwyn |
 | Reyes | — | Reyez |
 | Voss | — | Vos |
+| Ives | — | Ivies, Ive |
+| Dessen | — | Dessin, Desen |
+| Merrick | — | Merrik, Meric |
+| Beck | — | Bec |
+| Holst, D. | "Holst" | Holtz, Holste |
+| Ashgrove | — | Ash Grove, Ashgrave |
+| RECLAMATION | "the tag", "the routing tag" (in narration) | Reclaimation |
 | SPARTAN-II | Spartan (as a common noun on the page: "a Spartan") | Spartan-2, SPARTAN II |
 | UNSC / ONI | — | U.N.S.C., O.N.I. |
 

@@ -25,7 +25,11 @@ TIC_WORDS = [
     "very", "almost", "perhaps", "actually", "felt like", "a beat",
     "for a moment", "for a long moment", "something like", "as if", "as though",
 ]
-# Distinctive author fingerprints flagged in the session log to keep rare.
+# Distinctive fingerprints flagged in a PIPELINE session log to keep rare. These are
+# constructions the MODEL over-reaches for — not defects in ordinary English. Several
+# ("the kind of", "not because") are common human phrasing, so a hand-written chapter
+# will trip them innocently: give those chapters an allowance via
+# AUTHOR_CEILINGS["fingerprint"] rather than editing an author's prose to satisfy this.
 FINGERPRINT_PHRASES = [
     "there and gone", "the kind of", "not because", "deep water",
     "like water", "drew in", "made herself a smaller target",
@@ -48,6 +52,32 @@ ALLOWLIST = [
     # Add THIS book's deliberate recurring motifs / canon terms here (string or (string, cap)).
 ]
 
+# --- AUTHOR-DRAFTED CHAPTERS (per-book) --------------------------------------
+# Several ceilings below exist to catch a MACHINE's tells: em-dash spray, the
+# "the way [x]" explanatory tic, simile reaching. A human author's SIGNATURE use of
+# the same construction is not that defect, and sanding it out to satisfy a gate
+# damages the book — the gate is supposed to protect the voice, not flatten it.
+#
+# So: list the chapters the author wrote by hand, and give them the ceilings that
+# author's voice actually sits at (measure first — do not guess). Chapters the
+# PIPELINE writes stay on the strict defaults, which is where the anti-AI value is.
+# Leave AUTHOR_DRAFTED empty for a book with no hand-written chapters.
+AUTHOR_DRAFTED = set()          # e.g. {1, 2, 3}
+AUTHOR_CEILINGS = {             # applied ONLY to chapters listed above
+    # "simile_per1k": 5.0,
+    # "emdash_per1k": 12.0,     # density ceiling; replaces the absolute em-dash check
+    # "adverb_per1k": 20.0,
+    # "theway": 6,
+}
+
+
+def _ceiling(n, key, default):
+    """The ceiling for chapter n: the author's calibration if it is a drafted chapter."""
+    if n in AUTHOR_DRAFTED and key in AUTHOR_CEILINGS:
+        return AUTHOR_CEILINGS[key]
+    return default
+
+
 def _motif_caps(default):
     """Normalize ALLOWLIST into {phrase_lower: cap} and a list of allow-substrings."""
     caps = {}
@@ -62,10 +92,19 @@ def _motif_caps(default):
 NGRAM_MIN, NGRAM_MAX = 4, 6
 # stopword-only n-grams are noise; require at least this many "content" words
 STOP = set("the a an and or but of to in on at for with as is was were be been "
-           "her his its their my your she he it they i you we him them me".split())
+           "her his its their my your she he it they i you we him them me "
+           "that this there here what when which who whom had have has do did does "
+           "not no so if then than out up down off over into about back "
+           "don't didn't wasn't isn't hasn't hadn't couldn't wouldn't shouldn't "
+           "won't aren't weren't doesn't can't it's i'm i'd i'll he'd she'd they'd "
+           "you're we're they're he's she's".split())
 
 
 def words(text):
+    # Normalize the typographic apostrophe first. Without this, WORD splits "don't"
+    # into "don" + "t", and the n-gram repeat check then floods with function-word
+    # strings ("you don t have to", "i m not going to") that are not repetition at all.
+    text = text.replace("\u2019", "'").replace("\u02bc", "'")
     return [w.lower() for w in WORD.findall(text)]
 
 
@@ -88,9 +127,17 @@ def scan():
                     help="per-1,000-words ceiling for any single tic word")
     ap.add_argument("--max-emdash", type=int, default=4,
                     help="ABSOLUTE em-dashes allowed per chapter (AI tell — keep near zero)")
+    ap.add_argument("--max-emdash-per1k", type=float, default=None,
+                    help="em-dashes per 1,000 words ceiling. When set (here or via "
+                         "AUTHOR_CEILINGS) it REPLACES the absolute count for that chapter — "
+                         "fairer across chapters whose lengths vary widely by design")
     ap.add_argument("--max-theway", type=int, default=2,
                     help="ABSOLUTE 'the way [x]' explanatory tic per chapter (pipeline "
                          "fingerprint — HARD CAP 2, and stagger: aim 0-1 in alternating chapters)")
+    ap.add_argument("--max-fingerprint", type=int, default=1,
+                    help="occurrences of a FINGERPRINT_PHRASES entry allowed per chapter "
+                         "before it is flagged (author-drafted chapters can raise this via "
+                         "AUTHOR_CEILINGS['fingerprint'])")
     ap.add_argument("--motif-cap", type=int, default=MOTIF_CAP_DEFAULT,
                     help="book-wide occurrence cap for any ALLOWLIST motif (author rule: "
                          "no signature tic-phrase recurs more than this; per-entry (phrase,N) overrides)")
@@ -127,12 +174,18 @@ def scan():
         emdash = text.count("—")
 
         sim1k, adv1k, em1k = per1k(similes), per1k(adverbs), per1k(emdash)
+        max_simile = _ceiling(n, "simile_per1k", args.max_simile)
+        max_adverb = _ceiling(n, "adverb_per1k", args.max_adverb)
+        max_em1k = _ceiling(n, "emdash_per1k", args.max_emdash_per1k)
         flags = []
-        if sim1k > args.max_simile:
-            flags.append(f"SIMILE {sim1k}/1k > {args.max_simile}"); problems += 1
-        if adv1k > args.max_adverb:
-            flags.append(f"ADVERB {adv1k}/1k > {args.max_adverb}"); problems += 1
-        if emdash > args.max_emdash:
+        if sim1k > max_simile:
+            flags.append(f"SIMILE {sim1k}/1k > {max_simile}"); problems += 1
+        if adv1k > max_adverb:
+            flags.append(f"ADVERB {adv1k}/1k > {max_adverb}"); problems += 1
+        if max_em1k is not None:
+            if em1k > max_em1k:
+                flags.append(f"EM-DASH {em1k}/1k > {max_em1k} ({emdash} in chapter)"); problems += 1
+        elif emdash > args.max_emdash:
             flags.append(f"EM-DASH {emdash}/chapter > {args.max_emdash} (density {em1k}/1k)"); problems += 1
 
         low = text.lower()
@@ -142,16 +195,18 @@ def scan():
                 motif_book_counts[phrase] += c
                 motif_chapters[phrase].add(n)
         theway = len(re.findall(r"\bthe (?:same )?way\b", low))
-        if theway > args.max_theway:
-            flags.append(f"THE-WAY ×{theway}/chapter > {args.max_theway} (pipeline fingerprint)"); problems += 1
+        max_theway = _ceiling(n, "theway", args.max_theway)
+        if theway > max_theway:
+            flags.append(f"THE-WAY ×{theway}/chapter > {max_theway} (pipeline fingerprint)"); problems += 1
 
         tic_hits = []
         for t in TIC_WORDS:
             c = len(re.findall(r"\b"+re.escape(t)+r"\b", low))
             if c and per1k(c) > args.tic_ratio:
                 tic_hits.append(f"{t}×{c} ({per1k(c)}/1k)"); problems += 1
+        max_fp = _ceiling(n, "fingerprint", args.max_fingerprint)
         fp_hits = [f"'{p}'×{low.count(p)}" for p in FINGERPRINT_PHRASES
-                   if low.count(p) > 1]
+                   if low.count(p) > max_fp]
 
         print(f"\nCh{n:>2}  {wc} words | simile {sim1k}/1k | adverb {adv1k}/1k | em-dash {emdash} ({per1k(emdash)}/1k)")
         if flags:    print("   CEILING:", "; ".join(flags))

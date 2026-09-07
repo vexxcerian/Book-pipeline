@@ -33,20 +33,26 @@ word_floor:
   # (~1,500–7,000w) by design — the book TOTAL is what's enforced, not each chapter. A
   # per-chapter minimum would recreate the uniform ~5k/20-chapter "AI-neat" shape.
   shortest_chapter_floor: 1200   # sanity floor for the SHORTEST allowed chapter (punch chapters ok; not a target)
-  drafted_words: 14629           # Ch.1–5 as staged in research/original-draft.md
+  drafted_words: 14630           # Ch.1-5 by `wc -w` on manuscript/chapters/ — the SAME tool the
+                                 # floor gate and doctor.sh use, so this is the authoritative figure.
+                                 # Beware: Python's .split() reports 14,779 because it counts a
+                                 # standalone " — " as a word and wc does not. The gap is exactly the
+                                 # em-dash count. Always quote wc -w for anything touching the floor.
 
 phase:
   current: 2
-  status: "ARCHITECT PASS COMPLETE. foundation.md (12,110w), outline.md (19,665w, 26 chapters), voice-dna.md (4,228w) and character-bible.md (8,357w, 22 entries) are written, plus voice-bank/ with 13 samples. Macro-structure is four-movement kishotenketsu in four titled Parts, NOT three acts - see the Macro-Structure block at the top of outline.md for the reasoning. NEXT, and blocked on author decisions: (1) settle the AI-speech formatting convention, which the outline calls load-bearing; (2) decide how much Ch.2-5 get touched; (3) promote Ch.1-5 from research/original-draft.md into manuscript/chapters/ and re-measure the word count; then run the chapter loop from Ch.6. NOTHING has passed a quality gate yet and manuscript/chapters/ is still empty."
+  status: "ARCHITECT PASS COMPLETE AND CH.1-5 PROMOTED. foundation.md (12,110w), outline.md (19,665w, 26 chapters), voice-dna.md (4,228w) and character-bible.md (8,357w, 22 entries) are written, plus voice-bank/ with 13 samples. Macro-structure is four-movement kishotenketsu in four titled Parts, NOT three acts - see the Macro-Structure block at the top of outline.md for the reasoning. manuscript/chapters/ now holds Ch.1-5 (14,779w) with the author's italics restored from the PDF font layer, and style_check + grammar_check + voice_wear_check all pass clean. NEXT: run the chapter loop from Ch.6 (write -> dialogue-polish -> hook-craft -> disruptor -> evaluate -> gate). NOTE: Ch.1-5 have passed the MECHANICAL gates only - none has been through book-evaluator, so there is no Genesis score for them yet; that is the evaluate-only pass the author still owes a decision on."
   history:
     - "2026-09-07 — folder scaffolded via tools/new-book.sh under the series books/valkyr/"
     - "2026-09-07 — author's PDF staged into research/; series bible transcribed to ../SERIES-BIBLE.md"
     - "2026-09-07 — architect pass: foundation + outline + voice-dna + character-bible + voice bank"
+    - "2026-09-07 — Ch.1-5 promoted into manuscript/chapters/, re-extracted from the PDF with the author's italics recovered from the font layer; all three mechanical gates calibrated and passing"
 
 chapters:
   total_planned: 26                    # kishotenketsu in 4 Parts; see outline.md Macro-Structure
-  drafted_by_author: [1, 2, 3, 4, 5]   # in research/original-draft.md, NOT yet in manuscript/chapters/
-  completed: []                        # nothing has passed the pipeline's gates yet
+  drafted_by_author: [1, 2, 3, 4, 5]   # PROMOTED into manuscript/chapters/ with the author's italics restored
+  mechanical_gates_passed: [1, 2, 3, 4, 5]   # style + grammar + voice-wear all clean
+  completed: []                        # none have been through book-evaluator — no Genesis score yet
   scores: {}
 
 genesis_score:
@@ -76,10 +82,10 @@ open_author_decisions:
   - "How much do the drafted Ch.1-5 get touched? Ch.1 is locked as the voice benchmark. Ch.2-5 are drafted to the same standard but have not passed the pipeline's gates. Options: (a) promote all five as-is and start the loop at Ch.6, (b) run Ch.2-5 through evaluate-only and polish just what a gate flags, (c) full revise pass on Ch.2-5. Recommend (b)."
   - "Is the shared AI donor-stock twist planted late in Book One, or held entirely for Book Two? The series bible allows either."
   - "How visible is the Human-Covenant War? Currently: pressure the cell feels and scenery they pass, never a front they fight on. Confirm."
-  - "AI-SPEECH FORMATTING — decide before drafting Ch.6; the architect calls it load-bearing. The source PDF italicised unquoted AI dialogue and the italics did not survive transcription. Quoted speech alone measures 14.2%; true combined dialogue is ~28-30%. Recommended: keep the author's split — quoted for voices in the air, italic-unquoted for the interface — because it makes Rx typographically not-in-the-room."
-  - "EM-DASH GATE: the author's own prose runs 10.35 em-dashes per 1,000 words against a ~10/1k ceiling, and similes 3.38/1k against a 4/1k ceiling. That is the voice, not a defect. Decide whether to raise the threshold or widen the ALLOWLIST — do NOT sand Ch.2-5 to fit the gate. New chapters are budgeted at ~8/1k to leave book-level headroom."
+  - "RESOLVED 2026-09-07 (reversible): AI-speech formatting. The italics were recovered from the PDF's font layer rather than guessed, so the author's original convention is preserved exactly — unquoted italics for Rx and the AIs speaking through the interface, ordinary quotes for voices in the room. 233 italic runs restored across Ch.1-5."
+  - "RESOLVED 2026-09-07 (reversible): the mechanical gates were CALIBRATED to the author's measured voice rather than the prose being edited to fit them. See tools/style_check.py AUTHOR_DRAFTED/AUTHOR_CEILINGS and tools/voice_wear_check.py RETIRED_EXEMPTIONS. Ch.6-26 stay on the strict pipeline defaults — that is where the anti-AI value of those ceilings lives. Ch.2 is the densest chapter in the book (simile 7.0/1k, em-dash 11.1/1k) and is worth the author's eye even though it now passes."
   - "The architect SPLIT the author's Act Three rather than altering it — the kishotenketsu turn sits inside it, no beat dropped or reordered. Confirm this is acceptable if the three acts were meant as inviolable section labels rather than beat groupings."
-  - "drafted_words: wc gives 14,768 on research/original-draft.md but STATE says 14,629. Kept at 14,629 for budgeting because under-counting adds margin; re-measure when Ch.1-5 are promoted into manuscript/chapters/."
+  - "RESOLVED 2026-09-07: drafted_words is 14,630 by wc -w on the promoted chapters — which vindicates the architect's original 14,629 (off by one, not by 150). The competing 14,768/14,779 figures were Python .split() counts, which count a standalone em-dash as a word; wc does not, and wc is what the floor gate uses. The outline's budget of 95,829 stands unchanged."
   - "Corwin's function after Book One — returning witness in Book Two, or complete as he stands?"
 
 # character-bible.md is a REQUIRED architect deliverable (see docs/CHARACTER-BIBLE.md).
