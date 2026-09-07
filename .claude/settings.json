@@ -20,6 +20,17 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|.*create_pull_request.*|.*enable_pr_auto_merge.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/enforce-main-law.sh"
+          }
+        ]
+      }
     ]
   }
 }

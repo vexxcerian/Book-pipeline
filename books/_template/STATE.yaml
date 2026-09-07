@@ -10,7 +10,9 @@ project:
   created: "<YYYY-MM-DD>"
   updated: "<YYYY-MM-DD>"
 
-# ADAPTED RUN — revise/expand an existing draft, NOT genesis-from-idea.
+# RUN MODE. Two shapes:
+#   "genesis-from-idea"     — no prior draft; architect builds everything from the premise.
+#   "revise-existing-draft" — source prose staged in research/; the loop revises to the roadmap.
 adaptation:
   mode: "revise-existing-draft"
   canon_sources:
@@ -33,7 +35,12 @@ word_floor:
 
 phase:
   current: 1
-  status: "scaffolded — awaiting source material in research/, then architect"
+  # ⚠️ PLACEHOLDER — this default is a lie until you update it. The moment source
+  # material lands in research/ (or elsewhere), OR the architect runs, REWRITE this
+  # line to name the actual staged material and the true next step. Do NOT trust a
+  # status that still reads "TEMPLATE DEFAULT" — check the files (research/,
+  # foundation.md/outline.md at root OR under project/, feedback/progress.md).
+  status: "TEMPLATE DEFAULT (update me) — freshly scaffolded, no source staged yet; awaiting source material in research/, then architect"
   history: []
 
 chapters:
@@ -59,6 +66,20 @@ guardrails:
 open_author_decisions:
   - "<list any plot/character decisions the author must make before drafting>"
 
+# character-bible.md is a REQUIRED architect deliverable (see docs/CHARACTER-BIBLE.md).
+character_bible:
+  created: false
+  entries: 0          # named characters carrying a voice card + DISTINCTNESS GUARANTEE
+  tic_bearers: []     # the <=2-3 characters allowed to LEAD with a verbal tic
+
+# SERIES — delete this block for a standalone book. See docs/SERIES.md.
+# series:
+#   name: "<Series Name>"
+#   position: 1                       # publication order
+#   bible: "../SERIES-BIBLE.md"       # canon shared by every book in the series
+#   previous_book: "../<prev-slug>"   # carry forward character-bible.md + ENTITY_STATE.yaml
+#   carry_forward: [character-bible.md, ENTITY_STATE.yaml, voice-dna.md]
+
 decisions:
-  - "This book is a folder-per-book genesis project under book/genesis/<slug>/."
+  - "This book is a folder under books/<slug>/ in the Books monorepo, using the shared root pipeline."
 revision_cycles: 0

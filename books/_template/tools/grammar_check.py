@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Saeren Chronicles — mechanical grammar / line-craft gate.
+Mechanical grammar / line-craft gate (per-book copy).
 
 Built 2026-06-29 after reviewer Eilidh Locherty's Book One Ch.1 line-edit exposed a
 class of slips the style/rhythm gates do NOT catch: tense/verb-form endings, doubled

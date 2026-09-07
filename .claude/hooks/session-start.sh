@@ -1,13 +1,14 @@
 #!/bin/bash
-# SessionStart hook: install the Best Seller Studio agents into ~/.claude/agents/
-# and set the default model to Opus so all sub-agents run on the best model.
+# SessionStart hook for the Books pipeline.
 #
-# IMPORTANT: Do NOT use `git clone` for BSS — the environment's git rewrite proxy
-# intercepts all github.com git clones and limits them to this repo only (403).
-# Use `curl` to fetch the tarball directly via the HTTPS egress proxy instead.
-# BSS default branch is `master` (not main).
+# Does four things, all idempotent and non-interactive:
+#   1. Enforces WORKFLOW_LAW (default: main-only) — see .claude/pipeline.conf.
+#   2. Installs build/lint dependencies the manuscript + PDF tooling needs.
+#   3. Installs the 12 book-* agents into ~/.claude/agents (from THIS repo by default).
+#   4. Installs the Gemini CLI when a key is present, for cross-model second opinions.
 #
-# Idempotent and non-interactive. Safe to run on every session start.
+# Everything it does is configurable in .claude/pipeline.conf — a fork that wants a
+# branch/PR workflow sets WORKFLOW_LAW="off" there and this hook stops policing git.
 set -euo pipefail
 
 # Only run in the remote (Claude Code on the web) environment.
@@ -15,20 +16,59 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0
 fi
 
-BSS_TARBALL_URL="https://codeload.github.com/felipelobomotta-blip/best-seller-studio/tar.gz/refs/heads/master"
-BSS_DIR="/tmp/bss"
-AGENTS_DIR="$HOME/.claude/agents"
+REPO="${CLAUDE_PROJECT_DIR:-$PWD}"
 
-mkdir -p "$AGENTS_DIR"
-
-# 0) Set default model to Opus for all sub-agent dispatches.
-#    Without this, general-purpose agents default to Sonnet.
-if [ -n "${CLAUDE_ENV_FILE:-}" ]; then
-  echo 'export ANTHROPIC_MODEL=claude-opus-4-8' >> "$CLAUDE_ENV_FILE"
-  echo "Set ANTHROPIC_MODEL=claude-opus-4-8 for this session."
+# ---------------------------------------------------------------------------
+# 0) Load repo config (with defaults, so a missing file is never fatal).
+# ---------------------------------------------------------------------------
+WORKFLOW_LAW="main-only"
+AGENT_SOURCE="repo"
+PIPELINE_MODEL="claude-opus-4-8"
+PIPELINE_MAXTURNS="120"
+if [ -f "$REPO/.claude/pipeline.conf" ]; then
+  # shellcheck disable=SC1091
+  source "$REPO/.claude/pipeline.conf"
 fi
 
-# 1) Manuscript-build toolchain. The PDF pipeline needs these in every fresh container.
+# ============================================================================
+# 1) ⚖️ WORKFLOW LAW — main ONLY (when enabled). No branches, no PRs.
+# If this session starts on any branch other than main, switch to main and DELETE
+# the stray branch. Uncommitted work is carried across via a stash pop so nothing
+# in the working tree is lost.
+# ============================================================================
+if [ "$WORKFLOW_LAW" = "main-only" ] && git -C "$REPO" rev-parse --git-dir >/dev/null 2>&1; then
+  CUR="$(git -C "$REPO" rev-parse --abbrev-ref HEAD 2>/dev/null || echo)"
+  if [ -n "$CUR" ] && [ "$CUR" != "main" ] && [ "$CUR" != "HEAD" ]; then
+    echo "⚖️  WORKFLOW LAW: session started on '$CUR' — switching to main and deleting the branch."
+    if git -C "$REPO" stash push -u -m "law-autostash" >/dev/null 2>&1; then STASHED=1; else STASHED=0; fi
+    git -C "$REPO" fetch origin main >/dev/null 2>&1 || true
+    if git -C "$REPO" show-ref --verify --quiet refs/heads/main; then
+      git -C "$REPO" checkout main >/dev/null 2>&1 || true
+    else
+      git -C "$REPO" checkout -B main origin/main >/dev/null 2>&1 || true
+    fi
+    [ "$STASHED" = "1" ] && git -C "$REPO" stash pop >/dev/null 2>&1 || true
+    git -C "$REPO" branch -D "$CUR" >/dev/null 2>&1 || true
+    echo "   Now on main; stray branch '$CUR' deleted (uncommitted work carried over)."
+  fi
+fi
+
+AGENTS_DIR="$HOME/.claude/agents"
+REPO_AGENTS="$REPO/.claude/agents"
+mkdir -p "$AGENTS_DIR"
+
+# ---------------------------------------------------------------------------
+# 2) Default model for sub-agent dispatches. Without this, general-purpose agents
+#    default to a smaller model than the pipeline is written for.
+# ---------------------------------------------------------------------------
+if [ -n "${CLAUDE_ENV_FILE:-}" ] && [ -n "$PIPELINE_MODEL" ]; then
+  echo "export ANTHROPIC_MODEL=$PIPELINE_MODEL" >> "$CLAUDE_ENV_FILE"
+  echo "Set ANTHROPIC_MODEL=$PIPELINE_MODEL for this session."
+fi
+
+# ---------------------------------------------------------------------------
+# 3) Manuscript-build toolchain. The PDF pipeline needs these in every fresh container.
+# ---------------------------------------------------------------------------
 if ! python3 -c 'import reportlab' >/dev/null 2>&1; then
   echo "Installing Python build deps (reportlab, pillow)..."
   pip install --quiet reportlab pillow >/dev/null 2>&1 \
@@ -42,11 +82,9 @@ if ! command -v gs >/dev/null 2>&1; then
     || echo "warn: ghostscript install failed; make_pdfx.sh (PDF/X-1a) will be unavailable." >&2
 fi
 
-# 1b) grammar_check.py tier-2 (tense/agreement/dangling modifiers via LanguageTool).
-#     Tier 1 of grammar_check.py is dependency-free and always gates; tier 2 is the optional
-#     --languagetool layer. Install the lightweight Python package here so it's ready; the
-#     ~250MB LanguageTool engine downloads lazily on first `--languagetool` use (NOT here, to
-#     keep session start fast). Needs Java, which the environment already provides.
+# grammar_check.py tier-2 (tense/agreement/dangling modifiers via LanguageTool).
+# Tier 1 is dependency-free and always gates; tier 2 is the optional --languagetool layer.
+# The ~250MB LanguageTool engine downloads lazily on first use (NOT here — keeps startup fast).
 if ! python3 -c 'import language_tool_python' >/dev/null 2>&1; then
   echo "Installing language-tool-python (grammar_check.py tier-2; engine downloads on first use)..."
   pip install --quiet language-tool-python >/dev/null 2>&1 \
@@ -54,86 +92,113 @@ if ! python3 -c 'import language_tool_python' >/dev/null 2>&1; then
     || echo "warn: language-tool-python install failed; grammar_check.py --languagetool unavailable (tier 1 still gates)." >&2
 fi
 
-# 2) Fetch Best Seller Studio via curl tarball (git clone is 403-blocked by env proxy).
-#    Retry up to 3 times for flaky network on container start.
-BSS_READY=false
-if [ -f "$BSS_DIR/agents/book-writer.md" ]; then
-  BSS_READY=true
-  echo "BSS already present at $BSS_DIR, skipping download."
-else
-  for attempt in 1 2 3; do
-    rm -rf "$BSS_DIR"
-    mkdir -p "$BSS_DIR"
-    if curl -sSL --cacert /root/.ccr/ca-bundle.crt \
-        -o /tmp/bss.tar.gz \
-        "$BSS_TARBALL_URL" 2>/dev/null \
-       && tar xzf /tmp/bss.tar.gz -C "$BSS_DIR" --strip-components=1 2>/dev/null \
-       && [ -f "$BSS_DIR/agents/book-writer.md" ]; then
-      BSS_READY=true
-      echo "BSS downloaded and extracted (attempt $attempt)."
-      break
-    fi
-    echo "warn: BSS download attempt $attempt failed; retrying..." >&2
-    sleep $((attempt * 2))
-  done
-fi
-
-if [ "$BSS_READY" != "true" ]; then
-  echo "ERROR: could not fetch Best Seller Studio; book-* agents will be missing." >&2
-fi
-
-# 3) Copy the 8 core book-* agents as-is.
-if [ "$BSS_READY" = "true" ]; then
-  cp "$BSS_DIR"/agents/*.md "$AGENTS_DIR"/
-fi
-
-# 4) Build the 4 skill-based roles as agents (add tools/model/maxTurns frontmatter,
-#    strip the original SKILL.md YAML frontmatter, keep its description + body).
-make_agent () {
-  local name="$1" src="$2" desc="$3"
-  [ -f "$src" ] || { echo "warn: missing $src, skipping $name" >&2; return 0; }
-  {
-    printf -- '---\n'
-    printf 'name: %s\n' "$name"
-    printf 'description: %s\n' "$desc"
-    printf 'tools: Read, Write, Edit, Grep, Glob, Bash\n'
-    printf 'model: opus\n'
-    printf 'maxTurns: 120\n'
-    printf -- '---\n\n'
-    awk 'NR==1&&$0=="---"{f=1;next} f&&$0=="---"{f=0;next} !f{print}' "$src"
-  } > "$AGENTS_DIR/$name.md"
-}
-
-if [ "$BSS_READY" = "true" ]; then
-  make_agent entity-tracker "$BSS_DIR/skills/optional/entity-tracker/SKILL.md" \
-    "Builds and maintains ENTITY_STATE.yaml — the persistent structured database of every character, location, object, organization, timeline entry, and world rule in the manuscript. Operates in BUILD mode (initial extraction) and UPDATE mode (incremental tracking). The single source of truth other roles consume instead of rebuilding entity databases."
-  make_agent continuity-guardian "$BSS_DIR/skills/optional/continuity-guardian/SKILL.md" \
-    "Cross-manuscript consistency auditor. Runs after every 3-5 chapter batch and after full completion. Catches continuity errors, information-flow violations, timeline contradictions, and orphaned plot threads that individual chapter writers miss."
-  make_agent dialogue-polish "$BSS_DIR/skills/deprecated/dialogue-polish/SKILL.md" \
-    "Dedicated dialogue editing pass — ensures distinct character voices, subtext, natural rhythm, and correct dialogue-to-prose ratio. Runs AFTER the writer and BEFORE hook-craft/disruptor."
-  make_agent hook-craft "$BSS_DIR/skills/deprecated/hook-craft/SKILL.md" \
-    "Specializes in chapter openings (hooks) and endings (pulls). Every chapter must start with a reason to keep reading and end with a reason to turn the page. The role that prevents the reader from putting the book down."
-fi
-
-# 5) Normalize maxTurns to 120 across ALL installed agents.
-#    Upstream book-* agents ship with maxTurns: 40, which truncates a full
-#    chapter write-plus-gate-loop before it can finish.
-for f in "$AGENTS_DIR"/*.md; do
-  if grep -qiE '^maxTurns:' "$f"; then
-    sed -i -E 's/^maxTurns: *[0-9]+/maxTurns: 120/I' "$f"
-  fi
-done
-
-# 6) Verify all 12 expected agents are installed.
+# ---------------------------------------------------------------------------
+# 4) Install the 12 book-* agents into ~/.claude/agents.
+#
+#    DEFAULT (AGENT_SOURCE=repo): copy this repo's own committed agents. The repo
+#    copies are the source of truth — they carry every improvement made under the
+#    UPDATE RULE, and a fork stays self-contained with no network dependency.
+#
+#    AGENT_SOURCE=upstream: refetch the original Best Seller Studio project and
+#    rebuild the four skill-based roles from it. This OVERWRITES the local copies
+#    and drops this repo's improvements — only for deliberately tracking upstream.
+# ---------------------------------------------------------------------------
 EXPECTED=(book-orchestrator book-researcher book-architect book-writer \
   book-evaluator book-editor book-disruptor book-packager \
   entity-tracker continuity-guardian dialogue-polish hook-craft)
-missing=()
-for a in "${EXPECTED[@]}"; do
-  [ -f "$AGENTS_DIR/$a.md" ] || missing+=("$a")
+
+install_from_repo () {
+  local n=0
+  for a in "${EXPECTED[@]}"; do
+    if [ -f "$REPO_AGENTS/$a.md" ]; then
+      cp "$REPO_AGENTS/$a.md" "$AGENTS_DIR/$a.md"
+      n=$((n + 1))
+    fi
+  done
+  echo "Installed $n agent(s) into $AGENTS_DIR from the repo's .claude/agents/."
+  [ "$n" -gt 0 ]
+}
+
+install_from_upstream () {
+  # NOTE: do NOT use `git clone` here — the web environment's git proxy limits clones
+  # to this repo (403). Fetch the tarball over HTTPS instead. Upstream default branch
+  # is `master`.
+  local url="https://codeload.github.com/felipelobomotta-blip/best-seller-studio/tar.gz/refs/heads/master"
+  local dir="/tmp/bss"
+  local ready=false
+
+  if [ -f "$dir/agents/book-writer.md" ]; then
+    ready=true
+    echo "Upstream BSS already present at $dir, skipping download."
+  else
+    for attempt in 1 2 3; do
+      rm -rf "$dir"; mkdir -p "$dir"
+      if curl -sSL --cacert /root/.ccr/ca-bundle.crt -o /tmp/bss.tar.gz "$url" 2>/dev/null \
+         && tar xzf /tmp/bss.tar.gz -C "$dir" --strip-components=1 2>/dev/null \
+         && [ -f "$dir/agents/book-writer.md" ]; then
+        ready=true; echo "Upstream BSS downloaded (attempt $attempt)."; break
+      fi
+      echo "warn: BSS download attempt $attempt failed; retrying..." >&2
+      sleep $((attempt * 2))
+    done
+  fi
+  [ "$ready" = true ] || { echo "ERROR: could not fetch upstream BSS." >&2; return 1; }
+
+  cp "$dir"/agents/*.md "$AGENTS_DIR"/
+
+  # The four skill-based roles need agent frontmatter wrapped around the SKILL.md body.
+  make_agent () {
+    local name="$1" src="$2" desc="$3"
+    [ -f "$src" ] || { echo "warn: missing $src, skipping $name" >&2; return 0; }
+    {
+      printf -- '---\n'
+      printf 'name: %s\n' "$name"
+      printf 'description: %s\n' "$desc"
+      printf 'tools: Read, Write, Edit, Grep, Glob, Bash\n'
+      printf 'model: opus\n'
+      printf 'maxTurns: %s\n' "$PIPELINE_MAXTURNS"
+      printf -- '---\n\n'
+      awk 'NR==1&&$0=="---"{f=1;next} f&&$0=="---"{f=0;next} !f{print}' "$src"
+    } > "$AGENTS_DIR/$name.md"
+  }
+  make_agent entity-tracker "$dir/skills/optional/entity-tracker/SKILL.md" \
+    "Builds and maintains ENTITY_STATE.yaml — the persistent structured database of every character, location, object, organization, timeline entry, and world rule in the manuscript. Operates in BUILD mode (initial extraction) and UPDATE mode (incremental tracking)."
+  make_agent continuity-guardian "$dir/skills/optional/continuity-guardian/SKILL.md" \
+    "Cross-manuscript consistency auditor. Runs after every 3-5 chapter batch and after full completion. Catches continuity errors, information-flow violations, timeline contradictions, and orphaned plot threads."
+  make_agent dialogue-polish "$dir/skills/deprecated/dialogue-polish/SKILL.md" \
+    "Dedicated dialogue editing pass — ensures distinct character voices, subtext, natural rhythm, and correct dialogue-to-prose ratio. Runs AFTER the writer and BEFORE hook-craft/disruptor."
+  make_agent hook-craft "$dir/skills/deprecated/hook-craft/SKILL.md" \
+    "Specializes in chapter openings (hooks) and endings (pulls). Every chapter must start with a reason to keep reading and end with a reason to turn the page."
+}
+
+if [ "$AGENT_SOURCE" = "upstream" ]; then
+  install_from_upstream || install_from_repo || true
+else
+  install_from_repo || {
+    echo "warn: repo .claude/agents/ has no agents; falling back to upstream fetch." >&2
+    install_from_upstream || true
+  }
+fi
+
+# Normalize maxTurns across ALL installed agents (upstream ships 40, which truncates
+# a full chapter write-plus-gate-loop before it can finish).
+for f in "$AGENTS_DIR"/*.md; do
+  [ -e "$f" ] || continue
+  if grep -qiE '^maxTurns:' "$f"; then
+    sed -i -E "s/^maxTurns: *[0-9]+/maxTurns: $PIPELINE_MAXTURNS/I" "$f"
+  fi
 done
 
-echo "Installed book pipeline agents into $AGENTS_DIR (maxTurns normalized to 120):"
+# ---------------------------------------------------------------------------
+# 5) Verify. Two locations matter for different reasons:
+#    - ~/.claude/agents  : what a local session reads.
+#    - repo .claude/agents/ : the ONLY thing dispatchable by name in web sessions,
+#      because the Agent registry is built from the clone BEFORE this hook runs.
+#      This step only REPORTS on the repo copies — it must never overwrite them, or
+#      every session would start with a dirty working tree.
+# ---------------------------------------------------------------------------
+missing=(); for a in "${EXPECTED[@]}"; do [ -f "$AGENTS_DIR/$a.md" ] || missing+=("$a"); done
+echo "Book pipeline agents in $AGENTS_DIR (maxTurns normalized to $PIPELINE_MAXTURNS):"
 ls "$AGENTS_DIR"
 if [ "${#missing[@]}" -eq 0 ]; then
   echo "OK: all ${#EXPECTED[@]} agent files present in $AGENTS_DIR."
@@ -141,25 +206,17 @@ else
   echo "ERROR: ${#missing[@]} sub-agent file(s) MISSING from $AGENTS_DIR: ${missing[*]}" >&2
 fi
 
-# 6b) IMPORTANT (web/remote): ~/.claude/agents is NOT dispatchable by name in cloud
-#     sessions — the Agent registry is built from the CLONED REPO at session start,
-#     before this hook runs. Only agents committed to the repo's .claude/agents/ are
-#     dispatchable as `subagent_type: <name>`. Those committed copies are the source
-#     of truth for dispatch; this step only REPORTS their state (it must NOT overwrite
-#     them, or every session would dirty the working tree).
-REPO_AGENTS="${CLAUDE_PROJECT_DIR:-$PWD}/.claude/agents"
-repo_missing=()
-for a in "${EXPECTED[@]}"; do
-  [ -f "$REPO_AGENTS/$a.md" ] || repo_missing+=("$a")
-done
+repo_missing=(); for a in "${EXPECTED[@]}"; do [ -f "$REPO_AGENTS/$a.md" ] || repo_missing+=("$a"); done
 if [ "${#repo_missing[@]}" -eq 0 ]; then
-  echo "OK: all ${#EXPECTED[@]} agents committed in repo .claude/agents/ — dispatchable by name next session."
+  echo "OK: all ${#EXPECTED[@]} agents committed in repo .claude/agents/ — dispatchable by name."
 else
   echo "WARN: repo .claude/agents/ is missing ${#repo_missing[@]} agent(s): ${repo_missing[*]}" >&2
   echo "      -> commit them to .claude/agents/ so they dispatch by name in web sessions." >&2
 fi
 
-# 7) Cross-model second-opinion tooling (Gemini). Only sets up when key is available.
+# ---------------------------------------------------------------------------
+# 6) Cross-model second-opinion tooling (Gemini). Only sets up when a key is available.
+# ---------------------------------------------------------------------------
 if [ -n "${GEMINI_API_KEY:-}" ] || [ -f "$HOME/.gemini_env" ]; then
   if ! command -v gemini >/dev/null 2>&1; then
     echo "Installing Gemini CLI for second-opinion reviews..."

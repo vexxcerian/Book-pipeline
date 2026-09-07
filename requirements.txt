@@ -1,0 +1,23 @@
+# Python dependencies for the Books pipeline.
+#   pip install -r requirements.txt      (or: bash tools/install.sh)
+#
+# The writing pipeline itself needs nothing but Python 3 — style_check.py and
+# grammar_check.py tier 1 are pure stdlib, and so is make_epub.py. These are for
+# the tooling around it.
+
+# STATE.yaml parsing: tools/review_context.py, tools/make_epub.py, tools/doctor.sh
+pyyaml>=6.0
+
+# Print PDF builds (per-book build_pdf.py) and cover/image work
+reportlab>=4.0
+pillow>=10.0
+
+# grammar_check.py tier 2 — optional. Needs Java; the ~250MB LanguageTool engine
+# downloads on first --languagetool use. Tier 1 gates without it.
+language-tool-python>=2.7
+
+# Cover barcodes for print wraps (EAN-13 from the print ISBN)
+python-barcode>=0.15
+
+# NOT pip-installable, needed only for IngramSpark print files:
+#   ghostscript   (tools/make_noicc.sh — grayscale/CMYK no-ICC conversion)

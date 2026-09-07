@@ -1,7 +1,7 @@
 ---
 description: Get an independent cross-model (xAI Grok) second opinion on a manuscript chapter, tuned for fiction.
 allowed-tools:
-  - Bash(bash book/genesis/tools/grok_review.sh:*)
+  - Bash(bash tools/grok_review.sh:*)
   - Read
   - Glob
 ---
@@ -9,16 +9,18 @@ allowed-tools:
 # Grok Second Opinion (prose)
 
 Run an INDEPENDENT cross-model craft critique of a chapter using xAI's Grok, via
-`book/genesis/tools/grok_review.sh`. Sibling of `/gemini-second-opinion`. Its value
+`tools/grok_review.sh`. Sibling of `/gemini-second-opinion`. Its value
 is a DIFFERENT model catching things our own pipeline (and Gemini) miss. Do not
 defer to it automatically; weigh it against settled canon / deliberate binding beats.
 
 ## Steps
-1. Resolve the target chapter from `$ARGUMENTS` (a path; or a bare number → current
-   book's `manuscript/chapters/chapter-<n>.md`, default book saeren-chronicles-book-2;
-   or ask / default to the latest finalized chapter).
-2. Run: `bash book/genesis/tools/grok_review.sh <chapter-path> [focus notes]`
-   (Loads XAI_API_KEY from env or ~/.grok_env; tries grok-4 → grok-3 → grok-3-mini.)
+1. Resolve the target chapter from `$ARGUMENTS` (a path; or a bare number → the book you
+   are currently working in: `books/<slug>/manuscript/chapters/chapter-<n>.md`; if that is
+   ambiguous, ask rather than guessing, or default to the latest finalized chapter).
+2. Run: `bash tools/grok_review.sh <chapter-path> [focus notes]`
+   (Loads XAI_API_KEY from env or ~/.grok_env; tries grok-4 → grok-3 → grok-3-mini.
+   The editor persona and book briefing come from the book's STATE.yaml or its
+   `review-context.md` — see `docs/QUALITY-GATES.md`.)
 3. If it reports 'permission-denied / no credits', tell the user the xAI key needs
    credits (https://console.x.ai) — the tool is correct, the account is just unfunded.
 4. Otherwise relay Grok's critique + YOUR take: which points are real vs. which

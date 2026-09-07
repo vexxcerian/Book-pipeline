@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Saeren Chronicles — cross-manuscript style checker.
+Cross-manuscript style checker (per-book copy — edit ALLOWLIST for THIS book).
 
 Catches the three things the per-chapter agents can miss across the whole book:
   1. VERBAL TICS         — overused filler/crutch words (just, suddenly, seemed, somehow...)
@@ -35,10 +35,28 @@ ADVERB = re.compile(r"\b\w+ly\b", re.I)
 WORD = re.compile(r"[a-z']+", re.I)
 
 # Deliberate recurring motifs / canon terminology — NOT accidental reuse.
-# Repeated phrases that contain any of these are ignored by the n-gram check.
+# Deliberate recurring motifs / canon terms — a CAPPED registry, not an exemption.
+# An allowlisted phrase is ignored by the generic n-gram repeat check, BUT it is still
+# held to a hard book-wide occurrence cap (author's standing rule: no signature narrative
+# tic-phrase may recur more than MOTIF_CAP_DEFAULT times across the whole book — declaring
+# a motif does NOT license unlimited use). Entries may be:
+#   "phrase"            -> capped at MOTIF_CAP_DEFAULT
+#   ("phrase", N)       -> capped at N (raise ONLY for a genuinely load-bearing image;
+#                          e.g. a finale cosmology motif). Keep overrides rare and small.
+MOTIF_CAP_DEFAULT = 3
 ALLOWLIST = [
-    # Add THIS book's deliberate recurring motifs / canon terms here.
+    # Add THIS book's deliberate recurring motifs / canon terms here (string or (string, cap)).
 ]
+
+def _motif_caps(default):
+    """Normalize ALLOWLIST into {phrase_lower: cap} and a list of allow-substrings."""
+    caps = {}
+    for e in ALLOWLIST:
+        if isinstance(e, (tuple, list)):
+            caps[str(e[0]).lower()] = int(e[1])
+        else:
+            caps[str(e).lower()] = default
+    return caps
 
 # n-gram repetition settings
 NGRAM_MIN, NGRAM_MAX = 4, 6
@@ -70,7 +88,14 @@ def scan():
                     help="per-1,000-words ceiling for any single tic word")
     ap.add_argument("--max-emdash", type=int, default=4,
                     help="ABSOLUTE em-dashes allowed per chapter (AI tell — keep near zero)")
+    ap.add_argument("--max-theway", type=int, default=2,
+                    help="ABSOLUTE 'the way [x]' explanatory tic per chapter (pipeline "
+                         "fingerprint — HARD CAP 2, and stagger: aim 0-1 in alternating chapters)")
+    ap.add_argument("--motif-cap", type=int, default=MOTIF_CAP_DEFAULT,
+                    help="book-wide occurrence cap for any ALLOWLIST motif (author rule: "
+                         "no signature tic-phrase recurs more than this; per-entry (phrase,N) overrides)")
     args = ap.parse_args()
+    motif_caps = _motif_caps(args.motif_cap)
 
     base = os.path.dirname(os.path.abspath(__file__))
     root = os.path.dirname(base)
@@ -83,6 +108,8 @@ def scan():
     problems = 0
     phrase_chapters = defaultdict(set)   # ngram -> {chapter numbers}
     phrase_counts = Counter()
+    motif_book_counts = Counter()        # motif phrase -> book-wide raw occurrences
+    motif_chapters = defaultdict(set)    # motif phrase -> {chapter numbers it appears in}
 
     print("=" * 70)
     print("PER-CHAPTER STYLE REPORT")
@@ -108,8 +135,17 @@ def scan():
         if emdash > args.max_emdash:
             flags.append(f"EM-DASH {emdash}/chapter > {args.max_emdash} (density {em1k}/1k)"); problems += 1
 
-        tic_hits = []
         low = text.lower()
+        for phrase in motif_caps:
+            c = low.count(phrase)
+            if c:
+                motif_book_counts[phrase] += c
+                motif_chapters[phrase].add(n)
+        theway = len(re.findall(r"\bthe (?:same )?way\b", low))
+        if theway > args.max_theway:
+            flags.append(f"THE-WAY ×{theway}/chapter > {args.max_theway} (pipeline fingerprint)"); problems += 1
+
+        tic_hits = []
         for t in TIC_WORDS:
             c = len(re.findall(r"\b"+re.escape(t)+r"\b", low))
             if c and per1k(c) > args.tic_ratio:
@@ -148,7 +184,9 @@ def scan():
     shown_flag, shown_info = [], []
     for ng, cnt, chs in candidates:
         s = " ".join(ng)
-        if any(allowed in s or s in allowed for allowed in ALLOWLIST):
+        # declared motifs are exempt from the GENERIC repeat flag (they are deliberate),
+        # but they are separately held to the book-wide cap below.
+        if any(allowed in s or s in allowed for allowed in motif_caps):
             continue
         scope = f"chapters {chs}" if len(chs) >= 2 else f"chapter {chs[0]}"
         if distinctive(ng, cnt, chs):
@@ -166,6 +204,24 @@ def scan():
         print(f"\n  (informational — {len(shown_info)} generic/×2 repeats, not gated):")
         for s in shown_info[:25]:
             print(f"     · \"{s}\"")
+
+    # --- MOTIF CAP: declared motifs may not exceed their book-wide cap -------------
+    if motif_caps:
+        print("\n" + "=" * 70)
+        print(f"MOTIF CAP (book-wide occurrences; default cap {args.motif_cap})")
+        print("=" * 70)
+        over = []
+        for phrase, cap in sorted(motif_caps.items()):
+            cnt = motif_book_counts.get(phrase, 0)
+            if cnt > cap:
+                chs = sorted(motif_chapters[phrase])
+                over.append((phrase, cnt, cap, chs))
+        if over:
+            for phrase, cnt, cap, chs in sorted(over, key=lambda x: -x[1]):
+                print(f"  OVER ×{cnt} > {cap}  chapters {chs}  \"{phrase}\"")
+                problems += 1
+        else:
+            print("  all motifs within cap (clean)")
 
     print("\n" + "=" * 70)
     print(f"RESULT: {problems} issue(s) flagged." if problems else "RESULT: clean.")

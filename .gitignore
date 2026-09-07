@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# API keys — these belong OUTSIDE the repo (~/.gemini_env, ~/.grok_env, mode 600).
+# Listed anyway so a stray copy can never be committed by accident.
+*_env
+.env
+.gemini_env
+.grok_env
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# LanguageTool's downloaded engine, if it lands in-tree
+.language_tool_python/
