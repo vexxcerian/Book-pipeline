@@ -12,7 +12,11 @@ Vexx sat with that for a long moment, turning it over the way he’d turned over
 
 He didn’t argue. There was no version of arguing, in that room, that wouldn’t have ended with his own judgment being quietly reassessed instead of Corwin’s evidence. He’d learned that lesson from watching other operators try it, in his first life as a Spartan, and he hadn’t forgotten it in the years since.
 
-*You’re angry*, Rx said, once they were alone in the corridor outside. *I’m careful.* A beat. *Same thing today, apparently.*
+*You’re angry*, Rx said, once they were alone in the corridor outside.
+
+*I’m careful.* A beat. *Same thing today, apparently.*
+
+* * *
 
 He requested Corwin’s fragments back from evidence lock two days later, quietly, using an authorization tied to his own cell rather than anything that would flag on a wider report. It took some doing — a favor called in from Voss, who asked no questions and offered no commentary beyond a raised eyebrow that told Vexx she understood exactly what he was doing and had decided, for reasons of her own, not to stop him.
 
@@ -28,7 +32,11 @@ Rx was quiet for a moment — the processing kind of quiet, not the other kind, 
 
 Vexx looked at the dog tag a long time, turning it over in his fingers, thinking about a jungle clearing and a comms array smashed deliberately rather than burned, a man who’d been sure enough that his own side might be hunting him that he’d erased every trace of his own position on the way out.
 
-*Not yet*, he said. *Not until I understand more of what we’re looking at.* He didn’t say the rest of it out loud — that some old, cautious part of him had already started keeping a private file, separate from anything that would ever cross Jameson’s desk, and that the file had a name in it now that it hadn’t had three weeks earlier. *Corwin.* Not evidence of anything yet. Just a thread, pulled loose, that he wasn’t ready to let go of.
+*Not yet*, he said. *Not until I understand more of what we’re looking at.*
+
+He didn’t say the rest of it out loud — that some old, cautious part of him had already started keeping a private file, separate from anything that would ever cross Jameson’s desk, and that the file had a name in it now that it hadn’t had three weeks earlier. *Corwin.* Not evidence of anything yet. Just a thread, pulled loose, that he wasn’t ready to let go of.
+
+* * *
 
 The friction with Paladin came on the cell’s third deployment, six weeks later, on a mission that started as a standard monitoring assignment and ended somewhere much darker.
 
@@ -42,13 +50,19 @@ Zeus read the situation first, low into the comm channel. “That’s not inform
 
 “Command’s phrasing gave us the option already,” Zeus said, quiet, careful. “You know what it means.”
 
-Paladin’s voice cut in before Vexx could respond, tight in a way Vexx hadn’t heard from him before. “We are not doing that. Not to a man who hasn’t raised a weapon at a single one of those civilians. I don’t care what a redacted psych file says he’s capable of — capability isn’t the same as action, and I am not putting him down for something he hasn’t done.” “Paladin—”
+Paladin’s voice cut in before Vexx could respond, tight in a way Vexx hadn’t heard from him before. “We are not doing that. Not to a man who hasn’t raised a weapon at a single one of those civilians. I don’t care what a redacted psych file says he’s capable of — capability isn’t the same as action, and I am not putting him down for something he hasn’t done.”
 
-“No.” Flat, immovable, the same certainty Vexx remembered from their very first sit-down. *Nobody gets left.* Vexx understood, in that moment, standing in the tree line above a burned settlement, that the rule ran both directions for Paladin — that leaving a man to be judged and ended over a possibility rather than an act cut just as hard against his creed as leaving a wounded soldier on a battlefield. “We talk to him first. We de-escalate. If he draws on those civilians, that’s a different conversation. Until then, I am not signing off on ending a man’s life over what a piece of paper says he might do.” Vexx felt the whole cell go still on the comm channel, waiting on him. He thought about Corwin’s dented dog tag sitting in a drawer in his apartment. He thought about a redacted psych file that had told him, with total confidence, exactly what kind of danger Reyes represented, delivered by the same command structure that had called Corwin’s evidence *inconclusive* without once explaining why.
+“Paladin—”
+
+“No.” Flat, immovable, the same certainty Vexx remembered from their very first sit-down. *Nobody gets left.* Vexx understood, in that moment, standing in the tree line above a burned settlement, that the rule ran both directions for Paladin — that leaving a man to be judged and ended over a possibility rather than an act cut just as hard against his creed as leaving a wounded soldier on a battlefield. “We talk to him first. We de-escalate. If he draws on those civilians, that’s a different conversation. Until then, I am not signing off on ending a man’s life over what a piece of paper says he might do.”
+
+Vexx felt the whole cell go still on the comm channel, waiting on him. He thought about Corwin’s dented dog tag sitting in a drawer in his apartment. He thought about a redacted psych file that had told him, with total confidence, exactly what kind of danger Reyes represented, delivered by the same command structure that had called Corwin’s evidence *inconclusive* without once explaining why.
 
 “We talk to him first,” Vexx said. “Paladin’s right. Move in slow, weapons low. Zeus, you’re on point for contact — this is exactly the kind of situation you’re built for. Nobody makes a final call until I say so.”
 
 He felt, rather than heard, something ease across the channel — six operators exhaling at once.
+
+* * *
 
 It worked, in the end, though not cleanly. Zeus talked Reyes down over the better part of twenty minutes, the operator’s rigid aggression slowly cracking into something rawer and more human — grief, it turned out, over a squad he’d lost in the same raid that had wrecked the settlement, grief he’d had nowhere to put except onto the first people in front of him who felt, in some broken corner of his mind, like they might share the blame. He didn’t draw on anyone. He sat down in the dirt eventually and put his head in his hands, and Aglaope was there within the minute, the way she always seemed to be, steady and quiet, doing the thing none of the rest of them could.
 
@@ -57,6 +71,8 @@ Reyes went into a mandatory psych evaluation instead of a body bag. Vexx filed t
 The response, three days later, was brief and unbothered. *Cell showed excellent judgment and restraint. Well done.* Signed, as it always was, with Jameson’s name.
 
 Vexx read it twice, looking for the thing underneath it, and found nothing but the same practiced warmth Jameson had shown him from their very first meeting. He wanted, badly, for that to be reassuring. It wasn’t, quite. He couldn’t yet say why.
+
+* * *
 
 *Paladin was right to push back*, Rx said that night, the two of them alone the way they were most nights now, Vexx running through the day in his head the way he always did before sleep. *For what it’s worth. I know you already know that. I just — wanted to say it.*
 
@@ -70,7 +86,9 @@ A long pause — long enough that Vexx sat up in the dark, genuinely uneasy for 
 
 *What’s it saying?*
 
-*I can’t tell. It’s not words yet, not really. Just — the shape of a refusal. Like I’m hearing myself say no to something, over and over, and I don’t know what the something is.* Rx’s voice thinned further, an edge of something that, in a human voice, Vexx would have called fear without hesitation. *It happened twice today. Once during the briefing, when Jameson’s name came up. Once just now, talking about Paladin standing his ground.* Vexx sat in the dark for a long time before he spoke again, the pieces of something he still couldn’t name arranging themselves slowly, painfully, into a shape he wasn’t ready to look at directly.
+*I can’t tell. It’s not words yet, not really. Just — the shape of a refusal. Like I’m hearing myself say no to something, over and over, and I don’t know what the something is.* Rx’s voice thinned further, an edge of something that, in a human voice, Vexx would have called fear without hesitation. *It happened twice today. Once during the briefing, when Jameson’s name came up. Once just now, talking about Paladin standing his ground.*
+
+Vexx sat in the dark for a long time before he spoke again, the pieces of something he still couldn’t name arranging themselves slowly, painfully, into a shape he wasn’t ready to look at directly.
 
 *Rx. I need you to tell me the truth. Do you remember anything — anything at all — about how you actually died?*
 

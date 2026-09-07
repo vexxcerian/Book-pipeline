@@ -1,0 +1,1415 @@
+# ENTITY_STATE.yaml — Valkyr: Book One
+# Built by entity-tracker (BUILD mode). Read-only consumer of the manuscript; this file is
+# the single output. Nothing here is an audit finding, a score, or a recommendation.
+#
+# SOURCE PRECEDENCE USED (highest first):
+#   1. ../SERIES-BIBLE.md   — locked series canon        -> source: "series-bible"
+#   2. manuscript/chapters/chapter-1..5.md — drafted prose -> source: "ch-0N:pNN"
+#   3. character-bible.md / foundation.md                 -> source: "character-bible" / "foundation"
+#   4. outline.md (plan for Ch.6-26)                      -> source: "outline:ch-NN"
+# WHERE PROSE AND A PLANNING DOCUMENT DISAGREE, THE PROSE IS RECORDED AS CANONICAL AND THE
+# DISAGREEMENT IS FLAGGED AS A CONFLICT. No contradiction has been resolved here.
+#
+# PARAGRAPH NUMBERING: pNN counts non-blank lines in the chapter file, excluding the
+# "# Chapter N" heading. p01 is the chapter's first paragraph.
+
+meta:
+  version: "1.0"
+  last_updated: "2026-09-07"
+  last_updated_by: "entity-tracker"
+  mode: "BUILD"
+  chapters_tracked: [1, 2, 3, 4, 5]
+  chapters_planned_not_tracked: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+  schema_extensions:
+    # Declared so downstream skills know these are additions to schema v1.0, not core fields.
+    - "planned:            top-level block for entities the outline creates but prose has NOT yet put on the page"
+    - "secrets:            who-knows-what ledger for the book's asymmetric-knowledge engine"
+    - "memory_unlock_ladder: the locked four-stage Rx mechanic, with stages spent/not reached"
+    - "objects.*.chain_of_custody: physical-evidence handling chain (required by this book's premise)"
+    - "characters.*.on_page / characters.*.importance: prose-presence and priority markers"
+  timeline_policy: >-
+    RELATIVE ANCHORS ONLY. Series canon forbids pinning an absolute in-universe date to the
+    page. Every temporal value in this file is expressed relative to Rx's death, Vexx's
+    discharge, the gray room, or the previous chapter.
+  open_conflicts: 6
+  knowledge_gaps: 4
+  needs_review: 3   # characters.corwin, characters.man-in-civilian-dress, characters.richard-jameson.does_not_know[0]
+
+# ============================================================================================
+# CHARACTERS
+# ============================================================================================
+characters:
+
+  # ---------------------------------------------------------------- PRINCIPALS
+  vexxcerian:
+    canonical_name: "Vexxcerian"
+    aliases: ["Vexx", "Operator Vexxcerian", "Mr. Vexxcerian"]
+    importance: "major"
+    on_page: "POV, all five drafted chapters"
+    physical:
+      age:
+        value: "unpinned. Inducted at six (ch-01:p03); 'twenty-six years of his life had a shape' at discharge (ch-01:p08) => early thirties"
+        at_chapter: 1
+        source: "ch-01:p08"
+        conflict:
+          - { value: "'thirty years learning to read people under pressure' => mid-thirties or older", source: "ch-01:p18", flag: "UNRESOLVED" }
+          - { value: "'thirty years of training had taught him'", source: "ch-03:p40", flag: "UNRESOLVED" }
+          - { value: "'in his thirties'", source: "foundation", flag: "UNRESOLVED" }
+      build:
+        value: "SPARTAN-II augmented; matched physical baseline with his twin Rx (same augmentation windows)"
+        source: "ch-01:p10"
+      eye_color: { value: "not stated on the page", source: "ch-01" }
+      hair: { value: "not stated on the page", source: "ch-01" }
+      distinguishing:
+        - { value: "knee that locks on hard landings, with a half-second lag between decision and execution — true, and the stated (false) reason for his discharge", source: "ch-01:p03" }
+    traits:
+      - { trait: "retired SPARTAN-II; requested his own discharge", source: "ch-01:p01", mutable: false }
+      - { trait: "identical-circumstance twin of Rx — shared bunk, birthday, genetics, augmentation windows", source: "ch-01:p10", mutable: false }
+      - { trait: "combat stress: woke at 0300 with his sidearm sighted on his own bunk door and needed two seconds to identify his brother", source: "ch-01:p04", mutable: true }
+      - { trait: "converts feeling into a filing action — 'He filed it away. Not yet a problem.'", source: "ch-03:p04", mutable: true }
+      - { trait: "answers a question by correcting its vocabulary. CAPPED DEVICE: 2 of 5 uses spent in drafted material", source: "ch-04:p07", mutable: true }
+      - { trait: "lives in an apartment he never unpacked; boxes still taped in an unfurnished living room", source: "ch-01:p25", mutable: true }
+      - { trait: "does not argue with institutional rulings he judges unwinnable; acts around them instead", source: "ch-04:p06", mutable: true }
+      - { trait: "commands out of necessity, not ambition; visibly hates the job", source: "series-bible", mutable: true }
+    voice_markers:
+      ref: "voice-dna.md#vexx / character-bible.md#vexx"
+    relationships:
+      rx:
+        type: "twin brother; now his paired AI"
+        established: "ch-01:p10"
+        current_status: "the only relationship he has; Vexx is the only voice Rx will answer to. Vexx has begun privately tallying Rx's two kinds of silence (ch-04:p11) and has asked him directly how he died (ch-04:p37)"
+      richard-jameson:
+        type: "commanding officer"
+        established: "ch-02:p04"
+        current_status: "liked and privately suspected. Vexx has begun withholding evidence from Jameson's desk (ch-03:p49) and by ch-05:p28 does not deny that his suspicion points at him"
+      aglaope:
+        type: "operator under his command; off-record confidante"
+        established: "ch-02:p57"
+        current_status: "the only living person he has told about the suspicion (ch-05:p24); she asked him not to be reassured and he told her not to tell the others"
+      gaia:
+        type: "operator under his command; standing friction over his command style"
+        established: "ch-02:p47"
+        current_status: "argument suspended, not resolved (ch-05:p16). He has promised she will be the first told when suspicion becomes evidence"
+      goliath:
+        type: "operator under his command; steadying counterweight"
+        established: "ch-02:p25"
+        current_status: "uncomplicated trust; Vexx is withholding the donor-consent addendum from him deliberately (ch-02:p35)"
+      paladin:
+        type: "operator under his command"
+        established: "ch-02:p52"
+        current_status: "Vexx publicly backed his refusal to make a Choosing call on Reyes (ch-04:p24)"
+      zeus:
+        type: "operator under his command"
+        established: "ch-02:p55"
+        current_status: "trusted operationally, watched personally; Rx argued for his selection"
+      voss:
+        type: "mid-level ONI liaison"
+        established: "ch-02:p15"
+        current_status: "institutional ally. She released Corwin's fragments from evidence lock for him, asked nothing, and did not stop him (ch-04:p08)"
+      corwin:
+        type: "SPARTAN-II he rescued; source of his first physical evidence"
+        established: "ch-03:p27"
+        current_status: "Corwin is in a rehabilitation track; Vexx holds his fragments and has started a private file with his name in it (ch-04:p15)"
+      spector:  { type: "Goliath's AI", established: "ch-02:p33", current_status: "operational" }
+      echo:     { type: "Gaia's AI", established: "ch-02:p51", current_status: "operational" }
+      bastion:  { type: "Paladin's AI", established: "ch-02:p52", current_status: "operational" }
+      hollow:   { type: "Zeus's AI", established: "ch-02:p57", current_status: "operational" }
+      requiem:  { type: "Aglaope's AI", established: "ch-02:p59", current_status: "operational" }
+      man-in-civilian-dress:
+        type: "the recruiter who told him Rx survived"
+        established: "ch-01:p25"
+        current_status: "not seen since the first weeks; never named"
+    location_log:
+      - { chapter: 1, location: "unnamed UNSC/ONI base", scene: "review board hearing room", travel_noted: false }
+      - { chapter: 1, location: "unnamed world", scene: "Rx's funeral — empty-casket burial", travel_noted: false }
+      - { chapter: 1, location: "vexxs-apartment", scene: "doorway; the second knock", travel_noted: false }
+      - { chapter: 1, location: "the-facility", scene: "the gray room (server hum, single terminal)", travel_noted: true }
+      - { chapter: 1, location: "the-facility", scene: "training / marksmanship range, first month", travel_noted: false }
+      - { chapter: 2, location: "the-facility", scene: "briefing room two levels below anything with a name on the door", travel_noted: false }
+      - { chapter: 2, location: "the-facility", scene: "assessment rooms; training range observation deck; first-briefing room", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "dropship, burned-out clearing, six hours of jungle, the fallen tree", travel_noted: true }
+      - { chapter: 4, location: "the-facility", scene: "Corwin debrief room; corridor outside", travel_noted: false }
+      - { chapter: 4, location: "vexxs-apartment", scene: "kitchen table with the fragments spread across it", travel_noted: false }
+      - { chapter: 4, location: "ruined-agricultural-settlement", scene: "tree line above the settlement (Reyes)", travel_noted: true }
+      - { chapter: 5, location: "ruined-industrial-complex", scene: "overwatch of a SPARTAN-II fireteam", travel_noted: true }
+      - { chapter: 5, location: "the-facility", scene: "corridor outside the debrief room; the cell's common room; his own quarters", travel_noted: false }
+    knowledge:
+      - { fact: "Rx's mind survived his body and runs as an AI that will not respond to anyone but Vexx", learned: "ch-01:p26", method: "told_by:man-in-civilian-dress" }
+      - { fact: "the official account of Rx's death — classified operation, hostile contact, AI transfer authorized on-site as a mercy", learned: "ch-01:p39", method: "told_by:man-in-civilian-dress" }
+      - { fact: "three other candidates were attempted for integration with Rx before Vexx was located, and Rx would not respond to any of them", learned: "ch-01:p46", method: "told_by:man-in-civilian-dress" }
+      - { fact: "the work he signed for carries only a subsection designation, not a name", learned: "ch-01:p54", method: "told_by:man-in-civilian-dress" }
+      - { fact: "Rx's voice catches for half a syllable when Richard Jameson's name comes up — accepted at the time as a diagnostics glitch", learned: "ch-01:p62", method: "witnessed" }
+      - { fact: "the program's real function is to monitor, judge and end the UNSC's own SPARTAN-IIs — 'the Choosing'", learned: "ch-03:p03", method: "inferred" }
+      - { fact: "Goliath refused to detonate a charge with civilians unaccounted for and took an eleven-month black mark for it", learned: "ch-02:p31", method: "told_by:goliath" }
+      - { fact: "the handwritten addendum on Phantom's donor consent form: 'For whoever needs it. Keep them from the dark.'", learned: "ch-02:p23", method: "discovered" }
+      - { fact: "Goliath went quiet on the range over something Spector said — Vexx did not hear the exchange itself", learned: "ch-02:p44", method: "witnessed" }
+      - { fact: "Corwin's account: a strike team wearing UNSC signatures that matched no deployment on record killed his squad; he believes his own chain of command ordered it", learned: "ch-03:p32", method: "told_by:corwin" }
+      - { fact: "Corwin retained physical fragments of proof, which Vexx left out of his field report", learned: "ch-03:p35", method: "told_by:corwin" }
+      - { fact: "one voice gave the kill order in the ambush, clean and practiced, like someone who had done it before — no name, no callsign", learned: "ch-03:p45", method: "overheard" }
+      - { fact: "Rx experienced an unplaceable flash: a treeline that is not this one, and a voice giving an order. Rx believes it is his own memory, from before", learned: "ch-03:p37", method: "told_by:rx" }
+      - { fact: "command ruled Corwin's evidence inconclusive and reassigned him to a rehabilitation track", learned: "ch-04:p02", method: "told_by:corwin-review-officer" }
+      - { fact: "the dog tag's serial does not come back clean — not flagged classified, simply absent, as if never issued or pulled after the fact", learned: "ch-04:p11", method: "told_by:rx" }
+      - { fact: "the armour plate's modification pattern is plainly not standard issue under proper light", learned: "ch-04:p09", method: "discovered" }
+      - { fact: "Reyes's flag was a redacted psych file predicting capability, not an act; Paladin refused on that basis and was right", learned: "ch-04:p22", method: "witnessed" }
+      - { fact: "Rx is hearing his own voice in fragments — 'the shape of a refusal' — triggered twice in one day, once by Jameson's name", learned: "ch-04:p36", method: "told_by:rx" }
+      - { fact: "Rx says he does not remember how he died, and something in him will not let him get close enough to look", learned: "ch-04:p39", method: "told_by:rx" }
+      - { fact: "SUSPICION (not knowledge): someone in the program gave Rx an order, Rx refused it, and someone made sure the refusal never mattered", learned: "ch-05:p24", method: "inferred" }
+      - { fact: "SUSPICION (not knowledge): it points toward Jameson — named aloud by Aglaope, not denied by Vexx", learned: "ch-05:p27", method: "inferred" }
+    knowledge_gap:
+      - fact: "uses the program name 'Valkyr' as something he already knows when Corwin says it aloud"
+        used_in: "ch-03:p28"
+        issue: "ch-01:p54 states explicitly that the name was withheld from him — 'Not Valkyr — not yet, not to him.' No on-page scene shows him being told it. Acquisition happens off-page between ch-01:p54 and ch-03:p28."
+      - fact: "knows the program's charter is to monitor/judge/end SPARTAN-IIs, treating it as the shared reason everyone in the room was recruited"
+        used_in: "ch-03:p03"
+        issue: "ch-01:p55 states 'What nobody explained to him' was exactly this. No acquisition scene exists in the drafted material."
+      - fact: "tells the review officer 'I documented it in the field' about Corwin's physical evidence"
+        used_in: "ch-04:p03"
+        issue: "ch-03:p49 states he deliberately did NOT document the fragments. See objects.corwins-fragments conflict CF-02 — this is a contradiction, not merely a gap."
+    arc_notes: "Recruited back into the program that killed his twin, builds and commands its first rebuilt cell, and by the end of Ch.5 has begun a private evidence file and said his suspicion out loud to exactly one person. Series canon: Book One is a descent — careful to compromised to complicit — ending on suspicion, not revelation."
+
+  rx:
+    canonical_name: "Rx"
+    aliases: []
+    importance: "major"
+    on_page: "all five drafted chapters, voice only. NEVER a POV — everything recorded here is what Vexx observes or infers"
+    physical:
+      body:
+        value: "none. Smart AI running through a neural interface and, in the gray room, a terminal speaker"
+        source: "ch-01:p30"
+      voice:
+        value: "flattened, processed, running through speakers instead of a throat — but unmistakably his"
+        source: "ch-01:p30"
+      distinguishing:
+        - { value: "the cursor's rhythm — 'less like machinery and more like breathing'", source: "ch-01:p33" }
+        - { value: "two distinguishable kinds of silence, the processing kind and the other kind; Vexx has started privately tallying which is which", source: "ch-04:p11" }
+        - { value: "a half-syllable catch / flinch on the name Richard Jameson", source: "ch-01:p44" }
+    traits:
+      - { trait: "Vexx's twin; twin-bond transfer at death. A 'program of one' — will not bond with anyone but Vexx", source: "ch-01:p46", mutable: false }
+      - { trait: "joke first, meaning second — 'In the flesh. Poor choice of words. Sorry.'", source: "ch-01:p33", mutable: false }
+      - { trait: "demotes his own tense: 'I was. Am. I don't actually know which tense applies anymore, brother.'", source: "ch-01:p35", mutable: true }
+      - { trait: "the too-quick denial, arriving a beat before an honest answer could. CAPPED DEVICE: 3 of 5 uses spent (ch-01:p64, ch-03:p06, ch-03:p39)", source: "ch-01:p64", mutable: true }
+      - { trait: "minimises his own experience into system language — terror becomes 'processing hiccup'", source: "ch-01:p64", mutable: true }
+      - { trait: "monitors Vexx constantly (sleep, marksmanship, whether he ate) and reports on everything except himself", source: "character-bible", mutable: true }
+      - { trait: "keeps a running tally of Vexx's marksmanship — 'I died and I'm still a better shot than you'", source: "ch-01:p60", mutable: true }
+      - { trait: "audible fear, for the first time, at ch-03:p56 — 'That's what scares me. I don't know.'", source: "ch-03:p56", mutable: true }
+    voice_markers:
+      ref: "voice-dna.md#rx / character-bible.md#rx"
+    relationships:
+      vexxcerian:
+        type: "twin brother; his operator"
+        established: "ch-01:p30"
+        current_status: "he has asked for time — 'I'm working on being ready' (ch-05:p36) — and Vexx has accused him of hiding something (ch-05:p19)"
+      richard-jameson:
+        type: "no acknowledged relationship"
+        established: "ch-01:p43"
+        current_status: "Rx cannot name any connection; his voice hitches on the name and he does not know why. Series canon: Jameson killed him personally"
+      spector:
+        type: "peer AI; natural donor-AI rapport per series canon"
+        established: "series-bible"
+        current_status: "not dramatized in the drafted chapters"
+    location_log:
+      - { chapter: 1, location: "the-facility", scene: "the gray room terminal; then via Vexx's neural interface", travel_noted: false }
+      - { chapter: 2, location: "the-facility", scene: "silent through both Jameson scenes", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "in Vexx's ear throughout; stage-1 leak in the clearing", travel_noted: true }
+      - { chapter: 4, location: "vexxs-apartment", scene: "kitchen table; running the dog tag serial; the night conversation", travel_noted: false }
+      - { chapter: 5, location: "the-facility", scene: "corridor and quarters", travel_noted: false }
+    knowledge:
+      - { fact: "that he died, and that he does not know which tense applies to himself now", learned: "ch-01:p35", method: "witnessed" }
+      - { fact: "that Zeus's history is exactly why the cell needs him — argued for his selection", learned: "ch-02:p56", method: "inferred" }
+      - { fact: "that Phantom's donor file made Goliath worth having before Vexx had met him", learned: "ch-02:p22", method: "discovered" }
+      - { fact: "STAGE 1 LEAK: a treeline that is not this one, and a voice giving an order that he cannot place. He states he believes it is his own memory, from before", learned: "ch-03:p37", method: "discovered" }
+      - { fact: "STAGE 2 LEAK: his own voice, saying something he does not remember saying — 'the shape of a refusal', not yet words. Triggered twice in one day, once by Jameson's name", learned: "ch-04:p36", method: "discovered" }
+      - { fact: "that the dog tag serial returns absent rather than classified, and that resolving it further would leave a trail", learned: "ch-04:p11", method: "discovered" }
+      - { fact: "that Vexx has told Aglaope, and that he is glad it was her", learned: "ch-05:p34", method: "told_by:vexxcerian" }
+    cannot_access:
+      - fact: "how he actually died; that he refused an order; whose order it was"
+        source: "ch-04:p39"
+        mechanism: "sealed — 'Something in me won't let me get close enough to look.' Narration (ch-01:p42) calls it a wound scarred over so completely that even its owner lost the shape of it"
+        note: "Series canon: Rx refused a Choosing order from Jameson and was killed by Jameson personally as a cleanup action disguised as hostile contact. Rx has NO access to this in the drafted material."
+    arc_notes: "Alive as an AI; the seal is degrading on schedule. Stages 1 and 2 spent in the drafted chapters. He is aware he is carrying something and has told Vexx he is 'working on being ready'."
+
+  richard-jameson:
+    canonical_name: "Richard Jameson"
+    aliases: ["Jameson"]
+    importance: "major"
+    on_page: "Ch.2 (two scenes), Ch.3 (mission brief), Ch.4 (signed commendation only), Ch.5 (referred to, not present)"
+    physical:
+      age: { value: "fifties, maybe older — hard to tell with senior-ONI longevity treatments", at_chapter: 2, source: "ch-02:p02" }
+      hair: { value: "silver at the temples, reading as distinguished rather than old", source: "ch-02:p02" }
+      distinguishing:
+        - { value: "UNSC dress uniform worn like it had been tailored that morning", source: "ch-02:p02" }
+        - { value: "a face that makes people want to trust him, and he has known that about himself for a very long time", source: "ch-02:p01" }
+        - { value: "a firm, warm handshake, 'exactly as calibrated as everything else about him'", source: "ch-02:p05" }
+    traits:
+      - { trait: "stands when an operator enters the room", source: "ch-02:p03", mutable: false }
+      - { trait: "gives power away in small deliberate increments — 'Drop the sir when it's just us'", source: "ch-02:p06", mutable: false }
+      - { trait: "says a dead operator's name exactly right — grave without performance, warm without excess", source: "ch-02:p04", mutable: false }
+      - { trait: "practised restraint: stops himself before overdoing a condolence", source: "ch-02:p04", mutable: false }
+      - { trait: "shows up in person where his rank does not require it (a small cell's first deployment briefing)", source: "ch-02:p73", mutable: true }
+      - { trait: "phrases lethal authorizations as permission rather than instruction — 'authorized, not obligated'", source: "ch-03:p02", mutable: false }
+      - { trait: "NO verbal tic, deliberately. GATE CONDITION: no line of his may read as a threat, double meaning or knowing aside", source: "character-bible", mutable: false }
+    voice_markers:
+      ref: "voice-dna.md#jameson / character-bible.md#jameson"
+    relationships:
+      vexxcerian:
+        type: "commanding officer"
+        established: "ch-02:p04"
+        current_status: "warm, sincere, and entirely unaware he is suspected. Signed the Reyes commendation personally (ch-04:p28)"
+      rx:
+        type: "killed him personally (series canon); on the page, only a name Rx's voice catches on"
+        established: "series-bible"
+        current_status: "believes the truth died with Rx"
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "briefing room two levels below anything with a name on the door", travel_noted: false }
+      - { chapter: 2, location: "the-facility", scene: "the cell's first mission briefing — delivered it himself", travel_noted: false }
+      - { chapter: 3, location: "the-facility", scene: "briefing table with a hard-light projection of the jungle world", travel_noted: false }
+      - { chapter: 4, location: "off-page", scene: "signature on the cell's commendation", travel_noted: false }
+    knowledge:
+      - { fact: "that he watched Rx die at close range and personally wrote the report that buried it", learned: "before ch-01", method: "witnessed" }
+      - { fact: "Vexx's full file, including the parts most people in the building are not cleared for", learned: "ch-02:p04", method: "discovered" }
+      - { fact: "Rx's file — 'I knew your brother's file before I knew yours'", learned: "ch-02:p04", method: "discovered" }
+      - { fact: "the cell is the first full cell the rebuilt program has fielded", learned: "ch-02:p74", method: "witnessed" }
+      - { fact: "the cell showed judgment and restraint on the Reyes assessment", learned: "ch-04:p28", method: "discovered" }
+    does_not_know:
+      - fact: "that Rx survived his death as an AI"
+        source: "series-bible"
+        on_page_support: "ch-05:p37 — 'Richard Jameson slept, as he had for four years, entirely certain that whatever he'd buried in a jungle clearing a lifetime ago had stayed buried. He was wrong. He simply didn't know it yet.'"
+        needs_review: true
+        review_note: >-
+          The drafted prose never states how the commander of the rebuilt program can be unaware
+          that his flagship pairing's AI is Rx. Ch.1 p46 and Ch.2 p17 both establish that the
+          institution knows exactly who Rx is and treats the Vexx pairing as its proof of
+          concept, and Ch.2 p04 has Jameson volunteering that he knew Rx's file first. Canon is
+          recorded as canonical; the mechanism is an open author decision, not a prose fact.
+      - fact: "that he is suspected by anyone"
+        source: "series-bible"
+        on_page_support: "ch-04:p40, ch-05:p37"
+    arc_notes: "Antagonist across both books. In Book One he is warm, credible and never sinister on the page; all irony belongs to the reader's later knowledge. Falls in Book Two."
+
+  # ---------------------------------------------------------------- THE CELL
+  aglaope:
+    canonical_name: "Aglaope"
+    aliases: []
+    importance: "major"
+    on_page: "Ch.2 (recruitment/pairing), Ch.3 (the clearing), Ch.4 (Reyes), Ch.5 (the common room)"
+    physical:
+      distinguishing:
+        - { value: "quiet in a way that is not shyness; watchful in a way that is not suspicion", source: "ch-02:p57" }
+    traits:
+      - { trait: "SPARTAN-II; final active tour was extraction and last-contact work — pulling survivors out, and staying with those she could not save so they did not die alone", source: "ch-02:p57", mutable: false }
+      - { trait: "rests a hand briefly on an arm. One gesture, hers alone — given to Corwin (ch-03:p47), to Reyes (ch-04:p26) and to Vexx (ch-05:p31)", source: "ch-03:p47", mutable: false }
+      - { trait: "names what she has noticed without being invited to — 'You're carrying something. I don't need to know what it is. I just want you to know I noticed.'", source: "ch-02:p57", mutable: false }
+      - { trait: "does not offer reassurance and does not rush a heavy thing into being lighter", source: "ch-05:p25", mutable: false }
+      - { trait: "does not sleep much — 'I don't need as much of it as you do'", source: "ch-05:p22", mutable: true }
+    voice_markers: { ref: "voice-dna.md#aglaope / character-bible.md#aglaope" }
+    relationships:
+      vexxcerian:
+        type: "commanding officer; the man she has been watching go quiet"
+        established: "ch-02:p57"
+        current_status: "his only confidante. She had noticed his reaction to Jameson's name weeks before he told her, and deliberately did not ask (ch-05:p28)"
+      requiem:
+        type: "her AI"
+        established: "ch-02:p59"
+        current_status: "operational; she quotes Requiem's stated intent back to Vexx (ch-05:p31)"
+      gaia:
+        type: "fellow operator"
+        established: "ch-02:p63"
+        current_status: "sits near her without being asked; Gaia neither warms nor pulls away"
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "assessment interview; pairing; the three-day room", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "sitting with Corwin; walking him out", travel_noted: true }
+      - { chapter: 4, location: "ruined-agricultural-settlement", scene: "with Reyes after he sat down in the dirt", travel_noted: true }
+      - { chapter: 5, location: "the-facility", scene: "the cell's common room, late", travel_noted: false }
+    knowledge:
+      - { fact: "that Vexx goes quiet in a very specific way whenever Jameson's name comes up", learned: "weeks before ch-05:p28", method: "witnessed" }
+      - { fact: "that Vexx believes someone in the program killed his brother — an order given, a refusal, and someone making sure the refusal never mattered", learned: "ch-05:p24", method: "told_by:vexxcerian" }
+      - { fact: "that the suspicion points toward Jameson — she said the name first, and Vexx did not correct her", learned: "ch-05:p27", method: "inferred" }
+      - { fact: "that the evidence is fragments, a dog tag with no record, an unidentified voice giving an order, and Rx's sealed memory", learned: "ch-05:p26", method: "told_by:vexxcerian" }
+      - { fact: "that Vexx has asked her not to tell the rest of the cell yet", learned: "ch-05:p31", method: "told_by:vexxcerian" }
+    does_not_know:
+      - { fact: "the specifics — Vexx withheld the dog tag by name and did not repeat Rx's memory fragments in full", source: "ch-05:p32" }
+    arc_notes: "The confidante beat is spent in Ch.5. Series canon: alive at the end of Book One, knowing Vexx's suspicion in outline but not the evidence."
+
+  goliath:
+    canonical_name: "Goliath"
+    aliases: []
+    importance: "major"
+    on_page: "Ch.2 (recruitment, pairing, the Phantom slip), Ch.3 (the clearing)"
+    physical:
+      height: { value: "six foot seven without the armour", at_chapter: 2, source: "ch-02:p26" }
+      build: { value: "built like something designed rather than born; fills a doorway the way weather fills a sky", source: "ch-02:p26" }
+      distinguishing:
+        - { value: "a handshake that could crush stone and deliberately does not", source: "ch-02:p26" }
+        - { value: "enormous hands", source: "ch-02:p36" }
+    traits:
+      - { trait: "breach / demolitions specialist; the specialty was buried three pages deep in a file mostly concerned with disciplinary footnotes", source: "ch-02:p20", mutable: false }
+      - { trait: "refused to detonate a charge until a civilian count came back clean; took an eleven-month black mark and would do it again 'every time'", source: "ch-02:p31", mutable: false }
+      - { trait: "applies trade vocabulary to ethics — 'there's a difference between clearing a threat and just clearing a problem'", source: "ch-02:p31", mutable: false }
+      - { trait: "'Good' as a complete sentence when something has been settled", source: "ch-02:p28", mutable: false }
+      - { trait: "goes very still when something lands, and goes silent when he is hurt", source: "ch-02:p39", mutable: true }
+      - { trait: "grew up on a colony world under threat from pirates or insurrectionists — too young at the time to be told which", source: "ch-02:p41", mutable: false }
+    voice_markers: { ref: "voice-dna.md#goliath / character-bible.md#goliath" }
+    relationships:
+      spector:
+        type: "his AI"
+        established: "ch-02:p32"
+        current_status: "easy rhythm from the first hour; Spector reads him faster than acquaintance accounts for"
+      vexxcerian:
+        type: "commanding officer"
+        established: "ch-02:p26"
+        current_status: "mutual, uncomplicated trust; the wordless nod across the transport bay (ch-03:p10)"
+      phantom:
+        type: "the unnamed Spartan who ended the threat to his homeworld when he was a child; now his AI's donor"
+        established: "ch-02:p41"
+        current_status: "suspected, not confirmed. 'He didn't sound entirely convinced it was coincidence.'"
+      paladin: { type: "fellow operator", established: "ch-02:p63", current_status: "took to each other immediately" }
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "assessment room; pairing; training range (the Phantom slip); the three-day room", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "transport bay; the burned-out clearing; the half-melted ration crate", travel_noted: true }
+    knowledge:
+      - { fact: "his AI's donor was called Phantom — 'least, that's what people called him'", learned: "ch-02:p38", method: "told_by:spector" }
+      - { fact: "that the Spartan who saved his homeworld and the donor called Phantom may be the same man", learned: "ch-02:p41", method: "inferred" }
+      - { fact: "the burned camp's charge pattern was laid by someone who does this for a living, not by panic", learned: "ch-03:p18", method: "discovered" }
+    does_not_know:
+      - { fact: "the handwritten line on Phantom's donor consent form — Vexx read it and deliberately did not tell him", source: "ch-02:p35" }
+    arc_notes: "Series canon: alive at the end of Book One, knowing Phantom's name and suspecting the homeworld connection."
+
+  gaia:
+    canonical_name: "Gaia"
+    aliases: []
+    importance: "major"
+    on_page: "Ch.2 (recruitment, pairing, coffee-station exchange), Ch.3 (tracking), Ch.5 (the fall-back order and the corridor argument)"
+    physical:
+      distinguishing:
+        - { value: "arms crossed, chair angled toward the door", source: "ch-02:p47" }
+        - { value: "a particular stillness when she has caught something the rest of them have not", source: "ch-03:p17" }
+    traits:
+      - { trait: "recon / infiltration specialist; service history built almost entirely around solo operations", source: "ch-02:p47", mutable: false }
+      - { trait: "survived three deployments others in her cohort did not, largely by trusting no one but herself", source: "ch-02:p47", mutable: false }
+      - { trait: "reads ground the way other people read a page", source: "ch-03:p15", mutable: false }
+      - { trait: "fact, then ask, then clock — 'your call' deployed as a weapon", source: "ch-05:p04", mutable: false }
+      - { trait: "complies with an order, then says the disagreement out loud, in a corridor, later, to your face", source: "ch-05:p07", mutable: false }
+      - { trait: "tests the people she has decided to care whether they pass", source: "ch-02:p68", mutable: true }
+    voice_markers: { ref: "voice-dna.md#gaia / character-bible.md#gaia" }
+    relationships:
+      echo:
+        type: "her AI"
+        established: "ch-02:p51"
+        current_status: "he came online talking mid-sentence and did not stop for an hour; something in her posture eased by the end of it"
+      vexxcerian:
+        type: "commanding officer; standing friction"
+        established: "ch-02:p47"
+        current_status: "argument suspended, not resolved (ch-05:p16). Holds a promise that she will be the first told"
+      aglaope: { type: "fellow operator", established: "ch-02:p63", current_status: "neither warms nor pulls away" }
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "assessment interview; pairing; the three-day room coffee station", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "dropship viewport; the tree line of the burned camp; six hours on the trail", travel_noted: true }
+      - { chapter: 5, location: "ruined-industrial-complex", scene: "forward, alone, ahead of the cell", travel_noted: true }
+      - { chapter: 5, location: "the-facility", scene: "transport home; corridor outside the debrief room; barracks", travel_noted: false }
+    knowledge:
+      - { fact: "that a second unmarked element, six-plus, was moving to flank the fireteam the cell was assigned to monitor", learned: "ch-05:p04", method: "witnessed" }
+      - { fact: "that Vexx suspects something he is not yet telling the cell, and has promised she will be the first to hear it", learned: "ch-05:p16", method: "told_by:vexxcerian" }
+      - { fact: "that Vexx's caution is about something other than her competence", learned: "ch-05:p12", method: "told_by:vexxcerian" }
+    does_not_know:
+      - { fact: "anything about Rx, the fragments, the dog tag, or the name Jameson in connection with them", source: "ch-05:p16" }
+    arc_notes: "Series canon: alive at the end of Book One; friction with Vexx suspended, not resolved; knows only that he suspects something."
+
+  paladin:
+    canonical_name: "Paladin"
+    aliases: []
+    importance: "major"
+    on_page: "Ch.2 (recruitment), Ch.3 (the jungle), Ch.4 (the refusal over Reyes)"
+    physical:
+      build: { value: "steady, broad-shouldered; a big man", source: "ch-02:p52" }
+      distinguishing:
+        - { value: "the kind of soldier other soldiers instinctively form up behind without being told to", source: "ch-02:p52" }
+    traits:
+      - { trait: "heavy defense; file full of commendations for covering retreats, buying evac time, and holding a position longer than regulation called for", source: "ch-02:p52", mutable: false }
+      - { trait: "'Nobody gets left' — stated as a fact of the universe rather than a personal creed", source: "ch-02:p53", mutable: false }
+      - { trait: "'No.' as a complete sentence — flat, immovable", source: "ch-04:p23", mutable: false }
+      - { trait: "restates the other position accurately before refusing it — 'capability isn't the same as action'", source: "ch-04:p22", mutable: false }
+      - { trait: "his jaw tightens, almost imperceptibly, at 'the call the situation requires'", source: "ch-03:p04", mutable: true }
+    voice_markers: { ref: "voice-dna.md#paladin / character-bible.md#paladin" }
+    relationships:
+      bastion: { type: "his AI", established: "ch-02:p52", current_status: "operational; donor was a combat medic who died covering an evac" }
+      vexxcerian:
+        type: "commanding officer"
+        established: "ch-02:p52"
+        current_status: "Vexx backed his refusal publicly and told the cell 'Paladin's right' (ch-04:p24)"
+      goliath: { type: "fellow operator", established: "ch-02:p63", current_status: "took to each other immediately" }
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "first sit-down; the three-day room", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "the burned camp; half-carrying Corwin out", travel_noted: true }
+      - { chapter: 4, location: "ruined-agricultural-settlement", scene: "the tree line above the settlement", travel_noted: true }
+    knowledge:
+      - { fact: "that command's briefing language authorises a Choosing without instructing one", learned: "ch-03:p03", method: "witnessed" }
+      - { fact: "that Reyes was flagged on a redacted psych file for a pattern of escalating aggression, not for an act", learned: "ch-04:p22", method: "told_by:vexxcerian" }
+    does_not_know:
+      - { fact: "anything of the Rx thread. Series canon: he knows nothing of it at the end of Book One", source: "series-bible" }
+    arc_notes: "The moral pressure test, deliberately arrested in Book One. Escalation reserved for Book Two."
+
+  zeus:
+    canonical_name: "Zeus"
+    aliases: []
+    importance: "major"
+    on_page: "Ch.2 (selection, pairing), Ch.3 (the interrogation), Ch.4 (talking Reyes down), Ch.5 (present, silent)"
+    physical:
+      distinguishing:
+        - { value: "sits apart, at the end of the table", source: "ch-02:p63" }
+    traits:
+      - { trait: "interrogation / psych-ops; years attached to ONI intelligence units doing work without a clean name", source: "ch-02:p55", mutable: false }
+      - { trait: "interrogation methods flagged more than once by internal review and never actually stopped", source: "ch-02:p55", mutable: false }
+      - { trait: "asks questions in a deliberately wrong order — small human details first, building trust before a timeline", source: "ch-03:p42", mutable: false }
+      - { trait: "reframes rather than argues — 'That's not information-gathering. That's a man looking for someone to blame.'", source: "ch-04:p19", mutable: false }
+      - { trait: "sits at a companionable distance rather than looming", source: "ch-03:p42", mutable: false }
+      - { trait: "annotates a data pad quietly through a transit and speaks without looking up", source: "ch-03:p07", mutable: true }
+    voice_markers: { ref: "voice-dna.md#zeus / character-bible.md#zeus" }
+    relationships:
+      hollow: { type: "his AI", established: "ch-02:p57", current_status: "spoke less than any other AI in the pairing session; Zeus seemed to prefer it" }
+      vexxcerian:
+        type: "commanding officer"
+        established: "ch-02:p55"
+        current_status: "trusted operationally, watched personally. Rx argued for his selection and Vexx signed his transfer the same afternoon"
+      rx:
+        type: "the AI who argued for putting him on the roster"
+        established: "ch-02:p56"
+        current_status: "Zeus is not shown to know this"
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "pairing session; the three-day room, sitting apart", travel_noted: false }
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "transport bay; the smashed comms array; the questioning at the fallen tree", travel_noted: true }
+      - { chapter: 4, location: "ruined-agricultural-settlement", scene: "point for contact; twenty minutes talking Reyes down", travel_noted: true }
+      - { chapter: 5, location: "ruined-industrial-complex", scene: "with the cell", travel_noted: true }
+    knowledge:
+      - { fact: "Corwin's account, extracted in full — the modified armour plating, the UNSC tactical shorthand, the single clean kill order", learned: "ch-03:p43", method: "witnessed" }
+      - { fact: "that Corwin behaved like a man who believed both sides were hunting him", learned: "ch-03:p23", method: "inferred" }
+      - { fact: "that Corwin knew the word 'Valkyr' before anyone in the cell used it", learned: "ch-03:p29", method: "witnessed" }
+    does_not_know:
+      - { fact: "anything of the Rx thread. Series canon: he knows nothing of it at the end of Book One", source: "series-bible" }
+    arc_notes: "The team's necessary edge. Series canon: alive, operationally trusted and personally not, at the end of Book One."
+
+  # ---------------------------------------------------------------- THE AIs
+  spector:
+    canonical_name: "Spector"
+    aliases: []
+    importance: "supporting"
+    on_page: "Ch.2 (pairing, the Phantom slip), Ch.3 (charge-pattern confirmation)"
+    physical:
+      distinguishing:
+        - { value: "readouts that stabilized faster than any diagnostic Vexx had seen run", source: "ch-02:p33" }
+        - { value: "readouts holding unusually steady — an AI being careful not to say more than he already has", source: "ch-02:p44" }
+    traits:
+      - { trait: "breach / demolitions AI. Donor: Phantom — a retired demolitions and covert-ops veteran, deceased eighteen months prior, no family listed", source: "ch-02:p23", mutable: false }
+      - { trait: "willing pre-death donation; the consent form carries a handwritten addendum where donor forms are not supposed to have handwriting", source: "ch-02:p23", mutable: false }
+      - { trait: "does not waste time with small talk; clipped and certain", source: "ch-02:p33", mutable: false }
+      - { trait: "the set-charge-clear cadence, inherited from the donor. TIC-BEARER: counting, numbering, tallying and rating belong to Spector alone in this book", source: "ch-02:p36", mutable: false }
+      - { trait: "reads his operator faster than six weeks of acquaintance strictly accounts for", source: "ch-02:p40", mutable: false }
+    voice_markers: { ref: "voice-dna.md#spector / character-bible.md#spector" }
+    relationships:
+      goliath:
+        type: "his operator"
+        established: "ch-02:p32"
+        current_status: "he handed Goliath the donor's name and then went careful — 'Small galaxy'"
+      phantom: { type: "his donor", established: "ch-02:p38", current_status: "named once, aloud, and not discussed again in drafted material" }
+    knowledge:
+      - { fact: "that his donor was called Phantom, though he does not know whether that was ever official", learned: "before ch-02:p38", method: "inferred" }
+      - { fact: "that Goliath's homeworld was saved by a lone Spartan the townsfolk called Ghost or Phantom", learned: "ch-02:p41", method: "told_by:goliath" }
+    arc_notes: "Character bible: he is holding a memory that was not his to give away, gave it away anyway, and is not sure that was allowed."
+
+  echo:
+    canonical_name: "Echo"
+    aliases: []
+    importance: "supporting"
+    on_page: "Ch.2 (pairing), Ch.3 (narration going clipped in the jungle), Ch.5 (the approving hum)"
+    traits:
+      - { trait: "recon / infiltration AI. Donor: a scout-sniper who died alone behind enemy lines", source: "series-bible", mutable: false }
+      - { trait: "came online talking, mid-sentence, as though he had been narrating the room before anyone gave him a voice, and did not stop for the better part of an hour", source: "ch-02:p51", mutable: false }
+      - { trait: "TIC-BEARER: compulsive narration; will not let a silence stand", source: "ch-02:p51", mutable: false }
+      - { trait: "his usually cheerful narration goes clipped and businesslike under the low static of jungle insect life", source: "ch-03:p25", mutable: true }
+      - { trait: "offers a small approving hum, mirroring almost exactly the sound Rx made in the same situation", source: "ch-05:p16", mutable: true }
+    voice_markers: { ref: "voice-dna.md#echo / character-bible.md#echo" }
+    relationships:
+      gaia: { type: "his operator", established: "ch-02:p51", current_status: "the noise in the ear of a woman who chose silence" }
+    knowledge:
+      - { fact: "the whole of the Gaia/Vexx corridor argument — present and silent throughout", learned: "ch-05:p16", method: "overheard" }
+    arc_notes: "Silence terrifies him, for reasons belonging to his donor that he has never stated (character-bible)."
+
+  bastion:
+    canonical_name: "Bastion"
+    aliases: []
+    importance: "supporting"
+    on_page: "Ch.2 only, as a name and a donor lineage. NO DIALOGUE IN THE DRAFTED MATERIAL."
+    traits:
+      - { trait: "heavy-defense AI. Donor: a combat medic who stayed behind to buy an evac window and did not make it through it", source: "ch-02:p52", mutable: false }
+      - { trait: "carries the donor's instinct forward — the same 'nobody gets left' shape as his operator", source: "ch-02:p52", mutable: false }
+      - { trait: "question-first body-check habit; never numeric (numbers are Spector's device)", source: "character-bible", mutable: false }
+    voice_markers: { ref: "voice-dna.md#bastion / character-bible.md#bastion" }
+    relationships:
+      paladin: { type: "his operator", established: "ch-02:p52", current_status: "operational" }
+    knowledge: []
+    arc_notes: "Planned own-problem (character-bible): believes he failed his donor by surviving as software. Not yet on the page."
+
+  hollow:
+    canonical_name: "Hollow"
+    aliases: []
+    importance: "supporting"
+    on_page: "Ch.2 only. NO DIALOGUE IN THE DRAFTED MATERIAL."
+    traits:
+      - { trait: "interrogation / psych-ops AI. Donor: ONI intelligence", source: "series-bible", mutable: false }
+      - { trait: "spoke less than any of the others in the first pairing session — precise, watchful, giving away nothing until it was useful to give it away", source: "ch-02:p57", mutable: false }
+    voice_markers: { ref: "voice-dna.md#hollow / character-bible.md#hollow" }
+    relationships:
+      zeus: { type: "his operator", established: "ch-02:p57", current_status: "Zeus seemed unbothered by the quiet; if anything he preferred it" }
+    knowledge: []
+    arc_notes: "Planned own-problem (character-bible): he is bored, being bored makes him unkind, and he finds that interesting rather than alarming."
+
+  requiem:
+    canonical_name: "Requiem"
+    aliases: ["Lure"]
+    importance: "supporting"
+    on_page: "Ch.2 (names herself), quoted by Aglaope in Ch.5"
+    traits:
+      - { trait: "psych pressure / lure AI. Named herself: 'Requiem. Feels right, doesn't it. A song for the ones who don't get to finish theirs.'", source: "ch-02:p59", mutable: false }
+      - { trait: "'Lure' appears in program paperwork only", source: "series-bible", mutable: false }
+      - { trait: "spoke last of all six, and softest", source: "ch-02:p59", mutable: false }
+      - { trait: "stated intent: 'I intend to keep singing it for people, not just against them. I hope that's what you're building here.'", source: "ch-02:p59", mutable: false }
+      - { trait: "the pause before she agrees", source: "character-bible", mutable: false }
+    voice_markers: { ref: "voice-dna.md#requiem / character-bible.md#requiem" }
+    relationships:
+      aglaope: { type: "her operator", established: "ch-02:p59", current_status: "Aglaope quotes her intent back to Vexx as the frame for the confession scene (ch-05:p31)" }
+    knowledge: []
+    motif_budget:
+      device: "the singing image — 'a song for the ones who don't get to finish theirs'"
+      cap: 3
+      spent_per_character_bible: 1
+      spent_on_the_page: 2
+      occurrences: ["ch-02:p59 (Requiem, first person)", "ch-05:p31 (Aglaope, quoting her)"]
+      flag: "UNRESOLVED — character-bible records 1 use spent; the drafted prose contains 2. See conflicts CF-05."
+    arc_notes: "Planned (Ch.16): she objects to her own operator — the only time an AI breaks ranks in Book One. Not yet on the page."
+
+  # ---------------------------------------------------------------- SUPPORTING
+  voss:
+    canonical_name: "Voss"
+    aliases: []
+    importance: "supporting"
+    on_page: "Ch.2 (delivers the cell-building assignment), Ch.4 (the favour and the raised eyebrow)"
+    physical:
+      gender: { value: "female — 'she told him'", source: "ch-02:p15" }
+      distinguishing:
+        - { value: "a raised eyebrow that says she understands exactly what you are doing and has decided not to stop you", source: "ch-04:p08" }
+        - { value: "something close to a smile, but not quite", source: "ch-02:p17" }
+    traits:
+      - { trait: "mid-level ONI liaison; clipped, efficient, unbothered by anything short of a hull breach", source: "ch-02:p15", mutable: false }
+      - { trait: "gives you the fact and lets the fact do the work; asks no questions and offers no commentary", source: "ch-04:p08", mutable: false }
+      - { trait: "returns every data pad face-down (planned device — not yet on the page)", source: "character-bible", mutable: false }
+    voice_markers: { ref: "voice-dna.md#voss / character-bible.md#voss" }
+    relationships:
+      vexxcerian:
+        type: "liaison; the one institutional ally, unexplained"
+        established: "ch-02:p15"
+        current_status: "burned a favour for him and chose not to stop him"
+    location_log:
+      - { chapter: 2, location: "the-facility", scene: "a table several floors above Jameson's office, considerably less carefully lit", travel_noted: false }
+      - { chapter: 4, location: "the-facility", scene: "evidence lock release (off-page, reported)", travel_noted: false }
+    knowledge:
+      - { fact: "that Vexx pulled Corwin's fragments out of evidence lock on a cell-tied authorization, and she chose not to stop him", learned: "ch-04:p08", method: "witnessed" }
+      - { fact: "that command considers Vexx the proof of concept for the whole pairing program", learned: "ch-02:p17", method: "discovered" }
+    does_not_know:
+      - { fact: "why Vexx wanted the fragments. She asked nothing", source: "ch-04:p08" }
+    arc_notes: "Series canon: alive; the one institutional ally, motive unexplained until Ch.19 (planned)."
+
+  corwin:
+    canonical_name: "Corwin"
+    aliases: ["Operator Corwin", "the rescued operator", "the Spartan" ]
+    importance: "supporting"
+    on_page: "Ch.3 (unnamed throughout — 'the Spartan', 'the operator'), named for the first time at ch-04:p01"
+    physical:
+      distinguishing:
+        - { value: "armour cracked in a dozen places; helmet off beside him", source: "ch-03:p26" }
+        - { value: "the flat thousand-meter stare of a man no longer entirely sure where he is", source: "ch-03:p26" }
+        - { value: "shaking hands; an eleven-day stare", source: "ch-04:p05" }
+        - { value: "voice hoarse from eleven days of talking to no one but a dead AI", source: "ch-03:p32" }
+    traits:
+      - { trait: "SPARTAN-II operator; sole survivor of his squad", source: "ch-03:p32", mutable: false }
+      - { trait: "burned his own camp and smashed the comms array so nothing could be tracked back to a specific unit — and so no one else would be dragged in", source: "ch-03:p33", mutable: false }
+      - { trait: "expected to be judged and was relieved to be found — 'They'll send the ghosts eventually. The ones who watch. The ones who decide.'", source: "ch-03:p31", mutable: true }
+      - { trait: "his AI's chassis sat dark and unresponsive on his knee — powered down, damaged, or something worse none of them had a name for", source: "ch-03:p26", mutable: true }
+    voice_markers: { ref: "voice-dna.md#corwin / character-bible.md#corwin" }
+    relationships:
+      vexxcerian:
+        type: "rescued by him; unwitting source of his first evidence"
+        established: "ch-03:p27"
+        current_status: "reassigned to a rehabilitation track; Vexx holds his fragments and a private file with his name in it"
+      aglaope: { type: "the operator who sat with him", established: "ch-03:p47", current_status: "the hand on the shoulder; walked him out" }
+      paladin: { type: "half-carried him out of the jungle", established: "ch-03:p49", current_status: "—" }
+    location_log:
+      - { chapter: 3, location: "unnamed-jungle-world", scene: "against a fallen tree, eleven days after the ambush", travel_noted: false }
+      - { chapter: 4, location: "off-page", scene: "reassigned to a rehabilitation track pending full psych clearance", travel_noted: true }
+    knowledge:
+      - { fact: "that a strike team wearing UNSC signatures — modified armour plating, UNSC tactical shorthand — killed his squad", learned: "before ch-03:p32", method: "witnessed" }
+      - { fact: "that one voice gave the kill order cleanly, like someone who had done it before. No name, no callsign", learned: "before ch-03:p45", method: "overheard" }
+      - { fact: "the word 'Valkyr', and that Valkyr is who gets sent to watch and decide", learned: "before ch-03:p28", method: "discovered" }
+      - { fact: "that command has ruled his account combat stress and isolation-induced confusion and reassigned him to a rehabilitation track", learned: "off-page, after ch-04:p02", method: "told_by:unknown" }
+    knowledge_gap:
+      - fact: "knows the classified program name 'Valkyr' and identifies the cell on sight"
+        used_in: "ch-03:p28"
+        issue: >-
+          The prose flags this itself — 'None of them had used that word anywhere he could
+          plausibly have heard it' (ch-03:p29) — and never supplies an acquisition path in the
+          drafted material. Recorded as a deliberate open question rather than a defect, but
+          no answer exists on the page.
+    needs_review: true
+    review_note: >-
+      character-bible.md assigns Corwin a reflexive grammar-correction device and a daughter he
+      never stops asking about, and gives a Ch.3 sample line ('Fewer. There were fewer of them
+      than the report says, not less.'). NEITHER appears in the drafted Ch.3. The bible's stated
+      design — 'the reader identifies him by a habit in Ch.3 and identifies his destruction by
+      that habit's absence in Ch.19' — has no Ch.3 anchor in the current prose. See CF-04.
+    arc_notes: "Series canon: alive at the end of Book One, reassigned to a rehabilitation track, holding a truth nobody believes. Not killed — edited."
+
+  reyes:
+    canonical_name: "Reyes"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.4 only"
+    physical:
+      distinguishing:
+        - { value: "size and presence used as a threat, with no weapon drawn", source: "ch-04:p18" }
+    traits:
+      - { trait: "SPARTAN-II operator; three tours in, decorated, respected", source: "ch-04:p17", mutable: false }
+      - { trait: "flagged in a redacted psych review for a pattern of escalating aggression toward civilian populations in contested zones", source: "ch-04:p17", mutable: false }
+      - { trait: "grieving a squad lost in the same Covenant raid that wrecked the settlement, with nowhere to put it", source: "ch-04:p26", mutable: true }
+      - { trait: "sat down in the dirt and put his head in his hands", source: "ch-04:p26", mutable: true }
+    voice_markers: { ref: "voice-dna.md#reyes / character-bible.md#reyes" }
+    relationships:
+      zeus: { type: "the man who talked him down over twenty minutes", established: "ch-04:p26", current_status: "de-escalated, not detained" }
+      aglaope: { type: "the operator who sat with him afterward", established: "ch-04:p26", current_status: "—" }
+      paladin: { type: "refused to authorise a Choosing against him", established: "ch-04:p22", current_status: "Reyes is not shown to know this" }
+    location_log:
+      - { chapter: 4, location: "ruined-agricultural-settlement", scene: "questioning civilians in the ruins; then sitting in the dirt", travel_noted: false }
+      - { chapter: 4, location: "off-page", scene: "mandatory psych evaluation", travel_noted: true }
+    knowledge:
+      - { fact: "nothing recorded — he is not shown learning that the cell was authorised to kill him", learned: "n/a", method: "inferred" }
+    arc_notes: "Series canon: alive at the end of Book One, in mandatory psych evaluation. He does not die in this book; his survival is the control case that makes the pattern legible in Ch.15 (planned)."
+
+  phantom:
+    canonical_name: "Phantom"
+    aliases: ["Ghost"]
+    importance: "mentioned_only"
+    on_page: "named once aloud, ch-02:p38. NEVER APPEARS, NEVER SPEAKS — must never be given a voice"
+    physical:
+      distinguishing:
+        - { value: "a Spartan who came in, ended a colony threat clean and quiet, and was gone before local news crews got a camera up", source: "ch-02:p41" }
+    traits:
+      - { trait: "retired veteran; demolitions and covert ops; deceased eighteen months before Goliath's pairing; no family listed", source: "ch-02:p23", mutable: false }
+      - { trait: "willing pre-death donor. Handwritten addendum on the consent form: 'For whoever needs it. Keep them from the dark.'", source: "ch-02:p23", mutable: false }
+      - { trait: "thorough — 'Never left a breach half-finished in his life, way I understand it'", source: "ch-02:p37", mutable: false }
+      - { trait: "'Ghost' is a townsfolk name, used only inside Goliath's childhood recollection", source: "ch-02:p41", mutable: false }
+    relationships:
+      spector: { type: "his AI", established: "ch-02:p38", current_status: "—" }
+      goliath: { type: "saved his homeworld when Goliath was a child (unconfirmed on the page)", established: "ch-02:p41", current_status: "suspected, not confirmed" }
+    arc_notes: "Series-level thread to plant, not explain. Delivered in Ch.2 as canon requires."
+
+  man-in-civilian-dress:
+    canonical_name: "the man in civilian dress"
+    aliases: ["the man"]
+    importance: "supporting"
+    on_page: "Ch.1 only. UNNAMED BY DESIGN — Ch.1 deliberately withholds the name"
+    physical:
+      distinguishing:
+        - { value: "unremarkable in every way that mattered; the kind of face built specifically to be forgotten thirty seconds after you stop looking at it", source: "ch-01:p25" }
+        - { value: "civilian dress, not a uniform", source: "ch-01:p25" }
+    traits:
+      - { trait: "gave no name and was never asked for one on the page", source: "ch-01:p25", mutable: false }
+      - { trait: "entirely unbothered by refusal; the patient, unapologetic expression of someone who has delivered worse news to better men", source: "ch-01:p47", mutable: false }
+      - { trait: "does not threaten. Presents a fact and lets the fact do the work — 'They didn't recruit him, exactly. They presented him with a fact and let the fact do the work.'", source: "ch-01:p45", mutable: false }
+      - { trait: "stepped out of the gray room and let the door close for the first Rx exchange", source: "ch-01:p31", mutable: false }
+    relationships:
+      vexxcerian:
+        type: "recruiter"
+        established: "ch-01:p25"
+        current_status: "not seen after the first weeks of visits"
+    location_log:
+      - { chapter: 1, location: "vexxs-apartment", scene: "the threshold; the second knock", travel_noted: false }
+      - { chapter: 1, location: "the-facility", scene: "the gray room; the mercy/miracle briefing; the first week of forms", travel_noted: true }
+    knowledge:
+      - { fact: "that Rx's mind survived and responds to no one but Vexx", learned: "before ch-01:p26", method: "discovered" }
+      - { fact: "that three prior integration candidates failed", learned: "before ch-01:p46", method: "discovered" }
+      - { fact: "the sanctioned account of Rx's death (classified operation, hostile contact, field-authorized transfer)", learned: "before ch-01:p39", method: "discovered" }
+    needs_review: true
+    review_note: >-
+      ch-01:p45 says 'the man in civilian dress or someone very much like him was waiting' —
+      leaving open whether this is one person or an interchangeable role. Tracked as ONE entity
+      with that ambiguity preserved. Do not merge with, or split from, any later-named recruiter
+      without an author decision.
+    arc_notes: "The recruitment voice of the program. Never named in the drafted material."
+
+  corwin-review-officer:
+    canonical_name: "the review officer (unnamed)"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.4 only"
+    physical:
+      gender: { value: "female", source: "ch-04:p02" }
+    traits:
+      - { trait: "a woman Vexx had never met and suspected he would never see again — the ONI trick of rotating faces through sensitive rooms so no single person accumulates a clear picture", source: "ch-04:p02", mutable: false }
+      - { trait: "does not look up from her data pad", source: "ch-04:p04", mutable: false }
+    relationships:
+      vexxcerian: { type: "delivered the ruling that closed the Corwin matter", established: "ch-04:p02", current_status: "single appearance" }
+    location_log:
+      - { chapter: 4, location: "the-facility", scene: "the debrief room, run for an outcome someone had already decided on", travel_noted: false }
+    knowledge:
+      - { fact: "the command assessment: combat stress and isolation-induced confusion; no corroborating evidence located; evidence assessed inconclusive", learned: "before ch-04:p02", method: "told_by:unknown" }
+    arc_notes: "Function, not character: the institution's voice ruling the evidence inconclusive."
+
+  kia-notification-officers:
+    canonical_name: "the two notification officers (unnamed)"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.1 only"
+    physical:
+      distinguishing:
+        - { value: "neither older than thirty; UNSC dress uniform; the particular stillness of people who have delivered this news before", source: "ch-01:p16" }
+        - { value: "a folder they never opened, held tighter against a dress blue chest each time he asked again", source: "ch-01:p19" }
+    traits:
+      - { trait: "delivered three rehearsed sentences, nearly word for word, eyes going to the same middle distance at 'how'", source: "ch-01:p18", mutable: false }
+      - { trait: "the younger one looked like he half suspected there was no 'more' to tell", source: "ch-01:p20", mutable: false }
+    knowledge:
+      - { fact: "the cover story only — classified operation, details need-to-know, served with distinction", learned: "before ch-01:p17", method: "told_by:unknown" }
+    arc_notes: "Delivery mechanism for the cover story. Not tracked beyond Ch.1."
+
+# ============================================================================================
+# LOCATIONS
+# ============================================================================================
+locations:
+  the-facility:
+    canonical_name: "the facility (unnamed ONI/Valkyr installation)"
+    aliases: ["the building", "this building"]
+    facts:
+      - { fact: "holds the gray room: small, gray, humming with the white noise of server cooling; a single terminal and a soft blue cursor on a black screen", source: "ch-01:p30" }
+      - { fact: "briefing rooms two levels below anything with a name on the door, on no building schematic, reached by an elevator requiring a code nobody wrote down", source: "ch-02:p02" }
+      - { fact: "Voss's table sits several floors above Jameson's office and is considerably less carefully lit", source: "ch-02:p15" }
+      - { fact: "holds a training range Vexx commandeered for the cell's early drills, with an observation deck above it; mock-structure walls scorched black in a dozen places", source: "ch-02:p36" }
+      - { fact: "holds assessment rooms, a coffee station, barracks/quarters, an evidence lock, and a common room the cell adopted as its unofficial gathering space", source: "ch-05:p20" }
+      - { fact: "instructors there never give their full names", source: "ch-01:p57" }
+      - { fact: "gray corridors", source: "ch-02:p09" }
+    distances: []
+  vexxs-apartment:
+    canonical_name: "Vexx's apartment"
+    aliases: []
+    facts:
+      - { fact: "barely unpacked — boxes still taped shut in the corner of an unfurnished living room", source: "ch-01:p25" }
+      - { fact: "has a kitchen table; the fragments were spread across it", source: "ch-04:p09" }
+      - { fact: "there is a drawer beside his bed holding the dog tag and the data chip", source: "ch-05:p37" }
+    distances: []
+  unnamed-jungle-world:
+    canonical_name: "the jungle world (unnamed)"
+    aliases: []
+    facts:
+      - { fact: "triple-canopy jungle so dense it reads from altitude as a single unbroken green skin across the whole world", source: "ch-03:p07" }
+      - { fact: "vines that have to be cut; ground that gives way into sinkholes hidden under decades of leaf litter; constant low static of insect life", source: "ch-03:p25" }
+      - { fact: "holds the burned-out clearing where a temporary camp stood, scorched in a pattern too deliberate to be accidental, equipment stripped or destroyed", source: "ch-03:p14" }
+      - { fact: "six hours on the trail from the burned camp to where Corwin was found, arriving a little after dusk", source: "ch-03:p25" }
+      - { fact: "Corwin was found against a fallen tree", source: "ch-03:p26" }
+    distances:
+      - { to: "the-facility", value: "dropship + transport; a full flight home, cabin lights dimmed for sleep", source: "ch-03:p51" }
+  ruined-agricultural-settlement:
+    canonical_name: "the ruined agricultural settlement (unnamed)"
+    aliases: []
+    facts:
+      - { fact: "a small agricultural settlement caught weeks earlier in the crossfire of a Covenant raid", source: "ch-04:p18" }
+      - { fact: "has a tree line above it from which the cell observed", source: "ch-04:p22" }
+      - { fact: "surviving civilians remained on site and were being questioned by Reyes", source: "ch-04:p18" }
+    distances: []
+  ruined-industrial-complex:
+    canonical_name: "the ruined industrial complex (unnamed)"
+    aliases: []
+    facts:
+      - { fact: "on the edge of a contested zone", source: "ch-05:p03" }
+      - { fact: "terrain the second unmarked element folded back into, which Gaia could no longer read cleanly once the window closed", source: "ch-05:p15" }
+    distances: []
+  goliaths-homeworld:
+    canonical_name: "Goliath's homeworld (unnamed colony)"
+    aliases: []
+    facts:
+      - { fact: "a colony under threat when Goliath was a child — pirates or insurrectionists; he was too young to be told which", source: "ch-02:p41" }
+      - { fact: "one Spartan ended it clean and quiet and was gone before local news crews got a camera up; nobody in town got a name", source: "ch-02:p41" }
+    distances: []
+  rx-death-site:
+    canonical_name: "the site of Rx's death (unnamed)"
+    aliases: []
+    facts:
+      - { fact: "a jungle clearing — 'whatever he'd buried in a jungle clearing a lifetime ago'", source: "ch-05:p37" }
+      - { fact: "Rx's stage-1 leak surfaces a treeline that is not the Corwin treeline and that he has no file for", source: "ch-03:p37" }
+      - { fact: "PLANNED (outline:ch-20): the name Rx eventually surfaces for this place is Ashgrove. NOT ON THE PAGE.", source: "outline:ch-20" }
+    distances: []
+  empty-casket-burial-site:
+    canonical_name: "Rx's grave (unnamed)"
+    aliases: []
+    facts:
+      - { fact: "an empty casket buried under protocol for classified KIAs — remains unable to be recovered from the field", source: "ch-01:p22" }
+      - { fact: "sun too bright for the occasion; a chaplain speaking about sacrifice and duty", source: "ch-01:p22" }
+    distances: []
+
+# ============================================================================================
+# TIMELINE — RELATIVE ANCHORS ONLY. No absolute in-universe date may be pinned (series canon).
+# ============================================================================================
+timeline:
+  - chapter: 1
+    time: "spans roughly two years, told retrospectively. Anchors in order: the 0300 incident -> three weeks later, the discharge hearing -> Rx had shipped out three weeks before that -> the last comm -> the KIA notification -> the empty-casket burial -> four months of grief -> 'the second knock came four months to the day' -> the gray room -> first week of forms and briefings -> first month of training -> four weeks after the gray room, told he will help stand up a cell"
+    season: "not stated"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      CONFLICT CF-01 (see conflicts). This chapter places Vexx's recruitment FOUR MONTHS after
+      Rx's death. Series canon and Ch.3/Ch.5 place it FOUR YEARS after. Secondary wobble: Rx
+      tells Vexx he is rusty four days into training and Vexx answers 'I've been retired for a
+      year' (ch-01:p59), which implies roughly eight months between the discharge and the KIA
+      notification — a span the chapter never states.
+  - chapter: 2
+    time: "'three weeks into his own re-entry' = ~3 weeks after the gray room (Jameson meeting) -> the assignment two weeks later -> four days working the shortlist -> Goliath's pairing three days after the interview -> the Phantom slip three weeks after the pairing -> the rest of the roster over the following six weeks -> three days between the last pairing and the first deployment"
+    season: "autumn"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      Season established by 'Like so much else that autumn' (ch-02:p45). Command wanted the cell
+      operational 'within the quarter' (ch-02:p15). Retrospective forward-reach: 'He would spend
+      the better part of two years finding out how much of that hope had been earned'
+      (ch-02:p61) — the narrator's vantage sits at least two years past Ch.2.
+      Minor wobble: Spector reads Goliath 'faster than made strict logical sense for six weeks
+      of acquaintance' (ch-02:p40) inside a scene the same chapter places three weeks after the
+      pairing (ch-02:p36).
+  - chapter: 3
+    time: "the cell's first deployment, three days after the last pairing. The target had been dark eleven days. Burned camp found by midafternoon; six hours on the trail; Corwin found a little after dusk; extraction that night; report filed from the transport home"
+    season: "autumn"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      'the way he'd been filing everything that autumn' (ch-03:p46). Ch-03:p58 states 'a door
+      that had been closed for four years had just shifted' — see CF-01.
+  - chapter: 4
+    time: "the Corwin debrief 'three weeks after the jungle' -> fragments pulled from evidence lock two days later -> the same night at the kitchen table -> the Reyes mission (the cell's THIRD deployment) six weeks later -> Jameson's signed response three days after that -> the night conversation with Rx that same night"
+    season: "autumn (continuing)"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      Ch.4 is the cell's third deployment; the SECOND deployment is never depicted or dated in
+      the drafted material. Gap noted, not filled.
+  - chapter: 5
+    time: "a monitoring mission after Ch.4 (interval not stated) -> corridor argument the same day -> 'He found Aglaope two nights later'"
+    season: "autumn"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      'the way he'd learned to do more and more often that autumn' (ch-05:p39). Ch-05:p37 states
+      Jameson has slept certain 'for four years' — see CF-01. The five drafted chapters cover
+      roughly six to eight months from the gray room, all inside a single autumn from Ch.2 on.
+
+# ============================================================================================
+# OBJECTS — the physical evidence chain is the spine of this book. Tracked in detail.
+# ============================================================================================
+objects:
+  corwins-fragments:
+    introduced: "ch-03:p35"
+    description: "The group term for the physical evidence Corwin retained from the ambush: a modified armour plate, a half-melted data chip, and a dented dog tag. Corwin's own summary: 'Enough to know I'm not crazy. Not enough to matter to anyone who could actually do something about it.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-05:p37"
+    resolution: null
+    chain_of_custody:
+      - { stage: 1, holder: "corwin", where: "in the operator's own gear, in the jungle", source: "ch-03:p49" }
+      - { stage: 2, holder: "evidence lock (institution)", where: "the facility", source: "ch-04:p08", note: "reviewed by command and 'assessed as inconclusive' (ch-04:p04)" }
+      - { stage: 3, holder: "vexxcerian", where: "released to him two days after the debrief on an authorization tied to his own cell, via a favour from Voss", source: "ch-04:p08" }
+      - { stage: 4, holder: "vexxcerian", where: "spread across his kitchen table, alone, that night", source: "ch-04:p09" }
+      - { stage: 5, holder: "vexxcerian", where: "a drawer in his apartment / beside his bed", source: "ch-04:p22" }
+    handled_by: ["corwin", "corwin-review-officer (reviewed)", "voss (released)", "vexxcerian", "rx (ran the serial)"]
+    conflict:
+      - id: "CF-02"
+        value: "Vexx tells the review officer 'He had fragments. Physical evidence. I documented it in the field.' (ch-04:p03)"
+        source: "ch-04:p03"
+        against: "ch-03:p49 — 'He did not document the fragments of proof, still sitting untouched in the operator's gear.'"
+        flag: "UNRESOLVED"
+  modified-armour-plate:
+    introduced: "ch-04:p09"
+    description: "A scorched fragment of armour plating from the strike team. The modification pattern on its underside is subtle enough that a rushed field assessment could call it inconclusive, and clear enough under proper light that it plainly is not standard issue."
+    status: "chekhov_open"
+    last_mentioned: "ch-04:p09"
+    resolution: null
+    proves: "that the strike team's armour carried modifications of a kind only a handful of black programs get clearance for (Corwin's account, ch-03:p44)"
+    does_not_prove: "which program, or whose"
+    chain_of_custody: "see corwins-fragments"
+  half-melted-data-chip:
+    introduced: "ch-04:p09"
+    description: "A half-melted data chip. Its contents are unrecoverable by anything short of a full forensics lab."
+    status: "chekhov_open"
+    last_mentioned: "ch-05:p37"
+    resolution: null
+    proves: "nothing in its current state"
+    does_not_prove: "anything — unread, and unreadable with what Vexx has"
+    chain_of_custody: "see corwins-fragments"
+  dented-dog-tag:
+    introduced: "ch-04:p09"
+    description: "A single dented dog tag, NOT Corwin's, snagged on the collar of an armour piece that had belonged to nobody in his squad. Rx ran the serial: it does not come back clean — not flagged classified, simply absent, 'like it was never issued at all, or like the record was pulled after the fact.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-05:p37"
+    resolution: null
+    proves: "that someone whose record does not exist was physically present at the ambush"
+    does_not_prove: "who, or on whose orders. Resolving further needs a records system Rx does not have access to, and pulling that access would leave a trail (ch-04:p13). Vexx declined the risk: 'Not yet.'"
+    chain_of_custody: "see corwins-fragments"
+    planned_developments:
+      - { fact: "the stamped name is HOLST, D.", source: "outline:ch-07", status: "NOT ON THE PAGE" }
+      - { fact: "Holst was logged KIA seven years before Corwin's ambush; the equipment was reissued eleven months after his death, routing through RECLAMATION", source: "outline:ch-07", status: "NOT ON THE PAGE" }
+      - { fact: "the tag was DROPPED, not planted — it fell off someone who came back for it and missed ('He was tidying')", source: "outline:ch-06", status: "NOT ON THE PAGE" }
+  vexxs-private-file:
+    introduced: "ch-04:p15"
+    description: "The file Vexx keeps separately from anything that would ever cross Jameson's desk. As of Ch.4 it has one name in it: Corwin. 'Not evidence of anything yet. Just a thread, pulled loose, that he wasn't ready to let go of.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-05:p37"
+    resolution: null
+  rxs-kia-notification-folder:
+    introduced: "ch-01:p16"
+    description: "The folder the two notification officers carried and never opened, held tighter against a dress blue chest each time Vexx asked again."
+    status: "chekhov_open"
+    last_mentioned: "ch-01:p19"
+    resolution: null
+    planned_developments:
+      - { fact: "the four-year-old KIA notification carries a signature block — rank, name, authorising designation — that Vexx has owned the whole time and never read properly", source: "outline:ch-21", status: "NOT ON THE PAGE" }
+  the-empty-casket:
+    introduced: "ch-01:p22"
+    description: "The casket buried at Rx's funeral, holding nothing. 'There's just a box shaped like an apology, and I'm standing here accepting it because there's nothing else on offer.' Declared motif: boxes that hold nothing."
+    status: "background"
+    last_mentioned: "ch-02:p71"
+    resolution: null
+  phantom-donor-consent-form:
+    introduced: "ch-02:p23"
+    description: "Spector's donor consent form, carrying a handwritten addendum at the bottom, in a place where donor forms are not supposed to have handwriting at all: 'For whoever needs it. Keep them from the dark.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-02:p35"
+    resolution: null
+    note: "Vexx has read it. Goliath has NOT — Vexx deliberately withheld it as a story that belonged to Goliath to find on his own."
+  corwins-dark-ai-chassis:
+    introduced: "ch-03:p26"
+    description: "Corwin's AI's chassis, sitting dark and unresponsive on his knee — 'powered down, or damaged, or something worse that none of them had a name for yet.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-03:p26"
+    resolution: null
+  smashed-comms-array:
+    introduced: "ch-03:p21"
+    description: "A fragment of communications equipment from the burned camp, deliberately smashed rather than burned, so that no signal could ever go out of that clearing even after the fire went cold. Corwin destroyed it himself so nothing could be tracked back to a specific unit."
+    status: "chekhov_closed"
+    last_mentioned: "ch-03:p33"
+    resolution: { chapter: 3, paragraph: 33, description: "Corwin explains it himself: he burned the camp and smashed the array so no one else would be dragged into it" }
+  jamesons-commendation:
+    introduced: "ch-04:p28"
+    description: "The cell's response after Reyes was spared: 'Cell showed excellent judgment and restraint. Well done.' Signed, as always, with Jameson's name. Vexx read it twice looking for the thing underneath it and found only the same practised warmth."
+    status: "background"
+    last_mentioned: "ch-04:p29"
+    resolution: null
+  vexxs-sidearm-0300:
+    introduced: "ch-01:p04"
+    description: "The sidearm Vexx came out of sleep holding in both hands, sighted on his own bunk door, with Rx in the doorway. He did not lower it for two full seconds. The real reason for the discharge."
+    status: "background"
+    last_mentioned: "ch-01:p06"
+    resolution: null
+
+# ============================================================================================
+# WORLD RULES
+# ============================================================================================
+world_rules:
+  - { rule: "Valkyr's official paper trail is a bland subsection designation; the internal name is withheld even from new operators — 'Not Valkyr — not yet, not to him'", source: "ch-01:p54" }
+  - { rule: "The program does not exist to fight the Covenant. It exists to watch the UNSC's own supersoldiers: to monitor, to judge, and to end, if the judgment comes back wrong", source: "ch-01:p55" }
+  - { rule: "Elimination authority is issued as permission, never instruction — 'authorized, not obligated, to make the call the situation requires'. Nobody says 'the Choosing' out loud in the room", source: "ch-03:p02" }
+  - { rule: "The word for it is 'the Choosing', lowercase in narration", source: "ch-03:p03" }
+  - { rule: "Smart AIs are built from a dead human's mind; the Valkyr transfer can be authorized on-site in the field as a last measure", source: "ch-01:p39" }
+  - { rule: "Donors sign a consent form before death; the form is standardised and is not supposed to carry handwriting", source: "ch-02:p23" }
+  - { rule: "AI-operator pairings run through a neural interface and produce compatibility scores predicted in advance, which the actual bonding process does not reliably honour", source: "ch-02:p19" }
+  - { rule: "Rx is 'a program of one' — he would not respond to, or run diagnostics for, three other candidates, and sat by every available measure entirely alone until Vexx entered the room", source: "ch-01:p46" }
+  - { rule: "Classified KIAs are buried with an empty casket: remains unable to be recovered from the field", source: "ch-01:p22" }
+  - { rule: "ONI rotates faces through sensitive rooms so no single person accumulates too clear a picture of anything", source: "ch-04:p02" }
+  - { rule: "Cells are built from the discarded — people already erased, overlooked, or handed a designation instead of a name", source: "ch-02:p71" }
+  - { rule: "Evidence released from evidence lock can be pulled on an authorization tied to a single cell, which does not flag on a wider report", source: "ch-04:p08" }
+  - { rule: "Pulling records access without authorization leaves a trail", source: "ch-04:p13" }
+  - { rule: "Valkyr AIs are drawn from the same elite donor stock as SPARTAN-II AI pairings, meaning any Valkyr AI could be a genetic sibling to a SPARTAN-II's AI. NOT PUBLICLY KNOWN; not yet on the page", source: "series-bible" }
+  - { rule: "Two known AI origin types: twin/soul-bond (Rx) and willing pre-death donation (Spector, and presumably others)", source: "series-bible" }
+  - { rule: "NO RAMPANCY CLOCK, in any form, in any book. AI instability is memory suppression, trauma and moral weight only", source: "series-bible" }
+  - { rule: "Operators work in isolated cells with no contact between cells, insulated from the command tier that issues elimination orders. NOT YET DRAMATIZED on the page", source: "series-bible" }
+  - { rule: "Rx's memory of the event that killed him is sealed; the seal is not static and degrades under (1) proximity or reference to Jameson and (2) Vexx's investigation closing in externally", source: "series-bible" }
+  - { rule: "No absolute in-universe date may be pinned to the page. Era: early-to-mid Human-Covenant War", source: "series-bible" }
+
+# ============================================================================================
+# ORGANIZATIONS
+# ============================================================================================
+organizations:
+  valkyr:
+    canonical_name: "Valkyr"
+    aliases: ["the program", "the rebuilt Valkyr"]
+    facts:
+      - { fact: "the name is not given to Vexx at recruitment — only a subsection tag meaning nothing on its own", source: "ch-01:p54" }
+      - { fact: "described to Vexx as 'specialized asset recovery and monitoring, operating outside standard chains of command, answerable to a command structure he wouldn't be introduced to for several more weeks'", source: "ch-01:p54" }
+      - { fact: "Corwin knows the name and knows what it means — 'the ghosts... the ones who watch. The ones who decide'", source: "ch-03:p31" }
+      - { fact: "was rebuilding and expanding beyond a single operator and his AI when Vexx was brought in", source: "ch-01:p66" }
+      - { fact: "the cell Vexx built is the first full cell the rebuilt program has fielded", source: "ch-02:p74" }
+      - { fact: "NEVER write 'Valkyrie' or 'Valkyr Program' as a formal title", source: "series-bible" }
+  vexxs-cell:
+    canonical_name: "the cell (unnamed)"
+    aliases: ["the first full cell", "this cell"]
+    facts:
+      - { fact: "commissioned as five operators and five AI selected by Vexx from a pre-screened shortlist, with Vexx holding final say; command wanted it operational within the quarter", source: "ch-02:p15" }
+      - { fact: "final composition on the page: Vexx/Rx, Goliath/Spector, Gaia/Echo, Paladin/Bastion, Zeus/Hollow, Aglaope/Requiem — six operators and six AI", source: "ch-02:p72" }
+      - { fact: "deployments depicted: 1st = the jungle world (Ch.3), 3rd = the Reyes settlement (Ch.4). The 2nd is never depicted", source: "ch-04:p16" }
+      - { fact: "Vexx is not formally in command at selection — 'Not command, not yet — just a seat at the table'", source: "ch-01:p66" }
+    conflict:
+      - id: "CF-06"
+        value: "'six pairings into a roster he'd built with his own hands' (ch-02:p60)"
+        source: "ch-02:p60"
+        against: "Vexx built five pairings; his own pairing with Rx was made for him before the cell existed (ch-01:p46)"
+        flag: "UNRESOLVED"
+  oni:
+    canonical_name: "ONI"
+    aliases: []
+    facts:
+      - { fact: "released Vexx with 'the kind of quiet efficiency ONI reserved for assets that had become liabilities'", source: "ch-01:p07" }
+      - { fact: "senior officers have access to longevity treatments", source: "ch-02:p02" }
+      - { fact: "runs intelligence units whose interrogation methods get flagged by internal review and not stopped", source: "ch-02:p55" }
+      - { fact: "NEVER write 'O.N.I.'", source: "series-bible" }
+  unsc:
+    canonical_name: "UNSC"
+    aliases: []
+    facts:
+      - { fact: "the parent military; dress uniform is the vehicle for a KIA notification", source: "ch-01:p16" }
+      - { fact: "a strike team wearing UNSC signatures — modified armour plating, UNSC tactical shorthand, matching no deployment on record — ambushed Corwin's squad", source: "ch-03:p44" }
+      - { fact: "NEVER write 'U.N.S.C.'", source: "series-bible" }
+  spartan-ii:
+    canonical_name: "SPARTAN-II"
+    aliases: ["Spartan (as a common noun on the page)"]
+    facts:
+      - { fact: "Vexx and Rx entered at age six as twins — same baseline, same augmentation windows, tracked as a matched pair rather than two variables", source: "ch-01:p10" }
+      - { fact: "every discipline is cross-trained in field demolition at some level", source: "ch-03:p21" }
+      - { fact: "operators are the objects of Valkyr's charter, not its staff", source: "ch-01:p55" }
+      - { fact: "NEVER write 'Spartan-2' or 'SPARTAN II'", source: "series-bible" }
+  the-covenant:
+    canonical_name: "the Covenant"
+    aliases: []
+    facts:
+      - { fact: "the war the program pointedly does not exist to fight", source: "ch-01:p55" }
+      - { fact: "a Covenant raid wrecked the agricultural settlement weeks before the cell arrived, and killed the squad Reyes was grieving", source: "ch-04:p18" }
+      - { fact: "Series canon: the Human-Covenant War runs in the background of both books. Open author decision: pressure the cell feels, or scenery they pass", source: "series-bible" }
+
+# ============================================================================================
+# SECRETS — the asymmetric-knowledge engine. Who knows what, as of the end of Ch.5.
+# ============================================================================================
+secrets:
+  rx-was-murdered:
+    statement: "Rx did not die in combat. He refused a Choosing order and was killed as a cleanup action disguised as hostile contact. Jameson gave the order and carried it out personally, and Rx's death is the hinge of his promotion."
+    canonical_source: "series-bible"
+    state_at_end_of_ch5: "SUSPECTED BY ONE MAN, SPOKEN ALOUD TO ONE OTHER. Not proven, not acted on."
+    who_knows:
+      richard-jameson:
+        level: "full — he did it"
+        source: "series-bible; ch-02:p08"
+        note: "believes it died with Rx. Does NOT know Rx survived as an AI (ch-05:p37). See characters.richard-jameson.does_not_know for the open mechanism question."
+      rx:
+        level: "sealed — he lived it and cannot reach it"
+        source: "ch-04:p39"
+        note: "Has fragments only: a treeline he has no file for and a voice he cannot place (ch-03:p37); his own voice in 'the shape of a refusal' (ch-04:p36). He has NOT connected them to Jameson, and has told Vexx he does not remember. He knows he is carrying something — 'I'm working on being ready' (ch-05:p36)."
+      vexxcerian:
+        level: "suspicion, unacted"
+        source: "ch-05:p24"
+        note: >-
+          Believes an order was given, refused, and buried. Points toward Jameson but has not
+          said the name first himself — Aglaope said it and he did not correct her (ch-05:p27).
+          Has physical evidence that proves someone unrecorded was at the Corwin ambush, and
+          nothing that connects it to Rx. Has chosen NOT to pull the records access that would
+          resolve the serial, because it would leave a trail (ch-04:p13). Has taken no action
+          against Jameson and has not reported anything.
+      aglaope:
+        level: "the suspicion in outline, not the evidence"
+        source: "ch-05:p24"
+        note: "Told by Vexx directly. Named Jameson herself. Was NOT given the dog tag by name and was NOT given Rx's memory fragments in full (ch-05:p32). Asked to keep it, and agreed."
+      gaia:
+        level: "that Vexx suspects something, and nothing else"
+        source: "ch-05:p16"
+        note: "Holds a promise that she will be the first told when it becomes more than suspicion."
+      voss:
+        level: "adjacent only"
+        source: "ch-04:p08"
+        note: "Knows Vexx pulled Corwin's fragments out of evidence lock and chose not to stop him. Does NOT know why, and did not ask. Series canon assigns her no knowledge of the Rx thread."
+      goliath: { level: "none", source: "series-bible" }
+      paladin: { level: "none", source: "series-bible" }
+      zeus:    { level: "none", source: "series-bible" }
+      corwin:  { level: "none of the Rx thread; holds the parallel truth about his own ambush and is not believed", source: "ch-04:p02" }
+      spector: { level: "none", source: "series-bible" }
+      echo:    { level: "none — but was present for the Gaia corridor exchange", source: "ch-05:p16" }
+      bastion: { level: "none", source: "series-bible" }
+      hollow:  { level: "none", source: "series-bible" }
+      requiem: { level: "unrecorded — Aglaope is not shown telling her", source: "ch-05:p32" }
+  phantom-saved-goliaths-homeworld:
+    statement: "The Spartan who ended the threat to Goliath's childhood colony and the donor behind Goliath's AI are the same man."
+    canonical_source: "series-bible"
+    state_at_end_of_ch5: "SUSPECTED BY GOLIATH, NEVER CONFIRMED. Delivered exactly as canon requires — not from a record, but because Spector let it slip."
+    who_knows:
+      goliath: { level: "suspects; 'didn't sound entirely convinced it was coincidence'", source: "ch-02:p44" }
+      spector: { level: "handed over the name and then went careful", source: "ch-02:p38" }
+      vexxcerian: { level: "saw Goliath go quiet, did not hear the exchange, made a note to ask and never did", source: "ch-02:p45" }
+  the-donor-addendum:
+    statement: "Phantom's consent form carries a handwritten line: 'For whoever needs it. Keep them from the dark.'"
+    canonical_source: "ch-02:p23"
+    state_at_end_of_ch5: "KNOWN TO VEXX, DELIBERATELY WITHHELD FROM GOLIATH"
+    who_knows:
+      vexxcerian: { level: "full; chose not to mention it — 'That story belonged to Goliath to find on his own time'", source: "ch-02:p35" }
+      rx: { level: "full; read the donor file and used it to argue for Goliath's selection", source: "ch-02:p22" }
+      goliath: { level: "none", source: "ch-02:p35" }
+
+# ============================================================================================
+# MEMORY UNLOCK LADDER — locked four-stage structure (series-bible). Book One may reach 3.
+# ============================================================================================
+memory_unlock_ladder:
+  canonical_source: "series-bible"
+  stage_1:
+    definition: "First leak — an unexplained flash (name/image) during a routine op. Unsettling, not yet legible."
+    status: "SPENT"
+    on_the_page: "ch-03:p37"
+    what_surfaced: "a treeline that is not this treeline and that he has no file for, plus a voice he could not place, giving an order. Triggered by Corwin's line 'the ones who watch, the ones who decide.'"
+    vexx_response: "wanted to push; did not. Filed it away (ch-03:p40)"
+    rx_response: "'I'm fine' — too quick (ch-03:p39). Then, on the transport home, states he believes it was a memory, his, from before, and sounds afraid for the first time (ch-03:p53, ch-03:p56)"
+  stage_2:
+    definition: "Second leak — a fragment of sound/emotion; Rx hears his own voice refusing the order. Surfaces as a glitch Vexx notices and Rx deflects."
+    status: "SPENT"
+    on_the_page: "ch-04:p36"
+    what_surfaced: "his own voice, not saying anything he remembers saying — not words yet, 'just the shape of a refusal.' Occurred twice in one day: once during the briefing when Jameson's name came up, once while talking about Paladin standing his ground."
+    vexx_response: "asked directly — 'Do you remember anything at all about how you actually died?' (ch-04:p37)"
+    rx_response: "'No... Something in me won't let me get close enough to look.' Vexx believed him, and also registered it as not quite a lie and not quite the whole truth (ch-04:p39)"
+  stage_3:
+    definition: "Third leak — triggered specifically by Jameson's presence/voice. Proximity to Jameson becomes narratively dangerous for Rx."
+    status: "NOT REACHED"
+    planned_for: "outline:ch-13 (Proximity) — Jameson's voice on the open channel at close range; Rx comes apart in contact; Vexx loses two seconds of interface and almost gets shot; Vexx lies to the cell for the first time to cover for him"
+    precursors_already_on_the_page:
+      - { event: "the half-syllable catch on Jameson's name in a command-structure briefing", source: "ch-01:p62" }
+      - { event: "Rx silent through the entire first Jameson meeting; a cursor hitching on Jameson's voice 'the way skin flinches from a burn it can't consciously remember getting'", source: "ch-02:p14" }
+      - { event: "Rx silent again through Jameson's first mission briefing", source: "ch-02:p75" }
+      - { event: "Rx goes held-breath still at Corwin's description of the clean kill order", source: "ch-03:p46" }
+      - { event: "one of the two stage-2 triggers was Jameson's name in a briefing", source: "ch-04:p36" }
+  stage_4:
+    definition: "Full unlock — forced by Vexx confronting Rx directly with external evidence."
+    status: "FORBIDDEN IN BOOK ONE"
+    planned_for: "Book Two, at or just before the climax"
+    note: "outline:ch-20 (Ashgrove) delivers stage-3 RESIDUE only — a place name, a fragment of the refusal, and the structural fact that it was not combat. No face, no name, no rank, no date."
+
+# ============================================================================================
+# PLANNED — entities the outline creates that are NOT YET ON THE PAGE.
+# Nothing in this block has occurred. Do not treat any of it as established.
+# ============================================================================================
+planned:
+  status_note: "Sourced from outline.md / foundation.md / character-bible.md for Ch.6-26. NOT PROSE. No chapter beyond 5 exists."
+  characters:
+    holst-d:
+      canonical_name: "HOLST, D."
+      first_planned_appearance: "outline:ch-07 (as a stamped name only)"
+      function: "the name on the dented dog tag. Logged KIA seven years before Corwin's ambush; his equipment reissued eleven months after his death, routing through RECLAMATION"
+      constraint: "never appears, never speaks, never described, never given a first name"
+      source: "outline:ch-07; character-bible"
+    merrick:
+      canonical_name: "Merrick"
+      first_planned_appearance: "outline:ch-08"
+      function: "SPARTAN-II who genuinely is coming apart; removed from the field alive and non-lethally. The one case where the system's judgement is correct. NOT a conspiracy victim"
+      source: "outline:ch-08; foundation"
+    dessen:
+      canonical_name: "Dessen"
+      first_planned_appearance: "outline:ch-10"
+      function: "Internal Compliance officer auditing the cell's evidence handling on the Corwin matter. Not a villain; the procedural breach she is investigating is real and Vexx committed it"
+      source: "outline:ch-10; foundation"
+    ives:
+      canonical_name: "Ives"
+      first_planned_appearance: "outline:ch-12"
+      function: "SPARTAN-II the cell assesses and clears in Ch.12-13; Jameson served with him and is genuinely glad to see him; dead by Ch.14, reported in three lines of a morning traffic digest"
+      source: "outline:ch-12; foundation"
+    beck:
+      canonical_name: "Beck"
+      first_planned_appearance: "outline:ch-17"
+      function: "SPARTAN-II target whose flag Vexx believes is manufactured. Survives, because Vexx corrupts the assessment to keep him alive"
+      source: "outline:ch-17; foundation"
+    records-clerk:
+      canonical_name: "the records clerk (unnamed)"
+      first_planned_appearance: "outline:ch-16"
+      function: "the lonely clerk Aglaope sits with for four hours to obtain a routing index; his name is added to her list"
+      source: "outline:ch-16"
+    corwins-daughter:
+      canonical_name: "Corwin's daughter (unnamed)"
+      first_planned_appearance: "outline:ch-06"
+      function: "the only thing Corwin ever asks for, in every scene, and it is never granted. NOT MENTIONED in the drafted Ch.3"
+      source: "foundation; character-bible"
+  locations:
+    ashgrove:
+      canonical_name: "Ashgrove"
+      first_planned_appearance: "outline:ch-20"
+      function: "the place name Rx surfaces from behind the seal. Where he died. He cannot say whether it is a town, a valley or a callsign"
+      never_spelled: ["Ash Grove", "Ashgroves"]
+      source: "outline:ch-20; foundation"
+      note: "The drafted prose describes the site only as 'a jungle clearing' (ch-05:p37). The name is NOT on the page."
+    the-rehabilitation-facility:
+      canonical_name: "the rehabilitation facility (unnamed)"
+      first_planned_appearance: "outline:ch-06"
+      function: "where Corwin is held. Clean, well-run, humane, sunlit, decent coffee. Its decency is the horror — it must never be made sinister"
+      source: "outline:ch-06"
+  organizations:
+    reclamation:
+      canonical_name: "RECLAMATION"
+      first_planned_appearance: "outline:ch-07 (planted, unglossed, in a requisition's administrative footer), named and understood in outline:ch-15"
+      function: "the parent routing tag. Vexx's cell files under one branch designation; the dead man's equipment reissue files under a sibling, two digits away. THE TURN of the book"
+      source: "outline:ch-07, outline:ch-15"
+      writer_constraint: "must NOT be glossed on first appearance. No character notices it in Ch.7; no narration underlines it"
+    the-second-cell:
+      canonical_name: "the second branch / the disposal cell (unnamed)"
+      first_planned_appearance: "outline:ch-15 (deduced, never met)"
+      function: "the invisible sibling branch that disposes. 'His cell assesses. Something else disposes.' The cell is the paperwork that makes the killing routine"
+      source: "outline:ch-15"
+      note: "Possible on-page precursor already drafted: the 'second element, unmarked, six-plus' Gaia spots at ch-05:p07 and loses at ch-05:p15. The prose never connects them and neither should any downstream skill without an author decision."
+    internal-compliance:
+      canonical_name: "Internal Compliance"
+      first_planned_appearance: "outline:ch-10"
+      function: "audits the cell's chain of custody on the Corwin fragments"
+      source: "outline:ch-10"
+  objects:
+    rxs-kia-signature-block:
+      planned_introduction: "outline:ch-21"
+      description: "the rank, name and authorising designation on the four-year-old KIA notification Vexx has owned the whole time"
+      source: "outline:ch-21"
+    the-morning-traffic-digest:
+      planned_introduction: "outline:ch-14"
+      description: "item two is a supply advisory; item three is Ives"
+      source: "outline:ch-14"
+    the-routing-index:
+      planned_introduction: "outline:ch-16"
+      description: "the index Aglaope obtains from the records clerk, which Vexx cannot lawfully see"
+      source: "outline:ch-16"
+    the-unsent-report:
+      planned_introduction: "outline:ch-23"
+      description: "the finished, complete, correct, addressed and unsent report that would end Jameson's career"
+      source: "outline:ch-23"
+
+# ============================================================================================
+# CONFLICTS — surfaced, never resolved. Original values preserved as canonical.
+# ============================================================================================
+conflicts:
+  - id: "CF-01"
+    severity: "structural"
+    field: "timeline.gap_between_rx_death_and_vexx_recruitment"
+    canonical_value:
+      value: "FOUR MONTHS. 'The second knock came four months to the day' (ch-01:p24), following the KIA notification and the burial; Vexx is in the gray room days later and paired within the week."
+      source: "ch-01:p24"
+      corroborating: ["ch-01:p23", "ch-01:p38", "ch-01:p45", "ch-02:p07", "ch-02:p51"]
+    conflict:
+      - value: "FOUR YEARS. 'a door that had been closed for four years had just shifted'"
+        source: "ch-03:p58"
+        flag: "UNRESOLVED"
+      - value: "FOUR YEARS. 'Richard Jameson slept, as he had for four years, entirely certain that whatever he'd buried in a jungle clearing a lifetime ago had stayed buried'"
+        source: "ch-05:p37"
+        flag: "UNRESOLVED"
+      - value: "FOUR YEARS (LOCKED CANON). 'Four-year gap between Rx's death and Vexx's recruitment' — settled decision 2026-09-07; also STATE.yaml guardrail 'four years after Rx's death'"
+        source: "series-bible"
+        flag: "UNRESOLVED"
+    note: >-
+      This is the single largest open contradiction in the drafted material. Ch.1's chain
+      (last comm -> KIA notification -> empty casket -> four months of grief -> the knock ->
+      the gray room) leaves no room for a four-year gap, and Ch.2 measures Vexx's re-entry in
+      weeks from the gray room, which puts Ch.5 roughly six to eight months after the gray room
+      and roughly a year after Rx's death. Ch.3 and Ch.5 both assert four years, and locked
+      series canon requires four years. Not resolved here.
+  - id: "CF-02"
+    severity: "plot-load-bearing"
+    field: "objects.corwins-fragments.documented_in_field_report"
+    canonical_value:
+      value: "NOT documented. 'He did not document the fragments of proof, still sitting untouched in the operator's gear, not because he intended to hide them, but because some new, unnamed instinct told him that handing every piece of this story to Jameson's desk before he understood it himself was a mistake he wasn't ready to make.'"
+      source: "ch-03:p49"
+    conflict:
+      - value: "DOCUMENTED. Vexx, to the review officer: 'He had fragments. Physical evidence. I documented it in the field.'"
+        source: "ch-04:p03"
+        flag: "UNRESOLVED"
+    note: >-
+      Ch.3's deliberate omission is the beat that starts Vexx's private investigation and is
+      named as such in outline:ch-03 ('Vexx's first deliberate omission from a report'). Ch.4
+      then has him assert the opposite in dialogue, and the review officer's reply ('Which has
+      been reviewed and assessed as inconclusive') presumes the fragments reached command. Both
+      readings are load-bearing; neither has been altered.
+  - id: "CF-03"
+    severity: "canon-mechanism"
+    field: "characters.richard-jameson.does_not_know"
+    canonical_value:
+      value: "Jameson does not know Rx survived as an AI. He believes the truth died with Rx; this is the source of his vulnerability."
+      source: "series-bible"
+    conflict:
+      - value: "The drafted prose establishes an institution that knows exactly who Rx is and treats the pairing as its flagship proof of concept ('He's a program of one. We attempted integration with three other candidates', ch-01:p46; 'you're the only person in this building who's already proven the pairing process can survive contact with something this unconventional', ch-02:p17), and puts Jameson at the head of that institution volunteering 'I knew your brother's file before I knew yours' (ch-02:p04). No line reconciles this."
+        source: "ch-02:p04"
+        flag: "UNRESOLVED"
+    note: >-
+      Not a textual contradiction — the prose never states that Jameson knows — but the drafted
+      material does not supply a mechanism for his ignorance, and Ch.5's closing paragraph
+      depends on it entirely. Flagged as an author decision, not resolved.
+  - id: "CF-04"
+    severity: "character-design"
+    field: "characters.corwin.traits (grammar-correction device; the daughter)"
+    canonical_value:
+      value: "Not present. Corwin's drafted Ch.3 voice is exhausted, broken and precise about the ambush; he corrects nobody's grammar and never mentions a daughter."
+      source: "ch-03:p31"
+    conflict:
+      - value: "character-bible.md assigns him a reflexive grammar correction as his identifying device ('He corrects people's grammar. Reflexively. Still. Even sedated'), gives a Ch.3 sample line that does not exist in the prose ('Fewer. There were fewer of them than the report says, not less.'), and states 'He never stops asking about his daughter, in every scene'. foundation.md repeats both."
+        source: "character-bible"
+        flag: "UNRESOLVED"
+    note: >-
+      The bible's stated design requires the habit to be established in Ch.3 so its absence in
+      Ch.19 can register as his destruction. As drafted there is nothing in Ch.3 for Ch.19 to
+      remove. Ch.3 is drafted author text, not locked like Ch.1.
+  - id: "CF-05"
+    severity: "motif-budget"
+    field: "characters.requiem.motif_budget"
+    canonical_value:
+      value: "2 of 3 uses of the singing image are already on the page: ch-02:p59 (Requiem naming herself) and ch-05:p31 (Aglaope quoting her to Vexx)."
+      source: "ch-05:p31"
+    conflict:
+      - value: "character-bible.md records the cap as 3 with only 1 spent, and schedules the final use for Ch.16."
+        source: "character-bible"
+        flag: "UNRESOLVED"
+    note: "Arithmetic only. Recorded so the Ch.16 use is not planned against a stale count."
+  - id: "CF-06"
+    severity: "minor"
+    field: "organizations.vexxs-cell.roster_arithmetic"
+    canonical_value:
+      value: "Voss commissions 'Five operators, five AI' for Vexx to select (ch-02:p15); Vexx selects five pairings; the room holds six operators and six AI including himself and Rx (ch-02:p72)."
+      source: "ch-02:p15"
+    conflict:
+      - value: "'six pairings into a roster he'd built with his own hands instead of one handed to him' (ch-02:p60) — he built five; his own was handed to him."
+        source: "ch-02:p60"
+        flag: "UNRESOLVED"
+
+# ============================================================================================
+# OBSERVATIONS FOR DOWNSTREAM SKILLS — mechanical, not evaluative.
+# ============================================================================================
+notes:
+  speaker_attribution:
+    - id: "SA-01"
+      location: "ch-02:p55"
+      detail: >-
+        'You're hesitating, Rx said, watching him read the file for the third time. He's good at
+        things I don't want us to need.' — the second sentence is Vexx's objection, but it sits
+        inside Rx's attributed paragraph, and ch-02:p56 then attributes the rebuttal to Rx again
+        ('That's exactly why you need him, Rx said'). As printed, Rx raises and answers the same
+        objection.
+    - id: "SA-02"
+      location: "ch-04:p07"
+      detail: >-
+        'You're angry, Rx said, once they were alone in the corridor outside. I'm careful. A beat.
+        Same thing today, apparently.' — Vexx's reply is inside Rx's paragraph with no break.
+    - id: "SA-03"
+      location: "ch-05:p19"
+      detail: >-
+        Rx's paragraph ends 'I wasn't sure you would. High praise from a man who won't tell me
+        what he's actually hiding.' — the last sentence is Vexx's, unbroken from Rx's speech.
+    - id: "SA-04"
+      location: "ch-05:p05, ch-03:p17, ch-03:p45, ch-02:p75 and others"
+      detail: >-
+        Multiple quoted exchanges are run together into a single paragraph, with a second
+        speaker's dialogue appended after the first speaker's closing quote. Recorded as a
+        formatting pattern across the promoted draft, not as individual errors.
+  withheld_by_design:
+    - { detail: "Corwin is never named in Ch.3; the name first appears at ch-04:p01, framed as 'once it finally made it into an official file'", source: "ch-04:p01" }
+    - { detail: "The man in civilian dress is never named", source: "ch-01:p25" }
+    - { detail: "The jungle world, the settlement, the industrial complex, the facility, Goliath's homeworld and Rx's death site are all unnamed in the drafted material", source: "ch-03:p07" }
+    - { detail: "Corwin's own AI is never named and its chassis is never restored", source: "ch-03:p26" }
+    - { detail: "The cell itself has no name on the page", source: "ch-02:p72" }
+  soft_flags:
+    - { detail: "ch-05:p26 has Vexx telling Aglaope 'A dog tag that isn't in any record', while ch-05:p32 says he 'didn't mention the dog tag by name'. Reconcilable if 'by name' means the name stamped on it, which the prose has not revealed yet.", source: "ch-05:p32" }
+    - { detail: "The cell's SECOND deployment is referenced by implication (ch-04:p16 calls the Reyes mission 'the cell's third deployment') and never depicted.", source: "ch-04:p16" }
+    - { detail: "Rx's neural-interface diagnostics glitches are described at ch-01:p63 as 'expected in the early months', which is the in-world cover for stages 1-2 and should not be treated as a separate rule.", source: "ch-01:p63" }

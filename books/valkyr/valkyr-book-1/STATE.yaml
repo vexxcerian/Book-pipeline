@@ -33,11 +33,14 @@ word_floor:
   # (~1,500–7,000w) by design — the book TOTAL is what's enforced, not each chapter. A
   # per-chapter minimum would recreate the uniform ~5k/20-chapter "AI-neat" shape.
   shortest_chapter_floor: 1200   # sanity floor for the SHORTEST allowed chapter (punch chapters ok; not a target)
-  drafted_words: 14630           # Ch.1-5 by `wc -w` on manuscript/chapters/ — the SAME tool the
+  drafted_words: 14699           # Ch.1-5 by `wc -w` on manuscript/chapters/ — the SAME tool the
                                  # floor gate and doctor.sh use, so this is the authoritative figure.
                                  # Beware: Python's .split() reports 14,779 because it counts a
                                  # standalone " — " as a word and wc does not. The gap is exactly the
                                  # em-dash count. Always quote wc -w for anything touching the floor.
+                                 # 14,699 includes the 23 "* * *" scene markers (69 words);
+                                 # the PROSE is 14,630. The floor gate counts the markers, so this
+                                 # is the figure that matters to it.
 
 phase:
   current: 2
@@ -47,6 +50,7 @@ phase:
     - "2026-09-07 — author's PDF staged into research/; series bible transcribed to ../SERIES-BIBLE.md"
     - "2026-09-07 — architect pass: foundation + outline + voice-dna + character-bible + voice bank"
     - "2026-09-07 — Ch.1-5 promoted into manuscript/chapters/, re-extracted from the PDF with the author's italics recovered from the font layer; all three mechanical gates calibrated and passing"
+    - "2026-09-07 — manuscript rebuilt a second time from the PDF's LAYOUT rather than a text heuristic: 23 scene breaks recovered and paragraph breaks corrected. Word stream verified token-for-token identical to the previous extraction."
 
 chapters:
   total_planned: 26                    # kishotenketsu in 4 Parts; see outline.md Macro-Structure

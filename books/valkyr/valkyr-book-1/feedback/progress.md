@@ -15,7 +15,7 @@ carries a Genesis score. The pipeline has not written any prose.
 | `voice-dna.md` | ✅ 4,228w — voice reverse-engineered from the author's own prose |
 | `character-bible.md` | ✅ 8,357w — 22 entries, §TIC BUDGET, cover-the-name test run in-file |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–5, **14,630 words** (`wc -w`), the author's italics restored |
+| `manuscript/chapters/` | ✅ Ch.1–5, **14,630 words** of prose + 23 scene breaks, italics restored |
 | style / grammar / voice-wear | ✅ all three clean, calibrated to the author's measured voice |
 | `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–5 |
 | `ENTITY_STATE.yaml` | ⏳ being built by `entity-tracker` |
@@ -89,10 +89,13 @@ These are settled and the reasoning is written down; changing one means changing
   has coarser paragraph breaks. The live text is `manuscript/chapters/`. Edit the manuscript.
   The unmodified source is preserved at `research/valkyr-source.pdf`; check it before assuming
   anything about formatting.
-- **The manuscript was machine-reconstructed from a PDF.** The words and the italics are the
-  author's and were recovered from the font layer rather than guessed, but paragraph breaks
-  were rebuilt by a line-length heuristic. They read correctly on inspection; a human proofread
-  against the PDF is still worth one pass before this text is considered final.
+- **The manuscript was machine-reconstructed from the PDF's LAYOUT**, not from a text
+  heuristic. The PDF encodes three distinct vertical gaps — ~5 line wrap, ~14 paragraph break,
+  ~43 scene break — and a font name per character, so paragraphs, scene breaks and italics are
+  all read off the geometry rather than inferred. The word stream was verified token-for-token
+  identical to the raw extraction. The one remaining guess is at page turns, where there is no
+  gap to measure and a right-margin test decides whether a paragraph continues (~30 places in
+  the book). A human proofread against `research/valkyr-source.pdf` is still worth one pass.
 - Comp titles in `STATE.yaml` are provisional; `book-researcher` has not run on this book.
 - **Word counts: always use `wc -w`.** Python's `.split()` counts a standalone " — " as a word
   and `wc` does not, so on this em-dash-heavy prose the two differ by ~150 words over five
