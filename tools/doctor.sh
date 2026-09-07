@@ -90,6 +90,54 @@ for t in new-book.sh new-series.sh review_context.py make_noicc.sh collect_compl
   [ -f "$ROOT/tools/$t" ] && ok "tools/$t" || warn "tools/$t missing"
 done
 
+# Every Python tool must at least compile, or it fails at the worst moment.
+badpy=""
+for f in "$ROOT"/tools/*.py "$ROOT"/books/_template/tools/*.py; do
+  [ -e "$f" ] || continue
+  python3 -c "import ast,sys; ast.parse(open(sys.argv[1]).read())" "$f" 2>/dev/null \
+    || badpy="$badpy $(basename "$f")"
+done
+[ -z "$badpy" ] && ok "all Python tools parse" || bad "Python syntax errors in:$badpy"
+
+# settings.json is what registers the hooks and the apodictic plugin.
+if [ -f "$ROOT/.claude/settings.json" ]; then
+  python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$ROOT/.claude/settings.json" 2>/dev/null \
+    && ok ".claude/settings.json parses (hooks + plugin registered)" \
+    || bad ".claude/settings.json is not valid JSON — hooks will not run"
+else
+  bad ".claude/settings.json missing — hooks will not run"
+fi
+
+# The agents must be well-formed, and every name the orchestrator dispatches must exist.
+python3 - "$ROOT" <<'PY'
+import os, re, sys, glob
+root = sys.argv[1]
+G = "  \033[32mok\033[0m    "; B = "  \033[31mFAIL\033[0m  "
+names, problems = set(), []
+for f in sorted(glob.glob(os.path.join(root, ".claude/agents/*.md"))):
+    base = os.path.basename(f)[:-3]
+    txt = open(f).read()
+    if not txt.startswith("---"):
+        problems.append(f"{base}: no frontmatter"); continue
+    fm = txt.split("---", 2)[1]
+    kv = dict(re.findall(r"^([A-Za-z_]+):\s*(.*)$", fm, re.M))
+    names.add(kv.get("name", ""))
+    if not kv.get("description"): problems.append(f"{base}: no description (it will not be selectable)")
+    if kv.get("name") != base:    problems.append(f"{base}: name is '{kv.get('name')}' but must match the filename")
+orch = os.path.join(root, ".claude/agents/book-orchestrator.md")
+if os.path.isfile(orch):
+    for d in sorted(set(re.findall(r"Dispatch:\s*`?([a-z][a-z-]+)`?", open(orch).read()))):
+        if d == "agent-name":      # the doc's own placeholder in the how-to-dispatch example
+            continue
+        if d not in names:
+            problems.append(f"orchestrator dispatches '{d}' but no such agent exists")
+if problems:
+    for p in problems: print(B + p)
+    sys.exit(1)
+print(G + f"{len(names)} agents well-formed; every orchestrator dispatch resolves")
+PY
+[ $? -ne 0 ] && FAIL=$((FAIL+1))
+
 [ -d "$ROOT/books/_template" ] && ok "books/_template/" || bad "books/_template/ missing — new-book.sh cannot scaffold"
 [ -d "$ROOT/books/_series-template" ] && ok "books/_series-template/" || warn "books/_series-template/ missing — new-series.sh cannot scaffold"
 

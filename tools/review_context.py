@@ -58,13 +58,21 @@ def load_state(book_dir):
         return {}
 
 
+def _clean(value):
+    """A template placeholder is not data. '<genre>' must never reach the other model."""
+    v = str(value or "").strip()
+    if not v or (v.startswith("<") and v.endswith(">")):
+        return ""
+    return v
+
+
 def persona(state):
     """The editor we ask the other model to be — derived from genre, not assumed."""
     proj = state.get("project") or {}
-    genre = (proj.get("genre") or "").strip()
-    sub = (proj.get("subgenre") or "").strip()
-    comps = proj.get("comp_titles") or []
-    comps = [str(c) for c in comps if str(c).strip()][:3]
+    genre = _clean(proj.get("genre"))
+    sub = _clean(proj.get("subgenre"))
+    comps = [_clean(c) for c in (proj.get("comp_titles") or [])]
+    comps = [c for c in comps if c][:3]
 
     if sub and genre:
         band = f"{sub} ({genre})"
@@ -86,7 +94,7 @@ def context(state, book_dir):
     proj = state.get("project") or {}
     bits = []
 
-    title = (proj.get("title") or "").strip()
+    title = _clean(proj.get("title"))
     series = state.get("series") or {}
     if isinstance(series, dict) and (series.get("name") or "").strip():
         pos = series.get("position")
@@ -95,25 +103,25 @@ def context(state, book_dir):
     elif title:
         bits.append(f"Book: '{title}' (standalone).")
 
-    genre = (proj.get("genre") or "").strip()
-    sub = (proj.get("subgenre") or "").strip()
+    genre = _clean(proj.get("genre"))
+    sub = _clean(proj.get("subgenre"))
     if genre or sub:
         bits.append("Genre: " + " / ".join(x for x in (genre, sub) if x) + ".")
 
-    premise = (proj.get("premise") or "").strip()
-    if premise and not premise.startswith("<"):
+    premise = _clean(proj.get("premise"))
+    if premise:
         bits.append(f"Premise: {premise}")
 
-    comps = [str(c) for c in (proj.get("comp_titles") or []) if str(c).strip()]
+    comps = [c for c in (_clean(c) for c in (proj.get("comp_titles") or [])) if c]
     if comps:
         bits.append("Comps: " + ", ".join(comps[:5]) + ".")
 
     # Canon guardrails are the most useful thing to hand an outside reader: they stop
     # it from "fixing" settled author decisions.
     rails = [
-        str(g) for g in (state.get("guardrails") or [])
-        if str(g).strip() and not str(g).startswith("<")
-        and not str(g).lower().startswith(("genesis floor", "style gate", "word floor"))
+        _clean(g) for g in (state.get("guardrails") or [])
+        if _clean(g)
+        and not _clean(g).lower().startswith(("genesis floor", "style gate", "word floor"))
     ]
     if rails:
         bits.append("Settled canon/guardrails (do NOT propose undoing these): " + " ".join(rails[:4]))

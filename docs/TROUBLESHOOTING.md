@@ -5,6 +5,11 @@ The failures you will actually hit, and what they mean.
 **Start here:** `bash tools/doctor.sh` checks the environment, the pipeline files and every
 book folder, and names what's missing. `bash tools/doctor.sh books/<slug>` checks one book.
 
+It validates the things that break silently: that every agent has valid frontmatter and a
+name matching its filename, that every agent the orchestrator dispatches actually exists,
+that `.claude/settings.json` is valid JSON (invalid = your hooks never run), and that every
+Python tool compiles. It exits non-zero on a real problem, so it works in CI too.
+
 ## Agents
 
 **"Cannot resolve subagent_type" / the agent isn't found.**

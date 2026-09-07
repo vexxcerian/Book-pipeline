@@ -1,20 +1,26 @@
 #!/bin/bash
 # SessionStart hook for the Books pipeline.
 #
-# Does four things, all idempotent and non-interactive:
+# Idempotent and non-interactive. Runs in every environment:
 #   1. Enforces WORKFLOW_LAW (default: main-only) — see .claude/pipeline.conf.
-#   2. Installs build/lint dependencies the manuscript + PDF tooling needs.
-#   3. Installs the 12 book-* agents into ~/.claude/agents (from THIS repo by default).
-#   4. Installs the Gemini CLI when a key is present, for cross-model second opinions.
+#   2. Deploys the 12 book-* agents to ~/.claude/agents from THIS repo, so they are
+#      available whether or not the session was started inside the repo.
+#   3. Verifies both agent locations and reports anything missing.
+# Remote (web) sessions additionally install the build toolchain, set the default model,
+# and install the Gemini CLI when a key is present — a fresh container needs those; a
+# local machine gets told what is missing instead of having pip and apt run on it.
 #
 # Everything it does is configurable in .claude/pipeline.conf — a fork that wants a
 # branch/PR workflow sets WORKFLOW_LAW="off" there and this hook stops policing git.
 set -euo pipefail
 
-# Only run in the remote (Claude Code on the web) environment.
-if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
-  exit 0
-fi
+# Runs in EVERY environment. What it does depends on where it is:
+#   everywhere  — enforce the workflow law, deploy the agents, verify.
+#   remote only — install system/Python dependencies and set the default model. A fresh
+#                 container needs them; someone's laptop does not want a hook silently
+#                 running pip and apt, so locally we report what is missing instead.
+REMOTE=0
+[ "${CLAUDE_CODE_REMOTE:-}" = "true" ] && REMOTE=1
 
 REPO="${CLAUDE_PROJECT_DIR:-$PWD}"
 
@@ -25,6 +31,7 @@ WORKFLOW_LAW="main-only"
 AGENT_SOURCE="repo"
 PIPELINE_MODEL="claude-opus-4-8"
 PIPELINE_MAXTURNS="120"
+INSTALL_GLOBAL_AGENTS="auto"
 if [ -f "$REPO/.claude/pipeline.conf" ]; then
   # shellcheck disable=SC1091
   source "$REPO/.claude/pipeline.conf"
@@ -61,7 +68,7 @@ mkdir -p "$AGENTS_DIR"
 # 2) Default model for sub-agent dispatches. Without this, general-purpose agents
 #    default to a smaller model than the pipeline is written for.
 # ---------------------------------------------------------------------------
-if [ -n "${CLAUDE_ENV_FILE:-}" ] && [ -n "$PIPELINE_MODEL" ]; then
+if [ "$REMOTE" = "1" ] && [ -n "${CLAUDE_ENV_FILE:-}" ] && [ -n "$PIPELINE_MODEL" ]; then
   echo "export ANTHROPIC_MODEL=$PIPELINE_MODEL" >> "$CLAUDE_ENV_FILE"
   echo "Set ANTHROPIC_MODEL=$PIPELINE_MODEL for this session."
 fi
@@ -69,6 +76,7 @@ fi
 # ---------------------------------------------------------------------------
 # 3) Manuscript-build toolchain. The PDF pipeline needs these in every fresh container.
 # ---------------------------------------------------------------------------
+if [ "$REMOTE" = "1" ]; then
 if ! python3 -c 'import reportlab' >/dev/null 2>&1; then
   echo "Installing Python build deps (reportlab, pillow)..."
   pip install --quiet reportlab pillow >/dev/null 2>&1 \
@@ -90,6 +98,14 @@ if ! python3 -c 'import language_tool_python' >/dev/null 2>&1; then
   pip install --quiet language-tool-python >/dev/null 2>&1 \
     && echo "language-tool-python installed." \
     || echo "warn: language-tool-python install failed; grammar_check.py --languagetool unavailable (tier 1 still gates)." >&2
+fi
+else
+  # Local: never install anything behind the user's back — just say what is missing.
+  MISSING=""
+  python3 -c 'import yaml'      >/dev/null 2>&1 || MISSING="$MISSING pyyaml"
+  python3 -c 'import reportlab' >/dev/null 2>&1 || MISSING="$MISSING reportlab"
+  command -v gs >/dev/null 2>&1                 || MISSING="$MISSING ghostscript"
+  [ -n "$MISSING" ] && echo "Book pipeline: missing$MISSING — run 'bash tools/install.sh' (ghostscript is only needed for print builds)."
 fi
 
 # ---------------------------------------------------------------------------
@@ -171,7 +187,10 @@ install_from_upstream () {
     "Specializes in chapter openings (hooks) and endings (pulls). Every chapter must start with a reason to keep reading and end with a reason to turn the page."
 }
 
-if [ "$AGENT_SOURCE" = "upstream" ]; then
+if [ "$INSTALL_GLOBAL_AGENTS" = "off" ]; then
+  echo "Agent deploy to $AGENTS_DIR skipped (INSTALL_GLOBAL_AGENTS=off); the repo's"
+  echo "  .claude/agents/ is still loaded for this project."
+elif [ "$AGENT_SOURCE" = "upstream" ]; then
   install_from_upstream || install_from_repo || true
 else
   install_from_repo || {
@@ -217,7 +236,7 @@ fi
 # ---------------------------------------------------------------------------
 # 6) Cross-model second-opinion tooling (Gemini). Only sets up when a key is available.
 # ---------------------------------------------------------------------------
-if [ -n "${GEMINI_API_KEY:-}" ] || [ -f "$HOME/.gemini_env" ]; then
+if [ "$REMOTE" = "1" ] && { [ -n "${GEMINI_API_KEY:-}" ] || [ -f "$HOME/.gemini_env" ]; }; then
   if ! command -v gemini >/dev/null 2>&1; then
     echo "Installing Gemini CLI for second-opinion reviews..."
     npm install -g @google/gemini-cli >/dev/null 2>&1 \

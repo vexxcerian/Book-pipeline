@@ -51,6 +51,7 @@ model reads that file every session. Contradicting yourself between `CLAUDE.md` 
 | `AGENT_SOURCE` | `repo` (default) / `upstream` | Where `~/.claude/agents` is installed from |
 | `PIPELINE_MODEL` | model id, or empty | Default model for sub-agent dispatches |
 | `PIPELINE_MAXTURNS` | integer (default 120) | Sub-agent turn budget |
+| `INSTALL_GLOBAL_AGENTS` | `auto` (default) / `off` | Whether the hook deploys agents to `~/.claude/agents` |
 
 **`AGENT_SOURCE=repo` keeps your fork self-contained** — the agents come from this repo's
 own `.claude/agents/`, which carry every improvement made under the UPDATE RULE. Setting it
@@ -63,16 +64,24 @@ mid-revision and the chapter looks finished when it isn't.
 
 ## What the SessionStart hook does
 
-Runs only in the remote (web) environment; local sessions skip it.
+**Runs in every environment** — web, CLI and desktop alike. Everywhere, it:
 
 1. Enforces `WORKFLOW_LAW`.
-2. Sets `ANTHROPIC_MODEL` so sub-agents don't silently drop to a smaller model.
-3. Installs build dependencies: `reportlab` + `pillow`, Ghostscript, and
-   `language-tool-python` (the ~250MB LanguageTool engine downloads lazily on first
-   `--languagetool` use, not at session start).
-4. Installs the 12 agents into `~/.claude/agents` and normalizes `maxTurns`.
-5. Verifies both agent locations and reports what's missing.
-6. Installs the Gemini CLI when a key is present.
+2. **Deploys the 12 agents** from the repo's `.claude/agents/` into `~/.claude/agents`,
+   normalizing `maxTurns`. This is the automatic deployment: clone the repo, start a
+   session, the agents are there. Set `INSTALL_GLOBAL_AGENTS="off"` if you'd rather your
+   account-wide agents directory were left alone — the repo's own `.claude/agents/` is
+   still loaded for this project either way.
+3. Verifies both agent locations and reports anything missing.
+
+In a **remote (web)** session it additionally installs the build toolchain (`reportlab`,
+`pillow`, Ghostscript, `language-tool-python` — the ~250MB LanguageTool engine downloads
+lazily on first `--languagetool` use, not at session start), sets `ANTHROPIC_MODEL`, and
+installs the Gemini CLI when a key is present. A fresh container needs all that.
+
+**Locally it installs nothing.** A hook on your own machine has no business running `pip`
+and `apt` behind your back, so it prints one line naming what's missing and leaves the
+decision to you (`bash tools/install.sh` does the installs when you want them).
 
 ### The agent-registry gotcha (web sessions)
 
