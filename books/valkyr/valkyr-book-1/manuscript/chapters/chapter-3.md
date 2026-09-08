@@ -20,7 +20,7 @@ The dropship carried them low over a canopy so dense it looked, from altitude, l
 
 “Or something didn’t want him found,” Zeus said, from across the bay, not looking up from the data pad he’d been quietly annotating since wheels-up. “Two very different mission profiles. Be a shame to walk in assuming the wrong one.”
 
-“That’s what we’re here to find out,” Vexx said, and the bay went quiet in the particular way a team goes quiet right before a drop — six operators checking gear they’d already checked twice, six AI running silent diagnostics through six sets of neural interfaces, everyone privately making peace, in their own way, with whatever the next several hours were about to cost them.
+“That’s what we’re here to find out,” Vexx said, and the bay went quiet the way it does right before a drop — six operators checking gear they’d already checked twice, six AI running silent diagnostics through six sets of neural interfaces, everyone privately making peace, in their own way, with whatever the next several hours were about to cost them.
 
 Goliath caught Vexx’s eye across the bay and gave him a short nod — not reassurance, exactly, just acknowledgment, one operator to another, that whatever came off that ramp, they’d be facing it together. Vexx nodded back. It was, he realized, the first time in longer than he could easily remember that going into an unknown situation hadn’t felt entirely like something he had to carry alone.
 
@@ -38,7 +38,7 @@ Gaia crouched at the tree line, reading the ground the way other people read a p
 
 “Our target?” Paladin asked.
 
-“Only one it could be.” She straightened, scanning the canopy overhead with the particular stillness Vexx was already learning meant she’d caught something the rest of them hadn’t. “He’s still out there. And he wants people to know he did this on purpose.”
+“Only one it could be.” She straightened, scanning the canopy overhead with a stillness Vexx was already learning meant she’d caught something the rest of them hadn’t. “He’s still out there. And he wants people to know he did this on purpose.”
 
 Goliath moved into the clearing behind her, crouching over a half-melted crate that had once held field rations, running a gloved hand along a scorch pattern radiating out from its center. “This wasn’t a standard incendiary,” he said. “Whoever set this knew exactly how much charge to use to destroy the contents without torching the whole tree line. That’s not panic. That’s someone who does this kind of thing for a living.”
 
@@ -54,7 +54,7 @@ Goliath moved into the clearing behind her, crouching over a half-melted crate t
 
 Vexx felt something in his chest tighten at that, an old, familiar unease he didn’t yet have a reason to name. He said nothing, only nodded for Gaia to pick the trail back up.
 
-They tracked the trail for six hours through jungle that fought them for every meter — vines that had to be cut, ground that gave way without warning into sinkholes hidden under decades of leaf litter, the constant low static of insect life that made even Echo’s usually cheerful narration go clipped and businesslike. Vexx felt the old rhythms of fieldwork settle back into his body the way they always had, muscle memory outlasting four years of retirement without effort, the particular quiet focus of moving through hostile terrain with people he was starting, despite everything, to trust.
+They tracked the trail for six hours through jungle that fought them for every meter — vines that had to be cut, ground that gave way without warning into sinkholes hidden under decades of leaf litter, the constant low static of insect life that made even Echo’s usually cheerful narration go clipped and businesslike. Vexx felt the old rhythms of fieldwork settle back into his body the way they always had, muscle memory outlasting four years of retirement without effort, the quiet focus of moving through hostile terrain with people he was starting, despite everything, to trust.
 
 They found him a little after dusk.
 
