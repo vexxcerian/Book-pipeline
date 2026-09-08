@@ -62,6 +62,16 @@ ALLOWLIST = [
 # author's voice actually sits at (measure first — do not guess). Chapters the
 # PIPELINE writes stay on the strict defaults, which is where the anti-AI value is.
 # Leave AUTHOR_DRAFTED empty for a book with no hand-written chapters.
+# Ceilings for the chapters the PIPELINE writes. These exist because the argparse
+# defaults are generic anti-AI settings, and on a book whose author legitimately writes
+# with (say) heavy em-dashes they would fail a new chapter for correctly matching the
+# voice it was told to match — which pressures the editor into sanding the book flat.
+#
+# Set these from the author's MEASURED range, slightly TIGHTER than he actually runs:
+# the pipeline should be able to reach his voice but never to amplify it. Leave empty to
+# use the generic defaults (right for a book with no hand-written benchmark).
+PIPELINE_CEILINGS = {}
+
 AUTHOR_DRAFTED = set()          # e.g. {1, 2, 3}
 AUTHOR_CEILINGS = {             # applied ONLY to chapters listed above
     # "simile_per1k": 5.0,
@@ -72,9 +82,17 @@ AUTHOR_CEILINGS = {             # applied ONLY to chapters listed above
 
 
 def _ceiling(n, key, default):
-    """The ceiling for chapter n: the author's calibration if it is a drafted chapter."""
-    if n in AUTHOR_DRAFTED and key in AUTHOR_CEILINGS:
-        return AUTHOR_CEILINGS[key]
+    """The ceiling for chapter n.
+
+    Author-drafted chapters answer to AUTHOR_CEILINGS (what the author measurably does);
+    every other chapter answers to PIPELINE_CEILINGS (what the pipeline is allowed to do,
+    normally a little tighter). Anything unset falls through to the generic default.
+    """
+    if n in AUTHOR_DRAFTED:
+        if key in AUTHOR_CEILINGS:
+            return AUTHOR_CEILINGS[key]
+    elif key in PIPELINE_CEILINGS:
+        return PIPELINE_CEILINGS[key]
     return default
 
 

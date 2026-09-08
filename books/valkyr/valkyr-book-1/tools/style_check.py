@@ -103,9 +103,17 @@ AUTHOR_CEILINGS = {
 
 
 def _ceiling(n, key, default):
-    """The ceiling for chapter n: the author's calibration if it is a drafted chapter."""
-    if n in AUTHOR_DRAFTED and key in AUTHOR_CEILINGS:
-        return AUTHOR_CEILINGS[key]
+    """The ceiling for chapter n.
+
+    Author-drafted chapters answer to AUTHOR_CEILINGS (what the author measurably does);
+    every other chapter answers to PIPELINE_CEILINGS (what the pipeline is allowed to do,
+    normally a little tighter). Anything unset falls through to the generic default.
+    """
+    if n in AUTHOR_DRAFTED:
+        if key in AUTHOR_CEILINGS:
+            return AUTHOR_CEILINGS[key]
+    elif key in PIPELINE_CEILINGS:
+        return PIPELINE_CEILINGS[key]
     return default
 
 
