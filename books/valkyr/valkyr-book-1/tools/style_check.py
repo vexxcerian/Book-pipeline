@@ -122,7 +122,12 @@ PIPELINE_CEILINGS = {
     "adverb_per1k": 20.0,
     "theway": 5,
     "and_per1k": 24.0,      # the chaining habit — author runs 15.4-18.6/1k
-    "vague_per1k": 3.5,     # "somebody"/"nobody" where the author names people (his range 0.5-2.6)
+    # MEASURED WITH THIS GATE'S OWN REGEX (which counts someone/no one/anybody/anyone too):
+    # the author runs 4.03-6.13/1k. An earlier 3.5 was taken from the evaluator's narrower
+    # somebody+nobody figure (0.5-2.6) and applied to a six-term regex — a ceiling stricter
+    # than the author himself, which forced edits to his dialogue to satisfy it. Derive a
+    # threshold from the SAME measurement the gate makes, never from a differently-defined one.
+    "vague_per1k": 6.5,
 }
 
 AUTHOR_DRAFTED = {1, 2, 3, 4, 5}
