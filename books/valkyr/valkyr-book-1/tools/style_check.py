@@ -93,11 +93,36 @@ ALLOWLIST = [
 # "fingerprint" is deliberately absent, so those phrases stay on the strict default of 1
 # — Ch.6 cleared it without needing the allowance, so the tighter setting stands until a
 # chapter genuinely needs "the kind of" twice.
+# VOICE-MATCH FLOORS — the counterpart to the ceilings, and the half that is easy to forget.
+# A ceiling stops the pipeline EXCEEDING the author. A floor stops it falling SHORT of him.
+# That second failure is the one that actually happens: a writer told "do not exceed 9.5
+# em-dashes per 1,000 words" scores a safe 4.7 and produces prose that is calm where the
+# author is nervous. No single chapter looks wrong; twenty of them are a second author.
+# Set these from the author's measured range too. Empty = no floor (right for a book with no
+# hand-written benchmark to match).
+# Measured across the author's Ch.1-5. These are FLOORS for the pipeline chapters: the rhythm
+# the prose has to REACH, not merely stay under. Ch.6 shipped at em-dash 4.7/1k, "and" 40.4/1k,
+# commas 45.8/1k — five of seven rhythm metrics outside the author's entire range, all in the
+# same direction, describing one habit: the pipeline CHAINS clauses on "and" where this author
+# INTERRUPTS himself with em-dashed appositives. No sentence was wrong. Twenty chapters of it
+# would be a second author, and no single chapter would be blamed.
+#
+#   em-dash  author 9.0-11.7/1k  -> floor 8.5   (a shade under his lowest chapter)
+#   commas   author 65.9-77.9/1k -> floor 58.0
+PIPELINE_FLOORS = {
+    "emdash_per1k": 8.5,
+    "comma_per1k": 58.0,
+}
+# The author's own chapters are the benchmark; they are never gated against themselves.
+AUTHOR_FLOORS = {}
+
 PIPELINE_CEILINGS = {
     "simile_per1k": 5.0,
     "emdash_per1k": 9.5,
     "adverb_per1k": 20.0,
     "theway": 5,
+    "and_per1k": 24.0,      # the chaining habit — author runs 15.4-18.6/1k
+    "vague_per1k": 3.5,     # "somebody"/"nobody" where the author names people (his range 0.5-2.6)
 }
 
 AUTHOR_DRAFTED = {1, 2, 3, 4, 5}
@@ -124,6 +149,13 @@ def _ceiling(n, key, default):
     elif key in PIPELINE_CEILINGS:
         return PIPELINE_CEILINGS[key]
     return default
+
+
+def _floor(n, key):
+    """The floor for chapter n, or None. Mirrors _ceiling."""
+    if n in AUTHOR_DRAFTED:
+        return AUTHOR_FLOORS.get(key)
+    return PIPELINE_FLOORS.get(key)
 
 
 def _motif_caps(default):
@@ -217,6 +249,13 @@ def scan():
         wc = len(toks) or 1
         per1k = lambda c: round(c / wc * 1000, 1)
 
+        # Connective habit — how a voice JOINS things. A writer who chains on "and" and a
+        # writer who interrupts himself with em-dashed appositives can score identically on
+        # every ceiling above and still read as two different people.
+        ands = len(re.findall(r"\band\b", text, re.I))
+        commas = text.count(",")
+        vague = len(re.findall(r"\b(?:somebody|someone|nobody|no one|anybody|anyone)\b", text, re.I))
+
         similes = len(SIMILE_MARKERS.findall(text))
         adverbs = len(ADVERB.findall(text))
         emdash = text.count("—")
@@ -235,6 +274,21 @@ def scan():
                 flags.append(f"EM-DASH {em1k}/1k > {max_em1k} ({emdash} in chapter)"); problems += 1
         elif emdash > args.max_emdash:
             flags.append(f"EM-DASH {emdash}/chapter > {args.max_emdash} (density {em1k}/1k)"); problems += 1
+
+        and1k, comma1k, vague1k = per1k(ands), per1k(commas), per1k(vague)
+        for key, val, label in (("and_per1k", and1k, "AND"),
+                                ("comma_per1k", comma1k, "COMMA"),
+                                ("vague_per1k", vague1k, "SOMEBODY/NOBODY")):
+            hi = _ceiling(n, key, None)
+            lo = _floor(n, key)
+            if hi is not None and val > hi:
+                flags.append(f"{label} {val}/1k > {hi}"); problems += 1
+            if lo is not None and val < lo:
+                flags.append(f"{label} {val}/1k < {lo} (voice-match FLOOR)"); problems += 1
+        em_lo = _floor(n, "emdash_per1k")
+        if em_lo is not None and em1k < em_lo:
+            flags.append(f"EM-DASH {em1k}/1k < {em_lo} (voice-match FLOOR — the pipeline is "
+                         f"chaining where this author interrupts himself)"); problems += 1
 
         low = text.lower()
         for phrase in motif_caps:
@@ -257,6 +311,7 @@ def scan():
                    if low.count(p) > max_fp]
 
         print(f"\nCh{n:>2}  {wc} words | simile {sim1k}/1k | adverb {adv1k}/1k | em-dash {emdash} ({per1k(emdash)}/1k)")
+        print(f"      rhythm: and {and1k}/1k | comma {comma1k}/1k | somebody/nobody {vague1k}/1k")
         if flags:    print("   CEILING:", "; ".join(flags))
         if tic_hits: print("   TICS:   ", "; ".join(tic_hits))
         if fp_hits:  print("   FINGERPRINTS:", "; ".join(fp_hits)); problems += len(fp_hits)
