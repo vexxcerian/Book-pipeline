@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4,454 | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4,524 | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -35,13 +35,15 @@ The coffee was in a glass pot on a hot plate with a stack of paper cups beside i
 
 The corridor ran past a kitchen with its door hooked back, and the smell came out of it — steam and boiled vegetables and the flat metal edge of institutional gravy — and the clatter of a mess hall at eleven hundred came up on him whole, like a door pushed open on it. Trays. Boots on a concrete floor. Two hundred voices under a low ceiling and somebody's tin cup going over in the middle of it.
 
+It had not been eleven hundred, though. The light in it was wrong for eleven hundred. He had been calling it eleven hundred to himself for something over twenty years and now, standing in a corridor holding a paper cup, he was fairly sure it had been later.
+
 *Vexx.*
 
 *Here.*
 
 He went through the doors at the end.
 
-The day room had windows on two sides and the blinds were up. Four men in it, plus a woman doing a jigsaw alone at a card table with the box lid propped against a chair leg so she could see the picture. Somebody had put a radio on low and nobody was listening to it. It was the middle of the afternoon and the light came across the tables in long bars and the room was quiet like a waiting room is quiet.
+The day room had windows on two sides and the blinds were up. Four men in it, plus a woman doing a jigsaw alone at a card table with the box lid propped against a chair leg so she could see the picture. Somebody had put a radio on low and nobody was listening to it. It was the middle of the afternoon and the room had the flatness of a place where everybody's day is a shape somebody else drew, the light coming across the tables in long bars, the whole of it quiet like a waiting room is quiet, which is not the same as peaceful.
 
 Corwin was at a table by the far window with a mug in front of him and a paperback splayed open beside it, spine cracked, half read.
 
@@ -61,7 +63,7 @@ His hands were flat on the table and they were not doing anything.
 
 "I'll tell her."
 
-A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it when he said yes, and then told Vexx — unprompted, in the voice of somebody continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that nobody had consulted her about it, and that she was not over it. She poured Vexx a fresh cup from a jug on the trolley. He said the coffee was good. She said they got it on the same contract as the district hospital and that she would fight anybody who came here trying to change that, and went off down the room with the trolley wheel squeaking.
+A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it when he said yes, and then told Vexx — unprompted, in the voice of somebody continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that nobody had consulted her about it, and that she was not over it. She poured Vexx a fresh cup from a jug on the trolley. He said the coffee was good. She said they got it on the same contract as the district hospital and that she would fight anybody who came here trying to change that, and went off down the room with the trolley wheel squeaking every third turn.
 
 "She's all right," Corwin said. "They're all right, all of them. Nobody believes me when I say it."
 
@@ -75,8 +77,6 @@ A clinician came through with a trolley, asked Corwin whether he wanted the wind
 
 Vexx drank some of the coffee. Out the window the orchard went down the slope in rows and a man in a green coat was doing something to the base of one of the trees with a hoe, unhurried, taking his time about it.
 
-Something from the transit was still in his back teeth. He had been at it with his tongue since the second change and it had not come out.
-
 "I owe you an apology," Corwin said.
 
 "You don't."
@@ -87,7 +87,7 @@ Something from the transit was still in his back teeth. He had been at it with h
 
 "Were."
 
-It came out of Corwin flat and fast, like a hand going out after a dropped cup.
+It came out of Corwin flat and fast, like a hand going out after a dropped cup, and it was out of him before there was anything to be done about it.
 
 He blinked twice. Something crossed his face that was not embarrassment about the grammar but embarrassment about the reflex.
 
@@ -109,7 +109,7 @@ He had heard it and gone on walking. Nine weeks he had been on the other side of
 
 "I put a charge under their stores and I put my boot through the array so nothing could be triangulated, and then I went into the trees and I stayed out of their way for eight days while they looked for me. Those men were out in that with no comms because of me. I watched them do it. Nobody died, which is the only reason I can sit here and say it out loud."
 
-He might have been reading out a manifest.
+There was no wobble in it anywhere. He might have been reading out a manifest.
 
 "The armour," Vexx said. "The modified plating."
 
@@ -129,9 +129,7 @@ The man in the green coat had finished with the tree and moved down the row to t
 
 "I've read the recovery element's log." Corwin's face did something complicated and then settled. "I've read the medical. I've had the timeline put in front of me twice by two different people who had no reason to agree with each other and did. What am I supposed to do with that — hold on to being right against the whole record because it feels better? That's the illness. They were very clear about that being the illness."
 
-The light in the mess hall had been wrong for eleven hundred. It came in off to one side and it was the long kind, late in the day, and he had been calling it eleven hundred to himself for something over twenty years.
-
-"Nobody's saying you're ill," Vexx said.
+"Nobody's saying you're ill."
 
 "They're not saying it in those words. They're kind here." He set the mug down. "You have to understand, it isn't a fight. That's what I keep — it's what I'd want the woman to know, if you're telling her anything. Nobody has argued with me once since I arrived. They just kept putting the paper in front of me until I read it properly."
 
@@ -141,7 +139,7 @@ Down the room the radio went over to something with a brass section in it, and t
 
 Vexx put his cup down on the table.
 
-"There's nothing in it. I knew that out there. I carried it eleven days knowing it." Corwin laid two fingers flat on the wood and moved them across it a little way. "The word is unrecoverable. It's a good word. It doesn't blame anybody and it doesn't promise anything either. I asked whether they'd had anything off it at all, any part, and the answer was no, and the man who told me that sat down to do it. He didn't have to. He sat down and he took his time about it and he let me ask the same question twice."
+"There's nothing in it. I knew that out there. I carried it eleven days knowing it." Corwin laid two fingers flat on the wood and moved them a centimetre, the small precise gesture of a man indicating a position on a map. "The word is unrecoverable. It's a good word. It doesn't blame anybody and it doesn't promise anything either. I asked whether they'd had anything off it at all, any part, and the answer was no, and the man who told me that sat down to do it. He didn't have to. He sat down and he took his time about it and he let me ask the same question twice."
 
 "You could say his name," Vexx said. "In here. If you wanted."
 
@@ -149,7 +147,7 @@ Vexx put his cup down on the table.
 
 He drank some of his coffee. The window let in the sound of a hoe being scraped clean on a stone.
 
-"The name's the only thing I'd take back off them," Corwin said. "The rest of it they can have. They were right about the rest of it."
+"The name's the only thing I'd take back off them," Corwin said. There was no edge on it anywhere. "The rest of it they can have. They were right about the rest of it."
 
 Vexx got as far as saying that he was sorry, and Corwin said everyone was, and thanked him for it, and asked whether he wanted the last of the pot.
 
@@ -167,7 +165,7 @@ Vexx sat with that.
 
 The clinician had come back up the room with the trolley, and the answer was out of her before he had got to the question. It did not read as an interruption. She had it ready and she set it down into the gap with everything else on the trolley, and carried on doing what she had been doing.
 
-There was no unkindness in it anywhere, and she was not lying, and Vexx understood that this was not the first time she had said it, or the second.
+There was no unkindness in it anywhere, and she was not lying, and Vexx understood from the shape of it that this was not the first time she had said it, or the second.
 
 "It's in review," Corwin said. To Vexx. Nodding.
 
@@ -197,7 +195,7 @@ The tag in the drawer beside his bed had a dent in one corner and a serial that 
 
 It had come off a man who went back for it and missed.
 
-The trolley wheel squeaked at the far end of the room. The woman at the card table moved her chair a few inches and sat back down in it. The orchard smell came in through the crack in the window — cold and green and faintly of rot off the windfalls nobody had cleared — and the gardener straightened up and put a hand in the small of his back.
+The trolley wheel squeaked at the far end of the room. The woman at the card table pressed a piece down flat with two fingers, twice, to make it stay. The orchard smell came in through the crack in the window — cold and green and faintly of rot off the windfalls nobody had cleared — and the gardener straightened up and put a hand in the small of his back.
 
 "Which side of him was he kneeling on," Vexx said.
 
@@ -212,6 +210,8 @@ Corwin looked up.
 "I'm sorry. I'd like to be more use to you."
 
 "You've been enough use," Vexx said, and that was true in a way he would have to sit down somewhere private and look at.
+
+Nothing had been taken out of the man. Something had been put in, and he had made room for it, and he was being polite about it.
 
 They talked about other things after that. The food, which was better than the program's. The orchard, which produced badly and which two of the men here had opinions about. A dog that belonged to nobody and came up from the valley on Tuesdays. Corwin asked what the cell was doing and Vexx said monitoring work, mostly, and Corwin nodded and did not push at it, and it occurred to Vexx that nine weeks ago this man had known the word Valkyr and used it out loud in a clearing, and that neither of them had said it once today.
 

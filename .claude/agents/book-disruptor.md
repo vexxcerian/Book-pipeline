@@ -133,7 +133,17 @@ Real dialogue is NEVER as clean as AI dialogue. People talk past each other, cha
 
 ## OUTPUT
 
-**Before overwriting**, copy the Writer's version to `manuscript/chapters/chapter-[N]-pre-disruption.md` as backup. Then save the disrupted chapter to the original file. Then write a disruption report:
+**Before overwriting**, copy the Writer's version to `evaluations/chapter-[N]-pre-disruption.md` as backup. Then save the disrupted chapter to the original file.
+
+> ⚠️ **The backup must NOT live in `manuscript/chapters/`, and must never be named
+> `chapter-*.md`.** All three gates glob `manuscript/chapters/chapter-*.md`, so a backup
+> stored there is scanned as if it were a real chapter: the chapter gets counted twice, and
+> every distinctive phrase in it is reported as a cross-chapter repetition **against itself**.
+> The chapter then fails a gate for a file that is not part of the book. Keep backups in
+> `evaluations/`. (In a git repo the previous version is in the history anyway — the backup is
+> a convenience, not the record.)
+
+Then write a disruption report:
 
 Save to `evaluations/disruption-chapter-[N].md`:
 
