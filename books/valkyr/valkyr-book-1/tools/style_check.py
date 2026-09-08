@@ -109,12 +109,53 @@ ALLOWLIST = [
 #
 #   em-dash  author 9.0-11.7/1k  -> floor 8.5   (a shade under his lowest chapter)
 #   commas   author 65.9-77.9/1k -> floor 58.0
+#   BREATH, over the author's NARRATION ONLY in Ch.1-5, measured with THIS FILE'S OWN
+#   sentences()+words() — not with a scratch script and not over the whole chapter.
+#   Both of those shortcuts were tried and both produced wrong thresholds; see below.
+#     narration median  13 - 18      -> floor 13.0
+#     narration <=6w    20.0 - 32.6% -> ceiling 33.0%
+#     narration >=40w   11.6 - 16.3% -> floor 11.5%
+#   Set AT his measured extremes, not inside them. Three separate thresholds in this file
+#   were once set tighter than the author's own range, and every one of them pushed the
+#   prose AWAY from his voice while appearing to protect it. Do not make it four.
 PIPELINE_FLOORS = {
     "emdash_per1k": 8.5,
     "comma_per1k": 58.0,
+    "median_sentence": 13.0,
+    "long_sentence_pct": 11.5,
 }
 # The author's own chapters are the benchmark; they are never gated against themselves.
 AUTHOR_FLOORS = {}
+
+# BREATH — sentence length distribution. The third layer of the same problem.
+#
+# The connective metrics catch a pipeline that JOINS differently from the author. They do
+# not catch one that BREATHES differently. Ch.6 and Ch.7 both sat inside the em-dash and
+# "and" bands after calibration and were still built out of sentences a third shorter than
+# the author's, because the short declarative is what a model reaches for when it is being
+# careful.
+#
+# MEASURE THE NARRATION, NOT THE CHAPTER. This was calibration mistake #4 in this file,
+# caught before it shipped rather than after. On a whole-chapter measurement Ch.6 and Ch.8
+# looked catastrophic (medians of 8 and 7 against an author minimum of 10) and the obvious
+# reading was "the pipeline writes short". It was almost entirely an artefact of how much
+# DIALOGUE each chapter carries: Ch.8 runs 201 spoken lines to 149 of narration, more than
+# any chapter the author wrote, and everyone's dialogue is short. Split the registers and
+# Ch.8's narration comes back at median 12 / >=40w 18.8% — one point under his floor on
+# one metric and ABOVE his whole range on another. A gate built on the un-split number
+# would have sent a writer off to lengthen people's speech.
+#
+# What survives the split is small and specific, and it points in OPPOSITE directions in
+# the two chapters: Ch.6 hits the median but under-reaches on the long sentence (>=40w
+# 9.3% vs his 11.6% floor), while Ch.8 over-reaches on it (18.8%) and sits a point light
+# on the median. That is not one habit. Treat each chapter on its own number.
+#
+# The dialogue:narration ratio is REPORTED and deliberately not gated — the author himself
+# swings from 0.44:1 to 1.16:1, so there is no defensible band. Read it with a human eye.
+#
+# PUNCH_CHAPTERS is the single exemption, and the exemption must be EARNED IN THE OUTLINE
+# before the chapter is written, never granted afterwards to a chapter that simply failed.
+PUNCH_CHAPTERS = {7}    # Ch.7: outline declares "Fragmented. Log lines and white space."
 
 PIPELINE_CEILINGS = {
     "simile_per1k": 5.0,
@@ -135,6 +176,7 @@ PIPELINE_CEILINGS = {
     # than the author himself, which forced edits to his dialogue to satisfy it. Derive a
     # threshold from the SAME measurement the gate makes, never from a differently-defined one.
     "vague_per1k": 6.5,
+    "short_sentence_pct": 33.0,   # <=6-word NARRATION sentences, %
 }
 
 AUTHOR_DRAFTED = {1, 2, 3, 4, 5}
@@ -190,6 +232,40 @@ STOP = set("the a an and or but of to in on at for with as is was were be been "
            "don't didn't wasn't isn't hasn't hadn't couldn't wouldn't shouldn't "
            "won't aren't weren't doesn't can't it's i'm i'd i'll he'd she'd they'd "
            "you're we're they're he's she's".split())
+
+
+def sentences(text):
+    """Split into sentences with ONE consistent tokenizer.
+
+    Absolute accuracy matters less than consistency: every BREATH threshold in this file
+    was calibrated by running THIS function over the author's own chapters. Change the
+    splitter and you must re-measure the author before trusting the numbers again.
+    """
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)
+    text = re.sub(r"^\s*\*\s*\*\s*\*\s*$", " ", text, flags=re.M)   # scene breaks
+    text = re.sub(r"^#.*$", " ", text, flags=re.M)                      # headings
+    parts = re.split(r"(?<=[.!?])[\"'\u201d\u2019]?\s+", text)
+    return [p for p in (x.strip() for x in parts) if len(words(p)) >= 2]
+
+
+def split_registers(text):
+    """Separate spoken lines from narration.
+
+    A paragraph that OPENS with a quotation mark is a line of dialogue; everything else is
+    narration. Crude, and right often enough: it is the paragraph shape a reader sees.
+
+    This split is the whole point of the BREATH block. Measured across the whole chapter,
+    sentence length says almost nothing, because dialogue is short in every writer alive —
+    this author's own dialogue runs to a median of 6-10 words and puts up to 47% of its
+    lines at six words or fewer. A chapter with a big speaking cast therefore reads
+    "short" on a whole-chapter median no matter who wrote it, and a gate built on that
+    number would send a writer off to lengthen people's speech, which is the opposite of
+    the fix. Gate the narration; report the dialogue ratio and let a human read it.
+    """
+    paras = [p.strip() for p in text.split("\n") if p.strip()]
+    is_dia = lambda p: p.startswith("\u201c") or p.startswith('"')
+    return ("\n\n".join(p for p in paras if is_dia(p)),
+            "\n\n".join(p for p in paras if not is_dia(p)))
 
 
 def words(text):
@@ -302,6 +378,33 @@ def scan():
             flags.append(f"EM-DASH {em1k}/1k < {em_lo} (voice-match FLOOR — the pipeline is "
                          f"chaining where this author interrupts himself)"); problems += 1
 
+        # BREATH — sentence-length distribution of the NARRATION (see split_registers).
+        dia_text, nar_text = split_registers(text)
+        nar = sorted(len(words(x)) for x in sentences(nar_text)) or [0]
+        ndia = len(sentences(dia_text))
+        mid = len(nar) // 2
+        median_s = nar[mid] if len(nar) % 2 else (nar[mid-1] + nar[mid]) / 2
+        long_pct = round(100 * sum(1 for L in nar if L >= 40) / len(nar), 1)
+        short_pct = round(100 * sum(1 for L in nar if L <= 6) / len(nar), 1)
+        breath = (f"      breath (narration): {len(nar)} sentences | median {median_s} | "
+                  f">=40w {long_pct}% | <=6w {short_pct}% | dialogue lines {ndia} "
+                  f"({round(ndia/len(nar), 2)}:1)")
+        if n in PUNCH_CHAPTERS:
+            breath += "  [PUNCH — exempt]"
+        else:
+            lo = _floor(n, "median_sentence")
+            if lo is not None and median_s < lo:
+                flags.append(f"BREATH narration median {median_s} < {lo} (voice-match FLOOR "
+                             f"— the pipeline writes shorter than this author)"); problems += 1
+            hi = _ceiling(n, "short_sentence_pct", None)
+            if hi is not None and short_pct > hi:
+                flags.append(f"BREATH narration <=6w {short_pct}% > {hi}% (over-using the "
+                             f"short declarative)"); problems += 1
+            lo = _floor(n, "long_sentence_pct")
+            if lo is not None and long_pct < lo:
+                flags.append(f"BREATH narration >=40w {long_pct}% < {lo}% (voice-match FLOOR "
+                             f"— not reaching for the long accumulating mode)"); problems += 1
+
         low = text.lower()
         for phrase in motif_caps:
             c = low.count(phrase)
@@ -324,6 +427,7 @@ def scan():
 
         print(f"\nCh{n:>2}  {wc} words | simile {sim1k}/1k | adverb {adv1k}/1k | em-dash {emdash} ({per1k(emdash)}/1k)")
         print(f"      rhythm: and {and1k}/1k | comma {comma1k}/1k | somebody/nobody {vague1k}/1k")
+        print(breath)
         if flags:    print("   CEILING:", "; ".join(flags))
         if tic_hits: print("   TICS:   ", "; ".join(tic_hits))
         if fp_hits:  print("   FINGERPRINTS:", "; ".join(fp_hits)); problems += len(fp_hits)
