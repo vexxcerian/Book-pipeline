@@ -4,13 +4,13 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Blueprint complete; Ch.1–5 drafted, evaluated and revised.** Ch.1 is the author's, untouched
-and locked. Ch.2–5 are the author's prose with a targeted editor pass applied on the
-evaluator's findings. All three mechanical gates pass.
+**Ch.1–6 in the manuscript. Ch.6 is the first chapter to PASS the 8.5 quality gate.**
+Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
+Ch.6 is the first pipeline-written chapter: Genesis floor **8.5**, average **8.79** — it matches
+the locked benchmark's floor. All three mechanical gates pass on all six.
 
-⚠️ **Ch.2–5 were revised AFTER they were scored**, so the floors recorded in `STATE.yaml`
-describe the pre-revision text. Re-run `book-evaluator` on them if a current Genesis score
-matters; nothing has yet passed the 8.5 gate, so `chapters.completed` is still empty.
+⚠️ **Ch.2–5 were revised AFTER they were scored**, so their recorded floors describe the
+pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 
 | Artifact | State |
 |---|---|
@@ -19,11 +19,11 @@ matters; nothing has yet passed the 8.5 gate, so `chapters.completed` is still e
 | `voice-dna.md` | ✅ 4,228w — voice reverse-engineered from the author's own prose |
 | `character-bible.md` | ✅ 8,357w — 22 entries, §TIC BUDGET, cover-the-name test run in-file |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–5, **15,894 words** of prose + 23 scene breaks, italics restored |
+| `manuscript/chapters/` | ✅ Ch.1–6, **~20,200 words**, italics + 23 scene breaks restored from the PDF |
 | style / grammar / voice-wear | ✅ all three clean, calibrated to the author's measured voice |
-| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–5 |
+| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–6 |
 | `ENTITY_STATE.yaml` | ✅ 20 characters, 64 knowledge entries, evidence chain-of-custody |
-| Genesis scores | ⚠️ Ch.1 floor **8.5** (prose 9.0) · Ch.2–5 scored 7.5 **then revised — stale** |
+| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 8.5 / 8.79 PASS** · Ch.2–5 stale |
 | `evaluations/` | ✅ per-chapter evals + `ch1-5-summary.md` — read the summary first |
 
 ## The structure, in one paragraph
@@ -68,14 +68,38 @@ Act Three is **split, not altered** — the *ten* sits inside it. **Σ = 95,829 
   away" stacks unstacked (9 uses → 4); all four closers differentiated so no two consecutive
   chapters share a shape or a verb, and every closer sits inside Vexx's perception.
 
-## Resume point — do these in order
+## The Ch.6 build, and what it taught the pipeline
 
-1. **Review the Ch.5 ending** (see "Worth the author's eye"). It is the one change he is
-   most likely to want reverted.
-2. **Then the chapter loop from Ch.6:** write → dialogue-polish → hook-craft → disruptor →
+Ch.6 ran the full loop — write → dialogue-polish → hook-craft → disruptor → evaluate — and
+surfaced four pipeline defects, all now fixed at the root:
+
+1. **`style_check.py` had a latent `NameError`** that could only fire on a non-author chapter.
+   `doctor.sh` now RUNS each book's gates instead of only parsing them.
+2. **`book-architect` audited opening diversity but not endings**, which is why Ch.2–5 had all
+   drifted onto one closing figure. It now carries an ending-diversity check, and `hook-craft`
+   a PULL SEQUENCING section.
+3. **`book-disruptor` wrote its backup into `manuscript/chapters/`**, where the gates glob it
+   as a real chapter and fail the chapter against its own backup. Backups now go to
+   `evaluations/`.
+4. **The style gate had ceilings but no FLOORS** — so a pipeline chapter could pass by writing
+   *calmer* than the author. That was the real seam (below).
+
+**THE SEAM — the finding that matters most for Ch.7–26.** The evaluator could not find the
+pipeline's known fingerprint (analytical simile, competence cascade, emotional temperature) —
+none of it fires. But four rhythm metrics put Ch.6 outside the author's entire range in the
+same direction: **the author interrupts himself with em-dashed appositives; the pipeline
+chained clauses on `and`.** No sentence was wrong; twenty chapters of it would be a second
+author. `style_check.py` now gates em-dash/comma FLOORS and `and`/vague-pronoun ceilings, and
+reports rhythm per chapter. Ch.6 was recalibrated back into band (em-dash 4.7 → 9.5/1k,
+`and` 40.4 → 23.7/1k) **without changing one idea, image, beat or line of dialogue.**
+
+## Resume point
+
+1. **The chapter loop from Ch.7:** write → dialogue-polish → hook-craft → disruptor →
    evaluate → quality gate. Commit per chapter.
-3. Optional before Ch.6: the three FOLLOW-UP items in `STATE.yaml` (the Aglaope
-   metacognition line, device bleed, Ch.2's chaos density). None of them block drafting.
+2. **Watch the rhythm numbers** `style_check.py` now prints. They are the early warning.
+3. Optional: the Ch.5 ending review, and the FOLLOW-UP items in `STATE.yaml` (the Aglaope
+   metacognition line, Ch.2's chaos density). None block drafting.
 
 ## Worth the author's eye
 
