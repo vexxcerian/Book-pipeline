@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4,471 | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4,524 | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -263,10 +263,8 @@ Vexx walked down to the transit shelter at the bottom of the hill and sat on the
 
 He sat there a while before he worked out what Voss had actually handed him — that in a building he had no access to there was now a line with his name on one side of it and Corwin's on the other, in his own hand, third field, retained. He had spent four years learning to leave no shape behind him anywhere. He had walked in through an open gate in the middle of the afternoon and drawn one.
 
-*Vexx*, Rx said, and then nothing for a long while.
+There were four other people in the shelter. One of them, an older woman with a shopping trolley parked against her knee, asked him whether the next one went straight through to the coast or whether you had to change at the junction.
 
-Then: *What did he pick up.*
+"I don't know whether it went," Vexx said, out loud, to a stranger who had asked him about a train.
 
-"I don't know," Vexx said, out loud, in a shelter with four other people in it.
-
-Nobody looked up. The transit came on time and it was clean and there were seats on it.
+She said that was all right, they would both find out soon enough, and turned her face back to the road. Nobody else looked up. The transit came on time and it was clean and there were seats on it.
