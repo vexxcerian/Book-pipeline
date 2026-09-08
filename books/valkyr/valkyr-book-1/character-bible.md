@@ -122,6 +122,16 @@ physicality. **This explicitly includes Jameson.**
 > NEW character may be given this shape**, and Corwin in particular is licensed for the grammar
 > correction and nothing else. Catch it at dialogue-polish.
 >
+> ### WATCH (chapter-local so far): Rx's witness-requests
+>
+> Ch.7 gives Rx three witness-requests in 1,600 words — *"I want that on the record"*, *"I want
+> that understood"*, *"I'd like you to hear me say so"*. In Ch.7 they are deliberate and paid
+> off: the chapter's anchor lands precisely because the third reading arrives with **no**
+> preface, so the habit exists to be withheld. **That is a chapter-local structure, not a
+> licence.** Rx already holds his one device (the too-quick denial). If the witness-request
+> shape appears again in Ch.8+, it becomes a second device for a tic-bearer who is capped at
+> one — catch it at dialogue-polish.
+
 > ### NOT bleed, do not "fix": Echo's approving hum
 >
 > Echo's *"small, approving hum"* in Ch.5 duplicates Rx's, and it is **deliberate** — the

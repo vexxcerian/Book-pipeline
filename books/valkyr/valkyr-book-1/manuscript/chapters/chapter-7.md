@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1,651 | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1,646 | Revision: 1 (dialogue polish — Spector-device de-tally in Rx x3, one attribution) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -17,7 +17,7 @@ The table in his kitchen was not a kitchen table — a folding utility trestle, 
 
 *Next.*
 
-*I want that on the record. Line forty-one of sixty, every line on it somebody's boots, with six more of these open behind it.*
+*I want that on the record. Line forty-one of sixty, every line on it somebody's boots, with more of them open behind it.*
 
 Nothing they were doing was illegal. That was the entire design of it: no request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. The price of the design was volume. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three separate veterans' associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
 
@@ -31,9 +31,9 @@ Vexx turned the tag over on the laminate, and turned it back.
 
 *So give it five years.*
 
-*I've given it five years four times. That's twenty, which is the twenty I want, except the fourth one timed the session out — fifteen minutes, silently, no notice that it had done it.* A pause with nothing wrong in it. *It'll be raining there now. It rained on that roof every night the summer we were fifteen, tin roof, the second barracks, that noise it made — like a bucket of gravel going over the edge of a —*
+*I've given it five years four times to cover the twenty I want. The fourth one timed the session out — fifteen minutes, silently, no notice that it had done it.* A pause with nothing wrong in it. *It'll be raining there now. It rained on that roof every night the summer we were fifteen, tin roof, the second barracks, that noise it made — like a bucket of gravel going over the edge of a —*
 
-*Queue's moved.*
+*Queue's moved*, Rx said.
 
 The barracks roof had been concrete.
 
@@ -81,7 +81,7 @@ Vexx put his thumb on the serial. He could find it in the dark — had, more tha
 
 *He's been dead seven years*, Vexx said, *and his tag is on my table.*
 
-*That's the whole of it. It's four things short of anything at all. I'd like you to hear me say so before I go and find you the fifth.* The cursor did what it did. *Materiel index. Same forms as the boots. Give me a minute.*
+*That's the whole of it. It isn't evidence of anything. I'd like you to hear me say so before I go and find you the part that is.* The cursor did what it did. *Materiel index. Same forms as the boots. Give me a minute.*
 
 It took nineteen.
 
