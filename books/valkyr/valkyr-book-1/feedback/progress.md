@@ -93,6 +93,36 @@ author. `style_check.py` now gates em-dash/comma FLOORS and `and`/vague-pronoun 
 reports rhythm per chapter. Ch.6 was recalibrated back into band (em-dash 4.7 → 9.5/1k,
 `and` 40.4 → 23.7/1k) **without changing one idea, image, beat or line of dialogue.**
 
+## The two inventories — check every new chapter against BOTH
+
+Chapters 2–5 all drifted onto one closing figure because nothing was tracking the sequence.
+`book-architect` and `hook-craft` now carry the rules; these are the running tallies.
+
+**CLOSERS — seven chapters, seven shapes. No repeats, and Ch.2's is spent.**
+
+| Ch | Closing move |
+|---|---|
+| 2 | dramatic irony — **SPENT, do not reuse in this book** |
+| 3 | a scene beat with another character |
+| 4 | an interior equation |
+| 5 | a physical object handled in the dark |
+| 6 | a misdirected answer to a stranger |
+| 7 | the narration stops and hands the reader an unglossed found document |
+
+**OPENINGS — and here is a live drift warning.** `book-architect` checks opening diversity but
+nothing was keeping a tally, so this is the same blind spot one step to the left:
+
+| Ch | Opening move |
+|---|---|
+| 2–5 | a retrospective framing statement (*"Gaia's friction with him came to a head on a mission that…"*) — four in a row |
+| 6 | a physical object in near-real-time (the visitor form) — the first break in that run |
+| 7 | **a raw administrative document** (the boots requisition) |
+
+⚠️ **Ch.6 and Ch.7 both open on an administrative form.** Mechanically different — Ch.6
+narrates one ironically, Ch.7 hands over the raw block — and both are mandated by the outline,
+and forms are genuinely this book's evidentiary medium. **But a third would be a pattern.**
+Ch.8's planned opening (mid-transit, Goliath and the coffee) clears it. Do not let that slip.
+
 ## Resume point
 
 1. **The chapter loop from Ch.7:** write → dialogue-polish → hook-craft → disruptor →

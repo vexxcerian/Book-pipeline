@@ -118,7 +118,14 @@ AUTHOR_FLOORS = {}
 
 PIPELINE_CEILINGS = {
     "simile_per1k": 5.0,
-    "emdash_per1k": 9.5,
+    # 12.0, not 9.5. The author measures 9.0-11.8/1k across his five chapters, so a 9.5
+    # ceiling capped the pipeline BELOW his own practice in three of them, and combined with
+    # the 8.5 floor it left a corridor 1.0 wide against his 2.8-wide spread — Ch.7 could
+    # neither add nor drop a single em-dash without failing. THIRD instance of the same
+    # mistake in this file: a threshold set tighter than the author's measured range pushes
+    # the prose AWAY from his voice while appearing to protect it. Bracket his range; do not
+    # squeeze it.
+    "emdash_per1k": 12.0,
     "adverb_per1k": 20.0,
     "theway": 5,
     "and_per1k": 24.0,      # the chaining habit — author runs 15.4-18.6/1k

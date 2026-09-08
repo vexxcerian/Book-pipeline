@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1,646 | Revision: 1 (dialogue polish — Spector-device de-tally in Rx x3, one attribution) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1,643 | Revision: 2 (hook-craft — wall-clock sentence sharpened; one closing listing line de-winked) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -131,7 +131,7 @@ He cleared the field.
 
 *There was nothing to see*, Rx said, at exactly the speed he said everything else. *Also, that archive runs on a subscription that lapses at the end of the month, which is a thing I've decided to tell you now rather than at the end of the month.*
 
-The wall clock in the next room did whatever it did on the hour.
+The wall clock in the next room struck the hour, once.
 
 *Line seven of twenty-two*, Rx said, after a while. *I can't see the other twenty-one from here.*
 
@@ -153,6 +153,6 @@ He had been at this since the summer, in the hours after the work stopped and be
 
 *SOLID ASH. 1600 BY 800. MORTISE AND TENON, DRAWBORED, NO FIXINGS.*
 
-*OILED FINISH. MINOR VARIATION IN GRAIN IS NOT A DEFECT.*
+*OILED FINISH. GRAIN AND COLOUR VARY FROM PIECE TO PIECE.*
 
 *DELIVERY FOUR TO SIX WEEKS. THIS ITEM SHIPS ASSEMBLED.*
