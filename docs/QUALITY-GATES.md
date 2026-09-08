@@ -120,7 +120,55 @@ python3 books/<slug>/tools/style_check.py --max-simile 4
   ceiling.
 - **Repeated phrases** — distinctive 4–6 word n-grams reused within or across chapters.
 - **Simile/metaphor load** — markers per 1,000 words against a ceiling.
+- **Connective habit** — `and`, comma and vague-pronoun density per 1,000 words.
+- **Breath** — sentence-length distribution of the NARRATION: median, share of sentences
+  ≥40 words, share ≤6 words. The dialogue:narration ratio is reported alongside them.
 - Reports adverb (-ly) and em-dash density per chapter.
+
+#### Ceilings AND floors — the half that is easy to forget
+
+A ceiling stops the pipeline **exceeding** the author. A floor stops it falling **short** of
+him. The second failure is the one that actually happens. Told "no more than 9.5 em-dashes
+per 1,000 words", a writer scores a safe 4.7 and produces prose that is calm where the
+author is nervous. No individual sentence is wrong, every other check passes, and twenty
+chapters of it is a second author standing behind the first.
+
+So `PIPELINE_FLOORS` is as load-bearing as `PIPELINE_CEILINGS`, and both exist because of
+the same finding: **the pipeline's most durable fingerprint is not vocabulary or simile —
+it is how it JOINS things.** Left alone it chains clauses on `and`. This author interrupts
+himself with em-dashed appositives. On the book this was found in, three consecutive
+chapters drafted at 35–45 `and` per 1,000 words against the author's 15–20, each on a brief
+that carried the warning in writing. The conversion is free — a clause chained with `and`
+becomes an interruption set off by em-dashes, same idea, same image, same order — and it is
+now a mid-draft self-check in `book-writer.md` rather than a repair afterwards.
+
+#### Calibrating a floor or ceiling — read this before setting one
+
+Four separate thresholds on that book were once set **tighter than the author's own
+measured range**, and every one of them pushed the prose *away* from his voice while
+appearing to protect it. Two of the four were caught only after they had forced edits to
+prose that was already right. The rules that came out of it:
+
+1. **Measure the author with the gate's own tokenizer**, not a scratch script. Two
+   reasonable implementations disagreed by a full point, which was enough to invert a
+   verdict.
+2. **Set the threshold AT the author's measured extreme, not inside it.** If his range is
+   9.0–11.8, the ceiling is 12.0 and not 9.5.
+3. **Measure the right text.** Breath was nearly gated on whole-chapter sentence length.
+   Everyone's dialogue is short — this author's runs to a median of 6–10 words and puts up
+   to 47% of its lines at six words or fewer — so a chapter with a big speaking cast reads
+   "short" no matter who wrote it. The un-split gate would have told a writer to lengthen
+   people's speech, which is the opposite of the fix. **Gate the narration; report the
+   dialogue ratio and read it with a human eye** (that ratio is deliberately *not* gated —
+   the author himself swings 0.44:1 to 1.16:1, so there is no band to defend).
+4. **Density thresholds are unstable below ~2,500 words.** At 1,500 words two instances of
+   anything score 1.33/1k. Check the raw count before cutting. The evaluator's Pattern #11
+   clause now disapplies its density half below that length for exactly this reason.
+
+`PUNCH_CHAPTERS` exempts a chapter the **outline** declares fragmented (log lines, white
+space, short paragraphs) from the breath floors. The exemption must be earned in writing
+*before* the chapter is drafted — it is never granted afterwards to a chapter that simply
+failed, and a chapter listed there is recorded as *exempt and passing*, not as *in band*.
 
 **The ALLOWLIST is per-book** and is the one pipeline file that is *not* shared — your
 deliberate motifs are yours. It is also **a capped registry, not an exemption**:
