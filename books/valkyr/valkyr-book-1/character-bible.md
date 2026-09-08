@@ -148,7 +148,7 @@ physicality. **This explicitly includes Jameson.**
 | Rx's literal *"I'm fine" / "Fine."* (the *behaviour* may recur more; the **phrase** may not) | **5** | 3 |
 | Rx calling Vexx **"brother"** — a weight, not an address | **5** | 3 |
 | Requiem's singing image | **3** | 1 (final use is Ch.16) |
-| RECLAMATION (the word) — its power is scarcity | **9** | 0 |
+| RECLAMATION (the word) — its power is scarcity | **9** | 1 (Ch.7 — the routing line, unremarked; 8 remain) |
 | *"shaped like an apology"* | **2 total** | 1 (the second and last is Ch.26) |
 | *"he would remember this later"* formulation, never in a chapter opening | **3** | ~1 |
 | Retrospective-narrator intrusions | **≤2 per chapter** | Ch.1 is locked and exempt |
