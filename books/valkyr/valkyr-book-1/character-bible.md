@@ -55,10 +55,17 @@ carry **none**.
   Jameson · Goliath/Spector · Gaia/Echo · Paladin/Bastion · Zeus/Hollow · Aglaope/Requiem
   ("Lure" in program paperwork only) · Phantom · Corwin · Reyes · Voss · the Choosing ·
   Valkyr · SPARTAN-II · UNSC / ONI.
-- **Dialogue convention (hold it manuscript-wide):** voices in the air are quoted; voices in
-  the interface (Rx and the five AIs) are unquoted/italic. This is the author's own choice and
-  it is load-bearing — it makes the most intimate presence in the book typographically *not in
-  the room*.
+- **Dialogue convention (hold it manuscript-wide) — the register follows the NARRATION, not
+  the speaker.** Quotation marks for speech in a **dramatized scene**; unquoted italics for
+  speech reported inside **summary or retrospective narration**, *and* for the private
+  interface channel (Rx and the five AIs, always). The author's own choice, and load-bearing
+  twice over: it makes the most intimate presence in the book typographically *not in the
+  room*, and it lets the prose move between scene and memory without announcing it.
+  **The proof is Ch.1 — 58 italic runs and zero quotation marks, because the whole chapter is
+  memory.** Quotation marks appear the moment Ch.2 begins dramatizing.
+  **Consequence:** Voss speaks in italics in Ch.2 (summary) and in quotation marks in Ch.6
+  (dramatized scene). That is the convention working, **not an inconsistency to normalise** —
+  an evaluator pass read it as one and recommended "fixing" it. Do not.
 
 ---
 
