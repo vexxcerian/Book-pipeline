@@ -17,25 +17,25 @@ The table in his kitchen was not a kitchen table — a folding utility trestle, 
 
 *Next.*
 
-*I want that on the record. Line forty-one of sixty, every line on it somebody's boots, with more of them open behind it.*
+*I want that on the record. Line forty-one of sixty, every line on it somebody’s boots, with more of them open behind it.*
 
-Nothing they were doing was illegal. That was the entire design of it: no request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. The price of the design was volume. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three separate veterans' associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
+Nothing they were doing was illegal. That was the entire design of it: no request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. The price of the design was volume. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three separate veterans’ associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
 
 Rx had ticked researcher.
 
-*Nine minutes in a queue*, he said, in the second hour. *There's a notice at the top of it apologising for demand.*
+*Nine minutes in a queue*, he said, in the second hour. *There’s a notice at the top of it apologising for demand.*
 
 There was a bicycle chained to the rail outside the apartment across the landing.
 
 Vexx turned the tag over on the laminate, and turned it back.
 
-*The one on the left wants a date range before it'll search. It won't take a range wider than five years. It won't tell you that until you've filled the rest of it in.*
+*The one on the left wants a date range before it’ll search. It won’t take a range wider than five years. It won’t tell you that until you’ve filled the rest of it in.*
 
 *So give it five years.*
 
-*I've given it five years four times to cover the twenty I want. The fourth one timed the session out — fifteen minutes, silently, no notice that it had done it.* A pause with nothing wrong in it. *It'll be raining there now. It rained on that roof every night the summer we were fifteen, tin roof, the second barracks, that noise it made — like a bucket of gravel going over the edge of a —*
+*I’ve given it five years four times to cover the twenty I want. The fourth one timed the session out — fifteen minutes, silently, no notice that it had done it.* A pause with nothing wrong in it. *It’ll be raining there now. It rained on that roof every night the summer we were fifteen, tin roof, the second barracks, that noise it made — like a bucket of gravel going over the edge of a —*
 
-*Queue's moved*, Rx said.
+*Queue’s moved*, Rx said.
 
 The barracks roof had been concrete.
 
@@ -49,13 +49,13 @@ The name on the tag was stamped rather than etched, and the D had worn shallower
 
 HOLST, D.
 
-*HOLST, D., returns nothing*, Rx said. *Not the way the serial returns nothing. The index doesn't hold a Holst at all, which is a different failure, a smaller one, because that index is thirty-one per cent complete. It says so on its own front page.*
+*HOLST, D., returns nothing*, Rx said. *Not the way the serial returns nothing. The index doesn’t hold a Holst at all, which is a different failure, a smaller one, because that index is thirty-one per cent complete. It says so on its own front page.*
 
 *Try it without the initial.*
 
 *Trying it without the initial.*
 
-The neighbour's music came up through the floor, two songs' worth, and went off in the middle of the second one.
+The neighbour’s music came up through the floor, two songs’ worth, and went off in the middle of the second one.
 
 *Nothing.*
 
@@ -79,11 +79,11 @@ Vexx put his thumb on the serial. He could find it in the dark — had, more tha
 
 *Say the rest of it.*
 
-*I'd rather you did.*
+*I’d rather you did.*
 
-*He's been dead seven years*, Vexx said, *and his tag is on my table.*
+*He’s been dead seven years*, Vexx said, *and his tag is on my table.*
 
-*That's the whole of it. It isn't evidence of anything.* The cursor did what it did. *Materiel index. Same forms as the boots. Give me a minute.*
+*That’s the whole of it. It isn’t evidence of anything.* The cursor did what it did. *Materiel index. Same forms as the boots. Give me a minute.*
 
 It took nineteen.
 
@@ -101,7 +101,7 @@ It took nineteen.
 
 *DATE OF ISSUE, RECEIPT AND ACKNOWLEDGEMENT: BELOW.*
 
-*This isn't buried*, Rx said. *I want that understood before you look at it. It's a materiel index. It exists so an auditor on a two-year cycle can confirm that a boot which left a store arrived somewhere with a foot in it. Nobody hid this.*
+*This isn’t buried*, Rx said. *I want that understood before you look at it. It’s a materiel index. It exists so an auditor on a two-year cycle can confirm that a boot which left a store arrived somewhere with a foot in it. Nobody hid this.*
 
 *Same number*, he said. *The one under your thumb.*
 
@@ -117,7 +117,7 @@ Eleven months after the file closed.
 
 Vexx said the number after him. He had not decided to.
 
-*You're seventeen of thirty on the moving plates this month*, Rx said. *I keep it. Nobody's asked me to keep it. I don't know what I keep it for.*
+*You’re seventeen of thirty on the moving plates this month*, Rx said. *I keep it. Nobody’s asked me to keep it. I don’t know what I keep it for.*
 
 Vexx sat with his hands flat on the laminate on either side of the pad. The left one was not flat.
 
@@ -127,15 +127,15 @@ He got as far as the fourth letter of a surname they shared.
 
 He cleared the field.
 
-*I didn't see that*, Rx said.
+*I didn’t see that*, Rx said.
 
 *There was nothing to see.*
 
-*There was nothing to see*, Rx said, at exactly the speed he said everything else. *Also, that archive runs on a subscription that lapses at the end of the month, which is a thing I've decided to tell you now rather than at the end of the month.*
+*There was nothing to see*, Rx said, at exactly the speed he said everything else. *Also, that archive runs on a subscription that lapses at the end of the month, which is a thing I’ve decided to tell you now rather than at the end of the month.*
 
 The wall clock in the next room struck the hour, once.
 
-*Line seven of twenty-two*, Rx said, after a while. *I can't see the other twenty-one from here.*
+*Line seven of twenty-two*, Rx said, after a while. *I can’t see the other twenty-one from here.*
 
 The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week.
 
@@ -145,7 +145,7 @@ The trestle had a wobble in it that came and went depending on which of the four
 
 He got up.
 
-There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armour fragment nobody had signed back into evidence lock, a tag with a dead man's name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He could not have explained one item of it to a review officer in a way that would survive the second question. He turned the eggs.
+There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armour fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He could not have explained one item of it to a review officer in a way that would survive the second question. He turned the eggs.
 
 The eggs were fine and he put them in the sink.
 

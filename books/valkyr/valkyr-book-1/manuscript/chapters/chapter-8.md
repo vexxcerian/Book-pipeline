@@ -97,7 +97,7 @@ Social meant the station commander came out onto the step in a jacket he had not
 
 They cleared the site first. That is the procedure. There is no version of the procedure where you skip it because a man in an unfastened jacket seems pleasant.
 
-The fuel shed took twenty-two minutes and produced nothing. Goliath went round the outside of it first, on his knees at the base of the wall in the wind, running a glove along the seam where the panel met the pad; then Spector took the seals, one at a time, through the interface, in the order Spector takes things.
+The fuel shed took twenty-two minutes and produced nothing. Goliath went round the outside of it first, on his knees at the base of the wall in the wind, running a glove along the seam where the panel met the pad. Then Spector took the seals, one at a time, through the interface, in the order Spector takes things.
 
 “Bund’s dry. One, two, three, four — four drums, four seals, four intact,” Spector said. “Nothing’s been opened. Nothing’s been resited. There’s a spanner on the floor that shouldn’t be on the floor and that’s the whole of my complaint.”
 
@@ -383,7 +383,7 @@ Gaia said, “Thanks, Hallam,” to a different crew, out of habit, to nobody wh
 
 * * *
 
-The breach bag was still against the relay hall wall, inside the near door, where Goliath had left it. Vexx went back for it himself a little after seven — the apron empty by then, the station's own people gone in out of the wind.
+The breach bag was still against the relay hall wall, inside the near door, where Goliath had left it. Vexx went back for it himself a little after seven — the apron empty by then, the station’s own people gone in out of the wind.
 
 He heard it before he was through the door.
 
@@ -391,21 +391,21 @@ The corridor was the corridor: two metres wide, the light in it flat, the brown 
 
 Vexx stopped inside the frame. The bag was a metre from his hand. He did not pick it up.
 
-The chain that held the door back had a maker's stamp on the last link. Four letters, then a number, then what might have been a second number under the paint.
+The chain that held the door back had a maker’s stamp on the last link. Four letters, then a number, then what might have been a second number under the paint.
 
 Goliath came down the corridor from the far end with the spanner from the fuel shed in his fist.
 
 He said nothing at all. He went down on one knee at the hinge side, got a thumb under the chain, worked it off the cleat.
 
-"Take the weight."
+“Take the weight.”
 
 Paladin took the weight.
 
-"Other side."
+“Other side.”
 
 Paladin changed hands. The door came off the chain, swung, grated on the plate — the two of them stood there holding a door on a station neither man would see again while Goliath brought the pin up out of the bottom hinge with the spanner, turned it a quarter, dropped it back in. He tried the swing. It swung.
 
-"Good," Goliath said.
+“Good,” Goliath said.
 
 He coiled the chain and hung it on the bracket where a chain goes.
 
@@ -419,43 +419,43 @@ The corridor outside the operations block had a light on the blink at the far en
 
 Goliath caught him there at half four with two cups off the urn, and held one out, and waited for it to be taken.
 
-"Spector wants something said to you. He wants it said once."
+“Spector wants something said to you. He wants it said once.”
 
 Vexx took the cup.
 
-"Your Rx runs hot."
+“Your Rx runs hot.”
 
 Somewhere behind them the urn ticked as it came down off the boil, once, then twice, then not again.
 
-"Not all the time. On words." Goliath put his shoulders against the wall. "Spector says there's a handful of them, and when one comes across the net Rx takes longer over it than he takes over anything — a fraction, nothing you'd hear — and then he's exactly what he was before it. He gave me three. I've got two of them."
+“Not all the time. On words.” Goliath put his shoulders against the wall. “Spector says there’s a handful of them, and when one comes across the net Rx takes longer over it than he takes over anything — a fraction, nothing you’d hear — and then he’s exactly what he was before it. He gave me three. I’ve got two of them.”
 
-"Which two."
+“Which two.”
 
-"'Unstable.' And 'refused.'"
+“‘Unstable.’ And ‘refused.’”
 
-A tin of fudge with a lighthouse painted on the lid, sent to a barracks by somebody's mother, terrible, gone by the afternoon.
+A tin of fudge with a lighthouse painted on the lid, sent to a barracks by somebody’s mother, terrible, gone by the afternoon.
 
-"Interface load is logged on every operation," Vexx said. "If it's showing in mission traffic, Spector puts it through maintenance, and it goes up to the technicians with the rest of the telemetry."
+“Interface load is logged on every operation,” Vexx said. “If it’s showing in mission traffic, Spector puts it through maintenance, and it goes up to the technicians with the rest of the telemetry.”
 
-"That isn't what he did. He came to me."
+“That isn’t what he did. He came to me.”
 
-"It can still go through maintenance."
+“It can still go through maintenance.”
 
-Goliath looked at him for a while, holding the cup at chest height, not drinking out of it. Then he asked his one question — "Do you want the third one, when he gives it to me?" — and waited, and went on waiting, past the point where a man expects an answer and some distance past the point after that.
+Goliath looked at him for a while, holding the cup at chest height, not drinking out of it. Then he asked his one question — “Do you want the third one, when he gives it to me?” — and waited, and went on waiting, past the point where a man expects an answer and some distance past the point after that.
 
-Vexx drank the coffee. "It's the water," he said.
+Vexx drank the coffee. “It’s the water,” he said.
 
-"It is the water." Goliath took his own cup off the sill. "It's been the water since August."
+“It is the water.” Goliath took his own cup off the sill. “It’s been the water since August.”
 
 Then he went — no hurry in it, no look back down the corridor — and that was the whole of it.
 
 The report took fifty minutes. Halfway through it Aglaope came in without knocking, put something on the desk beside the pad, squared it to the edge with two fingers — a notebook, soft-covered, the corners gone furred, a rubber band round the middle of it holding in a fold of loose paper.
 
-"Behind the fuse box, on the shelf brackets," she said. "I looked there twice."
+“Behind the fuse box, on the shelf brackets,” she said. “I looked there twice.”
 
 She left him to it.
 
-He wrote what he had told them in the kitchen he would write, in the order he had said it in, with nothing added to it. Removal from field. Medical track, escort of two, no restraint, and the line about the runoff sheets being immaculate, which would not survive the summary and which he put in anyway. Then the names, all six of them. Then Paladin's objection, in Paladin's own words, which ran to four sentences, and which he did not shorten.
+He wrote what he had told them in the kitchen he would write, in the order he had said it in, with nothing added to it. Removal from field. Medical track, escort of two, no restraint, and the line about the runoff sheets being immaculate, which would not survive the summary and which he put in anyway. Then the names, all six of them. Then Paladin’s objection, in Paladin’s own words, which ran to four sentences, and which he did not shorten.
 
 Then he went back up to the top of the form, to the box the authorisation had come in on, and read it once more before he sent it.
 

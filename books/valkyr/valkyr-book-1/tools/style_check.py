@@ -177,6 +177,7 @@ PIPELINE_CEILINGS = {
     # threshold from the SAME measurement the gate makes, never from a differently-defined one.
     "vague_per1k": 6.5,
     "short_sentence_pct": 33.0,   # <=6-word NARRATION sentences, %
+    "semicolons": 0,             # the author uses ZERO across all five of his chapters
 }
 
 AUTHOR_DRAFTED = {1, 2, 3, 4, 5}
@@ -405,6 +406,43 @@ def scan():
                 flags.append(f"BREATH narration >=40w {long_pct}% < {lo}% (voice-match FLOOR "
                              f"— not reaching for the long accumulating mode)"); problems += 1
 
+        # TYPOGRAPHY — two defects that no other check in this file can see, both found
+        # only because a human looked at a diff.
+        #
+        # 1. Straight quotes. The author's chapters are 100% typographic. Pipeline-written
+        #    chapters arrive with a mix, because a model types ' and " and nothing in a
+        #    prose gate looks at which character it is. It is invisible in a terminal, it
+        #    survives every style and grammar check, and it shows up as mixed dumb and
+        #    smart quotes on the same printed page. Editorial comments are exempt.
+        # 2. Punctuation the author never uses. A mark that appears zero times in the
+        #    benchmark and once per pipeline chapter is a voice divergence, not a typo.
+        #    Configure via PIPELINE_CEILINGS["semicolons"]; set 0 where the author uses none.
+        prose = re.sub(r"<!--.*?-->", " ", open(f, encoding="utf-8").read(), flags=re.S)
+        straight = prose.count('"') + prose.count("'")
+        if straight:
+            flags.append(f"TYPOGRAPHY {straight} straight quote(s)/apostrophe(s) — this "
+                         f"manuscript is typographic"); problems += 1
+        # Quoted DOCUMENTS are exempt. A psych report, a requisition block or a service
+        # record is institutional prose and institutional prose uses semicolons — that is
+        # characterisation of the document, not a defect in the narrator's voice, and in a
+        # book whose central device is the quoted form it would be exactly backwards to
+        # sand it out. Whole-italic paragraphs are the convention for those here. The
+        # exempted count is REPORTED, never silently dropped.
+        doc_para = re.compile(r"^\s*\*[^*].*\*\s*$")
+        body, docs = [], []
+        for para in prose.split("\n"):
+            (docs if doc_para.match(para.strip()) else body).append(para)
+        semis = "\n".join(body).count(";")
+        doc_semis = "\n".join(docs).count(";")
+        max_semi = _ceiling(n, "semicolons", None)
+        if max_semi is not None and semis > max_semi:
+            flags.append(f"SEMICOLON x{semis} > {max_semi} (punctuation the author does "
+                         f"not use)"); problems += 1
+        if doc_semis:
+            semi_note = f"      note: {doc_semis} semicolon(s) exempted inside quoted documents"
+        else:
+            semi_note = None
+
         low = text.lower()
         for phrase in motif_caps:
             c = low.count(phrase)
@@ -428,6 +466,7 @@ def scan():
         print(f"\nCh{n:>2}  {wc} words | simile {sim1k}/1k | adverb {adv1k}/1k | em-dash {emdash} ({per1k(emdash)}/1k)")
         print(f"      rhythm: and {and1k}/1k | comma {comma1k}/1k | somebody/nobody {vague1k}/1k")
         print(breath)
+        if semi_note: print(semi_note)
         if flags:    print("   CEILING:", "; ".join(flags))
         if tic_hits: print("   TICS:   ", "; ".join(tic_hits))
         if fp_hits:  print("   FINGERPRINTS:", "; ".join(fp_hits)); problems += len(fp_hits)
