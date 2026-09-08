@@ -88,9 +88,18 @@ ALLOWLIST = [
 #   simile    2.5-6.8/1k  (Ch.2 is the outlier at 6.8 — the roster chapter)
 #   "the way" 5-9 per chapter — the author's signature explanatory construction
 #
-# Chapters 6-26 are PIPELINE-written and deliberately stay on the strict defaults
-# (simile 4.0/1k, em-dash 4/chapter absolute, "the way" x2). That is where the
-# anti-AI value of these ceilings actually lives.
+# Ceilings for the PIPELINE-written chapters (6-26), below. Deliberately a shade tighter
+# than the author's own measured range: the pipeline may REACH his voice, not exceed it.
+# "fingerprint" is deliberately absent, so those phrases stay on the strict default of 1
+# — Ch.6 cleared it without needing the allowance, so the tighter setting stands until a
+# chapter genuinely needs "the kind of" twice.
+PIPELINE_CEILINGS = {
+    "simile_per1k": 5.0,
+    "emdash_per1k": 9.5,
+    "adverb_per1k": 20.0,
+    "theway": 5,
+}
+
 AUTHOR_DRAFTED = {1, 2, 3, 4, 5}
 AUTHOR_CEILINGS = {
     "simile_per1k": 7.0,

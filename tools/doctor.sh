@@ -264,6 +264,19 @@ PY
     [ -f "$d/$f" ] && ok "$f" || warn "$f missing — folder not scaffolded from books/_template/ (see the BOOK FOLDER LAW)"
   done
 
+  # The gates must RUN, not merely parse. A per-book gate is edited by hand (ALLOWLIST,
+  # ceilings), and a config name that is referenced but never defined is a NameError that
+  # only fires on the chapter it applies to — long after the edit, and silently until then.
+  # Exit 1 here means "the gate flagged something", which is the gate working; a traceback
+  # means the gate itself is broken, which is the gate not existing.
+  for g in style_check grammar_check voice_wear_check; do
+    [ -f "$d/tools/$g.py" ] || continue
+    local out; out="$(cd "$d" && python3 "tools/$g.py" 2>&1)"
+    if printf '%s' "$out" | grep -q 'Traceback (most recent call last)'; then
+      bad "tools/$g.py CRASHES — $(printf '%s' "$out" | tail -1)"
+    fi
+  done
+
   local n; n=$(ls "$d"/manuscript/chapters/chapter-*.md 2>/dev/null | wc -l | tr -d ' ')
   if [ "$n" -gt 0 ]; then
     local w; w=$(cat "$d"/manuscript/chapters/chapter-*.md 2>/dev/null | wc -w | tr -d ' ')

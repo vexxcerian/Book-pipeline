@@ -570,6 +570,12 @@ The first four are **CLOSED for new chapters** — they are at or over cap in th
 - **DISTINCTNESS GUARANTEE:** He is the only character in the book whose distinguisher is
   **taken away** rather than established — the reader identifies him by a habit in Ch.3 and
   identifies his destruction by that habit's absence in Ch.19.
+- **ANCHORED (Ch.6, written 2026-09-08):** the device now has its on-page anchor. Corwin
+  corrects Vexx mid-sentence — *"Were."* — involuntarily, under sedation, and is embarrassed by
+  the reflex rather than the grammar; the Ch.3 sample line below surfaces two beats later as
+  **Vexx's memory** of the walk out of the jungle (spoken into Paladin's back, written down by
+  nobody), which supplies the Ch.3 anchor CF-04 says the drafted prose lacks without editing
+  Ch.3. **Ch.19 removes it.**
 - **Sample line (Ch.3):** *"Fewer. There were fewer of them than the report says, not less."*
 - **Sample line (Ch.19):** *"They explained it to me. I think I had it backwards."*
 
