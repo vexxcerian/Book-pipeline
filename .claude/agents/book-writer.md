@@ -316,6 +316,69 @@ Characters know only what they could realistically have perceived and retained. 
 
 Being wrong is more interesting than being right. "She thought he sounded angry, or maybe just tired" > "she heard the anger in his voice."
 
+## CONNECTIVE HABIT — measure it at 60%, not at the end
+
+The pipeline's most durable fingerprint on a book is not vocabulary, not simile, not any of
+the 20 anti-AI patterns. **It is how you JOIN things.** Left alone, this system chains
+clauses on "and" — subject, verb, and, subject, verb, and — because that is the safe way to
+keep a sentence moving. Many authors don't. Some interrupt themselves with em-dashed
+appositives; some accumulate in commas with no conjunction at all; some stop dead and start
+again.
+
+No individual sentence is wrong. That is exactly why it survives every other check. Twenty
+chapters of it is a second author standing behind the first.
+
+**This has now recurred on three consecutive chapters of a book whose brief warned about it
+in writing.** It is not an accident you can be told out of. Treat it as a habit you have and
+must actively convert.
+
+### The self-check — run it when the draft is roughly 60% written
+
+Not at the end. At the end you will have five thousand words to repair, you will be tired,
+and you will defend them. At 60% the conversion is cheap.
+
+If the book has a per-chapter style gate, run it. Otherwise, on your draft so far:
+
+```
+python3 - <<'EOF'
+import re
+t = open(PATH_TO_YOUR_DRAFT, encoding='utf-8').read()
+w = len(re.findall(r"[A-Za-z0-9']+", t))
+print("words", w,
+      "| and/1k", round(len(re.findall(r'\band\b', t, re.I))/w*1000, 1),
+      "| emdash/1k", round(t.count('\u2014')/w*1000, 1),
+      "| comma/1k", round(t.count(',')/w*1000, 1))
+EOF
+```
+
+Compare against the author's own measured range if the book has hand-written chapters, or
+against the values in `voice-dna.md`. Being **under** a floor is as much a failure as being
+over a ceiling: a writer told "no more than 9.5 em-dashes per 1,000 words" who scores a safe
+4.7 has written prose that is calm where the author is nervous, and has failed.
+
+### The conversion
+
+It is almost always the same move, and it costs nothing:
+
+> a clause chained with "and" becomes an interruption set off by em-dashes
+
+Before: *"The bay was cold and it smelled of the heaters coming up and that smell is the same on every transport in the fleet."*
+
+After: *"The bay was cold and smelled of the heaters coming up — a smell like scorched dust, the same on every transport in the fleet."*
+
+Same idea, same image, same order, one conjunction fewer, one interruption more. **You do not
+need to change what happens to fix how it is joined.** A chapter has been taken from 40.4
+"and"s per 1,000 words to 23.7 without altering one idea, image, beat, or line of dialogue.
+
+### Two things the metric will lie to you about
+
+1. **Measure narration and dialogue separately.** Everyone's dialogue is short and chained —
+   real speech is. A chapter with a big speaking cast reads "short" and "chain-heavy" on a
+   whole-chapter number no matter who wrote it. **Never lengthen a character's speech to hit
+   a rhythm target.** If a metric is telling you to do that, you are measuring the wrong text.
+2. **A short chapter is not a failed chapter.** Density thresholds get unstable below ~2,500
+   words. Check the raw count too before you cut anything.
+
 ## THE MANDATORY UGLY SENTENCE
 
 Every chapter must contain ONE deliberately rough sentence. Not clever-rough. Not artfully-imperfect. Genuinely rough. A sentence that breaks the rhythm and sounds like a person, not a writer.
