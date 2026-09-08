@@ -88,6 +88,29 @@ Finished book ≥ 85,000 words (`manuscript_min_words`); the outline budgets to 
 those. No per-chapter floor — lengths vary widely by design, and the draft's own chapters
 already run 1,914–4,000 words.
 
+## ✍️ The dialogue-formatting convention (do NOT "fix" this)
+
+The author runs a two-register system, and it is deliberate:
+
+| Form | Used for |
+|---|---|
+| “Quotation marks” | Speech in a **dramatized scene** — narrative present, the reader in the room |
+| *Unquoted italics* | Speech reported inside **retrospective or summary** narration, **and** the private operator/AI channel |
+
+**The proof is Chapter 1: 58 italic runs and zero quotation marks**, because the whole
+chapter is memory. Quotation marks appear the moment the book starts dramatizing scenes in
+Ch.2. Voss's dialogue in Ch.2 is italic *because her scene is narrated in summary* — an
+independent evaluator read that as an inconsistency and recommended "fixing" it, which would
+have broken the system.
+
+The italics were recovered from the source PDF's font layer (`DejaVuSerif-Italic`), not
+guessed, so they are exactly what the author set.
+
+**Consequence for new chapters:** the register follows the narration, not the speaker. If you
+convert a summary passage into a dramatized scene, its dialogue moves to quotation marks —
+that is the convention working, not an exception to it. Rx and the AIs stay italic throughout,
+because the interface channel is private in every register.
+
 ## Canon guardrails (settled — never violate)
 
 - **POV is Vexx, close third, for the whole book. No Jameson POV, no Rx POV.** The reader only
