@@ -36,14 +36,15 @@ word_floor:
   # (~1,500–7,000w) by design — the book TOTAL is what's enforced, not each chapter. A
   # per-chapter minimum would recreate the uniform ~5k/20-chapter "AI-neat" shape.
   shortest_chapter_floor: 1200   # sanity floor for the SHORTEST allowed chapter (punch chapters ok; not a target)
-  drafted_words: 14699           # Ch.1-5 by `wc -w` on manuscript/chapters/ — the SAME tool the
+  drafted_words: 15963           # Ch.1-5 by `wc -w` on manuscript/chapters/ — the SAME tool the
                                  # floor gate and doctor.sh use, so this is the authoritative figure.
                                  # Beware: Python's .split() reports 14,779 because it counts a
                                  # standalone " — " as a word and wc does not. The gap is exactly the
                                  # em-dash count. Always quote wc -w for anything touching the floor.
-                                 # 14,699 includes the 23 "* * *" scene markers (69 words);
-                                 # the PROSE is 14,630. The floor gate counts the markers, so this
-                                 # is the figure that matters to it.
+                                 # Includes the 23 "* * *" scene markers (69 words); the PROSE is
+                                 # 15894. The floor gate counts the markers, so this is the figure
+                                 # that matters to it. Rose from 14,699 in the 2026-09-08 editor pass
+                                 # (Zeus's recruitment scene + the Reyes de-escalation).
 
 phase:
   current: 2
@@ -55,6 +56,7 @@ phase:
     - "2026-09-07 — Ch.1-5 promoted into manuscript/chapters/, re-extracted from the PDF with the author's italics recovered from the font layer; all three mechanical gates calibrated and passing"
     - "2026-09-07 — manuscript rebuilt a second time from the PDF's LAYOUT rather than a text heuristic: 23 scene breaks recovered and paragraph breaks corrected. Word stream verified token-for-token identical to the previous extraction."
     - "2026-09-07 — entity-tracker BUILD -> ENTITY_STATE.yaml (20 characters, 64 knowledge entries, 6 contradictions found)"
+    - "2026-09-08 — book-evaluator on Ch.1-5 (Ch.1 floor 8.5/prose 9.0; Ch.2-5 floor 7.5, each capped by a DIFFERENT dimension). book-editor pass on Ch.2-5 only: Zeus's recruitment dramatized, the Reyes de-escalation dramatized, Paladin's feed-lines replaced, three told-emotion sentences staged, the 'filed it away' stacks unstacked (9 uses -> 4), and all four closers differentiated. Ch.1 untouched. +1,271 words."
     - "2026-09-07 — CF-01 resolved on the author's decision: the death-to-recruitment gap is FOUR YEARS, and Ch.1/2/3 were edited to match the locked canon (10 edits). CF-02 resolved: the fragments contradiction between Ch.3 and Ch.4."
 
 chapters:
@@ -91,6 +93,10 @@ open_author_decisions:
   - "How much do the drafted Ch.1-5 get touched? Ch.1 is locked as the voice benchmark. Ch.2-5 are drafted to the same standard but have not passed the pipeline's gates. Options: (a) promote all five as-is and start the loop at Ch.6, (b) run Ch.2-5 through evaluate-only and polish just what a gate flags, (c) full revise pass on Ch.2-5. Recommend (b)."
   - "Is the shared AI donor-stock twist planted late in Book One, or held entirely for Book Two? The series bible allows either."
   - "How visible is the Human-Covenant War? Currently: pressure the cell feels and scenery they pass, never a front they fight on. Confirm."
+  - "REVIEW THIS: Ch.5's ending was rewritten. The old close — 'Richard Jameson slept, as he had for four years... He was wrong. He simply didn't know it yet.' — broke the POV lock by asserting what Vexx cannot know, and was the fourth consecutive chapter to end on the same zoom-out figure. Replaced with a physical coda inside Vexx's perception (the dog tag, the serial his thumb can still find, 'He put it back before it got light'). The old lines are in git at 1c53c57 if the author wants them back."
+  - "FOLLOW-UP (one-line fix, not in the work order): Ch.5's gloss on Aglaope's hand-on-arm — 'offered, Vexx understood suddenly, everyone she'd ever sat beside' — is metacognitive narration the voice spec zero-tolerates. The evaluator called it its single most consequential prose note. Cutting the 30-word tail changes the chapter's image anchor, so it needs a decision rather than a reflex."
+  - "FOLLOW-UP: device bleed, flagged not fixed. 'That's not X. That's Y' is now used by Goliath, Zeus (x2) and Aglaope; Echo carries Rx's 'small, approving hum'. Neither is logged in character-bible.md. Log them or differentiate them before Ch.6 spreads them further."
+  - "FOLLOW-UP: Ch.2's chaos-marker density is 1.5/4 and the editor's additions are competence-facing, so it is unimproved. foundation.md's chaos profiles are the fix."
   - "RESOLVED 2026-09-07 (author's decision): the gap between Rx's death and Vexx's recruitment is FOUR YEARS, per the locked series canon. The drafted Ch.1 had said four months, contradicting Ch.3, Ch.5 and the bible. Ten edits across Ch.1-3 brought the prose into line; Jameson's four years of unchallenged consolidation - the basis of his vulnerability - is preserved."
   - "OPEN, and it now matters more: CF-03. Canon says Jameson does not know Rx survived, but the prose builds an institution that plainly does ('He is a program of one. We attempted integration with three other candidates') and puts Jameson at its head. With the gap now four years, he has had four years not to notice. A single line somewhere in Ch.6-13 closes it; nothing in the drafted text does."
   - "OPEN: CF-04. character-bible.md gives Corwin a reflexive grammar-correction habit and quotes a Ch.3 line that is not in the prose, then plans Ch.19 around that habit's absence. Either give him the habit in Ch.3 or find him a different Ch.19 loss."

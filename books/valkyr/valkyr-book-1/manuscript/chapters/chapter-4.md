@@ -64,9 +64,39 @@ He felt, rather than heard, something ease across the channel — six operators 
 
 * * *
 
-It worked, in the end, though not cleanly. Zeus talked Reyes down over the better part of twenty minutes, the operator’s rigid aggression slowly cracking into something rawer and more human — grief, it turned out, over a squad he’d lost in the same raid that had wrecked the settlement, grief he’d had nowhere to put except onto the first people in front of him who felt, in some broken corner of his mind, like they might share the blame. He didn’t draw on anyone. He sat down in the dirt eventually and put his head in his hands, and Aglaope was there within the minute, the way she always seemed to be, steady and quiet, doing the thing none of the rest of them could.
+Zeus went in alone, weapon slung across his back where Reyes could see it wasn’t coming off, and covered the last forty meters at a walk.
 
-Reyes went into a mandatory psych evaluation instead of a body bag. Vexx filed the report that night with a version of events that was, for once, entirely complete — every detail, no careful omissions, because for once he wanted whoever read it to understand exactly how close the system’s own recommendation had come to costing a grieving man his life over a piece of paper’s prediction instead of anything he’d actually done.
+Reyes turned on him with all of that size brought forward — the same size he’d been using on the civilians, aimed now at somebody it wouldn’t work on. “This is a security matter.”
+
+“You’re a long way from your line unit.”
+
+“I’m conducting an interview. Which is what you do in a contested zone when the local population has had armed movement through their own ground for three weeks and somebody has to establish whether the movement was—” He stopped. Heard himself stop. His jaw worked once and he did not start again.
+
+“When did you last eat,” Zeus said.
+
+Reyes stared at him.
+
+“It’s not a trick. There’s nothing standing between the last checkpoint and this village and you walked it. When did you eat.”
+
+A long moment. “Yesterday. Sometime.”
+
+“All right.” Zeus didn’t come any closer. He didn’t step back either. “Tell me about the approach. Not this — the ground you came through.”
+
+“There’s nothing on the approach.” Then, because he couldn’t help it: “There’s a grain store two kilometers back with the roof gone. Plasma, not artillery. You can tell because the edges of the block are glassed instead of—” And there it was again, the sentence running out from under him. His hands, which had been open and wide and doing most of the talking, came down to his sides.
+
+Zeus let it sit. He didn’t fill it and he didn’t soften it and he didn’t tell the man that any of it was all right.
+
+“How many of yours came out of that raid,” he said.
+
+Reyes got a number out. He got most of a name out after it and stopped on the second syllable, and then he was shouting — at Zeus, at the civilians, at the ruined shell of somebody else’s harvest — about a fireteam that had held a position for eleven minutes waiting on an evac that had been diverted two grid squares north for reasons nobody had ever written down. He shouted for a long time. Goliath shifted his weight in the tree line and Vexx put a hand out flat to stop him and kept it there. One of the civilians, an older woman near the back, had started crying somewhere in the middle of it and did not stop when he did.
+
+He never went for the weapon on his back. That was the whole of it, in the end — a Spartan screaming himself hoarse in a dead field with a kill authorization live on the channel, and both hands empty the entire time.
+
+He sat down in the dirt eventually and put his head in his hands. Aglaope came down out of the tree line, sat down in the dirt herself a few meters off, facing the same direction he was facing rather than facing him, and waited there without saying anything until he was the one who closed the distance.
+
+It worked, in the end. It did not work cleanly. Reyes went into a mandatory psych evaluation instead of a body bag, and the settlement got six operators standing in it for another two hours and no explanation of who any of them were.
+
+Vexx filed the report that night with a version of events that was, for once, entirely complete — every detail, no careful omissions, because for once he wanted whoever read it to understand exactly how close the system’s own recommendation had come to costing a grieving man his life over a piece of paper’s prediction instead of anything he’d actually done.
 
 The response, three days later, was brief and unbothered. *Cell showed excellent judgment and restraint. Well done.* Signed, as it always was, with Jameson’s name.
 
@@ -96,4 +126,4 @@ The silence that followed lasted long enough that Vexx thought, for one terrible
 
 *No*, Rx said finally, quiet, and something in the flatness of it told Vexx it wasn’t quite a lie, and wasn’t quite the whole truth either — the same uncomfortable, aching space Vexx had felt in Jameson’s office months earlier, before he’d had any reason yet to go looking for what lived inside it. *I don’t remember, Vexx. I wish I did. Something in me won’t let me get close enough to look.*
 
-Vexx believed him. He also understood, lying awake long after the conversation ended, staring at a ceiling he’d stopped really seeing months ago, that his brother’s *don’t remember* and his own *inconclusive* were starting to sound like the same careful, practiced kind of silence — and that somewhere above both of them sat a man whose name made his brother’s voice come apart at the seams, still smiling, still warm, still entirely unaware that the ground beneath his authority had just begun, very quietly, to shift.
+Vexx believed him. He also understood, lying awake long after the conversation ended, staring at a ceiling he’d stopped really seeing months ago, that his brother’s *don’t remember* and his own *inconclusive* were starting to sound like the same careful, practiced kind of silence.

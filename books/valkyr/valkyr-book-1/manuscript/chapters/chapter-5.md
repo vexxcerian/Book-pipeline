@@ -76,7 +76,7 @@ He looked at her, surprised she’d said it outright, and she met his eyes witho
 
 “Because grief makes people see things that aren’t there,” Aglaope said, quiet, certain. “It doesn’t usually make them this careful about proving themselves wrong first. You’ve spent months building a case you haven’t shown anyone, instead of running straight at the first name that felt right. That’s not grief talking. That’s a man who wants to be certain before he lets himself be angry.”
 
-Vexx sat with that for a long moment, something in his chest loosening slightly for the first time in weeks — not resolution, nothing so clean, just the particular relief of finally being witnessed by someone who didn’t need him to have an answer yet, only needed him to have said the thing out loud.
+Vexx sat with that for a long moment. He had come in intending to say nothing at all to anybody, and had said all of it in under two minutes, and now his hands had nothing to do. He turned her cold cup a quarter turn on the table and left it where it was.
 
 “You can’t tell the others,” he said. “Not yet. Not until I understand more.”
 
@@ -94,6 +94,10 @@ Another long silence — the kind Vexx had learned, over the past weeks, to reco
 
 *I know.* Quiet, almost too quiet to catch. *I’m working on being ready, Vexx. I promise you that.*
 
-Vexx lay awake a long time after that, turning the promise over in his mind the way he’d turned over every fragment of evidence in the drawer beside his bed — a dog tag, a data chip, a half-formed suspicion with a name attached to it that he still wasn’t ready to say out loud in any room where it might be overheard. Somewhere above him, in an office with better lighting and a warmer smile than the truth deserved, Richard Jameson slept, as he had for four years, entirely certain that whatever he’d buried in a jungle clearing a lifetime ago had stayed buried.
+Vexx lay awake a long time after that, turning the promise over the way he’d turned over everything else in the drawer beside his bed — a dog tag, a data chip, a name he still wasn’t ready to say out loud in any room where it might be overheard.
 
-He was wrong. He simply didn’t know it yet.
+At some point he got up and opened the drawer and took the tag out and held it in the dark without turning the light on.
+
+He could still find the serial with his thumb. A number that belonged to nobody.
+
+He put it back before it got light.

@@ -12,7 +12,9 @@ Vexx shook it. The grip was firm, warm, exactly as calibrated as everything else
 
 “Drop the *sir* when it’s just us,” Jameson said, waving him toward a chair. “You spent longer in this uniform than most of the people who’ll technically outrank you here. I’d rather earn the formality than have it handed to me by protocol.” A pause, and something in his expression shifted toward something softer, something that looked, as far as Vexx could tell, like real feeling. “I knew your brother’s file before I knew yours. What happened to him—” He stopped himself, shook his head once, the practiced restraint of a man who had delivered condolences before and knew better than to overdo them. “He was one of the best operators this program ever fielded. I want you to know that. Whatever else you’ve been told, whatever you haven’t — that part was never in question.”
 
-It should have felt like nothing. A commanding officer saying the things commanding officers say. But Vexx had spent four years turning over an empty casket in his mind, hungry for anyone who’d say Rx’s name like it meant something, and Jameson said it exactly right — grave without performance, warm without excess. Vexx felt something in his chest ease, just slightly, for the first time since the gray room.
+It should have felt like nothing. A commanding officer saying the things commanding officers say. But Vexx had spent four years turning over an empty casket in his mind, hungry for anyone who’d say Rx’s name like it meant something, and Jameson said it exactly right — grave without performance, warm without excess.
+
+Vexx didn’t answer right away. He looked at the table, at the grain of it, and waited until he was reasonably sure of his own voice. “Thank you, sir,” he said, and remembered, half a second too late, that he’d been asked not to.
 
 He had no way of knowing, sitting in that chair, that the man across the table had watched his brother die at close range and personally written the report that buried it.
 
@@ -122,13 +124,19 @@ Gaia arrived already half-formed as a soldier before Vexx ever met her — a rec
 
 “I know. I read your file.” He held her gaze. “I’m not going to pretend I can talk you out of that instinct. I’m asking if you’ll try something else anyway.”
 
-She didn’t answer that day. She came back four days later and asked when the pairing process started, which Vexx took, correctly, as her answer. Her AI — Echo — came online talking, mid-sentence, as though he’d been narrating the room before anyone gave him a voice to do it out loud, and didn’t stop for the better part of an hour. Gaia looked, for the first ten minutes, deeply unsure she’d made the right call. By the end of the hour, something in her posture had eased in a way Vexx recognized, because he’d felt it himself in a gray room four years into a grief he hadn’t known how to carry alone.
+She didn’t answer that day. She stood, pushed the chair back to exactly the angle she’d found it at, and left — and stopped in the doorway with one hand on the frame. “If I say yes and you start managing me,” she said, without turning around, “I’ll tell you once. After that I’ll just stop telling you things.”
+
+She came back four days later and asked when the pairing process started, which Vexx took, correctly, as her answer. Her AI — Echo — came online talking, mid-sentence, as though he’d been narrating the room before anyone gave him a voice to do it out loud, and didn’t stop for the better part of an hour. Gaia looked, for the first ten minutes, deeply unsure she’d made the right call. By the end of the hour, something in her posture had eased in a way Vexx recognized, because he’d felt it himself in a gray room four years into a grief he hadn’t known how to carry alone.
 
 Paladin came next — steady, broad-shouldered, the kind of soldier other soldiers instinctively formed up behind without being told to. His file was full of commendations for actions that boiled down, again and again, to the same instinct: covering a retreat, buying time for an evac, staying in a position longer than regulation strictly called for so that someone else could get out. His AI, Bastion, carried that same instinct forward from a donor who’d died doing exactly that — a combat medic who’d stayed behind to buy an evac window and hadn’t made it through it himself.
 
 “Nobody gets left,” Paladin said, in his first sit-down with Vexx, like it was a fact of the universe rather than a personal creed. “That’s the only rule I’ve ever needed.”
 
-Vexx wrote his name on the roster and didn’t say what he was thinking — that a rule like that was going to run headlong, someday, into exactly the kind of order this program existed to give. He filed the thought away the way he’d filed away Rx’s silence in Jameson’s office. Not yet a problem. Just a shape on the horizon he didn’t have the vocabulary to name.
+Vexx told him the truth about the posting, or as much of it as he was cleared to tell — that the cell would sometimes be sent to look at its own people, and that looking was not always where it ended. Paladin heard him out. Didn’t interrupt, didn’t argue, sat with his hands folded on the table like a man in a chapel.
+
+“You’re saying there’ll be days the order is to leave somebody,” he said. “And you’re saying you’d rather it was me standing there than somebody who wouldn’t mind. I understand you.” He reached across and moved the data pad out from under Vexx’s elbow, and then apologized for reaching. “That’s a yes. I’d just like it written down somewhere that I said no first.”
+
+Vexx wrote his name on the roster and didn’t say what he was thinking — that a rule like that was going to run headlong, someday, into exactly the kind of order this program existed to give.
 
 Zeus was harder. His file carried a weight the others didn’t — years spent attached to ONI intelligence units doing work that didn’t have a clean name, interrogation methods flagged more than once by internal review and never actually stopped. Vexx sat with that file longer than any other, turning it over, weighing what it would mean to bring someone like that into a program he was trying, in some inarticulate way he hadn’t fully admitted to himself yet, to build cleaner than the one that had killed his brother.
 
@@ -138,7 +146,65 @@ Zeus was harder. His file carried a weight the others didn’t — years spent a
 
 *That’s exactly why you need him*, Rx said, quiet, certain. *You want to build something clean, Vexx. Clean doesn’t mean soft. It means knowing exactly what you’re capable of and choosing, every time, not to become it by accident. You need someone on this team who already knows where that line is, because he’s crossed it and lived with what’s on the other side.*
 
-Vexx thought about that for a long time. He thought about his brother, dead behind a door marked classified, and wondered, not for the first time, what line Rx had refused to cross that had gotten him killed for it. He signed Zeus’s transfer request the same afternoon.
+Vexx thought about that for a long time. He thought about his brother, dead behind a door marked classified, and wondered, not for the first time, what line Rx had refused to cross that had gotten him killed for it.
+
+He asked for the interview the next morning.
+
+Zeus was already in the assessment room when Vexx came in, sitting at the far end of the table rather than across from it, hands flat on the surface, nothing in front of him — no data pad, no file, none of the small props men bring into a room where they expect to be weighed. He didn’t stand.
+
+“You’ve read it,” he said.
+
+“I’ve read it.”
+
+“Then you already know the parts I’d tell you.” He tipped his head a fraction, in no hurry at all. “How long have you been out?”
+
+“Four years.”
+
+“Sleeping through the night yet?”
+
+It was such a small question, and so entirely beside the file lying between them, that Vexx answered it before he’d decided to. “No.”
+
+“No.” Zeus gave the word back with no weight on it at all — not sympathy, not agreement, just the sound of it returned so Vexx could hear what he’d said. Then he moved on.
+
+“Internal review flagged you three times,” Vexx said. “Nobody stopped you.”
+
+“That’s right.”
+
+“I’d like your side of it.”
+
+“I don’t have a side.” He said it the way another man might report the weather. “A side is something you build when you want to keep something. I’m not trying to keep anything.”
+
+Vexx waited. Zeus let the silence run, unhurried, comfortable in it in a way almost nobody is, and after a while it became apparent that he was prepared to let it run all morning.
+
+“You want to know if I enjoyed it,” Zeus said eventually.
+
+“That wasn’t the question.”
+
+“It’s the question under the question. You’re building something you’ve decided is going to be a certain way. You’re not worried about what I did — you’ve read what I did, and you came anyway. You’re worried about what I am, because if I’m the second thing, then bringing me in makes you the man who brought me in.” Nothing in his face had moved since Vexx came in. “I’m not going to reassure you about that. I’d only be doing it to make the room easier, and then you’d have hired me for the wrong reason.”
+
+Vexx sat with that a moment. Outside in the corridor somebody wheeled a cart past, badly, one wheel dragging.
+
+“Say the day comes when a brief says *assess* and means something else,” he said. “What do you do.”
+
+“Depends who’s in the room.” Zeus turned one hand over on the table, palm up, and put it back. “If you were going to end a man, you’d want it to be a decision. Most of the time it isn’t. Most of the time it’s four people not saying anything and a fifth one filling the silence, and afterward everybody’s account of it is a little different, and nobody lied.” A beat. “You don’t need me for the ending. You need me for the twenty minutes before it, while it’s still possible for it not to be one.”
+
+“That’s not what your file says you’re good at.”
+
+“My file was written by people who only ever sent for me at the end.”
+
+Vexx looked at him for a while. “Why do you want this.”
+
+“You’re the one who signs it,” Zeus said. “Not command. You. That’s the only unusual thing about this posting and it’s the only part I care about.” He stood, then, and the height of him came as a small surprise — he had made himself smaller in the chair and Vexx hadn’t seen him do it. “You didn’t ask me whether I’d do it again. Everybody asks that. I’d put money on Goliath getting asked that.”
+
+“Would you do it again?”
+
+“That’s not a question I can answer honestly, and you’d know I was lying, and we’d both have wasted a morning.” He pushed his chair back under the table, a small tidy careful movement, and squared it. “Ask me what I’d need in order not to.”
+
+Vexx asked.
+
+“Somebody in the room who’d tell me no,” Zeus said. “And be listened to.”
+
+He signed Zeus’s transfer request the same afternoon.
 
 His AI, Hollow, spoke less than any of the others in that first pairing session — precise, watchful, giving away nothing until it was useful to give it away. Zeus seemed unbothered by the quiet. If anything, he seemed to prefer it.
 
@@ -194,4 +260,4 @@ Somewhere behind six sets of eyes, six AI ran quiet diagnostics on a room they�
 
 Vexx looked at his team. Looked, for half a second too long, at Jameson.
 
-And felt, without understanding why, the faintest, coldest thread of unease move through him — gone before he could name it, filed away, the way everything got filed away in those first months, as nothing.
+And felt, without understanding why, the faintest, coldest thread of unease move through him — gone before he could name it, filed away, as nothing.

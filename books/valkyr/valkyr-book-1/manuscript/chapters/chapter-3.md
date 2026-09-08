@@ -36,9 +36,9 @@ They found the recovery unit’s last known position by midafternoon — a burne
 
 Gaia crouched at the tree line, reading the ground the way other people read a page. “One set of prints leaving the clearing. Heavy gait — armored, moving fast, not limping, not favoring an injury. Whoever burned this camp walked away from it under their own power.”
 
-“Our target?” Paladin asked.
+Paladin was still looking at the ground where the prints started, not at Gaia. “Then where’s everybody else,” he said. Not a question so much as a thing he needed in the air. “Camp that size, somebody was supposed to be walking out of it beside him.”
 
-“Only one it could be.” She straightened, scanning the canopy overhead with a stillness Vexx was already learning meant she’d caught something the rest of them hadn’t. “He’s still out there. And he wants people to know he did this on purpose.”
+“Nobody was.” Gaia straightened, scanning the canopy overhead with a stillness Vexx was already learning meant she’d caught something the rest of them hadn’t. “He’s still out there. And he wants people to know he did this on purpose.”
 
 Goliath moved into the clearing behind her, crouching over a half-melted crate that had once held field rations, running a gloved hand along a scorch pattern radiating out from its center. “This wasn’t a standard incendiary,” he said. “Whoever set this knew exactly how much charge to use to destroy the contents without torching the whole tree line. That’s not panic. That’s someone who does this kind of thing for a living.”
 
@@ -48,11 +48,11 @@ Goliath moved into the clearing behind her, crouching over a half-melted crate t
 
 “He was Spartan-trained,” Zeus said, crouched a short distance away, turning over a fragment of communications equipment in gloved fingers, methodical, unhurried. “Every discipline gets cross-trained in field demolition at some level. Doesn’t take a specialist. Just takes someone who paid attention in the right class.” He held the fragment up to the light, turning it. “This is more interesting. Comms array’s been deliberately smashed, not burned. Somebody wanted to make sure no signal ever went out of this clearing, even after the fire went cold.”
 
-“Which tells us what?” Paladin asked.
+“He broke his own comms,” Paladin said slowly, the way a man says a thing hoping to be corrected out of it. “Eleven days in triple canopy and the first thing he did was destroy the only piece of equipment that could bring anybody to him.”
 
-“Tells us he wasn’t just hiding from whoever attacked him,” Zeus said. “He was making sure nobody could triangulate this position after the fact. That’s not the behavior of a man running from an ambush. That’s the behavior of a man who thinks *everyone* might be looking for him — the enemy and his own side both.”
+“That’s the part worth sitting with,” Zeus said. “He wasn’t just hiding from whoever attacked him. He was making sure nobody could triangulate this position after the fact. That’s not the behavior of a man running from an ambush. That’s the behavior of a man who thinks *everyone* might be looking for him — the enemy and his own side both.”
 
-Vexx felt something in his chest tighten at that, an old, familiar unease he didn’t yet have a reason to name. He said nothing, only nodded for Gaia to pick the trail back up.
+Vexx didn’t answer that. He looked at the smashed array in Zeus’s glove a little longer than he needed to, and then nodded for Gaia to pick the trail back up.
 
 They tracked the trail for six hours through jungle that fought them for every meter — vines that had to be cut, ground that gave way without warning into sinkholes hidden under decades of leaf litter, the constant low static of insect life that made even Echo’s usually cheerful narration go clipped and businesslike. Vexx felt the old rhythms of fieldwork settle back into his body the way they always had, muscle memory outlasting four years of retirement without effort, the quiet focus of moving through hostile terrain with people he was starting, despite everything, to trust.
 
@@ -80,7 +80,7 @@ Vexx crouched down across from him, weapon fully lowered now, and asked the ques
 
 “Fragments.” A short, humorless laugh. “Enough to know I’m not crazy. Not enough to matter to anyone who could actually do something about it.”
 
-Rx had gone very quiet through the entire exchange — quieter than Vexx had ever heard him, even in the earliest days after the pairing. Vexx noticed it, filed it away as concern rather than alarm, and was midway through formulating his report back to command when Rx’s voice came through, low, strange, threaded with something Vexx had never heard in it before.
+Rx had gone very quiet through the entire exchange — quieter than Vexx had ever heard him, even in the earliest days after the pairing. Vexx noticed it, read it as concern rather than alarm, and was midway through formulating his report back to command when Rx’s voice came through, low, strange, threaded with something Vexx had never heard in it before.
 
 *Vexx.*
 
@@ -93,8 +93,6 @@ Rx had gone very quiet through the entire exchange — quieter than Vexx had eve
 *I’m fine.* Too quick again — the same reflex as the transport bay, the same reflex as Jameson’s office three weeks earlier, but sharper now, more urgent, like something straining against a door that had held for months and had just, for one fractional second, not held quite as well. *I’m fine, Vexx. Focus on the operator. We’ll talk about it after.*
 
 Vexx wanted to push. Every instinct in him wanted to stop everything happening in that clearing and ask his brother what he’d just seen, what a treeline with no file attached to it meant, why his voice had gone thin and strange in a way it never had before. He didn’t. There was a broken man in front of him who needed an answer more urgently than Vexx needed one of his own, and thirty years of training had taught him, if nothing else, how to set aside his own unease until the mission allowed for it.
-
-He filed it away. Not yet a problem. A shape on the horizon, closer now than it had been that morning, though he still didn’t have the vocabulary to name it.
 
 * * *
 
@@ -110,7 +108,7 @@ The operator’s jaw worked for a moment. “Armor plating. Standard-issue, but 
 
 The operator’s eyes went distant again, chasing something at the edge of memory. “One voice. Cutting through the chaos, giving the kill order clean as anything, like it was nothing. I didn’t get a name. Just—” He stopped, shook his head slowly. “Just the *certainty* of it. Like whoever it was had done this before and would do it again without losing a night’s sleep over it.”
 
-Vexx felt Rx go very still in his ear at that — not the earlier flicker, not quite, but a held-breath quality that lasted a beat too long to be nothing. He didn’t ask about it there, in front of the operator, in front of the rest of the cell. He simply filed it, the way he’d been filing everything that autumn, and made himself focus on the man in front of him instead.
+Vexx felt Rx go very still in his ear at that — not the earlier flicker, not quite, but a held-breath quality that lasted a beat too long to be nothing. He didn’t ask about it there, in front of the operator, in front of the rest of the cell. He simply filed it, and made himself focus on the man in front of him instead.
 
 It was Aglaope, in the end, who did the part none of the rest of them could. While Zeus finished extracting what usable detail remained, she sat beside the operator and simply stayed — no questions, no urgency, just a steady, unhurried presence that seemed to say, without a single word, *you don’t have to carry this alone anymore.* Vexx watched her hand rest lightly on the man’s shoulder as the adrenaline finally broke and the eleven days caught up with him all at once, watched him put his face in his hands and shake, silently, for a long moment, and watched Aglaope simply stay, the way Requiem’s donor once had for strangers who had no one else left to stay with them.
 
@@ -142,4 +140,6 @@ Neither of them said anything else the rest of the way home. Vexx watched the ju
 
 *Richard Jameson.*
 
-He didn’t say it out loud. He didn’t need to. Somewhere in the dark, quiet part of his mind where instinct lived ahead of evidence, a door that had been closed for four years had just shifted, almost imperceptibly, on its hinges.
+He didn’t say it out loud. Across the cabin Aglaope turned in her crash webbing, and for half a second Vexx was certain she was awake and watching him, and found that he had already arranged his face before he’d decided to.
+
+Then the lights came up for approach, and everybody’s eyes opened, and he went back to being the man in charge of six people who trusted him.

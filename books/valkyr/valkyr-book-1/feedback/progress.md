@@ -15,11 +15,12 @@ carries a Genesis score. The pipeline has not written any prose.
 | `voice-dna.md` | ✅ 4,228w — voice reverse-engineered from the author's own prose |
 | `character-bible.md` | ✅ 8,357w — 22 entries, §TIC BUDGET, cover-the-name test run in-file |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–5, **14,630 words** of prose + 23 scene breaks, italics restored |
+| `manuscript/chapters/` | ✅ Ch.1–5, **15,894 words** of prose + 23 scene breaks, italics restored |
 | style / grammar / voice-wear | ✅ all three clean, calibrated to the author's measured voice |
 | `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–5 |
-| `ENTITY_STATE.yaml` | ⏳ being built by `entity-tracker` |
-| Genesis scores | ❌ none — `book-evaluator` has not run on any chapter |
+| `ENTITY_STATE.yaml` | ✅ 20 characters, 64 knowledge entries, evidence chain-of-custody |
+| Genesis scores | ✅ Ch.1 floor **8.5** (prose 9.0) · Ch.2–5 floor 7.5, then revised |
+| `evaluations/` | ✅ per-chapter evals + `ch1-5-summary.md` — read the summary first |
 
 ## The structure, in one paragraph
 
@@ -45,16 +46,41 @@ Act Three is **split, not altered** — the *ten* sits inside it. **Σ = 95,829 
    strict.** Not one word of the author's prose was edited to pass a gate.
 3. **`drafted_words` = 14,630**, by `wc -w`, the same tool the floor gate uses.
 
+## The 2026-09-08 revision pass (evaluate, then edit)
+
+`book-evaluator` scored all five; `book-editor` revised **Ch.2–5 only**. Ch.1 untouched.
+
+- **Ch.2** — Zeus's recruitment dramatized (~600w). He had *no dialogue in his own
+  recruitment* despite carrying Ch.3's interrogation and Ch.4's de-escalation. His line
+  *"You don't need me for the ending. You need me for the twenty minutes before it, while
+  it's still possible for it not to be one"* is a deliberate plant that Ch.4 now cashes.
+  Gaia and Paladin each get one dramatized beat.
+- **Ch.4** — the Reyes de-escalation dramatized (~360w). 700 words of moral crisis with a
+  live kill authorization had been resolving in one summary sentence. It now gets worse
+  before it breaks, and Reyes never touches his weapon.
+- **Ch.3** — Paladin's two feed-lines (*"Our target?"* / *"Which tells us what?"*) replaced
+  with lines that come from his creed rather than the scene's need for exposition.
+- **Across Ch.2–5** — three told-emotion sentences staged instead of reported; the "filed it
+  away" stacks unstacked (9 uses → 4); all four closers differentiated so no two consecutive
+  chapters share a shape or a verb, and every closer sits inside Vexx's perception.
+
 ## Resume point — do these in order
 
-1. **Decide how much Ch.2–5 get touched.** Ch.1 is LOCKED either way. They now pass the
-   mechanical gates but have never seen `book-evaluator`. Recommended: (b) evaluate-only, and
-   polish only what the evaluator flags.
-2. **Finish `ENTITY_STATE.yaml`** if the entity-tracker run did not complete.
-3. **Then the chapter loop from Ch.6:** write → dialogue-polish → hook-craft → disruptor →
+1. **Review the Ch.5 ending** (see "Worth the author's eye"). It is the one change he is
+   most likely to want reverted.
+2. **Then the chapter loop from Ch.6:** write → dialogue-polish → hook-craft → disruptor →
    evaluate → quality gate. Commit per chapter.
+3. Optional before Ch.6: the three FOLLOW-UP items in `STATE.yaml` (the Aglaope
+   metacognition line, device bleed, Ch.2's chaos density). None of them block drafting.
 
-## Worth the author's eye (passing, but notable)
+## Worth the author's eye
+
+- **Ch.5's ending was rewritten, and this is the one to look at first.** The old close —
+  *"Richard Jameson slept, as he had for four years… He was wrong. He simply didn't know it
+  yet."* — asserted a fact Vexx cannot know, breaking the POV lock, and was the fourth
+  consecutive chapter to end on the same zoom-out figure. It now ends on the dog tag: *"He
+  could still find the serial with his thumb. A number that belonged to nobody. He put it
+  back before it got light."* The old lines are recoverable from git at `1c53c57`.
 
 - **Ch.2 is the densest chapter in the book** — simile 7.0/1k and em-dash 11.1/1k, both the
   highest of the five. It passes because the ceilings are set to the author's own range, but
