@@ -50,6 +50,11 @@ For each one:
   - Commercial Fiction: ≤6 instances OR ≤0.8/1K words
   - Prescriptive NF: ≤8 instances OR ≤1.0/1K words (half-weight — these are genre-endemic)
   If extensions exceed the genre threshold (either raw count OR density), you have failed this operation. The Writer cannot self-detect this pattern. YOU are the last line of defense.
+  **Below 2,500 words the density half does not apply — use the raw count alone.** Under that
+  length the ratio measures the chapter's length rather than its prose: at 1,500 words two
+  extensions score 1.33/1K and breach Commercial Fiction, while seven in a 6,000-word chapter
+  pass. Cutting to satisfy that is cutting to satisfy a denominator, and short chapters in this
+  pipeline are short on purpose.
   **IMPORTANT: Do NOT strip ALL patterns.** A commercial fiction manuscript with 0 patterns reads as over-corrected AI. Some patterns are features of accessible prose. Target the genre threshold's clean range, not zero.
   **PRESCRIPTIVE NF NOTE:** Patterns #7, #11, #15, #16, #18, #19 are genre-endemic. Apply lighter touch — target ≤8, not ≤3.
 

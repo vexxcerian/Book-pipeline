@@ -447,6 +447,23 @@ You are evaluating prose that THIS SYSTEM wrote. Your bias is maximum. To counte
     - Prescriptive NF: >8 instances OR >1.0/1K words → cap Prose at 7.5
     This is the pipeline's primary fingerprint and the evaluator MUST catch it even though the writer couldn't.
 
+    **The density clause does not apply below 2,500 words.** Under that length it stops
+    measuring the prose and starts measuring the chapter's length. At 1,500 words a *single*
+    explanatory extension scores 0.67/1K and two score 1.33/1K, so a short chapter fails the
+    Commercial Fiction density threshold on two instances while a 6,000-word chapter passes on
+    seven. That is an artefact of the arithmetic, not a finding, and it means no deliberately
+    short chapter can ever pass this check.
+
+    So: **below 2,500 words, the COUNT threshold alone applies.** At or above 2,500 words,
+    either threshold caps Prose, as written. Do not silently exempt a short chapter — state
+    the count, state the density, name this clause, and score on the count.
+
+    A second rule, whatever the length: **when the mechanical reading and your judgement
+    disagree, show the arithmetic in full and say which you applied.** An evaluator that
+    quietly overrides its own hard check is worth nothing, and so is one that caps a good
+    chapter at 7.5 because a denominator was small. Publish both numbers and let the
+    orchestrator overrule you.
+
 ## REVISION FINDINGS FRAMEWORK
 
 Use this structure for every issue in the Revision Recommendations section. Vague findings are useless — the Editor executes against them directly.
