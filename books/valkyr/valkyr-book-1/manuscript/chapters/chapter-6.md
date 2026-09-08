@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4,340 | Revision: 1 (rhythm calibration, F9/F8/F1) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4434 | Revision: 2 (rhythm calibration F9/F8/F1; breath repair) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -129,7 +129,7 @@ The man in the green coat had finished with the tree, moved down the row to the 
 
 "I've read the recovery element's log." Corwin's face did something complicated and then settled. "I've read the medical. I've had the timeline put in front of me twice by two different people who had no reason to agree with each other and did. What am I supposed to do with that — hold on to being right against the whole record because it feels better? That's the illness. They were very clear about that being the illness."
 
-The light in the mess hall had been wrong for eleven hundred. It came in off to one side, the long kind, late in the day — and he had been calling it eleven hundred to himself for something over twenty years.
+The light in the mess hall had been wrong for eleven hundred — it came in off to one side, the long kind, late in the day — and he had been calling it eleven hundred to himself for something over twenty years.
 
 "Nobody's saying you're ill," Vexx said.
 
@@ -197,7 +197,7 @@ The tag in the drawer beside his bed had a dent in one corner and a serial that 
 
 It had come off a man who went back for it and missed.
 
-The trolley wheel squeaked at the far end of the room. The woman at the card table moved her chair a few inches, sat back down in it. The orchard smell came in through the crack in the window — cold, green, faintly of rot off the windfalls still lying in the grass — and the gardener straightened up, put a hand in the small of his back.
+The trolley wheel squeaked at the far end of the room, the woman at the card table moved her chair a few inches, sat back down in it, the orchard smell came in through the crack in the window — cold, green, faintly of rot off the windfalls still lying in the grass — and the gardener straightened up, put a hand in the small of his back.
 
 "Which side of him was he kneeling on," Vexx said.
 
@@ -257,13 +257,13 @@ He was at the doors, with his hand flat on the glass and the afternoon on the ot
 
 "He's allowed three visitors a month." She did not look up. "You're the first."
 
-Outside, the light had barely moved. The saplings stood in their double row down the drive, with their stakes and their ties, the gate was open, and a bird was going at something in the leaf litter of the guard post step.
+Outside, the light had barely moved — the saplings stood in their double row down the drive, with their stakes and their ties, the gate was open, a bird was going at something in the leaf litter of the guard post step.
 
 Vexx walked down to the transit shelter at the bottom of the hill, sat on the bench with the empty road going off in both directions, the station up behind him on its slope — the afternoon flat on the whitewash, the whole of it looking like somebody's farm.
 
 He sat there a while before he worked out what Voss had actually handed him — that in a building he had no access to there was now a line with his name on one side of it and Corwin's on the other, in his own hand, third field, retained. He had spent four years learning to leave no shape behind him anywhere. He had walked in through an open gate in the middle of the afternoon and drawn one.
 
-There were four other people in the shelter. One of them, an older woman with a shopping trolley parked against her knee, asked him whether the next one went straight through to the coast, or whether you had to change at the junction.
+There were four other people in the shelter — one of them, an older woman with a shopping trolley parked against her knee, asked him whether the next one went straight through to the coast, or whether you had to change at the junction.
 
 "I don't know whether it went," Vexx said, out loud, to a stranger who had asked him about a train.
 

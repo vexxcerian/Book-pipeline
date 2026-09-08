@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: TBD | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5,961 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -380,3 +380,83 @@ And then, at the head of the ramp, with a hand on the frame and his back to the 
 The ramp came up. The transport lifted, went out over the north ridge, and made a noise going through the col that had nothing to do with Kettle and that nobody named.
 
 Gaia said, “Thanks, Hallam,” to a different crew, out of habit, to nobody who could hear her.
+
+* * *
+
+The breach bag was still against the relay hall wall, inside the near door, where Goliath had left it. Vexx went back for it himself a little after seven — the apron empty by then, the station's own people gone in out of the wind.
+
+He heard it before he was through the door.
+
+The corridor was the corridor: two metres wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there, which did not help.
+
+Vexx stopped inside the frame. The bag was a metre from his hand. He did not pick it up.
+
+The chain that held the door back had a maker's stamp on the last link. Four letters, then a number, then what might have been a second number under the paint.
+
+Goliath came down the corridor from the far end with the spanner from the fuel shed in his fist.
+
+He said nothing at all. He went down on one knee at the hinge side, got a thumb under the chain, worked it off the cleat.
+
+"Take the weight."
+
+Paladin took the weight.
+
+"Other side."
+
+Paladin changed hands. The door came off the chain, swung, grated on the plate — the two of them stood there holding a door on a station neither man would see again while Goliath brought the pin up out of the bottom hinge with the spanner, turned it a quarter, dropped it back in. He tried the swing. It swung.
+
+"Good," Goliath said.
+
+He coiled the chain and hung it on the bracket where a chain goes.
+
+Neither of them looked at the near door.
+
+Vexx went back out across the apron with nothing in his hands, took the lamp off the sled at the ramp, and walked the fuel shed again — both walls, the bund, the four drums, the whole twenty-two minutes of it. There was nothing in it that time either.
+
+* * *
+
+The corridor outside the operations block had a light on the blink at the far end. Nobody had put in for it.
+
+Goliath caught him there at half four with two cups off the urn, and held one out, and waited for it to be taken.
+
+"Spector wants something said to you. He wants it said once."
+
+Vexx took the cup.
+
+"Your Rx runs hot."
+
+Somewhere behind them the urn ticked as it came down off the boil, once, then twice, then not again.
+
+"Not all the time. On words." Goliath put his shoulders against the wall. "Spector says there's a handful of them, and when one comes across the net Rx takes longer over it than he takes over anything — a fraction, nothing you'd hear — and then he's exactly what he was before it. He gave me three. I've got two of them."
+
+"Which two."
+
+"'Unstable.' And 'refused.'"
+
+A tin of fudge with a lighthouse painted on the lid, sent to a barracks by somebody's mother, terrible, gone by the afternoon.
+
+"Interface load is logged on every operation," Vexx said. "If it's showing in mission traffic, Spector puts it through maintenance, and it goes up to the technicians with the rest of the telemetry."
+
+"That isn't what he did. He came to me."
+
+"It can still go through maintenance."
+
+Goliath looked at him for a while, holding the cup at chest height, not drinking out of it. Then he asked his one question — "Do you want the third one, when he gives it to me?" — and waited, and went on waiting, past the point where a man expects an answer and some distance past the point after that.
+
+Vexx drank the coffee. "It's the water," he said.
+
+"It is the water." Goliath took his own cup off the sill. "It's been the water since August."
+
+Then he went — no hurry in it, no look back down the corridor — and that was the whole of it.
+
+The report took fifty minutes. Halfway through it Aglaope came in without knocking, put something on the desk beside the pad, squared it to the edge with two fingers — a notebook, soft-covered, the corners gone furred, a rubber band round the middle of it holding in a fold of loose paper.
+
+"Behind the fuse box, on the shelf brackets," she said. "I looked there twice."
+
+She left him to it.
+
+He wrote what he had told them in the kitchen he would write, in the order he had said it in, with nothing added to it. Removal from field. Medical track, escort of two, no restraint, and the line about the runoff sheets being immaculate, which would not survive the summary and which he put in anyway. Then the names, all six of them. Then Paladin's objection, in Paladin's own words, which ran to four sentences, and which he did not shorten.
+
+Then he went back up to the top of the form, to the box the authorisation had come in on, and read it once more before he sent it.
+
+*Concern raised by subject's own section on three separate occasions, the most recent in writing.*
