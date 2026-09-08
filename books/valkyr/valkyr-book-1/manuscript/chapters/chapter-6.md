@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4,491 | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4,471 | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -15,7 +15,7 @@ He had put in for two days of personal leave and nobody had asked him what for �
 
 *I told the roster.*
 
-*You told a form.* A pause, longer than the joke needed. *Is he going to know you.*
+*Congratulations. The roster is going to worry about you beautifully.* A pause, longer than the joke needed. *Is he going to know you.*
 
 *He'll know me.*
 
@@ -65,15 +65,15 @@ His hands were flat on the table and they were not doing anything.
 
 A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it when he said yes, and then told Vexx — unprompted, in the voice of somebody continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that nobody had consulted her about it, and that she was not over it. She poured Vexx a fresh cup from a jug on the trolley. He said the coffee was good. She said they got it on the same contract as the district hospital and that she would fight anybody who came here trying to change that, and went off down the room with the trolley wheel squeaking every third turn.
 
-"She's all right," Corwin said. "They're all right, all of them. That's the thing nobody believes when I say it."
+"She's all right," Corwin said. "They're all right, all of them. Nobody believes me when I say it."
 
 "You look better."
 
-"I am better." He said it plainly. "I'm sleeping. I couldn't sleep for the first week here, and then they took me off one thing and put me on another and now I sleep. Do you know how long it had been."
+"I am better." There was nothing underneath it. "I'm sleeping. I couldn't sleep for the first week here, and then they took me off one thing and put me on another and now I sleep. Do you know how long it had been?"
 
 "No."
 
-"Neither do I." A small laugh, and it was a real one, and there was nothing broken anywhere in it. "That's the honest answer. Neither do I."
+"Neither do I." A small laugh, and it was a real one, and there was nothing broken anywhere in it. "It's the honest answer. Neither do I."
 
 Vexx drank some of the coffee. Out the window the orchard went down the slope in rows and a man in a green coat was doing something to the base of one of the trees with a hoe, unhurried, taking his time about it.
 
@@ -81,23 +81,25 @@ Vexx drank some of the coffee. Out the window the orchard went down the slope in
 
 "You don't."
 
-"I do." He shifted, and squared the mug again, and for the first time his hands did something. "I gave you and your people a lot of trouble over something I had wrong. Six of you came into that jungle after me. There was six of you on the ground that night and every one of you—"
+"I do." He shifted, and squared the mug again, and for the first time his hands did something. "I gave you and your people a lot of trouble over something I had wrong. Six of you came into that jungle after me."
+
+"There was six of us on the ground that night either way," Vexx said. "You didn't cost anybody anything."
 
 "Were."
 
-It came out of Corwin flat and fast, like a hand going out after a dropped cup, and then he stopped.
+It came out of Corwin flat and fast, like a hand going out after a dropped cup, and it was out of him before there was anything to be done about it.
 
-He blinked twice, the correction sitting on the table between them, and something crossed his face that was not embarrassment about the grammar but embarrassment about the reflex.
+He blinked twice. Something crossed his face that was not embarrassment about the grammar but embarrassment about the reflex.
 
-"Were," he said. "There were six of you. Sorry. Go on."
+"Were," he said. "There were six of you." He looked at the mug, and then past it. "Sorry. I've lost where I was."
 
-Vexx did not go on. He was in a jungle nine weeks earlier, at two in the morning, walking behind Paladin — who had the man's arm across his shoulders and most of his weight riding on one hip — and the man had been talking into Paladin's back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometre he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. Nobody had written it down.
+Vexx did not give it back to him. He was in a jungle nine weeks earlier, at two in the morning, walking behind Paladin — who had the man's arm across his shoulders and most of his weight riding on one hip — and the man had been talking into Paladin's back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometre he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. Nobody had written it down.
 
 He had heard it and gone on walking. Nine weeks he had been on the other side of that sentence, and it had been sitting in his own ears the whole time, in the dark, under the noise of a man being carried, and he had let it go past him because there had been a report to file at the end of the night.
 
-"You were saying," Vexx said.
+"You were apologising," Vexx said.
 
-"I was apologising, and you were telling me not to." Corwin turned his hands over, looked at the palms, put them back down. "Do you want the version I've got now, or do you want the version I gave you in the trees? Because they're not the same, and I'd rather you had it from me than off a file."
+"I was apologising. And you were telling me not to." Corwin turned his hands over, looked at the palms, put them back down. "Do you want the version I've got now, or do you want the version I gave you in the trees? Because they're not the same, and I'd rather you had it from me than off a file."
 
 "Whichever one you want to tell me."
 
@@ -105,7 +107,7 @@ He had heard it and gone on walking. Nine weeks he had been on the other side of
 
 "I took a knock coming out. I didn't know I'd taken it. There was a fracture in the helmet seal that I logged as impact and it wasn't only impact. Eleven days out there and I was drinking off leaves for the first two of them, and I've since had the physiology of that put to me in some detail." A breath. "The recovery element came in on day three. It was ours. It was a standard recovery element with a standard camp and a standard array, and I watched it for most of a day from a treeline and I decided it was the people who had killed my squad, coming back to finish it.
 
-"I put a charge under their stores and I put my boot through the array so nothing could be triangulated, and then I went into the trees and I stayed out of their way for eight days while they looked for me. Eight days. Those men were out in that with no comms because of me. Nobody died, which is the only reason I can sit here and say it out loud."
+"I put a charge under their stores and I put my boot through the array so nothing could be triangulated, and then I went into the trees and I stayed out of their way for eight days while they looked for me. Those men were out in that with no comms because of me. I watched them do it. Nobody died, which is the only reason I can sit here and say it out loud."
 
 There was no wobble in it anywhere. He might have been reading out a manifest.
 
@@ -129,7 +131,7 @@ The man in the green coat had finished with the tree and moved down the row to t
 
 "Nobody's saying you're ill."
 
-"They're not saying it in those words. They're kind here." He set the mug down. "You have to understand, it isn't a fight. That's what I keep — that's what I'd want the woman to know, if you're telling her anything. Nobody has argued with me once since I arrived. They just kept putting the paper in front of me until I read it properly."
+"They're not saying it in those words. They're kind here." He set the mug down. "You have to understand, it isn't a fight. That's what I keep — it's what I'd want the woman to know, if you're telling her anything. Nobody has argued with me once since I arrived. They just kept putting the paper in front of me until I read it properly."
 
 Down the room the radio went over to something with a brass section in it, and the woman at the card table reached out without getting up and turned it down again.
 
@@ -145,7 +147,7 @@ Vexx put his cup down on the table.
 
 He drank some of his coffee. The window let in the sound of a hoe being scraped clean on a stone.
 
-"That's the only thing I'd take back off them," Corwin said, comfortably, without any edge on it at all. "The rest of it they can have. They were right about the rest of it."
+"The name's the only thing I'd take back off them," Corwin said. There was no edge on it anywhere. "The rest of it they can have. They were right about the rest of it."
 
 Vexx got as far as saying that he was sorry, and Corwin said everyone was, and thanked him for it, and asked whether he wanted the last of the pot.
 
@@ -153,33 +155,33 @@ Rx did not say anything. He had not said anything since the corridor.
 
 Vexx sat with that.
 
-"Can I ask you something," Corwin said. "Not about any of that."
+"Can I ask you something?" Corwin said. "Not about any of that."
 
 "Ask."
 
-"There's a girl. Mine. She'd be nine now, or nine next — she's nine." He said the number carefully, the way a man says a thing he has checked. "They took my contact list when I came in, which is standard, I know it's standard, I've had it explained. Her mother won't have heard anything from anybody. I've written four letters and I don't know if any of them left the building."
-
-The clinician had come back up the room with the trolley and she answered before he had finished. She did not interrupt him. She simply had the answer ready and set it down into the gap like something she had brought up the room on the trolley with everything else.
+"There's a girl. Mine. She'd be nine now, or nine next — she's nine." He said the number the way a man says a thing he has checked. "They took my contact list when I came in, which is standard, I know it's standard, I've had it explained. Her mother won't have heard anything from anybody. I've written four letters and I don't know if any of them left the building. What I'd want to know is whether there's a—"
 
 "Family contact is reviewed each cycle, Mr. Corwin. It's in review."
 
-She said it kindly, and she was not lying, and Vexx understood from the shape of it that this was not the first time she had said it, or the second.
+The clinician had come back up the room with the trolley, and the answer was out of her before he had got to the question. It did not read as an interruption. She had it ready and she set it down into the gap with everything else on the trolley, and carried on doing what she had been doing.
+
+There was no unkindness in it anywhere, and she was not lying, and Vexx understood from the shape of it that this was not the first time she had said it, or the second.
 
 "It's in review," Corwin said. To Vexx. Nodding.
 
 He picked the mug up again. The clinician asked him if he wanted the window shut now and he said no, leave it, it's nice, and she went away.
 
-"You've got access I haven't," Corwin said, quieter, when she was down the other end. "That's all. I'm not asking you to break anything. If there's a way of finding out whether a letter went, that's all I'd want to know. Whether it went."
+"You've got access I haven't," Corwin said, quieter, when she was down the other end. "I'm not asking you to break anything. If there's a way of finding out whether a letter went out of this building, that's all I'd want. Whether it went."
 
 "I'll ask," Vexx said.
 
 He knew what that was worth on the way out of his mouth. He said it anyway, and Corwin thanked him for it, and nobody at that table named what had just been traded.
 
-"The thing I keep coming back to," Corwin said, "is that I had a detail. You don't build eleven days out of nothing. You build it out of one detail that won't sit right, and mine was that one of them stopped."
+"The thing I keep coming back to," Corwin said, "is that I had a detail. Eleven days is a long time to hold a thing up on nothing at all. I had one detail that wouldn't sit down, and it was that one of them stopped."
 
 "Stopped."
 
-"In the middle of it. Rounds still going, my people already down, and he came off his line and went down on one knee beside one of mine and picked something up off the body. Off him. Put it away in a pouch on his hip and got up and carried on." Corwin's mouth moved into something not quite a smile. "That's what I had. Out there I told myself, nothing that comes at you out of the dark stops in the middle of the job to pick up litter. That's a person. That's a person who's done this before and has a way he likes it done.
+"In the middle of it. Rounds still going, my people already down, and he came off his line and went down on one knee beside one of mine and picked something up off the body. Off him. Put it away in a pouch on his hip and got up and carried on." Corwin's mouth moved into something not quite a smile. "That was all I had. Out there I told myself, nothing that comes at you out of the dark stops in the middle of the job to pick up litter. Only a man does that. A man who has done it before and has a way he likes it done.
 
 "They said memory does that. Tidies things. Puts a shape on something that didn't have one, so you can carry it." He looked out at the orchard. "He was tidying. That's how I said it to myself for eleven days, in those words, over and over. He was tidying."
 
@@ -199,7 +201,7 @@ The trolley wheel squeaked at the far end of the room. The woman at the card tab
 
 Corwin looked up.
 
-"Your man. The one on the ground. Was he kneeling at his left or his—"
+"Your man. The one on the ground. Left or right, and which hip was the pouch on, and did he go into it with his—"
 
 "I don't know." Something went out of Corwin's face. "I don't know, because I don't know that any of it happened. That's what I've been telling you. That part's the part I've got wrong. All of that part."
 
@@ -237,9 +239,9 @@ She was standing at the end of the counter in civilian clothes with a folder of 
 
 He signed it. He should have stopped there.
 
-"Welfare visit," he said. "Cell cohesion. Command likes a visit on the file when we bring somebody in off an assessment, it reads well in the—"
+"Welfare visit," he said. "Cell cohesion. Command likes a visit on the file when we bring somebody in off an assessment. It reads well in the quarterly."
 
-He heard it. He stopped.
+He heard it a beat after it was out of him.
 
 "I had leave," he said.
 

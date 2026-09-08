@@ -101,6 +101,26 @@ physicality. **This explicitly includes Jameson.**
 | Self-interrupting over-explanation | **REYES** |
 | Interviewing the people assessing him | **IVES** |
 | Standing whenever anyone enters | **BECK** |
+| **"That's not X. That's Y"** — the corrective two-beat reframe | **ZEUS** (see the bleed note below) |
+
+> ### Logged bleed: "That's not X. That's Y"
+>
+> Flagged independently by the evaluator and by dialogue-polish. This two-beat corrective
+> reframe is the **surface form of Zeus's device** (reframing rather than arguing), and it had
+> spread to **Goliath** (Ch.3, the incendiary), **Zeus ×2**, and **Aglaope** — with Corwin
+> acquiring eleven instances in the Ch.6 draft before they were cut to four.
+>
+> **Owner: ZEUS.** The instances already standing in the author's drafted Ch.1–5 are
+> grandfathered — that is his prose and it is not being rewritten to satisfy a map. But **no
+> NEW character may be given this shape**, and Corwin in particular is licensed for the grammar
+> correction and nothing else. Catch it at dialogue-polish.
+>
+> ### NOT bleed, do not "fix": Echo's approving hum
+>
+> Echo's *"small, approving hum"* in Ch.5 duplicates Rx's, and it is **deliberate** — the
+> author's own narration says so on the page: *"mirrored, almost exactly, the sound Rx had made
+> weeks earlier."* The doubling is the point. It is recorded here so a later pass does not
+> read it as accidental and differentiate it away.
 
 > **Counting, listing, pricing, rating, quantifying and cataloguing are the SAME DEVICE in
 > different coats.** Only Spector may have any of them. If Bastion starts a headcount, or Gaia
