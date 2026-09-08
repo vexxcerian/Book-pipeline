@@ -4,9 +4,13 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**The architect pass is done and the author's Ch.1–5 are promoted into the manuscript with all
-three mechanical gates passing.** No chapter has been through `book-evaluator` yet, so nothing
-carries a Genesis score. The pipeline has not written any prose.
+**Blueprint complete; Ch.1–5 drafted, evaluated and revised.** Ch.1 is the author's, untouched
+and locked. Ch.2–5 are the author's prose with a targeted editor pass applied on the
+evaluator's findings. All three mechanical gates pass.
+
+⚠️ **Ch.2–5 were revised AFTER they were scored**, so the floors recorded in `STATE.yaml`
+describe the pre-revision text. Re-run `book-evaluator` on them if a current Genesis score
+matters; nothing has yet passed the 8.5 gate, so `chapters.completed` is still empty.
 
 | Artifact | State |
 |---|---|
@@ -19,7 +23,7 @@ carries a Genesis score. The pipeline has not written any prose.
 | style / grammar / voice-wear | ✅ all three clean, calibrated to the author's measured voice |
 | `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–5 |
 | `ENTITY_STATE.yaml` | ✅ 20 characters, 64 knowledge entries, evidence chain-of-custody |
-| Genesis scores | ✅ Ch.1 floor **8.5** (prose 9.0) · Ch.2–5 floor 7.5, then revised |
+| Genesis scores | ⚠️ Ch.1 floor **8.5** (prose 9.0) · Ch.2–5 scored 7.5 **then revised — stale** |
 | `evaluations/` | ✅ per-chapter evals + `ch1-5-summary.md` — read the summary first |
 
 ## The structure, in one paragraph

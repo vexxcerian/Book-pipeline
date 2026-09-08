@@ -48,7 +48,7 @@ word_floor:
 
 phase:
   current: 2
-  status: "ARCHITECT PASS COMPLETE AND CH.1-5 PROMOTED. foundation.md (12,110w), outline.md (19,665w, 26 chapters), voice-dna.md (4,228w) and character-bible.md (8,357w, 22 entries) are written, plus voice-bank/ with 13 samples. Macro-structure is four-movement kishotenketsu in four titled Parts, NOT three acts - see the Macro-Structure block at the top of outline.md for the reasoning. manuscript/chapters/ now holds Ch.1-5 (14,779w) with the author's italics restored from the PDF font layer, and style_check + grammar_check + voice_wear_check all pass clean. NEXT: run the chapter loop from Ch.6 (write -> dialogue-polish -> hook-craft -> disruptor -> evaluate -> gate). NOTE: Ch.1-5 have passed the MECHANICAL gates only - none has been through book-evaluator, so there is no Genesis score for them yet; that is the evaluate-only pass the author still owes a decision on."
+  status: "CH.1-5 DRAFTED, EVALUATED AND REVISED. Blueprint complete (foundation 12,110w, outline 19,665w/26 chapters, voice-dna, character-bible 22 entries, voice-bank 13 samples, ENTITY_STATE 20 characters). manuscript/chapters/ holds Ch.1-5 at 15,963 words by wc (15,894 of prose + 23 scene markers), with the author's italics and scene breaks recovered from the PDF. All three mechanical gates pass. book-evaluator scored all five; book-editor then revised Ch.2-5 (Ch.1 untouched and still locked). NEXT: the chapter loop from Ch.6 - write -> dialogue-polish -> hook-craft -> disruptor -> evaluate -> gate. TWO THINGS OUTSTANDING FIRST: (1) the author should review the rewritten Ch.5 ending, and (2) Ch.2-5 were REVISED AFTER being scored, so their recorded floors describe the old text - re-run book-evaluator on them if a current Genesis score is needed."
   history:
     - "2026-09-07 — folder scaffolded via tools/new-book.sh under the series books/valkyr/"
     - "2026-09-07 — author's PDF staged into research/; series bible transcribed to ../SERIES-BIBLE.md"
@@ -63,12 +63,23 @@ chapters:
   total_planned: 26                    # kishotenketsu in 4 Parts; see outline.md Macro-Structure
   drafted_by_author: [1, 2, 3, 4, 5]   # PROMOTED into manuscript/chapters/ with the author's italics restored
   mechanical_gates_passed: [1, 2, 3, 4, 5]   # style + grammar + voice-wear all clean
-  completed: []                        # none have been through book-evaluator — no Genesis score yet
-  scores: {}
+  evaluated: [1, 2, 3, 4, 5]           # book-evaluator, 2026-09-08
+  revised_after_evaluation: [2, 3, 4, 5]   # book-editor — so the scores below are stale for these
+  completed: []                        # "completed" = passed the 8.5 Genesis gate; none has yet
+  scores:                              # floor / average, PRE-revision for Ch.2-5
+    1: {floor: 8.5, average: 8.71, note: "locked benchmark; prose 9.0"}
+    2: {floor: 7.5, average: 7.93, note: "STALE — revised after scoring (Zeus scene added)"}
+    3: {floor: 7.5, average: 8.29, note: "STALE — revised after scoring"}
+    4: {floor: 7.5, average: 8.36, note: "STALE — revised after scoring (Reyes scene added)"}
+    5: {floor: 7.5, average: 8.07, note: "STALE — revised after scoring (new ending)"}
 
+# Scores from the 2026-09-08 book-evaluator pass. Ch.2-5 were REVISED AFTER being
+# scored, so those four numbers describe the pre-revision text and are stale by
+# definition — re-evaluate before treating them as current.
 genesis_score:
-  current_floor: 0.0
-  current_average: 0.0
+  current_floor: 7.5        # Ch.2-5, pre-revision
+  current_average: 8.27     # across all five, pre-revision
+  chapter_1_floor: 8.5      # locked benchmark; prose dimension 9.0
 
 quality_gate:
   chapters_passed: []
