@@ -124,13 +124,14 @@ physicality. **This explicitly includes Jameson.**
 >
 > ### WATCH (chapter-local so far): Rx's witness-requests
 >
-> Ch.7 gives Rx three witness-requests in 1,600 words — *"I want that on the record"*, *"I want
-> that understood"*, *"I'd like you to hear me say so"*. In Ch.7 they are deliberate and paid
-> off: the chapter's anchor lands precisely because the third reading arrives with **no**
-> preface, so the habit exists to be withheld. **That is a chapter-local structure, not a
-> licence.** Rx already holds his one device (the too-quick denial). If the witness-request
-> shape appears again in Ch.8+, it becomes a second device for a tic-bearer who is capped at
-> one — catch it at dialogue-polish.
+> Ch.7's draft gave Rx three witness-requests — *"I want that on the record"*, *"I want that
+> understood"*, *"I'd like you to hear me say so"*. **The disruptor pass cut the third**, on
+> the separate grounds that it pre-labelled the requisition as evidence; it now stands at two,
+> which is the right number. The structure still pays off: the anchor lands precisely because
+> the second reading arrives with **no** preface, so the habit exists to be withheld.
+> **That is a chapter-local structure, not a licence.** Rx already holds his one device (the
+> too-quick denial). If the witness-request shape appears again in Ch.8+, it becomes a second
+> device for a tic-bearer who is capped at one — catch it at dialogue-polish.
 
 > ### NOT bleed, do not "fix": Echo's approving hum
 >

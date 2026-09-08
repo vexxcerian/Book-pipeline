@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1,535 | Revision: 3 (disruptor — three explaining/designed sentences cut; one inert detail and one control-break added; net -13 words) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1,643 | Revision: 2 (hook-craft — wall-clock sentence sharpened; one closing listing line de-winked) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -24,8 +24,6 @@ Nothing they were doing was illegal. That was the entire design of it: no reques
 Rx had ticked researcher.
 
 *Nine minutes in a queue*, he said, in the second hour. *There's a notice at the top of it apologising for demand.*
-
-There was a bicycle chained to the rail outside the apartment across the landing.
 
 Vexx turned the tag over on the laminate, and turned it back.
 
@@ -59,7 +57,7 @@ The neighbour's music came up through the floor, two songs' worth, and went off 
 
 *Nothing.*
 
-The second registry wanted a unit designation. The third wanted a service number, then would not take the one on the tag, because the one on the tag came back absent — absent the way it had come back absent on this same table two months ago, when he had decided not to push it further.
+The second registry wanted a unit designation. The third wanted a service number, then would not take the one on the tag, because the one on the tag came back absent — absent the way it had come back absent on this same table two months ago, when he had decided not to push it further, and had told himself he was being careful.
 
 The fourth was the small one — retired shock troopers, running their own archive off their own subscriptions, scanning their own paper.
 
@@ -83,7 +81,7 @@ Vexx put his thumb on the serial. He could find it in the dark — had, more tha
 
 *He's been dead seven years*, Vexx said, *and his tag is on my table.*
 
-*That's the whole of it. It isn't evidence of anything.* The cursor did what it did. *Materiel index. Same forms as the boots. Give me a minute.*
+*That's the whole of it. It isn't evidence of anything. I'd like you to hear me say so before I go and find you the part that is.* The cursor did what it did. *Materiel index. Same forms as the boots. Give me a minute.*
 
 It took nineteen.
 
@@ -119,7 +117,7 @@ Vexx said the number after him. He had not decided to.
 
 *You're seventeen of thirty on the moving plates this month*, Rx said. *I keep it. Nobody's asked me to keep it. I don't know what I keep it for.*
 
-Vexx sat with his hands flat on the laminate on either side of the pad. The left one was not flat.
+Vexx sat with his hands flat on the laminate on either side of the pad.
 
 Then he pulled it toward him, which he had not done all night, the search still open on the small badly built archive with the pencil in its margins, and he typed into the field.
 
@@ -137,7 +135,7 @@ The wall clock in the next room struck the hour, once.
 
 *Line seven of twenty-two*, Rx said, after a while. *I can't see the other twenty-one from here.*
 
-The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week.
+The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week. He had never done anything about it.
 
 *Vexx.*
 
