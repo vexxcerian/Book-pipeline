@@ -661,7 +661,7 @@ information in the book is delivered as a formatting detail.
 **STATUS: new — LONG IMMERSIVE**
 **Word count target: 6,200**
 
-**Premise:** The cell's fourth deployment finds a Spartan who genuinely is coming apart, and
+**Premise:** The cell's fifth deployment finds a Spartan who genuinely is coming apart, and
 they do the job correctly, and nobody dies, and it is the worst thing any of them has done.
 
 **Function in arc:** **The baseline.** The reader must see the system work *right* — a real
@@ -704,8 +704,11 @@ structure, used exactly once, so that Ch.7 before it and Ch.9 after it read as s
 **Theme presence:** **RECEDES.** This chapter is about the job, on the job's own terms. The
 Rx thread barely appears. That absence is what makes it breathe.
 **Character chaos:** Goliath's coffee; Paladin's instrument and his corridor break; Bastion's
-refusal of the word "casualty"; Echo naming a ridge and using the name afterward as if agreed;
-Rx's marksmanship tally, badly timed.
+refusal of the word "casualty"; Echo naming a ridge and using the name afterward as if agreed.
+~~Rx's marksmanship tally, badly timed.~~ **CUT — deliberately not written.** `voice-dna.md`
+§3b reserves counting to Spector, and a tally in Rx's mouth would have built a second counting
+device in the chapter where the theme is supposed to RECEDE. Move the beat to Ch.13 or Ch.26,
+where Rx counting is the point rather than a texture.
 **Device presence:** COMMENT — the psych-flag summary that authorised the deployment, quoted
 in one sentence at the top and re-read in one sentence at the end, unchanged, meaning something
 different.
@@ -768,6 +771,13 @@ them. Zeus, then Aglaope.
 7. She asks whether he has told anyone else. He hasn't. She says the thing that will matter in
    Ch.23 and neither of them notices: *what happens to Rx if you're wrong, and what happens to
    him if you're right.*
+8. **Merrick's notebook.** Aglaope put it on Vexx's desk at the end of Ch.8 — found behind the
+   fuse box, after the transport had lifted, and nobody commented. It is with him in the
+   archive. It contains what a competent man's notebook contains: bus bars, runoff figures,
+   the Thursdays. **No evidence, no clue, nothing the plot needs.** That is its whole function
+   — Vexx has read it more than once looking for something that would make the removal wrong,
+   and it keeps not being there. One or two sentences, unglossed. Do not let anyone comment on
+   it, and do not let it turn out to matter later.
 
 **Progressive structure:**
 - Builds on Ch.7's dead-end — Rx said any deeper records access leaves a trail, and here is a
