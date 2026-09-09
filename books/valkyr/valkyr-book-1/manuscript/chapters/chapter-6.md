@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4434 | Revision: 2 (rhythm calibration F9/F8/F1; breath repair) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4340 | Revision: 2 (rhythm calibration F9/F8/F1; breath repair) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -21,7 +21,7 @@ He had put in for two days of personal leave. The question never came — not fr
 
 *People come apart in those places, is all. Quietly. On a good diet, with the heating on.* And then, before Vexx could answer that: *Ignore me. I’m reading the timetable. There’s a stop on this line called Hallow’s Bottom and I want you to know I’ve seen it.*
 
-The welfare visit was true, in the sense that everything Vexx had put on paper that month was true. He had pulled a man out of a jungle, the man was six weeks into a rehabilitation track, the cell had not sent a soul to see him. That was a real thing, a decent thing. Vexx intended to do it. He also intended to sit across a table from the only living witness to a strike team wearing UNSC signatures — in a room with no review officer in it — and ask him to say the armor plating part again, so that he could hear which parts came out the same.
+The welfare visit was true, in the sense that everything Vexx had put on paper that month was true. He had pulled a man out of a jungle, the man was eight weeks into a rehabilitation track, the cell had not sent a soul to see him. That was a real thing, a decent thing. Vexx intended to do it. He also intended to sit across a table from the only living witness to a strike team wearing UNSC signatures — in a room with no review officer in it — and ask him to say the armor plating part again, so that he could hear which parts came out the same.
 
 He had thought about how that sounded for most of the first hour, then stopped thinking about it, because the thinking did not change the itinerary.
 
@@ -93,7 +93,7 @@ He blinked twice. Something crossed his face that was not embarrassment about th
 
 “Were,” he said. “There were six of you.” He looked at the mug, then past it. “Sorry. I’ve lost where I was.”
 
-Vexx did not give it back to him. He was in a jungle nine weeks earlier, at two in the morning, walking behind Paladin — who had the man’s arm across his shoulders, most of his weight riding on one hip — and the man had been talking into Paladin’s back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometre, he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. It never got written down.
+Vexx did not give it back to him. He was in a jungle eleven weeks earlier, at two in the morning, walking behind Paladin — who had the man’s arm across his shoulders, most of his weight riding on one hip — and the man had been talking into Paladin’s back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometre, he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. It never got written down.
 
 He had heard it. He had gone on walking. Nine weeks he had been on the other side of that sentence — it had been sitting in his own ears the whole time, in the dark, under the noise of a man being carried — and he had let it go past him, because there had been a report to file at the end of the night.
 
@@ -213,7 +213,7 @@ Corwin looked up.
 
 “You’ve been enough use,” Vexx said, and that was true in a way he would have to sit down somewhere private, and look at.
 
-They talked about other things after that. The food, which was better than the program’s. The orchard, which produced badly, and which two of the men here had opinions about. A dog that belonged to nobody, and came up from the valley on Tuesdays. Corwin asked what the cell was doing. Vexx said monitoring work, mostly. Corwin nodded, did not push at it — and it occurred to Vexx that nine weeks ago, this man had known the word Valkyr, had used it out loud in a clearing, that neither of them had said it once today.
+They talked about other things after that. The food, which was better than the program’s. The orchard, which produced badly, and which two of the men here had opinions about. A dog that belonged to nobody, and came up from the valley on Tuesdays. Corwin asked what the cell was doing. Vexx said monitoring work, mostly. Corwin nodded, did not push at it — and it occurred to Vexx that eleven weeks ago, this man had known the word Valkyr, had used it out loud in a clearing, that neither of them had said it once today.
 
 At the door of the day room, Corwin put a hand out, and Vexx took it. The grip was better. That was measurable, and it was not nothing.
 

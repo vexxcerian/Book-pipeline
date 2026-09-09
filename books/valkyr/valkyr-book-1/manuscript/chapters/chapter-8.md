@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: 5,766 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5656 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -23,7 +23,7 @@ Goliath put the pot back in the bracket. He did it slowly, to make a point that 
 
 *Concern raised by subject’s own section on three separate occasions, the most recent in writing.*
 
-That was the whole of it. There had been four more lines under it in the packet — a station designation, a garrison strength, a note that the subject had declined two rotations home, had been within his rights on both — but that was the sentence the authorization hung on. Vexx had read it twice in the briefing room, once more on the pad in the bay, without ever being able to make it produce anything.
+There had been four more lines under it in the packet — a station designation, a garrison strength, a note that the subject had declined two rotations home, had been within his rights on both — but that was the sentence the authorization hung on. Vexx had read it twice in the briefing room, once more on the pad in the bay, without ever being able to make it produce anything.
 
 He had asked Voss, on the way out, who had written the third one. She said the packet did not say. She said it in the voice of a woman confirming that a thing was not in a file rather than the voice of a woman who did not know.
 
@@ -173,7 +173,7 @@ The station commander had put the eleventh name on the board as *R/H — MERRICK
 
 Vexx held her.
 
-He said, “Gaia, hold at the corner,” on the net, at a normal volume, in a normal voice, and she said “Holding.” That was the whole of it — three seconds, no discussion, no reason given: the reason was a corridor argument seven weeks earlier, a bag of intelligence that had walked out of a building because he had put her where he could see her.
+He said, “Gaia, hold at the corner,” on the net, at a normal volume, in a normal voice, and she said “Holding.” That was the whole exchange — three seconds, no discussion, no reason given: the reason was a corridor argument seven weeks earlier, a bag of intelligence that had walked out of a building because he had put her where he could see her.
 
 “Near door,” Goliath said. “Opens out. It’s chained back — someone’s chained it back — so it’s standing open on the hinge side and I’ve got no swing on it.”
 
@@ -199,13 +199,13 @@ Nobody fired. Nobody was hurt. That is the whole account of it.
 
 “Clear,” Gaia said, from the corner, forty meters away, where she had been standing the entire time with a full view of a wall.
 
-Vexx came in through the near door. The thermos was on the floor, had come open, was going out across the plate in a wide brown fan. The kid was against the wall where Goliath had put him, had not moved off it, was saying that it was fine, that he was fine, that he had been told about the exercise, that nobody had told him about the exercise.
+The thermos was on the floor, had come open, was going out across the plate in a wide brown fan. The kid was against the wall where Goliath had put him, had not moved off it, was saying that it was fine, that he was fine, that he had been told about the exercise, that nobody had told him about the exercise.
 
 “Sit down,” Bastion said, before Paladin said anything. “You’re not hurt. You’re going to be dizzy in about forty seconds and I’d rather you were already sitting.”
 
 The kid sat down on the step. Then he stood up again. Then he sat down.
 
-“Where was the second door on your plan,” Zeus said. He had come in behind Vexx, was not looking at anyone in particular, asked it in the same voice he had asked about Ivo.
+“Where was the second door on your plan,” Zeus said. He had come in behind them, was not looking at anyone in particular, asked it in the same voice he had asked about Ivo.
 
 “The second door was on the plan,” Vexx said.
 
@@ -223,7 +223,7 @@ Later — much later, on the transport, with the lights down — Aglaope said, t
 
 * * *
 
-They gave Zeus the plant house, because it was warm, because it was his, and Vexx stood outside the door where he could hear it, which is not the same as being in the room — which Merrick knew and did not mind.
+They gave Zeus the plant house, because it was warm, because it was his, and Vexx stood outside the door where he could hear it, which is not the same as being in the room — and Merrick had not asked for the door shut.
 
 It went on for an hour and forty minutes. Nine minutes of that was about the bus bar.
 
@@ -267,13 +267,11 @@ He told him well. He gave Zeus the watch rotation off the top of his head, all o
 
 It was a two-man rotation with three men in it.
 
-Zeus did not stop him. He did not say a name, he did not clear his throat, he did not do the thing an ordinary man would have done, which is to look at the door. He let Merrick get all the way to the end of it, then asked which of them had the Thursdays — Merrick told him — and then he asked, in exactly the same voice, how long Tomas had been on the north shift.
+Zeus did not stop him. He did not say a name, he did not clear his throat, he did not do the thing an ordinary man would have done. He let Merrick get all the way to the end of it, then asked which of them had the Thursdays — Merrick told him — and then he asked, in exactly the same voice, how long Tomas had been on the north shift.
 
 “Since the summer.”
 
 “And before the summer.”
-
-Merrick opened his mouth.
 
 Vexx, outside the door, heard the chair.
 
