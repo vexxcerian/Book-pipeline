@@ -34,7 +34,17 @@ FINGERPRINT_PHRASES = [
     "there and gone", "the kind of", "not because", "deep water",
     "like water", "drew in", "made herself a smaller target",
 ]
-SIMILE_MARKERS = re.compile(r"\b(like|as if|as though)\b", re.I)
+# Comparison markers. "like" is the problem child: as a verb ("I like him already")
+# and as a bare preposition ("cells like this", "a room like that") it is ordinary
+# English and has nothing to do with figurative writing. Counting those made the metric
+# track how much dialogue a chapter had. LIKE_VERB is stripped first, then the lookahead
+# drops the demonstrative and pronoun-object uses.
+LIKE_VERB = re.compile(r"\b(?:i|you|he|she|we|they|who|nobody|somebody|everybody|d|would|"
+                       r"didn't|doesn't|don't|not)\s+likes?\b", re.I)
+SIMILE_MARKERS = re.compile(
+    r"\b(?:as if|as though)\b"
+    r"|(?<!\w)like\b(?!\s+(?:that|this|these|those|him\b|her\b|them\b|me\b|us\b|you\b))",
+    re.I)
 ADVERB = re.compile(r"\b\w+ly\b", re.I)
 WORD = re.compile(r"[a-z']+", re.I)
 
@@ -305,7 +315,7 @@ def scan():
         commas = text.count(",")
         vague = len(re.findall(r"\b(?:somebody|someone|nobody|no one|anybody|anyone)\b", text, re.I))
 
-        similes = len(SIMILE_MARKERS.findall(text))
+        similes = len(SIMILE_MARKERS.findall(LIKE_VERB.sub(" ", text)))
         adverbs = len(ADVERB.findall(text))
         emdash = text.count("—")
 
@@ -316,6 +326,10 @@ def scan():
         flags = []
         if sim1k > max_simile:
             flags.append(f"SIMILE {sim1k}/1k > {max_simile}"); problems += 1
+        sim_lo = _floor(n, "simile_per1k")
+        if sim_lo is not None and sim1k < sim_lo:
+            flags.append(f"SIMILE {sim1k}/1k < {sim_lo} (voice-match FLOOR — the pipeline is "
+                         f"writing plainer than this author)"); problems += 1
         if adv1k > max_adverb:
             flags.append(f"ADVERB {adv1k}/1k > {max_adverb}"); problems += 1
         if max_em1k is not None:
@@ -342,6 +356,9 @@ def scan():
         # BREATH — sentence-length distribution of the NARRATION (see split_registers).
         dia_text, nar_text = split_registers(text)
         nar = sorted(len(words(x)) for x in sentences(nar_text)) or [0]
+        # Dialogue connective rate — REPORTED, never gated. See the note in the config.
+        dia_w = len(words(dia_text)) or 1
+        dia_and = round(len(re.findall(r"\band\b", dia_text, re.I)) / dia_w * 1000, 1)
         ndia = len(sentences(dia_text))
         mid = len(nar) // 2
         median_s = nar[mid] if len(nar) % 2 else (nar[mid-1] + nar[mid]) / 2
@@ -349,7 +366,7 @@ def scan():
         short_pct = round(100 * sum(1 for L in nar if L <= 6) / len(nar), 1)
         breath = (f"      breath (narration): {len(nar)} sentences | median {median_s} | "
                   f">=40w {long_pct}% | <=6w {short_pct}% | dialogue lines {ndia} "
-                  f"({round(ndia/len(nar), 2)}:1)")
+                  f"({round(ndia/len(nar), 2)}:1) | dialogue and {dia_and}/1k")
         if n in PUNCH_CHAPTERS:
             breath += "  [PUNCH — exempt]"
         else:
