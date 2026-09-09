@@ -761,8 +761,33 @@ voice.** Recorded here so that no downstream agent gives them one.
   Goliath's childhood recollection, as a townsfolk name.
 - **HOLST, D.** — the name stamped on the dog tag. Logged KIA seven years before Corwin's
   ambush; his equipment reissued eleven months after his death, routing through RECLAMATION.
-  **He never appears, is never described, and is never given a first name.** That is the point:
-  he is what the program turns people into.
+  **He never appears, never speaks, and is never described.** That is the point: he is what the
+  program turns people into.
+  **Amended (CF-13).** The original constraint also said *never given a first name*, and Ch.7
+  breaks it — the small veterans' archive returns *STAFF SERGEANT DERIC A. HOLST, 11TH SHOCK
+  TROOPS BATTALION*, with *photo?* written in pencil in the margin. The prose is right and the
+  constraint yielded. A name recovered off a scanned record is what makes the line read as a
+  real document rather than a prop, and the pencil note depends on it. What the constraint was
+  protecting — that Holst never becomes a *character* — is untouched: he is a name on paper in
+  both places he exists. **Full name only ever in quoted document text; narration says
+  HOLST, D.**
+
+### Mentioned-only names added in Ch.9 (no tic, no device, no card owed)
+
+Named once each, in dialogue, by characters who already hold their own device. **None of them
+speaks, appears, or recurs**, and none may be promoted to a speaking part without a full card
+and a re-check of §TIC BUDGET — which is full at three tic-bearers.
+
+- **BEATTIE** — the night-urn cook. Exists so Zeus can correct Vexx about **Hallam** (Ch.8's
+  day cook) in a question that had no purpose except to be cheap to answer. Institutional
+  texture, nothing more.
+- **CURRAN** — the one man on Aglaope's list who *lived*, wrote her a letter about a boat four
+  years ago, and whom she spends Ch.9 deciding whether to remove. He is the load-bearing name
+  of her chaos marker (responsibility inflation) and must stay off the page: if Curran ever
+  appears, the list stops being hers.
+- **ANSEL / ANSETH** — two names nine pages apart on that list, who came off the same ramp a
+  minute apart and did not die a minute apart. They exist to make the alphabetisation argument
+  cost something. Do not develop them.
 
 ---
 

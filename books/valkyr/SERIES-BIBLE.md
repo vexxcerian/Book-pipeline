@@ -224,7 +224,7 @@ series canon the moment their chapter is drafted):
 | Dessen | Ch.10 | Internal Compliance — audits the cell's evidence handling | Survives; pressure from the *system*, deliberately **not** from Jameson |
 | Merrick | Ch.8 | A Spartan who genuinely IS coming apart | The baseline case: what a Choosing costs when the system is right |
 | Beck | Ch.17 | The assessment Vexx deliberately corrupts to keep a man alive | Survives; the cost is Vexx's descent |
-| Holst, D. | — | A name in the records, never speaks | Never given a voice — recorded here so no later book hands him one |
+| Holst, D. | Staff Sergeant Deric A. Holst (document text only) | A name in the records, never speaks | Never given a voice — recorded here so no later book hands him one. The full name exists ONLY inside quoted archive text (Ch.7); narration says HOLST, D. |
 | **Ashgrove** | Ch.20 | Place name | Becomes series canon when Ch.20 is drafted |
 | **RECLAMATION** | Ch.7 (unremarked) → Ch.15 (solved) | The logistics tag the **second cell** files under | The book's *ten*; Part Three's title |
 
@@ -259,7 +259,7 @@ tic they never had.
 | Dessen | — | Dessin, Desen |
 | Merrick | — | Merrik, Meric |
 | Beck | — | Bec |
-| Holst, D. | "Holst" | Holtz, Holste |
+| Holst, D. / Deric A. Holst | "Holst" | Derek, Deryk, Holtz, Holste |
 | Ashgrove | — | Ash Grove, Ashgrave |
 | RECLAMATION | "the tag", "the routing tag" (in narration) | Reclaimation |
 | SPARTAN-II | Spartan (as a common noun on the page: "a Spartan") | Spartan-2, SPARTAN II |

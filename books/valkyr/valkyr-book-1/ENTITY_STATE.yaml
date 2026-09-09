@@ -1947,7 +1947,9 @@ conflicts:
     conflict:
       - value: "planned.characters.holst-d constraint: 'never appears, never speaks, never described, never given a first name'; SERIES-BIBLE registry lists him as 'Holst, D.' / 'Holst'."
         source: "outline:ch-07; series-bible"
-        flag: "UNRESOLVED"
+        flag: "RESOLVED 2026-09-09 — constraint yielded; character-bible.md amended. Holst
+          still never appears, never speaks, is never described. Full name appears ONLY in
+          quoted document text; narration says HOLST, D."
     note: >-
       The prose is right and the constraint should yield — the first name is what makes the
       archive line feel like a real record rather than a prop, and 'photo?' in pencil in the
