@@ -76,7 +76,7 @@ Vexx liked him immediately, in the uncomplicated way you like someone who says e
 
 Vexx thought about the handwritten line on the donor form. *Keep them from the dark.* He didn’t mention it. He didn’t need to. He’d already decided.
 
-The pairing process, when it happened three days later, went smoother than Vexx’s own had — no four-month gap of grief first, no gray room and a stranger delivering impossible news. Just Goliath, sitting in a chair not unlike the one Vexx had sat in, and a voice coming online in his ear for the first time.
+The pairing process, when it happened three days later, went smoother than Vexx’s own had — no four-year gap of grief first, no gray room and a stranger delivering impossible news. Just Goliath, sitting in a chair not unlike the one Vexx had sat in, and a voice coming online in his ear for the first time.
 
 *You’re bigger than I expected*, the AI said, and Goliath actually laughed — a real, surprised bark of a laugh that filled the whole room.
 
@@ -248,7 +248,7 @@ Vexx thought about that walking back to his quarters that night — about a rost
 
 * * *
 
-The six of them stood together for the first time in a briefing room on a gray morning three days later — Goliath and Spector, Gaia and Echo, Paladin and Bastion, Zeus and Hollow, Aglaope and Requiem, and Vexx at the head of the table with Rx’s voice steady in his ear, the whole strange, cobbled- together shape of something that didn’t have a name he was allowed to say out loud yet, but felt, for the first time since a folder full of nothing had been handed to him over a funeral he shouldn’t have had to attend, like it might actually hold.
+The six of them stood together for the first time in a briefing room on a gray morning three days later — Goliath and Spector, Gaia and Echo, Paladin and Bastion, Zeus and Hollow, Aglaope and Requiem, and Vexx at the head of the table with Rx’s voice steady in his ear, the whole strange, cobbled-together shape of something that didn’t have a name he was allowed to say out loud yet, but felt, for the first time since a folder full of nothing had been handed to him over a funeral he shouldn’t have had to attend, like it might actually hold.
 
 Jameson delivered the mission brief himself. Vexx would remember that detail later, turning it over in the dark the way he turned over everything eventually — that Jameson hadn’t needed to be there, that a man with his rank rarely showed up in person for a first deployment briefing of a cell this small, and that he had anyway, standing at the front of the room with that same practiced warmth, welcoming six operators and six AI into a program he’d built his entire career on top of a lie about.
 

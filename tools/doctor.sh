@@ -279,8 +279,12 @@ PY
 
   local n; n=$(ls "$d"/manuscript/chapters/chapter-*.md 2>/dev/null | wc -l | tr -d ' ')
   if [ "$n" -gt 0 ]; then
-    local w; w=$(cat "$d"/manuscript/chapters/chapter-*.md 2>/dev/null | wc -w | tr -d ' ')
-    ok "$n chapter(s), $w words"
+    # Strip <!-- editorial comments --> before counting. Scene budgets and revision
+    # notes live in the chapter files and are NOT prose; counting them inflates the
+    # manuscript against its own word floor, by ~40 words per chapter and rising.
+    local w; w=$(cat "$d"/manuscript/chapters/chapter-*.md 2>/dev/null \
+        | perl -0777 -pe 's/<!--.*?-->//gs' | wc -w | tr -d ' ')
+    ok "$n chapter(s), $w words of prose"
   else
     ok "no chapters drafted yet"
   fi

@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1,535 | Revision: 3 (disruptor — three explaining/designed sentences cut; one inert detail and one control-break added; net -13 words) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1506 | Revision: 4 (F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -19,7 +19,7 @@ The table in his kitchen was not a kitchen table — a folding utility trestle, 
 
 *I want that on the record. Line forty-one of sixty, every line on it somebody’s boots, with more of them open behind it.*
 
-Nothing they were doing was illegal. That was the entire design of it: no request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. The price of the design was volume. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three separate veterans’ associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
+Nothing they were doing was illegal. No request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three separate veterans’ associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
 
 Rx had ticked researcher.
 
@@ -145,7 +145,7 @@ The trestle had a wobble in it that came and went depending on which of the four
 
 He got up.
 
-There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armour fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He could not have explained one item of it to a review officer in a way that would survive the second question. He turned the eggs.
+There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armour fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He turned the eggs.
 
 The eggs were fine and he put them in the sink.
 
