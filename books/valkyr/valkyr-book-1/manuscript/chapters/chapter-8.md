@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: 5,794 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5,800 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -163,7 +163,7 @@ The plant house was warm, smelled of hot dust off the heaters, faintly of coffee
 
 “In the folder,” Merrick said.
 
-Outside, Aglaope was standing about six metres off the plant house door with her back to the wind, not looking in — she stayed there for the entire time they were in the building, did not come in, did not go anywhere else.
+Outside, Aglaope had her back to the wind about six metres off the plant house door, not looking in, not coming in, not going anywhere else — she was still standing in the same place, at the same distance, when the last of them came out.
 
 * * *
 
@@ -219,7 +219,7 @@ Gaia arrived at the near door then, with the wind behind her, stopped, did not s
 
 “Copy,” Gaia said.
 
-Nobody else said anything. Goliath crouched, picked the thermos up, screwed the lid back on it, stood it on the step beside the kid, upright, where he would find it — and that was the only comment anyone made.
+Nobody else came up on the net. Goliath crouched, picked the thermos up, screwed the lid back on it, stood it on the step beside the kid, upright, where he would find it — and that was the only comment anyone made.
 
 Later — much later, on the transport, with the lights down — Aglaope said, to nobody, that the boy had put his hand out for the thermos twice before he took it, and that he had not been reaching for the thermos.
 
