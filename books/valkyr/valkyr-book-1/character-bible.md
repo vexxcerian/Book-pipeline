@@ -86,7 +86,8 @@ physicality. **This explicitly includes Jameson.**
 
 | Device | Owner — and NOBODY else |
 |---|---|
-| Counting · sequence · countdown · numbering · tallying · rating · pricing · cataloguing | **SPECTOR** |
+| **Counting ALOUD** · sequence · countdown · numbering · rating · pricing · cataloguing — counting as *craft*, performed for a room | **SPECTOR** |
+| **The private, unspoken tally** — a count kept for nobody, never said out loud | **VEXX** (and Rx keeping one *for* Vexx) — see the note below |
 | Continuous narration / filling silence | **ECHO** |
 | Naming and labelling things, then using the name as if agreed | **ECHO** |
 | Too-quick denial / reflex deflection | **RX** |
@@ -141,9 +142,26 @@ physicality. **This explicitly includes Jameson.**
 > read it as accidental and differentiate it away.
 
 > **Counting, listing, pricing, rating, quantifying and cataloguing are the SAME DEVICE in
-> different coats.** Only Spector may have any of them. If Bastion starts a headcount, or Gaia
-> starts rating things numerically, or Vexx starts tallying anything, **that is device bleed
-> and it must be caught at dialogue-polish, not at chapter twenty.**
+> different coats**, and **Spector owns the spoken form.** If Bastion starts a headcount, or
+> Gaia starts rating things numerically, **that is device bleed and it must be caught at
+> dialogue-polish, not at chapter twenty.**
+>
+> **THE ONE CARVE-OUT — the private tally, and the author made it, not the architect.** This
+> rule originally read "only Spector may have any of them ... if Vexx starts tallying anything,
+> that is device bleed," and it was wrong, because the author's own drafted Ch.4 does exactly
+> that: *"Vexx had started, without quite admitting it to himself, keeping a private tally of
+> which was which."* Three lines further down this same file, Rx's entry already assumed it.
+> The rule contradicted the prose it was written to protect, and the prose wins.
+>
+> They are not the same device. **Spector counts OUT LOUD, at people, as craft** — the
+> unnecessary countdown, *four drums, four seals, four intact.* It is competence performed for
+> a room. **The private tally is counted for nobody**, never spoken, and its whole meaning is
+> that the man keeping it will not admit he is keeping it. Rx's *"I keep it. Nobody's asked me
+> to keep it. I don't know what I keep it for"* is the same device pointed back at Vexx, and it
+> is the best line in Ch.7 precisely because it is private.
+>
+> So: **a spoken count from anyone but Spector is bleed. A silent one from Vexx or Rx is
+> canon.** If a tally is ever said aloud to another character, it has crossed over.
 >
 > **The one near-collision, resolved:** Dessen's repetition is a *deliberate interrogation
 > technique applied to questions*; Merrick's is an *involuntary echo of his own statements*.

@@ -223,7 +223,8 @@ catchphrase would make him legible, and legibility is a gate failure.
 
 | Device | Owner — and NOBODY else |
 |---|---|
-| Counting / sequence / countdown / numbering | **Spector** |
+| Counting ALOUD / sequence / countdown / numbering — counting as craft, performed for a room | **Spector** |
+| The private, unspoken tally — kept for nobody, never said out loud | **Vexx** (and Rx keeping one *for* Vexx). See `character-bible.md` §THE ONE CARVE-OUT. |
 | Continuous narration / filling silence | **Echo** |
 | Too-quick denial / reflex deflection | **Rx** |
 | Body-check questions ("is that hand still stiff") | **Bastion** — a *question habit*, never numeric |
@@ -243,8 +244,8 @@ catchphrase would make him legible, and legibility is a gate failure.
 | Grammar correction | **Corwin** — and its removal is the point |
 
 > **Counting, listing, pricing, rating, quantifying and cataloguing are the SAME DEVICE in
-> different coats.** Only Spector may have any of them. If Bastion starts keeping a headcount,
-> or Gaia starts rating things numerically, or Vexx starts tallying, **that is device bleed and
+> different coats**, and **Spector owns the SPOKEN form.** If Bastion starts keeping a headcount,
+> or Gaia starts rating things numerically, **that is device bleed and
 > it must be caught at dialogue-polish, not at chapter twenty.**
 
 ### CAPPED (declared, not exempt — the ALLOWLIST is a capped registry)
@@ -284,6 +285,24 @@ new chapters** — they are at or over cap in the drafted five.
 > roster above (3 tic-bearers), the one-device map (no sharing, and counting belongs to Spector
 > alone), and the capped registry. **The specific bleed to watch here is Vexx's term-correction
 > device migrating onto Zeus or Gaia, and Spector's counting migrating onto Bastion.**
+>
+> **The watch-list was wrong, and here is what the migration actually did.** Through Ch.6-8 the
+> predicted routes stayed clean — nothing went to Bastion, and Zeus/Paladin and Gaia/Aglaope,
+> the pairs everyone was watching, held. The bleed went where nobody was looking:
+>
+> - **Goliath** picked up **Vexx's term-correction shape**, twice.
+> - **Gaia** applied **Spector's reserved *N-of-the-M* construction** — to people's interior
+>   states, which is worse than to objects.
+> - **Zeus** asked **why**, which he does nowhere else in the book, announced he would repeat a
+>   question (Dessen's axis), and used Rx's Ch.7 witness-request shape and Goliath's trade
+>   register. Six edits on one character.
+> - **Paladin** spoke **Rx's capped denial** (*"It's fine."*), and **Goliath** spoke
+>   **Spector's countdown** verbatim.
+>
+> The lesson is not a better list of pairs. It is that **a predicted watch-list makes you blind
+> to the routes it does not name.** Audit every speaking character against every reserved
+> device, not the two you expect to collide — and note that every line above passed the
+> Cover-the-Name Test, because it measures whether a line is DISTINCTIVE, never whose it is.
 
 ---
 
