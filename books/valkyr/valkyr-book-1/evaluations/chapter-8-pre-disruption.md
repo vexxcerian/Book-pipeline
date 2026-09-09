@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: 5,766 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5,800 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -19,7 +19,7 @@ Paladin, from the far webbing, without looking up: “Sorry — is the pot going
 
 “Right. Only it comes out of the bracket at about four g and goes across the bay, is the thing, and I’m under it.”
 
-Goliath put the pot back in the bracket. He did it slowly, to make a point that nobody in the bay acknowledged, then sat down under it himself.
+Goliath put the pot back in the bracket. He did it slowly, to make a point that nobody in the bay acknowledged, then sat down under it himself — the closest thing to an apology the man produced.
 
 *Concern raised by subject’s own section on three separate occasions, the most recent in writing.*
 
@@ -129,7 +129,7 @@ Merrick was a big man gone slightly loose at the edges, a SPARTAN-II in station 
 
 “They said next month.” He looked at the bench, then at the door, then back. “Doesn’t matter. It’s better you came now, actually, because the sixteenth’s the changeover and everything goes sideways round the changeover. Round the changeover.”
 
-The second time was quieter than the first. It came out flat and low, aimed at nothing — his face did not change while he said it, and he picked the meter back up.
+The second time was quieter than the first. It came out flat and low, aimed at nothing — his face did not change while he said it, and he picked the meter back up as though the sentence had finished the first time.
 
 Vexx did not look at Zeus. Zeus was against the wall by the door with his arms folded, come no further into the room than that.
 
@@ -141,7 +141,7 @@ Vexx did not look at Zeus. Zeus was against the wall by the door with his arms f
 
 “I’ll be lifting plate in February.” Merrick almost smiled. “Sorry about the noise in here. Ivo, if you’re coming past, mind the — no. Sorry.”
 
-He stopped. It was the stop of a man who has walked into a doorframe in his own house.
+He stopped. It was not the stop of a man who has misspoken. It was the stop of a man who has walked into a doorframe in his own house.
 
 He put the meter down again, looked at the junction box for a while.
 
@@ -174,6 +174,8 @@ The station commander had put the eleventh name on the board as *R/H — MERRICK
 Vexx held her.
 
 He said, “Gaia, hold at the corner,” on the net, at a normal volume, in a normal voice, and she said “Holding.” That was the whole of it — three seconds, no discussion, no reason given: the reason was a corridor argument seven weeks earlier, a bag of intelligence that had walked out of a building because he had put her where he could see her.
+
+It is not that he thought about that. He would have said, afterward, that he did not think about anything. He held her because holding her was what his mouth did.
 
 “Near door,” Goliath said. “Opens out. It’s chained back — someone’s chained it back — so it’s standing open on the hinge side and I’ve got no swing on it.”
 
@@ -347,7 +349,7 @@ Goliath said nothing for a while.
 
 The transport came at half past six the next morning, with the sky still the colour of the ground. It came for him and nothing else.
 
-They told him in the plant house, because that was where he was. Vexx told him, because that is the job. It took eleven words. He had had them in order before he came through the door. The word he used was *relieved*, which is not the word in the recommendation. He heard it standing up. He asked whether the bus bar could wait until somebody came out from the depot, whether he could leave a note about the box, and Vexx said yes to both, and Merrick wrote the note, and it was legible, and it took him four minutes.
+They told him in the plant house, because that was where he was. Vexx told him, because that is the job. It took eleven words. He heard it standing up. He asked whether the bus bar could wait until somebody came out from the depot, whether he could leave a note about the box, and Vexx said yes to both, and Merrick wrote the note, and it was legible, and it took him four minutes.
 
 Then he went round the station.
 
