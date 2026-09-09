@@ -53,6 +53,38 @@ For each conversation (2+ characters speaking), perform the Cover-the-Name Test:
 - Score: `DISTINCT` (immediately identifiable), `WEAK` (identifiable with effort), `INDISTINCT` (could be anyone)
 - Any `INDISTINCT` line is flagged for revision
 
+**1.2b Device Bleed Scan — run this SEPARATELY, it is not the same failure**
+
+The Cover-the-Name Test measures whether a line is *distinctive*. It does not measure
+whether it is *the right character's*. A line can score `DISTINCT` — instantly identifiable,
+vivid, nothing generic about it — and still belong to somebody else. That is device bleed,
+and on a large-cast chapter it is routinely the **bigger** group of defects, because it is
+invisible to the test everyone runs.
+
+The shape of it: character A reaches for character B's signature move. A reserved counter
+speaks another character's countdown verbatim. A man whose whole characterisation is that he
+never asks *why* asks why. A character with a capped denial (`"It's fine."`) has it spoken by
+someone else. Each of those reads perfectly well in the moment; each quietly spends a device
+that belongs to another character, and after twenty chapters no device belongs to anyone.
+
+So, for each speaking character:
+
+1. From `character-bible.md` and `voice-dna.md`, list the devices that are **reserved** to
+   them — a tic, a register, a refusal, a counting habit, a question they do or do not ask.
+2. For every line in the chapter, ask not "who could say this?" but **"whose move is this?"**
+3. Flag `DEVICE_BLEED` wherever those two answers differ, and name both characters.
+
+Fix it by **giving the line back**: either move the beat to its owner, or rewrite it out of
+the borrowed register and into the speaker's own. Never fix it by inventing a new device for
+the borrower — that spends against the §TIC BUDGET to patch a theft.
+
+Two related checks in the same pass:
+- **Mirroring.** Where one character repeats, completes, or answers in kind another
+  character's signature repetition, the device stops being that character's. Cut the mirror,
+  not the original.
+- **Shared reach.** Two characters arriving at the same unusual word within a chapter (even
+  fifty lines apart) is worth a flag. It is early bleed.
+
 **1.3 Tag Audit**
 - Count instances of each dialogue tag: said, replied, asked, exclaimed, whispered, etc.
 - Flag overuse of any single tag (>40% of all tags = overuse)

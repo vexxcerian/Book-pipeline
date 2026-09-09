@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: 5,814 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5,794 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -35,9 +35,9 @@ The bay was cold and smelled of the heaters coming up — a smell like scorched 
 
 “Right hand,” Bastion said, through Paladin’s interface, into the general quiet. “The one you’ve been keeping in your lap since we boarded.”
 
-“It’s fine.”
+“It’s working.”
 
-“It was fine on Tuesday. Open it and close it for me.”
+“It was working on Tuesday. Open it and close it for me.”
 
 Paladin opened it and closed it. Everybody in the bay watched him do it, which he minded, which he did not say he minded.
 
@@ -99,7 +99,7 @@ They cleared the site first. That is the procedure. There is no version of the p
 
 The fuel shed took twenty-two minutes and produced nothing. Goliath went round the outside of it first, on his knees at the base of the wall in the wind, running a glove along the seam where the panel met the pad. Then Spector took the seals, one at a time, through the interface, in the order Spector takes things.
 
-“Bund’s dry. One, two, three, four — four drums, four seals, four intact,” Spector said. “Nothing’s been opened. Nothing’s been resited. There’s a spanner on the floor that shouldn’t be on the floor and that’s the whole of my complaint.”
+“Bund’s dry. One, two, three, four — four drums, four seals, four intact,” Spector said. “Nothing’s been opened. Nothing’s been resited. There’s a spanner on the floor that shouldn’t be on the floor. That’s my whole complaint.”
 
 “Somebody dropped a spanner,” Goliath said.
 
@@ -107,7 +107,7 @@ The fuel shed took twenty-two minutes and produced nothing. Goliath went round t
 
 “Twenty-two minutes for a spanner.”
 
-“Twenty-two minutes is what it costs to be able to say the shed is fine. Say the shed is fine.”
+“Twenty-two minutes is what it costs to be able to say the shed is fine. Say it.”
 
 “The shed’s fine,” Goliath said, and stood, put his hand in the small of his back.
 
@@ -137,7 +137,7 @@ Vexx did not look at Zeus. Zeus was against the wall by the door with his arms f
 
 “Bus bar. There’s a drop across it under load and I’ve had the heaters cycling in the block for three days.” He said it competently. Everything about how he said it was competent. “I’ve got it down to this side of the box or the run under the floor, and I’d rather it was this side, because that means lifting plate in February.”
 
-“Lifting plate in February,” Goliath said.
+“That’s a job for two,” Goliath said.
 
 “I’ll be lifting plate in February.” Merrick almost smiled. “Sorry about the noise in here. Ivo, if you’re coming past, mind the — no. Sorry.”
 
@@ -145,7 +145,7 @@ He stopped. It was not the stop of a man who has misspoken. It was the stop of a
 
 He put the meter down again, looked at the junction box for a while.
 
-“What was the name?” Zeus said, from the wall, in the voice of a man asking about the weather.
+“Which shift is he on,” Zeus said, from the wall, in the voice of a man asking about the weather.
 
 “There’s an Ivo on the north shift. Was.” A pause. He looked at his hands. “He rotated out. He rotated out at the start of the winter and I know that, I signed the transit for it, I’ve got it in the book.”
 
@@ -161,7 +161,7 @@ The plant house was warm, smelled of hot dust off the heaters, faintly of coffee
 
 “That’s helpful.”
 
-“It’s all in the folder,” Merrick said.
+“In the folder,” Merrick said.
 
 Outside, Aglaope was standing about six metres off the plant house door with her back to the wind, not looking in — she stayed there for the entire time they were in the building, did not come in, did not go anywhere else.
 
@@ -181,7 +181,7 @@ It is not that he thought about that. He would have said, afterward, that he did
 
 “Take it as it is.”
 
-“Taking it as it is. Three. Two. Set—”
+“Taking it as it is. Round the frame, then in. Set—”
 
 They went through in the order they always went through, and the door being chained open meant the first man had to come round the frame rather than through it, and that put Paladin a half-second late and Goliath a body-width right of where he wanted to be, and it put four of them stacked in a service corridor two metres wide with the far end of it dark, and it put nobody at all on the second door.
 
@@ -203,7 +203,7 @@ Nobody fired. Nobody was hurt. That is the whole account of it.
 
 Vexx came in through the near door. The thermos was on the floor, had come open, was going out across the plate in a wide brown fan. The kid was against the wall where Goliath had put him, had not moved off it, was saying that it was fine, that he was fine, that he had been told about the exercise, that nobody had told him about the exercise.
 
-“Sit down,” Bastion said, before Paladin said anything. “Not because you’re hurt. Because you’re going to be dizzy in about forty seconds and I’d rather you were already sitting.”
+“Sit down,” Bastion said, before Paladin said anything. “You’re not hurt. You’re going to be dizzy in about forty seconds and I’d rather you were already sitting.”
 
 The kid sat down on the step. Then he stood up again. Then he sat down.
 
@@ -233,7 +233,7 @@ It went on for an hour and forty minutes. Nine minutes of that was about the bus
 
 “Everybody says the run under the floor. It’s never the run.”
 
-“Why not.”
+“Then I’m wrong.”
 
 “Because that run was put in by people who were paid by the metre and inspected by people who were paid by the hour, and the box was put in by whoever was here in the spring with a spare afternoon. You want to look where the enthusiasm was.”
 
@@ -253,7 +253,7 @@ There was a long pause with the wind in it.
 
 “I sleep.”
 
-“That isn’t what I asked, and I’ll ask it again in a minute anyway, so take your time with it.”
+“That isn’t what I asked, and I’m in no hurry, so take your time with it.”
 
 “I sleep four, five. It’s a station. There’s an alarm on the plant that goes at all hours and it’s me that goes to it, because the other two who can go to it are on the north shift and it isn’t fair to—” He stopped.
 
@@ -261,7 +261,7 @@ There was a long pause with the wind in it.
 
 “It isn’t fair to them.”
 
-“Which two.”
+“Who else can go to it.”
 
 And Merrick told him.
 
@@ -281,7 +281,7 @@ Vexx, outside the door, heard the chair.
 
 “He’s—” Merrick said. “He’s got it written down. I’ve got it written down. Written down.”
 
-“In the book.”
+“Where.”
 
 “In the book. There’s a book, I keep a book, I’ve kept a book since I was—” His voice did not break. It went thinner, and then quieter, and then it went on being perfectly level while the sentences stopped arriving in any order that worked. “It’s in the book and the book’s in the drawer, and if you give me a minute I’ll get the book, and then we can — because you’ll want it for the sheets anyway. The runoff sheets. Everybody wants the runoff sheets.”
 
@@ -305,7 +305,7 @@ Nobody in that room said anything.
 
 They took it in the accommodation block kitchen, at eleven at night, with the door shut and the station commander told plainly and once that he was not required.
 
-“He put a man on a roster who isn’t on the roster,” Zeus said. “He did it under no pressure, in his own plant house, to somebody he had no reason to perform for, and he did it fluently. Everything else he told me is true. I want that said out loud, because it will not survive into the file: the man is competent, he is running that station better than it has been run in four years, and the runoff sheets are immaculate.”
+“He put a man on a roster who isn’t on the roster,” Zeus said. “He did it under no pressure, in his own plant house, to somebody he had no reason to perform for, and he did it fluently. Everything else he told me is true. It will not survive into the file, so it gets said here: the man is competent, he is running that station better than it has been run in four years, and the runoff sheets are immaculate.”
 
 “He’s stood a watch for eleven months,” Paladin said. “In a place with no relief and no cover and eleven people in it. You’re telling me a man who’s done that got a name wrong.”
 
@@ -317,17 +317,17 @@ They took it in the accommodation block kitchen, at eleven at night, with the do
 
 “That’s it? All right?”
 
-“You asked me for the whole of it and then you said no. Those are two different transactions and you’re owed both.” Zeus was at the end of the table with his back to the bulkhead. He had not sat forward once. “I’m not going to talk you out of it. I’d rather you held it. If it goes in with your objection in it, it goes in honestly, and if it goes in without it, we’re a cell that agrees with itself, and I’ve seen what that produces.”
+“You asked me for the whole of it and then you said no. Those are two different things and you’re owed both.” Zeus was at the end of the table with his back to the bulkhead. He had not sat forward once. “I’m not going to talk you out of it. I’d rather you held it. If it goes in with your objection in it, it goes in honestly, and if it goes in without it, we’re a cell that agrees with itself, and I’ve seen what that produces.”
 
 It was the third time Paladin had said no in a room like that, and the second time Vexx had been unable to find the flaw in the answer he got back.
 
 “Gaia,” Vexx said.
 
-“Ten of the eleven have noticed. Two of them will say so. The others won’t, because they like him — and I mean that they like him, not that they’re covering. He carried a man down off Kettle in October with a broken hip and he did it in four hours and he doesn’t talk about it.” She was already looking at the door. “The third flag went in from the north shift. I don’t have a name and I’m not going to get one tonight. Your call, but I’d rather we didn’t leave this station carrying a rumour that somebody grassed.”
+“Ten of the eleven have noticed. Two of them will say so. The others won’t. They like him. Nobody’s covering. He carried a man down off Kettle in October with a broken hip and he did it in four hours and he doesn’t talk about it.” She was already looking at the door. “The third flag went in from the north shift. I don’t have a name and I’m not going to get one tonight. Your call, but I’d rather we didn’t leave this station carrying a rumour that somebody grassed.”
 
 “Aglaope.”
 
-Aglaope had been sitting with her hands round a cup she had not drunk from. “He’s not frightened of us,” she said. “He’s been waiting for somebody to come. That’s not the same as knowing why.” She turned the cup a quarter-turn. “He asked me twice this evening whether the transport had a medical berth on it. Nobody had told him there was a transport.”
+Aglaope had been sitting with her hands round a cup she had not drunk from. “He’s not frightened of us,” she said. “He’s been waiting for somebody to come. He doesn’t know what for.” She turned the cup a quarter-turn. “He asked me twice this evening whether the transport had a medical berth on it. Nobody had told him there was a transport.”
 
 Goliath said nothing for a while.
 
