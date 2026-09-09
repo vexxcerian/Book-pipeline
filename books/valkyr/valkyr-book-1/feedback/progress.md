@@ -4,10 +4,13 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Ch.1–6 in the manuscript. Ch.6 is the first chapter to PASS the 8.5 quality gate.**
+**Ch.1–8 in the manuscript, 27,863 words (`wc -w`). Ch.6 and Ch.7 have both PASSED the 8.5
+quality gate. Ch.8 is drafted, complete at nine scenes, mechanically clean, and mid-loop.**
+
 Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
-Ch.6 is the first pipeline-written chapter: Genesis floor **8.5**, average **8.79** — it matches
-the locked benchmark's floor. All three mechanical gates pass on all six.
+Ch.6 (8.5 / 8.79) and Ch.7 (8.5 / 8.79) are pipeline-written and through the gate; Ch.7 is the
+first to reach the locked benchmark's **Prose 9.0**. All three mechanical gates pass on all
+eight chapters.
 
 ⚠️ **Ch.2–5 were revised AFTER they were scored**, so their recorded floors describe the
 pre-revision text. Re-run `book-evaluator` on them if a current number matters.
@@ -19,11 +22,11 @@ pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 | `voice-dna.md` | ✅ 4,228w — voice reverse-engineered from the author's own prose |
 | `character-bible.md` | ✅ 8,357w — 22 entries, §TIC BUDGET, cover-the-name test run in-file |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–6, **~20,200 words**, italics + 23 scene breaks restored from the PDF |
-| style / grammar / voice-wear | ✅ all three clean, calibrated to the author's measured voice |
-| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–6 |
+| `manuscript/chapters/` | ✅ Ch.1–8, **27,863 words**, italics + 23 scene breaks restored from the PDF |
+| style / grammar / voice-wear | ✅ all three clean on all eight, calibrated to the author's measured voice |
+| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–8 |
 | `ENTITY_STATE.yaml` | ✅ 20 characters, 64 knowledge entries, evidence chain-of-custody |
-| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 8.5 / 8.79 PASS** · Ch.2–5 stale |
+| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 8.5/8.79 PASS** · **Ch.7 8.5/8.79 PASS** · Ch.8 unscored · Ch.2–5 stale |
 | `evaluations/` | ✅ per-chapter evals + `ch1-5-summary.md` — read the summary first |
 
 ## The structure, in one paragraph
@@ -93,12 +96,76 @@ author. `style_check.py` now gates em-dash/comma FLOORS and `and`/vague-pronoun 
 reports rhythm per chapter. Ch.6 was recalibrated back into band (em-dash 4.7 → 9.5/1k,
 `and` 40.4 → 23.7/1k) **without changing one idea, image, beat or line of dialogue.**
 
+## The Ch.7–8 build, and the three layers of THE SEAM
+
+Ch.7 ("Issue Date", 1,535w, declared punch chapter) passed at **8.5 / 8.79** and reached
+**Prose 9.0**, the locked Ch.1's number. Ch.8 ("Merrick", 5,717w, the book's one long
+immersive mission chapter) is drafted and mechanically clean.
+
+Between them they took the pipeline's fingerprint apart into three layers, and each layer
+was found *after* the one above it was closed:
+
+1. **Punctuation — closed.** The em-dash/`and` calibration from Ch.6 holds. Ch.7 drafted at
+   `and` 35.9/1k and was converted to 15.0 before the file was finalised.
+2. **Connective habit — still recurring, now caught at draft time.** Ch.8 drafted at **45.5
+   `and`/1k**, the worst in the book, on a brief that carried the warning in writing. Three
+   chapters running. It is no longer treated as something a writer can be told out of: the
+   root `book-writer.md` now carries a **60%-of-draft self-check** rather than a brief-time
+   warning, and it worked on its first outing — Ch.8's final 898 words came in at 20.0/1k.
+   The repair took **111 conjunctions** out of Ch.8, none of them from a spoken line.
+3. **Breath — gated, after two wrong implementations.** See below.
+
+### The breath gate, and why the obvious version of it was wrong
+
+The Ch.7 evaluator found that Ch.6 and Ch.7 were shorter-breathed than every author chapter
+and recommended gating sentence length. Measured **across the whole chapter** the finding
+looked enormous — Ch.6 and Ch.8 at medians of 8 and 7 against an author minimum of 10.
+
+It was almost entirely **dialogue share**. Everyone's dialogue is short, this author's
+included: his runs to a median of 6–10 words and puts up to 47% of its lines at six words or
+fewer. Ch.8 carries 201 spoken lines to 149 of narration, more than any chapter in the
+drafted five. **A gate on the un-split number would have told a writer to lengthen people's
+speech** — which would have flattened the twelve-voice ensemble that is Ch.8's whole texture.
+
+Split the registers and what survives is small, specific, and points in **opposite
+directions**: Ch.6 hit the median but under-reached on the long accumulating sentence (≥40w
+9.3% against his 11.5% floor); Ch.8 over-reached on that same metric (18.8%) and sat a point
+light on the median. That is not one habit.
+
+`style_check.py` now gates **narration only** — median ≥13.0, ≥40w ≥11.5%, ≤6w ≤33.0% — all
+calibrated with the gate's own tokenizer against the author's own narration. All five author
+chapters pass every threshold. The **dialogue:narration ratio is reported and deliberately
+not gated**: the author himself swings 0.44:1 to 1.16:1, so there is no band to defend.
+`PUNCH_CHAPTERS = {7}` is the one exemption and it was earned in the outline before the
+chapter was written.
+
+Ch.6 was repaired with four joins (≥40w 9.3% → 12.4%) using punctuation and conjunction only.
+Its `and` count went **down** in the process.
+
+⚠️ **Ch.8 now has no slack in any direction:** `and` 23.3 against a 24.0 ceiling, em-dash
+11.7 against 12.0, `the way` at exactly 5 of 5, narration median exactly 13.0 against a floor
+of 13, ≥40w 11.7% against a floor of 11.5%. Any later pass that shortens anything in Ch.8
+breaks a floor. Brief accordingly.
+
+### Two defects no gate could see, found by reading a diff
+
+- **Straight quotes.** The author's chapters are 100% typographic (reconstructed from his
+  PDF). Every pipeline chapter arrived mixed — Ch.6 was *mostly straight*, 193 straight
+  double quotes to 90 typographic. Ch.8's closing line, which must be character-identical to
+  the sentence it quotes from the top of the chapter, differed by one apostrophe. 370
+  characters converted across Ch.6–8; now gated.
+- **Semicolons.** The author uses **zero** across all five of his chapters. Two of the three
+  found in pipeline prose were *correct* — they sit inside a quoted psych report, and
+  institutional prose uses semicolons. The check exempts whole-italic paragraphs (this book's
+  convention for quoted documents) and **reports the exemption** rather than dropping it
+  silently. Ch.6 prints `2 semicolon(s) exempted inside quoted documents` and passes honestly.
+
 ## The two inventories — check every new chapter against BOTH
 
 Chapters 2–5 all drifted onto one closing figure because nothing was tracking the sequence.
 `book-architect` and `hook-craft` now carry the rules; these are the running tallies.
 
-**CLOSERS — seven chapters, seven shapes. No repeats, and Ch.2's is spent.**
+**CLOSERS — eight chapters, eight shapes. No repeats, and Ch.2's is spent.**
 
 | Ch | Closing move |
 |---|---|
@@ -108,27 +175,37 @@ Chapters 2–5 all drifted onto one closing figure because nothing was tracking 
 | 5 | a physical object handled in the dark |
 | 6 | a misdirected answer to a stranger |
 | 7 | the narration stops and hands the reader an unglossed found document |
+| 8 | the narrator re-reads a document **while writing its fourth instance himself** |
 
-**OPENINGS — and here is a live drift warning.** `book-architect` checks opening diversity but
-nothing was keeping a tally, so this is the same blind spot one step to the left:
+Ch.8 is deliberately close to Ch.7 and distinct in the move: Ch.7 hands over a raw block and
+stops; Ch.8 quotes one already-known sentence inside a scene, read by the man now adding to
+the file it came from. **Two document-shaped closers in a row is the limit — Ch.9 must not
+be a third.**
+
+**OPENINGS — the drift warning is cleared.**
 
 | Ch | Opening move |
 |---|---|
-| 2–5 | a retrospective framing statement (*"Gaia's friction with him came to a head on a mission that…"*) — four in a row |
+| 2–5 | a retrospective framing statement — four in a row |
 | 6 | a physical object in near-real-time (the visitor form) — the first break in that run |
-| 7 | **a raw administrative document** (the boots requisition) |
+| 7 | a raw administrative document (the boots requisition) |
+| 8 | **mid-transit, mid-argument, no scene-setting** (Goliath and the coffee) |
 
-⚠️ **Ch.6 and Ch.7 both open on an administrative form.** Mechanically different — Ch.6
-narrates one ironically, Ch.7 hands over the raw block — and both are mandated by the outline,
-and forms are genuinely this book's evidentiary medium. **But a third would be a pattern.**
-Ch.8's planned opening (mid-transit, Goliath and the coffee) clears it. Do not let that slip.
+Ch.6 and Ch.7 both opened on an administrative form and a third would have been a pattern.
+Ch.8's mid-transit open cleared it, as planned. Keep the tally going.
 
 ## Resume point
 
-1. **The chapter loop from Ch.7:** write → dialogue-polish → hook-craft → disruptor →
-   evaluate → quality gate. Commit per chapter.
-2. **Watch the rhythm numbers** `style_check.py` now prints. They are the early warning.
-3. Optional: the Ch.5 ending review, and the FOLLOW-UP items in `STATE.yaml` (the Aglaope
+1. **Finish Ch.8's loop.** It is drafted, complete at nine scenes, and mechanically clean.
+   Remaining: dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate. **Read the
+   "no slack" warning above before briefing any of them** — Ch.8 sits on four floors and
+   ceilings simultaneously, and a pass that shortens anything breaks one.
+2. **Then Ch.9 ("0200"):** write → dialogue-polish → hook-craft → disruptor → evaluate.
+   Its closer must not be document-shaped — Ch.7 and Ch.8 have spent that two chapters
+   running.
+3. **Watch the rhythm and breath numbers** `style_check.py` prints per chapter. They are the
+   early warning, and all three layers of THE SEAM were caught by reading them.
+4. Optional: the Ch.5 ending review, and the FOLLOW-UP items in `STATE.yaml` (the Aglaope
    metacognition line, Ch.2's chaos density). None block drafting.
 
 ## Worth the author's eye
