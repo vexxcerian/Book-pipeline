@@ -15,11 +15,17 @@
 
 meta:
   version: "1.0"
-  last_updated: "2026-09-07"
-  last_updated_by: "entity-tracker"
-  mode: "BUILD"
-  chapters_tracked: [1, 2, 3, 4, 5]
-  chapters_planned_not_tracked: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+  last_updated: "2026-09-09"
+  last_updated_by: "continuity-guardian (Ch.1-8 full-manuscript audit; UPDATE pass over a BUILD file)"
+  mode: "UPDATE"
+  chapters_tracked: [1, 2, 3, 4, 5, 6, 7, 8]
+  chapters_planned_not_tracked: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+  update_note: >-
+    2026-09-09 — Ch.6, Ch.7 and Ch.8 folded in by continuity-guardian during the Ch.1-8 audit.
+    Only entries where the manuscript is unambiguous were written. Everything the audit judged
+    to be a DEFECT in the prose was recorded under conflicts (CF-07..CF-14) and NOT written
+    into the entity facts. CF-04 is closed by Ch.6. Full findings:
+    evaluations/continuity/ch1-8-audit.md
   schema_extensions:
     # Declared so downstream skills know these are additions to schema v1.0, not core fields.
     - "planned:            top-level block for entities the outline creates but prose has NOT yet put on the page"
@@ -31,9 +37,9 @@ meta:
     RELATIVE ANCHORS ONLY. Series canon forbids pinning an absolute in-universe date to the
     page. Every temporal value in this file is expressed relative to Rx's death, Vexx's
     discharge, the gray room, or the previous chapter.
-  open_conflicts: 6
+  open_conflicts: 11   # CF-03, CF-05, CF-06 carried; CF-07..CF-14 added 2026-09-09; CF-01/02/04 resolved
   knowledge_gaps: 4
-  needs_review: 3   # characters.corwin, characters.man-in-civilian-dress, characters.richard-jameson.does_not_know[0]
+  needs_review: 2   # characters.man-in-civilian-dress, characters.richard-jameson.does_not_know[0]
 
 # ============================================================================================
 # CHARACTERS
@@ -165,6 +171,25 @@ characters:
       - fact: "tells the review officer 'I documented it in the field' about Corwin's physical evidence"
         used_in: "ch-04:p03"
         issue: "ch-03:p49 states he deliberately did NOT document the fragments. See objects.corwins-fragments conflict CF-02 — this is a contradiction, not merely a gap."
+    ch6_8_additions:
+      location_log:
+        - { chapter: 6, location: "rehabilitation-station", scene: "two days' personal leave, four hours' transit; the day room with Corwin; signed out on a retained visitor log in front of Voss", travel_noted: true }
+        - { chapter: 7, location: "vexxs-apartment", scene: "the kitchen trestle, 23:15 to gone 02:00, nine civilian archives; eggs he did not eat; forty minutes of furniture listings", travel_noted: false }
+        - { chapter: 8, location: "relay-station-plateau", scene: "insertion, the fuel shed, the plant house, the failed stack he owns on the net, the kitchen-table assessment, telling Merrick in eleven words, the corridor, the report", travel_noted: true }
+      knowledge_gained:
+        - { fact: "Corwin has recanted in full and believes the recantation — head injury, misread plating, his own side's recovery element mistaken for a strike team", learned: "ch-06:p110", method: "told_by:corwin" }
+        - { fact: "that one detail survives the recantation: a man came off his line under fire, knelt beside a body and put something in a hip pouch. Vexx's private reading — 'Nobody tidies in a firefight' — is that the dog tag was dropped, not planted", learned: "ch-06:p118", method: "inferred" }
+        - { fact: "that Corwin said 'fewer, not less' on Paladin's back on the way out of the jungle, and that Vexx heard it at the time and let it go past him", learned: "ch-06:p96", method: "remembered" }
+        - { fact: "that Corwin has a nine-year-old daughter and four letters that may never have left the building; that Vexx owes him an answer he has not delivered", learned: "ch-06:p56", method: "told_by:corwin" }
+        - { fact: "that a retained visitor log now carries his name beside Corwin's, and that Voss told him so", learned: "ch-06:p60", method: "told_by:voss" }
+        - { fact: "the name on the tag: HOLST, D. — Staff Sergeant Deric A. Holst, KIA, file closed seven years and four months ago", learned: "ch-07:p37", method: "discovered" }
+        - { fact: "that identification tags on that serial were issued NEW to Holst eleven months after his file closed, routing MD 4 SUB. RECLAMATION", learned: "ch-07:p45", method: "discovered" }
+        - { fact: "that Rx misremembered a shared childhood detail (a tin roof that was concrete) and covered it, and that Vexx said nothing", learned: "ch-07:p20", method: "witnessed" }
+        - { fact: "that Spector has independently clocked Rx running hot on 'unstable' and 'refused'; that there is a third word; that Spector went to Goliath rather than to maintenance or to Vexx", learned: "ch-08:p196", method: "told_by:goliath" }
+      knowledge_NOT_gained:
+        - { fact: "the third word Spector named. Goliath offered it and Vexx did not answer.", source: "ch-08:p198", constraint: "No chapter after Ch.8 may assume he holds it until it is delivered on the page." }
+        - { fact: "the contents of Merrick's notebook. It is on his desk, unopened, at the end of Ch.8.", source: "ch-08:p192" }
+        - { fact: "who filed the third concern against Merrick. Voss did not say; Gaia narrowed it to the north shift and no further.", source: "ch-08:p26, ch-08:p162" }
     arc_notes: "Recruited back into the program that killed his twin, builds and commands its first rebuilt cell, and by the end of Ch.5 has begun a private evidence file and said his suspicion out loud to exactly one person. Series canon: Book One is a descent — careful to compromised to complicit — ending on suspicion, not revelation."
 
   rx:
@@ -226,6 +251,23 @@ characters:
         source: "ch-04:p39"
         mechanism: "sealed — 'Something in me won't let me get close enough to look.' Narration (ch-01:p42) calls it a wound scarred over so completely that even its owner lost the shape of it"
         note: "Series canon: Rx refused a Choosing order from Jameson and was killed by Jameson personally as a cleanup action disguised as hostile contact. Rx has NO access to this in the drafted material."
+    ch6_8_additions:
+      behaviour:
+        - { fact: "went wholly silent for the length of the Corwin visit and had been silent since the corridor. No explanation offered, none asked for", source: "ch-06:p46" }
+        - { fact: "designed the Holst search to be lawful and untraceable — public materiel indexes, three veterans' registries, a university memorial archive; ticked 'researcher' on the form himself", source: "ch-07:p12" }
+        - { fact: "produced a FALSE shared memory (rain on a tin roof, the second barracks, the summer they were fifteen), broke off mid-simile and covered with 'Queue's moved.' The barracks roof had been concrete", source: "ch-07:p20" }
+        - { fact: "pre-empts Vexx's conclusion twice — 'That's the whole of it. It isn't evidence of anything' and 'This isn't buried... Nobody hid this' — and reads the issue date aloud a second time, unasked", source: "ch-07:p33" }
+        - { fact: "keeps an unrequested tally of Vexx's shooting: 'seventeen of thirty on the moving plates this month. I keep it. Nobody's asked me to keep it. I don't know what I keep it for.'", source: "ch-07:p48" }
+        - { fact: "saw Vexx type four letters of their shared surname into a civilian casualty archive and said 'I didn't see that' — then repeated Vexx's denial back at him at exactly his normal speed", source: "ch-07:p52" }
+        - { fact: "in Ch.8 he is flat, useful and unremarkable — reads a hydrology annex for an evening and jokes about it. The chapter deliberately gives him no plot function", source: "ch-08:p32" }
+      note: >-
+        NO UNLOCK STAGE IS SPENT IN Ch.6-8. See memory_unlock_ladder.ch6_8_audit_2026_09_09,
+        including the standing caution on the ch-07 confabulation.
+      signature_tic_status: >-
+        The too-quick denial ('Fine.' / 'I'm fine, Vexx.') — Rx's ONE reserved device per
+        character-bible TIC BUDGET — does not appear at all in Ch.6, 7 or 8. The bible requires
+        it to BREAK in Ch.13 and never be smooth again, which needs at least one clean use
+        still standing between here and there. Flagged for the writer, not corrected here.
     arc_notes: "Alive as an AI; the seal is degrading on schedule. Stages 1 and 2 spent in the drafted chapters. He is aware he is carrying something and has told Vexx he is 'working on being ready'."
 
   richard-jameson:
@@ -328,6 +370,14 @@ characters:
       - { fact: "that Vexx has asked her not to tell the rest of the cell yet", learned: "ch-05:p31", method: "told_by:vexxcerian" }
     does_not_know:
       - { fact: "the specifics — Vexx withheld the dog tag by name and did not repeat Rx's memory fragments in full", source: "ch-05:p32" }
+    ch6_8_additions:
+      facts:
+        - { fact: "Corwin never got her name and asks Vexx to tell her that he asked. Vexx promises twice and the promise is not shown being kept", source: "ch-06:p60" }
+        - { fact: "stood six metres off the plant house door in the wind for the whole of the Merrick interview — not looking in, not coming in, not going anywhere else — and was still there when the last of them came out", source: "ch-08:p66" }
+        - { fact: "came into the notebook search halfway through without being called and started at the far end", source: "ch-08:p144" }
+        - { fact: "assessment contribution: 'He's not frightened of us. He's been waiting for somebody to come. He doesn't know what for.' Plus the detail nobody else had — he asked her twice about a medical berth before anyone had told him there was a transport", source: "ch-08:p328" }
+        - { fact: "on the transport, to nobody: the boy put his hand out for the thermos twice before he took it, and he had not been reaching for the thermos", source: "ch-08:p110" }
+        - { fact: "found Merrick's notebook behind the fuse box on the shelf brackets, in a place she had already looked twice, and put it on Vexx's desk without comment", source: "ch-08:p192" }
     arc_notes: "The confidante beat is spent in Ch.5. Series canon: alive at the end of Book One, knowing Vexx's suspicion in outline but not the evidence."
 
   goliath:
@@ -372,6 +422,14 @@ characters:
       - { fact: "the burned camp's charge pattern was laid by someone who does this for a living, not by panic", learned: "ch-03:p18", method: "discovered" }
     does_not_know:
       - { fact: "the handwritten line on Phantom's donor consent form — Vexx read it and deliberately did not tell him", source: "ch-02:p35" }
+    ch6_8_additions:
+      facts:
+        - { fact: "sustained comic feud about scale in the dropship heating element; 'six weeks of you telling me about scale' (Gaia); 'It's been the water since August'", source: "ch-08:p04" }
+        - { fact: "cleared the fuel shed on his knees in the wind for twenty-two minutes and it produced nothing, and he said the shed was fine when Spector made him say it", source: "ch-08:p78" }
+        - { fact: "took the boy off Paladin's weapon with a forearm and took the forearm off him again inside two seconds; afterwards picked the thermos up, screwed the lid back on and stood it upright on the step where the boy would find it", source: "ch-08:p92" }
+        - { fact: "'I don't work the second kind of job. A charge set to do a job, and a charge set to make a point. This is the first kind. That doesn't make me want it.'", source: "ch-08:p164" }
+        - { fact: "found Paladin breaking down in the relay-hall corridor and said nothing at all — put him to work holding a door while he freed the hinge pin with the fuel-shed spanner, then coiled the chain and hung it up", source: "ch-08:p190" }
+        - { fact: "carried Spector's observation about Rx to Vexx himself, plainly, once, in a corridor, over two cups off the urn; asked one question and let the non-answer stand", source: "ch-08:p196" }
     arc_notes: "Series canon: alive at the end of Book One, knowing Phantom's name and suspecting the homeworld connection."
 
   gaia:
@@ -446,6 +504,15 @@ characters:
       - { fact: "that Reyes was flagged on a redacted psych file for a pattern of escalating aggression, not for an act", learned: "ch-04:p22", method: "told_by:vexxcerian" }
     does_not_know:
       - { fact: "anything of the Rx thread. Series canon: he knows nothing of it at the end of Book One", source: "series-bible" }
+    ch6_8_additions:
+      facts:
+        - { fact: "a right hand that was worse on Tuesday; Bastion body-checks it in the bay and tells him not to carry the door plate on that side", source: "ch-08:p42" }
+        - { fact: "has worked the same eleven minutes of the same stringed-instrument training file since the middle of the summer, and has not got bar three clean", source: "ch-08:p54" }
+        - { fact: "his weapon came up on the boy in the relay hall and stopped before it was all the way up. 'His voice was fine. The rest of him was not doing anything at all.'", source: "ch-08:p88" }
+        - { fact: "objected to the Merrick assessment and would not be talked out of it; his objection went into the report in his own words, four sentences, unshortened, over his own refusal to have his name on it", source: "ch-08:p148" }
+        - { fact: "was the nearest man on the ramp by chance and promised Merrick he would tell Tomas", source: "ch-08:p155" }
+        - { fact: "broke down alone in the relay-hall corridor the next morning, on the step where the boy had sat. Vexx saw it, did not pick up the bag, and did not speak. Goliath found him and neither man mentioned it", source: "ch-08:p188" }
+      count_note: "'It was the third time Paladin had said no in a room like that' (ch-08:p304) — consistent with ch-02:p57 ('I'd just like it written down somewhere that I said no first') and ch-04:p20 (Reyes)."
     arc_notes: "The moral pressure test, deliberately arrested in Book One. Escalation reserved for Book Two."
 
   zeus:
@@ -513,6 +580,13 @@ characters:
     knowledge:
       - { fact: "that his donor was called Phantom, though he does not know whether that was ever official", learned: "before ch-02:p38", method: "inferred" }
       - { fact: "that Goliath's homeworld was saved by a lone Spartan the townsfolk called Ghost or Phantom", learned: "ch-02:p41", method: "told_by:goliath" }
+    ch6_8_additions:
+      facts:
+        - { fact: "took the fuel-shed seals one at a time through Goliath's interface, in order, counting them out — 'One, two, three, four — four drums, four seals, four intact'", source: "ch-08:p78" }
+        - { fact: "made Goliath say the shed was fine out loud: 'Twenty-two minutes is what it costs to be able to say the shed is fine. Say it.'", source: "ch-08:p80" }
+        - { fact: "has been quietly measuring Rx's interface latency across mission traffic and identified a handful of words he runs hot on. Gave Goliath three; Goliath retained two — 'unstable' and 'refused'", source: "ch-08:p196" }
+        - { fact: "chose NOT to route it through maintenance telemetry and NOT to take it to Vexx directly. He went to his own operator and asked for it to be said once", source: "ch-08:p196" }
+      note: "Ch.8 is the first time an AI other than Rx does anything plot-bearing. See secrets.rx-runs-hot-on-certain-words."
     arc_notes: "Character bible: he is holding a memory that was not his to give away, gave it away anyway, and is not sure that was allowed."
 
   echo:
@@ -615,6 +689,13 @@ characters:
       - { fact: "that command considers Vexx the proof of concept for the whole pairing program", learned: "ch-02:p17", method: "discovered" }
     does_not_know:
       - { fact: "why Vexx wanted the fragments. She asked nothing", source: "ch-04:p08" }
+    ch6_8_additions:
+      facts:
+        - { fact: "was at Corwin's rehabilitation track, in civilian clothes, with a folder of transfer authorisations, holding the sign-out pad, on the same afternoon Vexx visited. Never explained", source: "ch-06:p230" }
+        - { fact: "let Vexx's improvised cover story ('welfare visit... it reads well in the quarterly') die without comment and answered a fact instead: 'Visitor log's retained. Two years.'", source: "ch-06:p250" }
+        - { fact: "at the doors, without looking up: 'He's allowed three visitors a month. You're the first.'", source: "ch-06:p258" }
+        - { fact: "countersigned nothing and stopped nothing. Second time she has knowingly let Vexx do something and declined to intervene", source: "ch-06:p250" }
+        - { fact: "on the Merrick packet, asked who filed the third concern: 'the packet did not say. She said it in the voice of a woman confirming that a thing was not in a file rather than the voice of a woman who did not know'", source: "ch-08:p26" }
     arc_notes: "Series canon: alive; the one institutional ally, motive unexplained until Ch.19 (planned)."
 
   corwin:
@@ -657,13 +738,33 @@ characters:
           plausibly have heard it' (ch-03:p29) — and never supplies an acquisition path in the
           drafted material. Recorded as a deliberate open question rather than a defect, but
           no answer exists on the page.
-    needs_review: true
-    review_note: >-
-      character-bible.md assigns Corwin a reflexive grammar-correction device and a daughter he
-      never stops asking about, and gives a Ch.3 sample line ('Fewer. There were fewer of them
-      than the report says, not less.'). NEITHER appears in the drafted Ch.3. The bible's stated
-      design — 'the reader identifies him by a habit in Ch.3 and identifies his destruction by
-      that habit's absence in Ch.19' — has no Ch.3 anchor in the current prose. See CF-04.
+    ch6_additions:
+      physical:
+        - { value: "weight back on; the face has corners in it and colour; the eyes have come forward; hair clipped without much interest in the result; soft grey clothes", source: "ch-06:p48" }
+        - { value: "handshake measurably better than in the jungle", source: "ch-06:p224" }
+      traits:
+        - { trait: "the grammar-correction reflex, now on the page — 'Were.' 'It came out of Corwin flat and fast, like a hand going out after a dropped cup', and he is embarrassed by the reflex rather than by the grammar", source: "ch-06:p88", mutable: false }
+        - { trait: "the Ch.3 anchor supplied as memory: on Paladin's back at two in the morning, 'There were fewer of them than the report says. Not less.' Never written down", source: "ch-06:p96", mutable: false }
+        - { trait: "has a nine-year-old daughter; four letters written, none confirmed sent; asks only whether a letter WENT, not what came back", source: "ch-06:p56", mutable: false }
+        - { trait: "will not say his AI's name inside the facility, because it is in the file under a heading and would count as a symptom", source: "ch-06:p52", mutable: false }
+        - { trait: "retains exactly one detail he cannot let go of — a man kneeling by a body under fire to put something in a hip pouch — and disowns it the moment Vexx presses for specifics", source: "ch-06:p112", mutable: true }
+      recantation:
+        content: >-
+          Head injury from a helmet-seal fracture logged only as impact; two days drinking off
+          leaves; the recovery element that came in was UNSC and he mistook it for the strike
+          team that killed his squad; he charged their stores and put his boot through the array
+          and evaded them for eight days; the 'modified plating' was ordinary plating burned by
+          plasma contact; the UNSC shorthand was UNSC shorthand because they were UNSC.
+        source: "ch-06:p110"
+        holds_it_sincerely: true
+        evidence_he_cites: "the recovery element's log, the medical, the timeline put in front of him twice by two people with no reason to agree, and the fact that nobody there has argued with him once"
+        vexx_does_not_believe_it: "ch-06:p120"
+      location_log_addition:
+        - { chapter: 6, location: "rehabilitation-station", scene: "the day room, six weeks in, lucid and well and grateful", travel_noted: false }
+      knowledge_addition:
+        - { fact: "that his own account was wrong and that holding to it against the record is the illness", learned: "before ch-06:p110", method: "told_by:institution" }
+        - { fact: "that Aglaope's name is Aglaope", learned: "ch-06:p60", method: "told_by:vexxcerian" }
+      note: "CF-04 CLOSED by this chapter. needs_review cleared 2026-09-09."
     arc_notes: "Series canon: alive at the end of Book One, reassigned to a rehabilitation track, holding a truth nobody believes. Not killed — edited."
 
   reyes:
@@ -777,6 +878,155 @@ characters:
       - { fact: "the cover story only — classified operation, details need-to-know, served with distinction", learned: "before ch-01:p17", method: "told_by:unknown" }
     arc_notes: "Delivery mechanism for the cover story. Not tracked beyond Ch.1."
 
+  # ---------------------------------------------------------------- INTRODUCED IN Ch.6-8
+  merrick:
+    canonical_name: "Merrick"
+    aliases: []
+    importance: "supporting"
+    on_page: "Ch.8 only (introduced ch-08:p50)"
+    physical:
+      distinguishing:
+        - { value: "a big man gone slightly loose at the edges; SPARTAN-II in station coveralls with the sleeves pushed up", source: "ch-08:p50" }
+        - { value: "clean, shaved, hair cut inside the fortnight, boots done", source: "ch-08:p50" }
+    traits:
+      - { trait: "SPARTAN-II; station commander's technical hand at an unnamed relay/weather station on a plateau; has run its watch rotation for eleven months", source: "ch-08:p133", mutable: false }
+      - { trait: "competent throughout — the bus-bar diagnosis, the runoff sheets, the rotation recited from memory are all accurate", source: "ch-08:p153", mutable: false }
+      - { trait: "involuntary self-echo: repeats his own last three words, flat and quieter, aimed at nothing. NOT a technique; a symptom. Reserved to him alone by character-bible.md TIC BUDGET", source: "ch-08:p54", mutable: false }
+      - { trait: "addresses two absent men — Ivo (real, rotated out at the start of winter) and Tomas (on no roster). Names Tomas on a two-man rotation that has three men in it", source: "ch-08:p136", mutable: false }
+      - { trait: "keeps a book, has kept one for years; the book is not in the drawer and is not found by the cell", source: "ch-08:p140", mutable: true }
+      - { trait: "has not slept properly since October; sleeps four or five hours; goes to the plant alarm himself at all hours", source: "ch-08:p130", mutable: true }
+      - { trait: "declined two rotations home, within his rights on both", source: "ch-08:p13", mutable: false }
+      - { trait: "carried a man down off the north ridge in October with a broken hip, in four hours, and does not talk about it", source: "ch-08:p162", mutable: false }
+    voice_markers: { ref: "character-bible.md#merrick (TIC BUDGET tic-bearer adjunct: involuntary self-echo)" }
+    relationships:
+      zeus: { type: "assessed by him over one hour forty minutes in the plant house", established: "ch-08:p113", current_status: "assessment correct; Zeus never says a name and never looks at the door" }
+      vexxcerian: { type: "told, in eleven words, that he is relieved", established: "ch-08:p175", current_status: "removed from field, non-lethal" }
+      paladin: { type: "objected to the assessment; was the nearest man on the ramp and was asked to tell Tomas", established: "ch-08:p155", current_status: "promised to tell him" }
+      aglaope: { type: "stood six metres off the plant house door and did not come in; later recovered his notebook", established: "ch-08:p66", current_status: "-" }
+    location_log:
+      - { chapter: 8, location: "relay-station-plateau", scene: "plant house, then round the station, then the ramp", travel_noted: false }
+      - { chapter: 8, location: "off-page", scene: "removed from field on a medical track, escort of two, unrestrained", travel_noted: true }
+    knowledge:
+      - { fact: "that readiness people were expected next month, not now", learned: "before ch-08:p52", method: "told_by:unknown" }
+      - { fact: "that he is being relieved", learned: "ch-08:p175", method: "told_by:vexxcerian" }
+      - { fact: "nothing of the Rx thread, the Corwin thread, or Valkyr by name", learned: "n/a", method: "inferred" }
+    arc_notes: >-
+      THE BASELINE CASE. Series-bible and outline:ch-08 both require that he genuinely IS
+      coming apart and is NOT a conspiracy victim. Nothing in the drafted chapter undermines
+      that. Alive at the end of Book One, on a medical track. Fate beyond Ch.8 not established.
+
+  tomas:
+    canonical_name: "Tomas"
+    aliases: []
+    importance: "mentioned_only"
+    on_page: "Ch.8 — named four times, never appears, never speaks"
+    traits:
+      - { trait: "placed by Merrick on the north shift 'since the summer'; Merrick cannot answer what he was doing before the summer", source: "ch-08:p136", mutable: false }
+      - { trait: "on no roster. The rotation is a two-man rotation with three men in it", source: "ch-08:p120", mutable: false }
+      - { trait: "the last words Merrick speaks on the page are to him", source: "ch-08:p182", mutable: false }
+    knowledge: []
+    arc_notes: >-
+      DELIBERATELY UNRESOLVED. The prose never establishes whether Tomas is dead, never
+      existed, or is a name displaced from somewhere else, and no character can identify him.
+      Do NOT let a later chapter resolve him casually; outline:ch-08 specifies 'somebody named
+      Tomas whom no one can identify.'
+
+  ivo:
+    canonical_name: "Ivo"
+    aliases: []
+    importance: "mentioned_only"
+    on_page: "Ch.8 — named twice, never appears"
+    traits:
+      - { trait: "real. Was on the north shift; rotated out at the start of the winter; Merrick signed the transit himself and knows it", source: "ch-08:p56", mutable: false }
+    knowledge: []
+    arc_notes: "The control case against Tomas — Merrick's error with Ivo is recoverable and he recovers it. Tomas is the one he cannot."
+
+  hallam:
+    canonical_name: "Hallam"
+    aliases: ["the crew chief"]
+    importance: "minor"
+    on_page: "Ch.8 — named twice, never speaks except to call eight minutes"
+    traits:
+      - { trait: "dropship crew chief on the insertion run. Gaia thanks him by name, every time, to a man Vexx had not known had a name", source: "ch-08:p72", mutable: false }
+    knowledge: []
+    arc_notes: >-
+      Used twice, deliberately: the second use is Gaia saying 'Thanks, Hallam' to a DIFFERENT
+      crew, out of habit, to nobody who could hear her (ch-08:p186). Do not spend a third.
+
+  relay-station-commander:
+    canonical_name: "the station commander (unnamed)"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.8"
+    traits:
+      - { trait: "came out onto the step in a jacket he had not fastened; shook six gloved hands; decided not to ask what 'routine welfare and readiness' meant", source: "ch-08:p84", mutable: false }
+      - { trait: "put the eleventh name on the board as 'R/H - MERRICK' when Merrick was in the plant house — the clerical error that causes the failed stack", source: "ch-08:p172", mutable: false }
+      - { trait: "told plainly and once that he was not required at the kitchen-table assessment", source: "ch-08:p104", mutable: false }
+      - { trait: "went inside after Merrick's goodbye and did not come out again", source: "ch-08:p178", mutable: false }
+    knowledge:
+      - { fact: "that the cell is 'readiness people'; not that it is Valkyr, not that a Choosing authorisation was live", learned: "ch-08:p84", method: "told_by:vexxcerian" }
+    arc_notes: "Not tracked beyond Ch.8."
+
+  relay-hall-boy:
+    canonical_name: "the boy in the relay hall (unnamed)"
+    aliases: ["the kid"]
+    importance: "minor"
+    on_page: "Ch.8"
+    physical:
+      distinguishing:
+        - { value: "nineteen; a fleece with the station patch on the shoulder; a lamp in one hand and a thermos in the other", source: "ch-08:p88" }
+    traits:
+      - { trait: "walked into a four-man stack through the unwatched second door and got most of the way through the word 'sorry' before Paladin's weapon came up", source: "ch-08:p88", mutable: false }
+      - { trait: "said he was fine, that he had been told about the exercise, that nobody had told him about the exercise", source: "ch-08:p96", mutable: false }
+      - { trait: "put his hand out for the thermos twice before he took it, and was not reaching for the thermos (Aglaope's observation)", source: "ch-08:p110", mutable: false }
+    knowledge: []
+    arc_notes: "Uninjured. Not tracked beyond Ch.8. His step is where Paladin breaks down the next morning."
+
+  rehab-clinician:
+    canonical_name: "the clinician (unnamed)"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.6"
+    traits:
+      - { trait: "runs the day-room trolley; genuinely kind; still not over the good chairs being moved to the second floor in April without her", source: "ch-06:p32", mutable: false }
+      - { trait: "has the sentence 'Family contact is reviewed each cycle, Mr. Corwin. It's in review' ready before the question arrives. Not lying, not unkind, and not saying it for the first or second time", source: "ch-06:p60", mutable: false }
+    knowledge:
+      - { fact: "that Corwin has written letters and that family contact is under review", learned: "before ch-06:p60", method: "institutional" }
+    arc_notes: "The decency of the facility is the point; she must never be made sinister. Not tracked beyond Ch.6."
+
+  corwins-daughter:
+    canonical_name: "Corwin's daughter (unnamed)"
+    aliases: ["a girl. Mine."]
+    importance: "mentioned_only"
+    on_page: "Ch.6 — referred to, never appears, never named"
+    traits:
+      - { trait: "nine. Corwin says the number the way a man says a thing he has checked", source: "ch-06:p56", mutable: false }
+      - { trait: "her mother has heard nothing from anybody; Corwin's contact list was taken on admission as standard", source: "ch-06:p56", mutable: false }
+      - { trait: "Corwin has written four letters and does not know whether any of them left the building", source: "ch-06:p56", mutable: false }
+    knowledge: []
+    arc_notes: >-
+      PROMOTED FROM planned: 2026-09-09. Delivered in Ch.6 exactly as foundation/character-bible
+      specify. Corwin asks only whether a letter WENT, not what came back. Vexx says 'I'll ask'
+      and the debt is never paid on the page through Ch.8 — see objects.corwins-letters.
+
+  deric-holst:
+    canonical_name: "HOLST, D."
+    aliases: ["Staff Sergeant Deric A. Holst", "HOLST, D. A."]
+    importance: "mentioned_only"
+    on_page: "Ch.7 — a stamped name and two archive lines. NEVER APPEARS, NEVER SPEAKS"
+    traits:
+      - { trait: "Staff Sergeant, 11th Shock Troops Battalion", source: "ch-07:p37", mutable: false }
+      - { trait: "STATUS: KILLED IN ACTION. REMAINS NOT RECOVERED. NEXT OF KIN NOTIFIED. FILE CLOSED", source: "ch-07:p37", mutable: false }
+      - { trait: "dead seven years and four months as of Ch.7", source: "ch-07:p38", mutable: false }
+      - { trait: "his identification tags (set of two, condition NEW) and a torso plate were ISSUED TO HIM eleven months AFTER his file closed, routing MD 4, SUB. RECLAMATION", source: "ch-07:p45", mutable: false }
+      - { trait: "his service number comes back absent from every service-record query; the veterans' indexes hold no Holst at all", source: "ch-07:p26", mutable: false }
+      - { trait: "somebody wrote 'photo?' in pencil in the margin beside his casualty entry, and the pencil scanned with the page", source: "ch-07:p37", mutable: false }
+    knowledge: []
+    arc_notes: >-
+      PROMOTED FROM planned: 2026-09-09. Series-bible constraint holds and is honoured by the
+      prose: he is a name in the records and is never given a voice. The chapter also does NOT
+      gloss RECLAMATION, per outline:ch-07 writer_constraint.
+
 # ============================================================================================
 # LOCATIONS
 # ============================================================================================
@@ -850,6 +1100,52 @@ locations:
       - { fact: "sun too bright for the occasion; a chaplain speaking about sacrifice and duty", source: "ch-01:p22" }
     distances: []
 
+  rehabilitation-station:
+    canonical_name: "the rehabilitation track (unnamed converted agricultural station)"
+    aliases: ["the station", "the track", "this building"]
+    facts:
+      - { fact: "a converted agricultural station on a slope above a river valley; four low buildings, whitewashed within the last year; an orchard on the south side pruned back hard for winter; a track down to a pump house", source: "ch-06:p14" }
+      - { fact: "a double row of saplings along the drive, staked and tied, worth nothing as shade for fifteen years", source: "ch-06:p14" }
+      - { fact: "gate stands open; the guard post beside it is empty and its step has leaf litter on it; the day-room door is not locked", source: "ch-06:p16" }
+      - { fact: "good coffee in a glass pot on a corridor warmer, on the same contract as the district hospital; a bowl of apples with a HELP YOURSELF card; a real plant on the windowsill", source: "ch-06:p20" }
+      - { fact: "day room has windows on two sides, a radio at the far end, a card table with a jigsaw; the good chairs were moved to the second floor in April", source: "ch-06:p28" }
+      - { fact: "residents' contact lists are taken on admission as standard; family contact is 'reviewed each cycle'", source: "ch-06:p56" }
+      - { fact: "three visitors a month permitted. Vexx is the first Corwin has had", source: "ch-06:p60" }
+      - { fact: "the visitor sign-out log is retained two years", source: "ch-06:p60" }
+      - { fact: "a dog that belongs to nobody comes up from the valley on Tuesdays", source: "ch-06:p66" }
+    distances:
+      - { to: "the-facility", value: "four hours on a civilian transit line with two changes, the second at a market town; then a walk down to a transit shelter at the bottom of the hill", source: "ch-06:p06" }
+    note: "Its DECENCY is the horror. Series/outline constraint: it may never be made sinister, and nothing in Ch.6 makes it so."
+  relay-station-plateau:
+    canonical_name: "the relay station on the plateau (unnamed)"
+    aliases: ["the station", "a weather station"]
+    facts:
+      - { fact: "top of a long gravel apron on a plateau the colour of wet ash; no cover for eight hundred metres in any direction; wind fast enough to make the mast guys sing", source: "ch-08:p74" }
+      - { fact: "four buildings and a mast: a fuel shed, a plant house, an accommodation block, and the relay hall - the only building with a proper door and no window", source: "ch-08:p74" }
+      - { fact: "garrison of eleven including Merrick, on a two-man watch rotation; a north shift; a changeover on the sixteenth", source: "ch-08:p90" }
+      - { fact: "ground frozen; February is the reference month for both the dark hours and the plate-lifting job", source: "ch-08:p138" }
+      - { fact: "the relay hall has a near door (opens out, chained back on the hinge side) and a second door at the far corner; a service corridor two metres wide runs between them", source: "ch-08:p172" }
+      - { fact: "the fuel shed holds four drums with four intact seals, a dry bund, and a spanner on the floor", source: "ch-08:p78" }
+      - { fact: "the station has adopted and lost and re-adopted a dog", source: "ch-08:p124" }
+    distances: []
+  kettle-ridge:
+    canonical_name: "Kettle"
+    aliases: ["the north ridge"]
+    facts:
+      - { fact: "the ridge on the north side of the relay station. Named by Echo, on the net, for the noise it makes; the name is used by the cell thereafter as if agreed", source: "ch-08:p76" }
+      - { fact: "the noise runs about eleven seconds, drops, and comes again", source: "ch-08:p82" }
+      - { fact: "Merrick carried a man down off it in October with a broken hip, in four hours", source: "ch-08:p162" }
+      - { fact: "the transport out goes through a col beyond it and makes a different noise that nobody names", source: "ch-08:p184" }
+    distances: []
+    note: "ECHO's device (naming a thing then using the name as if agreed) - correct owner per character-bible TIC BUDGET."
+  hallows-bottom:
+    canonical_name: "Hallow's Bottom"
+    aliases: []
+    facts:
+      - { fact: "a stop on the civilian transit line out to Corwin's rehabilitation track. Rx reads it off the timetable and tells Vexx he has seen it. Never visited", source: "ch-06:p12" }
+    distances: []
+    note: "The only proper place name spoken in Ch.1-8. It is a joke on a timetable, not a setting."
+
 # ============================================================================================
 # TIMELINE — RELATIVE ANCHORS ONLY. No absolute in-universe date may be pinned (series canon).
 # ============================================================================================
@@ -899,6 +1195,35 @@ timeline:
       Jameson has slept certain 'for four years' — see CF-01. The five drafted chapters cover
       roughly six to eight months from the gray room, all inside a single autumn from Ch.2 on.
 
+  - chapter: 6
+    time: "two days' personal leave. Corwin is 'six weeks into a rehabilitation track'; the jungle was 'nine weeks earlier', stated three times. Four hours' transit out, one afternoon in the day room, the transit shelter at the end of it"
+    season: "winter (orchard pruned back hard for winter; windfalls rotting in the grass; cold through the window). The clinician refers back to April and to spring as past"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      CONFLICT CF-08. Ch.4 puts the Reyes mission at jungle+9 weeks and Ch.5 falls after that,
+      so a Ch.6 dated at jungle+9 weeks collides with Ch.4 and lands at or before Ch.5 rather
+      than after it. Ch.6's own arithmetic is internally clean (debrief at +3 weeks -> rehab
+      intake -> six weeks in = +9). The squeeze is between chapters, not inside Ch.6.
+  - chapter: 7
+    time: "a single night at the kitchen trestle, from a quarter past eleven to a little after two. Explicitly 'two months' after the Ch.4 kitchen-table serial run, which places it after Ch.6"
+    season: "autumn/winter. 'He had been at this since the summer' (the furniture listings); the archive subscription lapses at the end of the month"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      Internal spans: nine minutes in a queue; four five-year date ranges to cover twenty years;
+      a nineteen-minute materiel search. Holst dead 'seven years and four months'; his equipment
+      issued 'eleven months after the file closed.' Holst's death therefore predates Rx's by
+      roughly three years - no conflict with the four-year gap.
+  - chapter: 8
+    time: "one deployment across two days plus the return: transit -> insertion -> the fuel shed (22 min) -> Merrick in the plant house -> the failed stack at 14:14 -> Zeus's assessment (1h40m) -> the kitchen at 23:00 -> the transport at 06:30 -> the corridor a little after 07:00 -> Goliath at 16:30 -> a 50-minute report. Anchored to Ch.5 by 'a corridor argument seven weeks earlier'"
+    season: "deep winter, before February. Merrick refers forward to February twice and to 'before spring'; Ivo rotated out 'at the start of the winter'; Merrick has not slept since October; Tomas has been on the north shift 'since the summer'"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      CONFLICT CF-07 (deployment number) and CF-09 (the apron head-count). Also carries the
+      cell's own elapsed-time markers: 'six weeks of you telling me about scale' (Goliath's
+      coffee feud), 'since August' (the urn), 'since the middle of the summer' (Paladin's
+      instrument file), and the narrator's 'somewhere in the first year' for the cell's
+      cohesion - all consistent with a cell formed the previous late summer/autumn.
+
 # ============================================================================================
 # OBJECTS — the physical evidence chain is the spine of this book. Tracked in detail.
 # ============================================================================================
@@ -907,7 +1232,7 @@ objects:
     introduced: "ch-03:p35"
     description: "The group term for the physical evidence Corwin retained from the ambush: a modified armour plate, a half-melted data chip, and a dented dog tag. Corwin's own summary: 'Enough to know I'm not crazy. Not enough to matter to anyone who could actually do something about it.'"
     status: "chekhov_open"
-    last_mentioned: "ch-05:p37"
+    last_mentioned: "ch-07:p50"
     resolution: null
     chain_of_custody:
       - { stage: 1, holder: "corwin", where: "in the operator's own gear, in the jungle", source: "ch-03:p49" }
@@ -915,6 +1240,7 @@ objects:
       - { stage: 3, holder: "vexxcerian", where: "released to him two days after the debrief on an authorization tied to his own cell, via a favour from Voss", source: "ch-04:p08" }
       - { stage: 4, holder: "vexxcerian", where: "spread across his kitchen table, alone, that night", source: "ch-04:p09" }
       - { stage: 5, holder: "vexxcerian", where: "a drawer in his apartment / beside his bed", source: "ch-04:p22" }
+      - { stage: 6, holder: "vexxcerian", where: "the kitchen trestle, under a lamp, across a night of civilian-archive searching. Vexx's own summary of his exposure: 'an armour fragment nobody had signed back into evidence lock, a tag with a dead man's name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle'", source: "ch-07:p50", note: "The half-melted data chip is NOT named in that inventory. Recorded, not corrected — see CF-12." }
     handled_by: ["corwin", "corwin-review-officer (reviewed)", "voss (released)", "vexxcerian", "rx (ran the serial)"]
     conflict:
       - id: "CF-02"
@@ -949,10 +1275,16 @@ objects:
     proves: "that someone whose record does not exist was physically present at the ambush"
     does_not_prove: "who, or on whose orders. Resolving further needs a records system Rx does not have access to, and pulling that access would leave a trail (ch-04:p13). Vexx declined the risk: 'Not yet.'"
     chain_of_custody: "see corwins-fragments"
-    planned_developments:
-      - { fact: "the stamped name is HOLST, D.", source: "outline:ch-07", status: "NOT ON THE PAGE" }
-      - { fact: "Holst was logged KIA seven years before Corwin's ambush; the equipment was reissued eleven months after his death, routing through RECLAMATION", source: "outline:ch-07", status: "NOT ON THE PAGE" }
-      - { fact: "the tag was DROPPED, not planted — it fell off someone who came back for it and missed ('He was tidying')", source: "outline:ch-06", status: "NOT ON THE PAGE" }
+    developments:
+      - { fact: "the stamped name is HOLST, D. — stamped rather than etched, the D worn shallower than the rest. Vexx has been reading it under a lamp at an angle for weeks", source: "ch-07:p24", status: "ON THE PAGE" }
+      - { fact: "Staff Sergeant Deric A. Holst, 11th Shock Troops Battalion, KILLED IN ACTION, REMAINS NOT RECOVERED, FILE CLOSED — dead seven years and four months", source: "ch-07:p37", status: "ON THE PAGE" }
+      - { fact: "a materiel issue record puts the same serial on a NEW set of identification tags and a torso plate issued to Holst ELEVEN MONTHS AFTER the file closed, routing MD 4, SUB. RECLAMATION", source: "ch-07:p45", status: "ON THE PAGE" }
+      - { fact: "the tag was DROPPED, not planted — Corwin's surviving detail is a man coming off his line under fire to kneel by a body and put something in a hip pouch. Vexx: 'It had come off a man who went back for it and missed.'", source: "ch-06:p118", status: "ON THE PAGE" }
+    reinterpretation:
+      before: "carried for weeks as a thing left behind — planted, dropped as theatre, meant to be found (ch-06:p118)"
+      after: "physical proof that a man whose record was closed seven years ago was issued equipment eleven months later and was standing in Corwin's ambush wearing it"
+      turned_by: "ch-06 (Corwin's 'He was tidying') and ch-07 (the two archive lines, one under the other)"
+      still_not_proven: "who Holst was working for, or any link whatever to Rx or to Jameson. Rx states it plainly: 'That's the whole of it. It isn't evidence of anything.' (ch-07:p33)"
   vexxs-private-file:
     introduced: "ch-04:p15"
     description: "The file Vexx keeps separately from anything that would ever cross Jameson's desk. As of Ch.4 it has one name in it: Corwin. 'Not evidence of anything yet. Just a thread, pulled loose, that he wasn't ready to let go of.'"
@@ -1004,6 +1336,79 @@ objects:
     status: "background"
     last_mentioned: "ch-01:p06"
     resolution: null
+
+  merricks-notebook:
+    introduced: "ch-08:p140 (as absent), recovered ch-08:p192"
+    description: "Merrick's book — soft-covered, corners gone furred, a rubber band round the middle holding in a fold of loose paper. He kept it for years and could not produce it; the cell searched twenty minutes and did not find it. Aglaope recovered it after he was gone, from behind the fuse box on the shelf brackets, a place she had already looked twice."
+    status: "chekhov_open"
+    last_mentioned: "ch-08:p192"
+    resolution: null
+    chain_of_custody:
+      - { stage: 1, holder: "merrick", where: "the plant house, location unknown to him", source: "ch-08:p140" }
+      - { stage: 2, holder: "aglaope", where: "recovered from behind the fuse box, on the shelf brackets", source: "ch-08:p192" }
+      - { stage: 3, holder: "vexxcerian", where: "squared to the edge of his desk beside the report pad", source: "ch-08:p192" }
+    unresolved: "Vexx does not open it on the page. Nothing in Ch.8 states what is in it, and Merrick is already gone."
+  holst-issue-record:
+    introduced: "ch-07:p45"
+    description: "ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 7 OF 22. Issued to HOLST, D. A., Staff Sergeant, 11th Shock Troops Battalion — TAG, IDENTIFICATION, SET OF TWO, QTY 1 SET, CONDITION: NEW; PLATE, TORSO, FRONT, CONDITION: SERVICEABLE, USED. ROUTING: MD 4, SUB. RECLAMATION. RETENTION: SEVEN YEARS. Dated eleven months after his casualty file closed."
+    status: "chekhov_open"
+    last_mentioned: "ch-07:p47"
+    resolution: null
+    proves: "that the serial on the tag in Vexx's drawer was re-issued after its owner was logged dead"
+    does_not_prove: "who ordered it, who wore it, or any connection to Rx"
+    note: >-
+      Rx insists on the record, before Vexx reads it, that nothing was hidden: 'It's a materiel
+      index. It exists so an auditor on a two-year cycle can confirm that a boot which left a
+      store arrived somewhere with a foot in it. Nobody hid this.' Vexx can see line 7 of 22 and
+      not the other twenty-one. RECLAMATION appears here UNGLOSSED, per outline:ch-07 — no
+      character remarks on it and no narration underlines it.
+  corwins-letters:
+    introduced: "ch-06:p56"
+    description: "Four letters Corwin has written to his daughter's mother. He does not know whether any of them left the building, and asks Vexx only whether a letter WENT — not what came back."
+    status: "chekhov_open"
+    last_mentioned: "ch-06:p78"
+    resolution: null
+    debt: "Vexx said 'I'll ask' and knew what it was worth on the way out of his mouth. Still unpaid at the end of Ch.8. He says it aloud to a stranger at a transit shelter — 'I don't know whether it went' — which discharges it emotionally and not at all practically."
+  corwins-ai-casing:
+    introduced: "ch-06:p50"
+    description: "The casing of Corwin's dead AI, returned to him the week before Vexx's visit in a bag with his watch and his ring and everything else that was off his person on admission. Nothing was recovered off it — 'the word is unrecoverable.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-06:p52"
+    resolution: null
+    note: >-
+      Corwin refuses to say the AI's name inside the facility: 'I said it a lot in the trees...
+      and somebody wrote that down, and it's in the file now under a heading. I'm not putting it
+      in a room where it counts as a symptom.' The name is therefore withheld BY DESIGN through
+      Ch.8 and must not be casually supplied later.
+  the-visitor-log-signature:
+    introduced: "ch-06:p60"
+    description: "Vexx's own signature, third field, on the rehabilitation track's sign-out pad, handed to him by Voss. Retained two years. 'In a building he had no access to there was now a line with his name on one side of it and Corwin's on the other, in his own hand.'"
+    status: "chekhov_open"
+    last_mentioned: "ch-06:p64"
+    resolution: null
+    note: "The first deliberate shape Vexx has left behind him in four years. outline:ch-10 (Internal Compliance) is the nearest planned consumer."
+  paladins-instrument-file:
+    introduced: "ch-08:p54"
+    description: "Eleven minutes of the same stringed-instrument training file — four strings, a woman's recorded voice saying 'and again, and this time listen to the second one' — that Paladin has been working since the middle of the summer. Bar three. It is not a different bar three."
+    status: "background"
+    last_mentioned: "ch-08:p62"
+    resolution: null
+  rxs-marksmanship-tally:
+    introduced: "ch-07:p48"
+    description: "Rx's private running count of Vexx's shooting: 'You're seventeen of thirty on the moving plates this month. I keep it. Nobody's asked me to keep it. I don't know what I keep it for.' Deployed badly timed, in the middle of the Holst discovery."
+    status: "chekhov_open"
+    last_mentioned: "ch-07:p48"
+    resolution: null
+    note: >-
+      Planned for redeployment in outline:ch-13, mid-collapse. CONFLICT CF-11: character-bible
+      TIC BUDGET reserves counting/tallying to SPECTOR alone. Recorded, not resolved.
+  the-relay-hall-chain:
+    introduced: "ch-08:p172"
+    description: "The chain holding the relay hall's near door back on its hinge side — the reason the first man had to come round the frame rather than through it. A maker's stamp on the last link: four letters, then a number, then what might have been a second number under the paint. Goliath takes it off the cleat the next morning, frees the hinge pin with the fuel-shed spanner, and hangs the chain on the bracket where a chain goes."
+    status: "background"
+    last_mentioned: "ch-08:p190"
+    resolution: { chapter: 8, description: "removed and coiled; the door swings. Nobody says anything while it is done." }
+    note: "Vexx reads the maker's stamp while Paladin breaks down in front of him. It is a deflection, not a clue."
 
 # ============================================================================================
 # WORLD RULES
@@ -1096,6 +1501,12 @@ secrets:
     statement: "Rx did not die in combat. He refused a Choosing order and was killed as a cleanup action disguised as hostile contact. Jameson gave the order and carried it out personally, and Rx's death is the hinge of his promotion."
     canonical_source: "series-bible"
     state_at_end_of_ch5: "SUSPECTED BY ONE MAN, SPOKEN ALOUD TO ONE OTHER. Not proven, not acted on."
+    state_at_end_of_ch8: >-
+      UNCHANGED IN KIND, HARDER IN SUBSTANCE. Vexx now holds a physical anomaly he can date
+      (Holst's tag re-issued eleven months after his file closed, ch-07) and a reinterpretation
+      of how the tag reached the ground (ch-06). He has still named Jameson to exactly one
+      person, still taken no action, and still not pulled the records access that would leave a
+      trail. Nobody new has been told. Rx has still not connected his fragments to anything.
     who_knows:
       richard-jameson:
         level: "full — he did it"
@@ -1136,6 +1547,35 @@ secrets:
       bastion: { level: "none", source: "series-bible" }
       hollow:  { level: "none", source: "series-bible" }
       requiem: { level: "unrecorded — Aglaope is not shown telling her", source: "ch-05:p32" }
+  rx-runs-hot-on-certain-words:
+    statement: "Spector has observed that Rx takes measurably longer over a small handful of words when they cross the net — a fraction of a second, then he is exactly what he was before it. Two of the three words Spector named are 'unstable' and 'refused'."
+    canonical_source: "ch-08:p196"
+    state_at_end_of_ch8: "HELD BY THREE PARTIES, ROUTED ONCE, DELIBERATELY NOT ESCALATED"
+    who_knows:
+      spector:
+        level: "the observation itself, including all three words"
+        source: "ch-08:p196"
+        note: "Chose NOT to put it through maintenance telemetry and NOT to take it to Vexx directly. He went to his own operator."
+      goliath:
+        level: "the observation, and two of the three words"
+        source: "ch-08:p198"
+        note: "Delivered it to Vexx plainly, once, in a corridor, and asked one question — 'Do you want the third one, when he gives it to me?' — and let the non-answer stand."
+      vexxcerian:
+        level: "the observation, and two of the three words. NOT the third."
+        source: "ch-08:p198"
+        note: >-
+          INFORMATION-FLOW ANCHOR. This is the ONLY route by which Vexx learns that a party
+          outside himself has noticed Rx. Everything he knew before this came from Rx directly
+          (ch-01:p62, ch-03:p37, ch-04:p36) or from his own observation. He deflects — 'It's
+          the water' — and does not answer Goliath's question. No later chapter may assume he
+          holds the third word, and no earlier chapter supplies this to him.
+      rx: { level: "unknown — he is not shown being told, and does not raise it", source: "ch-08:p198" }
+      gaia: { level: "none", source: "ch-08:p196" }
+      paladin: { level: "none", source: "ch-08:p196" }
+      zeus: { level: "none", source: "ch-08:p196" }
+      aglaope: { level: "none", source: "ch-08:p196" }
+      richard-jameson: { level: "none", source: "ch-08:p196" }
+
   phantom-saved-goliaths-homeworld:
     statement: "The Spartan who ended the threat to Goliath's childhood colony and the donor behind Goliath's AI are the same man."
     canonical_source: "series-bible"
@@ -1182,6 +1622,22 @@ memory_unlock_ladder:
       - { event: "Rx silent again through Jameson's first mission briefing", source: "ch-02:p75" }
       - { event: "Rx goes held-breath still at Corwin's description of the clean kill order", source: "ch-03:p46" }
       - { event: "one of the two stage-2 triggers was Jameson's name in a briefing", source: "ch-04:p36" }
+      - { event: "Rx goes wholly silent for the length of the Corwin visit — 'Rx did not say anything. He had not said anything since the corridor.' No content surfaces; Vexx notes it and sits with it", source: "ch-06:p46" }
+      - { event: "Rx produces a FALSE shared childhood memory — rain on a tin roof at the second barracks the summer they were fifteen — breaks off mid-simile, and covers with 'Queue's moved.' The narration corrects him in one flat line: 'The barracks roof had been concrete.' Vexx does not challenge it", source: "ch-07:p20" }
+      - { event: "Spector, independently, has clocked Rx running hot on 'unstable' and 'refused' and one further word; routed to Vexx through Goliath. First EXTERNAL corroboration that Rx is not behaving normally", source: "ch-08:p196" }
+    ch6_8_audit_2026_09_09: >-
+      VERIFIED: Chapters 6, 7 and 8 spend NO unlock stage and duplicate neither stage 1 nor
+      stage 2. Nothing legible surfaces to Rx; no new fact reaches Vexx from inside Rx; Jameson
+      is not present in person in any of the three chapters. Stage 3 remains NOT REACHED and
+      unclaimed for outline:ch-13.
+      TWO STANDING CAUTIONS: (a) ch-07's confabulated tin roof is a NEW class of Rx malfunction
+      that the four-stage ladder does not describe. It must be read as suppression bleeding into
+      adjacent memory, NEVER as decay-over-time — it sits closer to a rampancy tell than
+      anything else in the drafted book and series canon forbids that reading. (b) Jameson has
+      now been in a room with Vexx and Rx twice on the page without incident (ch-02:p04,
+      ch-03:p03), so 'Jameson present in person' is by itself no longer a novel trigger.
+      outline:ch-13 must escalate the trigger explicitly — his VOICE, close, on an open channel,
+      giving a live instruction — which is what the outline already specifies. Do not weaken it.
   stage_4:
     definition: "Full unlock — forced by Vexx confronting Rx directly with external evidence."
     status: "FORBIDDEN IN BOOK ONE"
@@ -1195,17 +1651,12 @@ memory_unlock_ladder:
 planned:
   status_note: "Sourced from outline.md / foundation.md / character-bible.md for Ch.6-26. NOT PROSE. No chapter beyond 5 exists."
   characters:
-    holst-d:
-      canonical_name: "HOLST, D."
-      first_planned_appearance: "outline:ch-07 (as a stamped name only)"
-      function: "the name on the dented dog tag. Logged KIA seven years before Corwin's ambush; his equipment reissued eleven months after his death, routing through RECLAMATION"
-      constraint: "never appears, never speaks, never described, never given a first name"
-      source: "outline:ch-07; character-bible"
-    merrick:
-      canonical_name: "Merrick"
-      first_planned_appearance: "outline:ch-08"
-      function: "SPARTAN-II who genuinely is coming apart; removed from the field alive and non-lethally. The one case where the system's judgement is correct. NOT a conspiracy victim"
-      source: "outline:ch-08; foundation"
+    # holst-d      -> PROMOTED to characters.deric-holst on 2026-09-09 (delivered ch-07).
+    #                 NOTE: the planning constraint said "never given a first name"; the prose
+    #                 gives one, from an archive line — "STAFF SERGEANT DERIC A. HOLST". The
+    #                 prose is canonical. See CF-13.
+    # merrick      -> PROMOTED to characters.merrick on 2026-09-09 (delivered ch-08).
+    # corwins-daughter -> PROMOTED to characters.corwins-daughter on 2026-09-09 (delivered ch-06).
     dessen:
       canonical_name: "Dessen"
       first_planned_appearance: "outline:ch-10"
@@ -1226,11 +1677,6 @@ planned:
       first_planned_appearance: "outline:ch-16"
       function: "the lonely clerk Aglaope sits with for four hours to obtain a routing index; his name is added to her list"
       source: "outline:ch-16"
-    corwins-daughter:
-      canonical_name: "Corwin's daughter (unnamed)"
-      first_planned_appearance: "outline:ch-06"
-      function: "the only thing Corwin ever asks for, in every scene, and it is never granted. NOT MENTIONED in the drafted Ch.3"
-      source: "foundation; character-bible"
   locations:
     ashgrove:
       canonical_name: "Ashgrove"
@@ -1239,14 +1685,11 @@ planned:
       never_spelled: ["Ash Grove", "Ashgroves"]
       source: "outline:ch-20; foundation"
       note: "The drafted prose describes the site only as 'a jungle clearing' (ch-05:p37). The name is NOT on the page."
-    the-rehabilitation-facility:
-      canonical_name: "the rehabilitation facility (unnamed)"
-      first_planned_appearance: "outline:ch-06"
-      function: "where Corwin is held. Clean, well-run, humane, sunlit, decent coffee. Its decency is the horror — it must never be made sinister"
-      source: "outline:ch-06"
+    # the-rehabilitation-facility -> PROMOTED to locations.rehabilitation-station on 2026-09-09.
   organizations:
     reclamation:
       canonical_name: "RECLAMATION"
+      status_2026_09_09: "PLANTED ON THE PAGE at ch-07:p45 — 'ROUTING: MD 4, SUB. RECLAMATION' — unglossed, unremarked by any character, exactly as the writer_constraint requires. Remains unsolved; solution stays at outline:ch-15."
       first_planned_appearance: "outline:ch-07 (planted, unglossed, in a requisition's administrative footer), named and understood in outline:ch-15"
       function: "the parent routing tag. Vexx's cell files under one branch designation; the dead man's equipment reissue files under a sibling, two digits away. THE TURN of the book"
       source: "outline:ch-07, outline:ch-15"
@@ -1355,6 +1798,19 @@ conflicts:
       material does not supply a mechanism for his ignorance, and Ch.5's closing paragraph
       depends on it entirely. Flagged as an author decision, not resolved.
   - id: "CF-04"
+    status: "RESOLVED"
+    resolved: >-
+      2026-09-09 — CLOSED BY Ch.6, and closed elegantly. The grammar-correction device is
+      installed retroactively: Vexx says "There was six of us on the ground that night either
+      way" and Corwin answers "Were." — flat and fast, "like a hand going out after a dropped
+      cup" — and is embarrassed not by the grammar but by the reflex (ch-06:p88). Ch.6 then
+      supplies the missing Ch.3 anchor as a MEMORY rather than a retrofit: Vexx recalls Corwin,
+      hoarse and half gone on Paladin's back at two in the morning, saying "There were fewer of
+      them than the report says. Not less." — the character-bible's exact sample line, placed in
+      the jungle, and explicitly never written down (ch-06:p96). The daughter arrives in the
+      same chapter (ch-06:p56), nine years old, four unanswered letters. The bible's design —
+      identify him by the habit, identify his destruction by its absence in Ch.19 — now has its
+      anchor. No prose change required.
     severity: "character-design"
     field: "characters.corwin.traits (grammar-correction device; the daughter)"
     canonical_value:
@@ -1389,6 +1845,130 @@ conflicts:
       - value: "'six pairings into a roster he'd built with his own hands instead of one handed to him' (ch-02:p60) — he built five; his own was handed to him."
         source: "ch-02:p60"
         flag: "UNRESOLVED"
+
+  - id: "CF-07"
+    severity: "plot-load-bearing"
+    field: "organizations.vexxs-cell.deployment_count"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "Ch.8 is the cell's FIFTH deployment at the earliest. Ch.3 is 'the first deployment as a full cell' (ch-03:p27); Ch.4 is 'the cell's third deployment' (ch-04:p41), with the second never depicted; Ch.5's monitoring mission falls after Ch.4 and is therefore the fourth; Ch.8 falls seven weeks after Ch.5's corridor argument (ch-08:p176)."
+      source: "ch-03:p27 + ch-04:p41 + ch-05:p03 + ch-08:p176"
+    conflict:
+      - value: "outline:ch-08 Premise: 'The cell's FOURTH deployment finds a Spartan who genuinely is coming apart.'"
+        source: "outline:ch-08"
+        flag: "UNRESOLVED"
+    note: >-
+      THE PROSE IS SAFE — Ch.8 never numbers the deployment on the page, so nothing needs
+      editing in the manuscript. The error is in the outline, and the outline contradicts itself
+      in the same entry: its beat 5 says Paladin 'holds the line for the third time in FIVE
+      missions', which is the correct arithmetic. Fix the outline's Premise line, not Ch.8.
+  - id: "CF-08"
+    severity: "structural"
+    field: "timeline.chapter_6_placement"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "Ch.6 dates itself at jungle + 9 weeks, three times ('nine weeks earlier', 'Nine weeks he had been on the other side of that sentence', 'nine weeks ago, this man had known the word Valkyr'), corroborated by Corwin being 'six weeks into a rehabilitation track' after a debrief at jungle + 3 weeks."
+      source: "ch-06:p24, ch-06:p96, ch-06:p98, ch-06:p216"
+    conflict:
+      - value: "Ch.4 places the Reyes mission at jungle + ~9 weeks ('three weeks after the jungle' -> two days -> 'six weeks later'), and Ch.5 falls after Reyes. A Ch.6 at +9 weeks therefore lands at or before Ch.5, not after it."
+        source: "ch-04:p03 + ch-04:p41 + ch-05:p03"
+        flag: "UNRESOLVED"
+    note: >-
+      Off by roughly one to two weeks, not by an order of magnitude. Ch.4 and Ch.5 are the
+      author's prose; Ch.6 is pipeline-written, so the cheap fix is in Ch.6 (nine -> eleven,
+      six weeks into rehab -> eight). Ch.7 ('two months' after the Ch.4 table scene) and Ch.8
+      ('seven weeks' after Ch.5) both survive that change without adjustment.
+  - id: "CF-09"
+    severity: "minor"
+    field: "locations.relay-station-plateau.head_count"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "Garrison of ELEVEN including Merrick (ch-08:p90; 'ten of them accounted for in the block, one unaccounted'). With Merrick on the ramp, ten remain — which is what the prose itself says: 'He shook ten hands' (ch-08:p178)."
+      source: "ch-08:p90"
+    conflict:
+      - value: "'with a hand on the frame and his back to the plateau and eleven people on the apron behind him watching him go' (ch-08:p182). Eleven is one too many with Merrick gone, and the station commander has already 'went inside and did not come out again' four lines earlier, which takes it to nine — plus six cell operators, which takes it to fifteen."
+        source: "ch-08:p182"
+        flag: "UNRESOLVED"
+    note: "Pipeline chapter. Cheapest fix is to de-number the line rather than re-count it."
+  - id: "CF-10"
+    severity: "canon-mechanism"
+    field: "notes.pov_integrity — Ch.8"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "POV is Vexx, close third, locked for the whole book. No Jameson POV, no Rx POV, and nothing narrated that Vexx cannot perceive."
+      source: "series-bible; valkyr-book-1/CLAUDE.md"
+    conflict:
+      - value: "The failed stack is narrated with close visual detail — the kid's walk through the second door, Paladin's weapon coming up and stopping, Goliath's fistful of fleece — from a vantage inside the corridor, and then 'Vexx came in through the near door' places him outside it. The same passage also miscounts: 'four of them stacked' leaves only Goliath, Paladin and Aglaope once Gaia (corner), Vexx and Zeus ('had come in behind Vexx') are removed."
+        source: "ch-08:p186, ch-08:p194, ch-08:p200"
+        flag: "UNRESOLVED"
+      - value: "Zeus's assessment: Vexx is explicitly 'outside the door where he could hear it, which is not the same as being in the room', and the prose is scrupulous about that ('Vexx, outside the door, heard the chair') — then twice narrates what he cannot hear: 'Merrick opened his mouth' and 'he did not do the thing an ordinary man would have done, which is to look at the door.'"
+        source: "ch-08:p226, ch-08:p270, ch-08:p276"
+        flag: "UNRESOLVED"
+    note: >-
+      Both are pipeline text and both fix cheaply. Putting Vexx inside the stack repairs the
+      POV and the arithmetic in one edit.
+  - id: "CF-11"
+    severity: "motif-budget"
+    field: "characters.rx / characters.spector — one-device-per-character map"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "character-bible.md TIC BUDGET: 'Counting - sequence - countdown - numbering - tallying - rating - pricing - cataloguing' is owned by SPECTOR and NOBODY else."
+      source: "character-bible"
+    conflict:
+      - value: "Ch.7 hands Rx a sustained numeric register — 'Line forty-one of sixty', 'Nine minutes in a queue', 'thirty-one per cent complete', 'I've given it five years four times', 'It took nineteen', 'Line seven of twenty-two. I can't see the other twenty-one from here', and the marksmanship tally 'seventeen of thirty on the moving plates this month' — in 1,500 words, while Ch.8 gives Spector his own count ('One, two, three, four - four drums, four seals, four intact')."
+        source: "ch-07 (throughout); ch-08:p78"
+        flag: "UNRESOLVED"
+      - value: "outline:ch-08 and outline:ch-13 both schedule 'Rx's marksmanship tally' as Rx's character-chaos beat, which the bible's map forbids."
+        source: "outline:ch-08, outline:ch-13"
+        flag: "UNRESOLVED"
+    note: >-
+      An author/architect decision, not a typo: either the map cedes counting to Rx as well and
+      Spector's is renarrowed to SEQUENCE (set-charge-clear), or Ch.7's numeric register is
+      thinned. The tally itself is too good to lose and is already load-bearing for Ch.13.
+  - id: "CF-12"
+    severity: "minor"
+    field: "objects.half-melted-data-chip"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "Three fragments came out of the jungle: a modified armour plate, a half-melted data chip, and a dented dog tag (ch-04:p09). All three are in the drawer at ch-05:p37."
+      source: "ch-04:p09"
+    conflict:
+      - value: "Ch.7's stocktake of Vexx's exposure names the armour fragment, the tag and the search history, and omits the data chip entirely."
+        source: "ch-07:p50"
+        flag: "UNRESOLVED"
+    note: "Possibly deliberate — the chip is inert and unreadable. Recorded so it is not quietly lost before its payoff."
+  - id: "CF-13"
+    severity: "minor"
+    field: "characters.deric-holst.first_name"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "STAFF SERGEANT DERIC A. HOLST, 11TH SHOCK TROOPS BATTALION — the archive gives him a full name."
+      source: "ch-07:p37"
+    conflict:
+      - value: "planned.characters.holst-d constraint: 'never appears, never speaks, never described, never given a first name'; SERIES-BIBLE registry lists him as 'Holst, D.' / 'Holst'."
+        source: "outline:ch-07; series-bible"
+        flag: "UNRESOLVED"
+    note: >-
+      The prose is right and the constraint should yield — the first name is what makes the
+      archive line feel like a real record rather than a prop, and 'photo?' in pencil in the
+      margin depends on it. Recommend the SERIES-BIBLE registry gain the row
+      'Deric A. Holst | Holst, D.; Holst | Derek, Deryk, Holtz, Holste'.
+  - id: "CF-14"
+    severity: "structural"
+    field: "manuscript orthography"
+    opened: "2026-09-09"
+    canonical_value:
+      value: "US spelling. Ch.1-5 carry 64 US forms and ZERO British forms — 'gray room' (the book's founding image, 6 uses in Ch.1 alone), armor, color, realize, recognize, meter, authorization, program."
+      source: "ch-01 through ch-05"
+    conflict:
+      - value: "Ch.6-8 carry 34 British forms and near-zero US ones — armour, colour, grey, metre(s), apologise, authorisation, recognise, humour, per cent — including 'He was in soft clothes, grey' (ch-06:p48) directly against Ch.1's locked 'gray room', and 'Cooperative with programme throughout' (ch-06:p124) against the registry's canonical 'the program'."
+        source: "ch-06, ch-07, ch-08"
+        flag: "UNRESOLVED"
+    note: >-
+      The single largest mechanical inconsistency in the manuscript and invisible to any
+      per-chapter gate. Ch.1 is locked, so the manuscript standard is US and Ch.6-8 convert.
+      Recommend a repo-level orthography line in the book's CLAUDE.md and a check in the book's
+      tools/style_check.py so Ch.9-26 cannot repeat it.
 
 # ============================================================================================
 # OBSERVATIONS FOR DOWNSTREAM SKILLS — mechanical, not evaluative.

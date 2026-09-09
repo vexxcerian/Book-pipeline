@@ -155,6 +155,47 @@ AUTHOR_FLOORS = {}
 #
 # PUNCH_CHAPTERS is the single exemption, and the exemption must be EARNED IN THE OUTLINE
 # before the chapter is written, never granted afterwards to a chapter that simply failed.
+# ORTHOGRAPHY — which English the book is written in.
+#
+# Found by a continuity audit, not by any gate: Ch.1-5 (the author's own prose) ran 82
+# US spellings and ZERO British ones; the three pipeline-written chapters had 31 British
+# forms between them. Including "grey" against the locked Ch.1's "gray room" — used six
+# times, and the book's founding image — and "Cooperative with programme throughout"
+# against a naming registry that says "the program".
+#
+# A model reaches for whichever dialect the surrounding register suggests, and no
+# per-chapter check can see it, because within any one chapter the usage is consistent.
+# It only shows up when you line the whole manuscript up.
+#
+# Set DIALECT to "us" or "uk" from the AUTHOR's measured usage, not from taste. Empty
+# disables the check (right for a book with no hand-written benchmark).
+DIALECT = "us"  # the author's Ch.1-5: 82 US forms, zero British
+
+# British -> US. Used in both directions depending on DIALECT. Deliberately short: only
+# forms that are unambiguously one dialect. "mortise", "practice" as a noun and the like
+# are correct in both and are NOT listed.
+_UK_US = {
+    "colour": "color", "colours": "colors", "coloured": "colored",
+    "armour": "armor", "armoured": "armored", "neighbour": "neighbor",
+    "neighbours": "neighbors", "behaviour": "behavior", "favour": "favor",
+    "favours": "favors", "favoured": "favored", "honour": "honor",
+    "honoured": "honored", "rumour": "rumor", "rumours": "rumors",
+    "grey": "gray", "greyer": "grayer", "programme": "program",
+    "programmes": "programs", "apologise": "apologize", "apologised": "apologized",
+    "recognise": "recognize", "recognised": "recognized", "organise": "organize",
+    "organised": "organized", "realise": "realize", "realised": "realized",
+    "authorisation": "authorization", "authorisations": "authorizations",
+    "pressurisation": "pressurization", "metre": "meter", "metres": "meters",
+    "centre": "center", "centres": "centers", "defence": "defense",
+    "travelled": "traveled", "cancelled": "canceled", "learnt": "learned",
+    "whilst": "while", "amongst": "among", "towards": "toward",
+    "judgement": "judgment", "storey": "story", "kerb": "curb", "tyre": "tire",
+    "sceptical": "skeptical", "cheque": "check", "aluminium": "aluminum",
+    "moustache": "mustache", "pyjamas": "pajamas", "smoulder": "smolder",
+}
+_DIALECT_WRONG = (set(_UK_US) if DIALECT == "us"
+                  else set(_UK_US.values()) if DIALECT == "uk" else set())
+
 PUNCH_CHAPTERS = {7}    # Ch.7: outline declares "Fragmented. Log lines and white space."
 
 PIPELINE_CEILINGS = {
@@ -442,6 +483,16 @@ def scan():
             semi_note = f"      note: {doc_semis} semicolon(s) exempted inside quoted documents"
         else:
             semi_note = None
+
+        # ORTHOGRAPHY — dialect consistency across the manuscript (see DIALECT above).
+        if DIALECT:
+            wrong = [w for w in re.findall(r"[A-Za-z]+", prose)
+                     if w.lower() in _DIALECT_WRONG]
+            if wrong:
+                from collections import Counter as _C
+                top = ", ".join(f"{w}x{c}" for w, c in _C(w.lower() for w in wrong).most_common(6))
+                flags.append(f"DIALECT {len(wrong)} non-{DIALECT.upper()} spelling(s): {top}")
+                problems += 1
 
         low = text.lower()
         for phrase in motif_caps:

@@ -21,7 +21,7 @@ He had put in for two days of personal leave. The question never came — not fr
 
 *People come apart in those places, is all. Quietly. On a good diet, with the heating on.* And then, before Vexx could answer that: *Ignore me. I’m reading the timetable. There’s a stop on this line called Hallow’s Bottom and I want you to know I’ve seen it.*
 
-The welfare visit was true, in the sense that everything Vexx had put on paper that month was true. He had pulled a man out of a jungle, the man was six weeks into a rehabilitation track, the cell had not sent a soul to see him. That was a real thing, a decent thing. Vexx intended to do it. He also intended to sit across a table from the only living witness to a strike team wearing UNSC signatures — in a room with no review officer in it — and ask him to say the armour plating part again, so that he could hear which parts came out the same.
+The welfare visit was true, in the sense that everything Vexx had put on paper that month was true. He had pulled a man out of a jungle, the man was six weeks into a rehabilitation track, the cell had not sent a soul to see him. That was a real thing, a decent thing. Vexx intended to do it. He also intended to sit across a table from the only living witness to a strike team wearing UNSC signatures — in a room with no review officer in it — and ask him to say the armor plating part again, so that he could hear which parts came out the same.
 
 He had thought about how that sounded for most of the first hour, then stopped thinking about it, because the thinking did not change the itinerary.
 
@@ -29,7 +29,7 @@ The rehabilitation track was a converted agricultural station on a slope above a
 
 The gate stood open. There was a guard post beside it, empty, and a bell push nobody had pushed in a while, judging by the leaf litter on the step.
 
-Inside, the glass doors opened when he put his hand on them. A woman at the desk apologised twice for a wait of four minutes — she meant it both times — took his authorisation, read it properly rather than pretending to, told him the day room was through the doors at the end, mentioned the pot on the warmer in the corridor, if he wanted to take a coffee in with him. There was a bowl of apples on the counter, with a card that said HELP YOURSELF. There was a plant on the windowsill, a real one, not a plastic one. On the noticeboard beside it, a notice reminding residents that the orchard gate stuck, and to give it a shove.
+Inside, the glass doors opened when he put his hand on them. A woman at the desk apologized twice for a wait of four minutes — she meant it both times — took his authorization, read it properly rather than pretending to, told him the day room was through the doors at the end, mentioned the pot on the warmer in the corridor, if he wanted to take a coffee in with him. There was a bowl of apples on the counter, with a card that said HELP YOURSELF. There was a plant on the windowsill, a real one, not a plastic one. On the noticeboard beside it, a notice reminding residents that the orchard gate stuck, and to give it a shove.
 
 The coffee was in a glass pot, with a stack of paper cups beside it. It was good coffee — better than anything the program put in front of him, in a building where the fittings cost more than this whole station — and the kitchen had made it to be drunk rather than provided. Vexx stood in the corridor, drank half of it, could not find a single thing in the place to object to.
 
@@ -45,7 +45,7 @@ The day room had windows on two sides, the blinds were up, four men in it, plus 
 
 Corwin was at a table by the far window, with a mug in front of him, a paperback splayed open beside it — spine cracked, half read.
 
-He had put weight back on. That was the first thing. It was strange, because Vexx had not registered how much of the man had been gone, until some of it came back — the face had corners in it now, and colour, and the eyes had come forward, out of wherever they had been sitting in the jungle. The place had taken clippers to his hair, without much interest in the result. He was in soft clothes, grey, the kind a person could sleep in.
+He had put weight back on. That was the first thing. It was strange, because Vexx had not registered how much of the man had been gone, until some of it came back — the face had corners in it now, and color, and the eyes had come forward, out of wherever they had been sitting in the jungle. The place had taken clippers to his hair, without much interest in the result. He was in soft clothes, gray, the kind a person could sleep in.
 
 His hands were flat on the table, and they were not doing anything.
 
@@ -53,7 +53,7 @@ His hands were flat on the table, and they were not doing anything.
 
 “Corwin.”
 
-“Sit down, sit down.” He pushed the second chair out with his foot, which was the first thing about him that Vexx recognised. “They told me somebody was coming today. They didn’t say who. I thought it might be the woman.”
+“Sit down, sit down.” He pushed the second chair out with his foot, which was the first thing about him that Vexx recognized. “They told me somebody was coming today. They didn’t say who. I thought it might be the woman.”
 
 “Aglaope.”
 
@@ -111,9 +111,9 @@ He had heard it. He had gone on walking. Nine weeks he had been on the other sid
 
 He might have been reading out a manifest.
 
-“The armour,” Vexx said. “The modified plating.”
+“The armor,” Vexx said. “The modified plating.”
 
-“Burned plating. Ours, after a plasma contact, which does something to the surface I’ve seen a hundred times and did not recognise on day three with a head injury.” He shrugged. It was a small, tidy, apologetic shrug. “The shorthand was UNSC shorthand because they were UNSC. It was ours because it was ours. I heard our own people on our own tactical net and I built a strike team out of it.”
+“Burned plating. Ours, after a plasma contact, which does something to the surface I’ve seen a hundred times and did not recognize on day three with a head injury.” He shrugged. It was a small, tidy, apologetic shrug. “The shorthand was UNSC shorthand because they were UNSC. It was ours because it was ours. I heard our own people on our own tactical net and I built a strike team out of it.”
 
 He picked the mug up. He did not drink from it.
 
@@ -121,7 +121,7 @@ He picked the mug up. He did not drink from it.
 
 *Subject’s account of the deployment now aligns with the operational record. Persecutory ideation not reported this cycle; insight assessed as much improved.*
 
-*Cooperative with programme throughout. Recommend continuation of track; review at ninety days.*
+*Cooperative with program throughout. Recommend continuation of track; review at ninety days.*
 
 The man in the green coat had finished with the tree, moved down the row to the next one. The woman with the jigsaw had found an edge piece. She was going along the border with it, trying it in one place, then in another.
 
@@ -227,9 +227,9 @@ The door was not locked. Not one of them watched him down the corridor. Behind h
 
 * * *
 
-There was a pad at reception for signing out, which the woman on the desk apologised for, and which Voss was holding.
+There was a pad at reception for signing out, which the woman on the desk apologized for, and which Voss was holding.
 
-She was standing at the end of the counter in civilian clothes — a folder of transfer authorisations open in front of her, a stylus in her teeth — and she took the stylus out, looked at Vexx for about a second and a half. That was the whole of her surprise.
+She was standing at the end of the counter in civilian clothes — a folder of transfer authorizations open in front of her, a stylus in her teeth — and she took the stylus out, looked at Vexx for about a second and a half. That was the whole of her surprise.
 
 “Operator.”
 
@@ -245,13 +245,13 @@ He heard it, a beat after it was out of him.
 
 “I had leave,” he said.
 
-Voss took the pad back. She did not look at what he had written on it, or she did, and it made no difference to her face. She squared the folder of authorisations on the counter, tapped the stylus twice against her thumbnail, set the pad down on the wood face-down — without appearing to have decided to.
+Voss took the pad back. She did not look at what he had written on it, or she did, and it made no difference to her face. She squared the folder of authorizations on the counter, tapped the stylus twice against her thumbnail, set the pad down on the wood face-down — without appearing to have decided to.
 
 “Visitor log’s retained,” she said. “Two years.”
 
 Vexx waited for the rest of it.
 
-There was no rest of it. She went back to her authorisations, and it took him a moment to work out that he had been dismissed — that it had been done kindly, that he had not earned either half of that.
+There was no rest of it. She went back to her authorizations, and it took him a moment to work out that he had been dismissed — that it had been done kindly, that he had not earned either half of that.
 
 He was at the doors, with his hand flat on the glass and the afternoon on the other side of it, when she spoke again.
 

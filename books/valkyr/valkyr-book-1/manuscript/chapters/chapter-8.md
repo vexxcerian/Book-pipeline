@@ -23,7 +23,7 @@ Goliath put the pot back in the bracket. He did it slowly, to make a point that 
 
 *Concern raised by subject’s own section on three separate occasions, the most recent in writing.*
 
-That was the whole of it. There had been four more lines under it in the packet — a station designation, a garrison strength, a note that the subject had declined two rotations home, had been within his rights on both — but that was the sentence the authorisation hung on. Vexx had read it twice in the briefing room, once more on the pad in the bay, without ever being able to make it produce anything.
+That was the whole of it. There had been four more lines under it in the packet — a station designation, a garrison strength, a note that the subject had declined two rotations home, had been within his rights on both — but that was the sentence the authorization hung on. Vexx had read it twice in the briefing room, once more on the pad in the bay, without ever being able to make it produce anything.
 
 He had asked Voss, on the way out, who had written the third one. She said the packet did not say. She said it in the voice of a woman confirming that a thing was not in a file rather than the voice of a woman who did not know.
 
@@ -79,13 +79,13 @@ Gaia stood, put a hand on the rail, said, “Thanks, Hallam,” by name, every t
 
 * * *
 
-The station sat at the top of a long gravel apron on a plateau the colour of wet ash, four buildings and a mast, with the wind coming across it at a speed that made the mast guys sing. There was no cover for eight hundred metres in any direction. There was also nothing that wanted cover: a fuel shed, a plant house, an accommodation block with the lights on in it, the relay hall — the only building with a proper door.
+The station sat at the top of a long gravel apron on a plateau the color of wet ash, four buildings and a mast, with the wind coming across it at a speed that made the mast guys sing. There was no cover for eight hundred meters in any direction. There was also nothing that wanted cover: a fuel shed, a plant house, an accommodation block with the lights on in it, the relay hall — the only building with a proper door.
 
 *—and that ridge on the north side is Kettle,* Echo said, on the net, through Gaia’s interface. *I’ve named it Kettle. It’s the noise. You’ll all hear it in about four minutes and then you’ll agree with me, so we may as well start from there.*
 
 “Copy Kettle,” Gaia said, already moving.
 
-She went forward alone, as she always did, put four hundred metres between herself and the rest of them in the time it took Goliath to sling the breach bag, then reported in the order she reported in: what was there, what she wanted, how long the answer had to take.
+She went forward alone, as she always did, put four hundred meters between herself and the rest of them in the time it took Goliath to sling the breach bag, then reported in the order she reported in: what was there, what she wanted, how long the answer had to take.
 
 “Garrison eleven, ten of them accounted for in the block, one unaccounted. Ground’s frozen so I’ve got nothing off it. Kettle side’s clear. Your call on whether we go in social or go in properly — but the block windows face the apron, so whatever we pick, they’ve had a look at us since we came off the ramp.”
 
@@ -163,7 +163,7 @@ The plant house was warm, smelled of hot dust off the heaters, faintly of coffee
 
 “In the folder,” Merrick said.
 
-Outside, Aglaope had her back to the wind about six metres off the plant house door, not looking in, not coming in, not going anywhere else — she was still standing in the same place, at the same distance, when the last of them came out.
+Outside, Aglaope had her back to the wind about six meters off the plant house door, not looking in, not coming in, not going anywhere else — she was still standing in the same place, at the same distance, when the last of them came out.
 
 * * *
 
@@ -181,7 +181,7 @@ He said, “Gaia, hold at the corner,” on the net, at a normal volume, in a no
 
 “Taking it as it is. Round the frame, then in. Set—”
 
-They went through in the order they always went through, and the door being chained open meant the first man had to come round the frame rather than through it, and that put Paladin a half-second late and Goliath a body-width right of where he wanted to be, and it put four of them stacked in a service corridor two metres wide with the far end of it dark, and it put nobody at all on the second door.
+They went through in the order they always went through, and the door being chained open meant the first man had to come round the frame rather than through it, and that put Paladin a half-second late and Goliath a body-width right of where he wanted to be, and it put four of them stacked in a service corridor two meters wide with the far end of it dark, and it put nobody at all on the second door.
 
 The second door opened.
 
@@ -197,7 +197,7 @@ Nobody fired. Nobody was hurt. That is the whole account of it.
 
 “Clear,” Paladin said. His voice was fine. The rest of him was not doing anything at all.
 
-“Clear,” Gaia said, from the corner, forty metres away, where she had been standing the entire time with a full view of a wall.
+“Clear,” Gaia said, from the corner, forty meters away, where she had been standing the entire time with a full view of a wall.
 
 Vexx came in through the near door. The thermos was on the floor, had come open, was going out across the plate in a wide brown fan. The kid was against the wall where Goliath had put him, had not moved off it, was saying that it was fine, that he was fine, that he had been told about the exercise, that nobody had told him about the exercise.
 
@@ -233,7 +233,7 @@ It went on for an hour and forty minutes. Nine minutes of that was about the bus
 
 “Then I’m wrong.”
 
-“Because that run was put in by people who were paid by the metre and inspected by people who were paid by the hour, and the box was put in by whoever was here in the spring with a spare afternoon. You want to look where the enthusiasm was.”
+“Because that run was put in by people who were paid by the meter and inspected by people who were paid by the hour, and the box was put in by whoever was here in the spring with a spare afternoon. You want to look where the enthusiasm was.”
 
 “That’s a good line.”
 
@@ -321,7 +321,7 @@ It was the third time Paladin had said no in a room like that, and the second ti
 
 “Gaia,” Vexx said.
 
-“Ten of the eleven have noticed. Two of them will say so. The others won’t. They like him. Nobody’s covering. He carried a man down off Kettle in October with a broken hip and he did it in four hours and he doesn’t talk about it.” She was already looking at the door. “The third flag went in from the north shift. I don’t have a name and I’m not going to get one tonight. Your call, but I’d rather we didn’t leave this station carrying a rumour that somebody grassed.”
+“Ten of the eleven have noticed. Two of them will say so. The others won’t. They like him. Nobody’s covering. He carried a man down off Kettle in October with a broken hip and he did it in four hours and he doesn’t talk about it.” She was already looking at the door. “The third flag went in from the north shift. I don’t have a name and I’m not going to get one tonight. Your call, but I’d rather we didn’t leave this station carrying a rumor that somebody grassed.”
 
 “Aglaope.”
 
@@ -345,7 +345,7 @@ Goliath said nothing for a while.
 
 * * *
 
-The transport came at half past six the next morning, with the sky still the colour of the ground. It came for him and nothing else.
+The transport came at half past six the next morning, with the sky still the color of the ground. It came for him and nothing else.
 
 They told him in the plant house, because that was where he was. Vexx told him, because that is the job. It took eleven words. He had had them in order before he came through the door. The word he used was *relieved*, which is not the word in the recommendation. He heard it standing up. He asked whether the bus bar could wait until somebody came out from the depot, whether he could leave a note about the box, and Vexx said yes to both, and Merrick wrote the note, and it was legible, and it took him four minutes.
 
@@ -367,9 +367,9 @@ Paladin did not answer straight away.
 
 “I’ll tell him that too.”
 
-The medical crew were decent about it. They were two women in flight coveralls who had done this before, who put a hand under his elbow, did not grip — and one of them talked to him the whole way up the ramp about the flight time and the pressurisation and whether he wanted the seat facing forward, which is what you talk about.
+The medical crew were decent about it. They were two women in flight coveralls who had done this before, who put a hand under his elbow, did not grip — and one of them talked to him the whole way up the ramp about the flight time and the pressurization and whether he wanted the seat facing forward, which is what you talk about.
 
-He went up it easily. He was not restrained. He apologised, at the top, for the trouble, thanked the crew chief by rank, got the rank right.
+He went up it easily. He was not restrained. He apologized, at the top, for the trouble, thanked the crew chief by rank, got the rank right.
 
 “Sorry about all this,” he said. “About all this.”
 
@@ -385,9 +385,9 @@ The breach bag was still against the relay hall wall, inside the near door, wher
 
 He heard it before he was through the door.
 
-The corridor was the corridor: two metres wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there, which did not help.
+The corridor was the corridor: two meters wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there, which did not help.
 
-Vexx stopped inside the frame. The bag was a metre from his hand. He did not pick it up.
+Vexx stopped inside the frame. The bag was a meter from his hand. He did not pick it up.
 
 The chain that held the door back had a maker’s stamp on the last link. Four letters, then a number, then what might have been a second number under the paint.
 
@@ -455,6 +455,6 @@ She left him to it.
 
 He wrote what he had told them in the kitchen he would write, in the order he had said it in, with nothing added to it. Removal from field. Medical track, escort of two, no restraint, and the line about the runoff sheets being immaculate, which would not survive the summary and which he put in anyway. Then the names, all six of them. Then Paladin’s objection, in Paladin’s own words, which ran to four sentences, and which he did not shorten.
 
-Then he went back up to the top of the form, to the box the authorisation had come in on, and read it once more before he sent it.
+Then he went back up to the top of the form, to the box the authorization had come in on, and read it once more before he sent it.
 
 *Concern raised by subject’s own section on three separate occasions, the most recent in writing.*

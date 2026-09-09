@@ -55,7 +55,7 @@ HOLST, D.
 
 *Trying it without the initial.*
 
-The neighbour’s music came up through the floor, two songs’ worth, and went off in the middle of the second one.
+The neighbor’s music came up through the floor, two songs’ worth, and went off in the middle of the second one.
 
 *Nothing.*
 
@@ -145,7 +145,7 @@ The trestle had a wobble in it that came and went depending on which of the four
 
 He got up.
 
-There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armour fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He turned the eggs.
+There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armor fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He turned the eggs.
 
 The eggs were fine and he put them in the sink.
 
@@ -155,6 +155,6 @@ He had been at this since the summer, in the hours after the work stopped and be
 
 *SOLID ASH. 1600 BY 800. MORTISE AND TENON, DRAWBORED, NO FIXINGS.*
 
-*OILED FINISH. GRAIN AND COLOUR VARY FROM PIECE TO PIECE.*
+*OILED FINISH. GRAIN AND COLOR VARY FROM PIECE TO PIECE.*
 
 *DELIVERY FOUR TO SIX WEEKS. THIS ITEM SHIPS ASSEMBLED.*
