@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4340 | Revision: 2 (rhythm calibration F9/F8/F1; breath repair) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4377 | Revision: 3 (voice-match comparison repair — 5 bare comparisons restored) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -25,7 +25,7 @@ The welfare visit was true, in the sense that everything Vexx had put on paper t
 
 He had thought about how that sounded for most of the first hour, then stopped thinking about it, because the thinking did not change the itinerary.
 
-The rehabilitation track was a converted agricultural station on a slope above a river valley — four low buildings, whitewashed within the last year, an orchard on the south side, the trees pruned back hard for winter, a track down to a pump house, walked often enough to keep the grass off it. Somebody had planted a double row of saplings along the drive. They would not be worth anything as shade for fifteen years, and somebody had planted them anyway.
+The rehabilitation track was a converted agricultural station on a slope above a river valley — four low buildings, whitewashed within the last year, an orchard on the south side, the trees pruned back hard for winter, the cut ends on them like knuckles, a track down to a pump house, walked often enough to keep the grass off it. Somebody had planted a double row of saplings along the drive. They would not be worth anything as shade for fifteen years, and somebody had planted them anyway.
 
 The gate stood open. There was a guard post beside it, empty, and a bell push nobody had pushed in a while, judging by the leaf litter on the step.
 
@@ -61,7 +61,7 @@ His hands were flat on the table, and they were not doing anything.
 
 “I’ll tell her.”
 
-A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it when he said yes, then told Vexx — unprompted, in the voice of a woman continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that the decision had been taken without her, that she was not over it. She poured Vexx a fresh cup, from a jug on the trolley. He said the coffee was good. She said they got it on the same contract as the district hospital, that she would fight the first man who came here trying to change it. She went off down the room, the trolley wheel squeaking.
+A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it when he said yes, then told Vexx — unprompted, in the voice of a woman continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that the decision had been taken without her, that she was not over it. She poured Vexx a fresh cup, from a jug on the trolley, like it was her own table. He said the coffee was good. She said they got it on the same contract as the district hospital, that she would fight the first man who came here trying to change it. She went off down the room, the trolley wheel squeaking.
 
 “She’s all right,” Corwin said. “They’re all right, all of them. Nobody believes me when I say it.”
 
@@ -123,7 +123,7 @@ He picked the mug up. He did not drink from it.
 
 *Cooperative with program throughout. Recommend continuation of track; review at ninety days.*
 
-The man in the green coat had finished with the tree, moved down the row to the next one. The woman with the jigsaw had found an edge piece. She was going along the border with it, trying it in one place, then in another.
+The man in the green coat had finished with the tree, moved down the row to the next one. The woman with the jigsaw had found an edge piece. She was going along the border with it, trying it in one place, then in another, like a key in one door after another.
 
 “You believe that,” Vexx said.
 
@@ -141,7 +141,7 @@ Down the room, the radio went over to something with a brass section in it. The 
 
 Vexx put his cup down on the table.
 
-“There’s nothing in it. I knew that out there. I carried it eleven days knowing it.” Corwin laid two fingers flat on the wood, moved them across it a little way. “The word is unrecoverable. It’s a good word. It doesn’t blame anybody and it doesn’t promise anything either. I asked whether they’d had anything off it at all, any part, and the answer was no, and the man who told me that sat down to do it. He didn’t have to. He sat down and he took his time about it and he let me ask the same question twice.”
+“There’s nothing in it. I knew that out there. I carried it eleven days knowing it.” Corwin laid two fingers flat on the wood, moved them across it a little way, like a man checking a table for dust. “The word is unrecoverable. It’s a good word. It doesn’t blame anybody and it doesn’t promise anything either. I asked whether they’d had anything off it at all, any part, and the answer was no, and the man who told me that sat down to do it. He didn’t have to. He sat down and he took his time about it and he let me ask the same question twice.”
 
 “You could say his name,” Vexx said. “In here. If you wanted.”
 
@@ -165,7 +165,7 @@ Vexx sat with that.
 
 “Family contact is reviewed each cycle, Mr. Corwin. It’s in review.”
 
-The clinician had come back up the room with the trolley, and the answer was out of her, before he had got to the question. It did not read as an interruption. She had it ready — she set it down into the gap, with everything else on the trolley — and carried on doing what she had been doing.
+The clinician had come back up the room with the trolley, and the answer was out of her, before he had got to the question, like a door coming back on its spring. It did not read as an interruption. She had it ready — she set it down into the gap, with everything else on the trolley — and carried on doing what she had been doing.
 
 There was no unkindness in it anywhere. She was not lying. Vexx understood that this was not the first time she had said it, or the second.
 

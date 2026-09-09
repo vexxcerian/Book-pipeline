@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: 5656 | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5727 | Revision: 1 (voice-match comparison repair — 10 bare comparisons restored) | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -23,7 +23,7 @@ Goliath put the pot back in the bracket. He did it slowly, to make a point that 
 
 *Concern raised by subject’s own section on three separate occasions, the most recent in writing.*
 
-There had been four more lines under it in the packet — a station designation, a garrison strength, a note that the subject had declined two rotations home, had been within his rights on both — but that was the sentence the authorization hung on. Vexx had read it twice in the briefing room, once more on the pad in the bay, without ever being able to make it produce anything.
+There had been four more lines under it in the packet — a station designation, a garrison strength, a note that the subject had declined two rotations home, had been within his rights on both — but that was the sentence the authorization hung on. Vexx had read it twice in the briefing room, once more on the pad in the bay, without ever being able to make it produce anything, like a switch wired to nothing.
 
 He had asked Voss, on the way out, who had written the third one. She said the packet did not say. She said it in the voice of a woman confirming that a thing was not in a file rather than the voice of a woman who did not know.
 
@@ -31,7 +31,7 @@ He had asked Voss, on the way out, who had written the third one. She said the p
 
 *Nothing you don’t have. It’s a thin packet. It isn’t thin because somebody thinned it — it’s thin because a relay station on a plateau doesn’t generate paper.* A pause with no weight in it. *There’s a hydrology annex in here. Four years of runoff figures. I’ve read them. That’s where I am with my evening.*
 
-The bay was cold and smelled of the heaters coming up — a smell like scorched dust, the same on every transport in the fleet. Aglaope had her boots off, working at a seam in one of them with a thumbnail. Zeus sat where Zeus sat — the end of the bench, back to the bulkhead, out of the pattern of everyone else’s knees — with a hand curled round the strap above his head, doing nothing at all with any visible effort.
+The bay was cold and smelled of the heaters coming up — a smell like scorched dust, the same on every transport in the fleet. Aglaope had her boots off, working at a seam in one of them with a thumbnail, like picking at a splinter. Zeus sat where Zeus sat — the end of the bench, back to the bulkhead, out of the pattern of everyone else’s knees — with a hand curled round the strap above his head, doing nothing at all with any visible effort.
 
 “Right hand,” Bastion said, through Paladin’s interface, into the general quiet. “The one you’ve been keeping in your lap since we boarded.”
 
@@ -79,7 +79,7 @@ Gaia stood, put a hand on the rail, said, “Thanks, Hallam,” by name, every t
 
 * * *
 
-The station sat at the top of a long gravel apron on a plateau the color of wet ash, four buildings and a mast, with the wind coming across it at a speed that made the mast guys sing. There was no cover for eight hundred meters in any direction. There was also nothing that wanted cover: a fuel shed, a plant house, an accommodation block with the lights on in it, the relay hall — the only building with a proper door.
+The station sat at the top of a long gravel apron on a plateau the color of wet ash, four buildings and a mast set down on it like kit off the back of a truck, with the wind coming across it at a speed that made the mast guys sing. There was no cover for eight hundred meters in any direction. There was also nothing that wanted cover: a fuel shed, a plant house, an accommodation block with the lights on in it, the relay hall — the only building with a proper door.
 
 *—and that ridge on the north side is Kettle,* Echo said, on the net, through Gaia’s interface. *I’ve named it Kettle. It’s the noise. You’ll all hear it in about four minutes and then you’ll agree with me, so we may as well start from there.*
 
@@ -97,7 +97,7 @@ Social meant the station commander came out onto the step in a jacket he had not
 
 They cleared the site first. That is the procedure. There is no version of the procedure where you skip it because a man in an unfastened jacket seems pleasant.
 
-The fuel shed took twenty-two minutes and produced nothing. Goliath went round the outside of it first, on his knees at the base of the wall in the wind, running a glove along the seam where the panel met the pad. Then Spector took the seals, one at a time, through the interface, in the order Spector takes things.
+The fuel shed took twenty-two minutes and produced nothing. Goliath went round the outside of it first, on his knees at the base of the wall in the wind, running a glove along the seam where the panel met the pad like somebody looking for a draft. Then Spector took the seals, one at a time, through the interface, in the order Spector takes things.
 
 “Bund’s dry. One, two, three, four — four drums, four seals, four intact,” Spector said. “Nothing’s been opened. Nothing’s been resited. There’s a spanner on the floor that shouldn’t be on the floor. That’s my whole complaint.”
 
@@ -119,7 +119,7 @@ Outside, the wind came off the north ridge, made the noise. It made it for about
 
 * * *
 
-They found him in the plant house with a multimeter, doing something legitimate to a junction box — he stood up when Vexx came through the door, put the meter down on the bench, wiped both hands on his thighs.
+They found him in the plant house with a multimeter, doing something legitimate to a junction box — he stood up when Vexx came through the door, put the meter down on the bench, wiped both palms on his thighs like a man about to shake hands.
 
 Merrick was a big man gone slightly loose at the edges, a SPARTAN-II in station coveralls with the sleeves pushed up. The first thing Vexx registered about him — before the face, before the hands — was that he was clean. Shaved. Hair cut inside the fortnight. Boots done. Whatever else was happening in the plant house, a man had got up that morning and gone at his boots.
 
@@ -153,7 +153,7 @@ He put the meter down again, looked at the junction box for a while.
 
 “It does.” Merrick nodded twice. “It does.”
 
-The plant house was warm, smelled of hot dust off the heaters, faintly of coffee. There was a chair by the bench, he sat down in it, and that was all that happened for a while.
+The plant house was warm, smelled of hot dust off the heaters, faintly of coffee, like a shed with a kettle in it. There was a chair by the bench, he sat down in it, and that was all that happened for a while.
 
 “I’ll want an hour or so of your time before we go,” Vexx said. “Nothing formal.”
 
@@ -289,7 +289,7 @@ Vexx came in then, because there was no version of standing in a corridor that w
 
 Zeus got down on the plate steel, looked under the bench, took his time about it, did not once say that it did not matter.
 
-They looked for twenty minutes. Aglaope came in halfway through without being called, started at the far end, and Goliath took the crate apart on the floor, put it back together, and at the end of it there was no book — Merrick sat down on the crate with his hands hanging.
+They looked for twenty minutes. Aglaope came in halfway through without being called, started at the far end, and Goliath took the crate apart on the floor, put it back together, and at the end of it there was no book — Merrick sat down on the crate with his hands hanging, like a man at the end of a shift.
 
 “I’m sorry,” he said. “I’m sorry, Tomas. I’ll — I’ll be back before dark.”
 
@@ -323,7 +323,7 @@ It was the third time Paladin had said no in a room like that, and the second ti
 
 “Aglaope.”
 
-Aglaope had been sitting with her hands round a cup she had not drunk from. “He’s not frightened of us,” she said. “He’s been waiting for somebody to come. He doesn’t know what for.” She turned the cup a quarter-turn. “He asked me twice this evening whether the transport had a medical berth on it. Nobody had told him there was a transport.”
+Aglaope had been sitting with her hands round a cup she had not drunk from, holding it like a hot water bottle. “He’s not frightened of us,” she said. “He’s been waiting for somebody to come. He doesn’t know what for.” She turned the cup a quarter-turn. “He asked me twice this evening whether the transport had a medical berth on it. Nobody had told him there was a transport.”
 
 Goliath said nothing for a while.
 
@@ -365,7 +365,7 @@ Paladin did not answer straight away.
 
 “I’ll tell him that too.”
 
-The medical crew were decent about it. They were two women in flight coveralls who had done this before, who put a hand under his elbow, did not grip — and one of them talked to him the whole way up the ramp about the flight time and the pressurization and whether he wanted the seat facing forward, which is what you talk about.
+The medical crew were decent about it. They were two women in flight coveralls who had done this before, who put a hand under his elbow like people steadying a ladder, did not grip — and one of them talked to him the whole way up the ramp about the flight time and the pressurization and whether he wanted the seat facing forward, which is what you talk about.
 
 He went up it easily. He was not restrained. He apologized, at the top, for the trouble, thanked the crew chief by rank, got the rank right.
 
@@ -383,7 +383,7 @@ The breach bag was still against the relay hall wall, inside the near door, wher
 
 He heard it before he was through the door.
 
-The corridor was the corridor: two meters wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there, which did not help.
+The corridor was the corridor: two meters wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges, like the mark in a bath. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there, which did not help.
 
 Vexx stopped inside the frame. The bag was a meter from his hand. He did not pick it up.
 

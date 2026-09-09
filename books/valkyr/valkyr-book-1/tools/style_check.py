@@ -41,6 +41,14 @@ FINGERPRINT_PHRASES = [
 # drops the demonstrative and pronoun-object uses.
 LIKE_VERB = re.compile(r"\b(?:i|you|he|she|we|they|who|nobody|somebody|everybody|d|would|"
                        r"didn't|doesn't|don't|not)\s+likes?\b", re.I)
+# KNOWN GAP: "the way X does Y" is one of this author's comparison forms ("the way weather
+# fills a sky", "the way skin flinches from a burn it can't consciously remember getting") and
+# is NOT counted here, because the same construction is separately capped as a pipeline
+# fingerprint (see "theway" below) and counting it in both places would have the gate arguing
+# with itself. The measure is therefore consistent rather than complete — it reads the author
+# and the pipeline through the same narrow window, which is what a comparison needs, but a
+# chapter can be genuinely figurative in a form this misses. Fix by counting comparative "the
+# way" here AND re-deriving both the floor and the theway ceiling from the author together.
 SIMILE_MARKERS = re.compile(
     r"\b(?:as if|as though)\b"
     r"|(?<!\w)like\b(?!\s+(?:that|this|these|those|him\b|her\b|them\b|me\b|us\b|you\b))",
@@ -393,7 +401,13 @@ def scan():
         text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)  # ignore editorial comments
         toks = words(text)
         wc = len(toks) or 1
-        per1k = lambda c: round(c / wc * 1000, 1)
+        # Compare on the EXACT rate; round only for display. Rounding first gives every
+        # threshold in this file a half-step of slop in both directions: a chapter at a
+        # true 1.9934/1k displays 2.0 and passes a floor of 2.0, and one at a true
+        # 24.04/1k displays 24.0 and passes a ceiling of 24.0. Both are the gate lying
+        # by a rounding rule rather than by a measurement.
+        rate = lambda c: c / wc * 1000
+        per1k = lambda c: round(rate(c), 1)
 
         # Connective habit — how a voice JOINS things. A writer who chains on "and" and a
         # writer who interrupts himself with em-dashed appositives can score identically on
@@ -406,26 +420,26 @@ def scan():
         adverbs = len(ADVERB.findall(text))
         emdash = text.count("—")
 
-        sim1k, adv1k, em1k = per1k(similes), per1k(adverbs), per1k(emdash)
+        sim1k, adv1k, em1k = rate(similes), rate(adverbs), rate(emdash)
         max_simile = _ceiling(n, "simile_per1k", args.max_simile)
         max_adverb = _ceiling(n, "adverb_per1k", args.max_adverb)
         max_em1k = _ceiling(n, "emdash_per1k", args.max_emdash_per1k)
         flags = []
         if sim1k > max_simile:
-            flags.append(f"SIMILE {sim1k}/1k > {max_simile}"); problems += 1
+            flags.append(f"SIMILE {sim1k:.1f}/1k > {max_simile}"); problems += 1
         sim_lo = _floor(n, "simile_per1k")
         if sim_lo is not None and sim1k < sim_lo:
-            flags.append(f"SIMILE {sim1k}/1k < {sim_lo} (voice-match FLOOR — the pipeline is "
+            flags.append(f"SIMILE {sim1k:.1f}/1k < {sim_lo} (voice-match FLOOR — the pipeline is "
                          f"writing plainer than this author)"); problems += 1
         if adv1k > max_adverb:
-            flags.append(f"ADVERB {adv1k}/1k > {max_adverb}"); problems += 1
+            flags.append(f"ADVERB {adv1k:.1f}/1k > {max_adverb}"); problems += 1
         if max_em1k is not None:
             if em1k > max_em1k:
-                flags.append(f"EM-DASH {em1k}/1k > {max_em1k} ({emdash} in chapter)"); problems += 1
+                flags.append(f"EM-DASH {em1k:.1f}/1k > {max_em1k} ({emdash} in chapter)"); problems += 1
         elif emdash > args.max_emdash:
-            flags.append(f"EM-DASH {emdash}/chapter > {args.max_emdash} (density {em1k}/1k)"); problems += 1
+            flags.append(f"EM-DASH {emdash}/chapter > {args.max_emdash} (density {em1k:.1f}/1k)"); problems += 1
 
-        and1k, comma1k, vague1k = per1k(ands), per1k(commas), per1k(vague)
+        and1k, comma1k, vague1k = rate(ands), rate(commas), rate(vague)
         for key, val, label in (("and_per1k", and1k, "AND"),
                                 ("comma_per1k", comma1k, "COMMA"),
                                 ("vague_per1k", vague1k, "SOMEBODY/NOBODY")):
@@ -437,7 +451,7 @@ def scan():
                 flags.append(f"{label} {val}/1k < {lo} (voice-match FLOOR)"); problems += 1
         em_lo = _floor(n, "emdash_per1k")
         if em_lo is not None and em1k < em_lo:
-            flags.append(f"EM-DASH {em1k}/1k < {em_lo} (voice-match FLOOR — the pipeline is "
+            flags.append(f"EM-DASH {em1k:.1f}/1k < {em_lo} (voice-match FLOOR — the pipeline is "
                          f"chaining where this author interrupts himself)"); problems += 1
 
         # BREATH — sentence-length distribution of the NARRATION (see split_registers).
@@ -537,8 +551,8 @@ def scan():
         fp_hits = [f"'{p}'×{low.count(p)}" for p in FINGERPRINT_PHRASES
                    if low.count(p) > max_fp]
 
-        print(f"\nCh{n:>2}  {wc} words | simile {sim1k}/1k | adverb {adv1k}/1k | em-dash {emdash} ({per1k(emdash)}/1k)")
-        print(f"      rhythm: and {and1k}/1k | comma {comma1k}/1k | somebody/nobody {vague1k}/1k")
+        print(f"\nCh{n:>2}  {wc} words | simile {sim1k:.1f}/1k | adverb {adv1k:.1f}/1k | em-dash {emdash} ({per1k(emdash)}/1k)")
+        print(f"      rhythm: and {and1k:.1f}/1k | comma {comma1k:.1f}/1k | somebody/nobody {vague1k:.1f}/1k")
         print(breath)
         if semi_note: print(semi_note)
         if flags:    print("   CEILING:", "; ".join(flags))

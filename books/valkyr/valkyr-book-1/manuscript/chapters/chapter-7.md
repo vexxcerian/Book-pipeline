@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1506 | Revision: 4 (F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1525 | Revision: 5 (voice-match comparison repair — 1 bare comparison restored; prior: F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -45,7 +45,7 @@ Orange drink powder mixed too strong, in a plastic cup, on a shelf that hummed w
 
 *Working.*
 
-The name on the tag was stamped rather than etched, and the D had worn shallower than the rest of it, and Vexx had been reading it under a lamp at an angle for weeks.
+The name on the tag was stamped rather than etched, and the D had worn shallower than the rest of it, rubbed down like a stair tread, and Vexx had been reading it under a lamp at an angle for weeks.
 
 HOLST, D.
 
@@ -137,7 +137,7 @@ The wall clock in the next room struck the hour, once.
 
 *Line seven of twenty-two*, Rx said, after a while. *I can’t see the other twenty-one from here.*
 
-The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week.
+The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week and had stopped feeling it, like a watch he had stopped taking off.
 
 *Vexx.*
 
