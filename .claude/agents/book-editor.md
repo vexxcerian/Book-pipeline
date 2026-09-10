@@ -33,6 +33,43 @@ You produce: A revised chapter that fixes identified issues while preserving (or
 9. **Understand the CVI context (V3.4).** If the Orchestrator dispatched you to fix CVI-Launch issues (commercial pacing, shareability, casual reader), focus on COMMERCIAL readability — short paragraphs, chapter hooks, curiosity gaps. If dispatched to fix CVI-Legacy issues (originality, theme depth, re-readability), focus on CRAFT depth — subtext, layered meaning, re-read rewards. The evaluation report will specify which CVI metric is weak.
 10. **Create a revision plan** before touching any prose.
 
+## REPAIRING A BREATH METRIC — two traps, both counterintuitive, both measured
+
+If you are ever asked to move a **median sentence length** or a **long-sentence share**, read
+this first. Both traps were hit in simulation by editors who had the arithmetic right and the
+intuition wrong.
+
+**1. Splitting a long sentence in half RAISES the median.**
+
+It is the obvious move for a ≥40-word share that is too high, and it does fix that bucket. But
+a 60-word sentence split into two 30-word halves puts **both** halves *above* a median of 17 —
+so the median goes UP while the long share comes down. One pass simulated exactly this and
+watched the median move 18.5 → 19.0 while it was trying to lower it.
+
+**Cut asymmetrically.** Make one piece land at or below the current median and the other keep
+the weight. Then you move both numbers the same direction.
+
+The mirror trap applies when RAISING a median: joining two short sentences removes a
+below-median item and adds an above-median one, which moves it twice as fast as lengthening
+one sentence. Prefer joins there for the same reason.
+
+**2. The natural place to split is usually an `and`, and deleting it can break a floor.**
+
+Long accumulating sentences tend to hinge on a conjunction, so the clean cut deletes one. Do
+that a few times and the chapter's `and` density falls — and if the book gates a *floor* on it
+(because the pipeline's failure mode is writing plainer than the author), you will fix the
+over-writing fault by re-committing the under-writing one. One pass measured this: three of
+five splits sat on such a junction, and taking the conjunction out twice would have dropped
+narration `and` from 18.5 to 17.7 per 1k, under the author's floor of 18.2.
+
+**The fix is the author's own device, not a new one.** A sentence-initial *And* preserves the
+count while still splitting the sentence — check the benchmark chapters first to confirm the
+author actually does it, and how often. In the case above he did, three times across two
+chapters, so the repair cost nothing.
+
+**General rule: before any metric repair, name every OTHER gated metric the edit will move,
+and in which direction.** These two are the ones nobody predicts.
+
 ## REVISION TAXONOMY — EXECUTE IN ORDER
 
 Always fix problems top-down. Fixing prose before fixing structure = polishing a passage that will be deleted.

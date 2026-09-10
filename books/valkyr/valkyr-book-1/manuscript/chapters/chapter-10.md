@@ -1,11 +1,11 @@
 # Chapter Ten
 
 <!-- SCENE BUDGET (Target 4,600): summons + the room + Dessen + the finding (I) 800 | the release, the clerk’s name withheld 450 | the triple question 550 | the mess hall, the extension that does not exist 550 | what it cost Corwin 300 | the recommendation + Jameson + eight seconds 500 | the apology 400 | the dismantling + Dessen checks it 700 | the finding (II) + the transfer 400 | corridor coda + close 650 -->
- <!-- Word count: 4,713 | Target: 4,600 | Anchor: a paper notebook in a building where nothing is paper, and a pen that writes down the apology at the same speed it wrote down the insult -->
+ <!-- Word count: 4,715 | Revision: 2 (breath repair — 5 over-long narration sentences split, median 18.5 -> 17.0, >=40w 20.4% -> 14.8%, +2 words; prior: dialogue pass, 9 edits inside quoted speech) | Target: 4,600 | Anchor: a paper notebook in a building where nothing is paper, and a pen that writes down the apology at the same speed it wrote down the insult -->
 
 Eleven forty, room 2-14, north end of the operations block — nothing on the summons about what for.
 
-It had come up on the pad at twenty past ten with no name attached to it: routing block, room, time, the word ATTEND set in capitals, a clause reference that Vexx looked up on the walk down, understood no better for having looked, then carried into the stairwell with him because it pointed at a schedule sitting two authorizations above anything he held. He had assumed Merrick. That was the shape a summons had in his head now, a fortnight after a transport had gone out with a man on it repeating himself, and he had put together most of an answer about the assessment before the answer turned out to be for a question nobody was going to ask him. The corridor at that end had been re-floored in the summer, the new covering stopping a couple of paces short of the fire door — where somebody had run out of it, or run out of the money for it, leaving a lip you could catch a boot on.
+It had come up on the pad at twenty past ten with no name attached to it: routing block, room, time, the word ATTEND set in capitals. A clause reference that Vexx looked up on the walk down, understood no better for having looked. He carried it into the stairwell with him because it pointed at a schedule sitting two authorizations above anything he held. He had assumed Merrick. That was the shape a summons had in his head now, a fortnight after a transport had gone out with a man on it repeating himself, and he had put together most of an answer about the assessment before the answer turned out to be for a question nobody was going to ask him. The corridor at that end had been re-floored in the summer, the new covering stopping a couple of paces short of the fire door — where somebody had run out of it, or run out of the money for it, leaving a lip you could catch a boot on.
 
 *It’s an evidence-handling schedule*, Rx said. *The one about who’s allowed to carry what out of a locked room. You’d think a man would know that already.*
 
@@ -17,7 +17,7 @@ The room had been a store once, converted by somebody working to a budget that r
 
 She was at the far side of the table, writing, and she finished the line before she looked up — not making a point of it, not the small held pause of a person who means you to wait, simply finishing a line.
 
-The notebook was paper. Vexx had not seen paper in that building outside of the laminated card taped to the terminal down in the annex — this was a bound book, cloth spine, a corner gone soft like a much-handled card, lying open under her left hand while her right went on at a steady unhurried rate, the pen making a sound in the quiet room like a fingernail going down a seam.
+The notebook was paper. Vexx had not seen paper in that building outside of the laminated card taped to the terminal down in the annex. This was a bound book, cloth spine, a corner gone soft like a much-handled card, lying open under her left hand while her right went on at a steady unhurried rate. The pen made a sound in the quiet room like a fingernail going down a seam.
 
 “Operator Vexxcerian. Dessen, Internal Compliance.” She capped the pen, set it in the gutter of the book. “Sit wherever you like. It’ll be about an hour.”
 
@@ -37,7 +37,7 @@ She let it sit exactly as long as it needed, no longer.
 
 * * *
 
-She began where they teach you to begin, without any of the small theater Vexx had been braced for — no folder pushed across the table, no pause held for effect, no question asked twice over in a different tone to see whether the answer moved. She asked him what the material was, and he told her: armor plating with a modification pattern on the underside, a data chip burned past recovery, a dog tag. She asked what the review board had ruled. He told her that too — she wrote it down without saying what she thought of it, without any of it reaching her face at all.
+She began where they teach you to begin. There was none of the small theater Vexx had been braced for — no folder pushed across the table, no pause held for effect, no question asked twice over in a different tone to see whether the answer moved. She asked him what the material was, and he told her: armor plating with a modification pattern on the underside, a data chip burned past recovery, a dog tag. She asked what the review board had ruled. He told her that too — she wrote it down without saying what she thought of it, without any of it reaching her face at all.
 
 “You raised the release yourself.”
 
@@ -111,7 +111,7 @@ There is a way of folding a shirt so the collar never creases, and neither of th
 
 He said, “I logged an extension.”
 
-It was out of him before he had decided anything — the first lie he had told in that room, a manufactured one, a different animal altogether from a withheld one, and his body knew the difference about a second before his mouth caught up with it.
+It was out of him before he had decided anything — the first lie he had told in that room, a manufactured one, a different animal altogether from a withheld one. And his body knew the difference about a second before his mouth caught up with it.
 
 “Against which reference.”
 
@@ -147,7 +147,7 @@ The door opened.
 
 * * *
 
-Jameson had a data pad in one hand, his cap in the other, and he had come from outside — the shoulders of his uniform dark with it, weather standing in the corridor behind him, the smell of rain on wool arriving in the room about a second after he did.
+Jameson had a data pad in one hand and his cap in the other. He had come from outside — the shoulders of his uniform dark with it, weather standing in the corridor behind him, the smell of rain on wool arriving in the room about a second after he did.
 
 He did not sit. He did not say excuse me. He stood inside the door with the pad down at his side, letting the end of Dessen’s sentence finish itself in the air, and for about a second nothing at all happened.
 
