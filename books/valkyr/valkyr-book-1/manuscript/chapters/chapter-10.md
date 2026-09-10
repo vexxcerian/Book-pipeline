@@ -103,7 +103,7 @@ There is a way of folding a shirt so the collar never creases, and neither of th
 
 “No.”
 
-“Do you dispute that it ran out.”
+“Or that it ran out.”
 
 “No.”
 
@@ -151,15 +151,15 @@ Jameson had a data pad in one hand, his cap in the other, and he had come from o
 
 He did not sit. He did not say excuse me. He stood inside the door with the pad down at his side, letting the end of Dessen’s sentence finish itself in the air, and for about a second nothing at all happened.
 
-“Say the rest of it.”
+“Finish the sentence.”
 
 “Officer Dessen, Internal Compliance. And you are—”
 
-“I know who you are. I’ve read your file. I’ve read your finding. I came from the other end of the building without a coat. Say the rest of the sentence.”
+“I know who you are. I’ve read your file. I’ve read your finding. I came from the other end of the building without a coat. Read me the end of it.”
 
 “—his fitness to hold operational command.”
 
-“There it is.” He set the pad down on the table without looking at where it landed. “Do you know what that word does. Not to a career — to a file. It sits in the second field for the rest of a man’s service, every board that ever opens him reads it first, and not a single one of them ever finds out it was written by somebody who has never in her life had to decide anything in under a minute. Compliance has produced four findings in this building this year. Three of them were about parking. You have a room, a jug of water, three weeks — and a man who did the only honest thing available to him in a corridor at the end of a very bad month, and you have found a means of making that the problem, because the actual problem is a review board, and boards are not in your remit, and they have taken care to see that they never will be.”
+“There it is.” He set the pad down on the table without looking at where it landed. “Do you know what that word does. Not to a career — to a file. It sits in the second field for the rest of a man’s service, every board that ever opens him reads it first, and not a single one of them ever finds out it was written by somebody who has never in her life had to decide anything in under a minute. The last finding Compliance produced in this building was about parking. You have a room, a jug of water, three weeks — and a man who did the only honest thing available to him in a corridor at the end of a very bad month, and you have found a means of making that the problem, because the actual problem is a review board, and boards are not in your remit, and they have taken care to see that they never will be.”
 
 It went on for about eight seconds.
 
@@ -171,7 +171,7 @@ Then it stopped, like a machine stopped by somebody taking the power off it rath
 
 Dessen had not moved. She had not put the pen down either, and the hand holding it had stayed where it was on the page, at the end of an unfinished word.
 
-“I said your work was trivial. It isn’t. It’s the only reason a file in this building means anything at all — I have relied on it twice this year, both times to my advantage, neither time with a note of thanks to anybody.” He was looking at her, not at the table, not at Vexx. “The thing about the parking, I don’t know to be true. I said it because I wanted it to land, because it’s the sort of thing that lands. That’s worse than the first part. The first part was temper. The second part I chose.”
+“I said your work was trivial. It isn’t. It’s the only reason a file in this building means anything at all — I have relied on it twice this year, to my advantage, and thanked nobody for it.” He was looking at her, not at the table, not at Vexx. “The thing about the parking, I don’t know to be true. I said it because I wanted it to land, because it’s the sort of thing that lands. That’s worse than the first part. The first part was temper. The second part I chose.”
 
 He stopped, and then, because he had evidently decided the account was not yet complete:
 
@@ -201,7 +201,7 @@ She read them.
 
 Dessen was writing.
 
-“So it isn’t a custody problem,” Jameson said. “It’s a solitude problem. You’re saying he was alone in it start to finish, with nothing in the file that could have stopped him.”
+“Then what you have is a solitude problem,” Jameson said. “You’re saying he was alone in it start to finish, with nothing in the file that could have stopped him.”
 
 “Yes.” She underlined something. “That’s better than I had it.”
 
@@ -209,7 +209,7 @@ Dessen was writing.
 
 “Inconclusive.”
 
-“What did the board rule about the material.”
+“On the material.”
 
 Nothing in the room for a second.
 
@@ -237,7 +237,7 @@ Dessen did not answer for some time, and the silence she kept was a working one 
 
 Jameson stood, picked his cap up off his knee, stopped halfway to the door with the pad under his arm.
 
-“Pressure’s fallen nine points since Tuesday,” he said. “Which is not weather. That’s a front. It’ll be in off the water by tonight.”
+“Pressure’s fallen nine points since Tuesday,” he said. “That much in two days is a front. It’ll be in off the water by tonight.”
 
 Dessen turned a leaf and went on writing.
 
@@ -299,7 +299,7 @@ He did not fill it. He did not look away. He did none of the small courteous thi
 
 “It’ll keep,” Vexx said.
 
-“All right.”
+“As you like.”
 
 That was all. He did not ask again. He did not tilt his head, or say *are you sure*, or leave a door propped open in his voice for it to come back through later. He let it go, entirely, the way a decent man does — and stood there with him, in a corridor, in front of an elevator that was not coming, saying nothing.
 
