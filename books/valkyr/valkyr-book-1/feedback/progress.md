@@ -4,8 +4,8 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Ch.1–9 in the manuscript, 31,009 words of prose. Ch.6, Ch.7 and Ch.8 have all PASSED the
-8.5 gate. Ch.9 is drafted and mid-loop.** All three mechanical gates clean on all nine.
+**Ch.1–9 in the manuscript. Ch.6, Ch.7, Ch.8 and Ch.9 have ALL PASSED the 8.5 gate** — four
+consecutive pipeline chapters. All three mechanical gates clean on all nine.
 
 Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
 Ch.6 (8.5/8.79), Ch.7 (8.5/8.79, **Prose 9.0**) and Ch.8 (8.5/8.79, **Prose 9.0 sustained
@@ -25,7 +25,7 @@ pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 | style / grammar / voice-wear | ✅ clean on all nine, calibrated to the author's measured voice |
 | `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–9 |
 | `ENTITY_STATE.yaml` | ✅ audited Ch.1–8; 9 characters, 4 locations, 8 objects added; CF-04 and CF-13 closed |
-| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 / Ch.7 / Ch.8 all 8.5 / 8.79 PASS** · Ch.9 unscored · Ch.2–5 stale |
+| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 / Ch.7 / Ch.8 8.5 / 8.79** · **Ch.9 8.5 / 8.71 PASS** (8.0 on first pass — one arithmetic defect, fixed) · Ch.2–5 stale |
 | `evaluations/` | ✅ per-chapter evals, pass reports, `continuity/ch1-8-audit.md` |
 
 ## The structure, in one paragraph
@@ -260,19 +260,20 @@ no paper on the last page, as the outline required.
 
 ## Resume point
 
-1. **Finish Ch.9's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
-2. **Then Ch.10.** Its closer must be the tenth distinct shape — check the inventory above
-   before drafting, not after.
-3. **Watch the rhythm, breath and comparison numbers** `style_check.py` prints per chapter.
-   Every layer of THE SEAM was caught by reading them, and the `and`-chaining fingerprint has
-   now recurred on the first draft of **every single pipeline chapter** — Ch.6 40.4/1k, Ch.7
-   35.9, Ch.8 45.5, Ch.9 36.5. The 60%-of-draft self-check in `book-writer.md` has caught it
-   four times out of four. It is a permanent tendency, not a bug that gets fixed.
-4. **Run `continuity-guardian` again after Ch.12** — the first full audit (Ch.1–8) is in
-   `evaluations/continuity/ch1-8-audit.md` and found things eight chapters of per-chapter
-   passes had all missed.
-5. Optional: the Ch.5 ending review, and the FOLLOW-UP items in `STATE.yaml`. None block
-   drafting.
+1. **Ch.10.** Its closer must be the tenth distinct shape — check the inventory above before
+   drafting, not after. Two live calibration items to carry into the brief:
+   - **Narration `and`.** The author's band is 18.2–18.9/1k — a 0.7-point spread across five
+     chapters. The pipeline runs 20.7 → 20.4 → 22.1 → **24.4**, rising every chapter, Ch.9 the
+     maximum. Repair on Ch.9 was simulated and is blocked by the long-sentence floor, so this
+     is a *drafting* target for Ch.10, not an editor work order.
+   - **Numeric density 41.8/1k against the author's 11.7–23.4** — fourth consecutive chapter
+     over the flag and still ungated. The evaluator calls this the number that should worry us
+     most. Measure the author properly before gating it (see the rule below).
+2. **Two Ch.9 items left on the table, both cheap and neither gated:** six question-mark
+   restorations (the chapter has zero in 3,355 words against an author floor of 1.0/1k), and
+   one ~4-word self-correction in Zeus's offer. Prose 8.5 → 9.0 is two specified edits away.
+3. **Run `continuity-guardian` again after Ch.12.**
+4. Optional: the Ch.5 ending review and the `STATE.yaml` FOLLOW-UP items. None block drafting.
 
 ## Worth the author's eye
 

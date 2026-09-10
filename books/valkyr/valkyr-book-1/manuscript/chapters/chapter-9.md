@@ -5,7 +5,7 @@
 
 “Did Paladin ever get the fourth string.”
 
-Vexx answered before he had worked out who was asking, which is what an hour in a chair will do to a man. “He got one off the quartermaster. It won’t hold past an hour.”
+Vexx answered before he had worked out who was asking, which is what an hour in a chair will do to a man. “He got one off the quartermaster. It’ll be flat by tonight.”
 
 “That’ll be the peg.”
 
@@ -141,7 +141,7 @@ He was still sitting when Vexx went out — four bays lit, five dark, a cup he w
 
 *You’ve been quiet since I sat down.*
 
-*Fine*, Rx said. Then, at his ordinary speed: *He’s left-handed. Did you know that. He works with the sheet turned about thirty degrees, like a man signing something on his knee, and it has been driving me up the wall for two hours.*
+*Fine*, Rx said. Then, at his ordinary speed: *He’s left-handed. Did you know that. He works with the sheet turned about thirty degrees, like a man signing something on his knee, and it has been driving me up the wall all night.*
 
 *Everything in that room drives you up the wall.*
 

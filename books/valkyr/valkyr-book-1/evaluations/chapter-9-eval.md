@@ -490,3 +490,505 @@ Below the 8.5 gate, to `book-editor`. **The PATH TO 8.5 above is mandatory and i
 I have specifically interrogated three temptations. **(1) The temptation to hold 8.5/8.79 for a fourth chapter** — rejected; the clock error is larger and more visible than Ch.8's, which I did not drop Ch.8 for, and I have stated the comparison rather than assumed it. **(2) The temptation to break the streak for its own sake** — checked by confirming that Theme, Emotion and Momentum genuinely hold 9.0 on cited evidence and that the Prose drop rests on four measurements rather than a mood. **(3) The temptation to accept the four pass reports' own audits** — rejected on principle and it was the right call three times (F2, F10, §Pattern 17); those reports remain the most rigorous artifacts in this project and all three failures have the same shape, which is itself the finding.
 
 Confidence in any score above 8.0 requires external validation — beta readers, an editor, comp analysis. **The number I would defend hardest is Pacing 8.0, because it rests on arithmetic anybody can check. The number I am least sure of is Prose 8.5 — treat it as 8.5 ± 0.5, and note that the same evidence supports 9.0 if §THE HINGE is judged a pipeline metric rather than a reading experience.** The Casual Reader 8.5 is borderline against 8.0 and does not change the verdict either way.
+
+---
+---
+
+# RE-EVALUATION: Chapter 9 — 0200 (post-polish)
+**Evaluator:** book-evaluator | **Date:** 2026-09-10 (second pass)
+**Scope:** 3,357 words (`style_check` counter) · 1,761 words of narration under the CORRECTED
+register splitter · 107 quoted runs + 9 italic runs (166 dialogue lines by the gate's count).
+**This section is appended, not a replacement.** The first pass and its reasoning stand on the
+record above, including the parts of it I retract below.
+
+## RE-EVALUATION HEADLINE
+
+**Genesis Floor: 8.5 | Genesis Average: 8.71 | Casual Reader: 8.5 | CVI-Launch: 8.8 | CVI-Legacy: 6.7**
+**VERDICT: PASS.** Floor ≥ 8.5 and Casual ≥ 8.5, both met — **and one of them is met exactly.**
+
+One dimension moved: **Pacing & Coherence 8.0 → 8.5.** Its single cited cap reason (F1, the
+stopped clock) is verified repaired. No other dimension moved in either direction, and I show
+below why three of them did not move despite work being done on them.
+
+**The most important thing in this section is not the score.** It is that **my own F11
+finding was wrong and is retracted**, and that the retraction was only possible because
+someone fixed the instrument I measured it with. Details in §RETRACTIONS.
+
+---
+
+## 1. THE TIMELINE — rebuilt from the text, independently
+
+I did not check the writer's arithmetic against the writer's account of it. I extracted every
+temporal statement in the chapter and rebuilt the clock from scratch.
+
+| Line | Statement | Implied time |
+|---|---|---|
+| 18 | *"He had been there when Vexx came in **at ten past one**."* | **01:10** — the anchor |
+| 18 | *"Vexx had said good evening, then nothing else **for an hour**."* | 02:10 |
+| 8 | *"…which is what **an hour in a chair** will do to a man."* (the opening exchange) | **02:10 ✓ agrees** |
+| 16 | *"…it was into a man's back **inside the hour**."* | consistent, non-binding |
+| 44 | *"Zeus asked four more **over the next half hour**."* | 02:40 |
+| 50 | *"you've been typing **an hour and a half**"* | 01:10 + 1:30 = **02:40 ✓ agrees** |
+| 44, 54 | *"**At two in the morning**"* ×2 · chapter title `0200` | 02:10–02:40 band ✓ |
+| 134 | *"a badge asked it something for **a hundred and four minutes** at two in the morning"* | 01:10 + 1:44 = **02:54** |
+| — | offer → refusal → cup → row four → Sedge → thanks → door → log → exit | **~14 min, 02:40 → 02:54** |
+| 158 | *"It's been off **since one**"* (the urn) | independent ✓ |
+| 218 | Aglaope: *"I've been sitting here **since half past two**"* | 02:30, ~50 min before he sits ✓ |
+| 248 | *"The mess at **four in the morning**"* | ~03:00 → ~04:00, scene 2 ✓ |
+
+**THE CLOCK CLOSES.** There is no longer a contradiction anywhere in the chapter, in narration
+or in dialogue. Every one of the eleven temporal statements is simultaneously satisfiable, and
+the two that were previously load-bearing errors (l.18 and l.50) are now the two that
+independently confirm 02:40. The badge log at 104 minutes, the title `0200`, *"at two in the
+morning"* ×2, *"half past two"* and *"four in the morning"* all agree. **F1 is CLOSED.**
+
+The tightest joint is the 14 minutes between 02:40 and 02:54, which has to carry ~1,100 words
+of scene. At conversational pace with the silences the chapter explicitly writes in, that is
+comfortable — 1,100 words of dialogue is 8–9 minutes spoken. **It holds.** The loosest joint is
+scene 2 (~03:00 → 04:00 for ~1,400 words), which is elastic but contradicts nothing, because
+nothing states when scene 2 begins.
+
+### Two residuals, both minor, neither floor-holding — and one of them the repair created
+
+**R1 — Rx's *"two hours"* (l.144).** *"it has been driving me up the wall for two hours."* Rx
+entered with Vexx at 01:10; at ~02:55 that is 1 h 45 m. As idiom in a complaint it survives;
+as a number in the mouth of the book's precision character — who says *"thirty-one per cent
+complete"* and *"seven years and four months"* — it is the one figure a Hostile reader can
+still round on. **Fix (one phrase, zero metric cost, and it improves two other things):**
+*"and it has been driving me up the wall **all night**."* Non-numeric, better complaint
+register, and it removes one of the three numerals crowded into Rx's three-line block
+(*thirty degrees*, *four years*, *two hours*) — which helps Pattern #13 and §STANDING
+OFFENCE #3's aggregate problem at the same time.
+
+**R2 — a new echo on the chapter's first line, introduced by the fix itself.** l.8 now reads
+*"…which is what **an hour** in a chair will do to a man. 'He got one off the quartermaster.
+It won't hold past **an hour**.'"* Two *an hour*s twenty words apart, on the chapter's opening
+line, where before the repair the two durations differed. This is a real cost of my own
+recommended edit and I did not anticipate it. **The gloss side is not available** — *"an hour
+in a chair"* is now the sentence that makes the 02:10 open legible, so it is load-bearing
+timeline. **Fix the string instead:** *"It won't hold **a day**."* In voice, keeps the
+diagnosis (the peg, not the string), removes the echo, and removes one numeral. −1 word, no
+band crossed.
+
+---
+
+## 2. THE OTHER THREE FINDINGS — verified applied
+
+| Finding | Verified | Effect |
+|---|---|---|
+| **F4** — *"His shoulders had come down off wherever they had been"* | **CUT** (l.98 now: *"'It's been the water since August.' He looked at the grid. 'I'd have been sorry if you'd taken it.'"*) | See the risk note below. |
+| **F3** — *"and the silence lasted exactly as long as that did"* | **CUT** (l.238 now: *"The heater under the servery came on, and it ran, and it stopped."*) | Aglaope's Ch.23 seed is now dropped with **zero** narratorial flag. The outline's writer warning (c) is satisfied exactly. −1 narration `and`. |
+| **§THE HINGE / F2** — trailing `, which` gloss | **6 of 7 removed or recast**, 3.8 → **0.5/1k** (gate reads 0.6). Gate `which_gloss_per1k` implemented at **1.0**; all five author chapters and all four pipeline chapters now pass. | See §3 — this is now closed on all three readings. |
+
+### ⚠️ The one real risk in the repair, and it did not fire
+
+**Two independent passes each removed a signal I had called load-bearing for the same beat.**
+F4 removed the shoulders line; the gloss repair (9.3) removed *"which did nothing whatever to
+the cup"* — and my first pass had written that the cup-turn gloss and *"I'd have been sorry"*
+*"deliver the relief completely."* Between them, two of the three signals for Zeus's relief
+were deleted by passes that could not see each other. **That is exactly the aggregate blindness
+I flagged under §Pass-report reliability, and it happened again, in my favour this time by
+accident.**
+
+I re-read the beat cold. **It survives, and it is better:**
+
+> *"Zeus picked up the pen, held it over the fourth row a while, put it down again on the paper
+> without having written a thing with it, then reached over and turned the cup a half-turn on
+> the table. 'It's the water,' he said. 'Not the grounds.' … 'It's been the water since
+> August.' He looked at the grid. 'I'd have been sorry if you'd taken it.'"*
+
+Three purposeless motions in one sentence — pen up, pen held, pen down having written nothing,
+cup turned — then a deflection about coffee, then the line. The relief is now delivered by
+accumulated pointless movement instead of by a narrator annotating one gesture. **The gloss was
+doing less work than I credited it with, because the sentence it sat in already contains its
+own evidence.** This is the strongest single argument in the manuscript for the gloss gate.
+
+**Recorded as a process finding, not a text finding:** the two passes got a good outcome without
+either of them knowing the other was spending from the same account. Next time it will not
+land this way. **Pipeline recommendation: when an evaluation names a beat's signals as
+load-bearing, the editor pass and the style-repair pass must both be given that list.**
+
+---
+
+## 3. PATTERN #11 — RESOLVED, and the arithmetic that resolves it
+
+Four evaluations have argued about this check. It can now be closed, because the corrected
+splitter makes one consistent measurement possible across author and pipeline.
+
+**The instrument:** the three mechanically countable forms of explanatory extension —
+`the way X` (the author's §1.2(b) signature), `, which` (the pipeline's), and `as if/as
+though` — counted identically in every chapter, whole text, no register split, no judgement.
+
+| /1k | Ch.1 | Ch.2 | Ch.3 | Ch.4 | Ch.5 | **Author range** | Ch.6 | Ch.7 | Ch.8 | **Ch.9** |
+|---|---|---|---|---|---|---|---|---|---|---|
+| broad #11 | **1.30** | 2.08 | 2.35 | 2.11 | 3.19 | **1.30–3.19** | 2.29 | 1.99 | 1.58 | **1.49** |
+| of which `, which` | 0 | 1 | 0 | 1 | 1 | **0–1 instance** | 8 | 1 | 4 | **2** |
+| of which `the way` | 5 | 8 | 7 | 4 | 5 | **4–8** | 2 | 2 | 5 | **3** |
+
+```
+READING (A) — V3.4 as written, threshold >0.8/1k
+  Ch.9 count 5 (threshold >6)      → not breached
+  Ch.9 density 1.49/1k             → BREACHED
+  BUT: it breaches for ALL FIVE author chapters, including the LOCKED Ch.1 at 1.30.
+  A threshold that fails the benchmark is measuring the language, not the pipeline. NOT APPLIED.
+
+READING (B) — author-benchmarked, broad definition
+  Author 1.30-3.19/1k · Ch.9 1.49/1k  → PASS. Second-lowest in the manuscript;
+  below four of the author's five chapters.
+
+READING (C) — author-benchmarked, NARROW (the `, which` gloss, narration only)
+  Author 0.00-0.99/1k (corrected denominators) · Ch.9 0.57/1k  → PASS.
+  Was 3.9/1k before the repair.
+```
+
+**All three coherent readings now agree. No cap. §THE HINGE is CLOSED.** And the shape has
+changed, not just the count: Ch.9's distribution (3 `the way` / 2 `, which`) is for the first
+time **author-shaped** — the author's total comes almost entirely from his own signature form
+and almost none from the gloss, and Ch.9 now does the same. Ch.6 (2 / 8) was the inverse.
+
+**The gate's ceiling of 1.0/1k is correctly placed** on the corrected numbers — the author's
+measured maximum is 0.99/1k (his Ch.5). That is closer to right than my own recommended 0.80
+would have been. Noted, because I recommended 0.80 from a bad denominator (§RETRACTIONS).
+
+---
+
+## 4. §THE SEAM — RE-DERIVED on the corrected splitter, as instructed
+
+The brief is right that my breath and register numbers were taken through a splitter that
+counted wholly-italic paragraphs as narration. I re-derived everything that depended on it.
+**One finding dies. One survives with a smaller multiple. One new one appears.**
+
+| `and` /1k (gate's own splitter + word function) | Ch.1 | Ch.2 | Ch.3 | Ch.4 | Ch.5 | **Author** | Ch.6 | Ch.7 | Ch.8 | **Ch.9** |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Narration** | 18.4 | 18.3 | 18.9 | 18.2 | 18.8 | **18.2–18.9** | 20.7 | 20.4 | 22.1 | **24.4 ✗** |
+| **Dialogue** | 27.2 | 17.1 | 13.9 | 20.4 | 11.4 | **11.4–27.2** | 27.1 | 10.2 | 25.1 | **20.1 ✓** |
+| **Register sum** | **45.6** | 35.4 | 32.8 | 38.6 | 30.3 | **30.3–45.6** | 47.8 | 30.7 | 47.1 | **44.5 ✓** |
+
+- **F11 (register sum) is RETRACTED.** I reported the author's range as 29.3–34.7 and Ch.9 at
+  42.5, a 7.8-point breach. Corrected: the author's range is **30.3–45.6** — his own locked
+  Ch.1 posts 45.6 — and **Ch.9 posts 44.5, inside it.** The claim that "he never runs both
+  registers hot at once" was an artefact of reading his 30 italic paragraphs as narration.
+  See §RETRACTIONS.
+- **The divergence relocates, and it is real.** The author's **narration** `and` band is
+  extraordinarily tight — **18.2–18.9/1k, a 0.7-point spread across five chapters**, which is
+  as strong a signature as anything measured on this book. The pipeline: **20.7 → 20.4 → 22.1
+  → 24.4, rising every chapter, Ch.9 the manuscript maximum at 1.29× his ceiling.** The
+  whole-chapter gate (22.3 against 24.0) cannot see it, because the dialogue half is low.
+- **Second measurement pointing the same way.** Ch.9's narration `≤6w` share is **19.4%**
+  against an author range of **20.8–29.9%** — the least punchy narration in the manuscript,
+  the only chapter below his floor. Longer chains, fewer short sentences: one habit, two
+  instruments.
+
+### Why this is NOT a Ch.9 edit, with the arithmetic
+
+The brief asks which metric a finding moves. I ran the simulation. The obvious repair — split
+chained narration sentences — is blocked:
+
+```
+Current (gate): 93 narration sentences | median 14.0 (FLOOR 14.0) | >=40w 14.0% (floor 13.0) | <=6w 19.4% (ceiling 30.0)
+Split a >=40w sentence into 34+6 : >=40w 14.0% -> 12.9%   → BREACHES the 13.0 floor
+Split three 18-24w into 14+6     : median holds 14.0 (passes only on strict `<`)
+                                   >=40w 14.0% -> ~13.5%  (0.5 pp of margin left)
+                                   <=6w  19.4% -> ~22%    (back inside the author's band)
+                                   narration `and` 24.4 -> ~22.8/1k (still 1.21x his ceiling)
+```
+
+**The median floor of 14.0 and the ≥40w floor of 13.0 together mandate long chained narration,
+and the excess `and` cannot be removed subtractively without breaching one of them.** The
+author reaches the same breath with 5.5 fewer `and`s per thousand because he chains with
+commas, em-dashes and colons instead — and Ch.9's narration em-dash is already at 14.2/1k
+against his 6.8–13.9, so that channel is also full.
+
+**Conclusion: this is a pipeline calibration finding for Ch.10, not an editor work order for
+Ch.9.** De-conjuncting three sentences to satisfy a metric, with 0.5 pp of margin on a floor,
+is writing to the gate. **Recommendation (root, per the UPDATE RULE): report
+`and_narration_per1k` per chapter with a ceiling of 18.9 (the author's measured maximum),
+firing from Ch.10 forward with Ch.6–9 recorded as pre-gate — the simile-floor precedent — and
+a note that the repair is structural (chain with commas/colons/em-dashes, his mix) and never
+subtractive.**
+
+**Also retired:** the claim that Ch.7 is "the shortest-breathed chapter in the manuscript at
+median 9.0." Its real narration is median 11. Nothing in my Ch.9 reasoning rested on that
+figure — §THE SEAM's Ch.9 argument was about `and`, not breath — but the Ch.7/Ch.8 line of
+findings should be re-read with 11 substituted for 9.0.
+
+---
+
+## 5. THE TWO FINDINGS DELIBERATELY NOT ACTIONED — judged
+
+### §THE QUESTION MARK — the finding STANDS, and not gating it was RIGHT
+
+**Both halves of that sentence matter.**
+
+**Not gating it was correct.** An interrogative detector that returns zero for a chapter with
+eleven spoken interrogatives is broken, and gating a metric on a broken detector is worse than
+leaving it ungated — it manufactures false clean reports, which is the specific failure mode
+this project has been fighting since Ch.7. Building the detector, finding it wrong, and
+declining to ship it is the right call and better practice than the finding that prompted it.
+
+**But the prose defect never depended on that detector, and it stands undiminished.** It rests
+on two things, both intact: a `?`/1k count, which is trivially reliable and which the gate now
+reports; and a hand count of interrogatives, which is a human reading.
+
+| `?` /1k (gate) | Ch.1 | Ch.2 | Ch.3 | Ch.4 | Ch.5 | **Author** | Ch.6 | Ch.7 | Ch.8 | **Ch.9** |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | 1.0 | 2.3 | 3.0 | 2.1 | 1.1 | **1.0–3.0** | 0.9 | 0.7 | 1.1 | **0.0** |
+
+**Zero question marks in 3,357 words at a dialogue ratio of 1.78:1 — the highest in the book.**
+Not one author chapter is below 1.0, including the all-memory Ch.1. `voice-dna.md` §1.3 makes
+the bare question one of four PRESSURE behaviours; Ch.9 fires it on *every* question by *every*
+character, including *"Do you know the cook's name."* and *"How's it ordered."* A device that
+fires on everything marks nothing, and Aglaope's Ch.23 seed is currently punctuated exactly
+like a question about a cook.
+
+**The fix, specified, since the brief asks for it. Six restorations, four holds, zero metric
+cost — punctuation substitution only:**
+
+- **Restore `?`:** l.32 *"Do you know the cook's name?"* · l.36 *"What did you tell the station commander about the bund?"* · l.40 *"Did he do it?"* · l.120 *"What happened?"* · l.174 *"How's it ordered?"* · l.144 (Rx) *"Did you know that?"*
+- **Hold the bare form — these are the load:** l.124 *"Why."* · l.82 *"How long does it take. Finding out what a man's protecting."* · l.228 *"Have you told anybody but him,"* · l.236 *"What happens to him if you're wrong," … "And what happens to him if you're right."*
+
+That is six ordinary questions punctuated ordinarily and four loaded ones left bare, which is
+the author's own practice and which makes the Ch.23 seed land as pressure instead of as house
+style. **This is chapter 9 of 26 and the channel has to work seventeen more times.** It does
+not hold any dimension below 8.5 — it is one of three cap reasons holding Characters off 9.0 —
+but it gets more expensive every chapter it is deferred.
+
+**Gate recommendation, revised:** do not gate the interrogative count. **Gate the `?`/1k floor
+at 1.0** (the author's measured minimum, already reported) and add one human item to the
+dialogue-polish checklist: *"if the bare-question form fires more than three times in a
+chapter, restore the ordinary ones."* A floor on a two-character regex is measurable; the
+detector is not needed for it.
+
+### Pattern #17 — I NARROW MY OWN FINDING. Leaving the interruption count at 1 was right; the finding survives in a smaller and sharper form
+
+Verified: **1 dash-terminated dialogue line in 166. Zero ellipses. Zero self-repairs. Zero
+repeated-word stumbles.** The count is unchanged and it is still the manuscript's lowest in the
+chapter with the most dialogue.
+
+**Two things I under-weighted in the first pass, and they are good arguments:**
+
+1. **The single interruption is optimally placed.** *"or it'll take you—" / "Four hundred."* is
+   the comedy-into-devastation hinge, which I called the best pacing move in the manuscript. If
+   a chapter gets one interruption, that is where to spend it. Adding more would flatten it.
+2. **The chapter does have dialogue mess — it is just not prosodic.** *"How long does it take.
+   Finding out what a man's protecting."* is a false start followed by a self-specification.
+   *"There was a thing to say — he could see the shape of it, could have done it in four words
+   — and he left it where it was"* is a narrated abandoned sentence. *"How's it ordered." / "In
+   order." / "Chronological." / "That's what in order means."* is four turns of refusal to
+   answer. Two exhausted professionals declining to say things IS the chapter's subject, and
+   interrupting each other is a different chapter.
+
+**So I withdraw the demand for more interruptions and narrow the finding to what actually
+survives it: zero self-correction.** Zeus delivers 350 words of blackmail methodology at 02:45
+without one mid-sentence repair. False starts do not require rudeness; they require tiredness,
+and the chapter's premise is tiredness. **Highest-value single edit, ~4 words, zero metric
+cost:** in l.66, *"they go looking for something enormous, there isn't one, they give up"* →
+*"they go looking for something enormous — there isn't one, there's never one — they give up."*
+One self-correction, from a man who has said this before and is deliberately not relishing it.
+**It does not hold any score.** It is worth doing because Ch.8 proved this pipeline can produce
+9 breaks in 162 lines, so the capability exists and only needs pointing.
+
+---
+
+## 6. REVISED GENESIS SCORE
+
+| Dimension | 1st pass | **Now** | What changed |
+|---|---|---|---|
+| Originality | 8.5 | **8.5** | Untouched by the repair. Both cited originality moves intact. |
+| Theme | 9.0 | **9.0** | Cap reason (*"He had got that far before he stopped"*) unchanged and I would still not cut it. |
+| Characters | 8.5 | **8.5** | All three cap reasons stand: cover-the-name ~57% (the form, not a defect), gesture-grammar convergence, shared question punctuation. `turn`-verbs rose from 12 to 13 (9.4's chair recast) but the **grammar** count did not — a chair turned *toward* an interlocutor is the opposite function from a cup turned instead of speaking. WATCH holds, no cap. Chaos still **4/4 inhabited**; 9.2's recast preserves the cognitive-distortion marker verbatim in coordinate form. |
+| Prose & Voice | 8.5 | **8.5** | **One of four cited regressions closed; three stand; one new appears.** See below. |
+| **Pacing & Coherence** | **8.0** | **8.5** | **F1 verified closed.** The clock is rebuilt above and it closes on all eleven statements. Not 9.0: two skim windows (F8) unfixed — the 130-word index paragraph and the manifest escalation — and scene-end pull is 1 of 2, with the chapter closing flat by design. |
+| Emotion | 9.0 | **9.0** | **One of two cap reasons cleared** (both narratorial confirmations cut; the relief beat verified stronger without them). The other holds and was always the sufficient one: the POV character carries almost none of the emotional load — his own beat is four words of hand — now a two-chapter pattern. 9.5 is available only by giving Vexx a load the chapter is designed to withhold from him. |
+| Momentum / Series Engine | 9.0 | **9.0** | Both forward loads intact. The PATH's Rx line (the declared shareable, *"the interrogator who never asks why"*) was **not** added — l.144 is unchanged — so the cap reason stands. Verified independently: `why` occurs **once** in the chapter and it is Vexx's. §STANDING OFFENCE #1 holds. |
+| **FLOOR** | 8.0 | **8.5** | |
+| **AVERAGE** | 8.64 | **8.71** | Floor/average gap 0.21 — **no single-dimension bottleneck. The chapter is now flat at 8.5–9.0.** |
+
+**Trajectory: Ch.1 8.5/8.71 (locked) → Ch.6 8.5/8.79 → Ch.7 8.5/8.79 → Ch.8 8.5/8.79 → Ch.9 8.0/8.64 → Ch.9 rev.4 8.5/8.71.**
+
+### Why Prose did not move, stated plainly — because the editor did exactly what I asked
+
+My PATH wrote: *"Prose & Voice 8.5 → 9.0 requires closing §THE HINGE in this chapter, not just
+gating it for the next one."* **It was closed, and more thoroughly than I specified — six
+instances against the four I named.** The editor is entitled to an accounting.
+
+The 8.5 came with **four** cited regressions, of which the hinge was (1):
+
+| | 1st pass | Now |
+|---|---|---|
+| (1) `, which` gloss 3.49/1k | regression | **CLOSED** — 0.5/1k, inside the author's band, author-shaped distribution |
+| (2) Pattern #17, 1 break in 161 lines | regression | **STANDS** at 1 in 166 — narrowed to *zero self-correction* (§5), but standing |
+| (3) Numeric density | regression | **STANDS and is unimproved** — 41.8/1k on a like-for-like regex against the author's 11.7–23.4. **1.79× his maximum, and now the largest remaining measured divergence on this chapter.** |
+| (4) The gnomic twin (Pattern #16) | regression | **STANDS, and has tightened.** F5 was not actioned. Worse: 9.7's recast (*", which is most of what a man would need"* → *"That is most of what a man would need."*) — which I recommended — converts a subordinate gloss into a free-standing gnomic, so the closing 500 words now carry **three** present-tense gnomic declaratives (*"That is most of what a man would need." / "Leave is held on the section sheet…" / "The mess at four in the morning is a room with the chairs still down."*) where they carried two. The trade was subordination for aphorism. It is the author's form and it is the right trade, but it concentrates #16 in the paragraph that most needs to be fresh. |
+| **(5) NEW** | — | **Narration `and` 24.4/1k against the author's 18.2–18.9, manuscript maximum, rising in all four pipeline chapters; plus narration `≤6w` at 19.4% against his 20.8–29.9% floor.** §4. |
+
+**One closed, three standing, one new. Prose holds at 8.5.** I am not moving a goalpost: the
+hinge was named as the *dominant* regression, not the only one, and I wrote in the first pass
+that Prose was "8.5 ± 0.5." The honest position now is that the ± has collapsed downward — the
+same evidence no longer supports 9.0, because the measurement that would have supported it is
+the one that got fixed, and two others moved against the chapter in the same pass.
+
+**Prose 8.5 → 9.0 is now two edits, both specified: F5's recast of l.248 and the l.66
+self-correction.** Neither touches a gated metric. The narration-`and` finding is explicitly
+NOT part of that path (§4 shows it is not repairable inside the bands).
+
+---
+
+## 7. ANTI-AI SCAN — re-run on the patterns the edits touched
+
+| # | 1st pass | Now |
+|---|---|---|
+| **11** Explanatory Extension | FOUND, 3 readings, one failing | **FOUND — minor. 5 instances / 1.49 per 1k, below four of the author's five chapters. All three coherent readings pass (§3). No cap.** |
+| **16** Philosophical asides | FOUND — moderate, ~1.2/1k (4) | **FOUND — moderate, ~1.5/1k (5).** Slightly up, and clustered: three gnomics in the closing 500 words. The count rose *because of* the recommended repair. F5 is now more valuable than it was. |
+| **3** Automatic rule of three | FOUND — moderate ~3.0/1k | **Unchanged.** 9.2's recast adds a coordinate `and`, not a triad. The anti-three (*"twice, then once more, smaller"*) survives. |
+| **10** Described emotions | CLEAR, 0 | **CLEAR, 0.** Verified: zero `felt`/`feel`/`realise`/`as if`/`as though`. The shoulders cut removes the chapter's only narratorial before-state. |
+| **13** Precision Flex | FOUND — strong | **FOUND — strong, unimproved. 41.8/1k vs author 11.7–23.4.** Trend 24.0 → 56.4 → 30.8 → **41.8**. It no longer produces a coherence failure (that was F1), but the habit is ungated and this is now the chapter's largest divergence. |
+| **14** Emotional control demonstration | CLEAR — inverted | **CLEAR — inverted, and strengthened.** The shoulders cut removes the one place a recovery was narrated. |
+| **17** Clean dialogue | FOUND — "manuscript's worst," 9× regression | **FOUND — narrowed. 1 break in 166. I withdraw "collapse"; the finding is zero self-correction, not too few interruptions (§5).** |
+| **4** Em-dash | CLEAR 9.8/1k | **CLEAR whole-chapter (9.8, band 8.5–12.0). Narration-only 14.2/1k against the author's 6.8–13.9 — marginally over, recorded not actioned; the channel is full, which matters for §4.** |
+| 1, 2, 5, 6, 7, 8, 9, 12, 15, 18, 19, 20 | as recorded | **Unchanged. Verified untouched by the diff.** |
+
+**Total: 9/20 found. Commercial Fiction band: WATCH (9–11), at the bottom.** Ch.6 9 → Ch.7 8 →
+Ch.8 11 → Ch.9 9 → **Ch.9 rev.4 9.** The count is flat but the composition improved: the
+deepest structural tell (#11) went from a contested breach to a clear pass, and #13 replaced it
+as the top divergence. **The standing caveat on the band choice from the first pass still
+applies and is still a choice the orchestrator should know about.**
+
+---
+
+## 8. RETRACTIONS — my first pass was wrong about two things
+
+The brief invites me to say if my original scoring was wrong in either direction. The **8.0 was
+right**: a 46-minute contradiction stated in narration, in a dimension named "Pacing &
+Coherence," in a chapter titled `0200`, restated four times, found by two of five simulated
+readers in under two minutes. I would score it 8.0 again. But two of the *findings* attached to
+that pass do not survive.
+
+**RETRACTION 1 — F11, the `and` register sum. Withdrawn in full.** I reported the author's
+register-sum range as **29.3–34.7** and Ch.9 at **42.5**, called it a 7.8-point breach, wrote
+that "the author trades — he never runs both registers hot at once," and **recommended a
+pipeline gate at 34.7.** All of that was computed through a splitter that read the author's
+italic register as his narrator's prose. Corrected: his range is **30.3–45.6**, his own locked
+Ch.1 posts **45.6**, and Ch.9 posts **44.5 — inside his range.** *Had that gate been
+implemented at 34.7 it would have put the author's locked benchmark chapter in breach by 11
+points, and every chapter of the book would have been "repaired" toward a voice he does not
+have.* This is the exact failure the gate file's own calibration comment warns about — "a
+threshold set tighter than the author's measured range pushes the prose AWAY from his voice
+while appearing to protect it" — and I committed it while quoting the rule.
+
+**RETRACTION 2 — §THE HINGE's multiples were overstated, though its direction was right.** I
+reported the author's narration gloss range as 0.00–0.80/1k and a pooled 12× divergence. On
+corrected denominators the author's range is **0.00–0.99/1k** and the pooled divergence was
+**~8×, not 12×**. The finding itself survives — the pipeline glossed and the author does not,
+and the repair validated it on the first chapter it governed — but I recommended a ceiling of
+**0.80, below the author's actual maximum of 0.99.** The implemented ceiling of **1.0 is better
+than the number I gave**, and whoever chose it over mine was right.
+
+**Both errors have the same shape and it is worth naming, because it is a lesson about this
+role and not about this chapter: I derived thresholds from a measurement I had not validated,
+in a document that spends four pages attacking other passes for doing exactly that.** Two
+evaluations were spent finding that the pipeline's fingerprint hides one register below where
+the watch-lists look; the instrument that measures registers was itself miscalibrated the whole
+time. **Standing rule I am adding for myself and recommending for the root: an evaluator
+proposing a numeric gate must first report that metric for the author's locked Ch.1 and state
+whether Ch.1 passes it.** Neither of my two proposed gates would have survived that one line of
+verification.
+
+---
+
+## 9. WHAT DID NOT CHANGE
+
+The four-reader simulation is not re-run, because only one score moved and it moved on a
+verified arithmetic repair. Two reader positions do change and are recorded:
+
+- **The Hostile Reader** — previously "goes straight to the clock and finds it inside ninety
+  seconds. **One hole and it is F1.**" **Now: no hole.** I re-ran the check as the Hostile and
+  the reconstruction in §1 is what they get. The only rounding left is Rx's *"two hours"* (R1),
+  which is a 15-minute idiom in a complaint, not a contradiction — but Rx is the worst mouth in
+  the book to put a rounded number in, and this reader knows it.
+- **The Devoted Reader** — previously "will build a timeline spreadsheet and post F1 to a
+  subreddit." **They will still build the spreadsheet. It now closes.**
+
+Unchanged: Devourer (stops nowhere, skims two places), Critic (eleven underlines; will still
+mark the gnomic twin, and will no longer feel the gloss habit), **Casual Reader 8.5 —
+borderline, unchanged, 8.0 still defensible.** The two skim windows that make it borderline
+(F8) were not actioned.
+
+**CVI-Launch 8.8** (Commercial Pacing 7.0 · Tomorrow 9 · Casual 8.5 · Shareability 6.93 ·
+Pitch 10 · Closeness 10 = 8.29, +0.5 anchor). **CVI-Legacy 6.7.** Both unchanged — the repair
+was invisible to every commercial input, which is the correct outcome for an arithmetic fix.
+**Tomorrow Test: ANCHOR EXISTS**, all four anchors verified intact and untouched by the diff.
+
+---
+
+## 10. OUTSTANDING — ranked, for whoever takes this chapter next
+
+Nothing here blocks the gate. Fix order: Logic → Prose → Pipeline.
+
+| # | Location | Type | Direction | Metric cost |
+|---|---|---|---|---|
+| **R1** | l.144, Rx | Logic (minor) | *"for two hours"* → *"all night."* | Zero. −1 numeral (helps #13). |
+| **R2** | l.8, Paladin's string | Style (new, created by the F1 fix) | *"It won't hold past an hour."* → *"It won't hold a day."* | −1 word, −1 numeral. No band. |
+| **F5** | l.248 | Style / #16 — **now stronger than at first pass** | Recast the gnomic: *"There were still chairs down all along the mess."* Protect l.160's ugly sentence. | Word-neutral. **Do not also delete — the median has zero headroom.** |
+| **§QM** | 6 lines listed in §5 | Style — book-level | Restore 6 `?`, hold 4 bare. | Zero. |
+| **#17** | l.66 | Style | One self-correction in Zeus's offer. | +4 words. Zero band. |
+| **F8** | l.244–248 | Pacing | Unactioned. A human image in the paragraph's first third — this is what holds Casual at 8.5 rather than 9.0. | Must be word-neutral or lengthening. |
+| **F7** | l.154–158 | Structural | Unactioned. Swap Aglaope's first two turns. | Zero. |
+| **F6** | l.16 | Style | Unactioned. *N X, of which M* ×3 in one scene; thin by one. | Adds 2 ≤6w sentences — **now desirable** (§4). |
+| **P1** | root `style_check.py` | Pipeline | `and_narration_per1k` reported, ceiling 18.9, firing from Ch.10, Ch.6–9 pre-gate. **Verify Ch.1 passes it before shipping.** | — |
+| **P2** | root `style_check.py` | Pipeline | `?`/1k **floor** at 1.0. Do NOT gate the interrogative detector. | — |
+| **P3** | root `style_check.py` | Pipeline | `numeric_per1k` — the chapter's largest divergence (1.79×). Author max 23.4. **Needs a declared-exemption mechanism on the PUNCH precedent**, because Ch.7 (56.4) is a records search and Ch.9 counts the dead; a flat ceiling would be wrong. | — |
+| **P4** | root, evaluator + editor agents | Pipeline | When an evaluation names a beat's signals as load-bearing, both the editor and the style-repair pass must receive that list. Two passes spent from the same account this cycle and got lucky. | — |
+| **P5** | root, evaluator agent | Pipeline | **An evaluator proposing a numeric gate must report that metric for the locked Ch.1 and state whether Ch.1 passes.** Both of my proposed gates would have failed this. | — |
+
+---
+
+## RE-EVALUATION VERDICT
+
+**PASS.** Genesis Floor **8.5** · Genesis Average **8.71** · Casual Reader **8.5** ·
+CVI-Launch **8.8** · CVI-Legacy **6.7**.
+
+Both gate conditions are met. **One of them is met exactly**, and I want that on the record
+rather than buried: Casual Reader 8.5 is the least robust number in this evaluation, I called
+8.0 defensible in the first pass, and the two skim windows that make it borderline (F8) were
+not fixed. **If the orchestrator wants margin rather than a bare pass, F8 and F5 are the two
+cheapest lifts in the chapter and neither costs a gated metric.** Genesis Floor 8.5 is the more
+solid of the two — it rests on a timeline anybody can rebuild from the table in §1.
+
+The chapter that arrived here had six dimensions at 8.5–9.0 and one arithmetic error. The error
+is gone, six words did it, and the floor moved 0.5 exactly as predicted. Nothing was talked
+into place: **four dimensions did not move despite work being done on them, and I have shown
+the measurements for each.**
+
+---
+
+**BIAS CHECK:** This re-evaluation was produced by the same system that wrote the prose and by
+the same evaluator that produced the first pass — bias toward confirming my own earlier
+findings is now stacked on top of bias toward the text. Countermeasures applied and stated so
+they can be audited: the timeline was rebuilt from the raw text into a table rather than
+checked against the writer's account of it; every metric was recomputed on the book's own
+`split_registers` function and its own `words()` tokenizer rather than my previous ad-hoc
+splitter, and the author's five chapters were measured with the identical instrument in the
+same run; the Pattern #11 arithmetic that would fail this chapter is published again in full,
+and is now shown to fail the locked Ch.1 harder than Ch.9; **two of my own first-pass findings
+are retracted, one of them a recommended gate that would have put the author's locked benchmark
+in breach by 11 points**; one of my findings (#17) is narrowed against my own first-pass
+language after I credited an argument the writer made by declining to act; and the score of the
+dimension I was asked about moved by exactly the +0.5 the anti-inflation rule permits, on one
+cited, independently reconstructed improvement.
+
+Three temptations interrogated. **(1) The temptation to lift Prose to 9.0 because the editor
+executed my work order exactly** — rejected, with the four-regression ledger published so the
+refusal can be audited; the accounting is one closed, three standing, one new. **(2) The
+temptation to hold Pacing at 8.0 to avoid looking like I was reversed by a six-word edit** —
+rejected; the clock closes on all eleven statements and I have published the table.
+**(3) The temptation to defend F11 rather than retract it** — rejected, and it was the closest
+call in this pass, because retracting it costs me the strongest-sounding finding in the
+original document and replaces it with a smaller one.
+
+Confidence in any score above 8.0 requires external validation — beta readers, an editor, comp
+analysis. **The number I would defend hardest is Pacing 8.5, because it now rests on arithmetic
+anybody can check in the table above. The number I am least sure of is Casual Reader 8.5, which
+is exactly on the gate and which I would not fight anyone over. The number that should worry
+the orchestrator most is not on this page: numeric density at 1.79× the author's maximum, in
+the fourth consecutive chapter above the flag, still ungated.**
