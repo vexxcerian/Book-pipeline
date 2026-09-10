@@ -509,6 +509,38 @@ prominently as a new one. An evaluation that quietly drops a claim it can no lon
 support teaches the pipeline nothing; one that says "I was wrong, here is the
 measurement, here is what it should have been" is how the thresholds get correct.
 
+### A number is not a finding until you say what it counts and over what
+
+Measuring the benchmark (above) is necessary and not sufficient. Two failures happen *after*
+the arithmetic is right, and both have now occurred in this project — one of them in the brief
+an evaluator was handed, one in its own first draft.
+
+**THE DEFINITION HAZARD.** The same metric name meant two incompatible things in two committed
+files. "Numeric density" was measured one way in one evaluation (author max 23.4) and another
+way in a writer brief (author max 14.0). A threshold of 16.0 is correct under the second and
+puts the **locked benchmark chapter in breach by nearly eight points** under the first. Nothing
+in either file was wrong on its own; the collision only existed between them.
+
+> **Write the definition immediately beside every number, every time.** Not "numeric density
+> 14.3" but "numeric density 14.3/1k — digits plus spelled-out numbers one…thousand, whole
+> chapter". A metric name is not a definition and will not survive being read by the next role.
+
+**THE REGISTER MISMATCH.** A brief compared a chapter's **whole-chapter** `and` rate to the
+author's **narration** band and concluded a compliant chapter was under his floor. The chapter
+measured 17.7 against a band of 18.2–18.9 and looked like a failure; its narration measured
+18.39, which is his median. The comparison was between two different populations.
+
+This is the same shape as the whole-chapter breath metric and the narration-with-dialogue-still-
+in-it splitter — three instances now, all of them a real number compared against a band computed
+over different text.
+
+> **State the register on both sides of every comparison**, in this form:
+> `metric | how computed | register measured | this chapter | author band FOR THAT REGISTER`
+> If the two registers are not identical, you do not have a comparison.
+
+Both failures are invisible to a reader checking your arithmetic, because the arithmetic is
+right. They are only visible if the definition travels with the number.
+
 ## REVISION FINDINGS FRAMEWORK
 
 Use this structure for every issue in the Revision Recommendations section. Vague findings are useless — the Editor executes against them directly.

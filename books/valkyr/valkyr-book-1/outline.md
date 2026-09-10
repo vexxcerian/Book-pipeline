@@ -875,6 +875,28 @@ and you are grateful.
 Sharp acceleration at Jameson's entrance. Full stop at the corridor.
 **Writer warnings:** (a) **GATE CONDITION.** No Jameson line may be readable as a threat, a
 double meaning, or a warning. He does not know. He is not managing Vexx. He likes him.
+
+> **The operative test, corrected after the Ch.10 evaluation — apply this one, not the loose
+> version.** "Any extra meaning fails" is WRONG and would delete this book's own design: it
+> fails *"never in her life had to decide anything in under a minute"*, which is the chapter's
+> best dramatic irony and belongs to the reader. The question is **whose the second meaning
+> is.**
+>
+> A Jameson line **FAILS** if the second meaning is available *to Jameson* — if he could be
+> saying it on purpose, if it names a future, if it leaves Vexx something to act on, or if it
+> could be replayed later and heard differently by him.
+>
+> It **PASSES** if the second meaning exists only in the reader's hands.
+>
+> A fourth failure mode, found by the Ch.10 disruptor: **the narrator vouching.** *"He let it
+> go, entirely, the way a decent man does"* breaks the condition as surely as a threat would —
+> vouching is the adjacent failure to menace, and both are the prose telling the reader how to
+> feel about a man they must be left alone with. Applies to Dessen as well.
+>
+> Structural corroboration that the condition is being honoured: Ch.10 contains **zero
+> flash-forwards and zero retrospective-narrator intrusions** in 4,588 words. This book's
+> defining voice move is absent from that chapter because using it would break the gate. That
+> is design. Do not let a later pass "restore" it.
 (b) Dessen must not be a stooge or a bully; her case must be *correct*. (c) Do not let Vexx
 notice anything suspicious. The reader supplies the chill; the scene supplies none.
 (d) Resist giving Jameson an exit line. He leaves mid-thought, about weather.
