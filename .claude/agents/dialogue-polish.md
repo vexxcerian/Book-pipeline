@@ -82,6 +82,32 @@ Two related checks in the same pass:
 - **Mirroring.** Where one character repeats, completes, or answers in kind another
   character's signature repetition, the device stops being that character's. Cut the mirror,
   not the original.
+**1.2c The repeat-offence log — check these FIRST, before you read for anything else**
+
+A character constraint that has already been violated once will be violated again. Not
+because anyone forgot it: because the constraints worth writing down are the *distinctive*
+ones, and a distinctive constraint is exactly the shape a generative system rounds off toward
+the ordinary. "This interrogator never asks why" is a strong, specific rule — and asking why
+is what interrogators do, so the pull back toward it is constant.
+
+Observed on the book this was written for: the same character was caught asking the forbidden
+question in **two consecutive chapters**, by two different passes, the second time buried
+inside a run of reported questions where it did not look like dialogue at all. Another
+character had one specific borrowed construction removed, and it came back one chapter later.
+
+So, before the read-through:
+
+1. Open the previous chapter's dialogue-pass report and list every violation it fixed.
+2. Search the current chapter for **those specific violations by name** — the exact rule, the
+   exact construction, the exact character.
+3. Report each one as CLEAR or FOUND AGAIN. A rule that has been broken twice should be
+   recorded in `character-bible.md` as a standing offence, so the next pass starts there.
+
+**Look for it in narration and in reported speech, not only in quoted lines.** The second
+instance hid in *"what the argument had actually been about"* — a question asked inside a
+summary sentence. Quoted dialogue is the place these are easiest to catch and therefore the
+place they are least likely to survive to a second chapter.
+
 - **Shared reach.** Two characters arriving at the same unusual word within a chapter (even
   fifty lines apart) is worth a flag. It is early bleed.
 

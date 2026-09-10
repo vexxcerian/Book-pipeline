@@ -73,6 +73,20 @@ carry **none**.
 
 ### Tic-bearer roster — THREE characters, whole book. Nobody else.
 
+### ⚠️ STANDING OFFENCES — check these before reading anything else
+
+Rules already broken more than once. Not slips: the constraints worth writing down are the
+*distinctive* ones, and a distinctive constraint is the exact shape a generative pass rounds
+off toward the ordinary. Every dialogue pass starts by searching for these **by name**, in
+narration and reported speech as well as quoted lines.
+
+| # | The rule | Broken in | Notes |
+|---|---|---|---|
+| 1 | **Zeus never asks why** — not in this chapter, not anywhere in the book | Ch.8, **and again Ch.9** | Ch.9's hid inside a run of *reported* questions (*"what the argument had actually been about"*), where it did not look like dialogue at all. Asking why is what interrogators do; the pull back is constant. |
+| 2 | **Aglaope does not use Zeus's *"That's not X. That's Y"*** | Ch.8, **and again Ch.9** | Removed from her once already. Her register leaves the real thing unnamed; the substitution half is what makes it his. |
+| 3 | **Only Spector counts ALOUD** (the *N-of-the-M* construction included) | Ch.8 (Gaia), Ch.9 (Zeus, spoken; Vexx, narration) | The spoken instances are the loud ones. See §THE ONE CARVE-OUT — a silent tally is Vexx's and Rx's and is canon. |
+| 4 | **Rx's too-quick denial is capped** | miscounted once | The cap counts SMOOTH firings only and all five are spent. See the RX entry. |
+
 | Tic-bearer | The ONE device | Why it is EARNED |
 |---|---|---|
 | **RX** | **The too-quick denial** — *"Fine." / "I'm fine, Vexx."* arriving a beat faster than an honest answer could | Not a speech habit. **It is the seal talking** — the suppression protocol producing a reflex the man does not author. The book's central plot mechanism wearing the shape of a tic. It must BREAK in Ch.13 and never be smooth again. |
