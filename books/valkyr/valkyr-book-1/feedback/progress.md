@@ -4,13 +4,12 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Ch.1–8 in the manuscript, 27,863 words (`wc -w`). Ch.6 and Ch.7 have both PASSED the 8.5
-quality gate. Ch.8 is drafted, complete at nine scenes, mechanically clean, and mid-loop.**
+**Ch.1–9 in the manuscript, 31,009 words of prose. Ch.6, Ch.7 and Ch.8 have all PASSED the
+8.5 gate. Ch.9 is drafted and mid-loop.** All three mechanical gates clean on all nine.
 
 Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
-Ch.6 (8.5 / 8.79) and Ch.7 (8.5 / 8.79) are pipeline-written and through the gate; Ch.7 is the
-first to reach the locked benchmark's **Prose 9.0**. All three mechanical gates pass on all
-eight chapters.
+Ch.6 (8.5/8.79), Ch.7 (8.5/8.79, **Prose 9.0**) and Ch.8 (8.5/8.79, **Prose 9.0 sustained
+over 5,600 words**) are pipeline-written and through the gate.
 
 ⚠️ **Ch.2–5 were revised AFTER they were scored**, so their recorded floors describe the
 pre-revision text. Re-run `book-evaluator` on them if a current number matters.
@@ -18,16 +17,16 @@ pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 | Artifact | State |
 |---|---|
 | `foundation.md` | ✅ 12,110w — characters, theme-as-question, anchors, motifs, opening strategy |
-| `outline.md` | ✅ 19,665w — macro-structure + all 26 chapters |
-| `voice-dna.md` | ✅ 4,228w — voice reverse-engineered from the author's own prose |
-| `character-bible.md` | ✅ 8,357w — 22 entries, §TIC BUDGET, cover-the-name test run in-file |
+| `outline.md` | ✅ macro-structure + all 26 chapters |
+| `voice-dna.md` | ✅ voice reverse-engineered from the author's own prose; device-bleed watch-list corrected from what actually happened |
+| `character-bible.md` | ✅ 22+ entries, §TIC BUDGET, §THE ONE CARVE-OUT (the counting device) |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–8, **27,863 words**, italics + 23 scene breaks restored from the PDF |
-| style / grammar / voice-wear | ✅ all three clean on all eight, calibrated to the author's measured voice |
-| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–8 |
-| `ENTITY_STATE.yaml` | ✅ 20 characters, 64 knowledge entries, evidence chain-of-custody |
-| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 8.5/8.79 PASS** · **Ch.7 8.5/8.79 PASS** · Ch.8 unscored · Ch.2–5 stale |
-| `evaluations/` | ✅ per-chapter evals + `ch1-5-summary.md` — read the summary first |
+| `manuscript/chapters/` | ✅ Ch.1–9, **31,009 words**, italics + 23 scene breaks restored from the PDF |
+| style / grammar / voice-wear | ✅ clean on all nine, calibrated to the author's measured voice |
+| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–9 |
+| `ENTITY_STATE.yaml` | ✅ audited Ch.1–8; 9 characters, 4 locations, 8 objects added; CF-04 and CF-13 closed |
+| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 / Ch.7 / Ch.8 all 8.5 / 8.79 PASS** · Ch.9 unscored · Ch.2–5 stale |
+| `evaluations/` | ✅ per-chapter evals, pass reports, `continuity/ch1-8-audit.md` |
 
 ## The structure, in one paragraph
 
@@ -160,12 +159,80 @@ breaks a floor. Brief accordingly.
   convention for quoted documents) and **reports the exemption** rather than dropping it
   silently. Ch.6 prints `2 semicolon(s) exempted inside quoted documents` and passes honestly.
 
+## The 2026-09-09 full read-through and audit — what a whole-manuscript pass found
+
+Every pass before this was per-chapter. The first cross-manuscript audit, plus a full human
+read of all eight chapters, found things no per-chapter gate can see **because within any one
+chapter the usage is perfectly consistent.**
+
+**1. The book was being written in two different Englishes.** Ch.1–5: 82 US spellings, zero
+British. Ch.6–8: 31 British forms — including `"soft clothes, grey"` against the locked Ch.1's
+**gray room**, used six times and the book's founding image, and `"Cooperative with programme
+throughout"` against a registry that says *the program*. Converted, and **gated**:
+`style_check.py` now takes `DIALECT = "us"` and fails any chapter carrying the other dialect.
+
+**2. The pipeline had over-corrected past the author into plainness.** The analytical simile
+is the model's #1 fingerprint, so the disruptor cuts them and voice-dna bans *as if* — and the
+result sailed past "not machine-made" into **plainer than the author has ever written**: he
+runs 2.1–4.4 figurative comparisons per 1k, Ch.6/7/8 came in at 0.9, 1.3 and **0.4**. Ch.8 used
+one comparison per 2,800 words; his plainest chapter uses one per 480. Seventeen **bare**
+comparisons restored; a **floor** added at 2.0. *A ceiling with no floor only ever catches the
+overshoot in one direction.*
+
+**3. A POV break that was also a headcount error.** Ch.8's failed stack narrated a contact in
+close visual detail from inside a corridor, then had *"Vexx came in through the near door"* —
+and "four of them stacked" left three once Gaia was held at the corner and Zeus "had come in
+behind Vexx". One change fixed both: Vexx is in the stack. Both breath floors went **up**.
+
+**4. Two things declined, with reasons.** The audit read Ch.6's *"He was tidying"* as spending
+Merrick's reserved self-echo early — it is not the same device; Corwin is quoting a mantra he
+knows he repeated. And a `somebody`/`nobody` ceiling of 3.0 was recommended for the third
+chapter running; **the author himself runs 4.2–6.3**, so that threshold would push the prose
+away from his voice. Recorded so it stops being re-proposed.
+
+### Two bugs in the gate itself, both found by an agent being honest
+
+- **The rounding bug.** `per1k()` rounded and the comparisons ran on the rounded value, so
+  every threshold had half a step of slop **in both directions, always favouring the chapter
+  under test**: a true 1.9934/1k displayed 2.0 and passed a floor of 2.0. Found because the
+  editor volunteered that a pass was marginal instead of reporting a green number. Comparisons
+  now run on the exact rate; only the display rounds.
+- **The simile metric was counting the wrong word.** *"I like him already"*, *"cells like
+  this"*, *"They like him"* — the verb and the bare preposition. It was tracking how much
+  dialogue a chapter had. Nearly became the fifth threshold in that file calibrated against
+  the wrong measurement. Corrected — and the finding got *stronger*.
+
+### Canon corrections — a rule contradicting the prose it was written to protect
+
+**The counting device.** The bible reserved counting/tallying to Spector alone and named the
+violation: *"if Vexx starts tallying anything, that is device bleed."* The author's own Ch.4
+does exactly that (*"keeping a private tally of which was which"*), and the same file's Rx
+entry assumed it three lines below the ban. Narrowed: **Spector owns the SPOKEN count**
+(craft, performed for a room); **the private, unspoken tally is Vexx's and Rx's.** A tally said
+aloud to another character has crossed over. See `character-bible.md` §THE ONE CARVE-OUT.
+
+**The device-bleed watch-list was aimed at the wrong characters.** voice-dna predicted Zeus or
+Gaia, and Spector's counting onto Bastion. Those routes stayed clean and the watched pairs
+held. The bleed went where nobody was looking: Goliath took Vexx's term-correction shape *and*
+spoke Spector's countdown verbatim; Gaia applied Spector's *N-of-the-M* construction to
+people's interior states; Paladin spoke Rx's capped denial; **Zeus asked *why***, which he does
+nowhere else in the book, and took six edits in one chapter. **The lesson is not a better list
+of pairs — a predicted watch-list makes you blind to the routes it does not name.** And every
+one of those lines passed the Cover-the-Name Test, because that test measures whether a line is
+*distinctive* and never *whose it is*. `dialogue-polish` now runs a separate Device Bleed Scan.
+
+**CF-13 — Holst's first name.** The plan said *never given a first name*; Ch.7 prints
+*STAFF SERGEANT DERIC A. HOLST* off an archive line with *photo?* in pencil in the margin. The
+prose is right and the constraint yielded — a name recovered off a scanned record is what makes
+it read as a document rather than a prop. Narrowed to: **full name only inside quoted document
+text; narration says HOLST, D.** He still never appears, never speaks, is never described.
+
 ## The two inventories — check every new chapter against BOTH
 
 Chapters 2–5 all drifted onto one closing figure because nothing was tracking the sequence.
 `book-architect` and `hook-craft` now carry the rules; these are the running tallies.
 
-**CLOSERS — eight chapters, eight shapes. No repeats, and Ch.2's is spent.**
+**CLOSERS — nine chapters, nine shapes. No repeats, and Ch.2's is spent.**
 
 | Ch | Closing move |
 |---|---|
@@ -176,37 +243,36 @@ Chapters 2–5 all drifted onto one closing figure because nothing was tracking 
 | 6 | a misdirected answer to a stranger |
 | 7 | the narration stops and hands the reader an unglossed found document |
 | 8 | the narrator re-reads a document **while writing its fourth instance himself** |
+| 9 | the POV character **involuntarily begins executing the method he refused**, stops partway, and does something ordinary and courteous on top of it |
 
-Ch.8 is deliberately close to Ch.7 and distinct in the move: Ch.7 hands over a raw block and
-stops; Ch.8 quotes one already-known sentence inside a scene, read by the man now adding to
-the file it came from. **Two document-shaped closers in a row is the limit — Ch.9 must not
-be a third.**
+Ch.7 and Ch.8 both ended on a document — two running was the limit, and Ch.9 cleared it with
+no paper on the last page, as the outline required.
 
-**OPENINGS — the drift warning is cleared.**
+**OPENINGS — the drift warning is cleared and stays cleared.**
 
 | Ch | Opening move |
 |---|---|
 | 2–5 | a retrospective framing statement — four in a row |
-| 6 | a physical object in near-real-time (the visitor form) — the first break in that run |
+| 6 | a physical object in near-real-time (the visitor form) |
 | 7 | a raw administrative document (the boots requisition) |
-| 8 | **mid-transit, mid-argument, no scene-setting** (Goliath and the coffee) |
-
-Ch.6 and Ch.7 both opened on an administrative form and a third would have been a pattern.
-Ch.8's mid-transit open cleared it, as planned. Keep the tally going.
+| 8 | mid-transit, mid-argument, no scene-setting |
+| 9 | **a line of dialogue with no attribution and no setting, three words in** |
 
 ## Resume point
 
-1. **Finish Ch.8's loop.** It is drafted, complete at nine scenes, and mechanically clean.
-   Remaining: dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate. **Read the
-   "no slack" warning above before briefing any of them** — Ch.8 sits on four floors and
-   ceilings simultaneously, and a pass that shortens anything breaks one.
-2. **Then Ch.9 ("0200"):** write → dialogue-polish → hook-craft → disruptor → evaluate.
-   Its closer must not be document-shaped — Ch.7 and Ch.8 have spent that two chapters
-   running.
-3. **Watch the rhythm and breath numbers** `style_check.py` prints per chapter. They are the
-   early warning, and all three layers of THE SEAM were caught by reading them.
-4. Optional: the Ch.5 ending review, and the FOLLOW-UP items in `STATE.yaml` (the Aglaope
-   metacognition line, Ch.2's chaos density). None block drafting.
+1. **Finish Ch.9's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
+2. **Then Ch.10.** Its closer must be the tenth distinct shape — check the inventory above
+   before drafting, not after.
+3. **Watch the rhythm, breath and comparison numbers** `style_check.py` prints per chapter.
+   Every layer of THE SEAM was caught by reading them, and the `and`-chaining fingerprint has
+   now recurred on the first draft of **every single pipeline chapter** — Ch.6 40.4/1k, Ch.7
+   35.9, Ch.8 45.5, Ch.9 36.5. The 60%-of-draft self-check in `book-writer.md` has caught it
+   four times out of four. It is a permanent tendency, not a bug that gets fixed.
+4. **Run `continuity-guardian` again after Ch.12** — the first full audit (Ch.1–8) is in
+   `evaluations/continuity/ch1-8-audit.md` and found things eight chapters of per-chapter
+   passes had all missed.
+5. Optional: the Ch.5 ending review, and the FOLLOW-UP items in `STATE.yaml`. None block
+   drafting.
 
 ## Worth the author's eye
 
@@ -245,6 +311,20 @@ These are settled and the reasoning is written down; changing one means changing
   Nothing in Ch.19–26 depends on it.
 
 ## Known risks
+
+- **The comparison gate has a known gap.** `the way X does Y` is one of the author's comparison
+  forms (*"the way weather fills a sky"*) and is **not counted**, because the same construction
+  is separately capped as a pipeline fingerprint and counting it twice would have the gate
+  arguing with itself. The measure is consistent rather than complete — it reads the author and
+  the pipeline through the same narrow window. Closing it means re-deriving the comparison
+  floor and the `theway` ceiling from the author together.
+- **Three comparisons added in the 2026-09-09 repair were flagged by the editor itself as
+  possibly added rather than found** — Ch.6 *"like a man checking a table for dust"* (it
+  supplies a motive for a gesture that may be better unmotivated), Ch.8 *"holding it like a hot
+  water bottle"*, Ch.8 *"like a switch wired to nothing"* (named as chosen for quota reasons).
+  Left in; worth the author's eye. Details in `evaluations/ch6-8-comparison-repair.md`.
+- **Ch.8 has very little slack.** It sits near several limits at once; brief any future pass on
+  it accordingly, and re-measure after every edit.
 
 - **`research/original-draft.md` is SUPERSEDED** — it is the staging copy, has no italics, and
   has coarser paragraph breaks. The live text is `manuscript/chapters/`. Edit the manuscript.
