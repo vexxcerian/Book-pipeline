@@ -1,7 +1,7 @@
 # Chapter Ten
 
 <!-- SCENE BUDGET (Target 4,600): summons + the room + Dessen + the finding (I) 800 | the release, the clerk’s name withheld 450 | the triple question 550 | the mess hall, the extension that does not exist 550 | what it cost Corwin 300 | the recommendation + Jameson + eight seconds 500 | the apology 400 | the dismantling + Dessen checks it 700 | the finding (II) + the transfer 400 | corridor coda + close 650 -->
- <!-- Word count: 4,674 | Revision: 3 (disruption pass, 4 operations: 2 explaining extensions cut, 1 emotional control break, 1 predictable clause deleted; -41 words; prior: breath repair, 5 splits; dialogue pass, 9 edits) | Target: 4,600 | Anchor: a paper notebook in a building where nothing is paper, and a pen that writes down the apology at the same speed it wrote down the insult -->
+ <!-- Word count: 4,715 | Revision: 2 (breath repair — 5 over-long narration sentences split, median 18.5 -> 17.0, >=40w 20.4% -> 14.8%, +2 words; prior: dialogue pass, 9 edits inside quoted speech) | Target: 4,600 | Anchor: a paper notebook in a building where nothing is paper, and a pen that writes down the apology at the same speed it wrote down the insult -->
 
 Eleven forty, room 2-14, north end of the operations block — nothing on the summons about what for.
 
@@ -87,7 +87,7 @@ He had known the shape of the third before she got to the end of it — had noth
 
 “No.”
 
-She wrote the first answer, the second, the third, each under the last, drawing no line between them, not looking up while she did it — three separate facts about the same man, small and upright on the page like items on a shopping list.
+She wrote the first answer, the second, the third, each under the last, drawing no line between them, not looking up while she did it — three separate facts about the same man, small and upright on the page like items on a shopping list, standing in her book afterward exactly as they had come out of him.
 
 *She writes at about ninety words a minute*, Rx said, *which for longhand is not human, and I have been watching her do it for twenty-two minutes and I cannot see her lift the pen at the ends of the words.* A pause. *There’s a property schedule as well as an evidence schedule. Different remit, different penalty. I’m reading it now in case anybody wants it.*
 
@@ -289,7 +289,7 @@ The elevator at the north end takes its time, and Jameson was still standing at 
 
 There it was, under the breastbone, the same as it had been in a briefing room two levels below anything with a name on the door, the first time a man he had never met said his brother’s name out loud and got the weight of it right. Four years of an unopened folder, a chaplain, a box with nothing in it — and this was the second time in his life anybody had gone and stood in front of a thing for him without being asked to.
 
-He had his mouth open. He shut it. Then he did it again. Jameson turned toward him and gave him his whole attention, and waited.
+He had his mouth open. He shut it. Then he did it again, which is a thing a man cannot do twice in front of another man without it being noticed. Jameson turned toward him and gave him his whole attention, and waited.
 
 “My brother’s—”
 
@@ -297,11 +297,11 @@ Three words, and then whatever came after them did not arrive.
 
 He did not fill it. He did not look away. He did none of the small courteous things people do to let a man off — he stood with his cap in both hands, his whole attention on Vexx’s face, nothing on his own but the ordinary concern of somebody who has noticed that the person in front of him is having difficulty, and he waited a good deal longer than the silence could comfortably carry.
 
-“It’ll keep,” Vexx said. “Thank you.”
+“It’ll keep,” Vexx said.
 
 “As you like.”
 
-That was all. He did not ask again. He did not tilt his head, or say *are you sure*, or leave a door propped open in his voice for it to come back through later. He stood there with him, in a corridor, in front of an elevator that was not coming, saying nothing.
+That was all. He did not ask again. He did not tilt his head, or say *are you sure*, or leave a door propped open in his voice for it to come back through later. He let it go, entirely, the way a decent man does — and stood there with him, in a corridor, in front of an elevator that was not coming, saying nothing.
 
 Then, because the silence had gone on long enough and one of them had to spend it:
 

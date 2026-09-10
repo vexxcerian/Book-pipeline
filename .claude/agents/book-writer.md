@@ -319,6 +319,25 @@ It is not an ending-only fault. Check the middle of scenes, where nothing is loo
 (If the manuscript's own author uses this deliberately, it is a **capped and spent** device,
 not a licence — see `hook-craft.md`.)
 
+**THE NARRATOR DOES NOT VOUCH, EITHER.** The rule above stops the narration knowing more
+than the POV character. This one stops it *taking a position*.
+
+If a chapter's design is that the reader must be left alone with a character — to like him
+without help, or to distrust him without being told — then the narrator siding with him breaks
+that design exactly as badly as the narrator hinting against him. **Vouching is the adjacent
+failure to menace.** Both are the prose telling the reader how to feel.
+
+> *He let it go, entirely, **the way a decent man does** — and stood there with him…*
+
+Cut the verdict and four observed behaviours remain, which is more than enough. This came out
+of a chapter whose stated gate condition was that no line of the antagonist's could read as a
+threat; the thing that nearly broke it was not a threatening line but a **kind** one, supplied
+by the narrator rather than earned by the scene.
+
+The tells are the same shape as an appraisal: *the way a decent man does*, *which is what
+kindness looks like*, *and he meant it*, *as anyone would have*. If the sentence would survive
+being spoken aloud by an advocate, it is vouching.
+
 **Observation Rights** — what they can perceive right now:
 - **Sight:** Only what's within their field of view. Not what's behind them. Not an unvisited room.
 - **Sound:** Only what's audible from their position. Muffled through a wall = vague impressions, not clear words.
