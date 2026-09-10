@@ -471,6 +471,14 @@ def scan():
             if lo is not None and long_pct < lo:
                 flags.append(f"BREATH narration >=40w {long_pct}% < {lo}% (voice-match FLOOR "
                              f"— not reaching for the long accumulating mode)"); problems += 1
+            hi = _ceiling(n, "median_sentence_max", None)
+            if hi is not None and median_s > hi:
+                flags.append(f"BREATH narration median {median_s} > {hi} (voice-match CEILING "
+                             f"— longer-breathed than this author)"); problems += 1
+            hi = _ceiling(n, "long_sentence_pct_max", None)
+            if hi is not None and long_pct > hi:
+                flags.append(f"BREATH narration >=40w {long_pct}% > {hi}% (voice-match CEILING "
+                             f"— over-reaching the long mode)"); problems += 1
 
         # TYPOGRAPHY — two defects that no other check in this file can see, both found
         # only because a human looked at a diff.

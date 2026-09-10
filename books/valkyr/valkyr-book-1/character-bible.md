@@ -703,8 +703,26 @@ The first four are **CLOSED for new chapters** — they are at or over cap in th
   to her alone. (See the near-collision note with Merrick in §TIC BUDGET; they never share a
   scene.)
 - **Own problem:** A transfer she has applied for twice and will not get.
+- **ANCHORED (Ch.10, written 2026-09-10).** On the page as designed, and three things about
+  her are now canon. (1) **The triple fires once and only once** — *required for / used for /
+  being used for*, one verb changed each time, three different answers, all three written down
+  with no line drawn between them. It is not repeated later in the chapter, because a technique
+  used twice in one scene reads as a quirk. (2) **She is right about more than the schedule.**
+  The chapter gives her the moral half of the case that the outline only implied: the material
+  is not contaminated, it is *unvouchable*, and what Vexx destroyed was Corwin's only chance of
+  ever being reopened. Her case must never be reduced back to paperwork. (3) **She is not
+  defeated by Jameson.** She concedes on the record, in her own time, after checking it herself
+  — *"That's better than I had it"* — and the finding STANDS. Only the recommendation falls.
+- **NO TIC, confirmed.** The §TIC BUDGET is full at three and she was not given a fourth. Her
+  physical distinguishers carry her: the paper notebook, the two pens (the first dies at the
+  tail mid-interview and she is briefly, humanly annoyed by it), the case with a strap set for
+  somebody else's shoulder. **Her tell is the sound of the pen, and it is the chapter's anchor**
+  — she writes the apology at the same speed she wrote the insult.
+- **She never editorialises, confirmed on the page:** *"I'm not saying it to make you feel it."*
 - **DISTINCTNESS GUARANTEE:** She and Zeus are the book's two methodical questioners, and the
-  split is absolute — **Dessen repeats; Zeus never repeats anything.**
+  split is absolute — **Dessen repeats; Zeus never repeats anything.** Against **Voss**, the
+  other institutional woman with a pad: Voss gives a fact and stops, Dessen gives a fact and
+  writes down what you do with it.
 - **Sample line:** *"Who authorised the release. Who signed the release. Who was present at the
   release."*
 

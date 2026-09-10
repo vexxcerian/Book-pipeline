@@ -293,6 +293,12 @@ PIPELINE_CEILINGS = {
     "short_sentence_pct": 30.0,   # <=6-word NARRATION sentences, %
     # author Ch.1-5 narration: 0.00 0.30 0.00 0.00 0.91 — two instances in
     # ~15,900 words. Pipeline: 1.49 -> 2.64 -> 2.90 -> 3.77, rising every chapter.
+    # The floors have a missing half. They were added because the pipeline wrote
+    # SHORTER than the author; Ch.10 then came in at median 18.5 and >=40w 20.4%,
+    # past his maximum in both. A voice-match band is a band in both directions —
+    # leaving one end open is how the first version of this metric went wrong.
+    "median_sentence_max": 18.0,       # author 14.0-17.5
+    "long_sentence_pct_max": 16.5,     # author 13.3-16.2%
     "which_gloss_per1k": 1.0,
     "semicolons": 0,             # the author uses ZERO across all five of his chapters
 }
@@ -575,6 +581,14 @@ def scan():
             if lo is not None and long_pct < lo:
                 flags.append(f"BREATH narration >=40w {long_pct}% < {lo}% (voice-match FLOOR "
                              f"— not reaching for the long accumulating mode)"); problems += 1
+            hi = _ceiling(n, "median_sentence_max", None)
+            if hi is not None and median_s > hi:
+                flags.append(f"BREATH narration median {median_s} > {hi} (voice-match CEILING "
+                             f"— longer-breathed than this author)"); problems += 1
+            hi = _ceiling(n, "long_sentence_pct_max", None)
+            if hi is not None and long_pct > hi:
+                flags.append(f"BREATH narration >=40w {long_pct}% > {hi}% (voice-match CEILING "
+                             f"— over-reaching the long mode)"); problems += 1
 
         # TYPOGRAPHY — two defects that no other check in this file can see, both found
         # only because a human looked at a diff.
