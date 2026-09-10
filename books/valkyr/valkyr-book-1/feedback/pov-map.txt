@@ -5,3 +5,5 @@ chapter-4: Vexx
 chapter-5: Vexx
 chapter-6: Vexx
 chapter-7: Vexx
+chapter-8: Vexx
+chapter-9: Vexx

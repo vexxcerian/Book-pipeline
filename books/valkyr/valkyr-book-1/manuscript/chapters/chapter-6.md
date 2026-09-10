@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4375 | Revision: 4 (voice-match gloss repair — 2 trailing ", which" clauses removed, 2 kept) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4375 | Revision: 5 (breath repair — 2 narration joins, median 13.5 -> 14.5, no words added or cut; prior: gloss repair, 2 trailing ", which" clauses removed, 2 kept) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -9,7 +9,7 @@ The visitor form asked for a relationship to the patient and gave him four boxes
 
 The transit out was four hours on a civilian line with two changes, the second of them a market town where the platform smelled of cut grass and engine oil, a crate of live poultry standing in the shade of the ticket office under a tarp — the birds shifting and settling under the canvas, every time a train came through. Vexx sat with his hands on his knees. He read nothing. Across the aisle, a woman worked through a bag of dried fruit, offered the last of it to her son, who did not want it, ate it herself, folded the bag into a square.
 
-He had put in for two days of personal leave. The question never came — not from the roster clerk, not from Voss’s office, not from the duty officer who countersigned it, without reading past the dates. He had expected that to be the difficult part. It had taken ninety seconds, and a signature.
+He had put in for two days of personal leave. The question never came — not from the roster clerk, not from Voss’s office, not from the duty officer who countersigned it, without reading past the dates. He had expected that to be the difficult part — it had taken ninety seconds, and a signature.
 
 *You could have told somebody*, Rx said, somewhere in the second hour.
 
@@ -41,7 +41,7 @@ The corridor ran past a kitchen, its door hooked back. The smell came out of it 
 
 He went through the doors at the end.
 
-The day room had windows on two sides, the blinds were up, four men in it, plus a woman doing a jigsaw alone at a card table — the box lid propped against a chair leg, so she could see the picture. A radio was on low at the far end. None of them was listening to it. It was the middle of the afternoon, the light came across the tables in long bars, the room was quiet like a waiting room is quiet.
+The day room had windows on two sides, the blinds were up, four men in it, plus a woman doing a jigsaw alone at a card table — the box lid propped against a chair leg, so she could see the picture. A radio was on low at the far end, none of them was listening to it. It was the middle of the afternoon, the light came across the tables in long bars, the room was quiet like a waiting room is quiet.
 
 Corwin was at a table by the far window, with a mug in front of him, a paperback splayed open beside it — spine cracked, half read.
 

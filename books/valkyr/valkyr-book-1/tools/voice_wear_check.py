@@ -97,8 +97,14 @@ def chap_num(f):
     return int(re.search(r'(\d+)', os.path.basename(f)).group(1))
 
 def load_text(f):
-    with open(f) as fh:
-        return fh.read()
+    with open(f, encoding="utf-8") as fh:
+        text = fh.read()
+    # Editorial <!-- comments --> are not prose. Scene budgets, word counts and revision
+    # notes live in the chapter files, and left in they surface as findings ABOUT
+    # THEMSELVES — a run of two headers reported a shared phrase built out of the words
+    # "count", "revision" and "repair" as cross-chapter self-repetition. Every other
+    # checker in this pipeline strips them; this one did not.
+    return re.sub(r"<!--.*?-->", " ", text, flags=re.S)
 
 def words_only(text):
     # strip markdown headers and telepathy asterisks; lowercase word stream
