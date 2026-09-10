@@ -11,7 +11,7 @@ Vexx answered before he had worked out who was asking, which is what two hours i
 
 “That’s what Goliath said.”
 
-“Goliath would know.” A pause with a pen moving in it. “He’ll not offer, though. He’ll wait to be asked, Paladin won’t ask, and that instrument will still be out of tune at Christmas.”
+“Goliath would know.” A pause with a pen moving in it. “He won’t offer, though. He’ll wait to be asked, Paladin won’t ask, and that instrument will still be out of tune at Christmas.”
 
 The records annex sat against the outer wall on the north side of the operations block, where the ducting had been costed twice and run neither time — the coldest room in the building, by a margin everybody knew about and nobody had put on a form. The lights came on in banks of two as a man walked the length of it, two, then two, then two, like a shop closing up in reverse. The cold came off the bays like off a cellar wall, and it was into a man’s back inside the hour. Nine bays of shelving, of which four held anything. A terminal at the far end with a materiel index on it, and a laminated card taped to the housing explaining, for the benefit of nobody, how to page a result set.
 
@@ -41,7 +41,7 @@ Vexx went back to the terminal.
 
 “He said he would.”
 
-Zeus asked four more over the next half hour, at intervals, none of them needing more than a word back — whether the transport at Kettle had gone out through the col or over the ridge, whether Gaia had ever said where she learned the acoustics thing, what the argument about the coffee bracket had actually been about, whether Vexx had ever in his life owned a dog. Vexx answered all four. At two in the morning, in a cold room, with a screen open in front of him, answering them cost nothing at all — and he did not work out until a great deal later what the order of them had been for.
+Zeus asked four more over the next half hour, at intervals, none of them needing more than a word back — whether the transport at Kettle had gone out through the col or over the ridge, whether Gaia had ever said where she learned the acoustics thing, who had won the argument about the coffee bracket, whether Vexx had ever in his life owned a dog. Vexx answered all four. At two in the morning, in a cold room, with a screen open in front of him, answering them cost nothing at all — and he did not work out until a great deal later what the order of them had been for.
 
 The index was the same one that had given up the boots and nothing since — a materiel record in twenty-two lines, of which he had seven, the seven that had come off a civilian mirror of a public series. The other fifteen were on the same record, in the same building, on the same night, with no lawful arrangement of words that would put them on a screen in front of him. He had tried the item field empty, then the date range wide, then the date range narrow. He had tried it as a run of serials and had it come back with a courtesy notice about server load. The index answered everything inside four seconds and answered none of it. Twice it returned the same seven lines in a different order, which he took for a fault in his own query until the third time, when he understood the set was being sorted on a field the display did not carry. He wrote the sort out on the back of his hand with the stylus, in case it was worth something in the morning. Somewhere under all of it was a routing office with a two-letter code, a subsection under that, a duty roster under that — and people on the roster, who would come in at eight in the morning and hang their coats on a hook.
 
@@ -55,11 +55,11 @@ Merrick’s notebook lay by his elbow, the rubber band round it slack now, like 
 
 The heater at the far end came on, ran a while, went off again.
 
-“You’ll not get the rest of it that way. That’s not caution,” Zeus said. “That’s a man rationing himself, so that whatever he finds, he can say he came by it honestly.”
+“You won’t get the rest of it that way. That’s not caution,” Zeus said. “That’s a man rationing himself, so that whatever he finds, he can say he came by it honestly.”
 
 Vexx sat with the cursor blinking in an empty field.
 
-“If you were going to do this, you wouldn’t start with the record.” Zeus set the pen down across the grid. “You’d start with the office that holds it. There’s a materiel routing office at the yard at Kell. Eleven people. Two of them sign retention exceptions, which means two of them can pull a whole record, print it, walk out of the building with it inside a coat — and both of them have done it before, for reasons that had nothing to do with you or with me. A man wanting his own service record because the pension office lost it. That kind of thing. You want the one who has already broken the rule and doesn’t think of it as a rule. He’s the only kind who doesn’t report the conversation afterward.”
+“If you were going to do this, you wouldn’t start with the record.” Zeus set the pen down across the grid. “You’d start with the office that holds it. There’s a materiel routing office at the yard at Kell. Eleven people. Two of them sign retention exceptions, which means they can pull a whole record, print it, walk out of the building with it inside a coat — and both of them have done it before, for reasons that had nothing to do with you or with me. A man wanting his own service record because the pension office lost it. That kind of thing. You want the one who has already broken the rule and doesn’t think of it as a rule. He’s the only kind who doesn’t report the conversation afterward.”
 
 “Zeus.”
 
@@ -69,7 +69,7 @@ He said all of it at one speed, unhurried, like a man giving directions to a roa
 
 *SOLID ASH. 1600 BY 800. DELIVERY FOUR TO SIX WEEKS.*
 
-“There’s no mark on him,” Zeus said. “There’s nothing on paper anywhere in the building. He doesn’t report it, because reporting it means writing the thing he’s protecting into a box with his own name under it, and no man alive does that. He goes home. He tells nobody. He’ll be at that same desk in eleven years, perfectly all right.”
+“There’s no mark on him,” Zeus said. “There’s nothing on paper anywhere in the building. He doesn’t report it, because reporting it means writing the thing he’s protecting into a box with his own name under it, and no man alive does that. He goes home. He tells nobody. He’ll be at that same desk for the rest of his service, perfectly all right.”
 
 “No,” Vexx said.
 
@@ -139,7 +139,7 @@ Vexx got as far as the door with a hand already on the frame of it.
 
 He was still sitting when Vexx went out — four bays lit, five dark, a cup he was not going to drink, a puzzle he could not finish and would not start again.
 
-*You’ve been quiet since he sat down.*
+*You’ve been quiet since I sat down.*
 
 *Fine*, Rx said. Then, at his ordinary speed: *He’s left-handed. Did you know that. He works with the sheet turned about thirty degrees, like a man signing something on his knee, and it has been driving me up the wall for two hours.*
 
@@ -179,7 +179,7 @@ She put them in by hand, one a night, longhand with the stylus. A machine could 
 
 “That’s what in order means.”
 
-“Alphabetise it,” Vexx said.
+“Alphabetize it,” Vexx said.
 
 Aglaope looked up at him then, one flat look with nothing behind it, and went back to the pad.
 
@@ -195,7 +195,7 @@ He should have stopped there and he did not. “You’ve got two hundred and nin
 
 “Of course.”
 
-“And a marker on the ones you’re not sure of. A character in front of the surname, anything, a full stop — so you’re not reading two hundred entries to find four.”
+“And a marker on the ones you’re not sure of. A character in front of the surname, anything, a full stop — so you’re not reading the list end to end to find four.”
 
 “A full stop.”
 
@@ -221,7 +221,7 @@ There was a dog at the depot at Ridgeway that had learned to lift the gate latch
 
 “Leave him on,” Vexx said.
 
-“That’s what I’ll do.” She said it in the voice of somebody agreeing to a thing she had already decided, which is not the same as being talked into it. She reached over, rested a hand on his forearm, took it back. “You’re carrying it in from somewhere else tonight. It’s not Merrick. Merrick’s in you, but it isn’t Merrick.”
+“That’s what I’ll do.” She said it in the voice of somebody agreeing to a thing she had already decided, which is not the same as being talked into it. She reached over, rested a hand on his forearm, took it back. “You’re carrying it in from somewhere else tonight. Merrick’s in you. He isn’t this.”
 
 He turned his cup on the table.
 
@@ -237,7 +237,7 @@ She nodded, slowly, at an answer she had come in holding.
 
 The heater under the servery came on, and it ran, and it stopped, and the silence lasted exactly as long as that did.
 
-“Tell Paladin about the peg,” Aglaope said, standing, taking both cups. “He thinks it’s him. He’s been holding his hand wrong on purpose for a fortnight, to fix a thing that isn’t his fault.”
+“Tell Paladin about the peg,” Aglaope said, standing, taking both cups. “He thinks it’s him. He’s been holding his hand wrong on purpose for a fortnight, to fix something the peg’s doing.”
 
 She went out with the cups, and the swing door did what that door does — twice, then once more, smaller.
 

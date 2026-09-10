@@ -97,9 +97,9 @@ Vexx did not give it back to him. He was in a jungle eleven weeks earlier, at tw
 
 He had heard it. He had gone on walking. Nine weeks he had been on the other side of that sentence — it had been sitting in his own ears the whole time, in the dark, under the noise of a man being carried — and he had let it go past him, because there had been a report to file at the end of the night.
 
-“You were apologising,” Vexx said.
+“You were apologizing,” Vexx said.
 
-“I was apologising. And you were telling me not to.” Corwin turned his hands over, looked at the palms, put them back down. “Do you want the version I’ve got now, or do you want the version I gave you in the trees? Because they’re not the same, and I’d rather you had it from me than off a file.”
+“I was apologizing. And you were telling me not to.” Corwin turned his hands over, looked at the palms, put them back down. “Do you want the version I’ve got now, or do you want the version I gave you in the trees? Because they’re not the same, and I’d rather you had it from me than off a file.”
 
 “Whichever one you want to tell me.”
 

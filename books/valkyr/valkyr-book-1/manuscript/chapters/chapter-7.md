@@ -23,7 +23,7 @@ Nothing they were doing was illegal. No request through the program, no query ag
 
 Rx had ticked researcher.
 
-*Nine minutes in a queue*, he said, in the second hour. *There’s a notice at the top of it apologising for demand.*
+*Nine minutes in a queue*, he said, in the second hour. *There’s a notice at the top of it apologizing for demand.*
 
 There was a bicycle chained to the rail outside the apartment across the landing.
 

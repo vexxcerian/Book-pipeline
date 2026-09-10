@@ -264,8 +264,20 @@ The first four are **CLOSED for new chapters** — they are at or over cap in th
   names. Two distinguishable kinds of silence — the processing kind and the other kind — and
   Vexx has started privately tallying which is which.
 - **Verbal tic:** **YES — one of the three.** The **too-quick denial**, arriving a beat before
-  an honest answer could. **The literal phrase is capped at 5 (3 spent); the behaviour may
-  recur more often. It must break in Ch.13 and must never be smooth again after Ch.20.**
+  an honest answer could. The behaviour may recur more often than the literal phrase.
+  **It must break in Ch.13 and must never be smooth again after Ch.20.**
+- **THE CAP, corrected 2026-09-10 — and what it counts.** It read "capped at 5 (3 spent)",
+  and the bookkeeping was wrong when it was written: the measured count is **5 of 5 already
+  spent** — Ch.1 ×1 (*"Fine, Rx said, smooth again"*), Ch.3 ×3 (*"Fine"* in the transport bay,
+  then *"I'm fine."* and *"I'm fine, Vexx"* in the same paragraph), Ch.9 ×1. That left Ch.13's
+  mandated break with no budget, which is a cap forbidding the payoff it exists to protect.
+  **The cap counts SMOOTH firings only.** The Ch.13 break is the device *failing*, not firing —
+  a reflex that does not arrive, or arrives and is contradicted by the thing underneath it —
+  and a broken tic is not the tic. **It does not count against the cap, and neither does any
+  use after Ch.20, all of which must be broken ones.** So: five smooth uses spent, none left;
+  every remaining appearance in this book must be a break.
+  ⚠️ Count with `grep -n "\*Fine\*\|\*I'm fine" manuscript/chapters/*.md` before adding one
+  — the phrase varies, and the last audit of it was wrong by hand.
 - **Chaos markers:** Vexx's marksmanship tally, deployed at maximally wrong moments (Ch.8, 13,
   26) · minimisation by vocabulary · the rain that mutates into gravel and then into nothing ·
   losing interface control in the field (Ch.13) and a joke that stops mid-clause (Ch.20).

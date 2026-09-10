@@ -156,6 +156,41 @@ _UK_US = {
 _DIALECT_WRONG = (set(_UK_US) if DIALECT == "us"
                   else set(_UK_US.values()) if DIALECT == "uk" else set())
 
+# The explicit map above can only catch words somebody thought to list. "Alphabetise"
+# was not on it and sailed through. So for a US manuscript, also catch the -ise/-isation
+# family by rule — minus the words that are spelled -ise in BOTH dialects, which is the
+# only reason a list is needed at all.
+_ISE_OK = set("""advertise advise apprise arise chastise circumcise comprise compromise
+demise despise devise disguise enfranchise excise exercise franchise guise improvise
+incise merchandise noise praise premise promise raise reprise revise rise supervise
+surmise surprise televise treatise wise otherwise likewise anise cruise poise precise
+concise paradise mortise expertise merchandise""".split())
+_ISE_RE = re.compile(r"\b([a-z]{3,}(?:ise|ised|ises|ising|isation|isations))\b", re.I)
+
+
+def _ise_base(w):
+    """Reduce an -ise inflection to its base verb: apologising -> apologise,
+    surprised -> surprise, realisation -> realise. Getting this wrong is how the
+    exception list stops working — "surprised" minus "ised" is "surpr", not "surpris"."""
+    w = w.lower()
+    if w.endswith("isations"): return w[:-8] + "ise"
+    if w.endswith("isation"):  return w[:-7] + "ise"
+    if w.endswith("ising"):    return w[:-3] + "e"
+    if w.endswith("ised") or w.endswith("ises"): return w[:-1]
+    return w
+
+
+def _dialect_hits(text):
+    """Non-US spellings in text. Explicit map first, then the -ise family by rule."""
+    hits = [w for w in re.findall(r"[A-Za-z]+", text) if w.lower() in _DIALECT_WRONG]
+    if DIALECT == "us":
+        for m in _ISE_RE.finditer(text):
+            w = m.group(1)
+            if _ise_base(w) in _ISE_OK or w.lower() in _DIALECT_WRONG:
+                continue
+            hits.append(w)
+    return hits
+
 PUNCH_CHAPTERS = set()          # e.g. {7}
 
 PIPELINE_CEILINGS = {}
@@ -436,8 +471,7 @@ def scan():
 
         # ORTHOGRAPHY — dialect consistency across the manuscript (see DIALECT above).
         if DIALECT:
-            wrong = [w for w in re.findall(r"[A-Za-z]+", prose)
-                     if w.lower() in _DIALECT_WRONG]
+            wrong = _dialect_hits(prose)
             if wrong:
                 from collections import Counter as _C
                 top = ", ".join(f"{w}x{c}" for w, c in _C(w.lower() for w in wrong).most_common(6))
