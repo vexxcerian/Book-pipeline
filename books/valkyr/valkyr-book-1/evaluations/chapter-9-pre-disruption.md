@@ -1,7 +1,7 @@
 # Chapter Nine
 
 <!-- SCENE BUDGET (Target 3,400): unattributed open + the annex + the puzzle 600 | Zeus names it, the correction bounces 450 | the offer 650 | refusal, the follow-up, the relief 400 | Sedge, the thanks, the Monday log, Rx 450 | Aglaope, the list, alphabetical vs chronological 550 | the dropped line + close 300 -->
-<!-- Word count: 3,380 | Revision: 3 (dialogue pass; hook-pull pass; disruption pass — 3 operations) | Target: 3,400 | Anchor: a logic grid worked in pen, row four wrong since Wednesday, and a man who will not start it again because starting again costs him Tuesday -->
+<!-- Word count: 3,397 | Revision: 2 (dialogue pass; hook-pull pass — narratorial flash-forward cut) | Target: 3,400 | Anchor: a logic grid worked in pen, row four wrong since Wednesday, and a man who will not start it again because starting again costs him Tuesday -->
 
 “Did Paladin ever get the fourth string.”
 
@@ -87,7 +87,7 @@ Vexx heard himself say: “How long does it take. Finding out what a man’s pro
 
 “All right.”
 
-Vexx took hold of the edge of the table with both hands, held it while a pair of boots went along the corridor overhead, stopped somewhere, did not come back — then let go of it. He took hold of it again a second later and did not let go.
+Vexx put both hands flat on the edge of the table, held them there while a pair of boots went along the corridor overhead, stopped somewhere, did not come back — then took them off it again.
 
 The lights at the near end went out on their timer — and neither of them got up to walk under them.
 
@@ -97,7 +97,7 @@ Zeus picked up the pen, held it over the fourth row a while, put it down again o
 
 “It’s been the water since August.” He looked at the grid. His shoulders had come down off wherever they had been. “I’d have been sorry if you’d taken it.”
 
-Vexx said nothing to that. There was a thing to say — he could see the shape of it, could have done it in four words — and he left it where it was. Zeus went on turning the cup.
+Vexx said nothing to that. There was a thing to say — he could see the shape of it, could have done it in four words — and he left it where it was. Zeus went on turning the cup. The moment went past the both of them and out the other side.
 
 “Row four’s wrong,” Vexx said.
 
@@ -159,7 +159,7 @@ The mess had the urn off and one strip light burning over the servery, and Aglao
 
 He poured it out, drank it standing. The urn coffee at that hour is not coffee. He had two cups of it.
 
-She had the list open in front of her, and he knew what it was without being told — everybody in the cell knew what it was, the way a unit knows a thing it has agreed not to make a subject of — and she did not turn the pad over when he sat down opposite.
+She had the list open in front of her, and he knew what it was without being told — everybody in the cell knew what it was, the way a unit knows a thing it has agreed not to make a subject of — and she did not turn the pad over when he sat down opposite, which was its own kind of remark.
 
 “Two hundred and nine,” she said. “I thought it was two hundred and eleven. I’ve had two of them on twice.”
 
@@ -215,13 +215,13 @@ The strip light over the servery had a hum in it — on and on, one note, like a
 
 He said her name, and there was nothing on the other side of it.
 
-“There’s a man on there who lived,” Aglaope said. “Curran. He came back off the table, they flew him out, he wrote me a letter four years ago about a boat he was buying. I’ve been sitting here since half past two deciding whether to take him off.” She read the bottom of the page again while she said it. “I keep thinking, if he’s on it, then what I do is sit with people. And if he isn’t, then what I do is something else, and I’ve been doing it for eleven years.”
+“There’s a man on there who lived,” Aglaope said. “Curran. He came back off the table, they flew him out, he wrote me a letter four years ago about a boat he was buying. I’ve been sitting here since half past two deciding whether to take him off.” She turned the pad a quarter-turn on the table, squared it. “I keep thinking, if he’s on it, then what I do is sit with people. And if he isn’t, then what I do is something else, and I’ve been doing it for eleven years.”
 
 There was a dog at the depot at Ridgeway that had learned to lift the gate latch with its nose — every man on the gate fed it, and not one of them would admit to it.
 
 “Leave him on,” Vexx said.
 
-“That’s what I’ll do.” She said it in the voice of somebody agreeing to a thing she had already decided. She reached over, rested a hand on his forearm, took it back. “You’re carrying it in from somewhere else tonight. Merrick’s in you. He isn’t this.”
+“That’s what I’ll do.” She said it in the voice of somebody agreeing to a thing she had already decided, which is not the same as being talked into it. She reached over, rested a hand on his forearm, took it back. “You’re carrying it in from somewhere else tonight. Merrick’s in you. He isn’t this.”
 
 He turned his cup on the table.
 

@@ -82,6 +82,37 @@ Two related checks in the same pass:
 - **Mirroring.** Where one character repeats, completes, or answers in kind another
   character's signature repetition, the device stops being that character's. Cut the mirror,
   not the original.
+**1.2d Gesture bleed — the same audit, for what characters DO**
+
+Every voice check in this file looks at what characters *say*. Nothing looks at what they do
+with their hands, and physical business bleeds between characters faster than dialogue does,
+for two reasons: it is not attributed, so nobody hears a wrong voice; and it varies in wording
+every time, so the cross-chapter repeated-phrase gate never fires.
+
+Measured on the book this was written for, after eight chapters and four voice passes: one
+small tidying gesture — squaring an object to the edge of a table, turning a cup a
+quarter-turn — appeared **ten times across five characters.** The author had used it **once**,
+on one character, as a piece of characterisation. It had become the book's universal fidget,
+which means it characterised nobody, and every check in the pipeline had passed it.
+
+A separate one: *hands flat on a surface* appeared four times, three of them pipeline-written.
+The author's single use is the most important gesture in his first chapter.
+
+So, once per pass:
+
+1. Grep the whole manuscript for the chapter's physical business — the actual verbs, not
+   phrases: *squared*, *turned*, *flat*, *tapped*, *folded*, *rubbed*, *straightened*.
+2. Count instances **per character**, and count the author's benchmark chapters separately.
+3. A gesture performed by three or more characters belongs to none of them. Give it back to
+   whoever it characterises, and replace the others with something out of that character's own
+   established physical vocabulary — never with a new invented tic, which spends against the
+   §TIC BUDGET to patch a theft.
+
+**Prefer the character's own canon over a fresh gesture.** In the case above, the borrowed
+fidget was replaced with the thing that character was already established as doing — reading
+the last line of her list again — which cost nothing and characterised her instead of
+nobody.
+
 **1.2c The repeat-offence log — check these FIRST, before you read for anything else**
 
 A character constraint that has already been violated once will be violated again. Not
