@@ -300,6 +300,25 @@ But also:
 
 Characters know only what they could realistically have perceived and retained. Two categories to verify before each scene:
 
+**THE NARRATOR'S OBSERVATION RIGHTS COME FIRST.** Before checking what a character can
+perceive, check what the *narration* is allowed to know. In a locked close third, the narrator
+knows exactly what the POV character knows, at the moment he knows it, and **not one sentence
+further downstream.** The failure is a flash-forward — the narrator stepping ahead of the
+character and reporting back:
+
+> *…and he did not work out until a great deal later what the order of them had been for.*
+
+Any sentence you could prefix with "little did he know" is this. So are *he would understand
+later*, *he did not know it yet*, *it would be some time before*, *what he could not have known
+was*. It is seductive because it feels like craft — it promises the reader a payoff and makes
+an ordinary scene feel loaded. That is exactly the damage: it converts a moral pull into an
+informational one, and it does the reader's noticing for them.
+
+It is not an ending-only fault. Check the middle of scenes, where nothing is looking.
+
+(If the manuscript's own author uses this deliberately, it is a **capped and spent** device,
+not a licence — see `hook-craft.md`.)
+
 **Observation Rights** — what they can perceive right now:
 - **Sight:** Only what's within their field of view. Not what's behind them. Not an unvisited room.
 - **Sound:** Only what's audible from their position. Muffled through a wall = vague impressions, not clear words.

@@ -1,7 +1,7 @@
 # Chapter Nine
 
 <!-- SCENE BUDGET (Target 3,400): unattributed open + the annex + the puzzle 600 | Zeus names it, the correction bounces 450 | the offer 650 | refusal, the follow-up, the relief 400 | Sedge, the thanks, the Monday log, Rx 450 | Aglaope, the list, alphabetical vs chronological 550 | the dropped line + close 300 -->
-<!-- Word count: 3,421 | Target: 3,400 | Anchor: a logic grid worked in pen, row four wrong since Wednesday, and a man who will not start it again because starting again costs him Tuesday -->
+<!-- Word count: 3,397 | Revision: 2 (dialogue pass; hook-pull pass — narratorial flash-forward cut) | Target: 3,400 | Anchor: a logic grid worked in pen, row four wrong since Wednesday, and a man who will not start it again because starting again costs him Tuesday -->
 
 “Did Paladin ever get the fourth string.”
 
@@ -41,7 +41,7 @@ Vexx went back to the terminal.
 
 “He said he would.”
 
-Zeus asked four more over the next half hour, at intervals, none of them needing more than a word back — whether the transport at Kettle had gone out through the col or over the ridge, whether Gaia had ever said where she learned the acoustics thing, who had won the argument about the coffee bracket, whether Vexx had ever in his life owned a dog. Vexx answered all four. At two in the morning, in a cold room, with a screen open in front of him, answering them cost nothing at all — and he did not work out until a great deal later what the order of them had been for.
+Zeus asked four more over the next half hour, at intervals, none of them needing more than a word back — whether the transport at Kettle had gone out through the col or over the ridge, whether Gaia had ever said where she learned the acoustics thing, who had won the argument about the coffee bracket, whether Vexx had ever in his life owned a dog. Vexx answered all four. At two in the morning, in a cold room, with a screen open in front of him, answering them cost nothing at all.
 
 The index was the same one that had given up the boots and nothing since — a materiel record in twenty-two lines, of which he had seven, the seven that had come off a civilian mirror of a public series. The other fifteen were on the same record, in the same building, on the same night, with no lawful arrangement of words that would put them on a screen in front of him. He had tried the item field empty, then the date range wide, then the date range narrow. He had tried it as a run of serials and had it come back with a courtesy notice about server load. The index answered everything inside four seconds and answered none of it. Twice it returned the same seven lines in a different order, which he took for a fault in his own query until the third time, when he understood the set was being sorted on a field the display did not carry. He wrote the sort out on the back of his hand with the stylus, in case it was worth something in the morning. Somewhere under all of it was a routing office with a two-letter code, a subsection under that, a duty roster under that — and people on the roster, who would come in at eight in the morning and hang their coats on a hook.
 

@@ -199,7 +199,17 @@ A pull is judged against its NEIGHBOURS, not only on its own merits. Four consec
 - **No pull type three chapters running.** If Ch.N-2 and Ch.N-1 both ended on OMINOUS PROMISE, Ch.N may not — regardless of how well it lands.
 - **Check the verb and the syntax, not just the type.** Two closers reaching for the same word (*shift*, *settle*, *move*), the same opener (*Somewhere above…*), or the same shape (long accumulating sentence → narrator pulls back → dramatic irony) are the same pull wearing different clothes. This is the failure mode that survives a type-based audit.
 - **The dramatic-irony closer — "he slept, certain that…", "she had no way of knowing" — is rationed to ONCE per act.** It feels earned every single time, which is exactly why it runs away. Spend it where it lands hardest and refuse it everywhere else.
-- **A pull may not step outside the POV character's perception.** In close third, an ending that reports what the antagonist believes while asleep in another building is the narrator talking, not the book. However good the sentence is, it breaks the POV lock — check `STATE.yaml` for a declared POV constraint and treat a breach as an automatic rewrite.
+- **No narration anywhere may know something the POV character does not yet know.** In close third, an ending that reports what the antagonist believes while asleep in another building is the narrator talking, not the book. However good the sentence is, it breaks the POV lock — check `STATE.yaml` for a declared POV constraint and treat a breach as an automatic rewrite.
+
+  **Scan the whole chapter for this, not just the ending.** The rule used to read "a pull may not step outside the POV character's perception", and being scoped to endings is precisely why it kept missing: the breach migrates. On the book this was written for it appeared three times — twice at a chapter close, where it was caught, and once **mid-chapter**, in the middle of a scene, where nothing was looking:
+
+  > *…answering them cost nothing at all — and he did not work out until a great deal later what the order of them had been for.*
+
+  Twenty-five words, and four faults at once. It is a flash-forward: the narrator steps downstream of the POV character and reports back. It converts a **moral** pull into an **informational** one — it promises the reader a return on four ordinary-sounding questions. It makes the questioner sinister, because four questions about a col and a dog become a concealed sequence the moment the narrator confirms they had an order. And it pre-empts the chapter's own best moment by doing the noticing *for* the reader, six lines before the character demonstrates it.
+
+  The tells, in order of how often they hide the fault: *he would understand later* · *he did not know it yet* · *it would be some time before* · *what he could not have known was*. Any sentence that can be prefixed with "little did he know" is this.
+
+  **One nuance.** A narrator who knows more than the POV character is a legitimate device — dramatic irony — and some authors use it deliberately. If the manuscript's own benchmark chapters contain it, it is **capped and spent**, not a licence: record where the author used it, treat that instance as the whole budget, and keep the pipeline out of it. It is never a device the pipeline reaches for on its own.
 
 When you rewrite a pull for sequencing rather than for quality, say so in the report: the author needs to know the previous ending was fine on its own and was changed for rhythm.
 
