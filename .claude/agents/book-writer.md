@@ -398,6 +398,39 @@ need to change what happens to fix how it is joined.** A chapter has been taken 
 2. **A short chapter is not a failed chapter.** Density thresholds get unstable below ~2,500
    words. Check the raw count too before you cut anything.
 
+## A PRESSURE DEVICE BECOMES HOUSE STYLE UNLESS YOU MEASURE IT
+
+When a voice document says a behaviour belongs **under pressure** — the bare unpunctuated
+question, the sentence that stops mid-clause, the flat register, the refusal to name a
+feeling — it is describing something that should be **rare and therefore legible.** A reader
+registers it because the prose is not usually doing it.
+
+Left unmeasured, it stops being rare. It generalises into the default register, and then it
+signifies nothing, because there is no un-pressured baseline left to contrast with.
+
+Observed, on a book whose voice doc listed the bare question as a pressure behaviour:
+
+| | author | ch A | ch B | ch C | ch D |
+|---|---|---|---|---|---|
+| question marks /1k | 1.0 – 3.0 | 0.9 | 0.7 | 1.0 | **0.0** |
+
+The author punctuates ordinary questions normally — *"Options?"*, *"Ready?"*, *"He got a
+name?"* — and saves the flat unpunctuated one for weight. Chapter D reached **zero question
+marks in 3,400 words** while carrying eleven spoken interrogatives, in a chapter that is two
+long conversations. Every one of them read as technique, so none of them did.
+
+The next chapter's first complete draft did it again — zero in 4,600 words, in a chapter that
+is one long interrogation — and was caught only because the writer measured.
+
+**So: for every behaviour your voice document marks as "under pressure", ask what its
+ordinary form looks like and count both.** If the ordinary form has disappeared, the device
+has eaten it. Restore the ordinary instances; the device only works against a baseline.
+
+This generalises. Any marked, distinctive, *deliberately rare* behaviour drifts toward
+becoming the default — it is the same mechanism that makes a strong character constraint the
+one most likely to be violated (see `dialogue-polish.md` §the repeat-offence log). Rarity is
+a quantity. If you have not counted it, you are not maintaining it.
+
 ## THE MANDATORY UGLY SENTENCE
 
 Every chapter must contain ONE deliberately rough sentence. Not clever-rough. Not artfully-imperfect. Genuinely rough. A sentence that breaks the rhythm and sounds like a person, not a writer.
