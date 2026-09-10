@@ -1,7 +1,7 @@
 # Chapter Nine
 
 <!-- SCENE BUDGET (Target 3,400): unattributed open + the annex + the puzzle 600 | Zeus names it, the correction bounces 450 | the offer 650 | refusal, the follow-up, the relief 400 | Sedge, the thanks, the Monday log, Rx 450 | Aglaope, the list, alphabetical vs chronological 550 | the dropped line + close 300 -->
-<!-- Word count: 3,380 | Revision: 3 (dialogue pass; hook-pull pass; disruption pass — 3 operations) | Target: 3,400 | Anchor: a logic grid worked in pen, row four wrong since Wednesday, and a man who will not start it again because starting again costs him Tuesday -->
+<!-- Word count: 3,374 | Revision: 4 (voice-match gloss repair — 6 trailing ", which" clauses removed or recast, 1 kept) | Target: 3,400 | Anchor: a logic grid worked in pen, row four wrong since Wednesday, and a man who will not start it again because starting again costs him Tuesday -->
 
 “Did Paladin ever get the fourth string.”
 
@@ -43,7 +43,7 @@ Vexx went back to the terminal.
 
 Zeus asked four more over the next half hour, at intervals, none of them needing more than a word back — whether the transport at Kettle had gone out through the col or over the ridge, whether Gaia had ever said where she learned the acoustics thing, who had won the argument about the coffee bracket, whether Vexx had ever in his life owned a dog. Vexx answered all four. At two in the morning, in a cold room, with a screen open in front of him, answering them cost nothing at all.
 
-The index was the same one that had given up the boots and nothing since — a materiel record in twenty-two lines, of which he had seven, the seven that had come off a civilian mirror of a public series. The other fifteen were on the same record, in the same building, on the same night, with no lawful arrangement of words that would put them on a screen in front of him. He had tried the item field empty, then the date range wide, then the date range narrow. He had tried it as a run of serials and had it come back with a courtesy notice about server load. The index answered everything inside four seconds and answered none of it. Twice it returned the same seven lines in a different order, which he took for a fault in his own query until the third time, when he understood the set was being sorted on a field the display did not carry. He wrote the sort out on the back of his hand with the stylus, in case it was worth something in the morning. Somewhere under all of it was a routing office with a two-letter code, a subsection under that, a duty roster under that — and people on the roster, who would come in at eight in the morning and hang their coats on a hook.
+The index was the same one that had given up the boots and nothing since — a materiel record in twenty-two lines, of which he had seven, the seven that had come off a civilian mirror of a public series. The other fifteen were on the same record, in the same building, on the same night, with no lawful arrangement of words that would put them on a screen in front of him. He had tried the item field empty, then the date range wide, then the date range narrow. He had tried it as a run of serials and had it come back with a courtesy notice about server load. The index answered everything inside four seconds and answered none of it. Twice it returned the same seven lines in a different order, and he took it for a fault in his own query until the third time, when he understood the set was being sorted on a field the display did not carry. He wrote the sort out on the back of his hand with the stylus, in case it was worth something in the morning. Somewhere under all of it was a routing office with a two-letter code, a subsection under that, a duty roster under that — and people on the roster, who would come in at eight in the morning and hang their coats on a hook.
 
 Merrick’s notebook lay by his elbow, the rubber band round it slack now, like elastic out of a cuff. Bus bars. Runoff figures for four quarters, the wet months underlined twice. The Thursdays, every Thursday, three years of them — *depot, no answer* — *depot, no answer* — *depot, called back, will send a man.* Vexx had read it twice on the transport, once in his quarters, had brought it down with him tonight, had not opened it.
 
@@ -91,7 +91,7 @@ Vexx took hold of the edge of the table with both hands, held it while a pair of
 
 The lights at the near end went out on their timer — and neither of them got up to walk under them.
 
-Zeus picked up the pen, held it over the fourth row a while, put it down again on the paper without having written a thing with it, then reached over and turned the cup a half-turn on the table, which did nothing whatever to the cup. “It’s the water,” he said. “Not the grounds.”
+Zeus picked up the pen, held it over the fourth row a while, put it down again on the paper without having written a thing with it, then reached over and turned the cup a half-turn on the table. “It’s the water,” he said. “Not the grounds.”
 
 “So I hear.”
 
@@ -111,7 +111,7 @@ Zeus looked at it. “I know.”
 
 “Not while I’m still on it.”
 
-Vexx turned his chair round to face into the room, which he had not done all night.
+Vexx turned his chair round to face into the room. The chair had been pointed at the terminal all night.
 
 “They ran a board on me at Sedge,” Zeus said. “Nine years ago. Seven interviews, every one of them mine. The finding came back inside a fortnight and it used all seven — quoted them, page numbers, the lot — then found against me on the last page for what it called an unsound approach to the subjects.” A cross went into a box. “Same seven interviews. I read it four times to see whether there were two documents.”
 
@@ -163,7 +163,7 @@ She had the list open in front of her, and he knew what it was without being tol
 
 “Two hundred and nine,” she said. “I thought it was two hundred and eleven. I’ve had two of them on twice.”
 
-She put them in by hand, one a night, longhand with the stylus. A machine could have pulled two hundred names off a casualty index in nine seconds and got the spellings right. She had never let one near it — she had told him so once, in a corridor, in the tone of a woman reporting a fact about a stylus, along with the other thing, which was that she reads the last twenty back every night, added anybody to them or not.
+She put them in by hand, one a night, longhand with the stylus. A machine could have pulled two hundred names off a casualty index in nine seconds and got the spellings right. She had never let one near it — she had told him so once, in a corridor, in the tone of a woman reporting a fact about a stylus, along with the other thing: she reads the last twenty back every night, added anybody to them or not.
 
 “I’ve started having to check the middle years,” she said. “Six and seven. I put them in the wrong way round twice this month.”
 
@@ -229,7 +229,7 @@ He turned his cup on the table.
 
 “No.”
 
-She waited longer than the answer needed. He had four sentences ready and they were all true, and every one of them finished with her holding a thing she would not be able to put down again — a dent in a tag, two dates one under the other, a date read out twice in a kitchen by a voice coming out of a speaker. He drank what was left in the cup instead, which had gone cold in the time it took him not to say them.
+She waited longer than the answer needed. He had four sentences ready and they were all true, and every one of them finished with her holding a thing she would not be able to put down again — a dent in a tag, two dates one under the other, a date read out twice in a kitchen by a voice coming out of a speaker. He drank what was left in the cup instead. It had gone cold in the time it took him not to say them.
 
 She nodded, slowly, at an answer she had come in holding.
 
@@ -241,7 +241,7 @@ The heater under the servery came on, and it ran, and it stopped.
 
 She went out with the cups, and the swing door did what that door does — twice, then once more, smaller.
 
-Housing allocations at a yard like Kell would go through a base accommodation office, and a base accommodation office publishes its waiting list, because a waiting list has to be seen to be fair — the list carries names, grades, dependants, and the date the claim went in, which is most of what a man would need. Leave was harder. Leave is held on the section sheet and the section sheet does not travel. You would get it out of the man himself, in the first ten minutes, sitting across from him with the door standing open, by asking him about his summer.
+Housing allocations at a yard like Kell would go through a base accommodation office, and a base accommodation office publishes its waiting list, because a waiting list has to be seen to be fair — the list carries names, grades, dependants, and the date the claim went in. That is most of what a man would need. Leave was harder. Leave is held on the section sheet and the section sheet does not travel. You would get it out of the man himself, in the first ten minutes, sitting across from him with the door standing open, by asking him about his summer.
 
 He had got that far before he stopped.
 

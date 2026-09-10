@@ -1,7 +1,7 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4377 | Revision: 3 (voice-match comparison repair — 5 bare comparisons restored) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4375 | Revision: 4 (voice-match gloss repair — 2 trailing ", which" clauses removed, 2 kept) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
@@ -213,7 +213,7 @@ Corwin looked up.
 
 “You’ve been enough use,” Vexx said, and that was true in a way he would have to sit down somewhere private, and look at.
 
-They talked about other things after that. The food, which was better than the program’s. The orchard, which produced badly, and which two of the men here had opinions about. A dog that belonged to nobody, and came up from the valley on Tuesdays. Corwin asked what the cell was doing. Vexx said monitoring work, mostly. Corwin nodded, did not push at it — and it occurred to Vexx that eleven weeks ago, this man had known the word Valkyr, had used it out loud in a clearing, that neither of them had said it once today.
+They talked about other things after that. The food, better than the program’s. The orchard, which produced badly, and which two of the men here had opinions about. A dog that belonged to nobody, and came up from the valley on Tuesdays. Corwin asked what the cell was doing. Vexx said monitoring work, mostly. Corwin nodded, did not push at it — and it occurred to Vexx that eleven weeks ago, this man had known the word Valkyr, had used it out loud in a clearing, that neither of them had said it once today.
 
 At the door of the day room, Corwin put a hand out, and Vexx took it. The grip was better. That was measurable, and it was not nothing.
 
@@ -227,7 +227,7 @@ The door was not locked. Not one of them watched him down the corridor. Behind h
 
 * * *
 
-There was a pad at reception for signing out, which the woman on the desk apologized for, and which Voss was holding.
+There was a pad at reception for signing out — the woman on the desk apologized for it — and Voss was holding it.
 
 She was standing at the end of the counter in civilian clothes — a folder of transfer authorizations open in front of her, a stylus in her teeth — and she took the stylus out, looked at Vexx for about a second and a half. That was the whole of her surprise.
 

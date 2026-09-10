@@ -1,7 +1,7 @@
 # Chapter Eight
 
 <!-- SCENE BUDGET (Target 6,200): dropship texture + the flag summary 1,000 | insertion, the plateau, the sweep that pays nothing 950 | Merrick 900 | the stack that goes wrong 800 | Zeus's assessment 1,150 | Paladin holds, the recommendation, the transport 1,000 | the corridor 350 | Goliath, the report re-read, the notebook 450 -->
-<!-- Word count: 5727 | Revision: 1 (voice-match comparison repair — 10 bare comparisons restored) | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
+<!-- Word count: 5710 | Revision: 2 (voice-match gloss repair — 8 trailing ", which" clauses removed or recast, 3 kept) | Target: 6,200 | Anchor: Merrick saying his own last three words again, quietly, after he has said them — and doing it on the ramp -->
 
 “—because the water’s wrong,” Goliath said. “It isn’t the grounds. Every one of you goes straight to the grounds.”
 
@@ -39,7 +39,7 @@ The bay was cold and smelled of the heaters coming up — a smell like scorched 
 
 “It was working on Tuesday. Open it and close it for me.”
 
-Paladin opened it and closed it. Everybody in the bay watched him do it, which he minded, which he did not say he minded.
+Paladin opened it and closed it. Everybody in the bay watched him do it — he minded that, and he did not say he minded.
 
 “Twice more.”
 
@@ -223,7 +223,7 @@ Later — much later, on the transport, with the lights down — Aglaope said, t
 
 * * *
 
-They gave Zeus the plant house, because it was warm, because it was his, and Vexx stood outside the door where he could hear it, which is not the same as being in the room — and Merrick had not asked for the door shut.
+They gave Zeus the plant house, because it was warm, because it was his, and Vexx stood outside the door where he could hear it — not the same as being in the room — and Merrick had not asked for the door shut.
 
 It went on for an hour and forty minutes. Nine minutes of that was about the bus bar.
 
@@ -263,7 +263,7 @@ There was a long pause with the wind in it.
 
 And Merrick told him.
 
-He told him well. He gave Zeus the watch rotation off the top of his head, all of it, the way a man does when he has run one for eleven months — first names, shift patterns, who swapped with whom on the sixteenth and why, which of them was owed a rest day, which of them had taken it in half-days because his wife’s messages came through on Thursdays. It was accurate. Every part of it that could be checked was checked later that night. Every part of it was accurate.
+He told him well. He gave Zeus the watch rotation off the top of his head, all of it, the way a man does when he has run one for eleven months — first names, shift patterns, who swapped with whom on the sixteenth and why, who was owed a rest day, who had taken it in half-days because his wife’s messages came through on Thursdays. It was accurate. Every part of it that could be checked was checked later that night. Every part of it was accurate.
 
 It was a two-man rotation with three men in it.
 
@@ -365,7 +365,7 @@ Paladin did not answer straight away.
 
 “I’ll tell him that too.”
 
-The medical crew were decent about it. They were two women in flight coveralls who had done this before, who put a hand under his elbow like people steadying a ladder, did not grip — and one of them talked to him the whole way up the ramp about the flight time and the pressurization and whether he wanted the seat facing forward, which is what you talk about.
+The medical crew were decent about it. They were two women in flight coveralls who had done this before, who put a hand under his elbow like people steadying a ladder, did not grip — and one of them talked to him the whole way up the ramp about the flight time and the pressurization and whether he wanted the seat facing forward.
 
 He went up it easily. He was not restrained. He apologized, at the top, for the trouble, thanked the crew chief by rank, got the rank right.
 
@@ -383,7 +383,7 @@ The breach bag was still against the relay hall wall, inside the near door, wher
 
 He heard it before he was through the door.
 
-The corridor was the corridor: two meters wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges, like the mark in a bath. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there, which did not help.
+The corridor was the corridor: two meters wide, the light in it flat, the brown fan across the plate dried down to a rim at the edges, like the mark in a bath. Paladin sat on the step where the boy had sat the day before, forearms on his knees, boots flat on the plate. His head was down. The breathing was wrong — it went, came back, went again — and he put the heel of his hand up against his mouth and held it there.
 
 Vexx stopped inside the frame. The bag was a meter from his hand. He did not pick it up.
 
@@ -451,7 +451,7 @@ The report took fifty minutes. Halfway through it Aglaope came in without knocki
 
 She left him to it.
 
-He wrote what he had told them in the kitchen he would write, in the order he had said it in, with nothing added to it. Removal from field. Medical track, escort of two, no restraint, and the line about the runoff sheets being immaculate, which would not survive the summary and which he put in anyway. Then the names, all six of them. Then Paladin’s objection, in Paladin’s own words, which ran to four sentences, and which he did not shorten.
+He wrote what he had told them in the kitchen he would write, in the order he had said it in, with nothing added to it. Removal from field. Medical track, escort of two, no restraint, and the line about the runoff sheets being immaculate, which would not survive the summary and which he put in anyway. Then the names, all six of them. Then Paladin’s objection, in Paladin’s own words, four sentences of it, and he did not shorten them.
 
 Then he went back up to the top of the form, to the box the authorization had come in on, and read it once more before he sent it.
 

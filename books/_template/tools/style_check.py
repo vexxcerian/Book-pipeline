@@ -277,9 +277,23 @@ def split_registers(text):
     the fix. Gate the narration; report the dialogue ratio and let a human read it.
     """
     paras = [p.strip() for p in text.split("\n") if p.strip()]
-    is_dia = lambda p: p.startswith("\u201c") or p.startswith('"')
-    return ("\n\n".join(p for p in paras if is_dia(p)),
-            "\n\n".join(p for p in paras if not is_dia(p)))
+
+    # A paragraph that OPENS with a quotation mark is spoken. So is a paragraph that is
+    # WHOLLY ITALIC: in a manuscript using the two-register convention that is reported
+    # speech or the private operator/AI channel, and even where it is a quoted document
+    # rather than speech, it is still not the narrator's own prose.
+    #
+    # Missing the italic half distorts exactly the chapters that lean on it. On the book
+    # this was written for it made the author's own Ch.1 — 30 italic paragraphs, ZERO
+    # quotation marks, because the whole chapter is memory — read as though every word
+    # were narration, and it made one Rx-heavy chapter (43 italic paragraphs) look like
+    # the shortest-breathed thing in the manuscript when its real narration sits close to
+    # the author's band. The breath floors were calibrated through that error once.
+    wholly_italic = re.compile(r"^\*[^*].*\*$", re.S)
+    is_spoken = lambda p: (p.startswith("\u201c") or p.startswith('"')
+                           or bool(wholly_italic.match(p)))
+    return ("\n\n".join(p for p in paras if is_spoken(p)),
+            "\n\n".join(p for p in paras if not is_spoken(p)))
 
 
 def words(text):
@@ -417,7 +431,7 @@ def scan():
         # the reader's work, every time.
         #
         # It is measured in NARRATION only — in dialogue "which" is ordinary speech.
-        which_gloss = len(re.findall(r",\s+which\b", nar_text, re.I))
+        which_gloss = len(re.findall(r",\s+which\b(?!\s+(?:of|one)\b)", nar_text, re.I))
         wg1k = which_gloss / (len(words(nar_text)) or 1) * 1000
         hi = _ceiling(n, "which_gloss_per1k", None)
         if hi is not None and wg1k > hi:

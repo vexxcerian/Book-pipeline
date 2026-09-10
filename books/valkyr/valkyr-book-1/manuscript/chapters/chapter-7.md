@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1525 | Revision: 5 (voice-match comparison repair — 1 bare comparison restored; prior: F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1525 | Revision: 6 (voice-match gloss repair — 3 trailing ", which" clauses recast, 1 kept; prior: voice-match comparison repair — 1 bare comparison restored; F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -49,7 +49,7 @@ The name on the tag was stamped rather than etched, and the D had worn shallower
 
 HOLST, D.
 
-*HOLST, D., returns nothing*, Rx said. *Not the way the serial returns nothing. The index doesn’t hold a Holst at all, which is a different failure, a smaller one, because that index is thirty-one per cent complete. It says so on its own front page.*
+*HOLST, D., returns nothing*, Rx said. *Not the way the serial returns nothing. The index doesn’t hold a Holst at all — a different failure, and a smaller one, because that index is thirty-one per cent complete. It says so on its own front page.*
 
 *Try it without the initial.*
 
@@ -121,7 +121,7 @@ Vexx said the number after him. He had not decided to.
 
 Vexx sat with his hands flat on the laminate on either side of the pad. The left one was not flat.
 
-Then he pulled it toward him, which he had not done all night, the search still open on the small badly built archive with the pencil in its margins, and he typed into the field.
+Then he pulled it toward him. He had not done that all night. The search was still open on the small badly built archive with the pencil in its margins, and he typed into the field.
 
 He got as far as the fourth letter of a surname they shared.
 
@@ -151,7 +151,7 @@ The eggs were fine and he put them in the sink.
 
 At a little after two he sat back down, with the plate rinsed and standing on its edge in the rack. He turned the pad over. He cleared the requisition off it and opened the listings.
 
-He had been at this since the summer, in the hours after the work stopped and before he could reasonably lie down — solid timber, mostly, because he had learned inside a fortnight that the pressed-board ones open up at the corner joint, which you can see coming in the photographs if you know what a corner joint is supposed to look like. He had views now — drawbored tenons, oiled finish against lacquer, the four sellers on the whole index who photograph a table from the one angle that hides the underside of it. He had ordered nothing. He was not going to order anything. He read them for forty minutes, and then he read some more of them.
+He had been at this since the summer, in the hours after the work stopped and before he could reasonably lie down — solid timber, mostly, because he had learned inside a fortnight that the pressed-board ones open up at the corner joint. You can see it coming in the photographs, if you know what a corner joint is supposed to look like. He had views now — drawbored tenons, oiled finish against lacquer, the four sellers on the whole index who photograph a table from the one angle that hides the underside of it. He had ordered nothing. He was not going to order anything. He read them for forty minutes, and then he read some more of them.
 
 *SOLID ASH. 1600 BY 800. MORTISE AND TENON, DRAWBORED, NO FIXINGS.*
 

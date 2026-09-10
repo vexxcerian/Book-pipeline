@@ -128,11 +128,25 @@ ALLOWLIST = [
 #   em-dash  author 9.0-11.7/1k  -> floor 8.5   (a shade under his lowest chapter)
 #   commas   author 65.9-77.9/1k -> floor 58.0
 #   BREATH, over the author's NARRATION ONLY in Ch.1-5, measured with THIS FILE'S OWN
-#   sentences()+words() — not with a scratch script and not over the whole chapter.
-#   Both of those shortcuts were tried and both produced wrong thresholds; see below.
-#     narration median  13 - 18      -> floor 13.0
-#     narration <=6w    20.0 - 32.6% -> ceiling 33.0%
-#     narration >=40w   11.6 - 16.3% -> floor 11.5%
+#   sentences()+words() — not with a scratch script, not over the whole chapter, and not
+#   with italic speech counted as narration. All THREE shortcuts were tried and all three
+#   produced wrong thresholds; see below.
+#     narration median  14.0 - 17.5  -> floor 14.0
+#     narration <=6w    20.8 - 29.9% -> ceiling 30.0%
+#     narration >=40w   13.3 - 16.2% -> floor 13.0
+#
+#   RECALIBRATED 2026-09-10. The previous values (13.0 / 33.0% / 11.5%) were derived with
+#   split_registers() treating WHOLLY-ITALIC paragraphs as narration. In a book whose
+#   convention makes unquoted italics the AI channel, that meant the author's Ch.1 — 30
+#   italic paragraphs and ZERO quotation marks, because the entire chapter is memory — was
+#   measured as if every word were the narrator's. His true narration is longer-breathed
+#   than the old floors described, so the floors were too low all along.
+#
+#   It also retires a finding: Ch.7 was recorded as "the shortest-breathed chapter in the
+#   manuscript" at median 9.0 / >=40w 7.8%. It has 43 italic paragraphs, the most in the
+#   book, because it is the Rx chapter. Its real narration is median 11 / 12.3% — still
+#   under the band and still legitimately exempt as a declared punch chapter, but nothing
+#   like the outlier it was reported as.
 #   Set AT his measured extremes, not inside them. Three separate thresholds in this file
 #   were once set tighter than the author's own range, and every one of them pushed the
 #   prose AWAY from his voice while appearing to protect it. Do not make it four.
@@ -145,8 +159,8 @@ PIPELINE_FLOORS = {
     "simile_per1k": 2.0,
     "emdash_per1k": 8.5,
     "comma_per1k": 58.0,
-    "median_sentence": 13.0,
-    "long_sentence_pct": 11.5,
+    "median_sentence": 14.0,
+    "long_sentence_pct": 13.0,
 }
 # The author's own chapters are the benchmark; they are never gated against themselves.
 AUTHOR_FLOORS = {}
@@ -276,7 +290,7 @@ PIPELINE_CEILINGS = {
     # than the author himself, which forced edits to his dialogue to satisfy it. Derive a
     # threshold from the SAME measurement the gate makes, never from a differently-defined one.
     "vague_per1k": 6.5,
-    "short_sentence_pct": 33.0,   # <=6-word NARRATION sentences, %
+    "short_sentence_pct": 30.0,   # <=6-word NARRATION sentences, %
     # author Ch.1-5 narration: 0.00 0.30 0.00 0.00 0.91 — two instances in
     # ~15,900 words. Pipeline: 1.49 -> 2.64 -> 2.90 -> 3.77, rising every chapter.
     "which_gloss_per1k": 1.0,
@@ -367,9 +381,23 @@ def split_registers(text):
     the fix. Gate the narration; report the dialogue ratio and let a human read it.
     """
     paras = [p.strip() for p in text.split("\n") if p.strip()]
-    is_dia = lambda p: p.startswith("\u201c") or p.startswith('"')
-    return ("\n\n".join(p for p in paras if is_dia(p)),
-            "\n\n".join(p for p in paras if not is_dia(p)))
+
+    # A paragraph that OPENS with a quotation mark is spoken. So is a paragraph that is
+    # WHOLLY ITALIC: in a manuscript using the two-register convention that is reported
+    # speech or the private operator/AI channel, and even where it is a quoted document
+    # rather than speech, it is still not the narrator's own prose.
+    #
+    # Missing the italic half distorts exactly the chapters that lean on it. On the book
+    # this was written for it made the author's own Ch.1 — 30 italic paragraphs, ZERO
+    # quotation marks, because the whole chapter is memory — read as though every word
+    # were narration, and it made one Rx-heavy chapter (43 italic paragraphs) look like
+    # the shortest-breathed thing in the manuscript when its real narration sits close to
+    # the author's band. The breath floors were calibrated through that error once.
+    wholly_italic = re.compile(r"^\*[^*].*\*$", re.S)
+    is_spoken = lambda p: (p.startswith("\u201c") or p.startswith('"')
+                           or bool(wholly_italic.match(p)))
+    return ("\n\n".join(p for p in paras if is_spoken(p)),
+            "\n\n".join(p for p in paras if not is_spoken(p)))
 
 
 def words(text):
@@ -507,7 +535,7 @@ def scan():
         # the reader's work, every time.
         #
         # It is measured in NARRATION only — in dialogue "which" is ordinary speech.
-        which_gloss = len(re.findall(r",\s+which\b", nar_text, re.I))
+        which_gloss = len(re.findall(r",\s+which\b(?!\s+(?:of|one)\b)", nar_text, re.I))
         wg1k = which_gloss / (len(words(nar_text)) or 1) * 1000
         hi = _ceiling(n, "which_gloss_per1k", None)
         if hi is not None and wg1k > hi:
