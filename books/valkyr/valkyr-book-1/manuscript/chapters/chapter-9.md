@@ -5,7 +5,7 @@
 
 “Did Paladin ever get the fourth string.”
 
-Vexx answered before he had worked out who was asking, which is what two hours in a chair will do to a man. “He got one off the quartermaster. It won’t hold past an hour.”
+Vexx answered before he had worked out who was asking, which is what an hour in a chair will do to a man. “He got one off the quartermaster. It won’t hold past an hour.”
 
 “That’ll be the peg.”
 
@@ -15,7 +15,7 @@ Vexx answered before he had worked out who was asking, which is what two hours i
 
 The records annex sat against the outer wall on the north side of the operations block, where the ducting had been costed twice and run neither time — the coldest room in the building, by a margin everybody knew about and nobody had put on a form. The lights came on in banks of two as a man walked the length of it, two, then two, then two, like a shop closing up in reverse. The cold came off the bays like off a cellar wall, and it was into a man’s back inside the hour. Nine bays of shelving, of which four held anything. A terminal at the far end with a materiel index on it, and a laminated card taped to the housing explaining, for the benefit of nobody, how to page a result set.
 
-Zeus was at the second table with the lamp pulled down close, his chair turned a quarter out from it, one boot up on the crossbar. A printed sheet in front of him, a cup at his elbow with a skin gone over the top of it. He had been there when Vexx came in at ten past one. Vexx had said good evening, then nothing else for two hours. Zeus had not asked what he was doing — had not asked anything at all — and had not left.
+Zeus was at the second table with the lamp pulled down close, his chair turned a quarter out from it, one boot up on the crossbar. A printed sheet in front of him, a cup at his elbow with a skin gone over the top of it. He had been there when Vexx came in at ten past one. Vexx had said good evening, then nothing else for an hour. Zeus had not asked what he was doing — had not asked anything at all — and had not left.
 
 The sheet was a logic grid off the fleet entertainment net. Six columns, six rows, the little boxes with their crosses and their ticks. It was worked in pen.
 
@@ -47,7 +47,7 @@ The index was the same one that had given up the boots and nothing since — a m
 
 Merrick’s notebook lay by his elbow, the rubber band round it slack now, like elastic out of a cuff. Bus bars. Runoff figures for four quarters, the wet months underlined twice. The Thursdays, every Thursday, three years of them — *depot, no answer* — *depot, no answer* — *depot, called back, will send a man.* Vexx had read it twice on the transport, once in his quarters, had brought it down with him tonight, had not opened it.
 
-“You came down here with a notebook you haven’t opened,” Zeus said, “and you’ve been typing two hours in a room where there’s one terminal and it does one thing.”
+“You came down here with a notebook you haven’t opened,” Zeus said, “and you’ve been typing an hour and a half in a room where there’s one terminal and it does one thing.”
 
 “It’s an open index — auditors use it,” Vexx said, without turning round.
 
@@ -95,7 +95,7 @@ Zeus picked up the pen, held it over the fourth row a while, put it down again o
 
 “So I hear.”
 
-“It’s been the water since August.” He looked at the grid. His shoulders had come down off wherever they had been. “I’d have been sorry if you’d taken it.”
+“It’s been the water since August.” He looked at the grid. “I’d have been sorry if you’d taken it.”
 
 Vexx said nothing to that. There was a thing to say — he could see the shape of it, could have done it in four words — and he left it where it was. Zeus went on turning the cup.
 
@@ -235,7 +235,7 @@ She nodded, slowly, at an answer she had come in holding.
 
 “What happens to him if you’re wrong,” she said. “And what happens to him if you’re right.”
 
-The heater under the servery came on, and it ran, and it stopped, and the silence lasted exactly as long as that did.
+The heater under the servery came on, and it ran, and it stopped.
 
 “Tell Paladin about the peg,” Aglaope said, standing, taking both cups. “He thinks it’s him. He’s been holding his hand wrong on purpose for a fortnight, to fix something the peg’s doing.”
 

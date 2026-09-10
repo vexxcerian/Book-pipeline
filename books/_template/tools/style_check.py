@@ -408,6 +408,31 @@ def scan():
         # Dialogue connective rate — REPORTED, never gated. See the note in the config.
         dia_w = len(words(dia_text)) or 1
         dia_and = round(len(re.findall(r"\band\b", dia_text, re.I)) / dia_w * 1000, 1)
+        # THE TRAILING GLOSS — Pattern #11 in its countable form.
+        #
+        # The anti-AI scan looks for the explanatory simile. The construction that actually
+        # recurs is smaller and quieter: a comma, then "which", then a clause telling the
+        # reader what the thing just described MEANS. "...turned the cup a half-turn, which
+        # did nothing whatever to the cup." It reads as craft and it is the narrator doing
+        # the reader's work, every time.
+        #
+        # It is measured in NARRATION only — in dialogue "which" is ordinary speech.
+        which_gloss = len(re.findall(r",\s+which\b", nar_text, re.I))
+        wg1k = which_gloss / (len(words(nar_text)) or 1) * 1000
+        hi = _ceiling(n, "which_gloss_per1k", None)
+        if hi is not None and wg1k > hi:
+            flags.append(f"GLOSS {wg1k:.1f} \", which\"/1k narration > {hi} (the narrator "
+                         f"explaining what it just showed)"); problems += 1
+
+        # Question marks — REPORTED, not gated. A declared pressure device (the bare,
+        # unpunctuated question) can generalise into house punctuation: the author runs
+        # 1.0-3.0 question marks per 1k and one pipeline chapter reached ZERO across 3,363
+        # words carrying eleven spoken interrogatives. It is NOT gated because the honest
+        # metric is "interrogatives punctuated with a period", which needs a reliable
+        # interrogative detector — and a threshold built on a shortcut measurement is how
+        # three earlier metrics in this file went wrong. Read the number with a human eye.
+        qmarks = text.count("?")   # `text` already has HTML comments stripped
+        q1k = qmarks / wc * 1000
         ndia = len(sentences(dia_text))
         mid = len(nar) // 2
         median_s = nar[mid] if len(nar) % 2 else (nar[mid-1] + nar[mid]) / 2
@@ -415,7 +440,8 @@ def scan():
         short_pct = round(100 * sum(1 for L in nar if L <= 6) / len(nar), 1)
         breath = (f"      breath (narration): {len(nar)} sentences | median {median_s} | "
                   f">=40w {long_pct}% | <=6w {short_pct}% | dialogue lines {ndia} "
-                  f"({round(ndia/len(nar), 2)}:1) | dialogue and {dia_and}/1k")
+                  f"({round(ndia/len(nar), 2)}:1) | dialogue and {dia_and}/1k | "
+                  f"gloss {wg1k:.1f}/1k | question marks {q1k:.1f}/1k")
         if n in PUNCH_CHAPTERS:
             breath += "  [PUNCH — exempt]"
         else:
@@ -477,6 +503,7 @@ def scan():
                 top = ", ".join(f"{w}x{c}" for w, c in _C(w.lower() for w in wrong).most_common(6))
                 flags.append(f"DIALECT {len(wrong)} non-{DIALECT.upper()} spelling(s): {top}")
                 problems += 1
+
 
         low = text.lower()
         for phrase in motif_caps:
