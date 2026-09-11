@@ -4,8 +4,8 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Ch.1–9 in the manuscript. Ch.6, Ch.7, Ch.8 and Ch.9 have ALL PASSED the 8.5 gate** — four
-consecutive pipeline chapters. All three mechanical gates clean on all nine.
+**Ch.1–10 in the manuscript, 35,593 words of prose. Ch.6 through Ch.10 have ALL PASSED the
+8.5 gate** — five consecutive pipeline chapters. All three mechanical gates clean on all ten.
 
 Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
 Ch.6 (8.5/8.79), Ch.7 (8.5/8.79, **Prose 9.0**) and Ch.8 (8.5/8.79, **Prose 9.0 sustained
@@ -21,11 +21,11 @@ pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 | `voice-dna.md` | ✅ voice reverse-engineered from the author's own prose; device-bleed watch-list corrected from what actually happened |
 | `character-bible.md` | ✅ 22+ entries, §TIC BUDGET, §THE ONE CARVE-OUT (the counting device) |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–9, **31,009 words**, italics + 23 scene breaks restored from the PDF |
+| `manuscript/chapters/` | ✅ Ch.1–10, **35,593 words**, italics + 23 scene breaks restored from the PDF |
 | style / grammar / voice-wear | ✅ clean on all nine, calibrated to the author's measured voice |
-| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–9 |
+| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–10 |
 | `ENTITY_STATE.yaml` | ✅ audited Ch.1–8; 9 characters, 4 locations, 8 objects added; CF-04 and CF-13 closed |
-| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · **Ch.6 / Ch.7 / Ch.8 8.5 / 8.79** · **Ch.9 8.5 / 8.71 PASS** (8.0 on first pass — one arithmetic defect, fixed) · Ch.2–5 stale |
+| Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · Ch.6/7/8 **8.5 / 8.79** · Ch.9 **8.5 / 8.71** · Ch.10 **8.5 / 8.64 PASS** · Ch.2–5 stale |
 | `evaluations/` | ✅ per-chapter evals, pass reports, `continuity/ch1-8-audit.md` |
 
 ## The structure, in one paragraph
@@ -244,6 +244,7 @@ Chapters 2–5 all drifted onto one closing figure because nothing was tracking 
 | 7 | the narration stops and hands the reader an unglossed found document |
 | 8 | the narrator re-reads a document **while writing its fourth instance himself** |
 | 9 | the POV character **involuntarily begins executing the method he refused**, stops partway, and does something ordinary and courteous on top of it |
+| 10 | an unremarked act of **preparation for the antagonist** — memorising something to have it ready for him next time |
 
 Ch.7 and Ch.8 both ended on a document — two running was the limit, and Ch.9 cleared it with
 no paper on the last page, as the outline required.
@@ -256,24 +257,28 @@ no paper on the last page, as the outline required.
 | 6 | a physical object in near-real-time (the visitor form) |
 | 7 | a raw administrative document (the boots requisition) |
 | 8 | mid-transit, mid-argument, no scene-setting |
-| 9 | **a line of dialogue with no attribution and no setting, three words in** |
+| 9 | a line of dialogue with no attribution and no setting, three words in |
+| 10 | **the meeting time** — a summons, flat, no explanation |
 
 ## Resume point
 
-1. **Ch.10.** Its closer must be the tenth distinct shape — check the inventory above before
-   drafting, not after. Two live calibration items to carry into the brief:
-   - **Narration `and`.** The author's band is 18.2–18.9/1k — a 0.7-point spread across five
-     chapters. The pipeline runs 20.7 → 20.4 → 22.1 → **24.4**, rising every chapter, Ch.9 the
-     maximum. Repair on Ch.9 was simulated and is blocked by the long-sentence floor, so this
-     is a *drafting* target for Ch.10, not an editor work order.
-   - **Numeric density 41.8/1k against the author's 11.7–23.4** — fourth consecutive chapter
-     over the flag and still ungated. The evaluator calls this the number that should worry us
-     most. Measure the author properly before gating it (see the rule below).
-2. **Two Ch.9 items left on the table, both cheap and neither gated:** six question-mark
-   restorations (the chapter has zero in 3,355 words against an author floor of 1.0/1k), and
-   one ~4-word self-correction in Zeus's offer. Prose 8.5 → 9.0 is two specified edits away.
-3. **Run `continuity-guardian` again after Ch.12.**
-4. Optional: the Ch.5 ending review and the `STATE.yaml` FOLLOW-UP items. None block drafting.
+1. **Ch.11's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
+2. **Then Ch.12.** Eleventh/twelfth distinct closing shapes — check the inventory first.
+3. **Run `continuity-guardian` after Ch.12** — the last full audit was Ch.1–8.
+4. **The live measured items, each with its definition** (a metric name is not a definition):
+   - **Narration `and`** (`\band\b` per 1k, narration only): author **18.19–18.90**, a
+     0.7-point band. Pipeline 20.68 → 20.39 → 22.07 → 24.35 → **18.39**. Ch.10 reversed the
+     rise from a draft. **Not gated** — retrofit is blocked on Ch.9 by the long-sentence floor,
+     and a gate that can only stay red erodes. Carried in the writer brief, where it has now
+     worked twice.
+   - **Generic-person manner attribution** (*"like a man reporting a figure off a gauge"*):
+     author max **1 per chapter**; pipeline 3 · 0 · 5 · 3 · 4. **Plateaued, not rising, which
+     is worse** — every other fingerprint here was caught by its slope. §STANDING OFFENCE #7.
+   - **Numeric density** — ⚠️ **two incompatible definitions exist in this project's own
+     committed files.** Digits-plus-spelled-out gives the author 4.8–14.0; the Ch.9 eval's
+     regex gives 11.7–23.4. A threshold of 16.0 is right under the first and puts the **locked
+     Ch.1 in breach by 7.8 points** under the second. Always state which.
+5. Optional: the Ch.5 ending review and the `STATE.yaml` FOLLOW-UP items. None block drafting.
 
 ## Worth the author's eye
 
