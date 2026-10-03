@@ -78,6 +78,18 @@ workflow, and update this section to match if you do.
 
 Git identity: `git config user.email <you> && git config user.name <you>`
 
+⚠️ **Never `git add -A` while a background agent is running.** This pipeline dispatches
+agents that write into the book folder (`entity-tracker` → `ENTITY_STATE.yaml`,
+`continuity-guardian` → `evaluations/continuity/`, the editors → chapter files), and a
+blanket add silently sweeps their half-finished work into whatever commit you are making.
+It happened in this repo: four consecutive commits about style gates and voice specs each
+carried an undisclosed chunk — 277, 109, 145 and 61 lines — of an in-flight
+`ENTITY_STATE.yaml` update. Nothing was lost, but four commit messages describe work they
+do not contain, which is the kind of history that makes a later bisect lie to you.
+
+**Stage explicit paths while an agent is in flight**, and let the agent's own work land in
+its own commit when it reports.
+
 **Enforced, not just documented** (while `WORKFLOW_LAW=main-only`):
 - The **SessionStart** hook (`.claude/hooks/session-start.sh`) detects a session that starts
   on a non-`main` branch, switches to `main` (carrying uncommitted work across via stash),
