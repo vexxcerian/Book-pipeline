@@ -393,15 +393,15 @@ Full bank: `voice-bank/README.md` — 13 samples, of which **4 show the voice br
 
 Before finalising any chapter:
 
-1. Sentence histogram — is ≥25 % at ≤6 words and ≥8 % at ≥40? If the middle is fat, rewrite.
+1. **Breath, narration register only** (`tools/style_check.py` prints it): median **14–18** words, sentences ≥40 words **13.0–16.5 %**, sentences ≤6 words **under 30 %**. ⚠️ This item used to read "≥25 % at ≤6 words and ≥8 % at ≥40" — a *floor* on short sentences, which is the one direction that never needed encouragement, and a long-sentence floor of 8 % against this author's measured 13.3 %. Both walls, both registers, every time.
 2. Zero emotional temperature reports. Zero metacognition. Zero explanatory similes.
-3. Similes ≤3.5/1k. Em-dashes ~8/1k. "the particular" ≤0.25/1k.
+3. **Bands, not targets — and all of these have a FLOOR** (see §4b): similes **2.0–5.0/1k**, em-dashes **8.5–12.0/1k**, commas **≥58/1k**, adverbs in narration **10.5–17.0/1k**, narration `and` **≤19.5/1k**, flat-man **≤3**. ⚠️ This item used to read "Em-dashes ~8/1k", which is **below the gate's floor of 8.5 and below all five of the author's chapters** — the checklist was instructing a breach. `"the particular" ≤0.25/1k` still stands as a plain ceiling.
 4. Did any character acquire a tic who is not Rx, Echo or Spector? Cut it.
 5. Did counting/listing/rating appear in anyone but Spector? Cut it.
 6. Is `filed it away`, `not yet a problem`, `a shape on the horizon`, `the vocabulary to name
    it` or `never once` anywhere in the chapter? Remove it.
 7. Does any sentence know what Rx feels? Rewrite it as inference.
-8. Is there a Jameson line that is cleverer for the reader than for Vexx? Delete it.
+8. **Jameson's lines — apply the corrected test.** A line FAILS only if the second meaning is available **to Jameson** — if he can hear his own double meaning, it is a taunt and he has become cartoonish. It **PASSES** if the second meaning exists only in the reader's hands. ⚠️ This item used to read "cleverer for the reader than for Vexx? Delete it", which inverts the rule: that is the PASS case, and obeying it would have deleted Ch.10's best dramatic irony (Jameson describing Merrick's solitary chain of custody in the exact terms of his own handling of Rx, with no awareness that he is doing it). The corrected wording has been in `outline.md` for some time and never reached this checklist.
 9. Cover the names on every line of dialogue. Can you still tell? If not, open
    `character-bible.md`.
 10. Did a new named character appear? **Add their card to `character-bible.md` before
