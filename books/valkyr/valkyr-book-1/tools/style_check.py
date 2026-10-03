@@ -657,7 +657,7 @@ def scan():
                   f"adverb {adv_nar1k:.1f}/1k | and {and_nar1k:.1f}/1k | "
                   f"flat-man {flatman}")
         if n in PUNCH_CHAPTERS:
-            breath += "  [PUNCH — exempt]"
+            breath += "  [PUNCH — breath exempt]"
         else:
             lo = _floor(n, "median_sentence")
             if lo is not None and median_s < lo:
@@ -680,40 +680,48 @@ def scan():
                 flags.append(f"BREATH narration >=40w {long_pct}% > {hi}% (voice-match CEILING "
                              f"— over-reaching the long mode)"); problems += 1
 
-            # ADVERB, narration register. The whole-text ceiling above cannot see this: it
-            # was 20.0, nothing ever approached it, so nobody looked — while the pipeline was
-            # running at a QUARTER of the author's density in both registers. Exposed only
-            # after NOT_ADVERB fixed what the counter was counting. Seventh instance in this
-            # file of a correct number compared against the wrong thing.
-            lo = _floor(n, "adverb_nar_per1k")
-            if lo is not None and adv_nar1k < lo:
-                flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k < {lo} (voice-match FLOOR "
-                             f"— 'avoid adverbs' is the most repeated writing advice there is, "
-                             f"and obeying it is itself a machine tell; this author does not)")
-                problems += 1
-            hi = _ceiling(n, "adverb_nar_per1k", None)
-            if hi is not None and adv_nar1k > hi:
-                flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k > {hi} (voice-match CEILING "
-                             f"— over-corrected past the author)"); problems += 1
+        # PUNCH exempts the BREATH metrics only — it is a declaration about SENTENCE LENGTH.
+        # The three below were originally inside that exemption, which was an untested
+        # assumption: a chapter written in log lines has short sentences, and no reason
+        # whatsoever to carry fewer adverbs per word or chain harder on "and". Ch.7 sat at
+        # 3.2 adverbs/1k and 20.4 "and"/1k behind the exemption, which is not a fragmented
+        # chapter's signature — it is the same generic habit as every other pipeline chapter,
+        # hiding behind a flag meant for something else.
 
-            # AND, narration register — §THE SEAM, finally gated. Same shape as the adverb
-            # bug directly above: a whole-text ceiling of 24.0 that almost never fired, with
-            # a real and consistent breach underneath it in the register that matters. The
-            # author chains on "and" at 17.6-18.4/1k of narration; the pipeline at 18.3-24.2.
-            # The fix is never to delete the conjunction — it is to interrupt the clause with
-            # an em-dashed appositive, which is what the author actually does. Watch the
-            # em-dash ceiling while you do it.
-            hi = _ceiling(n, "and_nar_per1k", None)
-            if hi is not None and and_nar1k > hi:
-                flags.append(f"AND narration {and_nar1k:.1f}/1k > {hi} (voice-match CEILING "
-                             f"— §THE SEAM: chaining clauses where this author interrupts "
-                             f"himself)"); problems += 1
+        # ADVERB, narration register. The whole-text ceiling above cannot see this: it
+        # was 20.0, nothing ever approached it, so nobody looked — while the pipeline was
+        # running at a QUARTER of the author's density in both registers. Exposed only
+        # after NOT_ADVERB fixed what the counter was counting. Seventh instance in this
+        # file of a correct number compared against the wrong thing.
+        lo = _floor(n, "adverb_nar_per1k")
+        if lo is not None and adv_nar1k < lo:
+            flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k < {lo} (voice-match FLOOR "
+                         f"— 'avoid adverbs' is the most repeated writing advice there is, "
+                         f"and obeying it is itself a machine tell; this author does not)")
+            problems += 1
+        hi = _ceiling(n, "adverb_nar_per1k", None)
+        if hi is not None and adv_nar1k > hi:
+            flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k > {hi} (voice-match CEILING "
+                         f"— over-corrected past the author)"); problems += 1
 
-            hi = _ceiling(n, "flatman", None)
-            if hi is not None and flatman > hi:
-                flags.append(f"FLAT-MAN {flatman} > {hi} (generic-person manner attribution "
-                             f"— the narrator has stopped looking at the specific person)")
-                problems += 1
+        # AND, narration register — §THE SEAM, finally gated. Same shape as the adverb
+        # bug directly above: a whole-text ceiling of 24.0 that almost never fired, with
+        # a real and consistent breach underneath it in the register that matters. The
+        # author chains on "and" at 17.6-18.4/1k of narration; the pipeline at 18.3-24.2.
+        # The fix is never to delete the conjunction — it is to interrupt the clause with
+        # an em-dashed appositive, which is what the author actually does. Watch the
+        # em-dash ceiling while you do it.
+        hi = _ceiling(n, "and_nar_per1k", None)
+        if hi is not None and and_nar1k > hi:
+            flags.append(f"AND narration {and_nar1k:.1f}/1k > {hi} (voice-match CEILING "
+                         f"— §THE SEAM: chaining clauses where this author interrupts "
+                         f"himself)"); problems += 1
+
+        hi = _ceiling(n, "flatman", None)
+        if hi is not None and flatman > hi:
+            flags.append(f"FLAT-MAN {flatman} > {hi} (generic-person manner attribution "
+                         f"— the narrator has stopped looking at the specific person)")
+            problems += 1
 
         # TYPOGRAPHY — two defects that no other check in this file can see, both found
         # only because a human looked at a diff.

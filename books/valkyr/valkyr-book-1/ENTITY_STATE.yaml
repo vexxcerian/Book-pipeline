@@ -15,17 +15,25 @@
 
 meta:
   version: "1.0"
-  last_updated: "2026-09-09"
-  last_updated_by: "continuity-guardian (Ch.1-8 full-manuscript audit; UPDATE pass over a BUILD file)"
+  last_updated: "2026-10-03"
+  last_updated_by: "continuity-guardian (Ch.1-11 full-manuscript audit; second UPDATE pass)"
   mode: "UPDATE"
-  chapters_tracked: [1, 2, 3, 4, 5, 6, 7, 8]
-  chapters_planned_not_tracked: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+  chapters_tracked: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  chapters_planned_not_tracked: [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
   update_note: >-
-    2026-09-09 — Ch.6, Ch.7 and Ch.8 folded in by continuity-guardian during the Ch.1-8 audit.
-    Only entries where the manuscript is unambiguous were written. Everything the audit judged
-    to be a DEFECT in the prose was recorded under conflicts (CF-07..CF-14) and NOT written
-    into the entity facts. CF-04 is closed by Ch.6. Full findings:
-    evaluations/continuity/ch1-8-audit.md
+    2026-10-03 — Ch.9, Ch.10 and Ch.11 folded in by continuity-guardian during the Ch.1-11
+    audit. Ch.11 had NOT been through its polish loop when this pass ran and is recorded as a
+    first draft; entries sourced from it carry draft_status: "ch-11 pre-polish".
+    Same principle as the 2026-09-09 pass: only entries where the manuscript is unambiguous
+    were written as facts, and everything this audit judged to be a DEFECT was recorded under
+    conflicts (CF-15..CF-24) and NOT written into the entity facts.
+    CLOSED this pass: CF-12 (the data chip is back in the inventory at ch-11:p206).
+    PARTIALLY APPLIED and still open: CF-08 (one "Nine weeks" survives at ch-06:p98),
+    CF-09, CF-14 (four British forms survive). CF-07 and CF-10 are fixed in the files.
+    Two STALE entries corrected in this file itself: timeline[chapter 1] still described the
+    pre-fix "four months" text, and timeline[chapter 6] still described the pre-fix
+    "nine weeks / six weeks" text. Both now describe the manuscript as it stands.
+    Full findings: evaluations/continuity/ch1-11-audit.md
   schema_extensions:
     # Declared so downstream skills know these are additions to schema v1.0, not core fields.
     - "planned:            top-level block for entities the outline creates but prose has NOT yet put on the page"
@@ -37,9 +45,12 @@ meta:
     RELATIVE ANCHORS ONLY. Series canon forbids pinning an absolute in-universe date to the
     page. Every temporal value in this file is expressed relative to Rx's death, Vexx's
     discharge, the gray room, or the previous chapter.
-  open_conflicts: 11   # CF-03, CF-05, CF-06 carried; CF-07..CF-14 added 2026-09-09; CF-01/02/04 resolved
-  knowledge_gaps: 4
+  open_conflicts: 19   # CF-03/05/06 carried; CF-07..CF-11, CF-14 carried; CF-15..CF-24 added 2026-10-03; CF-01/02/04/12/13 resolved
+  knowledge_gaps: 5
   needs_review: 2   # characters.man-in-civilian-dress, characters.richard-jameson.does_not_know[0]
+  draft_status_note: >-
+    Ch.11 is PRE-POLISH (no dialogue pass, no hook pass, no disruptor, no evaluation, no
+    writer report). Anything sourced to ch-11 may move. Re-run this tracker after Ch.11's loop.
 
 # ============================================================================================
 # CHARACTERS
@@ -1151,15 +1162,20 @@ locations:
 # ============================================================================================
 timeline:
   - chapter: 1
-    time: "spans roughly two years, told retrospectively. Anchors in order: the 0300 incident -> three weeks later, the discharge hearing -> Rx had shipped out three weeks before that -> the last comm -> the KIA notification -> the empty-casket burial -> four months of grief -> 'the second knock came four months to the day' -> the gray room -> first week of forms and briefings -> first month of training -> four weeks after the gray room, told he will help stand up a cell"
+    time: "spans roughly four and a half years, told retrospectively. Anchors in order: the 0300 incident -> three weeks later, the discharge hearing -> Rx had shipped out three weeks before that -> the last comm -> the KIA notification -> the empty-casket burial -> FOUR YEARS of grief -> 'the second knock came four years to the day' -> the gray room -> first week of forms and briefings -> first month of training -> four weeks after the gray room, told he will help stand up a cell"
     season: "not stated"
     year: "FORBIDDEN — do not pin"
     note: >-
-      CONFLICT CF-01 (see conflicts). This chapter places Vexx's recruitment FOUR MONTHS after
-      Rx's death. Series canon and Ch.3/Ch.5 place it FOUR YEARS after. Secondary wobble: Rx
-      tells Vexx he is rusty four days into training and Vexx answers 'I've been retired for a
-      year' (ch-01:p59), which implies roughly eight months between the discharge and the KIA
-      notification — a span the chapter never states.
+      CF-01 IS CLOSED AND THE PROSE NOW MATCHES. Verified 2026-10-03: zero instances of
+      "four months", "four-month" or "retired for a year" survive anywhere in Ch.1-11. Ch.1
+      carries five "four years" anchors; Ch.2 three; Ch.3 one. The earlier version of this
+      entry described the PRE-FIX text and was stale — do not restore it, and do not restore
+      the two dead lines quoted inside CF-01 (one of them was a Jameson-POV sentence in Ch.5).
+      Remaining Ch.1 wobble, report-only, locked chapter: "Twenty-six years of his life had a
+      shape" (ch-01:p19) against "thirty years" at ch-01:p47 and ch-01:p59, corroborated on
+      the THIRTY side by ch-03:p95, ch-08:p66 and now ch-10:p58 ("withholding for thirty
+      years") and ch-10:p286 ("a life he had left thirty years ago"). Four datapoints to one.
+      CONSTRAINT FOR CH.12-26: never state Vexx's age as a number.
   - chapter: 2
     time: "'three weeks into his own re-entry' = ~3 weeks after the gray room (Jameson meeting) -> the assignment two weeks later -> four days working the shortlist -> Goliath's pairing three days after the interview -> the Phantom slip three weeks after the pairing -> the rest of the roster over the following six weeks -> three days between the last pairing and the first deployment"
     season: "autumn"
@@ -1196,11 +1212,11 @@ timeline:
       roughly six to eight months from the gray room, all inside a single autumn from Ch.2 on.
 
   - chapter: 6
-    time: "two days' personal leave. Corwin is 'six weeks into a rehabilitation track'; the jungle was 'nine weeks earlier', stated three times. Four hours' transit out, one afternoon in the day room, the transit shelter at the end of it"
+    time: "two days' personal leave. Corwin is 'eight weeks into a rehabilitation track'; the jungle was 'eleven weeks earlier' (ch-06:p96) and 'eleven weeks ago' (ch-06:p216). ONE LEFTOVER: ch-06:p98 still reads 'Nine weeks he had been on the other side of that sentence' — see CF-15. Four hours' transit out, one afternoon in the day room, the transit shelter at the end of it"
     season: "winter (orchard pruned back hard for winter; windfalls rotting in the grass; cold through the window). The clinician refers back to April and to spring as past"
     year: "FORBIDDEN — do not pin"
     note: >-
-      CONFLICT CF-08. Ch.4 puts the Reyes mission at jungle+9 weeks and Ch.5 falls after that,
+      CF-08, PARTIALLY APPLIED. Ch.4 puts the Reyes mission at jungle+9 weeks and Ch.5 falls after that,
       so a Ch.6 dated at jungle+9 weeks collides with Ch.4 and lands at or before Ch.5 rather
       than after it. Ch.6's own arithmetic is internally clean (debrief at +3 weeks -> rehab
       intake -> six weeks in = +9). The squeeze is between chapters, not inside Ch.6.
@@ -1223,6 +1239,61 @@ timeline:
       coffee feud), 'since August' (the urn), 'since the middle of the summer' (Paladin's
       instrument file), and the narrator's 'somewhere in the first year' for the cell's
       cohesion - all consistent with a cell formed the previous late summer/autumn.
+      CF-07 IS NOW FIXED IN outline.md ('the cell's fifth deployment'). CF-09 still open.
+  - chapter: 9
+    time: >-
+      one night, at the home station, days after Ch.8 (Merrick's notebook is in Vexx's hands
+      and the station commander's bund promise is still fresh). INTERNAL CLOCK, VERIFIED
+      CLOSED 2026-10-03: Vexx enters the records annex at 01:10 (ch-09:p18) -> says nothing
+      for an hour, so ~02:10 -> Zeus asks four more questions 'over the next half hour', so
+      ~02:40 -> Zeus states Vexx has 'been typing an hour and a half' (01:10 + 1h30 = 02:40,
+      consistent) -> the badge log reads 'a hundred and four minutes at two in the morning'
+      (01:10 + 104 min = 02:54) -> Aglaope has been in the mess 'since half past two'
+      (ch-09:p218) and the urn went off at one (ch-09:p158) -> the scene closes at 'four in
+      the morning' (ch-09:p248). Every interval reconciles; no gap and no overlap.
+    season: "winter (continuing). The annex is the coldest room in the building; the heater cycles"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      Zeus's own back-history is dated here and is internally clean: the Sedge board was
+      'nine years ago' (ch-09:p116), then 'sideways to a desk at Kell for two years'. Aglaope
+      has been doing last-contact work 'for eleven years' (ch-09:p218) and Curran wrote to her
+      'four years ago'. Zeus's puzzle: started Tuesday, row four known wrong since Wednesday,
+      and the badge log 'goes up on Monday' — so Ch.9 falls Thursday-to-Sunday.
+      ONE SEASON WOBBLE, see CF-21: ch-09:p14 says the instrument 'will still be out of tune
+      at Christmas', which reads as weeks away and the book's own clock puts Ch.9 in February.
+  - chapter: 10
+    time: >-
+      one morning, 'a fortnight after a transport had gone out with a man on it repeating
+      himself' (ch-09/ch-08 -> Ch.10 = Ch.8 + 14 days). The summons lands on the pad at 10:20
+      for 11:40 in room 2-14; Dessen says 'it'll be about an hour'; Rx has 'been watching her
+      do it for twenty-two minutes' at the triple question. Corridor coda immediately after.
+    season: "winter/early spring. Jameson arrives with rain on his uniform; the pressure has fallen nine points since Tuesday and 'it'll be in off the water by tonight'. The corridor was re-floored 'in the summer'"
+    year: "FORBIDDEN — do not pin"
+    note: >-
+      THREE INTERVAL CLAIMS IN THIS CHAPTER DO NOT RECONCILE WITH THE BOOK'S OWN CLOCK and are
+      recorded as conflicts, NOT as facts: 'for the better part of a year' and 'overdue since
+      the summer' for the material's time out of lock (CF-16 — the real figure is ~3.5 months,
+      from Ch.4's release at jungle+3.5wks to Ch.10 at jungle+19wks); 'Three weeks before he
+      signed anything' for the board's disposition line (CF-17 — Ch.4 puts the release two
+      days after the debrief); and 'something went across his face Vexx had not seen on it in
+      two years' (CF-18 — Vexx met Jameson ~7 months before Ch.10).
+  - chapter: 11
+    time: >-
+      late afternoon / 'the end of a working day', at the home station, AFTER Ch.10 BY AN
+      UNSTATED INTERVAL. The only bounds the prose gives: the door has been propped long
+      enough that 'everybody in this corridor has been asked for a week' (ch-11:p60), and Gaia
+      has shut it 'the night before last' and 'yesterday'. See CF-19 — the interval matters,
+      because Ch.10 ends with a property return notice due 'inside a fortnight' and Ch.11 is
+      Vexx concealing exactly that property.
+    season: "not stated"
+    year: "FORBIDDEN — do not pin"
+    draft_status: "ch-11 pre-polish"
+    note: >-
+      One continuous scene plus a ~200-word coda, as outline:ch-11 specifies. Gaia's own
+      back-history is dated: 'When I was nineteen I was in transient housing... I was in there
+      five months.' Her reading of Vexx reaches back 'since before the jungle' and the
+      narration fixes the part she has wrong as 'not on anybody's roster these four years',
+      which is the Rx anchor and is consistent with the four-year gap.
 
 # ============================================================================================
 # OBJECTS — the physical evidence chain is the spine of this book. Tracked in detail.
