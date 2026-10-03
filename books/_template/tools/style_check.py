@@ -91,11 +91,24 @@ ADVERB = re.compile(r"\b\w+ly\b", re.I)
 # And note split_registers() classifies an action-beat paragraph wholly as narration, so
 # dialogue inside one leaks into this count. It leaks identically on the author's side,
 # which is what keeps the comparison honest — but read the hits, do not just trust the number.
+_FM_PERSON = (r"(?:m[ae]n|wom[ae]n|somebody|someone|people|persons?|anybody|nobody|you"
+              r"|guy|boy|girl)")
+
+# The construction has three surface forms and a count of one form is not a count of the
+# habit. character-bible.md §STANDING OFFENCES row 7 cites BOTH "like a man reporting a
+# figure off a gauge" AND "in the voice of a woman filing something"; a detector matching
+# only "like"/"the way" misses the second entirely and reports a different, smaller metric
+# under the same name. That is the definition hazard this pipeline has now hit four times.
 FLATMAN = re.compile(
     r"(?<!\bsomeone )(?<!\bsomebody )(?<!\banyone )(?<!\banybody )"
-    r"\b(?:the way|like)\s+(?:a|an|some)?\s*"
-    r"(?:m[ae]n|wom[ae]n|somebody|someone|people|persons?|anybody|nobody|you)\b"
-    r"(?!\s*(?:\u2019s|'s))", re.I)
+    r"(?:"
+      r"\b(?:the way|like)\s+(?:a|an|some|the)?\s*" + _FM_PERSON + r"\b(?!\s*(?:\u2019s|'s))"
+    r"|"
+      r"\b(?:in|with)\s+the\s+(?:voice|tone|manner|air|way|expression)\s+of\s+"
+      r"(?:a|an|the|some)?\s*" + _FM_PERSON + r"\b"
+    r"|"
+      r"\blike\s+(?:a|an|the|some)?\s*" + _FM_PERSON + r"\s+(?:who|that|whose)\b"
+    r")", re.I)
 
 
 def count_flatman(nar_text):

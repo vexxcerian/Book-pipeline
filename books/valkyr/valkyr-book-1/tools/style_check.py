@@ -91,11 +91,24 @@ ADVERB = re.compile(r"\b\w+ly\b", re.I)
 # And note split_registers() classifies an action-beat paragraph wholly as narration, so
 # dialogue inside one leaks into this count. It leaks identically on the author's side,
 # which is what keeps the comparison honest — but read the hits, do not just trust the number.
+_FM_PERSON = (r"(?:m[ae]n|wom[ae]n|somebody|someone|people|persons?|anybody|nobody|you"
+              r"|guy|boy|girl)")
+
+# The construction has three surface forms and a count of one form is not a count of the
+# habit. character-bible.md §STANDING OFFENCES row 7 cites BOTH "like a man reporting a
+# figure off a gauge" AND "in the voice of a woman filing something"; a detector matching
+# only "like"/"the way" misses the second entirely and reports a different, smaller metric
+# under the same name. That is the definition hazard this pipeline has now hit four times.
 FLATMAN = re.compile(
     r"(?<!\bsomeone )(?<!\bsomebody )(?<!\banyone )(?<!\banybody )"
-    r"\b(?:the way|like)\s+(?:a|an|some)?\s*"
-    r"(?:m[ae]n|wom[ae]n|somebody|someone|people|persons?|anybody|nobody|you)\b"
-    r"(?!\s*(?:\u2019s|'s))", re.I)
+    r"(?:"
+      r"\b(?:the way|like)\s+(?:a|an|some|the)?\s*" + _FM_PERSON + r"\b(?!\s*(?:\u2019s|'s))"
+    r"|"
+      r"\b(?:in|with)\s+the\s+(?:voice|tone|manner|air|way|expression)\s+of\s+"
+      r"(?:a|an|the|some)?\s*" + _FM_PERSON + r"\b"
+    r"|"
+      r"\blike\s+(?:a|an|the|some)?\s*" + _FM_PERSON + r"\s+(?:who|that|whose)\b"
+    r")", re.I)
 
 
 def count_flatman(nar_text):
@@ -365,11 +378,10 @@ PIPELINE_CEILINGS = {
     # passing by 0.1. Breaches Ch.6 (20.7), Ch.8 (22.1), Ch.9 (24.3), Ch.11 (21.6); Ch.10
     # (18.4) sits inside his range already.
     "and_nar_per1k": 19.5,
-    # Author narration: 0 / 2 / 1 / 0 / 0. A previously carried note recorded "author max 1"
-    # and would have justified a ceiling of 2 — which puts his own Ch.2 and Ch.3 in breach.
-    # Measured max is 2, so bracket it at 3. Only Ch.8 (five) is actually an outlier; Ch.9-11
-    # at 2/1/1 are inside his range, and the note claiming they had "plateaued" was comparing
-    # against a benchmark that had never been measured.
+    # All three surface forms, narration register. Author 0 / 2 / 1 / 0 / 0 — max 2, so a
+    # ceiling of 2 (which the carried note's "author max 1" would have justified) puts his
+    # own Ch.2 and Ch.3 in breach. Bracket at 3. Pipeline 1 / 0 / 6 / 3 / 1 / 1: Ch.8 is the
+    # only breach, Ch.9 sits exactly on the ceiling, and the line is FALLING, not plateaued.
     "flatman": 3,
     "which_gloss_per1k": 1.0,
     "semicolons": 0,             # the author uses ZERO across all five of his chapters
