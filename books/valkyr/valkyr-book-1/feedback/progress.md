@@ -326,6 +326,47 @@ complementary — it must **raise** narration adverb density (8.36 against a 10.
 **not raising** narration median (sits at exactly 18.0 on an 18.0 ceiling) or em-dashes
 (11.5 against 12.0). Short adverb-bearing narration sentences do all three at once.
 
+### The mechanical fix list, 2026-10-03 — and the trap in each one
+
+Measured after the three new gates. `↑` means a floor (must rise); everything else is a
+ceiling (must not rise). Author chapters shown for the benchmark.
+
+| | words | em-dash /12.0 | median /18.0 | long% /16.5 | adv /10.5↑ | and /19.5 | flat-man /3 |
+|---|---|---|---|---|---|---|---|
+| Ch.1 *(locked)* | 3,861 | 10.6 | 14.5 | 16.2 | 11.2 | 18.4 | 0 |
+| Ch.2 | 4,821 | 10.4 | 17.5 | 14.9 | 15.0 | 18.3 | 2 |
+| Ch.3 | 3,000 | 9.0 | 14 | 13.3 | 16.0 | 18.9 | 1 |
+| Ch.4 | 2,378 | 11.8 | 16 | 15.6 | 15.1 | 18.2 | 0 |
+| Ch.5 | 1,886 | 9.0 | 17.5 | 14.6 | 12.9 | 18.8 | 0 |
+| **Ch.6** | 4,372 | 10.8 | 14.5 | 13.2 | **2.7** | **20.7** | 1 |
+| Ch.7 *(PUNCH)* | 1,518 | 9.9 | 11 | 12.3 | *3.2* | *20.4* | 0 |
+| **Ch.8** | 5,700 | **11.8** | 14.0 | 13.6 | **2.5** | **22.1** | **6** |
+| **Ch.9** | 3,355 | 9.8 | 14 | 14.0 | **0.6** | **24.3** | **3** |
+| **Ch.10** | 4,588 | 10.5 | 17 | 14.8 | **2.9** | 18.4 | 1 |
+| **Ch.11** | 2,176 | **11.5** | **18.0** | **16.2** | **8.4** | **21.6** | 1 |
+
+**Ch.9 is the worst chapter in the book on all three new metrics** and the place to start.
+**Ch.7 is PUNCH-exempt from the breath and adverb gates, so it fires nothing — but 3.2
+against an author minimum of 12.9 is not obviously right even for a log-line chapter. Read
+it by eye before accepting the exemption.**
+
+Three interactions that decide how each chapter can be fixed, and they are not optional:
+
+1. **The SEAM fix raises em-dash density.** Interrupting an `and`-chain with an em-dashed
+   appositive is what the author does, but **Ch.8 (11.8) and Ch.11 (11.5) have almost no
+   em-dash headroom** — Ch.11 can afford exactly one more em-dash in 2,176 words. Those two
+   must interrupt with a comma-set appositive or a recast instead.
+2. **Splitting a long sentence RAISES the median**, because it replaces one outlier with two
+   above-median values. **Ch.11's median is already exactly 18.0 on an 18.0 ceiling**, so
+   Ch.11 may not fix its `and` problem by splitting. Ch.6, Ch.8 and Ch.9 have 4 points of
+   median headroom and can.
+3. **Adding adverbs adds narration words, which lowers every per-1k rate.** So the adverb
+   floor and the `and` ceiling pull in the *same* direction and should be fixed in one pass,
+   not two. Ch.11 needs roughly two `and`s out of its narration *and* the added words.
+
+Ch.8 has the hardest envelope in the book: it must lose `and` density and three flat-man
+constructions while gaining adverbs, with no em-dash room to do any of it.
+
 ## Resume point
 
 1. **Ch.11's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
