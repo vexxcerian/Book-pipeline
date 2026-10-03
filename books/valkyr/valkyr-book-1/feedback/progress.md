@@ -260,6 +260,72 @@ no paper on the last page, as the outline required.
 | 9 | a line of dialogue with no attribution and no setting, three words in |
 | 10 | **the meeting time** — a summons, flat, no explanation |
 
+## The 2026-10-03 pass — the adverb floor, and the promise Ch.11 does not remember
+
+### The gate was counting nouns, and the ceiling was guarding an empty door
+
+`ADVERB` matched `\b\w+ly\b`, so **family, supply, tally, rally, friendly** and
+**unlovely** were all counted as adverbs, along with **48 uses of "only"** — 30 of them
+"the only —", and not one of them a manner adverb. "only" was the single largest term in
+the metric.
+
+Fixing the counter exposed something no ceiling could have caught. The ceiling was 20.0;
+eleven chapters measured 2.1–14.7 and **it had never fired once.** That comfortable silence
+is what hid the real failure for six chapters, and the real failure runs the other way:
+
+| | Ch.1 | Ch.2 | Ch.3 | Ch.4 | Ch.5 | Ch.6 | Ch.7 | Ch.8 | Ch.9 | Ch.10 | Ch.11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **narration adv/1k** | 10.83 | 14.50 | 15.59 | 14.53 | 12.44 | 2.72 | 3.21 | 2.47 | **0.56** | 2.92 | 8.36 |
+
+**Author 10.83–15.59. Pipeline 0.56–8.36.** Ch.9 ran **one adverb in 1,779 words of
+narration.** Checked for the register artefact that has caused this twice before — it is not
+one: the author runs 8.50–13.68 in his *spoken* register against the pipeline's 2.63–4.50,
+so the gap holds on both sides of the quotation marks.
+
+The adverbs that went missing are not florid ones. They are the plain spoken connectives —
+*actually, entirely, exactly, finally, properly, honestly, plainly, barely, usually* — and
+stripping those is what makes prose stop sounding like a man telling you something.
+"Avoid adverbs" is the most repeated writing advice in existence, so obeying it converges
+with every other model obeying it. **The advice is itself the tell.**
+
+Floor set at **10.5** (his minimum rounded down — 10.8 would have passed the locked Ch.1 by
+0.03, the width the old rounding bug lived in), ceiling **16.0** (brackets his 15.59 top).
+Verified it fires: all five non-PUNCH pipeline chapters breach, all five author chapters
+pass. **Ch.7 is PUNCH-exempt and must be read by eye.**
+
+Two smaller gate defects fixed alongside: flags printed under the label `CEILING:` even when
+they were floors, and `feedback/pov-map.txt` was missing `chapter-11`, so `voice_wear_check`
+scored it as a separate POV called UNKNOWN and compared it against nothing.
+
+### Ch.11 answers "You told me I'd be first" without remembering Aglaope
+
+Traced across three chapters:
+
+- **Ch.5**, corridor, to Gaia: *"When I do, you'll be the first to hear it."*
+- **Ch.5**, two nights later: he tells **Aglaope** — the dog tag, the refusal, and Jameson
+  named out loud.
+- **Ch.9**, the mess, Aglaope: *"Have you told anybody but him," she said.* — *"No."*
+  (So the thread is **not** orphaned. Ch.9 handles it, and phrases the question exactly as
+  the woman who already knows would phrase it.)
+- **Ch.11**: *"You told me I'd be first," she said.* — *"I did."*
+
+No factual contradiction: Ch.11 is the first time he tells anyone *new* since Ch.5. The
+defect is a **POV omission at the moment the narration is deepest in his head.** Ch.11 goes
+through his whole calculus — *"You worked out what each of us would cost you. In your head,
+in order."* — and never touches the two things that would be loudest in it: that the promise
+to Gaia was already broken two nights after he made it, and that Gaia's deniability theory
+(*"you want us able to stand in front of a woman with a notebook, say we didn't know"*) is
+**already false for one of the cell.** Aglaope could not truthfully say she didn't know.
+
+That second point sharpens the chapter's declared 70/30: the narration currently locates
+the 30% she has wrong in *the reason* (Rx, not command exposure). It can carry the Aglaope
+fact as well, unsaid, and it is stronger for being one more thing he does not hand over.
+
+**Fix belongs in Ch.11** (pipeline-written). The constraints are tight and, usefully,
+complementary — it must **raise** narration adverb density (8.36 against a 10.5 floor) while
+**not raising** narration median (sits at exactly 18.0 on an 18.0 ceiling) or em-dashes
+(11.5 against 12.0). Short adverb-bearing narration sentences do all three at once.
+
 ## Resume point
 
 1. **Ch.11's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
