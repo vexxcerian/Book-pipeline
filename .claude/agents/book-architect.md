@@ -457,14 +457,49 @@ different hats. Design the budget UP FRONT and record it in `character-bible.md`
   tic-bearer roster + one-device-per-character map in the bible, and seed a **retired/at-risk phrase list**
   (start it with "never once") so the Writer and `voice_wear_check.py` catch calcification early.
 
-### 4. Anti-Pattern Budget (genre-adjusted)
+### 4. Anti-Pattern Budget (genre-adjusted) — AND THE VOICE-MATCH FLOORS
+
 The quantitative guardrail the Disruptor enforces, set per genre (from `research/bestseller-dna.md`), expressed as density per 1,000 words:
 - Explanatory/analytical similes (Pattern #11 — the #1 AI fingerprint): ≤3 literary / ≤4 commercial / ≤6 thriller / ≤8 (set per genre)
-- Adverbs in dialogue tags: near-zero
+- Adverbs **in dialogue tags**: near-zero. **Write the scope into the row.** "Adverbs: 0" is read as a blanket ban on adverbs, and in one book that produced six chapters at 2.5 adverbs per 1,000 words of narration against the author's 11.2.
 - "It was as if / almost as though" constructions: [ceiling]
 - Metacognitive narration ("she realized she was realizing"): [ceiling]
 - Emotional temperature reports ("a wave of sadness washed over her"): [ceiling]
-This budget is what the Writer aims under and the Disruptor cuts down to.
+
+#### ⚖️ A budget made only of ceilings teaches the Writer that less is always better
+
+**If this section contains only `≤` and `0`, you have built half a spec.** That half-spec is
+the single most expensive structural mistake this pipeline has made: in one book it cost
+**six separately-discovered floors**, every one of them the pipeline writing *plainer* than
+the author it existed to match — similes, em-dashes, commas, sentence median, long-sentence
+share, and adverbs at a quarter of his density.
+
+The reason is mechanical, not careless. A model has absorbed "cut adverbs", "kill the
+simile", "shorter sentences", "avoid the em-dash" tens of thousands of times. Those are the
+defaults. **A ceiling pushes in the direction the model was already going, so a ceiling-only
+budget is not a guardrail — it is an accelerant.** And a ceiling can only ever catch a
+pipeline that EXCEEDS the author. Falling short of him is the failure that actually happens,
+and no ceiling in this table can see it.
+
+**So: whenever this book has a benchmark author** — a drafted chapter, a locked chapter, a
+staged manuscript, any prose the pipeline is matching rather than inventing — **every row
+that is a ceiling must also carry a floor, and both must be MEASURED on that author's own
+prose rather than reasoned about.** Four rules for doing it:
+
+1. **Measure with the gate's own tokenizer**, not a scratch script. A separate script
+   disagreeing by half a point has repeatedly produced thresholds set at exactly the
+   author's value, passing only because the test is `>`.
+2. **Measure the right register.** Narration and dialogue have different densities for most
+   of these metrics, and a whole-chapter number is a dialogue-share artefact. State the
+   register in the row.
+3. **Bracket the author's range; never set a threshold inside it.** A floor at his minimum
+   and a ceiling at his maximum put his own chapters in breach. Round outward.
+4. **Say what the number counts.** A row combining "total density" with "this class is a
+   defect at any density" is two metrics under one threshold, and that collapse has caused
+   four distinct false findings.
+
+This budget is what the Writer **writes within** — a corridor with two walls. It is not a
+direction of travel. The Disruptor cuts to the ceiling; the Editor raises to the floor.
 
 ### 5. Benchmark Samples
 Name the 2-3 voice-bank samples (from controlled / breaking / irrelevant-thought) that best embody the global voice — the canonical targets every downstream agent measures against.

@@ -1038,6 +1038,102 @@ characters:
       prose: he is a name in the records and is never given a voice. The chapter also does NOT
       gloss RECLAMATION, per outline:ch-07 writer_constraint.
 
+  # ------------------------------------------------------------------------------------------
+  # Added 2026-10-03 from Ch.9-11.
+  # ------------------------------------------------------------------------------------------
+  dessen:
+    canonical_name: "Dessen"
+    aliases: ["Officer Dessen", "Internal Compliance"]
+    never_spelled: ["Dessin", "Desen"]
+    importance: "secondary"
+    on_page: "Ch.10 — the whole chapter. Named at ch-10:p22 ('Operator Vexxcerian. Dessen, Internal Compliance.'). No first name, no rank beyond 'Officer'"
+    physical:
+      - { fact: "right-handed; writes longhand at about ninety words a minute without lifting the pen at the ends of the words, with her left hand holding the book open", source: "ch-10:p20, ch-10:p92" }
+      - { fact: "carries a cloth-spined bound paper notebook with a corner gone soft, in a case with a strap set for somebody else's shoulder and never changed", source: "ch-10:p20, ch-10:p262" }
+    traits:
+      - { trait: "DEVICE (character-bible, hers alone): the same question three times with one word changed — 'What was the material required for' / 'What was the material used for' / 'What is the material being used for' — and writes all three answers down, one under the last, drawing no line between them", source: "ch-10:p66-p90", mutable: false }
+      - { trait: "not hostile and not theatrical. No folder pushed across the table, no pause held for effect. Offers Vexx the finding before asking him anything, and offers him the option not to hear it", source: "ch-10:p26, ch-10:p40" }
+      - { trait: "tells Vexx the water has been standing since yesterday and that she would have it anyway", source: "ch-10:p60" }
+      - { trait: "pens die at the tail; she buys them by the gross and says so mid-interview", source: "ch-10:p124" }
+      - { trait: "writes down Jameson's apology at exactly the speed she wrote down his insult, in the same hand — 'the only thing in that room, from first to last, that treated the two of them as the same size'", source: "ch-10:p182" }
+      - { trait: "concedes an argument on the merits and says so out loud: 'That's better than I had it'", source: "ch-10:p206" }
+    relationships:
+      - { to: "vexxcerian", relation: "investigator / subject. Puts on the page that she will record 'you don't recall' because he does not, 'and if it turns out later that you do, that'll be a different conversation, a worse one'", source: "ch-10:p60" }
+      - { to: "richard-jameson", relation: "never met before Ch.10. He interrupts her mid-sentence, insults her work for eight seconds, then apologises for four specific things. She files the apology in the margin", source: "ch-10:p150-p184" }
+    knowledge:
+      - { fact: "that the Corwin material was released on an authorisation Vexx raised and countersigned, drawn in person off the counter, and never returned", learned: "ch-10 (her own three-week investigation)", method: "documentary" }
+      - { fact: "that Vexx fabricated a logged extension and retracted it inside a minute", learned: "ch-10:p122", method: "he told her" }
+      - { fact: "that the review board struck the material from the evidentiary record and retained it as property pending disposal, three weeks(sic) before Vexx signed", learned: "ch-10:p222", method: "Jameson told her where to read" }
+    does_not_know:
+      - { fact: "that Vexx suspects Jameson, or that the material is anything other than a chain-of-custody problem", source: "ch-10 — nothing in the chapter touches it" }
+      - { fact: "the lock clerk's name. Vexx withheld it and she declined to pursue it", source: "ch-10:p60" }
+    outcome:
+      - "The FINDING stands, unamended. The RECOMMENDATION (fitness-to-hold-operational-command review) falls away."
+      - "A property return notice is due to Vexx 'inside a fortnight'. Vexx says 'I will' to answering it the same day; she answers 'People say that'. SEE CF-19 — Ch.11 has him concealing that property instead."
+    arc_notes: >-
+      Series-bible: 'Survives; pressure from the system, deliberately NOT from Jameson.' The
+      prose honours it exactly — she is correct throughout and never once an antagonist.
+      PLANT, unconsumed: she asks Vexx whether he knows anybody in operational support, and
+      says the transfer board has twice told her her experience is very valuable where it is.
+      No outline chapter picks this up. See CF-24.
+      SHOULD BE PROMOTED in SERIES-BIBLE.md from 'not yet on the page' to the cast tables.
+  beattie:
+    canonical_name: "Mr. Beattie"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.9 — named once, never appears, never speaks"
+    traits:
+      - { trait: "does the night urn at the home station; has been on the station longer than Zeus and Vexx put together. Named by Zeus to correct Vexx, who had offered 'Hallam'", source: "ch-09:p36" }
+    knowledge: []
+    arc_notes: >-
+      Exists to make one point about Vexx: he does not know the name of the man who makes the
+      coffee he drinks at two in the morning. Do not give him a scene.
+      NOTE THE COLLISION HE CREATES: see CF-20 (Hallam).
+  curran:
+    canonical_name: "Curran"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.9 — named once, in Aglaope's account. Never appears, never speaks"
+    traits:
+      - { trait: "the one man on Aglaope's list who lived. Came back off the table, was flown out, and wrote to her four years ago about a boat he was buying", source: "ch-09:p218" }
+    knowledge: []
+    outcome: "Aglaope spends from half past two deciding whether to take him off the list. Vexx says 'Leave him on.' She says that is what she will do, in the voice of somebody agreeing to a thing she had already decided."
+    arc_notes: >-
+      He is the load-bearing entry on the list: 'if he's on it, then what I do is sit with
+      people. And if he isn't, then what I do is something else, and I've been doing it for
+      eleven years.' Do not resolve him, do not bring him on stage, do not kill him later to
+      make a point.
+  ansel-and-anseth:
+    canonical_name: "Ansel and Anseth"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.9 — named once, as a pair, in Aglaope's account. Never appear, never speak"
+    traits:
+      - { trait: "two names nine pages apart on Aglaope's chronological list. They came off the same ramp within a minute of each other into the same field, and Ansel took an hour and forty minutes longer to die. She was there for all of it", source: "ch-09:p212" }
+    knowledge: []
+    arc_notes: >-
+      The reason Aglaope refuses to alphabetise: 'If I put those two side by side on a list,
+      that hour and forty minutes stops existing. It only exists because they're nine pages
+      apart.' The near-identical spelling is the POINT and must be preserved exactly as
+      "Ansel" and "Anseth". Add both to the SERIES-BIBLE registry so no later pass
+      "corrects" one into the other.
+  the-boots-owner:
+    canonical_name: "(the owner of the boot — DELIBERATELY NEVER IDENTIFIED)"
+    aliases: []
+    importance: "minor"
+    on_page: "Ch.11 — referred to, never named, never seen"
+    traits:
+      - { trait: "props the fire door at the bottom with a single left boot, standard issue, laces gone and cord through the eyelets, sole gone smooth at the ball. Re-props it after Gaia shuts it, twice", source: "ch-11:p40-p42" }
+      - { trait: "Gaia has asked around: 'It hasn't got an owner.' Goliath's read: 'Whoever's doing it isn't doing it for air... A boot at the bottom is what you use when you want to come through it fast and not stop'", source: "ch-11:p50, ch-11:p64" }
+    knowledge: []
+    arc_notes: >-
+      HARD CONSTRAINT, verified clean through Ch.11: nobody identifies them and no narration
+      narrows the field. Vexx takes the boot and keeps hold of it; the chapter ends with the
+      boot still in his hand and the owner still unknown. NO LATER CHAPTER MAY NAME THEM.
+      Possible deliberate resonance with ch-07's cold open (ISSUE RECORD: 'BOOT, COLD WEATHER,
+      PAIR. LINE 41 OF 60' / Rx: 'Those are boots') — left unglossed in both places, which is
+      correct. Do not connect them on the page.
+
 # ============================================================================================
 # LOCATIONS
 # ============================================================================================
@@ -1156,6 +1252,59 @@ locations:
       - { fact: "a stop on the civilian transit line out to Corwin's rehabilitation track. Rx reads it off the timetable and tells Vexx he has seen it. Never visited", source: "ch-06:p12" }
     distances: []
     note: "The only proper place name spoken in Ch.1-8. It is a joke on a timetable, not a setting."
+
+  # ------------------------------------------------------------------------------------------
+  # Added 2026-10-03 from Ch.9-11. All four are the HOME STATION or Zeus's back-history.
+  # ------------------------------------------------------------------------------------------
+  home-station-operations-block:
+    canonical_name: "the operations block (the cell's home station)"
+    aliases: ["this building", "the building"]
+    facts:
+      - { fact: "RECORDS ANNEX: against the outer wall on the north side. The coldest room in the building, by a margin everybody knows about and nobody has put on a form — the ducting was costed twice and run neither time. Lights come on in banks of two down its length. Nine bays of shelving, four of which hold anything. One terminal at the far end running a materiel index, with a laminated card taped to the housing that has been wrong about paging for four years", source: "ch-09:p16, ch-09:p148" }
+      - { fact: "the annex terminal does not log the query, only that a badge asked it something, for how long. That goes up on Monday with the water and the lights", source: "ch-09:p134" }
+      - { fact: "ROOM 2-14, north end: a converted store. Shelving came off the long wall and the bolt holes are filled a shade paler than the paint; the vent above the door was painted over with the grille shut, then cut open again with a knife. Table, four chairs, a jug of water and two glasses on a tray gone brown at the rim", source: "ch-10:p16" }
+      - { fact: "the corridor at the north end was re-floored in the summer, the new covering stopping a couple of paces short of the FIRE DOOR, leaving a lip you could catch a boot on. An elevator at the far end that takes its time", source: "ch-10:p08, ch-10:p276" }
+      - { fact: "a FIRE DOOR on a corridor with a stair at one end and the mess down the other, the generator deck under everything, water two floors down. Shut, the corridor is dry; open, it carries the pad, the deck, the water and the mess. The stair closer is slack and lands twice; Goliath drags his heel on the sill. Echo calls the corridor 'the Gullet'; nobody has agreed to", source: "ch-11:p12-p28" }
+      - { fact: "the dispenser on the level below has been out of its middle selection for a year, with a strip of paper taped over the button", source: "ch-11:p164" }
+      - { fact: "THE MESS: one strip light over the servery with a hum in it; the urn goes off at one in the morning; a heater under the servery that cycles; a rack for upturned cups", source: "ch-09:p152-p248" }
+      - { fact: "coffee is an institutional index here — Goliath's scale-in-the-element feud ('it's the water, not the grounds; it's been the water since August'), the urn, and Hallam/Beattie on the day and night shifts", source: "ch-08:p06, ch-09:p36, ch-09:p98" }
+      - { fact: "the cell has quarters here and 'moved in' at some point before Ch.11. Vexx's room is a dead little room with a bed and a locker in it, and there is a supply cage within a short walk", source: "ch-11:p20, ch-11:p206-p214" }
+    distances:
+      - { from: "home-station-operations-block (room 2-14)", to: "vexxs-apartment", value: "half a mile east", source: "ch-10:p256" }
+    note: >-
+      This is the same facility as locations.the-facility, viewed from inside the cell's own
+      working life rather than from Ch.1-2's recruitment. Kept as a separate entry rather than
+      merged, because Ch.9-11 build a specific interior geography that later chapters must not
+      contradict. UNRESOLVED, see CF-22: Ch.10 plants a fire door at the north end of the
+      operations block and Ch.11's entire chapter is about a propped fire door, and neither
+      chapter says whether they are the same door.
+  sedge:
+    canonical_name: "Sedge"
+    aliases: []
+    facts:
+      - { fact: "where a board was run on Zeus nine years before Ch.9. Seven interviews, all his; the finding came back inside a fortnight, quoted all seven with page numbers, then found against him on the last page for 'an unsound approach to the subjects'", source: "ch-09:p116" }
+      - { fact: "a room there had a fluorescent in it that would not settle. Zeus was there two years and assumes it is still doing it", source: "ch-09:p130" }
+    distances: []
+    note: "Back-history only. Never visited on the page. Add to the SERIES-BIBLE naming registry."
+  kell:
+    canonical_name: "Kell (the yard at Kell)"
+    aliases: ["the yard at Kell", "a desk at Kell"]
+    facts:
+      - { fact: "holds a materiel ROUTING OFFICE of eleven people, two of whom can sign retention exceptions — pull a whole record, print it, walk out with it inside a coat — and both of whom have done so before, for reasons unconnected to Vexx", source: "ch-09:p62" }
+      - { fact: "Zeus was sideways to a desk here for two years after the Sedge finding, which is how he knows the office", source: "ch-09:p122" }
+      - { fact: "has a base accommodation office, which publishes its waiting list — names, grades, dependants, and the date the claim went in — because a waiting list has to be seen to be fair", source: "ch-09:p244" }
+    distances: []
+    note: >-
+      The named target of the method Vexx refuses in Ch.9 and then starts working out anyway in
+      the last 200 words of it. outline:ch-22 ('The Clerk') is the scheduled consumer; verify
+      before inventing a second routing office.
+  ridgeway:
+    canonical_name: "Ridgeway (the depot at Ridgeway)"
+    aliases: []
+    facts:
+      - { fact: "a depot with a dog that had learned to lift the gate latch with its nose. Every man on the gate fed it and not one would admit to it. Surfaces as one of Vexx's involuntary sensory-memory intrusions", source: "ch-09:p220" }
+    distances: []
+    note: "Texture only, from Vexx's past. Not a setting."
 
 # ============================================================================================
 # TIMELINE — RELATIVE ANCHORS ONLY. No absolute in-universe date may be pinned (series canon).
@@ -1332,11 +1481,17 @@ objects:
     introduced: "ch-04:p09"
     description: "A half-melted data chip. Its contents are unrecoverable by anything short of a full forensics lab."
     status: "chekhov_open"
-    last_mentioned: "ch-05:p37"
+    last_mentioned: "ch-11:p206"
     resolution: null
     proves: "nothing in its current state"
     does_not_prove: "anything — unread, and unreadable with what Vexx has"
     chain_of_custody: "see corwins-fragments"
+    cf_12_closed_2026_10_03: >-
+      CF-12 is CLOSED by Ch.11. The chip was missing from Ch.7's stocktake of Vexx's exposure
+      (armour fragment / tag / search history) and the previous audit flagged it so it would
+      not be quietly lost. Ch.11's coda puts all THREE fragments into the trauma pack by name
+      — 'put the tag in underneath. Then the scorched fragment of plating, the half-melted
+      chip' — so the inventory is whole again. No prose change needed anywhere.
   dented-dog-tag:
     introduced: "ch-04:p09"
     description: "A single dented dog tag, NOT Corwin's, snagged on the collar of an armour piece that had belonged to nobody in his squad. Rx ran the serial: it does not come back clean — not flagged classified, simply absent, 'like it was never issued at all, or like the record was pulled after the fact.'"
@@ -1412,13 +1567,28 @@ objects:
     introduced: "ch-08:p140 (as absent), recovered ch-08:p192"
     description: "Merrick's book — soft-covered, corners gone furred, a rubber band round the middle holding in a fold of loose paper. He kept it for years and could not produce it; the cell searched twenty minutes and did not find it. Aglaope recovered it after he was gone, from behind the fuse box on the shelf brackets, a place she had already looked twice."
     status: "chekhov_open"
-    last_mentioned: "ch-08:p192"
-    resolution: null
+    last_mentioned: "ch-09:p48"
+    status_2026_10_03: "RESOLVED AS A DELIBERATE DEAD OBJECT. O-01 from the Ch.1-8 audit is closed."
+    resolution:
+      chapter: 9
+      description: >-
+        Ch.9 opens it and gives it its contents, and they are nothing: 'Bus bars. Runoff
+        figures for four quarters, the wet months underlined twice. The Thursdays, every
+        Thursday, three years of them — depot, no answer — depot, no answer — depot, called
+        back, will send a man.' Vexx has read it twice on the transport, once in his quarters,
+        has brought it down to the annex with him, and does not open it there. It contains
+        what a competent man's notebook contains and no part of the Rx thread. That IS the
+        payoff; the object must not later acquire a secret.
     chain_of_custody:
       - { stage: 1, holder: "merrick", where: "the plant house, location unknown to him", source: "ch-08:p140" }
       - { stage: 2, holder: "aglaope", where: "recovered from behind the fuse box, on the shelf brackets", source: "ch-08:p192" }
       - { stage: 3, holder: "vexxcerian", where: "squared to the edge of his desk beside the report pad", source: "ch-08:p192" }
-    unresolved: "Vexx does not open it on the page. Nothing in Ch.8 states what is in it, and Merrick is already gone."
+      - { stage: 4, holder: "vexxcerian", where: "read twice on the transport, once in his quarters; carried down to the records annex and left unopened by his elbow; put inside his jacket when he leaves", source: "ch-09:p48, ch-09:p128" }
+    unresolved: >-
+      Merrick is gone and the notebook is inside Vexx's jacket, never returned and never
+      logged. In the NEXT chapter Internal Compliance finds against him for taking assessment
+      material out of a locked room. Nothing in Ch.10 or Ch.11 notices the parallel. See
+      CF-23 — either register the irony as deliberate or have Ch.10 glance at it.
   holst-issue-record:
     introduced: "ch-07:p45"
     description: "ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 7 OF 22. Issued to HOLST, D. A., Staff Sergeant, 11th Shock Troops Battalion — TAG, IDENTIFICATION, SET OF TWO, QTY 1 SET, CONDITION: NEW; PLATE, TORSO, FRONT, CONDITION: SERVICEABLE, USED. ROUTING: MD 4, SUB. RECLAMATION. RETENTION: SEVEN YEARS. Dated eleven months after his casualty file closed."
@@ -1480,6 +1650,105 @@ objects:
     last_mentioned: "ch-08:p190"
     resolution: { chapter: 8, description: "removed and coiled; the door swings. Nobody says anything while it is done." }
     note: "Vexx reads the maker's stamp while Paladin breaks down in front of him. It is a deflection, not a clue."
+
+  # ------------------------------------------------------------------------------------------
+  # Added 2026-10-03 from Ch.9-11.
+  # ------------------------------------------------------------------------------------------
+  the-trauma-pack:
+    introduced: "ch-11:p206"
+    description: "A sealed, dated trauma pack in the bottom of Vexx's locker, with a tab across the lid that you break for one reason. Vexx breaks the tab, lifts the wadding, puts the dog tag in underneath, then the scorched fragment of plating, then the half-melted chip, lays the pressure dressing back over them, walks to the supply cage for a fresh tab off the roll, walks back, and strikes the tab on square."
+    status: "active — THE EVIDENCE NOW LIVES HERE"
+    last_mentioned: "ch-11:p214"
+    resolution: null
+    draft_status: "ch-11 pre-polish"
+    chain_of_custody:
+      - { stage: 1, holder: "vexxcerian", where: "all three fragments in the drawer beside his bed, in the apartment, half a mile east of the operations block", source: "ch-05:p37, ch-10:p82, ch-10:p256" }
+      - { stage: 2, holder: "vexxcerian", where: "inside a re-tabbed trauma pack in the bottom of his locker, in his quarters on the station", source: "ch-11:p206" }
+    cover_story: "'that he had used the pack on the Kettle job, drawn a new one at the cage' — said once, out loud, in the room, to hear what the room did with it. The room did nothing with it and 'the sentence sounded like the truth'."
+    unresolved:
+      - "HOW the three fragments got from an apartment half a mile east into an on-station locker is not narrated. See CF-19."
+      - "The pack is described as 'dated' and the cover story is that it is a NEW pack drawn at the cage. A date stamp would contradict that on inspection. See CF-19."
+      - "Ch.10 ends with a property return notice due inside a fortnight and Vexx answering 'I will'. This is that property. The book does not register the broken promise."
+    note: >-
+      outline:ch-11 beat 6 is 'Vexx moves the drawer's contents. He now has a hiding place, and
+      he hates himself for how quickly he chose it, and he is good at it, which is worse.' The
+      prose delivers the speed ('None of that took any thinking at all, and he had chosen the
+      pack before he had crossed the room') and withholds the self-hatred, which is correct for
+      this book's register. Inventory verified: three items in, three items out, nothing in two
+      places.
+  the-propped-boot:
+    introduced: "ch-11:p42"
+    description: "A single left boot, standard issue, honestly worn, laces gone and cord through the eyelets instead, sole gone smooth at the ball like a boot that has done a great deal of standing. Wedged up into the gap at the bottom of a fire door with the whole weight of a heavy self-closer sitting down on it."
+    status: "resolved as a scene object; the OWNER stays open by design"
+    last_mentioned: "ch-11:p142"
+    resolution: { chapter: 11, description: "Vexx puts a shoulder into the door, works the boot free, takes longer at it than he should, does not look good doing it. He is still holding it at the end of the chapter and keeps on holding it." }
+    draft_status: "ch-11 pre-polish"
+    note: >-
+      HARD CONSTRAINT: the owner is never identified. See characters.the-boots-owner. The boot
+      is the chapter's anchor object ('a fire door, a boot in his hand, and the word "dead"
+      said like a compliment') and it is also what breaks the argument — 'I'm standing here
+      holding a boot' is the line that makes both of them laugh.
+  dessens-notebook:
+    introduced: "ch-10:p20"
+    description: "A bound paper notebook, cloth spine, a corner gone soft like a much-handled card, in a building where Vexx has not seen paper outside the laminated card taped to the annex terminal. Lies open under her left hand; the pen makes a sound like a fingernail going down a seam. Carried in a case with a strap set for somebody else's shoulder, never changed."
+    status: "background"
+    last_mentioned: "ch-10:p262"
+    resolution: null
+    note: >-
+      The chapter's declared emotional anchor. It is also the only thing in the room that
+      treats Jameson and Dessen as the same size — the apology goes down at the speed the
+      insult did, in the same hand. The finding goes forward as read; the apology goes in the
+      margin.
+  aglaopes-list:
+    introduced: "ch-09:p162"
+    description: "Aglaope's list of the people she has sat with while they died. Two hundred and nine entries; she had thought two hundred and eleven and had two of them on twice. Put in by hand, one a night, longhand with the stylus; she has never let a machine near it, and she reads the last twenty back every night whether or not she has added anybody. Ordered chronologically — 'In order.' / 'That's what in order means.'"
+    status: "active — a standing object, open through the series"
+    last_mentioned: "ch-09:p240"
+    resolution: null
+    facts:
+      - { fact: "she has started having to check the middle years, six and seven, and has put them in the wrong way round twice this month", source: "ch-09:p168" }
+      - { fact: "refuses alphabetisation because it would put Ansel next to Anseth, and the hour and forty minutes between their deaths only exists because they are nine pages apart", source: "ch-09:p212" }
+      - { fact: "Curran is on it and lived. She has been deciding whether to take him off. Vexx says leave him on; she does", source: "ch-09:p218" }
+      - { fact: "everybody in the cell knows what it is, the way a unit knows a thing it has agreed not to make a subject of. She does not turn the pad over when Vexx sits down", source: "ch-09:p162" }
+    note: >-
+      Vexx's response to it is a manifest — sub-sort by year inside the letter, a marker
+      character on the uncertain ones, two ruled columns so a thumb can run down one against
+      the other 'without reading either of them properly'. That is the book's thesis argued
+      over a casualty list, and she wins it. Do not let a later chapter have her take the
+      advice.
+  zeuss-logic-grid:
+    introduced: "ch-09:p20"
+    description: "A logic grid off the fleet entertainment net — six columns, six rows, crosses and ticks — worked in PEN, with a stylus available on the shelf behind him. Row four is wrong: the same man in two places, second column and again at the bottom. He has been on it since Tuesday and has known since Wednesday."
+    status: "resolved as characterisation; the puzzle itself is never finished"
+    last_mentioned: "ch-09:p140"
+    resolution: { chapter: 9, description: "'If I start it again I lose Tuesday and Wednesday.' / 'You've lost them anyway.' / 'Not while I'm still on it.' He is still sitting with it when Vexx goes out." }
+    note: >-
+      The chapter's declared emotional anchor and the key to the whole Zeus scene: a man who
+      will not start again because starting again costs him the days he has already spent. It
+      is also the answer to the question Vexx asks about the note he keeps answering at the
+      new year, and Zeus's reply to that question is 'Ask a different question.'
+  the-annex-badge-log:
+    introduced: "ch-09:p134"
+    description: "The records-annex terminal does not log the query, only that a badge asked it something and for how long: 'a hundred and four minutes at two in the morning.' It goes up on Monday with the water and the lights. Zeus tells Vexx so on his way out — 'I'd rather have said it than found out later that I hadn't.'"
+    status: "chekhov_open — PLANTED CLOCK, NOT YET FIRED"
+    last_mentioned: "ch-09:p134"
+    resolution: null
+    unresolved: >-
+      outline:ch-10 says Ch.10 'builds on Ch.6's badly-told lie to Voss and Ch.9's archive
+      access', but Ch.10's prose never references the badge log, the annex or the 104 minutes.
+      Dessen's finding is entirely about the Corwin release. See CF-24. Either Ch.10 pays it
+      in one clause or the outline assigns it a chapter.
+  the-property-return-notice:
+    introduced: "ch-10:p232"
+    description: "A property return notice, due to Vexx 'inside a fortnight' on the Corwin material, which the review board struck from the evidentiary record and retained as recovered property pending disposal. Dessen: 'Answer it the same day.' Vexx: 'I will.' Dessen: 'People say that.'"
+    status: "chekhov_open — A LIVE CLOCK AS OF CH.11"
+    last_mentioned: "ch-10:p232"
+    resolution: null
+    unresolved: >-
+      In the very next chapter Vexx seals the property inside a trauma pack in his locker with
+      a prepared lie about it. The notice is never mentioned again. Whether Ch.11 falls before
+      or after it arrives changes what Vexx is doing from pre-emption to active breach, and the
+      prose does not say. See CF-19.
 
 # ============================================================================================
 # WORLD RULES

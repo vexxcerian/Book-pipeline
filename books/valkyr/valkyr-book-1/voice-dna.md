@@ -315,11 +315,11 @@ draft measures 3.38 and the voice's power comes from restraint.**
 | Pattern | Ceiling (new chapters) | Draft baseline | Enforcement |
 |---|---|---|---|
 | **Explanatory / analytical similes (#11 — the #1 AI fingerprint)** | **≤ 3.5 / 1k**, and **zero** that explain psychology | 3.38 / 1k, all physical or behavioural | Disruptor cuts to ceiling. **An explanatory simile is a defect at any density.** |
-| **Adverbs in dialogue tags** | **0** | 0 | Zero tolerance |
+| **Adverbs in dialogue TAGS** — *"said quietly"* | **0** | 0 | Zero tolerance. **Read the scope: dialogue tags, not adverbs.** This row is the narrowest rule in the table and it is routinely read as a blanket ban — which is how six chapters came in at 2.5 adverbs per 1,000 words of narration against this author's 11.2. See §4b. |
 | **"as if" / "as though"** | **≤ 0.15 / 1k** (≈1 per 6,000 words) | 0.07 / 1k | Effectively banned |
 | **Metacognitive narration** | **0** | 0 | Zero tolerance |
 | **Emotional temperature reports** | **0** | 0 | Zero tolerance — the hardest rule in the book |
-| **Em-dashes** | **~8 / 1k in new chapters** (book-level gate ~10) | **10.35 / 1k** | The drafted chapters run at the ceiling. New chapters aim lower to leave the *book-level* gate headroom. **Do not sand Ch.1–5.** |
+| **Em-dashes** | **9.0–12.0 / 1k** — a band, not a target | **9.0–11.8 / 1k** across Ch.1–5 | ⚠️ **This row used to say "aim ~8/1k in new chapters", which is BELOW every single chapter the author wrote.** It was an instruction to write less like him, in the document that exists to make the pipeline write like him. The em-dash is this voice's load-bearing device — it is how he interrupts himself instead of chaining on *and*. Gate: floor 8.5, ceiling 12.0. **Do not sand Ch.1–5.** |
 | **"the particular ___"** | **≤ 0.25 / 1k** | 0.61 / 1k | Author signature, over-used; ration it |
 | **Retrospective-narrator intrusion** | **≤ 2 per chapter**, never in an opening | ~2–3/ch in Ch.1 | Ch.1 is locked and exempt |
 | **Rhetorical questions in narration** | **≤ 1 per chapter**, and preferably as the author's no-question-mark form | Rare | — |
@@ -338,6 +338,41 @@ draft measures 3.38 and the voice's power comes from restraint.**
 | Narration glossing RECLAMATION on its first appearance (Ch.7) | Kills the primary re-read reward |
 
 ---
+
+## 4b. VOICE-MATCH FLOORS — the half of the budget that was missing
+
+⚠️ **Read §4 and this section together. §4 is entirely ceilings — every row in it says ≤ or
+0 — and for eleven chapters it was the only calibration signal the Writer had.** A document
+that can only ever say "less" teaches a writer that less is always better, and the result is
+measurable: this pipeline has now had to discover **six separate floors**, every one of them
+a case of writing plainer than the author it was built to match.
+
+A ceiling stops the pipeline exceeding the author. **A floor stops it falling short of him,
+and that is the failure that actually happens.** These are measured on his own chapters, in
+the **narration register**, with `tools/style_check.py`'s own tokenizer.
+
+| Must reach | Author Ch.1–5 | Pipeline when found | Why it goes wrong |
+|---|---|---|---|
+| **Adverbs ≥ 10.5 / 1k** (ceiling 17.0) | 11.2 · 15.0 · 16.0 · 15.1 · 12.9 | **0.6 – 8.4** | "Avoid adverbs" is the most repeated writing advice in existence, so obeying it converges with every other model obeying it. **The advice is itself the tell.** What disappears is not the florid adverb but the plain spoken connective — *actually, entirely, exactly, finally, properly, honestly, plainly, barely* — and that is the whole loss. Trim an adverb only when it props up a verb that should have carried the weight. |
+| **Similes ≥ 2.0 / 1k** (ceiling 5.0) | 2.1 – 4.4 | below 2.0 | Restraint over-applied. The voice's power is restraint; absence is not restraint. |
+| **Em-dashes ≥ 8.5 / 1k** (ceiling 12.0) | 9.0 – 11.8 | — | See the corrected row in §4. |
+| **Commas ≥ 58 / 1k** | 60 – 73 | below | The accumulating clause is the voice. |
+| **Narration median ≥ 14 words** (ceiling 18.0) | 14.0 – 17.5 | below 14 | A fat middle is off-voice, but so is an all-short one. |
+| **Sentences ≥40 words: ≥ 13 %** (ceiling 16.5 %) | 13.3 – 16.2 % | below | Not reaching for the long accumulating mode. |
+
+And two ceilings that belong here because §4 missed them entirely:
+
+| Must not exceed | Author Ch.1–5 | Pipeline | What it is |
+|---|---|---|---|
+| **Narration `and` ≤ 19.5 / 1k** | 18.2 – 18.9 *(spread 0.7)* | 18.4 – 24.3 | **§THE SEAM.** The pipeline chains clauses on *and*; the author interrupts himself with an em-dashed appositive. Recurred on the first draft of **every** pipeline chapter. The fix is never to delete the conjunction. |
+| **Flat-man ≤ 3 per chapter** | 0 · 2 · 1 · 0 · 0 | 0 – 6 | Generic-person manner attribution — *"like a man at the end of a shift"*, *"in the voice of a woman filing something"*. It satisfies the zero-emotional-temperature rule, so the pipeline settles into it. |
+
+**Two things §4 also gets wrong and this book has not yet resolved.** Its simile row sets
+"**≤ 3.5/1k**, and **zero** that explain psychology" as one number, but those are two
+different metrics — a *total density* and an *always-a-defect* class — and collapsing them
+under one threshold is the definition error that has now bitten this pipeline four times.
+Its sentence-length row (`≥25 % ≤6 words`) is a **floor on short sentences**, which is the
+one direction that needed no encouragement; the gate carries a *ceiling* of 30 % instead.
 
 ## 5. BENCHMARK SAMPLES
 
