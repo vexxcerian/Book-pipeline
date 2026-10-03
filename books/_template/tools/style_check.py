@@ -78,6 +78,29 @@ wrinkly quarterly monthly weekly daily yearly nightly hourly bodily
 """.split())
 ADVERB = re.compile(r"\b\w+ly\b", re.I)
 
+# ── §THE FLAT-MAN ─────────────────────────────────────────────────────────────
+# Generic-person manner attribution: "like a man at the end of a shift", "the way a man
+# does when he has run one for eleven months". One or two are voice. Five in a chapter is
+# a narrator who has stopped looking at the specific person in front of him.
+#
+# Three traps, all of which made an earlier count of this wrong:
+#   · "like the one in Jameson's office" is a CHAIR. Match persons, not determiners.
+#   · "I'd like you people to show up" is the VERB — the same trap that made the simile
+#     count wrong, so the caller strips LIKE_VERB first.
+#   · "someone like you people" is a comparison to the addressee, not manner attribution.
+# And note split_registers() classifies an action-beat paragraph wholly as narration, so
+# dialogue inside one leaks into this count. It leaks identically on the author's side,
+# which is what keeps the comparison honest — but read the hits, do not just trust the number.
+FLATMAN = re.compile(
+    r"(?<!\bsomeone )(?<!\bsomebody )(?<!\banyone )(?<!\banybody )"
+    r"\b(?:the way|like)\s+(?:a|an|some)?\s*"
+    r"(?:m[ae]n|wom[ae]n|somebody|someone|people|persons?|anybody|nobody|you)\b"
+    r"(?!\s*(?:\u2019s|'s))", re.I)
+
+
+def count_flatman(nar_text):
+    return len(FLATMAN.findall(LIKE_VERB.sub(" ", nar_text)))
+
 
 def count_adverbs(text):
     """-ly words that are actually adverbs. See NOT_ADVERB above."""
@@ -460,6 +483,8 @@ def scan():
         #
         # It is measured in NARRATION only — in dialogue "which" is ordinary speech.
         nar_w = len(words(nar_text)) or 1
+        and_nar1k = len(re.findall(r"\band\b", nar_text, re.I)) / nar_w * 1000
+        flatman = count_flatman(nar_text)
         adv_nar1k = count_adverbs(nar_text) / nar_w * 1000
         which_gloss = len(re.findall(r",\s+which\b(?!\s+(?:of|one)\b)", nar_text, re.I))
         wg1k = which_gloss / (len(words(nar_text)) or 1) * 1000
@@ -486,7 +511,8 @@ def scan():
                   f">=40w {long_pct}% | <=6w {short_pct}% | dialogue lines {ndia} "
                   f"({round(ndia/len(nar), 2)}:1) | dialogue and {dia_and}/1k | "
                   f"gloss {wg1k:.1f}/1k | question marks {q1k:.1f}/1k | "
-                  f"adverb {adv_nar1k:.1f}/1k")
+                  f"adverb {adv_nar1k:.1f}/1k | and {and_nar1k:.1f}/1k | "
+                  f"flat-man {flatman}")
         if n in PUNCH_CHAPTERS:
             breath += "  [PUNCH — exempt]"
         else:
@@ -526,6 +552,25 @@ def scan():
             if hi is not None and adv_nar1k > hi:
                 flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k > {hi} (voice-match CEILING "
                              f"— over-corrected past the author)"); problems += 1
+
+            # AND, narration register — §THE SEAM, finally gated. Same shape as the adverb
+            # bug directly above: a whole-text ceiling of 24.0 that almost never fired, with
+            # a real and consistent breach underneath it in the register that matters. The
+            # author chains on "and" at 17.6-18.4/1k of narration; the pipeline at 18.3-24.2.
+            # The fix is never to delete the conjunction — it is to interrupt the clause with
+            # an em-dashed appositive, which is what the author actually does. Watch the
+            # em-dash ceiling while you do it.
+            hi = _ceiling(n, "and_nar_per1k", None)
+            if hi is not None and and_nar1k > hi:
+                flags.append(f"AND narration {and_nar1k:.1f}/1k > {hi} (voice-match CEILING "
+                             f"— §THE SEAM: chaining clauses where this author interrupts "
+                             f"himself)"); problems += 1
+
+            hi = _ceiling(n, "flatman", None)
+            if hi is not None and flatman > hi:
+                flags.append(f"FLAT-MAN {flatman} > {hi} (generic-person manner attribution "
+                             f"— the narrator has stopped looking at the specific person)")
+                problems += 1
 
         # TYPOGRAPHY — two defects that no other check in this file can see, both found
         # only because a human looked at a diff.
