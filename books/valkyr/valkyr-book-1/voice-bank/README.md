@@ -76,7 +76,7 @@ chapter's pressure level, plus 05 if Jameson is in it and 11 if more than two AI
 6. Are `filed it away`, `not yet a problem`, `a shape on the horizon`, `the vocabulary to name
    it` or `never once` anywhere in the chapter? Remove them — all five are **CLOSED**.
 7. Does any sentence know what Rx feels? Rewrite it as inference from voice, timing or cursor.
-8. Is there a Jameson line cleverer for the reader than for Vexx? Delete it.
+8. Is there a Jameson line whose second meaning is available **to Jameson**? Delete it. ⚠️ Not "cleverer for the reader" — that is the PASS case. the question is **whose the second meaning is** — it FAILS only if that meaning is available *to Jameson*, and PASSES if it exists only in the reader's hands (full test at `outline.md` Ch.10, "The operative test, corrected").
 9. Cover the names on every line of dialogue. If you cannot tell who is speaking, open
    `character-bible.md`.
 10. New named character? **Add their card to `character-bible.md` before finalising**, and

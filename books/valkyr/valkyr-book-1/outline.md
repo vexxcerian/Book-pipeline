@@ -1911,7 +1911,9 @@ takes it.
 **Reading speed:** Even and unhurried throughout — the calmest chapter in Part Four. One
 acceleration: Vexx's answer, which is two words.
 **Writer warnings:** (a) **GATE CONDITION, hardest instance in the book.** No menace, no
-double meaning, no knowing pause, no line that is cleverer for the reader than for Vexx.
+double meaning, no knowing pause. ⚠️ **Apply the CORRECTED test, not the loose one:** the question is **whose the second meaning is** — it FAILS only if that meaning is available *to Jameson*, and PASSES if it exists only in the reader's hands (full test at `outline.md` Ch.10, "The operative test, corrected"). This warning previously read "no line that is cleverer for the reader than for Vexx", which
+inverts the rule — that is the PASS case, and it is the whole design of this chapter, where the
+antagonist never learns anything and all the irony is the reader's.
 (b) The four-days story must be *good*. If the reader is not moved, the chapter fails.
 (c) Vexx must not think about Rx during the offer. He thinks about access. (d) Do not let the
 narration comment on the irony. Not one word. (e) Rx's silence must not be flagged until the

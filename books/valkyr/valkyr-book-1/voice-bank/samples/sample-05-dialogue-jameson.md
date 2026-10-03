@@ -18,5 +18,5 @@ Dessen said, "That isn't the question in front of me, sir."
 - **He does not pull rank and he does not raise his voice.** He concedes the procedural point completely and moves the argument to ground where he is right.
 - **He is honest.** He asks for his own objection to be logged. This costs him nothing and it is also entirely sincere, and both things are true at once.
 - **The oblique fragment of the four days** — *"nobody did, and I've thought about it for a long time since"* — surfaces without explanation, twenty chapters before it is told whole in Ch.24.
-- **No double meaning. No knowing pause. No line cleverer for the reader than for Vexx.** Check every Jameson line against that. If it has a chill in it, the chill must come from a *document*, never from him.
+- **No double meaning he can hear. No knowing pause.** ⚠️ Not "no line cleverer for the reader" — the question is **whose the second meaning is** — it FAILS only if that meaning is available *to Jameson*, and PASSES if it exists only in the reader's hands (full test at `outline.md` Ch.10, "The operative test, corrected"). Check every Jameson line against that. If it has a chill in it, the chill must come from a *document*, never from him.
 - **Dessen is correct and is not a stooge.** *"That isn't the question in front of me, sir."*

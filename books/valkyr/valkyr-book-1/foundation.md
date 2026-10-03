@@ -303,8 +303,10 @@ own central emotion.
 > failed scene.* He is warm, credible and genuinely persuasive. He does not gloat, does not
 > speak in double meanings the reader can decode, does not author a single moment of dramatic
 > irony. **All the irony in this book belongs to the reader's later knowledge, never to his
-> performance.** If you catch yourself writing him a line that is cleverer for the reader than
-> it is for Vexx, delete it.
+> performance.** ⚠️ **Corrected test:** the question is **whose the second meaning is** — it FAILS only if that meaning is available *to Jameson*, and PASSES if it exists only in the reader's hands (full test at `outline.md` Ch.10, "The operative test, corrected"). This paragraph previously ended "if you
+> catch yourself writing him a line that is cleverer for the reader than it is for Vexx, delete
+> it" — which inverts it. A line that is cleverer for the reader is exactly what this book is
+> built out of; a line that is cleverer for *Jameson* is the failure.
 
 **Surface.** Fifties or older — hard to tell, with the longevity access senior ONI has.
 Silver at the temples in the way that reads distinguished. A dress uniform worn like it was

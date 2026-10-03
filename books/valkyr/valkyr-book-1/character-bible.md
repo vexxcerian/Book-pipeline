@@ -306,9 +306,10 @@ The first four are **CLOSED for new chapters** — they are at or over cap in th
 ---
 
 #### RICHARD JAMESON — commanding officer of the rebuilt Valkyr. The antagonist the reader must like.
-> **GATE CONDITION.** No line of his may be readable as a threat, a double meaning, a knowing
-> pause or an aside that is cleverer for the reader than for Vexx. **All the irony in this book
-> belongs to the reader's later knowledge, never to his performance.** He does not know he has
+> **GATE CONDITION.** No line of his may be readable as a threat, a double meaning or a knowing
+> pause. **All the irony in this book belongs to the reader's later knowledge, never to his
+> performance** — so the question is **whose the second meaning is** — it FAILS only if that meaning is available *to Jameson*, and PASSES if it exists only in the reader's hands (full test at `outline.md` Ch.10, "The operative test, corrected"). ⚠️ This row previously barred "an aside that is cleverer for
+> the reader than for Vexx", which contradicts the sentence immediately before it. He does not know he has
 > been made and he never will in this volume.
 - **Attention / worldview:** Reduces the world to **outcomes and decisions.** A decision that
   worked was right; a decision that failed was wrong, regardless of process. He applies this

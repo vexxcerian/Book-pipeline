@@ -65,6 +65,12 @@ four times he is allowed a sentence, and all four are unmistakably his.
 I read all 22 Jameson turns twice: once as the scene means them, once in the voice of a man
 who watched Rx die at close range, wrote the report that buried it, and has come to a
 compliance room to find out how close an investigator has got to the Corwin material. A line
+> ⚠️ **SUPERSEDED, 2026-10-03.** The test as stated in this paragraph is the loose version and
+> it is wrong; it is kept here because this is a dated record of what the pass actually applied.
+> The operative test is in `outline.md` Ch.10 ("The operative test, corrected"): a line fails only
+> if the second meaning is available **to Jameson**, and passes if it exists only in the reader's
+> hands. Do not apply the paragraph below to a new chapter.
+
 fails if the second reading yields *extra* meaning — if it is cleverer for the reader than for
 the character, or if it could be replayed later by Vexx and heard differently.
 

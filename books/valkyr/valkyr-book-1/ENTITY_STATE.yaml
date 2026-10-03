@@ -1108,6 +1108,14 @@ characters:
     arc_notes: >-
       Used twice, deliberately: the second use is Gaia saying 'Thanks, Hallam' to a DIFFERENT
       crew, out of habit, to nobody who could hear her (ch-08:p186). Do not spend a third.
+    cf_20_collision_2026_10_03: >-
+      A THIRD USE WAS SPENT, AND IT IS A DIFFERENT PERSON. ch-09:p32-p36: Zeus asks 'Do you
+      know the cook's name', Vexx answers 'Hallam', and Zeus replies "Hallam's the day shift.
+      The one who does the night urn is a Mr. Beattie" — which makes Hallam the home station's
+      DAY-SHIFT COOK, not a dropship crew chief. The Ch.9 exchange does NOT frame Vexx as
+      having got the name wrong; Zeus confirms it. CONFLICT CF-20. The Ch.8 use is canonical
+      (earlier text, and the name is load-bearing there: 'to a man Vexx had not known had a
+      name'); Ch.9 should rename its day-shift cook.
 
   relay-station-commander:
     canonical_name: "the station commander (unnamed)"
@@ -1992,6 +2000,27 @@ secrets:
       of how the tag reached the ground (ch-06). He has still named Jameson to exactly one
       person, still taken no action, and still not pulled the records access that would leave a
       trail. Nobody new has been told. Rx has still not connected his fragments to anything.
+    state_at_end_of_ch11: >-
+      STILL SUSPICION, NOT REVELATION — the series lock holds, verified line by line. Vexx has
+      gained NO new fact about Rx's death in Ch.9, Ch.10 or Ch.11. What changed in three
+      chapters is entirely about exposure and method, not about evidence:
+      (1) ZEUS now knows, by inference and not by being told, that Vexx is working something
+      off-book, and has offered to get it by coercion. Vexx refused, out loud, twice — and then
+      derived most of the method himself in the last 200 words of the same chapter.
+      (2) INTERNAL COMPLIANCE has found against Vexx's handling of the material, in writing,
+      permanently, and the finding is true in every word. The plate can never be put in front
+      of anybody again. 'You didn't destroy it. You did something narrower. You made it useless
+      to him.'
+      (3) JAMESON now knows Vexx took the Corwin material out of a lock, kept it in a residence
+      under a lamp, and never returned it — and intervened to save him from a fitness review.
+      He does NOT know it is being kept as evidence against him; the nearest the book comes is
+      three words Vexx does not finish. The antagonist is still unaware he has been made.
+      (4) GAIA holds one sentence with no names and no evidence, and has closed her own account
+      of it: 'That was your one.'
+      (5) THE EVIDENCE HAS MOVED — out of the drawer beside the bed and into a re-tabbed trauma
+      pack in a locker, with a prepared lie attached to it, which Vexx rehearsed out loud alone
+      in his quarters to hear what the room did with it.
+      Rx has still not connected his fragments to anything. Nothing has leaked forward.
     who_knows:
       richard-jameson:
         level: "full — he did it"
@@ -2123,6 +2152,38 @@ memory_unlock_ladder:
       ch-03:p03), so 'Jameson present in person' is by itself no longer a novel trigger.
       outline:ch-13 must escalate the trigger explicitly — his VOICE, close, on an open channel,
       giving a live instruction — which is what the outline already specifies. Do not weaken it.
+    precursors_added_2026_10_03:
+      - event: >-
+          Rx GOES NEARLY SILENT from the moment Jameson walks into the audit room and stays
+          that way to the end of the scene, then speaks normally again in the corridor coda.
+          No content surfaces. No fact reaches Vexx. Vexx does not remark on it. THIS IS THE
+          CH.2 RESPONSE WITH NO ESCALATION, which is the correct choice.
+        source: "ch-10:p278"
+      - event: >-
+          THE SIGNATURE TIC IS RELOADED. One clean, unremarkable, smooth 'Fine' in Ch.9 — the
+          first since Ch.4 — which is what the Ch.13 break needs in order to land.
+        source: "ch-09:p144"
+      - event: >-
+          Rx is wholly absent from Ch.11, including the scene in which Vexx tells a human being
+          about a mission for the first time, and is silent in the coda when addressed.
+        source: "ch-11"
+    ch9_11_audit_2026_10_03: >-
+      VERIFIED: Ch.9, Ch.10 and Ch.11 spend NO unlock stage and duplicate neither stage 1 nor
+      stage 2. Stage 3 remains NOT REACHED and unclaimed for outline:ch-13. This is the
+      important finding of the pass, because JAMESON IS PHYSICALLY PRESENT IN CH.10, AT LENGTH,
+      SPEAKING LOUDLY AND AT CLOSE RANGE, IN THE SAME ROOM AS VEXX AND RX — and Rx produces
+      silence and nothing else. Nothing legible surfaces, no new fact reaches Vexx, no fragment
+      of the refusal, no treeline, no audio artifact. Correct, and it holds the lock.
+      THE WARNING THAT NOW MATTERS MORE THAN ANY OTHER IN THIS BLOCK: mere proximity to Jameson
+      has now been spent THREE times on the page without a stage-3 event (ch-02:p04, ch-03:p03,
+      ch-10). Ch.10 additionally spends 'his actual voice, close, at length, in the same room'.
+      What is left as NOVEL for Ch.13 is therefore ONLY: (a) an OPEN CHANNEL rather than a
+      room, (b) a LIVE COORDINATING INSTRUCTION rather than conversation, (c) IN CONTACT.
+      outline:ch-13 beat 2 specifies exactly those three and must not be softened by one word.
+      ACTION OUTSTANDING: D-02 from the Ch.1-8 audit was never applied. outline:ch-13's writer
+      warnings (a)-(e) still do not say that proximity is spent. Add it there, and — per the
+      root CLAUDE.md PROPAGATION RULE — check the same statement in voice-dna.md, in
+      character-bible.md's RX entry, and in this block, which are the four places it lives.
   stage_4:
     definition: "Full unlock — forced by Vexx confronting Rx directly with external evidence."
     status: "FORBIDDEN IN BOOK ONE"
