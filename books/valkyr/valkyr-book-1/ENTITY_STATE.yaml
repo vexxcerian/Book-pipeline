@@ -201,7 +201,50 @@ characters:
         - { fact: "the third word Spector named. Goliath offered it and Vexx did not answer.", source: "ch-08:p198", constraint: "No chapter after Ch.8 may assume he holds it until it is delivered on the page." }
         - { fact: "the contents of Merrick's notebook. It is on his desk, unopened, at the end of Ch.8.", source: "ch-08:p192" }
         - { fact: "who filed the third concern against Merrick. Voss did not say; Gaia narrowed it to the north shift and no further.", source: "ch-08:p26, ch-08:p162" }
+    ch9_11_additions:
+      location_log:
+        - { chapter: 9, where: "the home station — the records annex 01:10-02:54, then the mess until four in the morning", source: "ch-09" }
+        - { chapter: 10, where: "the home station — room 2-14, north end of the operations block, 11:40 for about an hour; then the corridor at the elevator", source: "ch-10" }
+        - { chapter: 11, where: "the home station — the fire-door corridor at the end of a working day; then his own quarters", source: "ch-11" }
+      knowledge_gained:
+        - { fact: "the materiel index is sorting its result set on a field the display does not carry. He writes the sort on the back of his hand with a stylus", learned: "ch-09:p46", method: "worked it out after the third identical-but-reordered result" }
+        - { fact: "exactly how to get the other fifteen lines of the issue record: the routing office at Kell, eleven people, the two who sign retention exceptions, the one who has already broken the rule. The method, complete, including that you never say what you will do with it", learned: "ch-09:p62-p72", method: "Zeus told him, unasked" }
+        - { fact: "that housing allocations at Kell go through an accommodation office which publishes its waiting list with names, grades, dependants and claim dates; and that leave would have to come out of the man himself in the first ten minutes, by asking about his summer", learned: "ch-09:p244", method: "he worked it out himself, after refusing" }
+        - { fact: "Zeus's Sedge board, the seven interviews, the finding, the two years at a desk at Kell, and the note he answers at the new year", learned: "ch-09:p116-p122", method: "Zeus told him" }
+        - { fact: "that Aglaope's list stands at 209, how she keeps it, and why she will not alphabetise it", learned: "ch-09:p162-p212", method: "she showed him and argued it" }
+        - { fact: "that the annex terminal logs a badge and a duration, and that it goes up on Monday", learned: "ch-09:p134", method: "Zeus told him" }
+        - { fact: "the full text of Dessen's finding, twice, and that it is true in every word", learned: "ch-10:p32, ch-10:p254", method: "she read it to him" }
+        - { fact: "that the review board STRUCK the material from the evidentiary record and retained it as recovered property pending disposal, before he ever signed for it — so what he broke was a property rule, not a chain of custody", learned: "ch-10:p222", method: "Jameson made Dessen read the disposition line aloud" }
+        - { fact: "that the plate can never now be put in front of anybody, not because it is contaminated but because there is no longer anyone who can say it isn't. 'You didn't destroy it. You did something narrower. You made it useless to him.'", learned: "ch-10:p134-p142", method: "Dessen told him, and he agreed out loud" }
+        - { fact: "that a property return notice is coming inside a fortnight", learned: "ch-10:p232", method: "Dessen told him" }
+        - { fact: "the week's station pressure readings, memorised — first light, last light, the state of the water — put where he used to put a callsign and a grid", learned: "ch-10:p322", method: "Rx read them off the met page at his request" }
+        - { fact: "that Gaia knows he pulled the cell's files again after the jungle, and has worked out the machine of what he is doing, and has it 70% right", learned: "ch-11:p152-p154", method: "she told him to his face" }
+        - { fact: "that Gaia will not come back for the rest of it — 'That was your one'", learned: "ch-11:p192", method: "she told him" }
+      knowledge_NOT_gained:
+        - "The third word Spector gave Goliath. Nothing in Ch.9, 10 or 11 reaches for it. Goliath's offer is still open and unanswered."
+        - "Who filed the third concern on Merrick. Gaia got it as far as 'the north shift' and no name (ch-08:p322); nothing since."
+        - "The other fifteen lines of the Holst issue record. He still has seven of twenty-two."
+        - "Anything whatever about who propped the fire door."
+        - "Whether Corwin's letters left the building. He has not asked, in three chapters."
+      behaviours:
+        - { behaviour: "REFUSES Zeus's method, out loud, twice, 'ahead of anything he would have called a decision, like a hand coming off a hot pan' — and then, in the last 200 words of the same chapter, works out most of it himself and stops", source: "ch-09:p74-p78, ch-09:p244-p246" }
+        - { behaviour: "says 'Don't' when Zeus adds 'Less, if he has children'", source: "ch-09:p86" }
+        - { behaviour: "thanks Zeus, deliberately, 'because it was true, and no arrangement of the sentence made it less true'", source: "ch-09:p128" }
+        - { behaviour: "applies a cargo manifest to Aglaope's casualty list, in detail, unprompted, and does not stop when told he should have", source: "ch-09:p186-p206" }
+        - { behaviour: "WITHHOLDS easily and FABRICATES badly. 'I don't remember' about the lock clerk costs him nothing ('He had been withholding for thirty years'). 'I logged an extension' is out of him before he has decided anything, and his body knows the difference a second before his mouth does", source: "ch-10:p58, ch-10:p112-p122" }
+        - { behaviour: "retracts the lie inside a minute, unprompted, and Dessen records the retraction at his request", source: "ch-10:p122-p124" }
+        - { behaviour: "comes half out of the chair during Jameson's eight seconds without having worked out what he intends to do with the rest of the movement, and sits back down into it", source: "ch-10:p166" }
+        - { behaviour: "gets three words into 'My brother's—' to Jameson in a corridor and stops. Says 'It'll keep'", source: "ch-10:p294-p300" }
+        - { behaviour: "uses Jameson's first name, once, for the first time: 'The word came awkwardly out of a mouth trained out of it in the first month of a life he had left thirty years ago'", source: "ch-10:p286" }
+        - { behaviour: "refuses to say 'it's a bad door' for the whole argument, orders it shut instead, and then says it alone in the corridor after Gaia has gone", source: "ch-11:p94-p202" }
+        - { behaviour: "hands over ONE prepared sentence and three flat refusals, and does not correct the part Gaia has wrong", source: "ch-11:p166-p184, ch-11:p156" }
     arc_notes: "Recruited back into the program that killed his twin, builds and commands its first rebuilt cell, and by the end of Ch.5 has begun a private evidence file and said his suspicion out loud to exactly one person. Series canon: Book One is a descent — careful to compromised to complicit — ending on suspicion, not revelation."
+    arc_notes_ch9_11: >-
+      The descent is on schedule and is now measurable in three steps, one per chapter: Ch.9 he
+      is offered the method and refuses it and then derives it; Ch.10 he tells a manufactured
+      lie to an officer and takes it back; Ch.11 he hands a colleague a deliberately
+      insufficient truth and hides physical evidence he has just promised to return. Nothing
+      is revealed to him in any of the three.
 
   rx:
     canonical_name: "Rx"
@@ -279,7 +322,33 @@ characters:
         character-bible TIC BUDGET — does not appear at all in Ch.6, 7 or 8. The bible requires
         it to BREAK in Ch.13 and never be smooth again, which needs at least one clean use
         still standing between here and there. Flagged for the writer, not corrected here.
+    ch9_11_additions:
+      behaviours:
+        - { behaviour: "THE SIGNATURE TIC LANDS, clean and unremarkable: 'You've been quiet since I sat down.' / 'Fine', Rx said. Then, at his ordinary speed: 'He's left-handed. Did you know that.' This closes W-05 from the Ch.1-8 audit — the too-quick denial was absent from Ch.6, 7 and 8 and needed one ordinary use before the Ch.13 break", source: "ch-09:p142-p144" }
+        - { behaviour: "notices Zeus is left-handed and works with the sheet turned about thirty degrees, 'and it has been driving me up the wall all night'; and that the laminated card on the terminal has been wrong about paging for four years", source: "ch-09:p144-p148" }
+        - { behaviour: "reads the evidence-handling schedule off the summons before Vexx gets down the stairs, and tells him what a board looks like ('three people, a table you can't reach across, and a stenographer who hates you personally')", source: "ch-10:p10-p14" }
+        - { behaviour: "times Dessen's handwriting at ninety words a minute over twenty-two minutes, and reads a property schedule nobody asks for. 'Nobody wanted it.'", source: "ch-10:p92-p94" }
+        - { behaviour: "GOES NEARLY SILENT from the moment the audit-room door opens — i.e. from Jameson's entrance — and stays that way to the end of the scene", source: "ch-10:p278" }
+        - { behaviour: "speaks once more at the very end of Ch.10, at ordinary speed, reading the met page and asking 'Why?' — so the Ch.10 silence is scoped to Jameson's presence and does NOT continue past the scene", source: "ch-10:p318" }
+        - { behaviour: "ABSENT FROM THE WHOLE OF CH.11 — zero mentions of his name anywhere in the chapter. The coda registers the silence without naming him: 'You've gone quiet,' he said. / 'Nothing came back. The cursor on the pad by the bed went on doing what it did.'", source: "ch-11:p208-p210" }
+      knowledge:
+        - { fact: "that Vexx typed four letters of a surname they share into an archive field and cleared it. Already recorded; nothing in Ch.9-11 reopens it", learned: "ch-07:p62", method: "witnessed; said 'I didn't see that'" }
+      does_not_know_or_does_not_say:
+        - "He has never responded, in any chapter, to Goliath's 'Your Rx runs hot' (ch-08:p422) — he was in Vexx's ear for it and said nothing, and Vexx has never raised it with him. The non-reaction is unmarked in Ch.8 and uncollected in Ch.9-11. See CF-23."
+      silence_log_2026_10_03: >-
+        TRACKED, not forgotten, but thinning. Mentions of Rx by chapter: Ch.1 23, Ch.2 16,
+        Ch.3 9, Ch.4 9, Ch.5 5, Ch.6 2 (and the chapter says so: 'Rx did not say anything. He
+        had not said anything since the corridor'), Ch.7 11, Ch.8 4 (nothing after p73 —
+        including the corridor where Spector's report arrives), Ch.9 2, Ch.10 4, Ch.11 ZERO.
+        The Ch.6, Ch.10 and Ch.11 silences are each registered on the page. The Ch.8 silence
+        after p73 is NOT. See CF-23.
     arc_notes: "Alive as an AI; the seal is degrading on schedule. Stages 1 and 2 spent in the drafted chapters. He is aware he is carrying something and has told Vexx he is 'working on being ready'."
+    arc_notes_ch9_11: >-
+      No stage spent in Ch.9, Ch.10 or Ch.11, including the chapter in which Jameson is
+      physically present and speaking at length. Nothing legible surfaces; no fact reaches
+      Vexx from inside him. The Ch.10 response to Jameson is SILENCE — exactly the Ch.2
+      response, with no escalation — which is the correct choice and which also means mere
+      proximity has now been spent THREE times. See memory_unlock_ladder.
 
   richard-jameson:
     canonical_name: "Richard Jameson"
@@ -337,6 +406,41 @@ characters:
       - fact: "that he is suspected by anyone"
         source: "series-bible"
         on_page_support: "ch-04:p40, ch-05:p37"
+    ch10_additions:
+      on_page: "Ch.10 — his first on-page appearance since Ch.4's signed commendation, and the first time he is in a room with Vexx since Ch.3. The book's central Jameson scene."
+      behaviours:
+        - { behaviour: "arrives unannounced and unsummoned at an Internal Compliance interview, having come from the other end of the building without a coat, with rain on the shoulders of his uniform and his cap in his hand", source: "ch-10:p150-p158" }
+        - { behaviour: "interrupts Dessen mid-sentence, then makes her finish it: 'Finish the sentence.' / 'Read me the end of it.'", source: "ch-10:p154-p160" }
+        - { behaviour: "EIGHT SECONDS of disproportionate, ugly anger on Vexx's behalf — her work is trivial, the last Compliance finding in the building was about parking, she has never had to decide anything in under a minute", source: "ch-10:p162-p164" }
+        - { behaviour: "stops himself and apologises for FOUR specific things, naming which part was temper and which part he chose: 'The first part was temper. The second part I chose.' Including the procedural harm — coming in over a sentence she was entitled to finish, in front of an operator under her questioning — and that he cannot repair it because there is no mechanism", source: "ch-10:p170-p178" }
+        - { behaviour: "DEVICE (character-bible, his alone): pre-empts the objection and states it better than the objector. Puts Dessen's case harder than she did — adds the fact she missed, that Vexx drew the material in person off the counter and so shut the last door a third party could have got in by — before dismantling it", source: "ch-10:p200" }
+        - { behaviour: "dismantles the recommendation on a fact, not on rank: makes her read the board's DISPOSITION line, which struck the material from the evidentiary record and retained it as property, before Vexx signed anything. 'There was no chain left for him to break by the time he got there. They broke it. He inherited it.'", source: "ch-10:p218-p224" }
+        - { behaviour: "concedes the finding that IS real: 'You can find him for a property return that's overdue... you should, because it is. That's a real finding, I won't stand in front of it.'", source: "ch-10:p224" }
+        - { behaviour: "THE BAROMETER, first of three planned appearances: 'Pressure's fallen nine points since Tuesday. That much in two days is a front. It'll be in off the water by tonight.' Nobody responds. He says it anyway", source: "ch-10:p240" }
+        - { behaviour: "leaves the door standing open and somebody has to get up and shut it. It is Vexx", source: "ch-10:p244" }
+        - { behaviour: "'Drop the sir' escalates to 'Richard.' Refuses the thanks: 'Don't thank me. I read a disposition line. That isn't a favor, it's Thursday.'", source: "ch-10:p284-p288" }
+        - { behaviour: "waits through Vexx's unfinished sentence about his brother, giving him his whole attention, longer than the silence can comfortably carry — and then does NOT ask again, does not tilt his head, does not say 'are you sure', does not leave a door propped open in his voice for it to come back through later", source: "ch-10:p292-p304" }
+        - { behaviour: "the aneroid gauge — his father's, reads light, never set, because if he has it set it stops being his. Goes on talking about how to read a falling glass as the elevator doors take the rest of the sentence", source: "ch-10:p308-p310" }
+      knowledge_gained_ch10:
+        - { fact: "that Vexx raised and countersigned a release on the Corwin material, drew it in person, never returned it, and has had it in a residence under a lamp since", learned: "ch-10 — he has read Dessen's finding before he walks in", method: "documentary" }
+        - { fact: "Dessen's name, file and finding", learned: "ch-10:p158", method: "read them" }
+      still_does_not_know:
+        - { fact: "that Vexx suspects him, or that the material is being kept as evidence against him. The nearest the chapter comes is a sentence Vexx does not finish", source: "ch-10:p294" }
+        - { fact: "that Rx survived. Nothing in Ch.10 touches it. CF-03 remains open and is NOT closed by this chapter", source: "ch-10" }
+      gate_condition_verified_2026_10_03: >-
+        THE CH.10 GATE CONDITION HOLDS AND IS NOW CANON: no Jameson line in the chapter is
+        readable as a threat, a double meaning or a warning WHERE THE SECOND MEANING IS
+        AVAILABLE TO HIM. Every second meaning is reader-side only. The three closest lines,
+        recorded so a later pass does not strengthen them: (a) 'Then what you have is a
+        solitude problem... he was alone in it start to finish, with nothing in the file that
+        could have stopped him' — true of Vexx's investigation, but Jameson is arguing
+        procedure and cannot know; (b) 'That's the trouble with an honest man in a compliance
+        room — he's the only person in it who can be talked out of his own position'; (c) the
+        barometer. NOTHING IN CH.11 RETROACTIVELY CONVERTS ANY OF THEM — Ch.11 does not mention
+        Jameson, Dessen, the finding or the property return at all. Verified.
+        ALSO VERIFIED: he is institutional, never cartoonish. The eight seconds of temper make
+        him MORE likeable, not less, because the apology is better than the anger was and he
+        itemises his own bad faith. This is the strongest execution of the lock in the book.
     arc_notes: "Antagonist across both books. In Book One he is warm, credible and never sinister on the page; all irony belongs to the reader's later knowledge. Falls in Book Two."
 
   # ---------------------------------------------------------------- THE CELL
@@ -481,7 +585,48 @@ characters:
       - { fact: "that Vexx's caution is about something other than her competence", learned: "ch-05:p12", method: "told_by:vexxcerian" }
     does_not_know:
       - { fact: "anything about Rx, the fragments, the dog tag, or the name Jameson in connection with them", source: "ch-05:p16" }
+    ch9_11_additions:
+      behaviours:
+        - { behaviour: "ACOUSTICS. Stands with her weight on the foot nearest the stair, in every room, and knows the building by sound: the slack closer that lands twice, Goliath dragging his heel on the sill. 'I don't need to hear the stair. I hear the stair.' With the door open the corridor 'sounds like weather'", source: "ch-11:p10-p20" }
+        - { behaviour: "has shut the propped fire door three times in three days and it has been reopened each time; has asked around and the boot 'hasn't got an owner'", source: "ch-11:p32, ch-11:p50" }
+        - { behaviour: "DEVICE (hers alone): fact -> ask -> clock, with 'your call' as a weapon. 'What you do with the rest of it is your call.'", source: "ch-11:p192" }
+        - { behaviour: "refuses the order and asks for the sentence instead: 'I don't want the door shut because you've ordered it. I want it shut because it's a bad door.' Does not get it until after she has gone", source: "ch-11:p110, ch-11:p202" }
+        - { behaviour: "laughs — 'a short unlovely bark of a laugh she was plainly not expecting, that she made no attempt at all to stop' — at 'I'm standing here holding a boot'", source: "ch-11:p140" }
+        - { behaviour: "says 'Dead' about a dry corridor 'with an enormous satisfaction she made no attempt to cover'", source: "ch-11:p132" }
+        - { behaviour: "closes on an unexplained piece of her own history and does not finish it: transient housing at nineteen, walls that were nothing, a man who laughed once a night, about eleven, never twice, five months. 'There was no rest of it.'", source: "ch-11:p196-p200" }
+      knowledge_gained:
+        - { fact: "that Vexx pulled the cell's files again after the jungle, all of them, on his own time, unasked", learned: "before ch-11; she states it as fact and he does not deny it", method: "UNSOURCED — the prose never says how she knows. See CF-23" }
+        - { fact: "ONE SENTENCE, and it is all she gets: 'One of the jobs we've run wasn't the job we were briefed.' No which one, no who briefed it, no paper — 'Nothing I can give you.' / 'That's a no.'", learned: "ch-11:p166-p184", method: "Vexx told her, deliberately, having carried the sentence for weeks cut down and cut down again" }
+      her_reading_of_vexx:
+        right_70_percent: >-
+          'the machine of it exactly right' (ch-11:p156) — that he has had something since
+          before the jungle; that he decided not to bring it to the cell and decided it again
+          every week since; that he worked out what each of them would cost him, in order; that
+          he pulled the files.
+        wrong_30_percent: >-
+          THE REASON. She reads it as protecting the cell's deniability — 'you want us able to
+          stand in front of a woman with a notebook, say we didn't know, be telling the truth
+          when we say it' — and reads the file-pull as finding out which of them goes to
+          command first. The narration fixes the real reason in one clause and never says it
+          to her: 'the reason for it wrong, the reason for it not on her roster, not on
+          anybody's roster these four years.' That is Rx.
+        vexx_does_not_correct_it: "ch-11:p156 — 'he kept it where it was, and let her keep the rest.' VERIFIED: no correction anywhere in the chapter."
+      outcome: >-
+        'That was your one.' Not a threat, an accounting — she will not come back for the rest,
+        not in a corridor, not on a net, not after something goes wrong; if it turns out to be
+        what she thinks it is she will find out when everybody else does, and she will be
+        wherever he has put her. Said 'without heat, which was worse'.
+        outline:ch-11 writer warning (a) HELD: it is not resolved.
     arc_notes: "Series canon: alive at the end of Book One; friction with Vexx suspended, not resolved; knows only that he suspects something."
+    arc_notes_ch11: >-
+      SERIES-BIBLE UPDATE REQUIRED: her 'Knows' cell currently reads 'That Vexx suspects
+      something and promised to tell her first.' After Ch.11 she also holds one operational
+      claim — that one of the cell's jobs was not the job they were briefed — with no names and
+      no evidence, and she has closed her own account of it. Ch.5's promise ('you'll be the
+      first to hear it') is explicitly cashed on the page: 'You told me I'd be first.' / 'I
+      did.'
+      DEVICE BLEED, CH.11, PRE-POLISH — see CF-21: she is given Zeus's 'That's not X. That's
+      Y' reframe in the chapter's FIRST LINE, and Vexx's capped term-correction twice.
 
   paladin:
     canonical_name: "Paladin"

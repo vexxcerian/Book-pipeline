@@ -148,6 +148,27 @@ differ). Those stay in the book folder, seeded from `books/_template/`. If you i
 *template's* allowlist logic (structure, not a book's specific motifs), change
 `books/_template/`.
 
+## 🔁 A corrected rule that reaches one file is not corrected (THE PROPAGATION RULE)
+
+A threshold, a test, or a gate condition is almost never written down once. The same number
+lives in `tools/style_check.py`, in `voice-dna.md` §4 and its §6 checklist, in `outline.md`,
+in `STATE.yaml`, in `character-bible.md`, and in whichever agent brief last quoted it.
+
+**So when you correct one, grep the book folder for every other copy before you commit:**
+
+```
+grep -rn "<the metric name>\|<the old number>" books/<name>/ .claude/agents/
+```
+
+This is not hygiene. A gate condition on Jameson's dialogue was corrected in `outline.md`
+and not in `voice-dna.md` §6 — and §6 is the ten-line checklist pinned above the Writer's
+desk, so the inverted version stayed exactly where it would be read and the corrected one
+sat where it would not. The same pass found the checklist instructing an em-dash density
+*below* the gate's own floor. **A stale copy is worse than no copy, because it carries the
+authority of the document it sits in.**
+
+Corollary: when you change a threshold, say in the commit message which files you checked.
+
 ## Structural-variety rule (baked into book-architect)
 
 Books must NOT all converge on ~20 chapters of ~5,000 words in three visible acts with
