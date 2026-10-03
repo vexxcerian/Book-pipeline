@@ -53,7 +53,35 @@ SIMILE_MARKERS = re.compile(
     r"\b(?:as if|as though)\b"
     r"|(?<!\w)like\b(?!\s+(?:that|this|these|those|him\b|her\b|them\b|me\b|us\b|you\b))",
     re.I)
+# ── what counts as an adverb ──────────────────────────────────────────────────
+# A word ending in "-ly" is not necessarily an adverb. "family", "supply", "tally" and
+# "rally" are nouns; "friendly", "unlovely" and "likely" are adjectives. Counting them
+# inflated one chapter from 4.1 to 7.4/1k and would have sent an editor hunting adverbs
+# that were not in the text.
+#
+# "only" is the big one: 48 uses across this manuscript, 30 of them "the only —", and not
+# one of them a manner adverb. The craft mistake this metric exists to catch is a manner
+# adverb propping up a weak verb ("said quietly" for a verb that should have carried it).
+# A focusing adverb that can never play that role is noise in the count, and at 48
+# occurrences it was the largest single term in it.
+#
+# ⚠️ Changing this list moves the AUTHOR's side of the comparison too. Re-derive
+# adverb_per1k from the author-drafted chapters whenever you edit it — a ceiling
+# calibrated against the old counter is not a ceiling against the new one.
+NOT_ADVERB = frozenset("""
+only early family tally supply rally ally belly bully folly gully lily jelly dolly
+reply apply comply imply multiply july assembly anomaly homily monopoly panoply
+friendly lovely unlovely lonely likely ugly silly holy oily curly surly burly
+wobbly crumbly deadly costly timely orderly elderly cowardly worldly homely manly
+womanly godly earthly ghastly grisly measly prickly sickly stately unruly wily
+wrinkly quarterly monthly weekly daily yearly nightly hourly bodily
+""".split())
 ADVERB = re.compile(r"\b\w+ly\b", re.I)
+
+
+def count_adverbs(text):
+    """-ly words that are actually adverbs. See NOT_ADVERB above."""
+    return sum(1 for w in ADVERB.findall(text) if w.lower() not in NOT_ADVERB)
 WORD = re.compile(r"[a-z']+", re.I)
 
 # Deliberate recurring motifs / canon terminology — NOT accidental reuse.
@@ -379,7 +407,7 @@ def scan():
         vague = len(re.findall(r"\b(?:somebody|someone|nobody|no one|anybody|anyone)\b", text, re.I))
 
         similes = len(SIMILE_MARKERS.findall(LIKE_VERB.sub(" ", text)))
-        adverbs = len(ADVERB.findall(text))
+        adverbs = count_adverbs(text)
         emdash = text.count("—")
 
         sim1k, adv1k, em1k = rate(similes), rate(adverbs), rate(emdash)
@@ -431,6 +459,8 @@ def scan():
         # the reader's work, every time.
         #
         # It is measured in NARRATION only — in dialogue "which" is ordinary speech.
+        nar_w = len(words(nar_text)) or 1
+        adv_nar1k = count_adverbs(nar_text) / nar_w * 1000
         which_gloss = len(re.findall(r",\s+which\b(?!\s+(?:of|one)\b)", nar_text, re.I))
         wg1k = which_gloss / (len(words(nar_text)) or 1) * 1000
         hi = _ceiling(n, "which_gloss_per1k", None)
@@ -455,7 +485,8 @@ def scan():
         breath = (f"      breath (narration): {len(nar)} sentences | median {median_s} | "
                   f">=40w {long_pct}% | <=6w {short_pct}% | dialogue lines {ndia} "
                   f"({round(ndia/len(nar), 2)}:1) | dialogue and {dia_and}/1k | "
-                  f"gloss {wg1k:.1f}/1k | question marks {q1k:.1f}/1k")
+                  f"gloss {wg1k:.1f}/1k | question marks {q1k:.1f}/1k | "
+                  f"adverb {adv_nar1k:.1f}/1k")
         if n in PUNCH_CHAPTERS:
             breath += "  [PUNCH — exempt]"
         else:
@@ -479,6 +510,22 @@ def scan():
             if hi is not None and long_pct > hi:
                 flags.append(f"BREATH narration >=40w {long_pct}% > {hi}% (voice-match CEILING "
                              f"— over-reaching the long mode)"); problems += 1
+
+            # ADVERB, narration register. The whole-text ceiling above cannot see this: it
+            # was 20.0, nothing ever approached it, so nobody looked — while the pipeline was
+            # running at a QUARTER of the author's density in both registers. Exposed only
+            # after NOT_ADVERB fixed what the counter was counting. Seventh instance in this
+            # file of a correct number compared against the wrong thing.
+            lo = _floor(n, "adverb_nar_per1k")
+            if lo is not None and adv_nar1k < lo:
+                flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k < {lo} (voice-match FLOOR "
+                             f"— 'avoid adverbs' is the most repeated writing advice there is, "
+                             f"and obeying it is itself a machine tell; this author does not)")
+                problems += 1
+            hi = _ceiling(n, "adverb_nar_per1k", None)
+            if hi is not None and adv_nar1k > hi:
+                flags.append(f"ADVERB narration {adv_nar1k:.1f}/1k > {hi} (voice-match CEILING "
+                             f"— over-corrected past the author)"); problems += 1
 
         # TYPOGRAPHY — two defects that no other check in this file can see, both found
         # only because a human looked at a diff.
@@ -551,7 +598,9 @@ def scan():
         print(f"      rhythm: and {and1k:.1f}/1k | comma {comma1k:.1f}/1k | somebody/nobody {vague1k:.1f}/1k")
         print(breath)
         if semi_note: print(semi_note)
-        if flags:    print("   CEILING:", "; ".join(flags))
+        # Not "CEILING:" — half these flags are FLOORS, and a label that contradicts the
+        # message is how a floor breach gets read as "too many" and sanded the wrong way.
+        if flags:    print("   VOICE-MATCH:", "; ".join(flags))
         if tic_hits: print("   TICS:   ", "; ".join(tic_hits))
         if fp_hits:  print("   FINGERPRINTS:", "; ".join(fp_hits)); problems += len(fp_hits)
 

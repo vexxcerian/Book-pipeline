@@ -450,6 +450,29 @@ becoming the default — it is the same mechanism that makes a strong character 
 one most likely to be violated (see `dialogue-polish.md` §the repeat-offence log). Rarity is
 a quantity. If you have not counted it, you are not maintaining it.
 
+## THE ADVICE THAT IS ITSELF THE TELL — adverbs
+
+**"Avoid adverbs" is the most repeated piece of writing advice in existence, which is
+exactly why obeying it reads as machine-made.** Every model has absorbed it a hundred
+thousand times. Follow it and you converge with every other model following it.
+
+Measured on a real benchmark: the author ran **10.8–15.6 adverbs per 1,000 words of
+narration** across five chapters, and 8.5–13.7 in his dialogue. Six pipeline chapters
+written to his voice came in at **0.6–8.4** — one chapter managed *one adverb in 1,779
+words of narration*. Nobody noticed for six chapters, because the gate was a ceiling of
+20.0 and nothing ever approached it.
+
+The adverbs that vanish are not the florid ones. They are the plain connective ones a
+spoken voice actually uses — *actually, entirely, exactly, finally, properly, honestly,
+plainly, barely, usually*. Strip those and the prose stops sounding like a man telling you
+something and starts sounding like prose. That is the whole loss.
+
+**So:** do not trim an adverb because it is an adverb. Trim it when it is propping up a verb
+that should have carried the weight itself (*"said quietly"* for a verb that could have been
+*murmured*). That is the actual craft mistake, and it is a much smaller category than the
+advice implies. If your chapter's narration is running under the author's floor, you have not
+been disciplined — you have been generic.
+
 ## THE MANDATORY UGLY SENTENCE
 
 Every chapter must contain ONE deliberately rough sentence. Not clever-rough. Not artfully-imperfect. Genuinely rough. A sentence that breaks the rhythm and sounds like a person, not a writer.

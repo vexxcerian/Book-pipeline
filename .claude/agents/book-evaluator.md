@@ -464,6 +464,28 @@ You are evaluating prose that THIS SYSTEM wrote. Your bias is maximum. To counte
     chapter at 7.5 because a denominator was small. Publish both numbers and let the
     orchestrator overrule you.
 
+## ⚖️ A CEILING NOBODY APPROACHES IS NOT A PASSING GRADE — it is an unasked question
+
+A threshold that has never fired is telling you nothing, and it looks identical to a
+threshold that is working. **When a metric sits far from its limit across every chapter,
+that is a prompt to measure the author, not evidence of health.**
+
+Worked example. A gate capped adverbs at 20.0/1k. Eleven chapters measured 2.1–14.7 and it
+never fired once, so nobody looked at it for six chapters. Two things were wrong underneath:
+
+1. **The counter was counting the wrong things.** It matched `\b\w+ly\b`, so *family*,
+   *supply*, *friendly*, *unlovely* and 48 instances of *only* were all "adverbs" — and
+   *only* was the single largest term in the metric while being a manner adverb in none of
+   its uses.
+2. **The real failure was in the opposite direction.** With the counter fixed, the author
+   measured 10.8–15.6/1k of narration and the pipeline 0.6–8.4. A *floor* was the gate that
+   was needed, and the ceiling's comfortable silence is what hid that for six chapters.
+
+**So when you see a metric idling far from its limit, ask the two questions:** does the
+counter count what its name says, and is the author on the same side of the number as the
+pipeline? A ceiling can only ever catch a pipeline that exceeds the author. Falling short of
+him is the failure that actually happens, and no ceiling can see it.
+
 ## ⚖️ BEFORE YOU PROPOSE A NUMERIC GATE — measure the benchmark first
 
 **Any time you recommend a threshold, you must first report that same metric for the
