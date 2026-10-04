@@ -846,7 +846,13 @@ corridor. One structure, held, for 4,000 words.
 6. The barometer. He mentions the pressure on the way out. Nobody cares. He says it anyway.
 7. Corridor coda: Vexx almost tells him. Gets three words into a sentence about his brother
    and stops. Jameson waits — genuinely, patiently, with nothing but concern on his face — and
-   then lets it go, because that is what a decent man does.
+   then lets it go. ⚠️ **This line previously ended "because that is what a decent man
+   does" — which is the brief's own named VOUCHING tell, sitting in the plan.** The prose
+   did not take the bait: Ch.10 ¶298 renders it entirely observably (*"He did none of the
+   small courteous things people do to let a man off… nothing on his own but the ordinary
+   concern of somebody who has noticed that the person in front of him is having
+   difficulty"*), which is why the audit reports Ch.10 clean on vouching. **Render the
+   behaviour; never certify the man. Do not reinstate the clause.**
 
 **Progressive structure:**
 - Builds on Ch.6's badly-told lie to Voss and Ch.9's archive access — the system has noticed,
@@ -1104,8 +1110,17 @@ mid-firefight, while the man who gave it stands ten metres away asking if you're
 manuscript — then a dead stop for the last 900, which are the slowest.
 **Writer warnings:** (a) **This is stage 3 and stage 3 only.** No new information reaches Rx
 or Vexx. He gets sound, image and a fragment of his own refusal — no name, no face, no place.
-**Do not reach stage 4.** (b) **No rampancy.** No timer, no fragmentation vocabulary, no "how
-long does he have." (c) Jameson must be *good* in this chapter. His concern for Vexx is real.
+**Do not reach stage 4.**
+⚠️ **(a2) PROXIMITY IS ALREADY SPENT — three times — and Ch.10 additionally spent his voice,
+close, at length, in the same room.** Jameson is physically present in Ch.10 and Rx produces
+**silence and nothing else**, which is the Ch.2 response with no escalation. That was correct
+and it is now canon: mere presence can no longer trigger anything, because the book has shown
+three times that it does not. **What remains novel for stage 3 is ONLY these three, and beat 2
+depends on all of them:** the **open channel**, the **live coordinating instruction**, and
+**being in contact.** A drafting pass that reads these warnings without this line could soften
+beat 2 back to "Jameson is present" and silently spend the book's one remaining unlock on a
+trigger that has already failed three times. (b) **No rampancy.** No timer, no fragmentation
+vocabulary, no "how long does he have." (c) Jameson must be *good* in this chapter. His concern for Vexx is real.
 (d) The collapse structure must be executed with restraint — one tense slip, one repetition,
 not a stylistic showcase. (e) Rx must never be narrated from inside, including during the
 collapse. Everything is what Vexx hears.

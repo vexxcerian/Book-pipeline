@@ -120,8 +120,18 @@ because the interface channel is private in every register.
   to Book Two and may not be reached here.
 - **The memory-unlock ladder is four stages, series-level. Stages 1 and 2 are already spent**
   in the drafted Ch.3 (the treeline flash) and Ch.4 ("the shape of a refusal"). Book One's one
-  remaining unlock beat is **stage 3** — proximity-triggered by Jameson present in person.
+  remaining unlock beat is **stage 3**, in **Ch.13**.
   Do not invent intermediate stages; do not reach stage 4.
+  ⚠️ **This entry used to read "proximity-triggered by Jameson present in person". That is now
+  WRONG, and the manuscript is what made it wrong.** Jameson is physically present in Ch.10, at
+  length, close, and **Rx produces silence and nothing else** — the Ch.2 response with no
+  escalation. That was the right call and it is now canon: **proximity is spent, three times
+  over, and Ch.10 additionally spent his voice, close, at length, in the same room.** Mere
+  presence can no longer trigger anything, because the book has three times shown that it does
+  not. **What remains novel for stage 3 is only the open channel, the live coordinating
+  instruction, and being in contact** — and `outline.md` §Chapter 13 beat 2 needs all three.
+  A session planning Ch.13 from the old sentence would spend the book's one remaining unlock
+  on a trigger that has already failed in front of the reader.
 - **Jameson is institutional, never cartoonish.** Warm, credible, genuinely persuasive. A scene
   where the reader can see he is the villain is a failed scene — his danger is that the reader
   likes him.
@@ -151,5 +161,14 @@ Full list in `STATE.yaml` under `open_author_decisions`. The ones that bite soon
   `research/`; series canon transcribed to `../SERIES-BIBLE.md`; `STATE.yaml` filled.
   Architect pass run — see `outline.md`, `foundation.md`, `voice-dna.md`, `character-bible.md`
   and `feedback/progress.md` for the current resume point.
-- **Nothing has passed the pipeline's gates yet.** `manuscript/chapters/` is still empty; the
-  author's five chapters live in `research/original-draft.md` and have not been promoted.
+- **2026-10-04** — `manuscript/chapters/` holds **Ch.1–11, 37,710 words of prose.** The
+  author's Ch.1–5 were reconstructed from his PDF (italics and scene breaks recovered from the
+  font layer) and promoted; Ch.6–11 are pipeline-written. **Ch.6–10 have passed the 8.5 Genesis
+  gate; Ch.11 is drafted and mid-polish** (dialogue pass running, then hook-craft, disruptor,
+  evaluation). Grammar, voice-wear and dialect gates are clean book-wide. The style gate carries
+  **three new voice-match limits** — a narration adverb floor, a narration `and` ceiling and a
+  flat-man ceiling — and six pipeline chapters are currently flagged against them; see
+  `feedback/progress.md` §"The mechanical fix list".
+  ⚠️ This block said *"Nothing has passed the pipeline's gates yet. `manuscript/chapters/` is
+  still empty"* for eleven chapters. **Update it when you finish a chapter, not when you
+  remember.**
