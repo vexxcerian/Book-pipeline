@@ -45,7 +45,7 @@ meta:
     RELATIVE ANCHORS ONLY. Series canon forbids pinning an absolute in-universe date to the
     page. Every temporal value in this file is expressed relative to Rx's death, Vexx's
     discharge, the gray room, or the previous chapter.
-  open_conflicts: 19   # CF-03/05/06 carried; CF-07..CF-11, CF-14 carried; CF-15..CF-24 added 2026-10-03; CF-01/02/04/12/13 resolved
+  open_conflicts: 18   # OPEN: CF-03, CF-05, CF-06, CF-08(partial), CF-09, CF-11, CF-14(partial), CF-15..CF-25. RESOLVED: CF-01, CF-02, CF-04, CF-07, CF-10, CF-12, CF-13
   knowledge_gaps: 5
   needs_review: 2   # characters.man-in-civilian-dress, characters.richard-jameson.does_not_know[0]
   draft_status_note: >-
@@ -2203,11 +2203,9 @@ planned:
     #                 prose is canonical. See CF-13.
     # merrick      -> PROMOTED to characters.merrick on 2026-09-09 (delivered ch-08).
     # corwins-daughter -> PROMOTED to characters.corwins-daughter on 2026-09-09 (delivered ch-06).
-    dessen:
-      canonical_name: "Dessen"
-      first_planned_appearance: "outline:ch-10"
-      function: "Internal Compliance officer auditing the cell's evidence handling on the Corwin matter. Not a villain; the procedural breach she is investigating is real and Vexx committed it"
-      source: "outline:ch-10; foundation"
+    # dessen     -> PROMOTED to characters.dessen on 2026-10-03 (delivered ch-10).
+    #               Now series canon; should move out of SERIES-BIBLE.md's "Introduced by the
+    #               Book One outline, not yet on the page" table into the cast/state tables.
     ives:
       canonical_name: "Ives"
       first_planned_appearance: "outline:ch-12"
@@ -2408,6 +2406,11 @@ conflicts:
       editing in the manuscript. The error is in the outline, and the outline contradicts itself
       in the same entry: its beat 5 says Paladin 'holds the line for the third time in FIVE
       missions', which is the correct arithmetic. Fix the outline's Premise line, not Ch.8.
+    status: >-
+      RESOLVED 2026-10-03 — outline:ch-08 Premise now reads "The cell's fifth deployment".
+      Verified in the file. No prose change was ever needed, and Ch.11 does not re-number
+      anything: Gaia's references are 'the relay hall', 'the jungle' and 'one of the jobs we've
+      run', all unnumbered. Verified clean.
   - id: "CF-08"
     severity: "structural"
     field: "timeline.chapter_6_placement"
@@ -2453,6 +2456,17 @@ conflicts:
     note: >-
       Both are pipeline text and both fix cheaply. Putting Vexx inside the stack repairs the
       POV and the arithmetic in one edit.
+    status: >-
+      RESOLVED 2026-10-03 — VERIFIED FIXED IN CH.8. 'Vexx came in through the near door' is
+      gone and Zeus now 'had come in behind them', so the four stacked are Vexx, Goliath,
+      Paladin and Aglaope with Gaia at the corner and Zeus outside, and the arithmetic closes.
+      'Merrick opened his mouth' is gone and the 'look at the door' clause is cut, so both
+      outside-the-door breaks are repaired. SEPARATELY, and NEWER than this conflict: Ch.9,
+      Ch.10 and Ch.11 were swept against the two POV rules added after the Ch.1-8 audit — no
+      narration knowing anything Vexx does not yet know (no flash-forwards: 'he would
+      understand later', 'he did not know it yet', 'it would be some time before') and no
+      narrator vouching — and ALL THREE ARE CLEAN. Ch.6 and Ch.8 are NOT: see
+      notes.pov_integrity_2026_10_03.
   - id: "CF-11"
     severity: "motif-budget"
     field: "characters.rx / characters.spector — one-device-per-character map"
@@ -2483,6 +2497,11 @@ conflicts:
         source: "ch-07:p50"
         flag: "UNRESOLVED"
     note: "Possibly deliberate — the chip is inert and unreadable. Recorded so it is not quietly lost before its payoff."
+    status: >-
+      RESOLVED 2026-10-03 — CLOSED BY CH.11. ch-11:p206 names all three fragments going into
+      the trauma pack: 'put the tag in underneath. Then the scorched fragment of plating, the
+      half-melted chip'. The inventory is whole and nothing is in two places. No prose change
+      needed.
   - id: "CF-13"
     severity: "minor"
     field: "characters.deric-holst.first_name"
@@ -2517,6 +2536,255 @@ conflicts:
       per-chapter gate. Ch.1 is locked, so the manuscript standard is US and Ch.6-8 convert.
       Recommend a repo-level orthography line in the book's CLAUDE.md and a check in the book's
       tools/style_check.py so Ch.9-26 cannot repeat it.
+    status_2026_10_03: >-
+      MOSTLY APPLIED AND STILL OPEN. The conversion ran and the DIALECT="us" gate was added to
+      tools/style_check.py. 30 of 34 forms are gone — 'grey' -> 'gray' and 'programme' ->
+      'program' both verified fixed in Ch.6. FOUR SURVIVORS, and all four survived because the
+      gate's own _UK_US map does not list them: 'kilometre' (ch-06:p96, against Ch.4's
+      'kilometer'), 'per cent' (ch-07:p52 — a TWO-WORD form the word-level scan cannot see),
+      and 'humour'/'humoured' (ch-08:p52, ch-08:p54). The gate reports CLEAN on all eleven
+      chapters, which is worse than it reporting a number. Add humour/humoured/humourless,
+      kilometre/kilometres and a two-token 'per cent' rule to _UK_US.
+      Separately, ch-11:p22 has Echo say 'I want it minuted' — a British institutional idiom
+      rather than a spelling, so not a dialect hit. Register choice, author's call.
+
+  # ------------------------------------------------------------------------------------------
+  # Opened 2026-10-03 by the Ch.1-11 audit. Full reasoning: evaluations/continuity/ch1-11-audit.md
+  # ------------------------------------------------------------------------------------------
+  - id: "CF-15"
+    severity: "structural"
+    field: "timeline.chapter_6 — internal self-contradiction left by the CF-08 repair"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "Ch.6 falls at jungle + ELEVEN weeks. Stated at ch-06:p96 ('He was in a jungle eleven weeks earlier') and ch-06:p216 ('eleven weeks ago, this man had known the word Valkyr'), and corroborated by ch-06:p24 ('eight weeks into a rehabilitation track' after a debrief at jungle + 3 weeks)."
+      source: "ch-06:p24 + ch-06:p96 + ch-06:p216"
+    conflict:
+      - value: "ch-06:p98, two paragraphs after p96 and about the SAME sentence of Corwin's: 'Nine weeks he had been on the other side of that sentence'."
+        source: "ch-06:p98"
+        flag: "UNRESOLVED"
+    note: >-
+      The CF-08 repair changed three 'nine weeks' and missed this one, because it is the only
+      instance where the words are not followed by 'earlier' or 'ago' and so did not match the
+      search. Pipeline chapter. Fix: 'Nine weeks' -> 'Eleven weeks'. Word-count-neutral,
+      em-dash-neutral; Ch.6 has headroom on every gated metric (em-dash 10.8/1k vs 12.0,
+      narration median 14.5 vs floor 14.0 and ceiling 18.0).
+  - id: "CF-16"
+    severity: "plot-load-bearing"
+    field: "timeline.chapter_10 — how long the material has been out of lock"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "About three and a half months. Ch.4 puts the release two days after a debrief at jungle + 3 weeks (so jungle + ~3.5 weeks); Ch.10 falls a fortnight after Ch.8, which sits seven weeks after Ch.5's corridor — jungle + ~19 weeks."
+      source: "ch-04:p03 + ch-04:p21 + ch-08:p176 + ch-10:p08"
+    conflict:
+      - value: "Dessen: 'the answer is a kitchen table, in a residence, under a lamp, alone, for the better part of a year.'"
+        source: "ch-10:p134"
+        flag: "UNRESOLVED"
+      - value: "Jameson: 'You can find him for a property return that's overdue since the summer — you should, because it is.'"
+        source: "ch-10:p224"
+        flag: "UNRESOLVED"
+    note: >-
+      Both lines sit inside the chapter's two best speeches, and both overstate the span by
+      roughly three times. Pipeline chapter, propose freely. 'for the better part of a year' ->
+      'since the autumn'; 'overdue since the summer' -> 'overdue since the autumn'. Month and
+      season names are compliant with the no-calendar-date guardrail (the W-12 ruling); a YEAR
+      would not be. Word-count-neutral; no em-dash movement; Ch.10 has headroom everywhere
+      (em-dash 10.5/1k, narration median 17).
+  - id: "CF-17"
+    severity: "minor"
+    field: "timeline.chapter_10 — the gap between the board's disposition and Vexx's signature"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "Two days. Ch.4's debrief delivers the board's ruling, and Vexx requests the fragments back from evidence lock 'two days later'."
+      source: "ch-04:p05 + ch-04:p21"
+    conflict:
+      - value: "Jameson: 'Three weeks before he signed anything... The chain of custody you're describing was ended in writing by a review board on a Tuesday afternoon.'"
+        source: "ch-10:p224"
+        flag: "UNRESOLVED"
+    note: >-
+      Pipeline chapter. 'Two days before he signed anything' is both correct and the better
+      line — it makes the board's haste the point instead of a span. Word-count-neutral.
+  - id: "CF-18"
+    severity: "minor"
+    field: "characters.vexxcerian / characters.richard-jameson — elapsed acquaintance"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "About seven months. Ch.2 puts their first meeting 'three weeks into his own re-entry'; the roster then takes ~9 weeks; Ch.3 is the first deployment; Ch.10 is jungle + ~19 weeks."
+      source: "ch-02:p05 + ch-02:p39 + ch-08:p176 + ch-10:p08"
+    conflict:
+      - value: "'and something went across his face Vexx had not seen on it in two years.'"
+        source: "ch-10:p168"
+        flag: "UNRESOLVED"
+    note: >-
+      Pipeline chapter. This is NOT the same claim as ch-02:p225's 'He would spend the better
+      part of two years finding out how much of that hope had been earned' — that is the
+      retrospective narrator's vantage over the whole arc and is correct. Ch.10's is a direct
+      statement about how long Vexx has been looking at Jameson's face. Suggested: 'Vexx had
+      not seen on it before', or 'in the seven months he had known him'.
+  - id: "CF-19"
+    severity: "plot-load-bearing"
+    field: "objects.the-trauma-pack / objects.the-property-return-notice — Ch.11's coda"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "All three fragments are in the drawer beside Vexx's bed, in an apartment half a mile EAST of the operations block (ch-10:p82, ch-10:p256). Ch.11's coda puts them into a trauma pack in the bottom of his LOCKER, in a room with a bed and a locker, a short walk from a supply cage — i.e. on the station."
+      source: "ch-10:p256 + ch-11:p206"
+    conflict:
+      - value: "The move between the two buildings is never narrated, and the coda reads as though the objects were already to hand ('he had chosen the pack before he had crossed the room')."
+        source: "ch-11:p206"
+        flag: "UNRESOLVED"
+      - value: "The pack is 'sealed, dated', and the prepared cover story is that he 'had used the pack on the Kettle job, drawn a new one at the cage' — but what is in the locker is the SAME pack with a fresh tab, and a date stamp contradicts a new-pack story on inspection. The chapter's last beat depends on the lie sounding like the truth."
+        source: "ch-11:p206, ch-11:p212"
+        flag: "UNRESOLVED"
+      - value: "Ch.10 ends with a property return notice due 'inside a fortnight' and Vexx answering 'I will'. Ch.11 falls an unstated interval later and has him concealing exactly that property. Whether the notice has arrived changes the act from pre-emption to active breach, and the prose does not say."
+        source: "ch-10:p232 + ch-11"
+        flag: "UNRESOLVED"
+    note: >-
+      Pipeline chapter, PRE-POLISH — the cheapest place in the book to fix all three.
+      MECHANICAL CONSTRAINT: Ch.11's narration median sits at exactly 18.0 against a ceiling of
+      18.0, and its em-dash density at 11.5/1k leaves about one em-dash of headroom against
+      12.0. So add SHORT sentences and NO em-dashes. A short addition moves the median DOWN,
+      which is safe (floor 14.0, current 18.0). Cheapest third fix: change the cover story to
+      something the pack can support — 'that he had broken the seal on the Kettle job and
+      re-tabbed it at the cage' — which is word-neutral and true.
+  - id: "CF-20"
+    severity: "structural"
+    field: "characters.hallam — one name, two people"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "Hallam is the DROPSHIP CREW CHIEF on the insertion run, named twice in Ch.8, and the name is load-bearing there — Gaia thanks him by name 'to a man Vexx had not known had a name', then says it again to a different crew, to nobody who could hear her."
+      source: "ch-08:p78 + ch-08:p378"
+    conflict:
+      - value: "ch-09:p32-p36 makes Hallam the home station's day-shift COOK. Zeus asks 'Do you know the cook's name', Vexx answers 'Hallam', and Zeus CONFIRMS it — 'Hallam's the day shift. The one who does the night urn is a Mr. Beattie' — so the exchange is not framed as Vexx getting the name wrong."
+        source: "ch-09:p36"
+        flag: "UNRESOLVED"
+    note: >-
+      Both chapters are pipeline-written; Ch.8 is earlier and the name does more work there, so
+      Ch.9 should rename its day-shift cook. One word, twice, in Ch.9, and the beat survives
+      unchanged — the point is that Vexx does not know the name of the man who makes his coffee.
+      ALTERNATIVE, if the collision is wanted: have Zeus correct the name instead of confirming
+      it ('Hallam flies. The cook's a Mr. Beattie'), which is sharper and costs two words.
+      Neither Hallam nor Beattie is in the SERIES-BIBLE naming registry; add both.
+      Note also that the Hallam entry here says 'Do not spend a third' and a third was spent.
+  - id: "CF-21"
+    severity: "canon-mechanism"
+    field: "character-bible one-device map — Ch.11 device bleed (PRE-POLISH), and the Ch.9 'Christmas' wobble"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "ZEUS owns the two-beat corrective reframe ('That's not X. That's Y'), and the character bible's logged-bleed note says no NEW character may be given this shape. VEXX owns 'correcting the terms of a question instead of answering it', capped at 5 with 2 spent in the author's chapters. GAIA owns 'fact -> ask -> clock, with your call as a weapon'."
+      source: "character-bible §TIC BUDGET, one-device map and logged-bleed note"
+    conflict:
+      - value: "ch-11:p06, the chapter's FIRST LINE, gives Gaia Zeus's reframe twice in two sentences: '—it isn't a door now, it's a hole... A door does something. That's a hole with a hinge on it.'"
+        source: "ch-11:p06"
+        flag: "UNRESOLVED"
+      - value: "ch-11:p20 gives Gaia Vexx's term-correction — 'I don't need to hear the stair. I hear the stair.' — and again at ch-11:p90-p94: 'I've got the door shut.' / 'That's what you asked for.' / 'It's what I said.'"
+        source: "ch-11:p20, ch-11:p94"
+        flag: "UNRESOLVED"
+      - value: "ch-09:p14: 'that instrument will still be out of tune at Christmas'. The book's own clock puts Ch.9 in February, which makes the joke reach eleven months forward instead of a few weeks; and Christmas is the nearest the manuscript comes to pinning a calendar."
+        source: "ch-09:p14"
+        flag: "UNRESOLVED"
+    note: >-
+      Ch.11 has NOT had its dialogue pass. The first two are precisely what dialogue-polish's
+      Device Bleed Scan exists to catch, and should be caught there rather than here. Gaia's own
+      device DOES land in the chapter ('What you do with the rest of it is your call'), so she
+      is not under-served — she is over-served with other people's.
+      The Christmas line is a one-word fix ('at the changeover', 'in the spring').
+      WATCH, not a finding: ch-11:p196 'One laugh. Never two. I was in there five months' is the
+      fourth consecutive chapter in which the spoken N-construction lands on somebody who is not
+      Spector (§STANDING OFFENCE #3: Ch.8 Gaia, Ch.9 Zeus, Ch.10 Jameson, Ch.11 Gaia).
+  - id: "CF-22"
+    severity: "minor"
+    field: "locations.home-station-operations-block — one fire door or two"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "Ch.10 plants a fire door at the north end of the operations block, where the summer's new floor covering stops a couple of paces short of it, 'leaving a lip you could catch a boot on' — named twice, in the chapter's first scene-setting paragraph and in its last sentence."
+      source: "ch-10:p08 + ch-10:p322"
+    conflict:
+      - value: "Ch.11's entire chapter is about a propped fire door and never says whether it is that one. Ch.11's door has a stair at one end and the mess down the other; Ch.10's has an elevator at the far end."
+        source: "ch-11:p06-p128"
+        flag: "UNRESOLVED"
+    note: >-
+      Almost certainly deliberate — 'a lip you could catch a boot on' in Ch.10 and a BOOT in the
+      gap in Ch.11 is too good to be accidental, and the Ch.10 line is the last image in the
+      chapter. But the payoff is invisible if the reader cannot place the door, and Gaia's
+      acoustic geography does not obviously match Ch.10's. Either Ch.11 confirms it in three
+      words (watch the median-18.0 ceiling — put them inside an existing SHORT sentence) or the
+      outline records them as two different doors so no later pass joins them by accident.
+  - id: "CF-23"
+    severity: "canon-mechanism"
+    field: "characters.rx / characters.gaia / objects.merricks-notebook — three unsourced or unmarked beats"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "Information flow is this book's central mechanic. Every fact a character acts on must have a route, and every silence that means something must be marked on the page."
+      source: "valkyr-book-1/CLAUDE.md; series-bible"
+    conflict:
+      - value: "GAIA states as fact that Vexx 'pulled our files again after the jungle. All of us. Nobody asked you to, nobody told you to, you did it on your own time' — and he does not deny it. The file-pull is not on the page in any chapter, and the prose never says how she knows. Plausible (she is recon and suspicious by trade) but unsourced."
+        source: "ch-11:p154"
+        flag: "UNRESOLVED"
+      - value: "RX is in Vexx's ear when Goliath says 'Your Rx runs hot' and says nothing, in Ch.8 or in any chapter since, and the narration does not register the non-reaction. The Ch.6, Ch.10 and Ch.11 silences are each marked on the page; this one is not."
+        source: "ch-08:p422"
+        flag: "UNRESOLVED"
+      - value: "MERRICK'S NOTEBOOK goes inside Vexx's jacket at ch-09:p128 and is still there, unreturned and unlogged, when Internal Compliance finds against him in the very next chapter for taking assessment material out of a locked room. No chapter notices."
+        source: "ch-09:p128 + ch-10:p32"
+        flag: "UNRESOLVED"
+    note: >-
+      The third of these is the most valuable: a free, already-paid-for irony sitting one clause
+      away. The second is a one-clause fix in Ch.9 or Ch.10 (Vexx registers that Rx has never
+      once mentioned it). The first can be left as plausible-but-unverified or closed with one
+      line of Gaia's; the Ch.1-8 audit's rule 8 applies — a plausible transmission with a gap
+      is a WARNING, not a BREAK.
+  - id: "CF-24"
+    severity: "structural"
+    field: "orphaned threads at the end of Ch.11"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "outline.md runs to Ch.26 and every deliberate long-arc plant should have a scheduled consumer named in it."
+      source: "outline.md"
+    conflict:
+      - value: "CORWIN'S LETTERS (O-02, opened by the Ch.1-8 audit) — 'I'll ask' at ch-06:p178, untouched in Ch.7-11, and a grep of outline.md for 'letter' returns NO scheduled chapter at all. foundation.md and character-bible.md both require the ask to be never granted, which only works dramatically if the failure is dramatised at least once more."
+        source: "ch-06:p178 + outline.md"
+        flag: "UNRESOLVED"
+      - value: "THE ARCHIVE SUBSCRIPTION (O-04) — ch-07:p134 plants 'that archive runs on a subscription that lapses at the end of the month, which is a thing I've decided to tell you now rather than at the end of the month'. By the book's own clock the month has now ended. Ch.9 returns to an archive terminal and does not mention it. No outline consumer. Either fire it or cut the clause."
+        source: "ch-07:p134"
+        flag: "UNRESOLVED"
+      - value: "THE THIRD WORD (O-03) — Goliath's live offer at ch-08:p440 is still on the table and unanswered; no outline chapter claims it."
+        source: "ch-08:p440"
+        flag: "UNRESOLVED"
+      - value: "THE ANNEX BADGE LOG — planted at ch-09:p134 with a Monday deadline. outline:ch-10 claims Ch.10 'builds on Ch.9's archive access' and Ch.10's prose never references the annex, the badge or the 104 minutes."
+        source: "ch-09:p134 + outline:ch-10"
+        flag: "UNRESOLVED"
+      - value: "DESSEN'S TRANSFER — planted at ch-10:p264-p272; a board that sits twice a year and has twice told her her experience is very valuable where it is. No outline consumer."
+        source: "ch-10:p268"
+        flag: "UNRESOLVED"
+      - value: "'TELL PALADIN ABOUT THE PEG' — Aglaope asks Vexx to do one small kind thing at ch-09:p240 and he has not done it two chapters later, exactly as he has not asked about Corwin's letters. Almost certainly a deliberate pattern; it is not registered anywhere as one."
+        source: "ch-09:p240"
+        flag: "UNRESOLVED"
+      - value: "REQUIEM AND HOLLOW have not spoken since Ch.2 — NINE chapters. Hollow's device is 'withholding until useful', so his silence is arguable; Requiem belongs to Aglaope, who carries two whole scenes (Ch.5, Ch.9) with her AI mute."
+        source: "ch-02:p209 + ch-02:p221"
+        flag: "UNRESOLVED"
+      - value: "PALADIN'S RIGHT HAND (O-05) — introduced by Bastion in Ch.8, never referenced again as an injury. Ch.9 is adjacent but makes his hand trouble about a slack tuning peg, which is a different thing."
+        source: "ch-08:p36 + ch-09:p240"
+        flag: "UNRESOLVED"
+    note: >-
+      None of these is a contradiction. All are decisions cheaper to make now than at Ch.20, and
+      two of them (the subscription and the badge log) are CLOCKS, which rot rather than simply
+      sitting. CLOSED BY CH.9 and removed from this list: O-01, Merrick's notebook — see
+      objects.merricks-notebook.resolution.
+  - id: "CF-25"
+    severity: "minor"
+    field: "characters.aglaope.knowledge — 'Have you told anybody but him' / 'No'"
+    opened: "2026-10-03"
+    canonical_value:
+      value: "Vexx told Aglaope his suspicion out loud, naming Jameson, in Ch.5 — the author's own prose, and explicitly 'the first time he'd said any version of it out loud to another living person'."
+      source: "ch-05:p22-p26"
+    conflict:
+      - value: "ch-09:p228-p230: 'Have you told anybody but him,' she said. / 'No.' Read as a general question with 'him' = Rx, the honest answer is 'You', because she is the person he told. The following paragraph makes clear the question is really about the NEW evidence, which he has told nobody — so the exchange is defensible, and ambiguous."
+        source: "ch-09:p228"
+        flag: "UNRESOLVED"
+    note: >-
+      Pipeline chapter; a two-word fix settles it in her favour. NOTE FOR BRIEF-WRITERS: the
+      premise that Ch.11 is the first time Vexx tells another human being anything is FALSE.
+      Ch.5 is, it is the author's prose, and it is MORE than Gaia gets in Ch.11. Ch.11's actual
+      first is narrower and better: the first time he hands anyone an operational claim about a
+      mission the cell ran.
 
 # ============================================================================================
 # OBSERVATIONS FOR DOWNSTREAM SKILLS — mechanical, not evaluative.
@@ -2553,6 +2821,37 @@ notes:
     - { detail: "The jungle world, the settlement, the industrial complex, the facility, Goliath's homeworld and Rx's death site are all unnamed in the drafted material", source: "ch-03:p07" }
     - { detail: "Corwin's own AI is never named and its chassis is never restored", source: "ch-03:p26" }
     - { detail: "The cell itself has no name on the page", source: "ch-02:p72" }
+  pov_integrity_2026_10_03:
+    swept: "Ch.9, Ch.10 and Ch.11, against the two POV rules that postdate the Ch.1-8 audit."
+    rule_a: "No narration anywhere may know something Vexx does not yet know. Tells: 'he would understand later', 'he did not know it yet', 'it would be some time before'."
+    rule_b: "The narrator does not vouch. Test: if a sentence would survive being spoken aloud by an advocate, it is vouching."
+    result_ch9_11: >-
+      CLEAN ON BOTH, all three chapters. Zero flash-forwards: every 'would' in Ch.9-11 is
+      conditional, habitual-past, or Vexx's own projection. Zero narrator vouching: the two
+      candidates are ch-09:p128 ('because it was true, and no arrangement of the sentence made
+      it less true' — Vexx certifying his OWN thanks, which close third permits) and ch-10:p256
+      ('where it would still be tonight' — Vexx's own knowledge of where he left it). Ch.10 was
+      measured as deliberately carrying zero flash-forwards because they would break its gate
+      condition, and that measurement is confirmed.
+    result_ch6_ch8: >-
+      NOT CLEAN ON RULE B. Both predate the rule and both should be swept. Ch.6: 'she meant it
+      both times' (ch-06:p32 — the brief's own named example, on the page), 'She was not lying'
+      (ch-06:p170), 'It was a real one. There was nothing broken anywhere in it' (ch-06:p74),
+      'There was nothing underneath it' (ch-06:p70). Ch.8: 'he told it well... and it was a
+      real one' (ch-08:p244, narrated from OUTSIDE a closed door), 'The medical crew were
+      decent about it' (ch-08:p368). Ch.6's four are the real ones; Ch.8's two are borderline
+      because Vexx is present and the judgement can be read as his.
+    rule_a_and_the_author: >-
+      THE RULE AS WRITTEN CANNOT APPLY TO CH.1-5 AND SHOULD SAY SO. Locked Ch.1 is wholly
+      retrospective and turns on this construction ('The memory was there, Vexx would learn
+      much later'; 'a sound Vexx would come to associate, for the rest of his life'; 'something
+      that would take years, and a man named Richard Jameson... to finally surface'). Ch.2 has
+      three more, one of them the chapter's hinge ('He had no way of knowing, sitting in that
+      chair, that the man across the table had watched his brother die at close range and
+      personally written the report that buried it'). These are the author's deliberate
+      retrospective frame, not defects. Scope the rule to the DRAMATISED-PRESENT chapters
+      (Ch.6-26) in valkyr-book-1/CLAUDE.md and in voice-dna.md, or a future pass will try to
+      'fix' locked prose.
   soft_flags:
     - { detail: "ch-05:p26 has Vexx telling Aglaope 'A dog tag that isn't in any record', while ch-05:p32 says he 'didn't mention the dog tag by name'. Reconcilable if 'by name' means the name stamped on it, which the prose has not revealed yet.", source: "ch-05:p32" }
     - { detail: "The cell's SECOND deployment is referenced by implication (ch-04:p16 calls the Reyes mission 'the cell's third deployment') and never depicted.", source: "ch-04:p16" }
