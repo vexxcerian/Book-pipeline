@@ -1,9 +1,9 @@
 # Chapter Eleven
 
 <!-- SCENE BUDGET (Target 2,200): door/acoustics opening 500 | Echo + the boot 350 | the regulation, four exchanges too long 450 | he shuts it, the laugh 250 | the turn + mind-reading 400 | the smallest true thing + "that was your one" + exit 350 | coda 200 -->
-<!-- Word count: 2,214 | Target: 2,200 | Anchor: a fire door, a boot in his hand, and the word "dead" said like a compliment -->
+<!-- Word count: 2,170 | Revision: 1 (dialogue pass — device-bleed recasts off Gaia: Zeus's reframe ×2, Vexx's capped term-correction ×3, Spector's spoken count ×1; dialogue-only, narration block byte-identical) | Target: 2,200 | Anchor: a fire door, a boot in his hand, and the word "dead" said like a compliment -->
 
-“—it isn’t a door now, it’s a hole,” Gaia said. “A door does something. That’s a hole with a hinge on it.”
+“—it’s a hole with a hinge on it,” Gaia said. “A door does something. This one stands open and I lose the stair.”
 
 “It’s propped.”
 
@@ -17,7 +17,7 @@ He stood where she put him — listened, with his head still, the way she meant 
 
 “And you need to hear the stair.”
 
-“I don’t need to hear the stair. I hear the stair.” She said it flatly, without any interest in whether it landed. “I’ve been hearing that stair since we moved in. The closer on it is slack, so it lands twice, and Goliath drags his heel on the sill, so I know it’s him coming. That’s a room I know. This isn’t a room now. It sounds like weather.”
+“I hear it whether I’m listening or not.” She said it flatly, without any interest in whether it landed. “I’ve been hearing that stair since we moved in. The closer on it is slack, so it lands twice, and Goliath drags his heel on the sill, so I know it’s him coming. That’s a room I know. This isn’t a room now. It sounds like weather.”
 
 *Is this the Gullet?* Echo said, arriving on the net mid-thought, as he arrived everywhere. *Because if this is about the Gullet, I want it minuted that I have had opinions about the Gullet since the morning we walked in, that I have never been asked for them, that I have sat on them like eggs—*
 
@@ -59,7 +59,7 @@ Goliath came down the stair with a cup in one hand. He saw the two of them, saw 
 
 “I know what everybody in this corridor has been asked for a week.” He drank some of what was in the cup and pulled a face at it that had nothing to do with either of them, or with the door, and was entirely about the cup. “Not mine.”
 
-“I’m not asking you to own it,” Gaia said. “We’re asking whether you’ve seen a man put it there.”
+“You don’t have to own it,” Gaia said. “Have you seen a man put it there.”
 
 “I’ve seen the door open. I’ve seen the boot in it.” He thought about it properly, standing there, because he did not answer questions any other way. “Whoever’s doing it isn’t doing it for air. You want air, you use a chair, or you wedge the top of it and it goes unnoticed for a month. A boot at the bottom is what you use when you want to come through it fast and not stop.”
 
@@ -91,7 +91,7 @@ Neither of them had anything to say to that, and Goliath did not appear to have 
 
 “That’s what you asked for.”
 
-“It’s what I said.” She stopped there. Then, in a different voice altogether, reasonable, which with her meant she had decided to try being reasonable at him: “Say it’s a bad door.”
+“And nothing else.” She stopped there. Then, in a different voice altogether, reasonable, which with her meant she had decided to try being reasonable at him: “Say it’s a bad door.”
 
 “I’m not—”
 
@@ -149,7 +149,7 @@ It ran out. He was still holding the boot, and he kept on holding it.
 
 He did not answer that, because there was no version of the answer that was not yes.
 
-“I had things ready to say to you on the ramp. I said none of them, I’ve been carrying them around ever since, which is how I know it wasn’t about the wall.” She stood square to him now. “Here’s what I think. You’ve had something since before the jungle. You decided not to bring it to us — you didn’t decide it once, you’ve decided it every week since, which is the harder way to do it, and you do it anyway. It isn’t that you think we’d sell you. It’s that you want us able to stand in front of a woman with a notebook, say we didn’t know, be telling the truth when we say it. You worked out what each of us would cost you. In your head, in order. I’d put money on where I came.”
+“I had things ready to say to you on the ramp. I said none of them, I’ve been carrying them around ever since, which is how I know it wasn’t about the wall.” She stood square to him now. “Here’s what I think. You’ve had something since before the jungle. You decided not to bring it to us — you didn’t decide it once, you’ve decided it every week since, which is the harder way to do it, and you do it anyway. You don’t think we’d sell you. You want us able to stand in front of a woman with a notebook, say we didn’t know, be telling the truth when we say it. You worked out what each of us would cost you. In your head, in order. I’d put money on where I came.”
 
 “You pulled our files again after the jungle,” she said. “All of us. Nobody asked you to, nobody told you to, you did it on your own time — and the only reason to do that is to find out which of us goes to command first.”
 
@@ -193,7 +193,7 @@ He waited.
 
 She was nearly at the stair when she stopped.
 
-“When I was nineteen I was in transient housing where the walls were nothing,” she said. “There was a man through mine who laughed once a night, about eleven. One laugh. Never two. I was in there five months.”
+“When I was nineteen I was in transient housing where the walls were nothing,” she said. “There was a man through mine who laughed once a night, about eleven. Then nothing off him until the next night. I was in there five months.”
 
 Vexx waited for the rest of it.
 
