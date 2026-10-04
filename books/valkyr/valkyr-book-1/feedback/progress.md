@@ -4,7 +4,7 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Ch.1–10 in the manuscript, 35,593 words of prose. Ch.6 through Ch.10 have ALL PASSED the
+**Ch.1–11 in the manuscript, 37,710 words of prose. Ch.6 through Ch.10 have ALL PASSED the
 8.5 gate** — five consecutive pipeline chapters. All three mechanical gates clean on all ten.
 
 Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
@@ -21,9 +21,9 @@ pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 | `voice-dna.md` | ✅ voice reverse-engineered from the author's own prose; device-bleed watch-list corrected from what actually happened |
 | `character-bible.md` | ✅ 22+ entries, §TIC BUDGET, §THE ONE CARVE-OUT (the counting device) |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–10, **35,593 words**, italics + 23 scene breaks restored from the PDF |
+| `manuscript/chapters/` | ✅ Ch.1–11, **37,710 words**, italics + 23 scene breaks restored from the PDF |
 | style / grammar / voice-wear | ✅ clean on all nine, calibrated to the author's measured voice |
-| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–10 |
+| `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–11 (Ch.11 was missing until 2026-10-03; voice_wear_check scored it as a separate POV called UNKNOWN and compared it against nothing) |
 | `ENTITY_STATE.yaml` | ✅ audited Ch.1–8; 9 characters, 4 locations, 8 objects added; CF-04 and CF-13 closed |
 | Genesis scores | Ch.1 **8.5** (prose 9.0, locked) · Ch.6/7/8 **8.5 / 8.79** · Ch.9 **8.5 / 8.71** · Ch.10 **8.5 / 8.64 PASS** · Ch.2–5 stale |
 | `evaluations/` | ✅ per-chapter evals, pass reports, `continuity/ch1-8-audit.md` |
@@ -245,6 +245,7 @@ Chapters 2–5 all drifted onto one closing figure because nothing was tracking 
 | 8 | the narrator re-reads a document **while writing its fourth instance himself** |
 | 9 | the POV character **involuntarily begins executing the method he refused**, stops partway, and does something ordinary and courteous on top of it |
 | 10 | an unremarked act of **preparation for the antagonist** — memorising something to have it ready for him next time |
+| 11 | ⚠️ **PENDING hook-craft.** As drafted it is *Vexx says a prepared sentence out loud into a space that is not listening* — which **collides with Ch.6's** *"a misdirected answer to a stranger"*: both share the verb, the adverb (*out loud*), the mechanism and the function, five chapters apart. `hook-craft` is to land the eleventh distinct shape — **the room answering** — which the coda already contains. |
 
 Ch.7 and Ch.8 both ended on a document — two running was the limit, and Ch.9 cleared it with
 no paper on the last page, as the outline required.
@@ -259,6 +260,12 @@ no paper on the last page, as the outline required.
 | 8 | mid-transit, mid-argument, no scene-setting |
 | 9 | a line of dialogue with no attribution and no setting, three words in |
 | 10 | **the meeting time** — a summons, flat, no explanation |
+| 11 | ⚠️ **PENDING hook-craft.** As drafted it **collides with Ch.8's** on six counts at once: em-dash-initial dialogue fragment · mid-argument · attributed to a cell member · about mundane station infrastructure · *"it isn't X"* in the second clause · opening cold. Ch.8's inventory entry (*"mid-transit, mid-argument, no scene-setting"*) describes Ch.11 exactly. `hook-craft` is to keep the cold mid-argument start but enter on **Gaia's position** — she is the only character in the book whose body is a device — which also drops the leading em-dash and buys the chapter its one unit of em-dash headroom. |
+
+⚠️ **Both tables stopped at Ch.10 until 2026-10-03, and that omission is the whole reason the
+two Ch.11 collisions above happened.** The inventories only work if a chapter is entered the
+moment it is drafted — entering Ch.11 is what made both collisions visible, and neither fires
+any mechanical gate. **Enter Ch.12 the day it is written, before its polish loop.**
 
 ## The 2026-10-03 pass — the adverb floor, and the promise Ch.11 does not remember
 
@@ -297,34 +304,42 @@ Two smaller gate defects fixed alongside: flags printed under the label `CEILING
 they were floors, and `feedback/pov-map.txt` was missing `chapter-11`, so `voice_wear_check`
 scored it as a separate POV called UNKNOWN and compared it against nothing.
 
-### Ch.11 answers "You told me I'd be first" without remembering Aglaope
+### Ch.11 and the Ch.5 promise — EXAMINED AND CLOSED, no prose change
 
-Traced across three chapters:
+I raised this as a defect and it is not one. Recording it in full because the reasoning is
+the useful part, and because a later pass that re-notices the same thing should not "fix" it.
+
+The trace across three chapters:
 
 - **Ch.5**, corridor, to Gaia: *"When I do, you'll be the first to hear it."*
-- **Ch.5**, two nights later: he tells **Aglaope** — the dog tag, the refusal, and Jameson
-  named out loud.
+- **Ch.5**, two nights later: he tells **Aglaope** — the dog tag, the refusal, Jameson named.
 - **Ch.9**, the mess, Aglaope: *"Have you told anybody but him," she said.* — *"No."*
-  (So the thread is **not** orphaned. Ch.9 handles it, and phrases the question exactly as
-  the woman who already knows would phrase it.)
 - **Ch.11**: *"You told me I'd be first," she said.* — *"I did."*
 
-No factual contradiction: Ch.11 is the first time he tells anyone *new* since Ch.5. The
-defect is a **POV omission at the moment the narration is deepest in his head.** Ch.11 goes
-through his whole calculus — *"You worked out what each of us would cost you. In your head,
-in order."* — and never touches the two things that would be loudest in it: that the promise
-to Gaia was already broken two nights after he made it, and that Gaia's deniability theory
+**My claim** was that Ch.11's narration goes through Vexx's whole calculus and never registers
+either that the promise to Gaia was already broken, or that Gaia's deniability theory
 (*"you want us able to stand in front of a woman with a notebook, say we didn't know"*) is
-**already false for one of the cell.** Aglaope could not truthfully say she didn't know.
+already false for one of the cell.
 
-That second point sharpens the chapter's declared 70/30: the narration currently locates
-the 30% she has wrong in *the reason* (Rx, not command exposure). It can carry the Aglaope
-fact as well, unsaid, and it is stronger for being one more thing he does not hand over.
+**Why it is wrong.** The promise was about bringing the suspicion *to the cell* with something
+behind it; Ch.5 frames the Aglaope scene as a confession, not a briefing, and Ch.9's
+*"Have you told anybody but him"* shows the book treating her as already inside rather than as
+a disclosure event. And the deniability theory survives intact: Aglaope holds **an outline and
+no evidence**, so she could sit in front of Dessen and truthfully say she did not know what.
+There is nothing for Vexx to be withholding at that moment, so there is nothing for the
+narration to register.
 
-**Fix belongs in Ch.11** (pipeline-written). The constraints are tight and, usefully,
-complementary — it must **raise** narration adverb density (8.36 against a 10.5 floor) while
-**not raising** narration median (sits at exactly 18.0 on an 18.0 ceiling) or em-dashes
-(11.5 against 12.0). Short adverb-bearing narration sentences do all three at once.
+**Two things worth keeping from it.** First, the brief I wrote for the audit asserted that
+*"Ch.11 is the first time Vexx tells another human being anything"* — **that is false, and the
+chapter that disproves it is the author's own**: Ch.5 ¶65 is explicitly *"the first time he'd
+said any version of it out loud to another living person."* Ch.11's actual first is narrower
+and better: **the first time he hands anyone an operational claim about a mission the cell
+ran.** Ch.5 is a theory about his brother; Ch.11 is an allegation about shared work. Keep the
+two straight in every future brief, and **do not let a later pass "move" the first disclosure
+into Ch.11 to make the looser claim true.**
+
+Second, *"You told me I'd be first." / "I did."* is pipeline prose reaching correctly back into
+the author's, five chapters later, and cashing a promise he made. Leave it alone.
 
 ### The mechanical fix list, 2026-10-03 — and the trap in each one
 
