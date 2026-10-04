@@ -31,7 +31,7 @@ is load-bearing for the premise as written.** See Open series-level questions.
 
 | # (pub order) | Folder | Title | Status |
 |---|---|---|---|
-| 1 | `valkyr-book-1/` | Valkyr: Book One (working title) | In progress — 5 chapters drafted, architect pass done |
+| 1 | `valkyr-book-1/` | Valkyr: Book One (working title) | In progress — **11 chapters drafted, 37,710 words**; Ch.6–10 through the 8.5 gate, Ch.11 pre-polish |
 | 2 | — | Book Two (untitled) | Planned — outlined only in this bible |
 
 - **Publication order:** Book One → Book Two. A two-book arc as currently conceived.
@@ -131,6 +131,15 @@ is load-bearing for the premise as written.** See Open series-level questions.
    Surfaces as a glitch Vexx notices and Rx deflects.
 3. **Third leak** — triggered specifically by Jameson's presence/voice. Proximity to Jameson
    becomes narratively dangerous for Rx.
+   > **Book One narrowing (2026-10-04) — the locked wording above is unchanged; this records
+   > what the drafted manuscript has established under it.** *Mere presence is not sufficient,
+   > and the book has now shown that three times.* Jameson is physically present in Ch.10 — at
+   > length, close — and Rx produces **silence and nothing else**, which is the Ch.2 response
+   > with no escalation. Ch.10 additionally spent his voice, close, at length, in the same room.
+   > So Book One's stage-3 beat (**Ch.13**) requires the fuller form of "presence/voice": the
+   > **open channel**, a **live coordinating instruction**, and **being in contact.** This is a
+   > narrowing of the locked design, not a contradiction of it — but a later book may not
+   > re-spend bare proximity as a trigger, because Book One's reader has watched it fail.
 4. **Full unlock** — forced by Vexx confronting Rx directly with external evidence. No more
    hiding.
 
@@ -208,12 +217,14 @@ from records — he learns it because Spector lets it slip.** (Delivered in Book
 | Richard Jameson | 1– | Alive, in command, **unaware he has been made** | That he killed Rx and buried it; **not** that Rx survived | Falls in Book Two |
 | Aglaope | 1– | Alive; Vexx's only confidante | Vexx's suspicion, in outline — not the evidence | Told by Vexx in Ch. 5 |
 | Goliath | 1– | Alive | Phantom's name; suspects the homeworld connection | — |
-| Gaia | 1– | Alive; friction with Vexx suspended, not resolved | That Vexx suspects *something* and promised to tell her first | — |
+| Gaia | 1– | Alive; friction with Vexx suspended, not resolved | Since Ch.5, that Vexx suspects *something* and promised she would be first. **Since Ch.11, one operational claim** — that one of the cell's jobs was not the job they were briefed — **with no name, no date and no evidence** | The promise is cashed on the page in Ch.11 (*"You told me I'd be first." / "I did."*), and **she closes her own account of it** (*"That was your one"*) — she will not come back for the rest |
 | Paladin | 1– | Alive | Nothing of the Rx thread | Moral pressure test; escalation reserved for Book Two |
 | Zeus | 1– | Alive | Nothing of the Rx thread | Operationally trusted, personally not |
 | Corwin | 1– | Alive, reassigned to a rehabilitation track | That his own chain of command tried to kill him; not believed | Rescued Ch. 3; his evidence is in Vexx's drawer |
 | Reyes | 1– | Alive, in mandatory psych evaluation | — | Spared in Ch. 4 because Paladin pushed back |
 | Voss | 1– | Alive; mid-level liaison | That Vexx pulled Corwin's fragments from evidence lock, and chose not to stop him | The one institutional ally, unexplained |
+| **Merrick** | 1– | Alive; removed from the field, on a medical track, escort of two, **not restrained** | Nothing of the Rx thread | **On the page from Ch.8** — promoted out of "not yet on the page" per this file's own instruction. The baseline case: what a Choosing costs when the system is **right**. He is **not** a conspiracy victim and must never be retrofitted into one. His notebook is a **dead object** — Ch.9 opens it and the contents are nothing (bus bars, runoff figures, three years of *depot, no answer*), which IS the payoff. It must never acquire a secret. |
+| **Dessen** | 1– | Alive; Internal Compliance. Her finding **stands unamended**; her recommendation fell away | That Vexx took the Corwin material out of a lock, kept it in a residence, never returned it, and lied once about an extension | **On the page from Ch.10.** Pressure from the *system*, deliberately **not** from Jameson — verified honoured in the drafted chapter. Her case is **correct** and she is neither a stooge nor a bully. Her unattainable transfer is a plant with no consumer yet. |
 
 **Introduced by the Book One outline, not yet on the page** (planned for Ch.6–26; they become
 series canon the moment their chapter is drafted):
@@ -221,8 +232,6 @@ series canon the moment their chapter is drafted):
 | Name | Introduced | Function | Fate |
 |---|---|---|---|
 | Ives | Ch.12–13 | A Spartan the cell assesses and **clears** | Dead in Ch.14, filed as hostile contact. The cell's own clean report is what kills him. |
-| Dessen | Ch.10 | Internal Compliance — audits the cell's evidence handling | Survives; pressure from the *system*, deliberately **not** from Jameson |
-| Merrick | Ch.8 | A Spartan who genuinely IS coming apart | The baseline case: what a Choosing costs when the system is right |
 | Beck | Ch.17 | The assessment Vexx deliberately corrupts to keep a man alive | Survives; the cost is Vexx's descent |
 | Holst, D. | Staff Sergeant Deric A. Holst (document text only) | A name in the records, never speaks | Never given a voice — recorded here so no later book hands him one. The full name exists ONLY inside quoted archive text (Ch.7); narration says HOLST, D. |
 | **Ashgrove** | Ch.20 | Place name | Becomes series canon when Ch.20 is drafted |
@@ -248,6 +257,30 @@ tic they never had.
 | the Choosing | — | The Choosing (mid-sentence caps), a Choosing-adjacent order (fine in narration) |
 | Goliath / Spector | — | Specter, Spectre |
 | Gaia / Echo | — | Gaea |
+| Deric A. Holst | **HOLST, D.** in narration; the full name exists ONLY inside quoted archive text (Ch.7) | Derek, Holtz, Holste |
+| Tomas | — | Thomas |
+| Ivo | — | Ivor, Yvo |
+| Hallam | — | Hallum, Halam · ⚠️ **ONE Hallam only** — see the conflict note below |
+| Beattie | — | Beatty, Beattey |
+| Curran | — | Curren, Curran-with-one-r |
+| **Ansel** | — | Anselm · ⚠️ **NOT a variant of Anseth — see below** |
+| **Anseth** | — | Ansell · ⚠️ **NOT a variant of Ansel — see below** |
+| Kettle | the Kettle job | Kettel |
+| Hallow's Bottom | — | Hallows Bottom, Hollow's Bottom |
+| Sedge | — | Sedges |
+| Kell | — | Kel, Kelle |
+| Ridgeway | — | Ridgway |
+
+> ⚠️ **`Ansel` and `Anseth` are TWO DIFFERENT NAMES and their near-identity is load-bearing.**
+> Aglaope's whole argument against alphabetising her casualty list depends on them: *"Alphabetical
+> puts Ansel next to Anseth… they came off the same ramp within a minute of each other, into the
+> same field — and they were not next to each other. Ansel took an hour and forty minutes longer.
+> If I put those two side by side on a list, that hour and forty minutes stops existing. It only
+> exists because they're nine pages apart."* **A "spelling consistency" pass that collapses one
+> into the other destroys the beat.** Never normalise them.
+>
+> ⚠️ **`Hallam` is currently TWO PEOPLE** — Ch.8's dropship crew chief and Ch.9's day-shift cook,
+> with Zeus confirming rather than correcting it. Open as `CF-20`; one of them must be renamed.
 | Paladin / Bastion | — | — |
 | Zeus / Hollow | — | — |
 | Aglaope / Requiem | Requiem is also called "Lure" in program paperwork only | Aglaophe, Aglaopé |
