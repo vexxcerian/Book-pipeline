@@ -49,7 +49,7 @@ The name on the tag was stamped rather than etched, and the D had worn shallower
 
 HOLST, D.
 
-*HOLST, D., returns nothing*, Rx said. *Not the way the serial returns nothing. The index doesn’t hold a Holst at all — a different failure, and a smaller one, because that index is thirty-one per cent complete. It says so on its own front page.*
+*HOLST, D., returns nothing*, Rx said. *Not the way the serial returns nothing. The index doesn’t hold a Holst at all — a different failure, and a smaller one, because that index is thirty-one percent complete. It says so on its own front page.*
 
 *Try it without the initial.*
 

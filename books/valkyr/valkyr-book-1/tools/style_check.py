@@ -299,6 +299,26 @@ _UK_US = {
     "judgement": "judgment", "storey": "story", "kerb": "curb", "tyre": "tire",
     "sceptical": "skeptical", "cheque": "check", "aluminium": "aluminum",
     "moustache": "mustache", "pyjamas": "pajamas", "smoulder": "smolder",
+    # Added after a full-manuscript audit found four surviving British forms on which this
+    # gate printed "clean". A gate printing clean is worse than a gate printing a number,
+    # because it carries the authority of having checked.
+    "humour": "humor", "humours": "humors", "humoured": "humored",
+    "humouring": "humoring", "humourless": "humorless", "humourous": "humorous",
+    "kilometre": "kilometer", "kilometres": "kilometers",
+    "litre": "liter", "litres": "liters", "fibre": "fiber", "fibres": "fibers",
+    "theatre": "theatre_SKIP", "sombre": "somber", "calibre": "caliber",
+    "manoeuvre": "maneuver", "manoeuvres": "maneuvers", "manoeuvred": "maneuvered",
+    "practise": "practice", "practised": "practiced", "practising": "practicing",
+    "enquire": "inquire", "enquiry": "inquiry", "enquiries": "inquiries",
+    "speciality": "specialty", "aeroplane": "airplane", "plough": "plow",
+}
+del _UK_US["theatre"]   # "theatre" is a legitimate US spelling for the building; skip it
+
+# Forms the word tokenizer CANNOT see, because it splits on [A-Za-z]+ and these are two
+# tokens. "per cent" survived four chapters and a dialect gate for exactly this reason.
+_UK_US_PHRASES = {
+    r"\bper cent\b": "percent",
+    r"\ball right\b": None,          # reported only — a style choice, not a dialect error
 }
 _DIALECT_WRONG = (set(_UK_US) if DIALECT == "us"
                   else set(_UK_US.values()) if DIALECT == "uk" else set())
@@ -330,6 +350,11 @@ def _ise_base(w):
 def _dialect_hits(text):
     """Non-US spellings in text. Explicit map first, then the -ise family by rule."""
     hits = [w for w in re.findall(r"[A-Za-z]+", text) if w.lower() in _DIALECT_WRONG]
+    if DIALECT == "us":
+        for pat, repl in _UK_US_PHRASES.items():
+            if repl is None:
+                continue
+            hits += [m.group(0) for m in re.finditer(pat, text, re.I)]
     if DIALECT == "us":
         for m in _ISE_RE.finditer(text):
             w = m.group(1)

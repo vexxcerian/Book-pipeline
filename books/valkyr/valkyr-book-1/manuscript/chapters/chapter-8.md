@@ -49,9 +49,9 @@ He did it twice more.
 
 “Nobody’s carrying a door plate. It’s a weather station.”
 
-“Then it costs you nothing to humour me.”
+“Then it costs you nothing to humor me.”
 
-Paladin humoured him. Then he got the pad out of his thigh pocket, put one earpiece in. Vexx did not have to look to know what was on it, because it had been the same eleven minutes of the same training file since the middle of the summer — a stringed instrument, four strings, a woman’s recorded voice saying *and again, and this time listen to the second one*, Paladin at some point every rotation announcing to a room that he had nearly got the change clean, then being told by that room that he had not.
+Paladin humored him. Then he got the pad out of his thigh pocket, put one earpiece in. Vexx did not have to look to know what was on it, because it had been the same eleven minutes of the same training file since the middle of the summer — a stringed instrument, four strings, a woman’s recorded voice saying *and again, and this time listen to the second one*, Paladin at some point every rotation announcing to a room that he had nearly got the change clean, then being told by that room that he had not.
 
 “Bar three,” he said, to nobody.
 

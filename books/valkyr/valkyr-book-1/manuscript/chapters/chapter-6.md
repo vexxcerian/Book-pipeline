@@ -93,7 +93,7 @@ He blinked twice. Something crossed his face that was not embarrassment about th
 
 “Were,” he said. “There were six of you.” He looked at the mug, then past it. “Sorry. I’ve lost where I was.”
 
-Vexx did not give it back to him. He was in a jungle eleven weeks earlier, at two in the morning, walking behind Paladin — who had the man’s arm across his shoulders, most of his weight riding on one hip — and the man had been talking into Paladin’s back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometre, he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. It never got written down.
+Vexx did not give it back to him. He was in a jungle eleven weeks earlier, at two in the morning, walking behind Paladin — who had the man’s arm across his shoulders, most of his weight riding on one hip — and the man had been talking into Paladin’s back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometer, he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. It never got written down.
 
 He had heard it. He had gone on walking. Nine weeks he had been on the other side of that sentence — it had been sitting in his own ears the whole time, in the dark, under the noise of a man being carried — and he had let it go past him, because there had been a report to file at the end of the night.
 
