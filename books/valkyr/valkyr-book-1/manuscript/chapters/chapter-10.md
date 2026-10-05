@@ -131,7 +131,7 @@ She wrote three more lines with the new pen, and the sound of it was different, 
 
 “Go on.”
 
-“Say the board reopens Corwin. Say somebody upstairs reads it again in a year and thinks better of it, and sends for the plate with the modification on the underside.” She turned a leaf. “It will be produced. It will be in good order. And the first thing any competent officer asks is where it has been, and the answer is a kitchen table, in a residence, under a lamp, alone, for the better part of a year. That plate cannot now be put in front of anybody. Not because it’s contaminated — because there’s no longer anyone who can say it isn’t.”
+“Say the board reopens Corwin. Say somebody upstairs reads it again in a year and thinks better of it, and sends for the plate with the modification on the underside.” She turned a leaf. “It will be produced. It will be in good order. And the first thing any competent officer asks is where it has been, and the answer is a kitchen table, in a residence, under a lamp, alone, since the autumn. That plate cannot now be put in front of anybody. Not because it’s contaminated — because there’s no longer anyone who can say it isn’t.”
 
 The heating went off.
 
@@ -165,7 +165,7 @@ It went on for about eight seconds.
 
 Vexx came half out of the chair without having worked out what he intended to do with the rest of the movement, and sat back down into it.
 
-Then it stopped, like a machine stopped by somebody taking the power off it rather than switching it, and Jameson stood there with his cap in his hand, his mouth shut, and something went across his face Vexx had not seen on it in two years.
+Then it stopped, like a machine stopped by somebody taking the power off it rather than switching it, and Jameson stood there with his cap in his hand, his mouth shut, and something went across his face Vexx had not seen on it before.
 
 “No,” he said. “No, that was contemptible.”
 
@@ -221,7 +221,7 @@ She had it up on her own pad inside a minute. She read it. Then she read it agai
 
 “Struck from the evidentiary record,” she said. “Retained as recovered property pending disposal.”
 
-“Three weeks before he signed anything.” Jameson said it with no lift on it whatsoever, like a man reporting a figure off a gauge. “The chain of custody you’re describing was ended in writing by a review board on a Tuesday afternoon. Everything that came out of that lock afterward came out as property. You can find him for a property return that’s overdue since the summer — you should, because it is. That’s a real finding, I won’t stand in front of it. But it’s a paragraph, a signature, a line in the quarterly. It isn’t a fitness review, because there was no chain left for him to break by the time he got there. They broke it. He inherited it.”
+“Two days before he signed anything.” Jameson said it with no lift on it whatsoever, like a man reporting a figure off a gauge. “The chain of custody you’re describing was ended in writing by a review board on a Tuesday afternoon. Everything that came out of that lock afterward came out as property. You can find him for a property return that’s overdue since the autumn — you should, because it is. That’s a real finding, I won’t stand in front of it. But it’s a paragraph, a signature, a line in the quarterly. It isn’t a fitness review, because there was no chain left for him to break by the time he got there. They broke it. He inherited it.”
 
 Dessen did not answer for some time, and the silence she kept was a working one — she went back through her own pad, then through the notebook, then through the pad again, taking long enough over it that the heating came on, ran, went off.
 
