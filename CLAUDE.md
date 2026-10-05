@@ -181,6 +181,30 @@ authority of the document it sits in.**
 
 Corollary: when you change a threshold, say in the commit message which files you checked.
 
+## ⚠️ `grep -E` cannot match a typographic apostrophe with `.`
+
+Every manuscript in this repo is 100% typographic — `’`, not `'`. In UTF-8 that is **three
+bytes**, and `grep -E`'s `.` matches **one byte**, so a pattern like `That.s not` silently
+matches **nothing** and grep exits 0 findings with no error.
+
+This is not a theoretical hazard. A search for a borrowed dialogue construction returned
+"no matches" across the whole manuscript and was within one step of being recorded as a
+clean result, when the construction is in fact in five chapters.
+
+**Use a character class, or use Python:**
+
+```
+grep -nE "That['’]s not"          # explicit class — both forms
+python3 -c "...re.search(r'That\u2019s not', t)..."   # unicode-correct
+```
+
+Two companions to it, both of which have produced wrong answers in this repo:
+- **`cmd1 && cmd2` short-circuits on grep's exit code.** A grep that finds nothing returns
+  1, so every later command in the chain is skipped — and the output looks like those checks
+  ran and found nothing. Use `;` between independent checks.
+- **Counting prose with `wc -w` includes the `<!-- SCENE BUDGET -->` comments.** That is 687
+  words across eleven chapters. Strip them first, as `doctor.sh` does.
+
 ## Structural-variety rule (baked into book-architect)
 
 Books must NOT all converge on ~20 chapters of ~5,000 words in three visible acts with
