@@ -131,6 +131,14 @@ WORD = re.compile(r"[a-z']+", re.I)
 #                          e.g. a finale cosmology motif). Keep overrides rare and small.
 MOTIF_CAP_DEFAULT = 3
 ALLOWLIST = [
+    # A deliberate motif, registered at its REAL count after an audit found it at five
+    # against a cap of three while the motif-cap check reported "clean" — the registry held it
+    # under two separate entries, so neither one breached. Vexx misfiles a mess-hall memory at
+    # eleven hundred and has done for twenty years; the number being wrong is the book's own
+    # subject in miniature, which is why it recurs. Ch.6 x3 (he notices the light is wrong),
+    # Ch.10 x2 (he works out which sitting it was, and that the whole day is therefore in the
+    # wrong order). Capped at 5: it may deepen, it may not spread.
+    ("eleven hundred", 5),
     # Canon terminology — these are the book's nouns, not accidental reuse.
     ("the choosing", 12),
     ("hostile contact", 8),
@@ -570,6 +578,8 @@ def scan():
     problems = 0
     phrase_chapters = defaultdict(set)   # ngram -> {chapter numbers}
     phrase_counts = Counter()
+    xchap_chapters = defaultdict(set)   # 6+ word ngram -> {chapters}, no content filter
+    xchap_counts = Counter()
     motif_book_counts = Counter()        # motif phrase -> book-wide raw occurrences
     motif_chapters = defaultdict(set)    # motif phrase -> {chapter numbers it appears in}
 
@@ -831,6 +841,13 @@ def scan():
                 if content_rich(ng):
                     phrase_counts[ng] += 1
                     phrase_chapters[ng].add(n)
+                # A 6+ word string repeated VERBATIM in two different chapters is a signature
+                # regardless of its word classes. content_rich() exists to suppress
+                # within-chapter noise and is right to; applied ACROSS chapters it hid a whole
+                # duplicated sentence pair. See the CROSS-CHAPTER section below.
+                if nlen >= 6:
+                    xchap_counts[ng] += 1
+                    xchap_chapters[ng].add(n)
 
     print("\n" + "=" * 70)
     print("REPEATED PHRASES (4-6 words, content-rich)")
@@ -871,6 +888,76 @@ def scan():
         print(f"\n  (informational — {len(shown_info)} generic/×2 repeats, not gated):")
         for s in shown_info[:25]:
             print(f"     · \"{s}\"")
+
+    # --- CROSS-CHAPTER VERBATIM REPEATS ------------------------------------------
+    # The check above discards n-grams made mostly of function words. That is correct for
+    # within-chapter noise and WRONG across chapters: it reported "none distinctive (gate
+    # clean)" on a manuscript containing
+    #     "Vexx waited for the rest of it. / There was no rest of it."
+    # verbatim in two chapters, in the same dramatic position, because "waited for the rest
+    # of it" carries two non-stop words. A gate printing "clean" on that is worse than one
+    # printing a number.
+    #
+    # Gating rule, deliberately narrow: a 6+ word verbatim string FAILS when it appears in
+    # 2+ PIPELINE chapters, or in 3+ chapters overall. An author-only pair is reported and
+    # never failed - Ch.1-5 self-repeats are his voice - and one pipeline chapter echoing a
+    # locked chapter is reported for a human to read, since it may be a deliberate callback.
+    print("\n" + "=" * 70)
+    print("CROSS-CHAPTER VERBATIM REPEATS (6+ words, function words INCLUDED)")
+    print("=" * 70)
+    xhits = []
+    for ng, chs in xchap_chapters.items():
+        if len(chs) < 2:
+            continue
+        sng = " ".join(ng)
+        if any(a in sng or sng in a for a in motif_caps):
+            continue
+        xhits.append((sng, xchap_counts[ng], sorted(chs)))
+
+    # Merge OVERLAPPING shingles, not just containment. One duplicated sentence produces a
+    # whole ladder of 6-, 7- and 8-grams ("serial that came back as nothing" / "that came
+    # back as nothing at" / "came back as nothing at all"), and reporting each separately
+    # turned two real findings into twenty lines. A gate that fires twenty times on its
+    # first run is one nobody reads — which is the same failure as a gate printing "clean",
+    # just louder.
+    xhits.sort(key=lambda x: (-len(x[0].split()), -x[1]))
+    kept = []
+    for sng, cnt, chs in xhits:
+        wds = sng.split()        # NOT `words` — that shadows the module-level words() helper
+        merged = False
+        for i, (bsng, bcnt, bchs) in enumerate(kept):
+            bw = bsng.split()
+            if bchs != chs:
+                continue
+            # overlap if either is a contiguous run inside the other, or they share a
+            # 4-word boundary (the shingle ladder's signature)
+            if sng in bsng or bsng in sng \
+               or " ".join(wds[:4]) in bsng or " ".join(wds[-4:]) in bsng:
+                if len(wds) > len(bw):
+                    kept[i] = (sng, max(cnt, bcnt), chs)
+                merged = True
+                break
+        if not merged:
+            kept.append((sng, cnt, chs))
+
+    # GATE only at 3+ chapters. A phrase in three or more chapters is a pattern; a pair is
+    # a pair, and this manuscript deliberately quotes itself across chapters — Ch.11 has a
+    # character repeat Ch.8's "a full view of a wall" on purpose. Pairs are REPORTED for a
+    # human to triage into the ALLOWLIST, never failed.
+    flagged = [h for h in kept if len(h[2]) >= 3]
+    pairs = [h for h in kept if len(h[2]) == 2]
+    if not flagged:
+        print("  no phrase in 3+ chapters (gate clean)")
+    for sng, cnt, chs in sorted(flagged, key=lambda x: -len(x[2])):
+        print(f'  FLAG x{cnt} {chs}  "{sng}"  <- {len(chs)} chapters')
+        problems += 1
+    if pairs:
+        print(f"\n  ({len(pairs)} two-chapter pairs — NOT gated; triage into ALLOWLIST or recast:)")
+        for sng, cnt, chs in sorted(pairs, key=lambda x: x[2]):
+            who = ("author both sides" if all(c in AUTHOR_DRAFTED for c in chs)
+                   else "pipeline both sides" if all(c not in AUTHOR_DRAFTED for c in chs)
+                   else "pipeline echoing author")
+            print(f'     · {chs} "{sng}"  ({who})')
 
     # --- MOTIF CAP: declared motifs may not exceed their book-wide cap -------------
     if motif_caps:

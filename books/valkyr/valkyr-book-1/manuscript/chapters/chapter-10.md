@@ -95,7 +95,7 @@ Nobody wanted it.
 
 * * *
 
-Trays going down a steel rail. The doors at both ends propped, the heat off the servery meeting the cold coming in at them, men eating in their hundreds under a low ceiling, the light arriving off to one side — long, the color it goes late on. He had been putting that at eleven hundred for as long as he had been telling it to himself. It was not eleven hundred. It might have been the late sitting, the one you drew when you were on the ranges all morning, in which case everything after it in that day sat in the wrong order too.
+Trays going down a steel rail. The doors at both ends propped, the heat off the servery meeting the cold coming in at them, men eating in their hundreds under a low ceiling, the light arriving off to one side — long, the color it goes late on. He had been putting that at eleven hundred for as long as he had been telling it to himself. He had worked that out once already, eight weeks earlier, in a corridor that smelled of a kitchen, and had evidently not kept hold of it. It was not eleven hundred. It might have been the late sitting, the one you drew when you were on the ranges all morning, in which case everything after it in that day sat in the wrong order too.
 
 There is a way of folding a shirt so the collar never creases, and neither of them had ever learned it. Twenty years of doing it wrong, side by side, in the same room, out of the same locker.
 
