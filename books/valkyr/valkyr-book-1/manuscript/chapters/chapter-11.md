@@ -1,13 +1,15 @@
 # Chapter Eleven
 
 <!-- SCENE BUDGET (Target 2,200): door/acoustics opening 500 | Echo + the boot 350 | the regulation, four exchanges too long 450 | he shuts it, the laugh 250 | the turn + mind-reading 400 | the smallest true thing + "that was your one" + exit 350 | coda 200 -->
-<!-- Word count: 2,170 | Revision: 1 (dialogue pass — device-bleed recasts off Gaia: Zeus's reframe ×2, Vexx's capped term-correction ×3, Spector's spoken count ×1; dialogue-only, narration block byte-identical) | Target: 2,200 | Anchor: a fire door, a boot in his hand, and the word "dead" said like a compliment -->
+<!-- Word count: 2,199 | Revision: 2 (hook-and-pull pass — N-12(a) opening recast onto Gaia's position; N-12(b) closer recast onto the room answering; N-11 duplicated two-sentence structure recast; narration adverb FLOOR and narration `and` CEILING both closed, median 18.0 -> 17; prior: dialogue pass) | Target: 2,200 | Anchor: a fire door, a boot in his hand, and the word "dead" said like a compliment -->
 
-“—it’s a hole with a hinge on it,” Gaia said. “A door does something. This one stands open and I lose the stair.”
+Gaia was in the corridor when he came down to it, her back against the wall, her arms crossed, her weight entirely on the foot nearest the stair — exactly where she put it in every room he had ever been in with her, not a thing he had ever seen her choose. She had evidently been at it a while before he got there. She did not go back to the beginning for him.
+
+“A door does something,” she said. “This one stands open and I lose the stair. It’s a hole with a hinge on it.”
 
 “It’s propped.”
 
-“I know it’s propped.” She had her back against the wall, her arms crossed, her weight on the foot nearest the stair, which was where she stood in every room he had ever been in with her. “Stand there. No. There. Now listen to it.”
+“I know it’s propped. Stand there. No. There. Now listen to it.”
 
 He stood where she put him — listened, with his head still, the way she meant it — and what came back was a corridor in an operations block at the wrong end of a working day: a transport turning over out on the pad, the generator deck running under everything as it was always running under everything, water going somewhere two floors down, the flat unpitched noise of people eating a long way off through the open door.
 
@@ -195,9 +197,9 @@ She was nearly at the stair when she stopped.
 
 “When I was nineteen I was in transient housing where the walls were nothing,” she said. “There was a man through mine who laughed once a night, about eleven. Then nothing off him until the next night. I was in there five months.”
 
-Vexx waited for the rest of it.
+She did not say what that was for.
 
-There was no rest of it. She went up the stair, and the slack closer landed twice behind her — dry, clean, in a corridor with nothing in it.
+He did not ask. She went up the stair. The slack closer landed twice behind her — dry, clean, in a corridor with nothing in it.
 
 “It’s a bad door,” he said.
 
@@ -209,6 +211,6 @@ The trauma pack in the bottom of his locker was sealed, dated, with a tab across
 
 Nothing came back. The cursor on the pad by the bed went on doing what it did.
 
-If it was ever asked about, the answer was that he had used the pack on the Kettle job, drawn a new one at the cage — and he said it once, out loud, in the room, to hear what the room did with it.
+If it was ever asked about, the answer was that he had used the pack on the Kettle job, drawn a new one at the cage — and he tried it on the room.
 
-The room did nothing with it. It went a pace, stopped, dry, no carry, a dead little room with a bed in it and a locker in it — and the sentence sounded like the truth.
+The room did nothing with it. It went barely a pace, stopped, dry, no carry, a dead little room with a bed in it and a locker in it — and the sentence sounded like the truth.

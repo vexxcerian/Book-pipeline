@@ -245,7 +245,7 @@ Chapters 2–5 all drifted onto one closing figure because nothing was tracking 
 | 8 | the narrator re-reads a document **while writing its fourth instance himself** |
 | 9 | the POV character **involuntarily begins executing the method he refused**, stops partway, and does something ordinary and courteous on top of it |
 | 10 | an unremarked act of **preparation for the antagonist** — memorising something to have it ready for him next time |
-| 11 | ⚠️ **PENDING hook-craft.** As drafted it is *Vexx says a prepared sentence out loud into a space that is not listening* — which **collides with Ch.6's** *"a misdirected answer to a stranger"*: both share the verb, the adverb (*out loud*), the mechanism and the function, five chapters apart. `hook-craft` is to land the eleventh distinct shape — **the room answering** — which the coda already contains. |
+| 11 | **the room answers** — a rehearsed lie tried on an empty room, and the room's deadness is what makes it sound true. *(Ch.6's collision resolved: the verb went `said`→`tried`, `out loud` now appears zero times in Ch.11, and the man is no longer the subject of either final sentence. Ch.6's space is a person not listening; this one is a room that answers, and the answer is what makes the lie hold.)* |
 
 Ch.7 and Ch.8 both ended on a document — two running was the limit, and Ch.9 cleared it with
 no paper on the last page, as the outline required.
@@ -260,7 +260,7 @@ no paper on the last page, as the outline required.
 | 8 | mid-transit, mid-argument, no scene-setting |
 | 9 | a line of dialogue with no attribution and no setting, three words in |
 | 10 | **the meeting time** — a summons, flat, no explanation |
-| 11 | ⚠️ **PENDING hook-craft.** As drafted it **collides with Ch.8's** on six counts at once: em-dash-initial dialogue fragment · mid-argument · attributed to a cell member · about mundane station infrastructure · *"it isn't X"* in the second clause · opening cold. Ch.8's inventory entry (*"mid-transit, mid-argument, no scene-setting"*) describes Ch.11 exactly. `hook-craft` is to keep the cold mid-argument start but enter on **Gaia's position** — she is the only character in the book whose body is a device — which also drops the leading em-dash and buys the chapter its one unit of em-dash headroom. |
+| 11 | **a standing body read as a device** — he comes down into an argument already running and is given her stance before her sentence. *(All five Ch.8 elements gone: no em-dash-initial fragment, no dialogue in first position, a body rather than a transit. The cold mid-argument start is now carried by two flat statements of fact — which is also characterisation. The position sentence was RELOCATED from ¶10, not duplicated.)* |
 
 ⚠️ **Both tables stopped at Ch.10 until 2026-10-03, and that omission is the whole reason the
 two Ch.11 collisions above happened.** The inventories only work if a chapter is entered the
@@ -340,6 +340,35 @@ into Ch.11 to make the looser claim true.**
 
 Second, *"You told me I'd be first." / "I did."* is pipeline prose reaching correctly back into
 the author's, five chapters later, and cashing a promise he made. Leave it alone.
+
+### ⚠️ I briefed a ceiling and omitted its floor — one day after writing the rule against that
+
+Worth recording because of what it says about how durable this failure mode is.
+
+My Ch.11 hook-craft brief listed `narration ≥40w | 16.2% | 16.5% ceiling | almost none` and
+told the agent **"do not add a long accumulating sentence."** That instruction was correct
+only while the chapter held six sentences of ≥40 words. **The N-12(b) closer fix cuts a
+44-word narration sentence to 33, which removes one of those six** — and `long_sentence_pct`
+has a **FLOOR of 13.0** that my brief never mentioned:
+
+| long sentences | of N | share | |
+|---|---|---|---|
+| 6 | 41 | 14.6% | ok |
+| **5** | **41** | **12.2%** | **breaches the 13.0 floor** |
+| **5** | **39** | **12.8%** | **breaches** |
+
+So "add no long sentence" **inverts** the moment the closer fix lands, and any opening at all
+raises N. The agent worked this out, went against the brief's letter, and made the new opening
+sentence 56 words to replace the lost one exactly — landing at 14.6%, the most central the
+chapter has ever sat in that band.
+
+Two things make this worth more than a footnote. First, **the gate reports a floor breach in
+the same words as a ceiling breach**, so had it fired, it would have read as "too many long
+sentences" and been fixed in the wrong direction. Second, **I wrote the root-level rule that a
+budget made only of ceilings is this pipeline's most expensive structural mistake, and then
+briefed a ceiling without its floor the next day.** Knowing the failure mode is not the same
+as not committing it. **Quote both walls in every brief, every time, and prefer pasting the
+gate's own line over summarising it.**
 
 ### The mechanical fix list, 2026-10-03 — and the trap in each one
 
