@@ -418,25 +418,56 @@ n-grams made of function words:
 ALLOWLIST rather than recasting blindly — at least one is deliberate (Ch.11 has a character
 quote Ch.8's *"a full view of a wall"* on purpose).
 
-## Resume point## Resume point
+## Resume point
 
-1. **Ch.11's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
-2. **Then Ch.12.** Eleventh/twelfth distinct closing shapes — check the inventory first.
-3. **Run `continuity-guardian` after Ch.12** — the last full audit was Ch.1–8.
-4. **The live measured items, each with its definition** (a metric name is not a definition):
-   - **Narration `and`** (`\band\b` per 1k, narration only): author **18.19–18.90**, a
-     0.7-point band. Pipeline 20.68 → 20.39 → 22.07 → 24.35 → **18.39**. Ch.10 reversed the
-     rise from a draft. **Not gated** — retrofit is blocked on Ch.9 by the long-sentence floor,
-     and a gate that can only stay red erodes. Carried in the writer brief, where it has now
-     worked twice.
-   - **Generic-person manner attribution** (*"like a man reporting a figure off a gauge"*):
-     author max **1 per chapter**; pipeline 3 · 0 · 5 · 3 · 4. **Plateaued, not rising, which
-     is worse** — every other fingerprint here was caught by its slope. §STANDING OFFENCE #7.
-   - **Numeric density** — ⚠️ **two incompatible definitions exist in this project's own
-     committed files.** Digits-plus-spelled-out gives the author 4.8–14.0; the Ch.9 eval's
-     regex gives 11.7–23.4. A threshold of 16.0 is right under the first and puts the **locked
-     Ch.1 in breach by 7.8 points** under the second. Always state which.
-5. Optional: the Ch.5 ending review and the `STATE.yaml` FOLLOW-UP items. None block drafting.
+**Ch.1–11 are finalized. Ch.11 passed the 8.5 gate at 8.79** (floor 8.5, casual reader 8.5,
+CVI-Launch 8.7) and is **the first chapter inside the author's measured range on every
+metric** — adverbs, `and`, median, both sentence-length shares, em-dash, simile, flat-man.
+
+1. **The Ch.6–10 retrofit.** See §"The mechanical fix list" for each chapter's envelope — they
+   differ, and two of them point opposite ways. Ten flagged issues, almost all two metrics:
+   the **narration adverb floor** (Ch.6–10 run 2.5–3.3 against 10.5) and the **narration `and`
+   ceiling** (Ch.6/7/8/9 run 20.4–24.3 against 19.5), plus **Ch.8's flat-man at 6** against a
+   ceiling of 3. **Ch.11 proved the adverb half is cheap** — four words, in narration being
+   rewritten anyway. No chapter needs a dedicated pass for it; fold it into any pass that
+   touches narration.
+2. **The two cross-chapter FLAGs**, which only became visible on 2026-10-08: `"that had nothing
+   to do with"` ×4 and `"in the voice of a woman"` ×3. Recast two of three in each.
+3. **Re-run `entity-tracker`.** Every Ch.11-sourced entry in `ENTITY_STATE.yaml` is marked
+   `draft_status: "ch-11 pre-polish"` and the chapter has since been through four passes.
+4. **Then Ch.12.** Three standing instructions for it:
+   - **It inherits an ACTIVE BREACH** (author's decision, 2026-10-08 — see `STATE.yaml` and the
+     ⚠️ block at the top of `outline.md` §Chapter 12). Vexx is institutionally culpable from
+     Ch.11 on, and the property return is a live thread with a fuse that needs a consumer
+     before the book ends.
+   - **End it with another human being present.** Seven of eleven chapters end with Vexx
+     alone, the last five consecutively. The CLOSERS inventory tracks *shape* and not *who is
+     in the room*, so it has been measuring the variable that was already varying.
+   - **Its planned opening would be the third cold administrative document** (Ch.7, Ch.10,
+     Ch.12). Not forbidden and not consecutive, but three of twelve on one device is the
+     Ch.2–5 drift profile at instance three. Decide at drafting, not at polish.
+5. **Run `continuity-guardian` again after Ch.12.** The last full audit was Ch.1–11 and it
+   asked to be re-run after any Ch.6 pass, since Ch.6 carries an interval Ch.7 and Ch.8
+   measure from.
+6. **One forward decision, not urgent:** Goliath's boot reading (*"A boot at the bottom is what
+   you use when you want to come through it fast and not stop"*) has no consumer anywhere in
+   `outline.md` Ch.12–26. **Deliberate ambiguity and an unredeemed detail are the same object
+   until a later chapter makes them different.** One line in Ch.12 or Ch.13 — somebody noticing
+   the door shut, or propped again — settles it either way.
+7. Optional: the Ch.5 ending review and the `STATE.yaml` FOLLOW-UP items. None block drafting.
+
+### Retired from this list — do not re-add
+
+- **§STANDING OFFENCE #2** (*"That's not X. That's Y"*) was retired 2026-10-05. It is the
+  **author's** construction, used four times across his five chapters in three different
+  mouths, and assigning it to Zeus made the rule police his own Ch.5. The pipeline has used it
+  **once**, in Ch.9, in the correct mouth.
+- **The flat-man "plateaued, not rising" note** was wrong in both directions. Author max is
+  **2**, not 1; the pipeline line **falls** (6 → 3 → 1 → 1 → 1). Only Ch.8 is a live breach.
+- **"Ch.11 does not remember Aglaope"** — examined and closed; see the 2026-10-03 section.
+- **The claim that Ch.11 is the first time Vexx tells another human being anything.** It is
+  false and the chapter that disproves it is the author's own Ch.5. Ch.11's actual first is
+  narrower: the first **operational claim about a mission the cell ran.**
 
 ## Worth the author's eye
 
