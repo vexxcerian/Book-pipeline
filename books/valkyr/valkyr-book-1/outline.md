@@ -928,7 +928,7 @@ about four exchanges too long.
 **Emotional surprise:** The argument is genuinely funny for about nine seconds, and both of
 them laugh, and then it turns.
 
-**Bridge from Ch.10:** **In medias res** — the chapter opens three lines into the argument
+**Bridge from Ch.10:** **A standing body read as a device** — Vexx comes down into an argument already running and is given Gaia's stance before her sentence. ⚠️ This row said *"In medias res — the chapter opens three lines into the argument"* after the drafted opening had already been replaced: the em-dash-initial dialogue fragment duplicated Ch.8's opening on five counts and was recast at the hook pass. A stale row carries the authority of its document, so a later pass reading this would have restored the duplication. The chapter opens three lines into the argument
 with no context. The door is never explained.
 **Structural approach:** Single continuous argument, one location, no cuts. The book's only
 chapter that is one unbroken scene from first line to last but for a 200-word coda.

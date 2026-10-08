@@ -324,7 +324,7 @@ draft measures 3.38 and the voice's power comes from restraint.**
 | **Retrospective-narrator intrusion** | **≤ 2 per chapter**, never in an opening | ~2–3/ch in Ch.1 | Ch.1 is locked and exempt |
 | **Rhetorical questions in narration** | **≤ 1 per chapter**, and preferably as the author's no-question-mark form | Rare | — |
 | **Sentence-length histogram** | **≥25 % of sentences ≤6 words AND ≥8 % ≥40 words** | 34.6 % / 11.2 % | **A fat middle is off-voice.** Check this before anything else. |
-| **Dialogue share** | **28–40 %** combined (quoted + unquoted interface) | ~28–30 % | Ch.18 and Ch.25 run high; Ch.7, Ch.14 and Ch.21 run near zero. That spread is correct. |
+| **Dialogue share** | **the author's measured spread: 11.8–41.9 %**, with per-chapter licence from `outline.md` | 11.8 / 26.9 / 30.0 / 28.1 / 41.9 % across Ch.1–5 | ⚠️ **This row said "28–40 %" and was STALE: three consecutive chapters breached it and all three passed the 8.5 gate.** Ch.11 runs 45.0 %, the manuscript maximum, and it is *commissioned* — the outline says *"the fastest dialogue in the book, minimal narration, almost no interiority until the coda."* As written the row was a ceiling a later pass would have obeyed **by cutting the fastest dialogue in the book.** Pipeline so far: 34.3 / 36.9 / 31.7 / 43.8 / 42.1 / 45.0 %. Judge against the chapter's commission, not against a single band. |
 
 **Additional book-specific prohibitions (gate conditions, not style preferences):**
 

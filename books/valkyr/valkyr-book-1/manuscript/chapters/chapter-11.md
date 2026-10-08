@@ -87,7 +87,7 @@ Neither of them had anything to say to that, and Goliath did not appear to have 
 
 “The boot comes back because the only thing anybody in this building has ever heard about that door is a regulation.”
 
-The wall behind her had been another color once. You could see it down at the floor, where the new gray had been rolled on by somebody working fast and had stopped a finger short of the join, a band of green left showing right along the corridor, the flat green of some other service, some other decade. Nobody had been back along it with a brush.
+A run of pipe went along the ceiling on the far side of the corridor, lagged in gray sleeving, collared at every joint. Each collar carried a printed band with the direction of flow on it and a four-figure code beneath that, every band turned the same face out so that the whole run could be read from the floor by a man standing still, all of them stenciled by the same hand and none of them newer than the others. It had not needed doing again.
 
 “I’ll have it shut, Gaia. You’ve got what you came for.”
 
@@ -155,7 +155,7 @@ He did not answer that, because there was no version of the answer that was not 
 
 “I had things ready to say to you on the ramp. I said none of them, I’ve been carrying them around ever since, which is how I know it wasn’t about the wall.” She stood square to him now. “Here’s what I think. You’ve had something since before the jungle. You decided not to bring it to us — you didn’t decide it once, you’ve decided it every week since, which is the harder way to do it, and you do it anyway. You don’t think we’d sell you. You want us able to stand in front of a woman with a notebook, say we didn’t know, be telling the truth when we say it. You worked out what each of us would cost you. In your head, in order. I’d put money on where I came.”
 
-“You pulled our files again after the jungle,” she said. “All of us. Nobody asked you to, nobody told you to, you did it on your own time — and the only reason to do that is to find out which of us goes to command first.”
+“You pulled our files again after the jungle. “All of us. Nobody asked you to, nobody told you to, you did it on your own time — and the only reason to do that is to find out which of us goes to command first.”
 
 It was close — close enough that the part she had wrong sat in his mouth with nowhere to put it down — she had the machine of it exactly right, the reason for it wrong, the reason for it not on her roster, not on anybody’s roster these four years — and he kept it where it was, and let her keep the rest.
 
@@ -209,7 +209,7 @@ He did not ask. She went up the stair. The slack closer landed twice behind her 
 
 The property return notice had come up on the Tuesday. He had read it twice, properly, so that he would afterwards be able to say he had read it properly.
 
-The trauma pack in the bottom of his locker was sealed, dated, with a tab across the lid that you break for one reason. He broke it, lifted the wadding, put the tag in underneath. It had been in his coat pocket since the morning transit. Then the scorched fragment of plating, the half-melted chip, the pressure dressing laid back down over them. Then the walk to the supply cage for a fresh tab off the roll, the walk back, the tab struck on square. None of that took any thinking at all, and he had chosen the pack before he had crossed the room.
+The trauma pack in the bottom of his locker was sealed, dated, with a tab across the lid that you break for one reason. He broke it, lifted the wadding, put the tag in underneath. Then the scorched fragment of plating, the half-melted chip, the pressure dressing laid back down over them. They had been in his coat pocket since the morning transit. Then the walk to the supply cage for a fresh tab off the roll, the walk back, the tab struck on square. None of that took any thinking at all, and he had chosen the pack before he had crossed the room.
 
 *You’ve gone quiet,* he said.
 
