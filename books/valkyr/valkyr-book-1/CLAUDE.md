@@ -161,7 +161,7 @@ Full list in `STATE.yaml` under `open_author_decisions`. The ones that bite soon
   `research/`; series canon transcribed to `../SERIES-BIBLE.md`; `STATE.yaml` filled.
   Architect pass run — see `outline.md`, `foundation.md`, `voice-dna.md`, `character-bible.md`
   and `feedback/progress.md` for the current resume point.
-- **2026-10-04** — `manuscript/chapters/` holds **Ch.1–11, 37,710 words of prose.** The
+- **2026-10-04** — `manuscript/chapters/` holds **Ch.1–11, 37,698 words of prose.** The
   author's Ch.1–5 were reconstructed from his PDF (italics and scene breaks recovered from the
   font layer) and promoted; Ch.6–11 are pipeline-written. **Ch.6–10 have passed the 8.5 Genesis
   gate; Ch.11 is drafted and mid-polish** (dialogue pass running, then hook-craft, disruptor,

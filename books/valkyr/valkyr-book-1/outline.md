@@ -976,6 +976,17 @@ series needs.
 ---
 
 ## Chapter 12: Ives
+
+> ⚠️ **INHERITED FROM CH.11 — author's decision, 2026-10-08.** The property-return notice
+> Dessen promised in Ch.10 **has already arrived** by Ch.11, and Ch.11's coda is Vexx
+> concealing that exact property. **From this chapter on he is in active breach of a formal
+> instruction, not getting ahead of one.** Two things follow and neither is optional:
+> **(a)** the property return is a **live thread with a fuse** — Dessen's *"People say that"*
+> is now a loaded gun, and it needs a consumer before Book One ends; **(b)** Vexx is
+> institutionally culpable from Ch.11 onward, which is what makes Jameson's Ch.10 protection
+> worth something and its withdrawal a real threat. Do not write him as merely careful, and
+> do not soften this back to pre-emption.
+
 **STATUS: new**
 **Word count target: 5,000**
 

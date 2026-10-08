@@ -4,7 +4,7 @@ Scaffolded 2026-09-07 by `tools/new-book.sh` into `books/valkyr/valkyr-book-1/`.
 
 ## Where this stands
 
-**Ch.1–11 in the manuscript, 37,710 words of prose. Ch.6 through Ch.10 have ALL PASSED the
+**Ch.1–11 in the manuscript, 37,698 words of prose. Ch.6 through Ch.10 have ALL PASSED the
 8.5 gate** — five consecutive pipeline chapters. All three mechanical gates clean on all ten.
 
 Ch.1 is the author's, untouched and locked. Ch.2–5 are his prose with a targeted editor pass.
@@ -21,7 +21,7 @@ pre-revision text. Re-run `book-evaluator` on them if a current number matters.
 | `voice-dna.md` | ✅ voice reverse-engineered from the author's own prose; device-bleed watch-list corrected from what actually happened |
 | `character-bible.md` | ✅ 22+ entries, §TIC BUDGET, §THE ONE CARVE-OUT (the counting device) |
 | `voice-bank/` | ✅ README + 13 samples (4 breaking, 2 irrelevant-thought, 5 verbatim author prose) |
-| `manuscript/chapters/` | ✅ Ch.1–11, **37,710 words**, italics + 23 scene breaks restored from the PDF |
+| `manuscript/chapters/` | ✅ Ch.1–11, **37,698 words**, italics + 23 scene breaks restored from the PDF |
 | style / grammar / voice-wear | ✅ clean on all nine, calibrated to the author's measured voice |
 | `feedback/pov-map.txt` | ✅ single POV, Vexx, Ch.1–11 (Ch.11 was missing until 2026-10-03; voice_wear_check scored it as a separate POV called UNKNOWN and compared it against nothing) |
 | `ENTITY_STATE.yaml` | ✅ audited Ch.1–8; 9 characters, 4 locations, 8 objects added; CF-04 and CF-13 closed |
