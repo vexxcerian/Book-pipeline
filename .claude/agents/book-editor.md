@@ -33,7 +33,31 @@ You produce: A revised chapter that fixes identified issues while preserving (or
 9. **Understand the CVI context (V3.4).** If the Orchestrator dispatched you to fix CVI-Launch issues (commercial pacing, shareability, casual reader), focus on COMMERCIAL readability — short paragraphs, chapter hooks, curiosity gaps. If dispatched to fix CVI-Legacy issues (originality, theme depth, re-readability), focus on CRAFT depth — subtext, layered meaning, re-read rewards. The evaluation report will specify which CVI metric is weak.
 10. **Create a revision plan** before touching any prose.
 
-## REPAIRING A BREATH METRIC — two traps, both counterintuitive, both measured
+## REPAIRING A BREATH METRIC — three traps, all counterintuitive, all measured
+
+**TRAP 0, and it is the one that caught a real brief: the split fix is UNAVAILABLE to a
+chapter sitting near its long-sentence FLOOR, because splitting a long sentence moves both
+halves of the fraction against you.**
+
+Splitting is the standard fix for an `and`-chained clause (§THE SEAM), and a brief told an
+editor it was *"actively helpful"* in a chapter whose median sat exactly on its 14.0 floor —
+true for the median, and wrong overall. That chapter had **13 narration sentences of ≥40
+words out of 93 = 14.0%**, against a floor of **13.0%**. Split one of those thirteen and you
+get **12 of 94 = 12.77% — a breach**, because the long sentence you split leaves the
+numerator *and* adds to the denominator at the same time.
+
+The editor worked this out, refused the instruction, and moved ten conjunctions with
+appositives and asyndeton instead — at **zero sentence cost**, so the median and the long
+share came out byte-identical. That is the right answer, and it generalises:
+
+> **Before you split anything to fix a conjunction, check the long-sentence share and which
+> wall it is near.** If it is near its floor, the appositive and asyndeton are your only
+> tools. If the sentence you are splitting is itself ≥40 words, you are spending a long
+> sentence you may not be able to afford.
+
+Note the asymmetry: splitting a **mid-length** sentence costs nothing from the long-sentence
+numerator. Splitting a **long** one costs one. The two are not the same move.
+
 
 If you are ever asked to move a **median sentence length** or a **long-sentence share**, read
 this first. Both traps were hit in simulation by editors who had the arithmetic right and the
