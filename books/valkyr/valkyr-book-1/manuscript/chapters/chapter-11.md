@@ -205,12 +205,14 @@ He did not ask. She went up the stair. The slack closer landed twice behind her 
 
 * * *
 
-The trauma pack in the bottom of his locker was sealed, dated, with a tab across the lid that you break for one reason. He broke it, lifted the wadding, put the tag in underneath. Then the scorched fragment of plating, the half-melted chip, the pressure dressing laid back down over them. Then the walk to the supply cage for a fresh tab off the roll, the walk back, the tab struck on square. None of that took any thinking at all, and he had chosen the pack before he had crossed the room.
+The property return notice had come up on the Tuesday. He had read it twice, properly, so that he would afterwards be able to say he had read it properly.
+
+The trauma pack in the bottom of his locker was sealed, dated, with a tab across the lid that you break for one reason. He broke it, lifted the wadding, put the tag in underneath. It had been in his coat pocket since the morning transit. Then the scorched fragment of plating, the half-melted chip, the pressure dressing laid back down over them. Then the walk to the supply cage for a fresh tab off the roll, the walk back, the tab struck on square. None of that took any thinking at all, and he had chosen the pack before he had crossed the room.
 
 *You’ve gone quiet,* he said.
 
 Nothing came back. The cursor on the pad by the bed went on doing what it did.
 
-If it was ever asked about, the answer was that he had used the pack on the Kettle job, drawn a new one at the cage — and he tried it on the room.
+If it was ever asked about, the answer was that he had broken the seal on the Kettle job, re-tabbed it at the cage — and he tried it on the room.
 
 The room did nothing with it. It went barely a pace, stopped, dry, no carry, a dead little room with a bed in it and a locker in it — and the sentence sounded like the truth.
