@@ -370,48 +370,55 @@ briefed a ceiling without its floor the next day.** Knowing the failure mode is 
 as not committing it. **Quote both walls in every brief, every time, and prefer pasting the
 gate's own line over summarising it.**
 
-### The mechanical fix list, 2026-10-03 — and the trap in each one
+### The mechanical fix list — CURRENT as of 2026-10-08
 
-Measured after the three new gates. `↑` means a floor (must rise); everything else is a
-ceiling (must not rise). Author chapters shown for the benchmark.
+Measured with `tools/style_check.py`'s own tokenizer, narration register. `↑` = floor.
+**Author band is the benchmark column — the target is inside it, not past it.**
 
-| | words | em-dash /12.0 | median /18.0 | long% /16.5 | adv /10.5↑ | and /19.5 | flat-man /3 |
-|---|---|---|---|---|---|---|---|
-| Ch.1 *(locked)* | 3,861 | 10.6 | 14.5 | 16.2 | 11.2 | 18.4 | 0 |
-| Ch.2 | 4,821 | 10.4 | 17.5 | 14.9 | 15.0 | 18.3 | 2 |
-| Ch.3 | 3,000 | 9.0 | 14 | 13.3 | 16.0 | 18.9 | 1 |
-| Ch.4 | 2,378 | 11.8 | 16 | 15.6 | 15.1 | 18.2 | 0 |
-| Ch.5 | 1,886 | 9.0 | 17.5 | 14.6 | 12.9 | 18.8 | 0 |
-| **Ch.6** | 4,372 | 10.8 | 14.5 | 13.2 | **2.7** | **20.7** | 1 |
-| Ch.7 *(PUNCH)* | 1,518 | 9.9 | 11 | 12.3 | *3.2* | *20.4* | 0 |
-| **Ch.8** | 5,700 | **11.8** | 14.0 | 13.6 | **2.5** | **22.1** | **6** |
-| **Ch.9** | 3,355 | 9.8 | 14 | 14.0 | **0.6** | **24.3** | **3** |
-| **Ch.10** | 4,588 | 10.5 | 17 | 14.8 | **2.9** | 18.4 | 1 |
-| **Ch.11** | 2,176 | **11.5** | **18.0** | **16.2** | **8.4** | **21.6** | 1 |
+| | adverbs ↑10.5 | `and` ≤19.5 | median 14–18 | ≥40w ↑13.0–16.5 | flat-man ≤3 |
+|---|---|---|---|---|---|
+| **author Ch.1–5** | *11.2–16.0* | *18.2–18.9* | *14.0–17.5* | *13.3–16.2%* | *0–2* |
+| Ch.6 | **2.7** | **20.7** | 14.5 *(0.5 room)* | 13.2% *(0.2 room)* | 1 |
+| Ch.7 *(PUNCH)* | **3.2** | **20.4** | 11 *exempt* | 12.3% *exempt* | 0 |
+| Ch.8 | **2.5** | **22.1** | **14.0 — NO room** | 13.6% | **6** |
+| Ch.9 | **0.6** | **24.3** | **14 — NO room** | 14.0% | 3 *(at ceiling)* |
+| Ch.10 | **3.3** | 18.6 ✅ | 17.0 | 14.7% | 1 |
+| **Ch.11** | **12.9 ✅** | **17.9 ✅** | 16 | 14.9% | 1 |
 
-**Ch.9 is the worst chapter in the book on all three new metrics** and the place to start.
-**Ch.7 is PUNCH-exempt from the breath and adverb gates, so it fires nothing — but 3.2
-against an author minimum of 12.9 is not obviously right even for a log-line chapter. Read
-it by eye before accepting the exemption.**
+**Ch.11 is the proof it is cheap.** It went 8.4 → 12.9 adverbs and 21.6 → 17.9 `and` across
+its hook and disruptor passes, and the adverb half cost **four words** — in narration that was
+being rewritten anyway. No chapter needs a dedicated adverb pass; any pass touching narration
+should close it on the way past.
 
-Three interactions that decide how each chapter can be fixed, and they are not optional:
+**Ch.9 is the worst in the book and the tightest.** 0.6 adverbs against a 10.5 floor is
+one adverb in 1,779 words of narration, and its `and` is 24.3 against 19.5 — but its
+**median sits exactly on its 14.0 floor**, so it cannot absorb a short sentence. Its `and`
+fix must therefore be the em-dashed appositive or a comma-set one, **not** a split (splitting
+raises the median, which is the safe direction here — so splitting is actually fine for Ch.9
+and *forbidden* for a chapter near its median ceiling. Read the direction every time.)
 
-1. **The SEAM fix raises em-dash density.** Interrupting an `and`-chain with an em-dashed
-   appositive is what the author does, but **Ch.8 (11.8) and Ch.11 (11.5) have almost no
-   em-dash headroom** — Ch.11 can afford exactly one more em-dash in 2,176 words. Those two
-   must interrupt with a comma-set appositive or a recast instead.
-2. **Splitting a long sentence RAISES the median**, because it replaces one outlier with two
-   above-median values. **Ch.11's median is already exactly 18.0 on an 18.0 ceiling**, so
-   Ch.11 may not fix its `and` problem by splitting. Ch.6, Ch.8 and Ch.9 have 4 points of
-   median headroom and can.
-3. **Adding adverbs adds narration words, which lowers every per-1k rate.** So the adverb
-   floor and the `and` ceiling pull in the *same* direction and should be fixed in one pass,
-   not two. Ch.11 needs roughly two `and`s out of its narration *and* the added words.
+**Ch.8 has the hardest envelope in the book:** adverbs 2.5, `and` 22.1, flat-man **6** against
+a ceiling of 3, median **exactly on its 14.0 floor**, and only ~0.2 em-dashes of headroom
+(11.8/1k against 12.0). It must gain adverbs and lose three flat-man constructions and 2.6
+points of `and` with no em-dash room to do any of it — so its `and` fix is a split (which
+raises its median off the floor, helping) and its flat-man recasts must not reach for a dash.
 
-Ch.8 has the hardest envelope in the book: it must lose `and` density and three flat-man
-constructions while gaining adverbs, with no em-dash room to do any of it.
+### Two cross-chapter FLAGs the new gate found, both still open
 
-## Resume point
+The repeated-phrase gate could not see these until 2026-10-08, because its filter discards
+n-grams made of function words:
+
+- **`"that had nothing to do with"` ×4** — Ch.3 *(author, once)*, Ch.8, Ch.9, Ch.11. Recast
+  two of the three pipeline instances.
+- **`"in the voice of a woman"` ×3** — Ch.6, Ch.8, Ch.10. This is the **flat-man construction
+  repeated verbatim**, which the flat-man ceiling structurally cannot catch: that counts the
+  habit per chapter, not the exact words across chapters. Recast two of the three.
+
+42 two-chapter pairs are reported but **not gated**, with provenance. Triage them into the
+ALLOWLIST rather than recasting blindly — at least one is deliberate (Ch.11 has a character
+quote Ch.8's *"a full view of a wall"* on purpose).
+
+## Resume point## Resume point
 
 1. **Ch.11's loop:** dialogue-polish → hook-craft → disruptor → evaluate → 8.5 gate.
 2. **Then Ch.12.** Eleventh/twelfth distinct closing shapes — check the inventory first.
