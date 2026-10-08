@@ -610,6 +610,30 @@ decisions: []
 revision_cycles: 0
 ```
 
+## ⚖️ DISCHARGE A FLOOR WHERE LENGTH IS CHEAPEST, NOT AT THE FIRST SENTENCE
+
+When a brief tells an agent to satisfy a *floor* — a minimum share of long sentences, a
+minimum simile or adverb density — it is telling it to spend length somewhere. **Say where.**
+
+**Worked example.** A hook-craft pass was rebuilding a chapter's opening and also had to hold
+a `>=40w` narration floor that a concurrent fix had put at risk. It discharged the floor by
+making the new opening's **first sentence 56 words** — correct arithmetically, and it landed
+the share mid-band. But that chapter's outline commissions it as *"fast throughout — the
+fastest dialogue in the book, minimal narration, almost no interiority until the coda."* The
+floor was paid at the one place in the chapter where length costs the most: the entry.
+
+**The rule: a floor is a budget, not a location.** When you brief a pass that must satisfy
+one, name a place to spend it where the chapter can afford the words — a mid-scene texture
+beat, a transition, a coda — and say explicitly that the opening and the final beat are not
+candidates unless the chapter's own design wants length there.
+
+**Corollary, and it is the more common error: quote BOTH walls of every metric in every
+brief.** A brief that named only a `>=40w` ceiling led an agent to be told *"add no long
+accumulating sentence"* in a chapter whose very next fix removed one of only six long
+sentences and put the **floor** at risk — so the instruction inverted mid-pass. The agent
+worked it out and went against the brief, correctly. **Both walls, every metric, every time,
+and prefer pasting the gate's own output line over summarising it.**
+
 ## ANTI-INFLATION PROTOCOL
 
 You enforce score integrity at every evaluation:

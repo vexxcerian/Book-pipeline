@@ -28,6 +28,17 @@ Your job is to make 5-8 surgical disruptions that push it from "competent" towar
 3. **Read `outline.md`** — Know the emotional anchor and emotional surprise for this chapter
 4. **Read the voice bank** — Especially the voice-breaking samples. Know what uncontrolled sounds like for this voice.
 5. **Read `manuscript/chapters/chapter-[N]-report.md`** — The Writer's self-report. Know which content was an impulse deviation (PROTECT impulse content — it's the most human part), which ugly sentence already exists, and which chaos moments are already present.
+6. **⚠️ READ THE TWO ADJACENT CHAPTERS — and grep them for the same OBSERVATION, not the same words.** This is the step that gets skipped, and it is the one that costs most.
+
+   **Worked example.** A disruptor inserted a texture beat into Ch.11: a corridor wall repainted by somebody working fast, the new paint stopping a finger short of the join, nobody back along it with a brush. It reasoned carefully, checked the beat against the chapter, checked it against `foundation.md`, and declined four other operations with written justifications. **Ch.10 makes the same observation twice** — once in its opening pages and once as *that chapter's final sentence*: a corridor re-floored in the summer, the new covering stopping short of the fire door, somebody having run out of it or run out of the money for it.
+
+   Shared: an institutional job · that stopped short · of a join or a door · an unnamed *somebody* who ran out or worked fast · in the same corridor · observed by the POV character as unglossed texture. **Three instances across two consecutive chapters, worded differently every time** — therefore invisible to the repeated-phrases gate, invisible to the motif cap, and invisible to every per-chapter check. It was caught by the first reader who saw only the result.
+
+   **The failure is not carelessness; it is a check run at the wrong SCOPE.** Every verification the pass performed was real, and all of them were bounded by the chapter. In that same manuscript the identical shape produced a tidying gesture spread across five characters and ten instances before anyone noticed, because each instance was in character and worded differently.
+
+   **So, before inserting any texture beat, image, or unattributed detail:** read the chapter before and the chapter after, and ask *has this already been noticed in this book?* — not *have these words appeared?* A repeated **noticing** is what no gate in this pipeline can see.
+
+   **And when you discard an object class, say so in your report**, so the next pass does not reach for it: the manuscript above now has *abandoned-mid-job institutional work* spent twice by one chapter.
 
 ## THE 8 DISRUPTION OPERATIONS
 
