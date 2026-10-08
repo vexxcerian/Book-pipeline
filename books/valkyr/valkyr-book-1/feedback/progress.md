@@ -381,7 +381,7 @@ Measured with `tools/style_check.py`'s own tokenizer, narration register. `↑` 
 | Ch.6 | **2.7** | **20.7** | 14.5 *(0.5 room)* | 13.2% *(0.2 room)* | 1 |
 | Ch.7 *(PUNCH)* | **3.2** | **20.4** | 11 *exempt* | 12.3% *exempt* | 0 |
 | Ch.8 | **2.5** | **22.1** | **14.0 — NO room** | 13.6% | **6** |
-| Ch.9 | **0.6** | **24.3** | **14 — NO room** | 14.0% | 3 *(at ceiling)* |
+| Ch.9 | **13.0 ✅** | **18.6 ✅** | 14 — NO room | 14.0% | 3 *(at ceiling)* |
 | Ch.10 | **3.3** | 18.6 ✅ | 17.0 | 14.7% | 1 |
 | **Ch.11** | **12.9 ✅** | **17.9 ✅** | 16 | 14.9% | 1 |
 
@@ -403,12 +403,35 @@ a ceiling of 3, median **exactly on its 14.0 floor**, and only ~0.2 em-dashes of
 points of `and` with no em-dash room to do any of it — so its `and` fix is a split (which
 raises its median off the floor, helping) and its flat-man recasts must not reach for a dash.
 
+### ⚠️ The split fix is UNAVAILABLE near a long-sentence floor — a third metric interaction
+
+My Ch.9 brief said splitting a clause was *"actively helpful"* there, because its median sits
+exactly on its 14.0 floor and splitting raises a median. True for the median, **wrong overall**,
+and the editor refused the instruction for a reason I had not accounted for:
+
+| | long ≥40w | of N | share | |
+|---|---|---|---|---|
+| Ch.9 before | 13 | 93 | 14.0% | ok |
+| **split one long sentence** | **12** | **94** | **12.77%** | **breaches the 13.0 floor** |
+
+**Splitting a long sentence takes one off the numerator and adds one to the denominator at the
+same time.** It moved ten conjunctions with appositives, asyndeton and participials instead —
+at **zero sentence cost**, so the median and the long share came out byte-identical.
+
+The asymmetry is what makes this easy to miss: **splitting a MID-LENGTH sentence costs nothing
+from the long-sentence numerator; splitting a LONG one costs one.** They are not the same move,
+and §THE SEAM's standard prescription is the second kind whenever the chained clause is long.
+Recorded in `book-editor.md` as trap 0, ahead of the two that were already there.
+
+That is the third time in this work that I quoted one wall of a metric and missed its
+interaction with another. The agents have caught two of the three.
+
 ### Two cross-chapter FLAGs the new gate found, both still open
 
 The repeated-phrase gate could not see these until 2026-10-08, because its filter discards
 n-grams made of function words:
 
-- **`"that had nothing to do with"` ×4** — Ch.3 *(author, once)*, Ch.8, Ch.9, Ch.11. Recast
+- **`"that had nothing to do with"` ×3** — Ch.3 *(author, once)*, Ch.8, Ch.11 *(Ch.9 recast 2026-10-08)*. Recast
   two of the three pipeline instances.
 - **`"in the voice of a woman"` ×3** — Ch.6, Ch.8, Ch.10. This is the **flat-man construction
   repeated verbatim**, which the flat-man ceiling structurally cannot catch: that counts the
