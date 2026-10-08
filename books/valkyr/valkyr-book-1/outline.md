@@ -1049,6 +1049,23 @@ acceleration in the last 400 words.
 fails. (b) No foreshadowing. None. No "he would remember this later." (c) Rx's degradation
 must be visible to the *reader* and dismissible by Vexx — the gap between those two readings
 is the chapter's engine. (d) Do not let Jameson do anything a good commander wouldn't.
+**(e) END THIS CHAPTER WITH ANOTHER HUMAN BEING PRESENT.** Seven of the first eleven chapters
+end with Vexx alone, **the last five consecutively** (Ch.7–11). The CLOSERS inventory in
+`feedback/progress.md` tracks the *shape* of each ending and not **who is in the room**, so it
+has been measuring the variable that was already varying — eleven distinct shapes, all of them
+a man by himself. This is not a shape problem and a twelfth distinct shape will not fix it.
+**(f) Pay off or retire Goliath's boot.** Ch.11 ends with the propped fire door shut and
+Goliath's reading of it unconsumed — *"A boot at the bottom is what you use when you want to
+come through it fast and not stop."* Nothing in Ch.12–26 picks it up. **Deliberate ambiguity
+and an unredeemed detail are the same object until a later chapter makes them different.** One
+line is enough: somebody notices the door shut, or notices it propped again. Either settles it;
+silence leaves the Devoted Reader building a theory the book never pays.
+**(g) The planned cold-document opening would be the third of that device** (Ch.7, Ch.10,
+Ch.12). Not consecutive and not forbidden, but three of twelve on one opening device is the
+Ch.2–5 drift profile at instance three. The off-detail (*the commanding officer is attending*)
+is excellent and worth keeping; it may be the frame that needs changing rather than the line.
+Decide at drafting, not at polish — and **enter Ch.12 in both inventories the day it is
+drafted**, because Ch.11's two duplications happened precisely because it was not entered.
 **Beat subversion:** Genre-standard beat: *the villain visits the field and the hero's
 suspicion sharpens.* Fully inverted: the visit **weakens** Vexx's suspicion. He comes home
 liking Jameson more, half-convinced he has been building a case out of grief, and that partial
