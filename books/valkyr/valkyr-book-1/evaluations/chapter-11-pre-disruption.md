@@ -1,7 +1,7 @@
 # Chapter Eleven
 
 <!-- SCENE BUDGET (Target 2,200): door/acoustics opening 500 | Echo + the boot 350 | the regulation, four exchanges too long 450 | he shuts it, the laugh 250 | the turn + mind-reading 400 | the smallest true thing + "that was your one" + exit 350 | coda 200 -->
-<!-- Word count: 2,289 | Revision: 3 (disruptor pass — one long unattributed texture beat inserted mid-argument (repainted wall, pays nothing off, 49 words, carried the >=40w share off its 13.0 FLOOR to 15.2%); the self-glossing sentence after the reveal deleted then RESTORED on review (it is a turn, not a restatement — it adds that he did not know what he was preparing for, which the image does not carry, and the author runs the identical construction in Ch.5); ¶186 Vexx’s object-handling deliberation verb recast onto Gaia’s own acoustic axis (she listens to the sentence); no simile removed, no em-dash added; prior: hook-and-pull pass, dialogue pass) | Target: 2,200 | Anchor: a fire door, a boot in his hand, and the word "dead" said like a compliment -->
+<!-- Word count: 2,199 | Revision: 2 (hook-and-pull pass — N-12(a) opening recast onto Gaia's position; N-12(b) closer recast onto the room answering; N-11 duplicated two-sentence structure recast; narration adverb FLOOR and narration `and` CEILING both closed, median 18.0 -> 17; prior: dialogue pass) | Target: 2,200 | Anchor: a fire door, a boot in his hand, and the word "dead" said like a compliment -->
 
 Gaia was in the corridor when he came down to it, her back against the wall, her arms crossed, her weight entirely on the foot nearest the stair — exactly where she put it in every room he had ever been in with her, not a thing he had ever seen her choose. She had evidently been at it a while before he got there. She did not go back to the beginning for him.
 
@@ -86,8 +86,6 @@ Neither of them had anything to say to that, and Goliath did not appear to have 
 “The boot comes back either way.”
 
 “The boot comes back because the only thing anybody in this building has ever heard about that door is a regulation.”
-
-The wall behind her had been another color once. You could see it down at the floor, where the new gray had been rolled on by somebody working fast and had stopped a finger short of the join, a band of green left showing right along the corridor, the flat green of some other service, some other decade. Nobody had been back along it with a brush.
 
 “I’ll have it shut, Gaia. You’ve got what you came for.”
 
@@ -187,7 +185,7 @@ The sentence came out whole, and he had not built it standing there — he had b
 
 “That’s a no.”
 
-She took it. She stood there listening to it in front of him without hurrying — he watched her find the edges of it, find how small it was, not say so.
+She took it. She stood there turning it over in front of him without hurrying — he watched her find the edges of it, find how small it was, not say so.
 
 “That was your one,” Gaia said.
 
