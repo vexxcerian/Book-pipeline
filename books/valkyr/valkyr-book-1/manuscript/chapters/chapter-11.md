@@ -155,7 +155,7 @@ He did not answer that, because there was no version of the answer that was not 
 
 “I had things ready to say to you on the ramp. I said none of them, I’ve been carrying them around ever since, which is how I know it wasn’t about the wall.” She stood square to him now. “Here’s what I think. You’ve had something since before the jungle. You decided not to bring it to us — you didn’t decide it once, you’ve decided it every week since, which is the harder way to do it, and you do it anyway. You don’t think we’d sell you. You want us able to stand in front of a woman with a notebook, say we didn’t know, be telling the truth when we say it. You worked out what each of us would cost you. In your head, in order. I’d put money on where I came.”
 
-“You pulled our files again after the jungle. “All of us. Nobody asked you to, nobody told you to, you did it on your own time — and the only reason to do that is to find out which of us goes to command first.”
+“You pulled our files again after the jungle. All of us. Nobody asked you to, nobody told you to, you did it on your own time — and the only reason to do that is to find out which of us goes to command first.”
 
 It was close — close enough that the part she had wrong sat in his mouth with nowhere to put it down — she had the machine of it exactly right, the reason for it wrong, the reason for it not on her roster, not on anybody’s roster these four years — and he kept it where it was, and let her keep the rest.
 

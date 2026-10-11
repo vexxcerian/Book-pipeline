@@ -620,6 +620,38 @@ def scan():
                          f"— the narrator has stopped looking at the specific person)")
             problems += 1
 
+        # 3. NESTED / ORPHANED QUOTATION MARKS. The straight-quote check below catches the
+        #    wrong GLYPH; this catches the wrong DIRECTION, which is invisible to it because
+        #    both characters are typographic. Two ways it goes wrong:
+        #      · an OPENING quote arriving while already inside a quote
+        #      · a CLOSING quote arriving while outside one
+        #    A paragraph that ends still-open is NOT an error — that is the standard
+        #    continued-speech convention, and a naive open-vs-close count flags five
+        #    legitimate paragraphs in this manuscript. Track the state instead.
+        #
+        #    Both known instances were interrupted speech ending in an em-dash, where the
+        #    correct form is em-dash + CLOSING quote (the speech is being cut off, not
+        #    started). Smart-quote substitution guesses "opening" after a dash and gets it
+        #    backwards. This manuscript uses the correct form 20 times across 7 chapters,
+        #    including the author's own, so the two exceptions were plainly defects — and one
+        #    more was introduced by a revision pass that deleted a mid-speech attribution tag
+        #    and left its quotation marks behind.
+        for _li, _para in enumerate(text.split("\n"), 1):
+            _inside = False
+            for _ch in _para:
+                if _ch == "\u201c":
+                    if _inside:
+                        flags.append(f"QUOTE line {_li}: opening quote while already inside a "
+                                     f"quote"); problems += 1
+                        break
+                    _inside = True
+                elif _ch == "\u201d":
+                    if not _inside:
+                        flags.append(f"QUOTE line {_li}: closing quote while not inside a "
+                                     f"quote"); problems += 1
+                        break
+                    _inside = False
+
         # TYPOGRAPHY — two defects that no other check in this file can see, both found
         # only because a human looked at a diff.
         #

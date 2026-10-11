@@ -161,7 +161,7 @@ Vexx sat with that.
 
 “Ask.”
 
-“There’s a girl. Mine. She’d be nine now, or nine next — she’s nine.” He said the number the way a man says a thing he has checked. “They took my contact list when I came in, which is standard, I know it’s standard, I’ve had it explained. Her mother won’t have heard anything from anybody. I’ve written four letters and I don’t know if any of them left the building. What I’d want to know is whether there’s a—“
+“There’s a girl. Mine. She’d be nine now, or nine next — she’s nine.” He said the number the way a man says a thing he has checked. “They took my contact list when I came in, which is standard, I know it’s standard, I’ve had it explained. Her mother won’t have heard anything from anybody. I’ve written four letters and I don’t know if any of them left the building. What I’d want to know is whether there’s a—”
 
 “Family contact is reviewed each cycle, Mr. Corwin. It’s in review.”
 
@@ -203,7 +203,7 @@ The trolley wheel squeaked at the far end of the room, the woman at the card tab
 
 Corwin looked up.
 
-“Your man. The one on the ground. Left or right, and which hip was the pouch on, and did he go into it with his—“
+“Your man. The one on the ground. Left or right, and which hip was the pouch on, and did he go into it with his—”
 
 “I don’t know.” Something went out of Corwin’s face. “I don’t know, because I don’t know that any of it happened. That’s what I’ve been telling you. That part’s the part I’ve got wrong. All of that part.”
 
