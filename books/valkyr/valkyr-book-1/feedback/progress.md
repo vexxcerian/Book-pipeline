@@ -370,61 +370,43 @@ briefed a ceiling without its floor the next day.** Knowing the failure mode is 
 as not committing it. **Quote both walls in every brief, every time, and prefer pasting the
 gate's own line over summarising it.**
 
-### The mechanical fix list — CURRENT as of 2026-10-08
+### ✅ The mechanical fix list — CLOSED 2026-10-11. `RESULT: clean.`
 
-Measured with `tools/style_check.py`'s own tokenizer, narration register. `↑` = floor.
-**Author band is the benchmark column — the target is inside it, not past it.**
+**All eleven chapters pass all three gates with zero flagged issues — the first time in this
+book's history.** Narration register, `tools/style_check.py`'s own tokenizer. `↑` = floor.
 
 | | adverbs ↑10.5 | `and` ≤19.5 | median 14–18 | ≥40w ↑13.0–16.5 | flat-man ≤3 |
 |---|---|---|---|---|---|
 | **author Ch.1–5** | *11.2–16.0* | *18.2–18.9* | *14.0–17.5* | *13.3–16.2%* | *0–2* |
-| Ch.6 | **2.7** | **20.7** | 14.5 *(0.5 room)* | 13.2% *(0.2 room)* | 1 |
-| Ch.7 *(PUNCH)* | **3.2** | **20.4** | 11 *exempt* | 12.3% *exempt* | 0 |
-| Ch.8 | **12.9 ✅** | **18.7 ✅** | 14.0 — NO room | 13.6% | **3 ✅** |
-| Ch.9 | **13.0 ✅** | **18.6 ✅** | 14 — NO room | 14.0% | 3 *(at ceiling)* |
-| Ch.10 | **3.3** | 18.6 ✅ | 17.0 | 14.7% | 1 |
-| **Ch.11** | **12.9 ✅** | **17.9 ✅** | 16 | 14.9% | 1 |
+| Ch.6 | 12.4 ✅ | 18.9 ✅ | 15.0 | 13.2% | 1 |
+| Ch.7 *(PUNCH)* | 13.8 ✅ | 19.1 ✅ | 11 *exempt* | 12.3% *exempt* | 0 |
+| Ch.8 | 12.9 ✅ | 18.7 ✅ | 14.0 | 13.6% | 3 |
+| Ch.9 | 13.0 ✅ | 18.6 ✅ | 14 | 14.0% | 3 |
+| Ch.10 | 12.3 ✅ | 18.5 ✅ | 17.0 | 14.7% | 1 |
+| Ch.11 | 12.9 ✅ | 18.5 ✅ | 17 | 14.9% | 1 |
 
-**Ch.11 is the proof it is cheap.** It went 8.4 → 12.9 adverbs and 21.6 → 17.9 `and` across
-its hook and disruptor passes, and the adverb half cost **four words** — in narration that was
-being rewritten anyway. No chapter needs a dedicated adverb pass; any pass touching narration
-should close it on the way past.
+**Six chapters were running at a quarter of the author's adverb density** — 0.6 to 3.3 against
+his 11.2–16.0 — and every one is now inside his band. The fix was cheap everywhere: Ch.11's
+cost **four words**, in narration being rewritten anyway.
 
-**Ch.9 is the worst in the book and the tightest.** 0.6 adverbs against a 10.5 floor is
-one adverb in 1,779 words of narration, and its `and` is 24.3 against 19.5 — but its
-**median sits exactly on its 14.0 floor**, so it cannot absorb a short sentence. Its `and`
-fix must therefore be the em-dashed appositive or a comma-set one, **not** a split (splitting
-raises the median, which is the safe direction here — so splitting is actually fine for Ch.9
-and *forbidden* for a chapter near its median ceiling. Read the direction every time.)
+**What stayed hard was the interactions, not the metrics.** Three chapters had a *floor* as
+their binding constraint, and the gate words a floor breach in the same form as a ceiling
+breach, so the direction has to be read every time:
 
-**Ch.8 has the hardest envelope in the book:** adverbs 2.5, `and` 22.1, flat-man **6** against
-a ceiling of 3, median **exactly on its 14.0 floor**, and only ~0.2 em-dashes of headroom
-(11.8/1k against 12.0). It must gain adverbs and lose three flat-man constructions and 2.6
-points of `and` with no em-dash room to do any of it — so its `and` fix is a split (which
-raises its median off the floor, helping) and its flat-man recasts must not reach for a dash.
+- **Ch.8** needed 30 adverbs and 10 conjunctions removed with **one em-dash of headroom**, its
+  median exactly on its 14.0 floor, its short-sentence share 0.2 points under its ceiling, and
+  its simile density at its floor. No appositives, no added short sentences, no removable
+  comparisons, one splittable long sentence. It was done with asyndeton and participials.
+- **Ch.9** could not split anything: 13 long sentences of 93 is 14.0%, and splitting one gives
+  12 of 94 = **12.77%, a breach**, because a split takes one off the numerator and adds one to
+  the denominator. My brief said splitting was "actively helpful" there and the editor was
+  right to refuse.
+- **Ch.10** had to **hold** its `and` rather than reduce it — already inside the author's band
+  at 18.6, and adding narration words lowers a per-1k rate. It landed at 18.5.
 
-### ⚠️ The split fix is UNAVAILABLE near a long-sentence floor — a third metric interaction
-
-My Ch.9 brief said splitting a clause was *"actively helpful"* there, because its median sits
-exactly on its 14.0 floor and splitting raises a median. True for the median, **wrong overall**,
-and the editor refused the instruction for a reason I had not accounted for:
-
-| | long ≥40w | of N | share | |
-|---|---|---|---|---|
-| Ch.9 before | 13 | 93 | 14.0% | ok |
-| **split one long sentence** | **12** | **94** | **12.77%** | **breaches the 13.0 floor** |
-
-**Splitting a long sentence takes one off the numerator and adds one to the denominator at the
-same time.** It moved ten conjunctions with appositives, asyndeton and participials instead —
-at **zero sentence cost**, so the median and the long share came out byte-identical.
-
-The asymmetry is what makes this easy to miss: **splitting a MID-LENGTH sentence costs nothing
-from the long-sentence numerator; splitting a LONG one costs one.** They are not the same move,
-and §THE SEAM's standard prescription is the second kind whenever the chained clause is long.
-Recorded in `book-editor.md` as trap 0, ahead of the two that were already there.
-
-That is the third time in this work that I quoted one wall of a metric and missed its
-interaction with another. The agents have caught two of the three.
+⚠️ **Zero headroom now, in two places:** **Ch.6's simile density is exactly 2.0/1k against a
+floor of 2.0** — removing one comparison from Ch.6 breaches it — and **Ch.8's and Ch.9's
+medians sit exactly on their 14.0 floor**, so neither can absorb a short narration sentence.
 
 ### The two cross-chapter FLAGs — both CLOSED 2026-10-11
 
@@ -462,15 +444,8 @@ character quote Ch.8's *"a full view of a wall"* on purpose.
 CVI-Launch 8.7) and is **the first chapter inside the author's measured range on every
 metric** — adverbs, `and`, median, both sentence-length shares, em-dash, simile, flat-man.
 
-1. **The Ch.6–10 retrofit.** See §"The mechanical fix list" for each chapter's envelope — they
-   differ, and two of them point opposite ways. Ten flagged issues, almost all two metrics:
-   the **narration adverb floor** (Ch.6–10 run 2.5–3.3 against 10.5) and the **narration `and`
-   ceiling** (Ch.6/7/8/9 run 20.4–24.3 against 19.5), plus **Ch.8's flat-man at 6** against a
-   ceiling of 3. **Ch.11 proved the adverb half is cheap** — four words, in narration being
-   rewritten anyway. No chapter needs a dedicated pass for it; fold it into any pass that
-   touches narration.
-2. **The two cross-chapter FLAGs**, which only became visible on 2026-10-08: `"that had nothing
-   to do with"` ×4 and `"in the voice of a woman"` ×3. Recast two of three in each.
+1. ~~The Ch.6–10 retrofit~~ — **DONE 2026-10-11. `RESULT: clean` across the whole manuscript.**
+2. ~~The two cross-chapter FLAGs~~ — **both closed.**
 3. **Re-run `entity-tracker`.** Every Ch.11-sourced entry in `ENTITY_STATE.yaml` is marked
    `draft_status: "ch-11 pre-polish"` and the chapter has since been through four passes.
 4. **Then Ch.12.** Three standing instructions for it:
