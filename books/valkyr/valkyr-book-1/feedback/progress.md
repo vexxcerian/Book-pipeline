@@ -380,7 +380,7 @@ Measured with `tools/style_check.py`'s own tokenizer, narration register. `↑` 
 | **author Ch.1–5** | *11.2–16.0* | *18.2–18.9* | *14.0–17.5* | *13.3–16.2%* | *0–2* |
 | Ch.6 | **2.7** | **20.7** | 14.5 *(0.5 room)* | 13.2% *(0.2 room)* | 1 |
 | Ch.7 *(PUNCH)* | **3.2** | **20.4** | 11 *exempt* | 12.3% *exempt* | 0 |
-| Ch.8 | **2.5** | **22.1** | **14.0 — NO room** | 13.6% | **6** |
+| Ch.8 | **12.9 ✅** | **18.7 ✅** | 14.0 — NO room | 13.6% | **3 ✅** |
 | Ch.9 | **13.0 ✅** | **18.6 ✅** | 14 — NO room | 14.0% | 3 *(at ceiling)* |
 | Ch.10 | **3.3** | 18.6 ✅ | 17.0 | 14.7% | 1 |
 | **Ch.11** | **12.9 ✅** | **17.9 ✅** | 16 | 14.9% | 1 |
@@ -426,20 +426,35 @@ Recorded in `book-editor.md` as trap 0, ahead of the two that were already there
 That is the third time in this work that I quoted one wall of a metric and missed its
 interaction with another. The agents have caught two of the three.
 
-### Two cross-chapter FLAGs the new gate found, both still open
+### The two cross-chapter FLAGs — both CLOSED 2026-10-11
 
-The repeated-phrase gate could not see these until 2026-10-08, because its filter discards
-n-grams made of function words:
+Found only on 2026-10-08, when the repeated-phrase gate was given a cross-chapter pass; its
+content-rich filter had been discarding both as function words.
 
-- **`"that had nothing to do with"` ×3** — Ch.3 *(author, once)*, Ch.8, Ch.11 *(Ch.9 recast 2026-10-08)*. Recast
-  two of the three pipeline instances.
-- **`"in the voice of a woman"` ×3** — Ch.6, Ch.8, Ch.10. This is the **flat-man construction
-  repeated verbatim**, which the flat-man ceiling structurally cannot catch: that counts the
-  habit per chapter, not the exact words across chapters. Recast two of the three.
+- **`"that had nothing to do with"`** was in four chapters (Ch.3 the author's, Ch.8, Ch.9,
+  Ch.11). Ch.9's and Ch.8's were recast. The author's single instance stands.
+- **`"in the voice of a woman"`** was verbatim in Ch.6, Ch.8 and Ch.10 — **the flat-man
+  construction repeated word for word**, which the flat-man ceiling structurally cannot catch
+  because it counts the habit per chapter rather than the exact words across chapters.
 
-42 two-chapter pairs are reported but **not gated**, with provenance. Triage them into the
-ALLOWLIST rather than recasting blindly — at least one is deliberate (Ch.11 has a character
-quote Ch.8's *"a full view of a wall"* on purpose).
+**Ch.8's fix is the one to copy.** It had the phrase twice in one sentence:
+
+> *"She said it **in the voice of a woman** confirming that a thing was not in a file rather
+> than **the voice of a woman** who did not know."*
+
+became
+
+> *"She said it with the packet going back into its folder, face-down, an answer about a
+> packet. She did not separately offer him one about herself."*
+
+Two flat-man instances gone, the cross-chapter phrase gone, and generic certification replaced
+by a specific physical observation — which is the entire point of the rule. **The
+construction's failure is that it certifies occupational flatness instead of looking at the
+person in front of the POV character**, so the fix is always to look at that person.
+
+**42 two-chapter pairs remain reported and ungated**, with provenance. Triage them into the
+ALLOWLIST rather than recasting blindly: at least one is deliberate, since Ch.11 has a
+character quote Ch.8's *"a full view of a wall"* on purpose.
 
 ## Resume point
 
