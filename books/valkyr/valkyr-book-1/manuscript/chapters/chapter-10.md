@@ -1,11 +1,11 @@
 # Chapter Ten
 
 <!-- SCENE BUDGET (Target 4,600): summons + the room + Dessen + the finding (I) 800 | the release, the clerk’s name withheld 450 | the triple question 550 | the mess hall, the extension that does not exist 550 | what it cost Corwin 300 | the recommendation + Jameson + eight seconds 500 | the apology 400 | the dismantling + Dessen checks it 700 | the finding (II) + the transfer 400 | corridor coda + close 650 -->
- <!-- Word count: 4,674 | Revision: 3 (disruption pass, 4 operations: 2 explaining extensions cut, 1 emotional control break, 1 predictable clause deleted; -41 words; prior: breath repair, 5 splits; dialogue pass, 9 edits) | Target: 4,600 | Anchor: a paper notebook in a building where nothing is paper, and a pen that writes down the apology at the same speed it wrote down the insult -->
+<!-- Word count: 4652 | Revision: 4 (voice-match pass — 22 narration adverbs added (3.3 -> 12.3/1k); narration `and` deliberately UNCHANGED at 45 raw, 18.6 -> 18.5/1k, already inside the author's 18.2-19.5 band; no sentence split, added, removed or pushed over 40 words; zero flash-forwards and zero retrospective-narrator intrusions preserved; prior: disruption pass, 4 operations, -41 words; breath repair, 5 splits; dialogue pass, 9 edits) | Target: 4,600 | Anchor: a paper notebook in a building where nothing is paper, and a pen that writes down the apology at the same speed it wrote down the insult -->
 
 Eleven forty, room 2-14, north end of the operations block — nothing on the summons about what for.
 
-It had come up on the pad at twenty past ten with no name attached to it: routing block, room, time, the word ATTEND set in capitals. A clause reference that Vexx looked up on the walk down, understood no better for having looked. He carried it into the stairwell with him because it pointed at a schedule sitting two authorizations above anything he held. He had assumed Merrick. That was the shape a summons had in his head now, a fortnight after a transport had gone out with a man on it repeating himself, and he had put together most of an answer about the assessment before the answer turned out to be for a question nobody was going to ask him. The corridor at that end had been re-floored in the summer, the new covering stopping a couple of paces short of the fire door — where somebody had run out of it, or run out of the money for it, leaving a lip you could catch a toe on.
+It had come up on the pad at twenty past ten with no name attached to it: routing block, room, time, the word ATTEND set in capitals. A clause reference that Vexx looked up on the walk down, understood no better for having looked. He carried it into the stairwell with him because it pointed at a schedule sitting two authorizations above anything he held. He had naturally assumed Merrick. That was the shape a summons had in his head now, a fortnight after a transport had gone out with a man on it repeating himself, and he had put together most of an answer about the assessment before the answer turned out to be for a question nobody was going to ask him. The corridor at that end had been re-floored in the summer, the new covering stopping a couple of paces short of the fire door — where somebody had run out of it, or run out of the money for it, leaving a lip you could easily catch a toe on.
 
 *It’s an evidence-handling schedule*, Rx said. *The one about who’s allowed to carry what out of a locked room. You’d think a man would know that already.*
 
@@ -13,7 +13,7 @@ It had come up on the pad at twenty past ten with no name attached to it: routin
 
 *You get one if it’s a board. It won’t be a board. A board is three people, a table you can’t reach across, and a stenographer who hates you personally.*
 
-The room had been a store once, converted by somebody working to a budget that ran to a table, four chairs, the paint. You could see where the shelving had come off the long wall — a double row of bolt holes filled with something a shade paler than the paint — the vent above the door painted over with the grille shut, then cut open again later with a knife, by somebody in a hurry. A table. Four chairs, two of them pushed in. A jug of water, two glasses on a tray, put out for a thing expected to take a while, the tray gone brown at the rim like something through a machine wash too often.
+The room had been a store once, converted by somebody working strictly to a budget that ran to a table, four chairs, the paint. You could see where the shelving had come off the long wall — a double row of bolt holes filled with something a shade paler than the paint — the vent above the door painted over with the grille shut, then cut open again later with a knife, plainly by somebody in a hurry. A table. Four chairs, two of them pushed in. A jug of water, two glasses on a tray, put out for a thing expected to take a while, the tray gone brown at the rim like something through a machine wash too often.
 
 She was at the far side of the table, writing, and she finished the line before she looked up — not making a point of it, not the small held pause of a person who means you to wait, simply finishing a line.
 
@@ -37,7 +37,7 @@ She let it sit exactly as long as it needed, no longer.
 
 * * *
 
-She began where they teach you to begin. There was none of the small theater Vexx had been braced for — no folder pushed across the table, no pause held for effect, no question asked twice over in a different tone to see whether the answer moved. She asked him what the material was, and he told her: armor plating with a modification pattern on the underside, a data chip burned past recovery, a dog tag. She asked what the review board had ruled. He told her that too — she wrote it down without saying what she thought of it, without any of it reaching her face at all.
+She began where they teach you to begin. There was none of the small theater Vexx had been braced for — no folder pushed across the table, no pause held for effect, no question asked twice over in a slightly different tone to see whether the answer moved. She asked him what the material was, and he told her: armor plating with a modification pattern on the underside, a data chip burned completely past recovery, a dog tag. She asked what the review board had ruled. He told her that too — she wrote it down without saying what she thought of it, without any of it reaching her face at all.
 
 “You raised the release yourself.”
 
@@ -55,11 +55,11 @@ She began where they teach you to begin. There was none of the small theater Vex
 
 “I don’t remember.”
 
-That came out level, easy, a shade ahead of the question — and went down in the book without comment, because it was the truth about a thing he was choosing not to say, and there is no strain in that at all. He had been withholding for thirty years, from review boards, from a chaplain, from two officers in dress uniform standing in his doorway with a folder they did not open. It cost him nothing. It never had.
+That came out level, easy, a shade ahead of the question — and went down in the book without comment, because it was the truth about a thing he was choosing not to say, and there is honestly no strain in that at all. He had been withholding for thirty years, from review boards, from a chaplain, from two officers in dress uniform standing in his doorway with a folder they did not open. It cost him nothing. It never had.
 
 “The clerk isn’t my question,” Dessen said. “The clerk processed a release that was in order on its face. I’ll put it down that you don’t recall, because you don’t, and if it turns out later that you do, that’ll be a different conversation, a worse one.” She drew a short line under something. “The water’s been standing since yesterday. I’d have it anyway.”
 
-The water in the jug had been there since before the room was booked and he drank two glasses of it.
+The water in the jug had certainly been there since before the room was booked and he drank two glasses of it.
 
 * * *
 
@@ -71,15 +71,15 @@ She wrote that down, all of it, in about the time it takes to say it.
 
 “What was the material used for.”
 
-Vexx heard the change, could not, sitting there, work out what it bought her. “I looked at it again,” he said. “Under a better light than the one in the assessment bay. The modification on the plate isn’t visible under a field lamp. It’s visible on a kitchen table with a lamp brought down close to it.”
+Vexx heard the change clearly, could not, sitting there, work out what it bought her. “I looked at it again,” he said. “Under a better light than the one in the assessment bay. The modification on the plate isn’t visible under a field lamp. It’s visible on a kitchen table with a lamp brought down close to it.”
 
-Her pen went on a good deal longer that time, and when it stopped she read back what she had put down, moving nothing but her eyes.
+Her pen went on a good deal longer that time, and when it finally stopped she read back what she had put down, moving nothing but her eyes.
 
 “What is the material being used for.”
 
 The vent over the door ticked as the heating came up, small reports out of the metal at uneven intervals, like a kettle beginning to think about it.
 
-He had known the shape of the third before she got to the end of it — had nothing standing behind it either, because the honest answer was a drawer beside a bed in an apartment with boxes still taped shut in the corner of the front room, and any other answer had to be built out of nothing, on the spot, in front of a woman who wrote things down.
+He had known the shape of the third before she got to the end of it — had nothing standing behind it either, because the honest answer was a drawer beside a bed in an apartment with boxes still taped shut in the corner of the front room, and any other answer had to be built entirely out of nothing, on the spot, in front of a woman who wrote things down.
 
 “It isn’t,” he said. “Being used.”
 
@@ -87,7 +87,7 @@ He had known the shape of the third before she got to the end of it — had noth
 
 “No.”
 
-She wrote the first answer, the second, the third, each under the last, drawing no line between them, not looking up while she did it — three separate facts about the same man, small and upright on the page like items on a shopping list.
+She wrote the first answer, the second, the third, each squarely under the last, drawing no line between them, not looking up while she did it — three separate facts about the same man, small and upright on the page like items on a shopping list.
 
 *She writes at about ninety words a minute*, Rx said, *which for longhand is not human, and I have been watching her do it for twenty-two minutes and I cannot see her lift the pen at the ends of the words.* A pause. *There’s a property schedule as well as an evidence schedule. Different remit, different penalty. I’m reading it now in case anybody wants it.*
 
@@ -123,7 +123,7 @@ Nothing came. There was a reference format — he had seen it a hundred times, a
 
 “Thank you.” She wrote it. “That’s the sort of thing that gets people put in front of a board. The reason it isn’t going to today is that you took it back inside a minute, and I’d like that on the page as well.” The pen stopped. She looked at it, clicked it twice, put it down, took a second out of the spine of the book. “Every last one of these dies at the tail. Every single one. They’re bought by the gross.”
 
-She wrote three more lines with the new pen, and the sound of it was different, wetter, laying the ink down like a brush instead of scratching it in. Vexx sat in a chair that was too low and did not adjust it.
+She wrote three more lines with the new pen, and the sound of it was noticeably different, wetter, laying the ink down like a brush instead of scratching it in. Vexx sat in a chair that was too low and did not adjust it.
 
 * * *
 
@@ -137,7 +137,7 @@ The heating went off.
 
 “You didn’t destroy it,” she said. “You did something narrower. You made it useless to him.”
 
-Vexx looked at the far wall, at the paler filler in the bolt holes, at the grille painted shut, then cut open by a man who had needed air more than he had needed the paintwork. He had gone down to that counter on a Thursday afternoon with an authorization on a pad. He had read the second field of the form, and had read it properly, and had signed underneath it. He had been careful. He had been careful the entire time.
+Vexx looked at the far wall, at the paler filler in the bolt holes, at the grille painted shut, then cut open by a man who had needed air considerably more than he had needed the paintwork. He had gone down to that counter on a Thursday afternoon with an authorization on a pad. He had read the second field of the form, and had read it properly, and had signed underneath it. He had been careful. He had been careful the entire time.
 
 “Yes,” he said.
 
@@ -163,13 +163,13 @@ He did not sit. He did not say excuse me. He stood inside the door with the pad 
 
 It went on for about eight seconds.
 
-Vexx came half out of the chair without having worked out what he intended to do with the rest of the movement, and sat back down into it.
+Vexx came half out of the chair without having properly worked out what he intended to do with the rest of the movement, and sat back down into it.
 
-Then it stopped, like a machine stopped by somebody taking the power off it rather than switching it, and Jameson stood there with his cap in his hand, his mouth shut, and something went across his face Vexx had not seen on it before.
+Then it stopped, like a machine stopped by somebody taking the power off it rather than simply switching it, and Jameson stood there with his cap in his hand, his mouth shut, and something went across his face Vexx had not seen on it before.
 
 “No,” he said. “No, that was contemptible.”
 
-Dessen had not moved. She had not put the pen down either, and the hand holding it had stayed where it was on the page, at the end of an unfinished word.
+Dessen had not moved. She had not put the pen down either, and the hand holding it had stayed exactly where it was on the page, at the end of an unfinished word.
 
 “I said your work was trivial. It isn’t. It’s the only reason a file in this building means anything at all — I have relied on it twice this year, to my advantage, and thanked nobody for it.” He was looking at her, not at the table, not at Vexx. “The thing about the parking, I don’t know to be true. I said it because I wanted it to land, because it’s the sort of thing that lands. That’s worse than the first part. The first part was temper. The second part I chose.”
 
@@ -217,13 +217,13 @@ Nothing in the room for a second.
 
 “Read the disposition line at the bottom of the ruling. Not the summary — the disposition.”
 
-She had it up on her own pad inside a minute. She read it. Then she read it again, with her lips moving and her pen not going, the second reading taking about three times as long as the first.
+She had it up on her own pad inside a minute. She read it. Then she read it again, slowly, with her lips moving and her pen not going, the second reading taking about three times as long as the first.
 
 “Struck from the evidentiary record,” she said. “Retained as recovered property pending disposal.”
 
 “Two days before he signed anything.” Jameson said it with no lift on it whatsoever, like a man reporting a figure off a gauge. “The chain of custody you’re describing was ended in writing by a review board on a Tuesday afternoon. Everything that came out of that lock afterward came out as property. You can find him for a property return that’s overdue since the autumn — you should, because it is. That’s a real finding, I won’t stand in front of it. But it’s a paragraph, a signature, a line in the quarterly. It isn’t a fitness review, because there was no chain left for him to break by the time he got there. They broke it. He inherited it.”
 
-Dessen did not answer for some time, and the silence she kept was a working one — she went back through her own pad, then through the notebook, then through the pad again, taking long enough over it that the heating came on, ran, went off.
+Dessen did not answer for some time, and the silence she kept was a working one — she went back carefully through her own pad, then through the notebook, then through the pad again, taking long enough over it that the heating came on, ran, went off.
 
 “The schedule doesn’t distinguish,” she said at last.
 
@@ -245,7 +245,7 @@ He went out, left the door standing open, and somebody had to get up to shut it.
 
 * * *
 
-For a while it was only the pen. Dessen wrote, and Vexx stood by the door with his hand still on it, looking down a corridor with nothing in it, listening to the elevator at the far end make the noise an elevator makes when it is going somewhere without you.
+For a while it was only the pen. Dessen wrote, and Vexx stood by the door with his hand still on it, looking down a corridor with absolutely nothing in it, listening to the elevator at the far end make the noise an elevator makes when it is going somewhere without you.
 
 “Sit down a minute,” she said. “I have to read it to you again as it goes in. You have to hear it. Then we’re finished.”
 
@@ -267,13 +267,13 @@ She was packing the notebook away — a case with a strap, the strap set for som
 
 “No.” She got the case shut. “They grade the transfers on a board. The board sits twice a year. I’ve been told both times that my experience is very valuable where it is.”
 
-Vexx said something about it being a hard year for postings — true, useless, the sort of remark he would have been annoyed to be handed himself.
+Vexx said something about it being a hard year for postings — true, useless, exactly the sort of remark he would have been annoyed to be handed himself.
 
 “It is,” Dessen said, in the voice of a woman filing something.
 
 * * *
 
-The elevator at the north end takes its time, and Jameson was still standing at it when Vexx came out of the room, pad under one arm, reading something off it with his thumb.
+The elevator at the north end usually takes its time, and Jameson was still standing at it when Vexx came out of the room, pad under one arm, reading something off it with his thumb.
 
 *He’ll have gone by now*, Rx had said on the stairs, answering something Vexx had not asked him, and had said almost nothing since the audit-room door opened.
 

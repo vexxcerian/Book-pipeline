@@ -1,7 +1,7 @@
 # Chapter Seven
 
 <!-- SCENE BUDGET (Target 1,600): cold-open requisition + the kitchen 240 | lawful channels, the tedium, the rain 380 | HOLST, D. returns nothing → the KIA log 340 | the issue record + footer 260 | the issue date read twice + the schedule line 260 | the eggs, the file, the listings, the close 320 -->
-<!-- Word count: 1525 | Revision: 6 (voice-match gloss repair — 3 trailing ", which" clauses recast, 1 kept; prior: voice-match comparison repair — 1 bare comparison restored; F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
+<!-- Word count: 1533 | Revision: 7 (voice-match pass — 10 narration adverbs added (3.2 -> 13.8/1k), 1 narration `and` recast as asyndeton (20.4 -> 19.1/1k; a second would have breached the author's 18.2 lower wall); PUNCH breath untouched — no sentence split, added or removed; prior: voice-match gloss repair, 3 trailing ", which" clauses recast, 1 kept; prior: voice-match comparison repair — 1 bare comparison restored; F2/F3 from chapter-7-eval — the narrator's verdict on the evidence file cut, and the method exposition demonstrated instead of announced) | Target: 1,600 | Anchor: two lines one under the other on a pad — a file closed, and the same man's equipment issued to him eleven months later -->
 
 *ISSUE RECORD. MATERIEL, PERSONAL, CLASS 2. LINE 41 OF 60.*
 
@@ -11,7 +11,7 @@
 
 *COUNTERSIGN NOT REQUIRED. THIS RECORD IS NOT A CERTIFICATE OF FITNESS.*
 
-The table in his kitchen was not a kitchen table — a folding utility trestle, hollow-legged, with a burn in the laminate at one corner that had been in it when he carried it up the stairs — and at a quarter past eleven at night it held a pad, a plate he had not touched, and a dog tag with a dent in it.
+The table in his kitchen was not really a kitchen table — a folding utility trestle, hollow-legged, with a burn in the laminate at one corner that had been in it when he carried it up the stairs — and at a quarter past eleven at night it held a pad, a plate he had not touched, and a dog tag with a dent in it.
 
 *Those are boots*, Rx said.
 
@@ -19,7 +19,7 @@ The table in his kitchen was not a kitchen table — a folding utility trestle, 
 
 *I want that on the record. Line forty-one of sixty, every line on it somebody’s boots, with more of them open behind it.*
 
-Nothing they were doing was illegal. No request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three separate veterans’ associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
+Nothing they were doing was illegal. No request through the program, no query against a service record, nothing that would sit in a log with his name beside it in the morning. Public materiel indexes, kept for auditors who never read them. Casualty registries run by three completely separate veterans’ associations, none of which spoke to the others. A memorial archive at a university that wanted to know, before it would return so much as a name, whether he was immediate family, a researcher, or other.
 
 Rx had ticked researcher.
 
@@ -27,7 +27,7 @@ Rx had ticked researcher.
 
 There was a bicycle chained to the rail outside the apartment across the landing.
 
-Vexx turned the tag over on the laminate, and turned it back.
+Vexx turned the tag over on the laminate, turned it back.
 
 *The one on the left wants a date range before it’ll search. It won’t take a range wider than five years. It won’t tell you that until you’ve filled the rest of it in.*
 
@@ -45,7 +45,7 @@ Orange drink powder mixed too strong, in a plastic cup, on a shelf that hummed w
 
 *Working.*
 
-The name on the tag was stamped rather than etched, and the D had worn shallower than the rest of it, rubbed down like a stair tread, and Vexx had been reading it under a lamp at an angle for weeks.
+The name on the tag was stamped rather than etched, and the D had worn noticeably shallower than the rest of it, rubbed down like a stair tread, and Vexx had been reading it under a lamp at an angle for weeks.
 
 HOLST, D.
 
@@ -59,7 +59,7 @@ The neighbor’s music came up through the floor, two songs’ worth, and went o
 
 *Nothing.*
 
-The second registry wanted a unit designation. The third wanted a service number, then would not take the one on the tag, because the one on the tag came back absent — absent the way it had come back absent on this same table two months ago, when he had decided not to push it further.
+The second registry wanted a unit designation. The third wanted a service number, then would not actually take the one on the tag, because the one on the tag came back absent — absent the way it had come back absent on this same table two months ago, when he had decided not to push it further.
 
 The fourth was the small one — retired shock troopers, running their own archive off their own subscriptions, scanning their own paper.
 
@@ -75,7 +75,7 @@ Somebody had written *photo?* in pencil in the margin beside the entry. The penc
 
 *Seven years*, Rx said. *Seven years and four months.*
 
-Vexx put his thumb on the serial. He could find it in the dark — had, more than once, in a drawer beside a bed, with the light off — and he switched the lamp on over it anyway.
+Vexx put his thumb squarely on the serial. He could find it in the dark — had, more than once, in a drawer beside a bed, with the light off — and he switched the lamp on over it anyway.
 
 *Say the rest of it.*
 
@@ -105,7 +105,7 @@ It took nineteen.
 
 *Same number*, he said. *The one under your thumb.*
 
-Vexx put the two of them one under the other on the pad, the casualty line above the issue line, both of them on the screen at once — which took three tries, because the second kept dropping to the bottom.
+Vexx put the two of them exactly one under the other on the pad, the casualty line above the issue line, both of them on the screen at once — which took three tries, because the second kept dropping to the bottom.
 
 *Date of issue*, Rx said, and read it.
 
@@ -137,7 +137,7 @@ The wall clock in the next room struck the hour, once.
 
 *Line seven of twenty-two*, Rx said, after a while. *I can’t see the other twenty-one from here.*
 
-The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week and had stopped feeling it, like a watch he had stopped taking off.
+The trestle had a wobble in it that came and went depending on which of the four legs took the weight. He had found the wobble in the first week and had stopped feeling it entirely, like a watch he had stopped taking off.
 
 *Vexx.*
 
@@ -145,13 +145,13 @@ The trestle had a wobble in it that came and went depending on which of the four
 
 He got up.
 
-There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had acquired a shape: an armor fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He turned the eggs.
+There were two eggs and the end of a loaf — the loaf old enough to want the pan as well — and he did all of it standing, with the light off over the table behind him, the pad face-down on the trestle where he had left it. Somewhere in the last three hours the thing on that table had finally acquired a shape: an armor fragment nobody had signed back into evidence lock, a tag with a dead man’s name stamped on it, a search history across nine civilian archives under his own address, a private tally of every silence his brother had produced since the jungle. He turned the eggs.
 
 The eggs were fine and he put them in the sink.
 
 At a little after two he sat back down, with the plate rinsed and standing on its edge in the rack. He turned the pad over. He cleared the requisition off it and opened the listings.
 
-He had been at this since the summer, in the hours after the work stopped and before he could reasonably lie down — solid timber, mostly, because he had learned inside a fortnight that the pressed-board ones open up at the corner joint. You can see it coming in the photographs, if you know what a corner joint is supposed to look like. He had views now — drawbored tenons, oiled finish against lacquer, the four sellers on the whole index who photograph a table from the one angle that hides the underside of it. He had ordered nothing. He was not going to order anything. He read them for forty minutes, and then he read some more of them.
+He had been at this since the summer, in the hours after the work stopped and before he could reasonably lie down — solid timber, mostly, because he had learned inside a fortnight that the pressed-board ones open up at the corner joint. You can usually see it coming in the photographs, if you know what a corner joint is supposed to look like. He had views now — drawbored tenons, oiled finish against lacquer, the four sellers on the whole index who deliberately photograph a table from the one angle that hides the underside of it. He had ordered nothing. He was not going to order anything. He read them for forty minutes, and then he read some more of them.
 
 *SOLID ASH. 1600 BY 800. MORTISE AND TENON, DRAWBORED, NO FIXINGS.*
 

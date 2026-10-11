@@ -1,15 +1,15 @@
 # Chapter Six
 
 <!-- SCENE BUDGET (Target 4,200): form + transit + the grounds/reception 900 | day room, Corwin, the coffee 700 | the corrected account + grammar correction + the note 900 | the daughter 550 | the apology, "He was tidying", the failed follow-up, leaving 750 | coda: Voss and the sign-out 400 -->
-<!-- Word count: 4375 | Revision: 5 (breath repair — 2 narration joins, median 13.5 -> 14.5, no words added or cut; prior: gloss repair, 2 trailing ", which" clauses removed, 2 kept) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
+<!-- Word count: 4398 | Revision: 6 (voice-match pass — 25 narration adverbs added (2.7 -> 12.4/1k), 4 narration `and`s recast as then/em-dash/asyndeton (20.7 -> 19.0/1k); no sentence split, added or removed; prior: breath repair, 2 narration joins, median 13.5 -> 14.5) | Target: 4,200 | Anchor: Corwin, lucid and well and grateful, handing back the account in his own words — "They explained it to me. I think I had it backwards." -->
 
 The visitor form asked for a relationship to the patient and gave him four boxes, and none of them was the right one.
 
-*Family. Legal guardian. Command element. Other.* Vexx ticked command element, which was true, and which was not the reason, and passed the pad back under the window to a clerk who had already stopped looking at him.
+*Family. Legal guardian. Command element. Other.* Vexx ticked command element, which was entirely true, and which was not the reason, then passed the pad back under the window to a clerk who had already stopped looking at him.
 
-The transit out was four hours on a civilian line with two changes, the second of them a market town where the platform smelled of cut grass and engine oil, a crate of live poultry standing in the shade of the ticket office under a tarp — the birds shifting and settling under the canvas, every time a train came through. Vexx sat with his hands on his knees. He read nothing. Across the aisle, a woman worked through a bag of dried fruit, offered the last of it to her son, who did not want it, ate it herself, folded the bag into a square.
+The transit out was four hours on a civilian line with two changes, the second of them a market town where the platform smelled of cut grass and engine oil, a crate of live poultry standing in the shade of the ticket office under a tarp — the birds shifting and settling under the canvas, every time a train came through. Vexx sat with his hands on his knees. He read nothing. Across the aisle, a woman worked steadily through a bag of dried fruit, offered the last of it to her son, who did not want it, ate it herself, folded the bag into a square.
 
-He had put in for two days of personal leave. The question never came — not from the roster clerk, not from Voss’s office, not from the duty officer who countersigned it, without reading past the dates. He had expected that to be the difficult part — it had taken ninety seconds, and a signature.
+He had put in for two days of personal leave. The question never came — not from the roster clerk, not from Voss’s office, not from the duty officer who countersigned it, evidently without reading past the dates. He had honestly expected that to be the difficult part — it had taken ninety seconds, and a signature.
 
 *You could have told somebody*, Rx said, somewhere in the second hour.
 
@@ -21,17 +21,17 @@ He had put in for two days of personal leave. The question never came — not fr
 
 *People come apart in those places, is all. Quietly. On a good diet, with the heating on.* And then, before Vexx could answer that: *Ignore me. I’m reading the timetable. There’s a stop on this line called Hallow’s Bottom and I want you to know I’ve seen it.*
 
-The welfare visit was true, in the sense that everything Vexx had put on paper that month was true. He had pulled a man out of a jungle, the man was eight weeks into a rehabilitation track, the cell had not sent a soul to see him. That was a real thing, a decent thing. Vexx intended to do it. He also intended to sit across a table from the only living witness to a strike team wearing UNSC signatures — in a room with no review officer in it — and ask him to say the armor plating part again, so that he could hear which parts came out the same.
+The welfare visit was true, in precisely the sense that everything Vexx had put on paper that month was true. He had pulled a man out of a jungle, the man was eight weeks into a rehabilitation track, the cell had not sent a soul to see him. That was a real thing, a decent thing. Vexx fully intended to do it. He also intended to sit across a table from the only living witness to a strike team wearing UNSC signatures — in a room with no review officer in it — and ask him to say the armor plating part again, so that he could hear which parts came out exactly the same.
 
-He had thought about how that sounded for most of the first hour, then stopped thinking about it, because the thinking did not change the itinerary.
+He had thought about how that sounded for most of the first hour, then stopped thinking about it entirely, because the thinking did not change the itinerary.
 
-The rehabilitation track was a converted agricultural station on a slope above a river valley — four low buildings, whitewashed within the last year, an orchard on the south side, the trees pruned back hard for winter, the cut ends on them like knuckles, a track down to a pump house, walked often enough to keep the grass off it. Somebody had planted a double row of saplings along the drive. They would not be worth anything as shade for fifteen years, and somebody had planted them anyway.
+The rehabilitation track was plainly a converted agricultural station on a slope above a river valley — four low buildings, whitewashed within the last year, an orchard on the south side, the trees pruned back hard for winter, the cut ends on them like knuckles, a track down to a pump house, walked often enough to keep the grass off it. Somebody had planted a double row of saplings along the drive. They would not be worth anything as shade for fifteen years, and somebody had planted them anyway.
 
 The gate stood open. There was a guard post beside it, empty, and a bell push nobody had pushed in a while, judging by the leaf litter on the step.
 
-Inside, the glass doors opened when he put his hand on them. A woman at the desk apologized twice for a wait of four minutes — she meant it both times — took his authorization, read it properly rather than pretending to, told him the day room was through the doors at the end, mentioned the pot on the warmer in the corridor, if he wanted to take a coffee in with him. There was a bowl of apples on the counter, with a card that said HELP YOURSELF. There was a plant on the windowsill, a real one, not a plastic one. On the noticeboard beside it, a notice reminding residents that the orchard gate stuck, and to give it a shove.
+Inside, the glass doors opened when he put his hand on them. A woman at the desk apologized twice for a wait of barely four minutes — she meant it both times — took his authorization, read it properly rather than pretending to, told him the day room was through the doors at the end, mentioned the pot on the warmer in the corridor, if he wanted to take a coffee in with him. There was a bowl of apples on the counter, with a card that said HELP YOURSELF. There was a plant on the windowsill, a real one, not a plastic one. On the noticeboard beside it, a notice reminding residents that the orchard gate stuck, and to give it a shove.
 
-The coffee was in a glass pot, with a stack of paper cups beside it. It was good coffee — better than anything the program put in front of him, in a building where the fittings cost more than this whole station — and the kitchen had made it to be drunk rather than provided. Vexx stood in the corridor, drank half of it, could not find a single thing in the place to object to.
+The coffee was in a glass pot, with a stack of paper cups beside it. It was genuinely good coffee — better than anything the program put in front of him, in a building where the fittings cost more than this whole station — and the kitchen had made it to be drunk rather than provided. Vexx stood in the corridor, drank half of it, could not find a single thing in the place to object to.
 
 The corridor ran past a kitchen, its door hooked back. The smell came out of it — steam, boiled vegetables, the flat metal edge of institutional gravy — and the clatter of a mess hall at eleven hundred came up on him whole, like a door pushed open on it. Trays. Boots on a concrete floor. Two hundred voices under a low ceiling, a tin cup going over somewhere in the middle of it.
 
@@ -41,11 +41,11 @@ The corridor ran past a kitchen, its door hooked back. The smell came out of it 
 
 He went through the doors at the end.
 
-The day room had windows on two sides, the blinds were up, four men in it, plus a woman doing a jigsaw alone at a card table — the box lid propped against a chair leg, so she could see the picture. A radio was on low at the far end, none of them was listening to it. It was the middle of the afternoon, the light came across the tables in long bars, the room was quiet like a waiting room is quiet.
+The day room had windows on two sides, the blinds were up, four men in it, plus a woman doing a jigsaw alone at a card table — the box lid propped against a chair leg, so she could see the picture properly. A radio was on low at the far end, none of them was actually listening to it. It was the middle of the afternoon, the light came across the tables in long bars, the room was quiet like a waiting room is quiet.
 
 Corwin was at a table by the far window, with a mug in front of him, a paperback splayed open beside it — spine cracked, half read.
 
-He had put weight back on. That was the first thing. It was strange, because Vexx had not registered how much of the man had been gone, until some of it came back — the face had corners in it now, and color, and the eyes had come forward, out of wherever they had been sitting in the jungle. The place had taken clippers to his hair, without much interest in the result. He was in soft clothes, gray, the kind a person could sleep in.
+He had put weight back on. That was the first thing. It was strange, because Vexx had not properly registered how much of the man had been gone, until some of it came back — the face had corners in it now, and color, and the eyes had come forward, out of wherever they had been sitting in the jungle. The place had evidently taken clippers to his hair, without much interest in the result. He was in soft clothes, gray, the kind a person could sleep in.
 
 His hands were flat on the table, and they were not doing anything.
 
@@ -61,7 +61,7 @@ His hands were flat on the table, and they were not doing anything.
 
 “I’ll tell her.”
 
-A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it when he said yes, then told Vexx — unprompted, in the voice of a woman continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that the decision had been taken without her, that she was not over it. She poured Vexx a fresh cup, from a jug on the trolley, like it was her own table. He said the coffee was good. She said they got it on the same contract as the district hospital, that she would fight the first man who came here trying to change it. She went off down the room, the trolley wheel squeaking.
+A clinician came through with a trolley, asked Corwin whether he wanted the window open a crack, opened it immediately when he said yes, then told Vexx — unprompted, in the voice of a woman continuing a conversation she had been having with herself since spring — that the good chairs had been moved up to the second floor in April, that the decision had been taken without her, that she was not over it. She poured Vexx a fresh cup, from a jug on the trolley, like it was her own table. He said the coffee was good. She said they got it on the same contract as the district hospital, that she would personally fight the first man who came here trying to change it. She went off down the room, the trolley wheel squeaking.
 
 “She’s all right,” Corwin said. “They’re all right, all of them. Nobody believes me when I say it.”
 
@@ -75,7 +75,7 @@ A clinician came through with a trolley, asked Corwin whether he wanted the wind
 
 Vexx drank some of the coffee. Out the window, the orchard went down the slope in rows, and a man in a green coat — unhurried, taking his time about it — was doing something to the base of one of the trees with a hoe.
 
-Something from the transit was still in his back teeth. He had been at it with his tongue since the second change, and it had not come out.
+Something from the transit was still in his back teeth. He had been at it with his tongue since the second change — it had not come out.
 
 “I owe you an apology,” Corwin said.
 
@@ -89,13 +89,13 @@ Something from the transit was still in his back teeth. He had been at it with h
 
 It came out of Corwin flat and fast, like a hand going out after a dropped cup.
 
-He blinked twice. Something crossed his face that was not embarrassment about the grammar, but embarrassment about the reflex.
+He blinked twice. Something crossed his face that was not exactly embarrassment about the grammar, but embarrassment about the reflex.
 
 “Were,” he said. “There were six of you.” He looked at the mug, then past it. “Sorry. I’ve lost where I was.”
 
-Vexx did not give it back to him. He was in a jungle eleven weeks earlier, at two in the morning, walking behind Paladin — who had the man’s arm across his shoulders, most of his weight riding on one hip — and the man had been talking into Paladin’s back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometer, he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. It never got written down.
+Vexx did not give it back to him. He was in a jungle eleven weeks earlier, at two in the morning, walking directly behind Paladin — who had the man’s arm across his shoulders, most of his weight riding on one hip — and the man had been talking into Paladin’s back the whole way out, hoarse and half gone, wet leaves coming off the canopy onto all of them, and somewhere in the last kilometer, he had said *fewer*. *There were fewer of them than the report says. Not less.* Paladin had not known what he was talking about. Neither had Vexx. It never got written down.
 
-He had heard it. He had gone on walking. Nine weeks he had been on the other side of that sentence — it had been sitting in his own ears the whole time, in the dark, under the noise of a man being carried — and he had let it go past him, because there had been a report to file at the end of the night.
+He had heard it. He had gone on walking. Nine weeks he had been on the other side of that sentence — it had been sitting in his own ears the whole time, in the dark, under the noise of a man being carried — and he had simply let it go past him, because there had been a report to file at the end of the night.
 
 “You were apologizing,” Vexx said.
 
@@ -123,7 +123,7 @@ He picked the mug up. He did not drink from it.
 
 *Cooperative with program throughout. Recommend continuation of track; review at ninety days.*
 
-The man in the green coat had finished with the tree, moved down the row to the next one. The woman with the jigsaw had found an edge piece. She was going along the border with it, trying it in one place, then in another, like a key in one door after another.
+The man in the green coat had finished with the tree, moved down the row to the next one. The woman with the jigsaw had found an edge piece. She was going along the border with it, trying it carefully in one place, then in another, like a key in one door after another.
 
 “You believe that,” Vexx said.
 
@@ -165,7 +165,7 @@ Vexx sat with that.
 
 “Family contact is reviewed each cycle, Mr. Corwin. It’s in review.”
 
-The clinician had come back up the room with the trolley, and the answer was out of her, before he had got to the question, like a door coming back on its spring. It did not read as an interruption. She had it ready — she set it down into the gap, with everything else on the trolley — and carried on doing what she had been doing.
+The clinician had come back up the room with the trolley, and the answer was out of her, before he had fully got to the question, like a door coming back on its spring. It did not read as an interruption. She had it ready — she set it down into the gap, with everything else on the trolley — then carried on doing what she had been doing.
 
 There was no unkindness in it anywhere. She was not lying. Vexx understood that this was not the first time she had said it, or the second.
 
@@ -177,7 +177,7 @@ He picked the mug up again. The clinician asked him if he wanted the window shut
 
 “I’ll ask,” Vexx said.
 
-He knew what that was worth, on the way out of his mouth. He said it anyway, and Corwin thanked him for it, and neither man at that table named what had just been traded.
+He knew exactly what that was worth, on the way out of his mouth. He said it anyway, Corwin thanked him for it, and neither man at that table named what had just been traded.
 
 “The thing I keep coming back to,” Corwin said, “is that I had a detail. Eleven days is a long time to hold a thing up on nothing at all. I had one detail that wouldn’t sit down, and it was that one of them stopped.”
 
@@ -193,11 +193,11 @@ Nobody tidies in a firefight.
 
 You do not come off your line under fire and go down on one knee beside a body to pick something up unless the thing is yours.
 
-The tag in the drawer beside his bed had a dent in one corner and a serial that came back as nothing at all, and he had been carrying it for weeks as a thing left behind — planted, dropped as theatre, meant to be found.
+The tag in the drawer beside his bed had a dent in one corner and a serial that came back as nothing at all, and he had been carrying it for weeks as a thing left behind — planted deliberately, dropped as theatre, meant to be found.
 
 It had come off a man who went back for it and missed.
 
-The trolley wheel squeaked at the far end of the room, the woman at the card table moved her chair a few inches, sat back down in it, the orchard smell came in through the crack in the window — cold, green, faintly of rot off the windfalls still lying in the grass — and the gardener straightened up, put a hand in the small of his back.
+The trolley wheel squeaked at the far end of the room, the woman at the card table moved her chair a few inches, sat back down in it, the orchard smell came in through the crack in the window — cold, green, faintly of rot off the windfalls still lying in the grass — and the gardener straightened up slowly, put a hand in the small of his back.
 
 “Which side of him was he kneeling on,” Vexx said.
 
