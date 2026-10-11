@@ -1,5 +1,42 @@
 # Continuity Audit — Valkyr: Book One, Chapters 1–11
 
+> ## ⚠️ READ THIS FIRST — most of this report's FINDINGS ARE FIXED, and it quotes the dead prose
+>
+> **Dated 2026-10-03. Every one of its 11 needs-a-fix findings has since been actioned**
+> (see `feedback/progress.md` and the commit log). **This report therefore quotes a great deal
+> of text that is no longer in the manuscript, as though it were current** — and it is the
+> file a later pass is most likely to read first. Per the root CLAUDE.md **PROPAGATION RULE**,
+> a stale copy is worse than no copy, because it carries the authority of the document it sits
+> in. **The live record is `ENTITY_STATE.yaml`, whose `meta.do_not_restore_ch11` block names
+> the deleted lines.**
+>
+> **Quoted here but NO LONGER IN THE TEXT — do not restore any of it:**
+>
+> | This report quotes | The text now reads |
+> |---|---|
+> | Dessen: *"under a lamp, alone, for the better part of a year"* | *"alone, since the autumn"* |
+> | Jameson: *"a property return that's overdue since the summer"* | *"overdue since the autumn"* |
+> | Jameson: *"Three weeks before he signed anything."* | *"Two days before he signed anything."* |
+> | *"something went across his face Vexx had not seen on it in two years"* | *"...had not seen on it before"* |
+> | Ch.10: *"leaving a lip you could catch a **boot** on"* | *"...catch a **toe** on"* — changed deliberately, see CF-22 |
+> | Ch.11's opening: *"—it isn't a door now, it's a hole"* | opens on Gaia's stance; the line is gone |
+> | Ch.11's closer: *"he said it once, out loud, in the room"* | *"and he tried it on the room"* |
+> | Ch.11 coda: *"used the pack on the Kettle job, drawn a new one at the cage"* | *"broken the seal on the Kettle job, re-tabbed it at the cage"* |
+> | Ch.11: *"Vexx waited for the rest of it. / There was no rest of it."* | *"She did not say what that was for. / He did not ask."* |
+> | Ch.11 ¶196: *"One laugh. Never two."* | *"Then nothing off him until the next night"* — Spector's count, recast |
+> | Ch.11 ¶20: *"I don't need to hear the stair. I hear the stair."* | *"I hear it whether I'm listening or not."* |
+>
+> **Two of this report's own premises were also wrong and are corrected elsewhere:**
+> its brief's claim that *"Ch.11 is the first time Vexx tells another human being anything"* is
+> false — Ch.5 says in its own words that it is the first, and §0.3 of this report says so; and
+> **the property-return notice HAS arrived** by the author's decision of 2026-10-08, so Ch.11
+> is an **active breach**, which §N-05 could not know when it was written.
+>
+> **Still open from this report:** CF-15 (Ch.6's *"Nine weeks"*), CF-20 (Hallam is two
+> people), CF-21's Ch.9 limb, CF-23, CF-24, CF-25, and F6 (Goliath's boot reading has no
+> consumer). Those are the live items; everything else here is history.
+
+
 **Date:** 2026-10-03
 **Scope:** full manuscript as it stands — `chapter-1.md` … `chapter-11.md`, **38,398 words** (`wc -w`)
 **Audited against:** `../../../SERIES-BIBLE.md` (outranks all), `../../CLAUDE.md`,
